@@ -1,0 +1,11 @@
+■ [[plugin_system]]/[[JSON:plugin_system/JSON]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[JSONエンコード:plugin_system/JSONエンコード]] --- オブジェクトVをJSON形式にエンコードして返す
+- [[JSONエンコード整形:plugin_system/JSONエンコード整形]] --- オブジェクトVをJSON形式にエンコードして整形して返す
+- [[JSONデコード:plugin_system/JSONデコード]] --- JSON文字列Sをオブジェクトにデコードして返す
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

@@ -1,0 +1,15 @@
+■ [[plugin_node]]/[[Ajax:plugin_node/Ajax]]
+#page(plugin_node__解説)
+
+▲ カテゴリの命令一覧
+
+- [[AJAX送信時:plugin_node/AJAX送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[GET送信時:plugin_node/GET送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[POST送信時:plugin_node/POST送信時]] --- AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
+- [[POSTフォーム送信時:plugin_node/POSTフォーム送信時]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
+- [[AJAX失敗時:plugin_node/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[AJAXオプション:plugin_node/AJAXオプション]] --- 定数
+- [[AJAXオプション設定:plugin_node/AJAXオプション設定]] --- Ajax命令でオプションを設定
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]

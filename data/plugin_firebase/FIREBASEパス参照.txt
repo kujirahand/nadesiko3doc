@@ -1,0 +1,12 @@
+■ FIREBASEパス参照 (FIREBASEぱすさんしょう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
+種類 || 関数
+引数 || PATHを
+説明 || データベースのパスPATHを参照
+}}}
+
+#page(plugin_firebase/FIREBASEパス参照__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_firebase]]

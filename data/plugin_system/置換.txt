@@ -1,0 +1,12 @@
+■ 置換 (ちかん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[置換・トリム:plugin_system/置換・トリム]]
+種類 || 関数
+引数 || SのAをBに|SでAからBへ
+説明 || 文字列Sのうち文字列AをBに全部置換して返す
+}}}
+
+#page(plugin_system/置換__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

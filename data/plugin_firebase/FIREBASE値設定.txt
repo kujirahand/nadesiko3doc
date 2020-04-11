@@ -1,0 +1,12 @@
+■ FIREBASE値設定 (FIREBASEせっていs)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
+種類 || 関数
+引数 || PATHにVALUESを|PATHへVALUESの
+説明 || データベースのパスPATHにオブジェクトVALUESを設定
+}}}
+
+#page(plugin_firebase/FIREBASE値設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_firebase]]

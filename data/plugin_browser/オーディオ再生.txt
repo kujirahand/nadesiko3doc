@@ -1,0 +1,12 @@
+■ オーディオ再生 (おーでぃおさいせい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[オーディオ:plugin_browser/オーディオ]]
+種類 || 関数
+引数 || OBJを
+説明 || AudioオブジェクトOBJを指定してオーディをを再生
+}}}
+
+#page(plugin_browser/オーディオ再生__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

@@ -1,0 +1,16 @@
+●『[[オーディオ停止:plugin_browser/オーディオ停止__解説]]』の詳しい解説
+
+AudioオブジェクトOBJを指定してオーディをを停止
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
+Aをオーディオ再生。
+2秒後には
+　　Aをオーディオ停止。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_browser/オーディオ再生]]
+- [[plugin_browser/オーディオ停止]]

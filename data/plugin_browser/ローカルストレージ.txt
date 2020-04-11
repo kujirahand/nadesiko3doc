@@ -1,0 +1,16 @@
+■ [[plugin_browser]]/[[ローカルストレージ:plugin_browser/ローカルストレージ]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[保存:plugin_browser/保存]] --- ブラウザのlocalStorageのキーKに文字列Vを保存
+- [[開:plugin_browser/開]] --- ブラウザのlocalStorageからVを読む
+- [[存在:plugin_browser/存在]] --- ブラウザのlocalStorageにKEYが存在しているか調べる
+- [[ローカルストレージ保存:plugin_browser/ローカルストレージ保存]] --- ブラウザのlocalStorageのKにVを保存
+- [[ローカルストレージ読:plugin_browser/ローカルストレージ読]] --- ブラウザのlocalStorageからVを読む
+- [[ローカルストレージキー列挙:plugin_browser/ローカルストレージキー列挙]] --- ブラウザのlocalStorageのキー一覧を返す
+- [[ローカルストレージキー削除:plugin_browser/ローカルストレージキー削除]] --- ブラウザのlocalStorageのkeyを削除
+- [[ローカルストレージ全削除:plugin_browser/ローカルストレージ全削除]] --- ブラウザのlocalStorageのデータを全部削除する
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

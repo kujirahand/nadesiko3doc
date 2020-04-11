@@ -1,0 +1,12 @@
+■ 曜日 (ようび)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || Sの
+説明 || 日付Sの曜日を返す
+}}}
+
+#page(plugin_system/曜日__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

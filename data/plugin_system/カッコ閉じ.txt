@@ -1,0 +1,35 @@
+●カッコ閉じ (かっことじ)
+
+| カテゴリ | [[plugin_system]]/[[システム定数:plugin_system/システム定数]]
+| 種類 | 定数
+| 初期値 | '」'
+
+▲詳しい説明
+
+なし
+
+●利用例
+
+なし
+
+●関連する項目
+
+- [[ナデシコバージョン:plugin_system/ナデシコバージョン]] --- 定数
+- [[ナデシコエンジン:plugin_system/ナデシコエンジン]] --- 定数
+- [[はい:plugin_system/はい]] --- 定数
+- [[いいえ:plugin_system/いいえ]] --- 定数
+- [[オン:plugin_system/オン]] --- 定数
+- [[オフ:plugin_system/オフ]] --- 定数
+- [[改行:plugin_system/改行]] --- 定数
+- [[タブ:plugin_system/タブ]] --- 定数
+- [[カッコ:plugin_system/カッコ]] --- 定数
+- [[カッコ閉じ:plugin_system/カッコ閉じ]] --- 定数
+- [[波カッコ:plugin_system/波カッコ]] --- 定数
+- [[波カッコ閉じ:plugin_system/波カッコ閉じ]] --- 定数
+- [[OK:plugin_system/OK]] --- 定数
+- [[NG:plugin_system/NG]] --- 定数
+- [[PI:plugin_system/PI]] --- 定数
+- [[空:plugin_system/空]] --- 定数
+- [[NULL:plugin_system/NULL]] --- 定数
+- [[エラーメッセージ:plugin_system/エラーメッセージ]] --- 定数
+- [[空配列:plugin_system/空配列]] --- 空の配列を返す

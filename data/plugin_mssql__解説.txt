@@ -1,0 +1,1 @@
+[[plugin_mssql:plugin_mssql__解説]]とは、なでしこv3のコンソール版の[[拡張プラグイン]]。MS SQLServerを操作するためのもの。Windowsで利用可能。

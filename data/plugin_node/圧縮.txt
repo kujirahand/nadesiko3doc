@@ -1,0 +1,12 @@
+■ 圧縮 (あっしゅく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[圧縮・解凍:plugin_node/圧縮・解凍]]
+種類 || 関数
+引数 || AをBに|AからBへ
+説明 || (v1非互換)ファイルAをBにZIP圧縮(実行には7-zipが必要-https://goo.gl/LmKswH)
+}}}
+
+#page(plugin_node/圧縮__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

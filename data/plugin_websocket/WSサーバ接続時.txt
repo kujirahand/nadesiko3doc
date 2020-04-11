@@ -1,0 +1,12 @@
+■ WSサーバ接続時 (WSさーばせつぞくしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
+種類 || 関数
+引数 || CALLBACKを
+説明 || WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
+}}}
+
+#page(plugin_websocket/WSサーバ接続時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_websocket]]

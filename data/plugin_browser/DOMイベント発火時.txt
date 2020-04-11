@@ -1,0 +1,12 @@
+■ DOMイベント発火時 (DOMいべんとはっかしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || CALLBACKでDOMのEVENTが
+説明 || DOMのEVENTが発火した時にCALLBACKを実行するように設定
+}}}
+
+#page(plugin_browser/DOMイベント発火時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

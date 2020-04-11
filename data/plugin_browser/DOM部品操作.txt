@@ -1,0 +1,18 @@
+■ [[plugin_browser]]/[[DOM部品操作:plugin_browser/DOM部品操作]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[DOM親要素:plugin_browser/DOM親要素]] --- 定数
+- [[DOM生成個数:plugin_browser/DOM生成個数]] --- 定数
+- [[DOM親要素設定:plugin_browser/DOM親要素設定]] --- 「ボタン作成」「エディタ作成」などのDOM要素を追加する対象を指定(デフォルトはdocument)して親要素のDOMオブジェクトを返す
+- [[ボタン作成:plugin_browser/ボタン作成]] --- ラベルlabelを持つbutton要素を追加しDOMオブジェクトを返す
+- [[エディタ作成:plugin_browser/エディタ作成]] --- textの値を持つテキストボックス(input[type='text'])の要素を追加しDOMオブジェクトを返す
+- [[テキストエリア作成:plugin_browser/テキストエリア作成]] --- textの値を持つtextarea要素を追加しDOMオブジェクトを返す
+- [[ラベル作成:plugin_browser/ラベル作成]] --- textの値を持つラベル(span要素)を追加しDOMオブジェクトを返す
+- [[改行作成:plugin_browser/改行作成]] --- 改行(br要素)を追加しDOMオブジェクトを返す
+- [[チェックボックス作成:plugin_browser/チェックボックス作成]] --- textのラベルを持つチェックボックス(input[type='checkbox'])要素を追加しDOMオブジェクトを返す
+- [[セレクトボックス作成:plugin_browser/セレクトボックス作成]] --- 配列optionsの選択肢を持つselect要素を追加しDOMオブジェクトを返す
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

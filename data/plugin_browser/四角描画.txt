@@ -1,0 +1,12 @@
+■ 四角描画 (しかくびょうが)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[描画:plugin_browser/描画]]
+種類 || 関数
+引数 || Bの|Bへ|Bに
+説明 || [x, y, w, h]で矩形を描画する
+}}}
+
+#page(plugin_browser/四角描画__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

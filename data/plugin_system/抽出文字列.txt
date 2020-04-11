@@ -1,0 +1,11 @@
+■ 抽出文字列 (ちゅうしゅつもじれつ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[正規表現:plugin_system/正規表現]]
+種類 || 定数
+初期値 || []
+}}}
+
+#page(plugin_system/抽出文字列__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

@@ -1,0 +1,10 @@
+■ [[plugin_browser]]/[[ブラウザ操作:plugin_browser/ブラウザ操作]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[ブラウザ移動:plugin_browser/ブラウザ移動]] --- 任意のURLにブラウザ移動(ただし移動後スクリプトの実行は停止する)
+- [[ブラウザ戻:plugin_browser/ブラウザ戻]] --- 任意のURLにブラウザ移動(ただし移動後スクリプトの実行は停止する)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

@@ -1,0 +1,7 @@
+●『[[ASSERT等:plugin_node/ASSERT等__解説]]』の詳しい解説
+
+mochaによるテストで、ASSERTでAとBが正しいことを報告する
+
+{{{
+# 準備中
+}}}

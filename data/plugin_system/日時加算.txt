@@ -1,0 +1,12 @@
+■ 日時加算 (ヶ月)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || SにAを
+説明 || 日時SにAを加えて返す。Aは「(+｜-)1(年
+}}}
+
+#page(plugin_system/日時加算__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

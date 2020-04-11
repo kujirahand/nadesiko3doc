@@ -1,0 +1,12 @@
+■ タッチ時 (たっちしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || FUNCでDOMを|DOMの
+説明 || 無名関数FでDOMに対してタッチして指を動かした時に実行するイベントを設定。
+}}}
+
+#page(plugin_browser/タッチ時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

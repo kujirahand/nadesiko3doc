@@ -1,0 +1,39 @@
+■文字抜き出 (もじぬきだす)
+
+{{{#csv(flag=||)
+プラグイン名 || [[plugin_system]]/[[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || SでAからCNTを|Sの
+説明 || 文字列SのA文字目からCNT文字を抽出する(v1非互換)
+}}}
+
+▲詳しい説明
+
+なし
+
+●利用例
+
+なし
+
+●関連する項目
+
+- [[文字数:plugin_system/文字数]] --- 文字列Vの文字数を返す
+- [[何文字目:plugin_system/何文字目]] --- 文字列SでAが何文字目にあるか調べて返す
+- [[CHR:plugin_system/CHR]] --- 文字コードから文字を返す
+- [[ASC:plugin_system/ASC]] --- 文字列Vの最初の文字の文字コードを返す
+- [[文字挿入:plugin_system/文字挿入]] --- 文字列SのI文字目に文字列Aを挿入する
+- [[文字検索:plugin_system/文字検索]] --- 文字列Sで文字列Aが何文字目にあるか調べて返す
+- [[追加:plugin_system/追加]] --- 文字列SにAを追加して返す(v1非互換)
+- [[一行追加:plugin_system/一行追加]] --- 文字列SにAと改行を追加して返す(v1非互換)
+- [[文字列分解:plugin_system/文字列分解]] --- 文字列Vを一文字ずつに分解して返す
+- [[リフレイン:plugin_system/リフレイン]] --- 文字列VをCNT回繰り返す(v1非互換)
+- [[出現回数:plugin_system/出現回数]] --- 文字列SにAが何回出現するか数える
+- [[MID:plugin_system/MID]] --- 文字列SのA文字目からCNT文字を抽出する
+- [[文字抜き出:plugin_system/文字抜き出]] --- 文字列SのA文字目からCNT文字を抽出する(v1非互換)
+- [[LEFT:plugin_system/LEFT]] --- 文字列Sの左端からCNT文字を抽出する
+- [[文字左部分:plugin_system/文字左部分]] --- 文字列Sの左端からCNT文字を抽出する(v1非互換)
+- [[RIGHT:plugin_system/RIGHT]] --- 文字列Sの右端からCNT文字を抽出する
+- [[文字右部分:plugin_system/文字右部分]] --- 文字列Sの右端からCNT文字を抽出する(v1非互換)
+- [[区切:plugin_system/区切]] --- 文字列Sを区切り文字Aで区切って配列で返す
+- [[切取:plugin_system/切取]] --- 文字列Sから文字列Aまでの部分を抽出する(v1非互換)
+- [[文字削除:plugin_system/文字削除]] --- 文字列SのA文字目からB文字分を削除して返す(v1非互換)

@@ -1,0 +1,12 @@
+■ WSエラー発生時 (WSえらーはっせいじ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
+種類 || 関数
+引数 || CALLBACKを
+説明 || WebSocketでエラーが発生した時に実行されるイベントを指定
+}}}
+
+#page(plugin_browser/WSエラー発生時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

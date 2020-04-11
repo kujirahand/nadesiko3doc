@@ -1,0 +1,12 @@
+■ PG閉 (PGとじる)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
+種類 || 関数
+引数 || 
+説明 || データベースを閉じる
+}}}
+
+#page(plugin_postgresql/PG閉__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_postgresql]]

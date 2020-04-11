@@ -1,0 +1,10 @@
+●『[[MYSQL閉:plugin_mysql/MYSQL閉__解説]]』の詳しい解説
+
+データベースを閉じる
+
+{{{
+!「nadesiko3-mysql」を取り込む
+「mysql://root:hoge@localhost/hoge」をMYSQL開く。
+# ---
+MYSQL閉じる
+}}}

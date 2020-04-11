@@ -1,0 +1,12 @@
+■ WS切断 (WSせつだん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
+種類 || 関数
+引数 || 
+説明 || アクティブなWebSocketを閉じる
+}}}
+
+#page(plugin_browser/WS切断__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

@@ -1,0 +1,22 @@
+●『[[SQLITE3逐次全取得:plugin_sqlite3/SQLITE3逐次全取得__解説]]』の詳しい解説
+
+逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+
+# ここで使うSQL
+SQL_C = 『CREATE TABLE IF NOT EXISTS tt(id INTEGER PRIMARY KEY, value INTEGER)』
+SQL_I = 『INSERT INTO tt (value) VALUES (?)』
+SQL_S = 『SELECT * FROM tt』
+
+「test.sqlite3」をSQLITE3開く。
+逐次実行
+　　先に、SQL_Cを[]でSQLITE3逐次実行。
+　　次に、SQL_Iを[30]でSQLITE3逐次実行。
+　　次に、SQL_Iを[50]でSQLITE3逐次実行。
+　　次に、SQL_Iを[70]でSQLITE3逐次実行。
+　　次に、SQL_Sを[]でSQLITE3逐次全取得。
+　　次に、対象を表示。
+ここまで。
+}}}

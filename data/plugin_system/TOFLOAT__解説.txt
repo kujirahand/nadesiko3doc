@@ -1,0 +1,7 @@
+●『[[TOFLOAT:plugin_system/TOFLOAT__解説]]』の詳しい解説
+
+値Vを実数に変換
+
+{{{
+# 準備中
+}}}

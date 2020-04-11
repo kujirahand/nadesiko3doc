@@ -1,0 +1,7 @@
+●『[[ARCTAN:plugin_system/ARCTAN__解説]]』の詳しい解説
+
+ラジアン単位VのARCTANを求める
+
+{{{
+# 準備中
+}}}

@@ -1,0 +1,12 @@
+■ タグ名取得 (たぐめいしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_htmlparser]] > [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+種類 || 関数
+引数 || DOMから|DOMの
+説明 || DOMのタグ名を取得する
+}}}
+
+#page(plugin_htmlparser/タグ名取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_htmlparser]]

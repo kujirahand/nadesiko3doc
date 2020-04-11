@@ -1,0 +1,12 @@
+■ コンソール表示 (こんそーるひょうじ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[標準出力:plugin_system/標準出力]]
+種類 || 関数
+引数 || Sを|Sと
+説明 || Sをコンソール表示する(console.log)
+}}}
+
+#page(plugin_system/コンソール表示__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

@@ -1,0 +1,12 @@
+■ HTML逐次URL開 (HTMLちくじURLひらく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_htmlparser]] > [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+種類 || 関数
+引数 || URLを
+説明 || 任意のURLを開いてパースする。
+}}}
+
+#page(plugin_htmlparser/HTML逐次URL開__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_htmlparser]]

@@ -1,0 +1,12 @@
+■ 学習 (がくしゅう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_ml]] > [[機械学習:plugin_ml/機械学習]]
+種類 || 関数
+引数 || INPUTSとLABELSで
+説明 || 入力配列inputsとラベル配列labelsで機械学習する
+}}}
+
+#page(plugin_ml/学習__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_ml]]

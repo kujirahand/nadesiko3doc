@@ -1,0 +1,20 @@
+■ [[plugin_browser]]/[[Ajax:plugin_browser/Ajax/HTTP]]
+このカテゴリの命令
+
+▲ カテゴリの命令一覧
+
+- [[AJAX送信時:plugin_browser/AJAX送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[GET送信時:plugin_browser/GET送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[POSTデータ生成:plugin_browser/POSTデータ生成]] --- 連想配列をkey=value&key=value...の形式に変換する
+- [[POST送信時:plugin_browser/POST送信時]] --- AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
+- [[POSTフォーム送信時:plugin_browser/POSTフォーム送信時]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
+- [[AJAX失敗時:plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[AJAXオプション:plugin_browser/AJAXオプション]] --- 定数
+- [[AJAXオプション設定:plugin_browser/AJAXオプション設定]] --- Ajax命令でオプションを設定
+- [[AJAX送信:plugin_browser/AJAX送信]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[HTTP取得:plugin_browser/HTTP取得]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[POST送信:plugin_browser/POST送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[POSTフォーム送信:plugin_browser/POSTフォーム送信]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser:plugin_browser]]

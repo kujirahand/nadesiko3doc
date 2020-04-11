@@ -1,0 +1,12 @@
+■ DOM親要素設定 (DOMおやようそせってい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM部品操作:plugin_browser/DOM部品操作]]
+種類 || 関数
+引数 || ELに|ELへ
+説明 || 「ボタン作成」「エディタ作成」などのDOM要素を追加する対象を指定(デフォルトはdocument)して親要素のDOMオブジェクトを返す
+}}}
+
+#page(plugin_browser/DOM親要素設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

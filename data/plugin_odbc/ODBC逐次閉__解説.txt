@@ -1,0 +1,18 @@
+●『[[ODBC逐次閉:plugin_odbc/ODBC逐次閉__解説]]』の詳しい解説
+
+逐次実行構文でODBCで開いているデータベースを閉じる
+
+{{{
+!「nadesiko3-odbc」を取り込む。
+逐次実行。
+　　先に、「DSN=test;UID=kujira;PWD=****」をODBC逐次開く。
+　　次に、「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[1, 30]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[2, 50]でODBC逐次実行。
+　　次に、「SELECT * FROM tt」を[]でODBC逐次実行
+　　次に、対象を表示。
+　　次に、「DROP TABLE tt」を[]でODBC逐次実行。
+　　先に、ODBC逐次閉じる。
+　　次に、「完了」と表示。
+ここまで。
+}}}

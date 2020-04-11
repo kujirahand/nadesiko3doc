@@ -1,0 +1,12 @@
+■ 棒グラフ描画 (ぼうぐらふびょうが)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[グラフ描画_CHARTJS:plugin_browser/グラフ描画_CHARTJS]]
+種類 || 関数
+引数 || DATAを|DATAで|DATAの
+説明 || 棒グラフを描画
+}}}
+
+#page(plugin_browser/棒グラフ描画__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

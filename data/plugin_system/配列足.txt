@@ -1,0 +1,12 @@
+■ 配列足 (はいれつたす)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[配列操作:plugin_system/配列操作]]
+種類 || 関数
+引数 || AにBを|Aへ|Aと
+説明 || 配列Aに配列Bを足し合わせて返す。
+}}}
+
+#page(plugin_system/配列足__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

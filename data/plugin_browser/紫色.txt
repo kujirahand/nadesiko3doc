@@ -1,0 +1,11 @@
+■ 紫色 (むらさきいろ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[色定数:plugin_browser/色定数]]
+種類 || 定数
+初期値 || 'fuchsia'
+}}}
+
+#page(plugin_browser/紫色__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

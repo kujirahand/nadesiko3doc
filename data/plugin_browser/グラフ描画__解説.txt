@@ -1,0 +1,39 @@
+●『[[グラフ描画:plugin_browser/グラフ描画__解説]]』の詳しい解説
+
+[[Chart.js:https://www.chartjs.org/]]を利用して、DATAのグラフを描画します。引数に指定するのは、Chart.jsに与えるJSONデータと同じです。
+
+▲セットアップ
+
+描画に際して、JavaScriptを取り込んでおく必要があります。HTMLに以下のコードを挿入しておきます。
+
+{{{
+<script type="text/javascript" 
+ src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js">
+</script>
+}}}
+
+▲サンプル
+
+簡単な使い方です。引数には、グラフの種類やオプションを含めたJSONデータを指定します。
+
+{{{#nako3(canvas,size=400x300)
+#「#chart_cv」へ描画開始。
+データセット = {
+    labels: ['国語', '算数', '理科', '社会'],
+    datasets: [{
+      label: 'タロウ',
+      data: [78, 50, 30, 90],
+      backgroundColor: 'rgba(255,0,0,0.5)'
+    },{
+      label: 'ジロウ',
+      data: [90, 80, 10, 90],
+      backgroundColor: 'rgba(25,255,0,0.5)'
+    }]}
+data_frame = {
+    type: 'bar',
+    data: データセット,
+    options: {}}
+data_frameのグラフ描画。
+}}}
+
+

@@ -1,0 +1,12 @@
+■ AJAX失敗時 (AJAXえらーしっぱいしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
+種類 || 関数
+引数 || CALLBACKの
+説明 || Ajax命令でエラーが起きたとき
+}}}
+
+#page(plugin_browser/AJAX失敗時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

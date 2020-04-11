@@ -1,0 +1,12 @@
+■ MYSQL逐次実行 (MYSQLちくじじっこう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_mysql]] > [[MySQL:plugin_mysql/MySQL]]
+種類 || 関数
+引数 || SQLをPARAMSで
+説明 || 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。
+}}}
+
+#page(plugin_mysql/MYSQL逐次実行__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_mysql]]

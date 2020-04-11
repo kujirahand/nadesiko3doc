@@ -1,0 +1,12 @@
+■ GoogleHome再生 (GOOGLEHOMEさいせい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_googlehome]] > [[GoogleHome:plugin_googlehome/GoogleHome]]
+種類 || 関数
+引数 || Sを|Sで
+説明 || GoogleHomeでMP3を再生する
+}}}
+
+#page(plugin_googlehome/GoogleHome再生__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_googlehome]]

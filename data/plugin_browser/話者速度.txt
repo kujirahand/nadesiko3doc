@@ -1,0 +1,11 @@
+■ 話者速度 (わしゃそくど)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[音声合成:plugin_browser/音声合成]]
+種類 || 定数
+初期値 || 1.0
+}}}
+
+#page(plugin_browser/話者速度__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

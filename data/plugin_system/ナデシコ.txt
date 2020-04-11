@@ -1,0 +1,12 @@
+■ ナデシコ (なでしこする)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[特殊命令:plugin_system/特殊命令]]
+種類 || 関数
+引数 || CODEを|CODEで
+説明 || なでしこのコードCODEを実行する
+}}}
+
+#page(plugin_system/ナデシコ__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

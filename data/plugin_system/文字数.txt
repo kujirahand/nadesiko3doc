@@ -1,0 +1,12 @@
+■ 文字数 (もじすう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || Vの
+説明 || 文字列Vの文字数を返す
+}}}
+
+#page(plugin_system/文字数__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

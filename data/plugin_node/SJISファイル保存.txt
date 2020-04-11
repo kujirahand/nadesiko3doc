@@ -1,0 +1,12 @@
+■ SJISファイル保存 (SJISふぁいるほぞん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[ファイル入出力:plugin_node/ファイル入出力]]
+種類 || 関数
+引数 || SをFへ|Fに
+説明 || SをSJIS形式でファイルFへ書き込む
+}}}
+
+#page(plugin_node/SJISファイル保存__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

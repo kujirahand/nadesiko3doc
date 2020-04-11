@@ -1,0 +1,11 @@
+■ DOM生成個数 (DOMせいせいこすう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM部品操作:plugin_browser/DOM部品操作]]
+種類 || 定数
+初期値 || 0
+}}}
+
+#page(plugin_browser/DOM生成個数__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

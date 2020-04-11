@@ -1,0 +1,12 @@
+■ WSSサーバ起動 (WSSさーばきどう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
+種類 || 関数
+引数 || CONFの|CONFで
+説明 || 設定CONF{cert:サーバ証明書,key:キーファイル,port:ポート番号}を指定してWSSサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
+}}}
+
+#page(plugin_websocket/WSSサーバ起動__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_websocket]]

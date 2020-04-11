@@ -1,0 +1,12 @@
+■ DOMスタイル一括取得 (DOMすたいるいっかつしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || DOMのSTYLEを
+説明 || DOMのSTYLE(配列で複数指定)の値を取得
+}}}
+
+#page(plugin_browser/DOMスタイル一括取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

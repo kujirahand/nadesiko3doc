@@ -1,0 +1,19 @@
+■ [[plugin_system]]/[[四則演算:plugin_system/四則演算]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[足:plugin_system/足]] --- AとBを足す
+- [[引:plugin_system/引]] --- AからBを引く
+- [[掛:plugin_system/掛]] --- AにBを掛ける
+- [[倍:plugin_system/倍]] --- AのB倍を求める
+- [[割:plugin_system/割]] --- AをBで割る
+- [[割余:plugin_system/割余]] --- AをBで割った余りを求める
+- [[以上:plugin_system/以上]] --- AがB以上か
+- [[以下:plugin_system/以下]] --- AがB以下か
+- [[未満:plugin_system/未満]] --- AがB未満か
+- [[超:plugin_system/超]] --- AがB超か
+- [[等:plugin_system/等]] --- AがBと等しいか
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

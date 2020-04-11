@@ -1,0 +1,11 @@
+■ ブラウザ名変換表 (ぶらうざめいへんかんひょう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[システム定数:plugin_system/システム定数]]
+種類 || 定数
+初期値 || require('caniuse-db/data.json').agents
+}}}
+
+#page(plugin_system/ブラウザ名変換表__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

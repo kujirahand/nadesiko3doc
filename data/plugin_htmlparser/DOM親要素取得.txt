@@ -1,0 +1,12 @@
+■ DOM親要素取得 (DOMおやようそしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_htmlparser]] > [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+種類 || 関数
+引数 || Qを|Qの|Qから
+説明 || DOMの親要素を取得する
+}}}
+
+#page(plugin_htmlparser/DOM親要素取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_htmlparser]]

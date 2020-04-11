@@ -1,0 +1,10 @@
+■ [[plugin_browser]]/[[ホットキー:plugin_browser/ホットキー]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[ホットキー登録:plugin_browser/ホットキー登録]] --- ホットキーKEYにEVENTを登録する
+- [[ホットキー解除:plugin_browser/ホットキー解除]] --- ホットキーKEYを解除する
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

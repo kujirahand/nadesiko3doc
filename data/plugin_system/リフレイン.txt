@@ -1,0 +1,12 @@
+■ リフレイン (りふれいん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || VをCNTで|Vの
+説明 || 文字列VをCNT回繰り返す(v1非互換)
+}}}
+
+#page(plugin_system/リフレイン__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

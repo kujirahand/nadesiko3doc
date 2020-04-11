@@ -1,0 +1,12 @@
+■ AJAXオプション設定 (AJAXおぷしょんせってい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[Ajax:plugin_node/Ajax]]
+種類 || 関数
+引数 || OPTIONに|OPTIONへ|OPTIONと
+説明 || Ajax命令でオプションを設定
+}}}
+
+#page(plugin_node/AJAXオプション設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

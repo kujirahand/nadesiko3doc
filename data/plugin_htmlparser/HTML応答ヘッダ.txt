@@ -1,0 +1,11 @@
+■ HTML応答ヘッダ (HTMLおうとうへっだ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_htmlparser]] > [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+種類 || 定数
+初期値 || ''
+}}}
+
+#page(plugin_htmlparser/HTML応答ヘッダ__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_htmlparser]]

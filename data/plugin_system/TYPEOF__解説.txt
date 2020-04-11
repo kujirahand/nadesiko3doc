@@ -1,0 +1,7 @@
+●『[[TYPEOF:plugin_system/TYPEOF__解説]]』の詳しい解説
+
+変数Vの型を返す
+
+{{{
+# 準備中
+}}}

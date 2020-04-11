@@ -1,0 +1,7 @@
+●『[[GoogleHome接続:plugin_googlehome/GoogleHome接続__解説]]』の詳しい解説
+
+LAN内にある名前NAMEのGoogleHomeに接続する
+
+{{{
+# 準備中
+}}}

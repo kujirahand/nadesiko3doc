@@ -1,0 +1,12 @@
+■ [[plugin_system]]/[[文字種類:plugin_system/文字種類]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[かなか判定:plugin_system/かなか判定]] --- 文字列Sの1文字目がひらがなか判定
+- [[カタカナ判定:plugin_system/カタカナ判定]] --- 文字列Sの1文字目がカタカナか判定
+- [[数字判定:plugin_system/数字判定]] --- 文字列Sの1文字目が数字か判定
+- [[数列判定:plugin_system/数列判定]] --- 文字列S全部が数字か判定
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

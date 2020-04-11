@@ -1,0 +1,1 @@
+[[plugin_websocket:plugin_websocket__解説]]とは、なでしこv3の[[拡張プラグイン]]。コンソール版で利用して、WebSocketサーバを作成するのに使います。

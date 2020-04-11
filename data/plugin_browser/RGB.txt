@@ -1,0 +1,12 @@
+■ RGB (RGB)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[色定数:plugin_browser/色定数]]
+種類 || 関数
+引数 || RとGとBで|Bの
+説明 || 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
+}}}
+
+#page(plugin_browser/RGB__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

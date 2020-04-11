@@ -1,0 +1,12 @@
+■ RAD2DEG (RAD2DEG)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[三角関数:plugin_system/三角関数]]
+種類 || 関数
+引数 || Vを
+説明 || ラジアンから度に変換
+}}}
+
+#page(plugin_system/RAD2DEG__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

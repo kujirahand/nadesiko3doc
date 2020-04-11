@@ -1,0 +1,12 @@
+■ DOMイベント処理停止 (DOMいべんとしょりていし)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || EVENTを|EVENTの
+説明 || キーイベントやマウスイベントで、元々ブラウザが行う処理を中止する
+}}}
+
+#page(plugin_browser/DOMイベント処理停止__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

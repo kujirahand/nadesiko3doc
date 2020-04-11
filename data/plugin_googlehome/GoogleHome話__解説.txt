@@ -1,0 +1,7 @@
+●『[[GoogleHome話:plugin_googlehome/GoogleHome話__解説]]』の詳しい解説
+
+GoogleHomeにSと言わせる
+
+{{{
+# 準備中
+}}}

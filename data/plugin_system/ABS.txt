@@ -1,0 +1,12 @@
+■ ABS (ABS)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[算術関数:plugin_system/算術関数]]
+種類 || 関数
+引数 || Aの
+説明 || Vの絶対値を返す
+}}}
+
+#page(plugin_system/ABS__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

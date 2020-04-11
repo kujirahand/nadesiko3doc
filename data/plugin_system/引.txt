@@ -1,0 +1,12 @@
+■ 引 (ひく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[四則演算:plugin_system/四則演算]]
+種類 || 関数
+引数 || AからBを
+説明 || AからBを引く
+}}}
+
+#page(plugin_system/引__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

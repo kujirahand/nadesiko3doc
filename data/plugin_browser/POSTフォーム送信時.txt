@@ -1,0 +1,12 @@
+■ POSTフォーム送信時 (POSTふぉーむそうしんしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
+種類 || 関数
+引数 || CALLBACKのURLまでPARAMSを|URLへ|URLに
+説明 || AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
+}}}
+
+#page(plugin_browser/POSTフォーム送信時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

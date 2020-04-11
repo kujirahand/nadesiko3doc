@@ -1,0 +1,16 @@
+●『[[円グラフ描画:plugin_browser/円グラフ描画__解説]]』の詳しい解説
+
+円グラフを描画
+
+{{{#nako3(canvas,size=400x300)
+#「#chart_cv」へ描画開始。
+dataset = {
+    labels: ['国語', '算数', '理科', '社会'],
+    datasets: [{
+      label: 'タロウ',
+      data: [78, 50, 30, 90],
+      backgroundColor: ['red','green','yellow','blue']
+    }]
+}
+datasetの円グラフ描画。
+}}}

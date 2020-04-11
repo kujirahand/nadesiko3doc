@@ -1,0 +1,12 @@
+■ JSONデコード (JSONでこーど)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[JSON:plugin_system/JSON]]
+種類 || 関数
+引数 || Sを|Sの|Sから
+説明 || JSON文字列Sをオブジェクトにデコードして返す
+}}}
+
+#page(plugin_system/JSONデコード__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

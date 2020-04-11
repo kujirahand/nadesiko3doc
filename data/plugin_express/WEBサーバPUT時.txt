@@ -1,0 +1,12 @@
+■ WEBサーバPUT時 (WEBさーばPUTしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
+種類 || 関数
+引数 || CALLBACKをURIに|URIへ
+説明 || URIにPOSTメソッドがあった時の処理を指定
+}}}
+
+#page(plugin_express/WEBサーバPUT時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_express]]

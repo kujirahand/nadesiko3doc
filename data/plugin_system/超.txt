@@ -1,0 +1,12 @@
+■ 超 (ちょう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[四則演算:plugin_system/四則演算]]
+種類 || 関数
+引数 || Aが
+説明 || AがB超か
+}}}
+
+#page(plugin_system/超__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

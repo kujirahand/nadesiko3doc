@@ -1,0 +1,12 @@
+■ 来年 (らいねん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || 
+説明 || 来年が何年かを西暦で返す
+}}}
+
+#page(plugin_system/来年__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

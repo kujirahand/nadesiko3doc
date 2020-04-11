@@ -1,0 +1,12 @@
+■ 論理AND (論理AND)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[論理演算:plugin_system/論理演算]]
+種類 || 関数
+引数 || AとBの
+説明 || (ビット演算で)AとBの論理積を返す(v1非互換)。日本語の「AかつB」に相当する
+}}}
+
+#page(plugin_system/論理AND__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

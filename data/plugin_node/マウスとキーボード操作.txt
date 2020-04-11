@@ -1,0 +1,10 @@
+■ [[plugin_node]]/[[マウスとキーボード操作:plugin_node/マウスとキーボード操作]]
+#page(plugin_node__解説)
+
+▲ カテゴリの命令一覧
+
+- [[キー送信:plugin_node/キー送信]] --- Sのキーを送信
+- [[窓アクティブ:plugin_node/窓アクティブ]] --- Sの窓をアクティブにする
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]

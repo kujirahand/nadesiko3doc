@@ -1,0 +1,12 @@
+■ SHIFT_L (SHIFT_L)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[ビット演算:plugin_system/ビット演算]]
+種類 || 関数
+引数 || AをBで
+説明 || VをAビット左へシフトして返す
+}}}
+
+#page(plugin_system/SHIFT_L__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

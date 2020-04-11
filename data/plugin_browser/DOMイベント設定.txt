@@ -1,0 +1,12 @@
+■ DOMイベント設定 (DOMいべんとせってい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || DOMのEVENTにFUNCSTRを|EVENTへ
+説明 || DOMのEVENTになでしこ関数名funcStrのイベントを設定
+}}}
+
+#page(plugin_browser/DOMイベント設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

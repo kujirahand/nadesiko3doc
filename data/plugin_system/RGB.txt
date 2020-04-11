@@ -1,0 +1,12 @@
+■ RGB (RGB)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[算術関数:plugin_system/算術関数]]
+種類 || 関数
+引数 || RとGのBで
+説明 || HTML用のカラーコードを返すRGB(R,G,B)で各値は0-255
+}}}
+
+#page(plugin_system/RGB__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

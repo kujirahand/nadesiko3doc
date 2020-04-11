@@ -1,0 +1,12 @@
+■ FIREBASE値取得時 (FIREBASEしゅとくしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
+種類 || 関数
+引数 || CALLBACKでPATHの
+説明 || パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。
+}}}
+
+#page(plugin_firebase/FIREBASE値取得時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_firebase]]

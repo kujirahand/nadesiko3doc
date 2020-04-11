@@ -1,0 +1,12 @@
+■ ホットキー解除 (ほっときーかいじょ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[ホットキー:plugin_browser/ホットキー]]
+種類 || 関数
+引数 || KEYを|KEYの
+説明 || ホットキーKEYを解除する
+}}}
+
+#page(plugin_browser/ホットキー解除__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

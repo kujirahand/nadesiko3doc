@@ -1,0 +1,12 @@
+■ 配列複製 (はいれつふくせい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[配列操作:plugin_system/配列操作]]
+種類 || 関数
+引数 || Aを
+説明 || 配列Aを複製して返す。
+}}}
+
+#page(plugin_system/配列複製__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

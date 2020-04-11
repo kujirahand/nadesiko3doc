@@ -1,0 +1,11 @@
+■ CR (CR)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[システム定数:plugin_system/システム定数]]
+種類 || 定数
+初期値 || '\r'
+}}}
+
+#page(plugin_system/CR__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

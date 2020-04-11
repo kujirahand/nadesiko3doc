@@ -1,0 +1,7 @@
+●『[[FIREBASEパス参照:plugin_firebase/FIREBASEパス参照__解説]]』の詳しい解説
+
+データベースのパスPATHを参照
+
+{{{
+# 準備中
+}}}

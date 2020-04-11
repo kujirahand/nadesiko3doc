@@ -1,0 +1,24 @@
+■SQLITE3閉 (SQLITE3とじる)
+
+{{{#csv(flag=||)
+プラグイン名 || [[plugin_node]]/[[SQLite3:plugin_node/SQLite3]]
+種類 || 関数
+引数 || 
+説明 || アクティブなSQlite3のデータベースを閉じる
+}}}
+
+▲詳しい説明
+
+なし
+
+●利用例
+
+なし
+
+●関連する項目
+
+- [[SQLITE3開:plugin_node/SQLITE3開]] --- SQlite3のデータベースを開いて、データベースオブジェクトを返す
+- [[SQLITE3閉:plugin_node/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
+- [[SQLITE3切替:plugin_node/SQLITE3切替]] --- アクティブなSQlite3のデータベースをDB(SQLITE3開くで開いたもの)に切り替える
+- [[SQLITE3実行後:plugin_node/SQLITE3実行後]] --- SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
+- [[SQLITE3取得後:plugin_node/SQLITE3取得後]] --- SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。

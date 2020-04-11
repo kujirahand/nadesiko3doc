@@ -1,0 +1,12 @@
+■ WSサーバ受信時 (WSさーばじゅしんしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
+種類 || 関数
+引数 || CALLBACKで
+説明 || WSサーバでメッセージを受信した時に実行される。受信データは『対象』に代入される
+}}}
+
+#page(plugin_websocket/WSサーバ受信時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_websocket]]

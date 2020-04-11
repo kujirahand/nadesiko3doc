@@ -1,0 +1,12 @@
+■ 表CSV変換 (ひょうCSVへんかん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[CSV操作:plugin_system/CSV操作]]
+種類 || 関数
+引数 || Aを
+説明 || 二次元配列AをCSV形式に変換して返す
+}}}
+
+#page(plugin_system/表CSV変換__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

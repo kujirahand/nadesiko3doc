@@ -1,0 +1,12 @@
+■ 終了 (しゅうりょう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[Nodeプロセス:plugin_node/Nodeプロセス]]
+種類 || 関数
+引数 || 
+説明 || Nodeでプログラム実行を強制終了する
+}}}
+
+#page(plugin_node/終了__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

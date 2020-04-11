@@ -1,0 +1,1 @@
+[[plugin_browser:plugin_browser__解説]]とは、なでしこv3のWebブラウザ用のプラグイン。ブラウザ版でのみ利用できます。

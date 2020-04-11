@@ -1,0 +1,11 @@
+■ 波カッコ (なみかっこ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[システム定数:plugin_system/システム定数]]
+種類 || 定数
+初期値 || '{'
+}}}
+
+#page(plugin_system/波カッコ__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

@@ -1,0 +1,12 @@
+■ [[plugin_system]]/[[置換・トリム:plugin_system/置換・トリム]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[置換:plugin_system/置換]] --- 文字列Sのうち文字列AをBに全部置換して返す
+- [[単置換:plugin_system/単置換]] --- 文字列Sのうち、最初に出現するAだけをBに置換して返す
+- [[トリム:plugin_system/トリム]] --- 文字列Sの前後にある空白を削除する
+- [[空白除去:plugin_system/空白除去]] --- 文字列Sの前後にある空白を削除する
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

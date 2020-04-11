@@ -1,0 +1,158 @@
+■ plugin_browser - なでしこ3 プラグイン
+#page(plugin_browser__解説)
+
+▲[[plugin_browser/色定数]]
+- [[RGB:plugin_browser/RGB]] --- 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
+- [[色混:plugin_browser/色混]] --- 配列で[RR,GG,BB]を指定して色を混ぜて#RRGGBB形式の値を返す
+▲[[plugin_browser/システム]]
+- [[終:plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
+▲[[plugin_browser/ダイアログ]]
+- [[言:plugin_browser/言]] --- メッセージダイアログにSを表示
+- [[尋:plugin_browser/尋]] --- メッセージSと入力ボックスを出して尋ねる
+- [[二択:plugin_browser/二択]] --- メッセージSと[OK]と[キャンセル]のダイアログを出して尋ねる
+▲[[plugin_browser/ブラウザ操作]]
+- [[ブラウザ移動:plugin_browser/ブラウザ移動]] --- 任意のURLにブラウザ移動(ただし移動後スクリプトの実行は停止する)
+- [[ブラウザ戻:plugin_browser/ブラウザ戻]] --- 任意のURLにブラウザ移動(ただし移動後スクリプトの実行は停止する)
+▲[[plugin_browser/AJAXとHTTP]]
+- [[AJAX送信時:plugin_browser/AJAX送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[GET送信時:plugin_browser/GET送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[POSTデータ生成:plugin_browser/POSTデータ生成]] --- 連想配列をkey=value&key=value...の形式に変換する
+- [[POST送信時:plugin_browser/POST送信時]] --- AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
+- [[POSTフォーム送信時:plugin_browser/POSTフォーム送信時]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
+- [[AJAX失敗時:plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[AJAXオプション設定:plugin_browser/AJAXオプション設定]] --- Ajax命令でオプションを設定
+- [[AJAX送信:plugin_browser/AJAX送信]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[HTTP取得:plugin_browser/HTTP取得]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[POST送信:plugin_browser/POST送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[POSTフォーム送信:plugin_browser/POSTフォーム送信]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+▲[[plugin_browser/DOM操作]]
+- [[DOM要素ID取得:plugin_browser/DOM要素ID取得]] --- DOMの要素をIDを指定して取得
+- [[DOM要素取得:plugin_browser/DOM要素取得]] --- DOMの要素をクエリqで取得して返す
+- [[DOM要素全取得:plugin_browser/DOM要素全取得]] --- DOMの要素をクエリqで全部取得して返す
+- [[タグ一覧取得:plugin_browser/タグ一覧取得]] --- 任意のタグの一覧を取得して返す
+- [[DOMイベント設定:plugin_browser/DOMイベント設定]] --- DOMのEVENTになでしこ関数名funcStrのイベントを設定
+- [[DOMイベント追加:plugin_browser/DOMイベント追加]] --- DOMのEVENTになでしこ関数名funcStrのイベントを追加
+- [[DOMイベント削除:plugin_browser/DOMイベント削除]] --- DOMのEVENTからなでしこ関数名funcStrのイベントを削除
+- [[DOMイベント発火時:plugin_browser/DOMイベント発火時]] --- DOMのEVENTが発火した時にCALLBACKを実行するように設定
+- [[DOMイベント処理停止:plugin_browser/DOMイベント処理停止]] --- キーイベントやマウスイベントで、元々ブラウザが行う処理を中止する
+- [[クリック時:plugin_browser/クリック時]] --- 無名関数FでDOMをクリックした時に実行するイベントを設定
+- [[読込時:plugin_browser/読込時]] --- 無名関数FでDOMを読み込んだ時に実行するイベントを設定
+- [[フォーム送信時:plugin_browser/フォーム送信時]] --- 無名関数Fでフォームを送信した時に実行するイベントを設定
+- [[キー押時:plugin_browser/キー押時]] --- 無名関数FでDOMに対してキーを押した時に実行するイベントを設定。『押されたキー』が設定される。
+- [[キー離時:plugin_browser/キー離時]] --- 無名関数FでDOMに対してキーを離した時に実行するイベントを設定。『押されたキー』が設定される。
+- [[キータイピング時:plugin_browser/キータイピング時]] --- 無名関数FでDOMに対してキーをプレスした時に実行するイベントを設定。『押されたキー』が設定される。
+- [[マウス押時:plugin_browser/マウス押時]] --- 無名関数FでDOMに対してマウスボタンを押した時に実行するイベントを設定。『マウスX』『マウスY』に座標が設定される。『対象』にイベントDOM。『対象イベント』にイベント引数。
+- [[マウス移動時:plugin_browser/マウス移動時]] --- 無名関数FでDOMに対してマウスカーソルが移動した時に実行するイベントを設定。『マウスX』『マウスY』に座標が設定される。『対象』にイベントDOM。『対象イベント』にイベント引数。
+- [[マウス離時:plugin_browser/マウス離時]] --- 無名関数FでDOMに対してマウスボタンを離した時に実行するイベントを設定。『マウスX』『マウスY』に座標が設定される。『対象』にイベントDOM。『対象イベント』にイベント引数。
+- [[タッチイベント計算:plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『対象』『対象イベント』が設定される。
+- [[タッチ開始時:plugin_browser/タッチ開始時]] --- 無名関数FでDOMに対してタッチを開始した時に実行するイベントを設定。
+- [[タッチ時:plugin_browser/タッチ時]] --- 無名関数FでDOMに対してタッチして指を動かした時に実行するイベントを設定。
+- [[タッチ終了時:plugin_browser/タッチ終了時]] --- 無名関数FでDOMに対してタッチして指を離した時のイベントを設定。
+- [[タッチキャンセル時:plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
+- [[DOMテキスト設定:plugin_browser/DOMテキスト設定]] --- DOMにテキストを設定
+- [[DOMテキスト取得:plugin_browser/DOMテキスト取得]] --- DOMのテキストを取得
+- [[DOM_HTML設定:plugin_browser/DOM_HTML設定]] --- DOMにHTML文字列を設定
+- [[DOM_HTML取得:plugin_browser/DOM_HTML取得]] --- DOMのHTML文字列を取得
+- [[テキスト設定:plugin_browser/テキスト設定]] --- DOMのテキストにVを設定
+- [[テキスト取得:plugin_browser/テキスト取得]] --- DOMのテキストを取得
+- [[HTML設定:plugin_browser/HTML設定]] --- DOMのHTMLにVを設定
+- [[HTML取得:plugin_browser/HTML取得]] --- DOMのテキストを取得
+- [[DOM属性設定:plugin_browser/DOM属性設定]] --- DOMの属性Sに値Vを設定
+- [[DOM属性取得:plugin_browser/DOM属性取得]] --- DOMの属性Sを取得
+- [[DOMスタイル設定:plugin_browser/DOMスタイル設定]] --- DOMのスタイルAに値Bを設定
+- [[DOMスタイル一括設定:plugin_browser/DOMスタイル一括設定]] --- DOMに(オブジェクト型で)スタイル情報を一括設定
+- [[DOMスタイル取得:plugin_browser/DOMスタイル取得]] --- DOMのSTYLEの値を取得
+- [[DOMスタイル一括取得:plugin_browser/DOMスタイル一括取得]] --- DOMのSTYLE(配列で複数指定)の値を取得
+- [[DOM要素作成:plugin_browser/DOM要素作成]] --- DOMにTAGの新規要素を作成
+- [[DOM子要素追加:plugin_browser/DOM子要素追加]] --- DOMの要素PAの子へ要素ELを追加してPAを返す
+- [[DOM子要素削除:plugin_browser/DOM子要素削除]] --- DOMの要素PAの子から要素ELを削除してPAを返す
+▲[[plugin_browser/DOM部品操作]]
+- [[DOM親要素設定:plugin_browser/DOM親要素設定]] --- 「ボタン作成」「エディタ作成」などのDOM要素を追加する対象を指定(デフォルトはdocument)して親要素のDOMオブジェクトを返す
+- [[ボタン作成:plugin_browser/ボタン作成]] --- ラベルlabelを持つbutton要素を追加しDOMオブジェクトを返す
+- [[エディタ作成:plugin_browser/エディタ作成]] --- textの値を持つテキストボックス(input[type='text'])の要素を追加しDOMオブジェクトを返す
+- [[テキストエリア作成:plugin_browser/テキストエリア作成]] --- textの値を持つtextarea要素を追加しDOMオブジェクトを返す
+- [[ラベル作成:plugin_browser/ラベル作成]] --- textの値を持つラベル(span要素)を追加しDOMオブジェクトを返す
+- [[改行作成:plugin_browser/改行作成]] --- 改行(br要素)を追加しDOMオブジェクトを返す
+- [[チェックボックス作成:plugin_browser/チェックボックス作成]] --- textのラベルを持つチェックボックス(input[type='checkbox'])要素を追加しDOMオブジェクトを返す
+- [[セレクトボックス作成:plugin_browser/セレクトボックス作成]] --- 配列optionsの選択肢を持つselect要素を追加しDOMオブジェクトを返す
+▲[[plugin_browser/HTML操作]]
+- [[HTML変換:plugin_browser/HTML変換]] --- 文字列をHTMLに変換して返す
+▲[[plugin_browser/URLエンコード]]
+- [[URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
+- [[URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
+- [[URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
+▲[[plugin_browser/ローカルストレージ]]
+- [[保存:plugin_browser/保存]] --- ブラウザのlocalStorageのキーKに文字列Vを保存
+- [[開:plugin_browser/開]] --- ブラウザのlocalStorageからVを読む
+- [[存在:plugin_browser/存在]] --- ブラウザのlocalStorageにKEYが存在しているか調べる
+- [[ローカルストレージ保存:plugin_browser/ローカルストレージ保存]] --- ブラウザのlocalStorageのKにVを保存
+- [[ローカルストレージ読:plugin_browser/ローカルストレージ読]] --- ブラウザのlocalStorageからVを読む
+- [[ローカルストレージキー列挙:plugin_browser/ローカルストレージキー列挙]] --- ブラウザのlocalStorageのキー一覧を返す
+- [[ローカルストレージキー削除:plugin_browser/ローカルストレージキー削除]] --- ブラウザのlocalStorageのkeyを削除
+- [[ローカルストレージ全削除:plugin_browser/ローカルストレージ全削除]] --- ブラウザのlocalStorageのデータを全部削除する
+▲[[plugin_browser/描画]]
+- [[描画開始:plugin_browser/描画開始]] --- 描画先にCanvas(文字列でクエリの指定も可)を指定して描画API(2D)の利用準備する
+- [[線色設定:plugin_browser/線色設定]] --- Canvasの線の描画色(lineStyle)を指定する
+- [[塗色設定:plugin_browser/塗色設定]] --- Canvasへの描画色(fillStyle)を指定する
+- [[線描画:plugin_browser/線描画]] --- [x1, y1]から[x2, y2]まで線を描画する
+- [[線太設定:plugin_browser/線太設定]] --- vに線の太さ設定
+- [[四角描画:plugin_browser/四角描画]] --- [x, y, w, h]で矩形を描画する
+- [[描画クリア:plugin_browser/描画クリア]] --- [x, y, w, h]の範囲を描画クリア
+- [[円描画:plugin_browser/円描画]] --- [x, y]へrの円を描画する
+- [[楕円描画:plugin_browser/楕円描画]] --- [x, y, x幅, y幅, 回転, 開始角, 終了角, 左回転か]に楕円を描画する
+- [[多角形描画:plugin_browser/多角形描画]] --- 座標配列vを指定して多角形を描画する
+- [[画像描画:plugin_browser/画像描画]] --- ファイル名F(またはImage)の画像を[sx, sy, sw, sh]の[dx, dy, dw, dh]へ描画し、Imageを返す
+- [[描画フォント設定:plugin_browser/描画フォント設定]] --- 描画フォントを指定する(CSSのフォント設定と同じ 例「36px Aria」)
+- [[文字描画:plugin_browser/文字描画]] --- [x, y]へテキストSを描画する(描画フォント設定でサイズなど指定)
+▲[[plugin_browser/位置情報]]
+- [[位置情報取得時:plugin_browser/位置情報取得時]] --- 位置情報を取得してコールバック関数内で変数「対象」に配列で[緯度,経度]を返す
+- [[位置情報監視時:plugin_browser/位置情報監視時]] --- 位置情報を監視してIDを返す。引数に指定したコールバック関数内で変数「対象」に配列で[緯度,経度]を返す
+- [[位置情報監視停止:plugin_browser/位置情報監視停止]] --- 『位置情報監視時』で開始した監視を停止する
+▲[[plugin_browser/音声合成]]
+- [[話:plugin_browser/話]] --- 音声合成APIを使って、Sを発話する
+- [[話終時:plugin_browser/話終時]] --- 音声合成APIを使って、Sを発話し発話した後でcallbackを実行
+- [[話者一覧取得:plugin_browser/話者一覧取得]] --- 音声合成APIの話者一覧を得る
+- [[話者設定:plugin_browser/話者設定]] --- 音声合成APIの話者を指定する
+- [[話者詳細設定:plugin_browser/話者詳細設定]] --- 音声合成APIの話者の設定をオブジェクト形式で設定する。『速度,声高,ピッチ,音量』を指定
+▲[[plugin_browser/WebSocket]]
+- [[WS接続完了時:plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
+- [[WS受信時:plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
+- [[WSエラー発生時:plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
+- [[WS接続:plugin_browser/WS接続]] --- WebSocketサーバsに接続する
+- [[WS送信:plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
+- [[WS切断:plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
+▲[[plugin_browser/オーディオ]]
+- [[オーディオ開:plugin_browser/オーディオ開]] --- オーディオファイルのURLを指定して、オーディオを読み込み、Audioオブジェクトを返す
+- [[オーディオ再生:plugin_browser/オーディオ再生]] --- AudioオブジェクトOBJを指定してオーディをを再生
+- [[オーディオ停止:plugin_browser/オーディオ停止]] --- AudioオブジェクトOBJを指定してオーディをを停止
+▲[[plugin_browser/ホットキー]]
+- [[ホットキー登録:plugin_browser/ホットキー登録]] --- ホットキーKEYにEVENTを登録する
+- [[ホットキー解除:plugin_browser/ホットキー解除]] --- ホットキーKEYを解除する
+▲[[plugin_browser/グラフ描画_CHARTJS]]
+- [[グラフ描画:plugin_browser/グラフ描画]] --- Chart.jsを利用して、DATAのグラフを描画
+- [[線グラフ描画:plugin_browser/線グラフ描画]] --- 線グラフを描画
+- [[棒グラフ描画:plugin_browser/棒グラフ描画]] --- 棒グラフを描画
+- [[横棒グラフ描画:plugin_browser/横棒グラフ描画]] --- 横棒グラフを描画
+- [[円グラフ描画:plugin_browser/円グラフ描画]] --- 円グラフを描画
+
+
+- [[色定数:plugin_browser/色定数]]
+- [[システム:plugin_browser/システム]]
+- [[ダイアログ:plugin_browser/ダイアログ]]
+- [[ブラウザ操作:plugin_browser/ブラウザ操作]]
+- [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
+- [[DOM操作:plugin_browser/DOM操作]]
+- [[DOM部品操作:plugin_browser/DOM部品操作]]
+- [[HTML操作:plugin_browser/HTML操作]]
+- [[URLエンコード:plugin_browser/URLエンコード]]
+- [[ローカルストレージ:plugin_browser/ローカルストレージ]]
+- [[描画:plugin_browser/描画]]
+- [[位置情報:plugin_browser/位置情報]]
+- [[音声合成:plugin_browser/音声合成]]
+- [[WebSocket:plugin_browser/WebSocket]]
+- [[オーディオ:plugin_browser/オーディオ]]
+- [[ホットキー:plugin_browser/ホットキー]]
+- [[グラフ描画_CHARTJS:plugin_browser/グラフ描画_CHARTJS]]
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]]

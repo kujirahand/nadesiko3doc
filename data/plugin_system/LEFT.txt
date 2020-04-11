@@ -1,0 +1,12 @@
+■ LEFT (LEFT)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || SのCNTだけ|Sで
+説明 || 文字列Sの左端からCNT文字を抽出する
+}}}
+
+#page(plugin_system/LEFT__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

@@ -1,0 +1,12 @@
+■ 話 (はなす)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[音声合成:plugin_browser/音声合成]]
+種類 || 関数
+引数 || Sと|Sを|Sの
+説明 || 音声合成APIを使って、Sを発話する
+}}}
+
+#page(plugin_browser/話__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

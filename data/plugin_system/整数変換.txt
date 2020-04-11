@@ -1,0 +1,12 @@
+■ 整数変換 (せいすうへんかん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[型変換:plugin_system/型変換]]
+種類 || 関数
+引数 || Vを
+説明 || 値Vを整数に変換
+}}}
+
+#page(plugin_system/整数変換__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

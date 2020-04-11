@@ -1,0 +1,12 @@
+■ MYSQL閉 (MYSQLとじる)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_mysql]] > [[MySQL:plugin_mysql/MySQL]]
+種類 || 関数
+引数 || 
+説明 || データベースを閉じる
+}}}
+
+#page(plugin_mysql/MYSQL閉__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_mysql]]

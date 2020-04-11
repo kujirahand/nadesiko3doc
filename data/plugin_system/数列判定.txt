@@ -1,0 +1,12 @@
+■ 数列判定 (すうれつかはんてい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字種類:plugin_system/文字種類]]
+種類 || 関数
+引数 || Sを|Sが
+説明 || 文字列S全部が数字か判定
+}}}
+
+#page(plugin_system/数列判定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

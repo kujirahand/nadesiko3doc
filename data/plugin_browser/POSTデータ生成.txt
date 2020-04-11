@@ -1,0 +1,12 @@
+■ POSTデータ生成 (POSTでーたせいせい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
+種類 || 関数
+引数 || PARAMSの|PARAMSを
+説明 || 連想配列をkey=value&key=value...の形式に変換する
+}}}
+
+#page(plugin_browser/POSTデータ生成__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

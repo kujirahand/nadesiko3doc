@@ -1,0 +1,11 @@
+■ 茶色 (ちゃいろ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[色定数:plugin_browser/色定数]]
+種類 || 定数
+初期値 || 'maroon'
+}}}
+
+#page(plugin_browser/茶色__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

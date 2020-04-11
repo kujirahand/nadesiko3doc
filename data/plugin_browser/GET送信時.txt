@@ -1,0 +1,12 @@
+■ GET送信時 (GETそうしんしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
+種類 || 関数
+引数 || CALLBACKのURLまで|URLへ|URLに
+説明 || 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+}}}
+
+#page(plugin_browser/GET送信時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

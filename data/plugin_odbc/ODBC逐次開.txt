@@ -1,0 +1,12 @@
+■ ODBC逐次開 (ODBCちくじひらく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
+種類 || 関数
+引数 || Sを|Sの|Sで
+説明 || 逐次実行構文にて、ODBCのデータベースを開く
+}}}
+
+#page(plugin_odbc/ODBC逐次開__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_odbc]]

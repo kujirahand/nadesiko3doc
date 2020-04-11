@@ -1,0 +1,12 @@
+■ 空白埋 (くうはくうめ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[指定形式:plugin_system/指定形式]]
+種類 || 関数
+引数 || VをAで
+説明 || 文字列VをA桁の空白で埋める
+}}}
+
+#page(plugin_system/空白埋__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

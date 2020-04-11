@@ -1,0 +1,12 @@
+■ WSサーバ全送信 (WSさーばぜんそうしん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
+種類 || 関数
+引数 || Sを
+説明 || WSサーバで全員にメッセージSを送信する
+}}}
+
+#page(plugin_websocket/WSサーバ全送信__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_websocket]]

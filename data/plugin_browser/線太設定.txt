@@ -1,0 +1,12 @@
+■ 線太設定 (せんふとさせってい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[描画:plugin_browser/描画]]
+種類 || 関数
+引数 || Vに|Vへ
+説明 || vに線の太さ設定
+}}}
+
+#page(plugin_browser/線太設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

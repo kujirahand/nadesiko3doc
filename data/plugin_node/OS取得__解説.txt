@@ -1,0 +1,17 @@
+●『[[OS取得:plugin_node/OS取得__解説]]』の詳しい解説
+
+OSプラットフォームを返す。具体的には、以下のような値が得られる。
+
+| 値 | 説明
+| darwin | macOS
+| win32  | Windows
+| linux  | Linux (Raspberry Piなど含む)
+
+▲利用例
+
+{{{
+OS取得して表示。
+}}}
+
+
+

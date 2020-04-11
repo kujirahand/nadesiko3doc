@@ -1,0 +1,18 @@
+■ [[plugin_system]]/[[三角関数:plugin_system/三角関数]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[SIN:plugin_system/SIN]] --- ラジアン単位VのSINを求める
+- [[COS:plugin_system/COS]] --- ラジアン単位VのCOSを求める
+- [[TAN:plugin_system/TAN]] --- ラジアン単位VのTANを求める
+- [[ARCSIN:plugin_system/ARCSIN]] --- ラジアン単位VのARCSINを求める
+- [[ARCCOS:plugin_system/ARCCOS]] --- ラジアン単位VのARCCOSを求める
+- [[ARCTAN:plugin_system/ARCTAN]] --- ラジアン単位VのARCTANを求める
+- [[RAD2DEG:plugin_system/RAD2DEG]] --- ラジアンから度に変換
+- [[DEG2RAD:plugin_system/DEG2RAD]] --- 度からラジアンに変換
+- [[度変換:plugin_system/度変換]] --- ラジアンから度に変換
+- [[ラジアン変換:plugin_system/ラジアン変換]] --- 度からラジアンに変換
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

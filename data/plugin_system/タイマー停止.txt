@@ -1,0 +1,12 @@
+■ タイマー停止 (たいまーていし)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || TIMERIDの|TIMERIDで
+説明 || 『秒毎』や『秒タイマー開始』で開始したタイマーを停止する
+}}}
+
+#page(plugin_system/タイマー停止__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

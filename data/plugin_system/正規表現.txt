@@ -1,0 +1,12 @@
+■ [[plugin_system]]/[[正規表現:plugin_system/正規表現]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[正規表現マッチ:plugin_system/正規表現マッチ]] --- 文字列Aを正規表現パターンBでマッチして結果を返す(パターンBは「/pat/opt」の形式で指定。optにgの指定がなければ部分マッチが『抽出文字列』に入る)
+- [[抽出文字列:plugin_system/抽出文字列]] --- 定数
+- [[正規表現置換:plugin_system/正規表現置換]] --- 文字列Sの正規表現パターンAをBに置換して結果を返す(パターンAは/pat/optで指定)
+- [[正規表現区切:plugin_system/正規表現区切]] --- 文字列Sを正規表現パターンAで区切って配列で返す(パターンAは/pat/optで指定)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

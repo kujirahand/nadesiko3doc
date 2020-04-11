@@ -1,0 +1,16 @@
+●『[[ODBC実行:plugin_odbc/ODBC実行__解説]]』の詳しい解説
+
+逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+
+▲利用例
+
+{{{
+!「nadesiko3-odbc」を取り込む。
+
+「DSN=test;UID=kujira;PWD=****」をODBC開く。
+「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でODBC実行。
+「INSERT INTO tt (id,value) VALUES (?,?)」を[1, 30]でODBC実行。
+「INSERT INTO tt (id,value) VALUES (?,?)」を[2, 50]でODBC実行。
+「SELECT * FROM tt」を[]でODBC実行して表示。
+「DROP TABLE tt」を[]でODBC実行。
+}}}

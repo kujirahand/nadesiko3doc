@@ -1,0 +1,12 @@
+■ WEBサーバヘッダ出力 (WEBさーばへっだしゅつりょく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
+種類 || 関数
+引数 || OBJを|OBJの
+説明 || クライアントにヘッダOBJを出力
+}}}
+
+#page(plugin_express/WEBサーバヘッダ出力__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_express]]

@@ -1,0 +1,7 @@
+●『[[POSTデータ生成:plugin_browser/POSTデータ生成__解説]]』の詳しい解説
+
+連想配列をkey=value&key=value...の形式に変換する
+
+{{{
+# 準備中
+}}}

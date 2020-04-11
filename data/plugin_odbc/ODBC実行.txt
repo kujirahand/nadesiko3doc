@@ -1,0 +1,12 @@
+■ ODBC実行 (SQLITE3をしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
+種類 || 関数
+引数 || SQLをPARAMSで
+説明 || 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+}}}
+
+#page(plugin_odbc/ODBC実行__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_odbc]]

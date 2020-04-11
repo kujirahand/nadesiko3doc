@@ -1,0 +1,1 @@
+[[plugin_node:plugin_node__解説]]とは、なでしこv3のコンソール版のプラグイン。

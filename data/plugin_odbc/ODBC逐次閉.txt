@@ -1,0 +1,12 @@
+■ ODBC逐次閉 (ODBCちくじとじる)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
+種類 || 関数
+引数 || 
+説明 || 逐次実行構文でODBCで開いているデータベースを閉じる
+}}}
+
+#page(plugin_odbc/ODBC逐次閉__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_odbc]]

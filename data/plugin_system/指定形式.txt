@@ -1,0 +1,11 @@
+■ [[plugin_system]]/[[指定形式:plugin_system/指定形式]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[通貨形式:plugin_system/通貨形式]] --- 数値Vを三桁ごとにカンマで区切る
+- [[ゼロ埋:plugin_system/ゼロ埋]] --- 数値VをA桁の0で埋める
+- [[空白埋:plugin_system/空白埋]] --- 文字列VをA桁の空白で埋める
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

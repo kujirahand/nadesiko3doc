@@ -1,0 +1,12 @@
+■ 日付加算 (ひづけかさん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || SにAを
+説明 || 日付SにAを加えて返す。Aには「(+｜-)yyyy/mm/dd」で指定する。
+}}}
+
+#page(plugin_system/日付加算__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

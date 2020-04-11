@@ -1,0 +1,7 @@
+●『[[DOMイベント追加:plugin_browser/DOMイベント追加__解説]]』の詳しい解説
+
+DOMのEVENTになでしこ関数名funcStrのイベントを追加
+
+{{{
+# 準備中
+}}}

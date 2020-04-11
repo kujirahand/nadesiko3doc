@@ -1,0 +1,7 @@
+●『[[タイムゾーン設定:plugin_system/タイムゾーン設定__解説]]』の詳しい解説
+
+タイムゾーンTをセットする(v1非互換)(タイムゾーンの一覧は https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List 参照)
+
+{{{
+# 準備中
+}}}

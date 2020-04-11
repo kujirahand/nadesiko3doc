@@ -1,0 +1,12 @@
+■ WEBサーバステータス出力 (WEBさーばすてーたすしゅつりょく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
+種類 || 関数
+引数 || NOを|NOの
+説明 || クライアントにステータスNOを出力
+}}}
+
+#page(plugin_express/WEBサーバステータス出力__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_express]]

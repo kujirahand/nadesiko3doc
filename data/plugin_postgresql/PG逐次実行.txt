@@ -1,0 +1,12 @@
+■ PG逐次実行 (PGちくじじっこう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
+種類 || 関数
+引数 || SQLをPARAMSで
+説明 || 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
+}}}
+
+#page(plugin_postgresql/PG逐次実行__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_postgresql]]

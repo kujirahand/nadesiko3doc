@@ -1,0 +1,12 @@
+■ 変数型確認 (へんすうかたかくにん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[型変換:plugin_system/型変換]]
+種類 || 関数
+引数 || Vの
+説明 || 変数Vの型を返す
+}}}
+
+#page(plugin_system/変数型確認__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

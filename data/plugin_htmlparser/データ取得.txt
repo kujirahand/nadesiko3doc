@@ -1,0 +1,12 @@
+■ データ取得 (でーたしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_htmlparser]] > [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+種類 || 関数
+引数 || DOMからKを|DOMの
+説明 || DOMのデータkを取得する
+}}}
+
+#page(plugin_htmlparser/データ取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_htmlparser]]

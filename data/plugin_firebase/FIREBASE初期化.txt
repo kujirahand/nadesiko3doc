@@ -1,0 +1,12 @@
+■ FIREBASE初期化 (FIREBASEしょきか)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
+種類 || 関数
+引数 || CONFIGで
+説明 || アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
+}}}
+
+#page(plugin_firebase/FIREBASE初期化__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_firebase]]

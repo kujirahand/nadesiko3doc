@@ -1,0 +1,12 @@
+■ WS送信 (WSそうしん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
+種類 || 関数
+引数 || Sを|Sと
+説明 || アクティブなWebSocketへsを送信する
+}}}
+
+#page(plugin_browser/WS送信__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

@@ -1,0 +1,19 @@
+●『[[線グラフ描画:plugin_browser/線グラフ描画__解説]]』の詳しい解説
+
+線グラフを描画。セットアップは[[こちらを参照:plugin_browser/グラフ描画]]。
+
+{{{#nako3(canvas,size=400x300)
+#「#chart_cv」へ描画開始。
+dataset = {
+    labels: ['国語', '算数', '理科', '社会'],
+    datasets: [{
+      label: 'タロウ',
+      data: [78, 50, 30, 90],
+      backgroundColor: 'rgba(255,0,0,0.5)'
+    },{
+      label: 'ジロウ',
+      data: [90, 80, 10, 90],
+      backgroundColor: 'rgba(25,25,255,0.5)'
+    }]}
+datasetの線グラフ描画。
+}}}

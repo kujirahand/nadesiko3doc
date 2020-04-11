@@ -1,0 +1,14 @@
+■ [[plugin_websocket]]/[[see https::plugin_websocket/see https://www.npmjs.com/package/ws#external-https-server]]
+#page(plugin_websocket__解説)
+
+▲ カテゴリの命令一覧
+
+- [[WSサーバ起動成功時:plugin_websocket/WSサーバ起動成功時]] --- WSサーバ起動が成功した時にcallbackを実行
+- [[WSサーバ起動失敗時:plugin_websocket/WSサーバ起動失敗時]] --- WSサーバ起動が失敗した時にcallbackを実行
+- [[WSサーバ接続時:plugin_websocket/WSサーバ接続時]] --- WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
+- [[WSサーバ受信時:plugin_websocket/WSサーバ受信時]] --- WSサーバでメッセージを受信した時に実行される。受信データは『対象』に代入される
+- [[WSサーバ全送信:plugin_websocket/WSサーバ全送信]] --- WSサーバで全員にメッセージSを送信する
+- [[WSクライアント一覧取得:plugin_websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_websocket:plugin_websocket]]

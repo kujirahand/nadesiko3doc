@@ -1,0 +1,13 @@
+■ plugin_mssql - なでしこ3 [[拡張プラグイン]]
+#page(plugin_mssql__解説)
+
+▲[[plugin_mssql/SQLServer]]
+- [[MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
+- [[MSSQL逐次実行:plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+- [[MSSQL逐次閉:plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
+
+
+- [[SQLServer:plugin_mssql/SQLServer]]
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]]

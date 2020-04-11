@@ -1,0 +1,11 @@
+■ タッチ配列 (たっちはいれつ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 定数
+初期値 || []
+}}}
+
+#page(plugin_browser/タッチ配列__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

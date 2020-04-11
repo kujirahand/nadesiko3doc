@@ -1,0 +1,12 @@
+■ DOMテキスト取得 (DOMてきすとしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || DOMの|DOMから
+説明 || DOMのテキストを取得
+}}}
+
+#page(plugin_browser/DOMテキスト取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

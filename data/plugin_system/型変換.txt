@@ -1,0 +1,20 @@
+■ [[plugin_system]]/[[型変換:plugin_system/型変換]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[変数型確認:plugin_system/変数型確認]] --- 変数Vの型を返す
+- [[TYPEOF:plugin_system/TYPEOF]] --- 変数Vの型を返す
+- [[文字列変換:plugin_system/文字列変換]] --- 値Vを文字列に変換
+- [[TOSTR:plugin_system/TOSTR]] --- 値Vを文字列に変換
+- [[整数変換:plugin_system/整数変換]] --- 値Vを整数に変換
+- [[TOINT:plugin_system/TOINT]] --- 値Vを整数に変換
+- [[実数変換:plugin_system/実数変換]] --- 値Vを実数に変換
+- [[TOFLOAT:plugin_system/TOFLOAT]] --- 値Vを実数に変換
+- [[INT:plugin_system/INT]] --- 値Vを整数に変換
+- [[FLOAT:plugin_system/FLOAT]] --- 値Vを実数に変換
+- [[NAN判定:plugin_system/NAN判定]] --- 値VがNaNかどうかを判定
+- [[HEX:plugin_system/HEX]] --- 値Vを16進数に変換
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

@@ -1,0 +1,12 @@
+■ 文字挿入 (もじそうにゅう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || SでIにAを|SのIへ
+説明 || 文字列SのI文字目に文字列Aを挿入する
+}}}
+
+#page(plugin_system/文字挿入__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

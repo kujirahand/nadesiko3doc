@@ -1,0 +1,16 @@
+■ [[plugin_browser]]/[[音声合成:plugin_browser/音声合成]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[話:plugin_browser/話]] --- 音声合成APIを使って、Sを発話する
+- [[話終時:plugin_browser/話終時]] --- 音声合成APIを使って、Sを発話し発話した後でcallbackを実行
+- [[話者一覧取得:plugin_browser/話者一覧取得]] --- 音声合成APIの話者一覧を得る
+- [[話者設定:plugin_browser/話者設定]] --- 音声合成APIの話者を指定する
+- [[話者速度:plugin_browser/話者速度]] --- 定数
+- [[話者声高:plugin_browser/話者声高]] --- 定数
+- [[話者音量:plugin_browser/話者音量]] --- 定数
+- [[話者詳細設定:plugin_browser/話者詳細設定]] --- 音声合成APIの話者の設定をオブジェクト形式で設定する。『速度,声高,ピッチ,音量』を指定
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

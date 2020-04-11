@@ -1,0 +1,14 @@
+●『[[SQLITE3開:plugin_sqlite3/SQLITE3開__解説]]』の詳しい解説
+
+SQlite3のデータベースを開いて、データベースオブジェクトを返す
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+
+DBファイル=「{母艦パス}/test.sqlite3」
+DBファイルをSQLITE3開く。
+}}}
+
+▲関連
+
+- [[データベースプラグイン]]

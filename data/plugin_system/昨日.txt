@@ -1,0 +1,12 @@
+■ 昨日 (きのう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[日時処理:plugin_system/日時処理]]
+種類 || 関数
+引数 || 
+説明 || 昨日の日付を「YYYY/MM/DD」の形式で返す (v1非互換)
+}}}
+
+#page(plugin_system/昨日__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

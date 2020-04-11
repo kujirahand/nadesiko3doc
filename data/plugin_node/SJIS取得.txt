@@ -1,0 +1,12 @@
+■ SJIS取得 (SJISしゅとく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[文字コード:plugin_node/文字コード]]
+種類 || 関数
+引数 || BUFから|BUFを|BUFで
+説明 || Shift_JISのバイナリバッファを文字列に変換
+}}}
+
+#page(plugin_node/SJIS取得__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

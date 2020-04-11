@@ -1,0 +1,11 @@
+■ [[plugin_browser]]/[[URLエンコード:plugin_browser/URLエンコード]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
+- [[URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
+- [[URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

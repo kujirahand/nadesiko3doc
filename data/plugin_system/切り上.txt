@@ -1,0 +1,38 @@
+■切り上 (きりあげ)
+
+{{{#csv(flag=||)
+プラグイン名 || [[plugin_system]]/[[算術関数:plugin_system/算術関数]]
+種類 || 関数
+引数 || Vを
+説明 || 数値を正の無限大方向へ切り上げて返す。
+}}}
+
+▲詳しい説明
+
+なし
+
+●利用例
+
+なし
+
+●関連する項目
+
+- [[SIGN:plugin_system/SIGN]] --- Vが0なら0を、0超なら1を、0未満なら-1を返す
+- [[ABS:plugin_system/ABS]] --- Vの絶対値を返す
+- [[EXP:plugin_system/EXP]] --- e（自然対数の底）の A 乗の値を返す
+- [[HYPOT:plugin_system/HYPOT]] --- 直角三角形の二辺の長さA,Bから斜辺を求めて返す。
+- [[LN:plugin_system/LN]] --- 実数式 A の自然対数（Ln(A) = 1）を返す
+- [[LOG:plugin_system/LOG]] --- Aの自然対数（底はE）を返す
+- [[LOGN:plugin_system/LOGN]] --- 指定された底AでBの対数を計算して返す
+- [[FRAC:plugin_system/FRAC]] --- 実数Aの小数部分を返す
+- [[乱数:plugin_system/乱数]] --- 0から(A-1)までの乱数を返す
+- [[SQRT:plugin_system/SQRT]] --- Aの平方根を返す
+- [[平方根:plugin_system/平方根]] --- Aの平方根を返す
+- [[RGB:plugin_system/RGB]] --- HTML用のカラーコードを返すRGB(R,G,B)で各値は0-255
+- [[ROUND:plugin_system/ROUND]] --- 実数型の値Vを丸めてもっとも近い整数値を返す
+- [[四捨五入:plugin_system/四捨五入]] --- 整数Aの一桁目を丸めて返す。
+- [[CEIL:plugin_system/CEIL]] --- 数値を正の無限大方向へ切り上げて返す。
+- [[切り上:plugin_system/切り上]] --- 数値を正の無限大方向へ切り上げて返す。
+- [[FLOOR:plugin_system/FLOOR]] --- 数値を負の無限大方向へ切り下げて返す。
+- [[切捨:plugin_system/切捨]] --- 数値を負の無限大方向へ切り下げて返す。
+- [[NOT:plugin_system/NOT]] --- 値Vが0ならば1、それ以外ならば0を返す

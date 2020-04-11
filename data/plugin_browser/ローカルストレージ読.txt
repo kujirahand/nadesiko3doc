@@ -1,0 +1,12 @@
+■ ローカルストレージ読 (ろーかるすとれーじよむ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[ローカルストレージ:plugin_browser/ローカルストレージ]]
+種類 || 関数
+引数 || KEYを|KEYから|KEYの
+説明 || ブラウザのlocalStorageからVを読む
+}}}
+
+#page(plugin_browser/ローカルストレージ読__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

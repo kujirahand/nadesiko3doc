@@ -1,0 +1,14 @@
+●『[[SQLITE3実行後:plugin_sqlite3/SQLITE3実行後__解説]]』の詳しい解説
+
+SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。[[無名関数:無名関数について]]と一緒に使うと便利。
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+sqlCreate = 『
+CREATE TABLE IF NOT EXISTS tt 
+  (id INTEGER PRIMARY KEY, value INTEGER);』
+「ファイル名.sqlite3」をSQLITE3開く。
+sqlCreateを[]でSQLITE3実行後には
+　　「実行しました」と表示。
+ここまで。
+}}}

@@ -1,0 +1,15 @@
+■ [[plugin_system]]/[[ビット演算:plugin_system/ビット演算]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[OR:plugin_system/OR]] --- (ビット演算で)AとBの論理和を返す。
+- [[AND:plugin_system/AND]] --- (ビット演算で)AとBの論理積を返す。日本語の「AかつB」に相当する
+- [[XOR:plugin_system/XOR]] --- (ビット演算で)AとBの排他的論理和を返す。
+- [[NOT:plugin_system/NOT]] --- (ビット演算で)vの各ビットを反転して返す。
+- [[SHIFT_L:plugin_system/SHIFT_L]] --- VをAビット左へシフトして返す
+- [[SHIFT_R:plugin_system/SHIFT_R]] --- VをAビット右へシフトして返す(符号を維持する)
+- [[SHIFT_UR:plugin_system/SHIFT_UR]] --- VをAビット右へシフトして返す(符号を維持しない、0で埋める)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

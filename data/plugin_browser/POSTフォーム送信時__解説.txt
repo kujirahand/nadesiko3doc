@@ -1,0 +1,7 @@
+●『[[POSTフォーム送信時:plugin_browser/POSTフォーム送信時__解説]]』の詳しい解説
+
+AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
+
+{{{
+# 準備中
+}}}

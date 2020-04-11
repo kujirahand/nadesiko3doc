@@ -1,0 +1,13 @@
+■ [[plugin_system]]/[[特殊命令:plugin_system/特殊命令]]
+#page(plugin_system__解説)
+
+▲ カテゴリの命令一覧
+
+- [[JS実行:plugin_system/JS実行]] --- JavaScriptのコードSRCを実行する(変数sysでなでしこシステムを参照できる)
+- [[JSオブジェクト取得:plugin_system/JSオブジェクト取得]] --- なでしこで定義した関数や変数nameのJavaScriptオブジェクトを取得する
+- [[JS関数実行:plugin_system/JS関数実行]] --- JavaScriptの関数NAMEを引数ARGS(配列)で実行する
+- [[ナデシコ:plugin_system/ナデシコ]] --- なでしこのコードCODEを実行する
+- [[ナデシコ続:plugin_system/ナデシコ続]] --- なでしこのコードCODEを実行する
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]

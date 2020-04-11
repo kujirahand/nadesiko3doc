@@ -1,0 +1,12 @@
+■ 存在 (そんざい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[ファイル入出力:plugin_node/ファイル入出力]]
+種類 || 関数
+引数 || PATHが|PATHの
+説明 || ファイルPATHが存在するか確認して返す
+}}}
+
+#page(plugin_node/存在__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

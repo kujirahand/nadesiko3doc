@@ -1,0 +1,12 @@
+■ WS接続完了時 (WSせつぞくかんりょうしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
+種類 || 関数
+引数 || CALLBACKを
+説明 || WebSocketでサーバに接続完了した時に実行されるイベントを指定
+}}}
+
+#page(plugin_browser/WS接続完了時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

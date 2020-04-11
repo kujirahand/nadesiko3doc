@@ -1,0 +1,12 @@
+■ SJIS変換 (SJISへんかん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[文字コード:plugin_node/文字コード]]
+種類 || 関数
+引数 || STRに|STRへ|STRを
+説明 || (v1非互換)文字列をShift_JISのバイナリバッファに変換
+}}}
+
+#page(plugin_node/SJIS変換__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

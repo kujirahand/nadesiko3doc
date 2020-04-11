@@ -1,0 +1,12 @@
+■ 保存 (ほぞん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[ローカルストレージ:plugin_browser/ローカルストレージ]]
+種類 || 関数
+引数 || VをKEYに|KEYへ
+説明 || ブラウザのlocalStorageのキーKに文字列Vを保存
+}}}
+
+#page(plugin_browser/保存__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

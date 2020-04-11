@@ -1,0 +1,12 @@
+■ 線描画 (せんびょうが)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[描画:plugin_browser/描画]]
+種類 || 関数
+引数 || AからBへ|Bまで
+説明 || [x1, y1]から[x2, y2]まで線を描画する
+}}}
+
+#page(plugin_browser/線描画__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

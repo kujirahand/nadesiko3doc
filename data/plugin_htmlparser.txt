@@ -1,0 +1,29 @@
+■ plugin_htmlparser - なでしこ3 [[拡張プラグイン]]
+#page(plugin_htmlparser__解説)
+
+▲[[plugin_htmlparser/HTMLパーサ(コンソール)]]
+- [[HTML逐次URL開:plugin_htmlparser/HTML逐次URL開]] --- 任意のURLを開いてパースする。
+- [[HTMLパース:plugin_htmlparser/HTMLパース]] --- 任意のHTML文字列をパースする。
+- [[DOM要素取得:plugin_htmlparser/DOM要素取得]] --- パース済みHTMLからクエリQに該当するDOMを取得する
+- [[DOM子要素検索:plugin_htmlparser/DOM子要素検索]] --- DOMの子要素Qを取得する
+- [[DOM子要素全取得:plugin_htmlparser/DOM子要素全取得]] --- DOMの子要素を全部取得する
+- [[DOM親要素取得:plugin_htmlparser/DOM親要素取得]] --- DOMの親要素を取得する
+- [[DOM次要素取得:plugin_htmlparser/DOM次要素取得]] --- DOMの親要素を取得する
+- [[DOM抽出:plugin_htmlparser/DOM抽出]] --- DOMからクエリQを利用して合致するものを抽出する
+- [[属性取得:plugin_htmlparser/属性取得]] --- DOMの属性Kを取得する
+- [[テキスト取得:plugin_htmlparser/テキスト取得]] --- DOMのテキストを取得する
+- [[HTML取得:plugin_htmlparser/HTML取得]] --- DOMのHTMLを取得する
+- [[HTML設定:plugin_htmlparser/HTML設定]] --- DOMにSを設定する
+- [[プロパティ取得:plugin_htmlparser/プロパティ取得]] --- DOMのプロパティPROPを取得する
+- [[値取得:plugin_htmlparser/値取得]] --- DOMの値を取得する
+- [[値設定:plugin_htmlparser/値設定]] --- DOMの値vを設定する
+- [[スタイル取得:plugin_htmlparser/スタイル取得]] --- DOMのスタイルKを取得する
+- [[データ取得:plugin_htmlparser/データ取得]] --- DOMのデータkを取得する
+- [[DOM配列変換:plugin_htmlparser/DOM配列変換]] --- DOMを配列に変換する
+- [[タグ名取得:plugin_htmlparser/タグ名取得]] --- DOMのタグ名を取得する
+
+
+- [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]]

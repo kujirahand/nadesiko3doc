@@ -1,0 +1,12 @@
+■ ローカルストレージキー削除 (ろーかるすとれーじきーさくじょ)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[ローカルストレージ:plugin_browser/ローカルストレージ]]
+種類 || 関数
+引数 || KEYを|KEYの
+説明 || ブラウザのlocalStorageのkeyを削除
+}}}
+
+#page(plugin_browser/ローカルストレージキー削除__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

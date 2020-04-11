@@ -1,0 +1,12 @@
+■ 論理NOT (論理NOT)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[論理演算:plugin_system/論理演算]]
+種類 || 関数
+引数 || Vの
+説明 || 値Vが0ならば1、それ以外ならば0を返す(v1非互換)
+}}}
+
+#page(plugin_system/論理NOT__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

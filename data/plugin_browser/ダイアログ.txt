@@ -1,0 +1,11 @@
+■ [[plugin_browser]]/[[ダイアログ:plugin_browser/ダイアログ]]
+#page(plugin_browser__解説)
+
+▲ カテゴリの命令一覧
+
+- [[言:plugin_browser/言]] --- メッセージダイアログにSを表示
+- [[尋:plugin_browser/尋]] --- メッセージSと入力ボックスを出して尋ねる
+- [[二択:plugin_browser/二択]] --- メッセージSと[OK]と[キャンセル]のダイアログを出して尋ねる
+
+▲ 参考
+- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

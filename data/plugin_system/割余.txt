@@ -1,0 +1,12 @@
+■ 割余 (わったあまり)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[四則演算:plugin_system/四則演算]]
+種類 || 関数
+引数 || AをBで
+説明 || AをBで割った余りを求める
+}}}
+
+#page(plugin_system/割余__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]

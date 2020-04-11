@@ -1,0 +1,7 @@
+●『[[HTML逐次URL開:plugin_htmlparser/HTML逐次URL開__解説]]』の詳しい解説
+
+任意のURLを開いてパースする。
+
+{{{
+# 準備中
+}}}

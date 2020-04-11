@@ -1,0 +1,21 @@
+■ [[plugin_express]]/[[Webサーバ(Exoress):plugin_express/Webサーバ(Exoress)]]
+このカテゴリの命令
+
+▲ カテゴリの命令一覧
+
+- [[GETデータ:plugin_express/GETデータ]] --- 定数
+- [[POSTデータ:plugin_express/POSTデータ]] --- 定数
+- [[WEBサーバ名前設定:plugin_express/WEBサーバ名前設定]] --- Webサーバの名前を変更する
+- [[WEBサーバ起動:plugin_express/WEBサーバ起動]] --- ポートPORTNOでWebサーバを起動して成功したら『WEBサーバ起動成功した時』を実行する
+- [[WEBサーバ起動成功時:plugin_express/WEBサーバ起動成功時]] --- WEBサーバ起動が成功した時にcallbackを実行
+- [[WEBサーバ起動失敗時:plugin_express/WEBサーバ起動失敗時]] --- WEBサーバ起動が失敗した時にcallbackを実行
+- [[WEBサーバ静的パス指定:plugin_express/WEBサーバ静的パス指定]] --- サーバのHTMLや画像などを配置する静的パスを指定する
+- [[WEBサーバGET時:plugin_express/WEBサーバGET時]] --- URIにGETメソッドがあった時の処理を指定
+- [[WEBサーバPOST時:plugin_express/WEBサーバPOST時]] --- URIにPOSTメソッドがあった時の処理を指定
+- [[WEBサーバPUT時:plugin_express/WEBサーバPUT時]] --- URIにPOSTメソッドがあった時の処理を指定
+- [[WEBサーバDELETE時:plugin_express/WEBサーバDELETE時]] --- URIにPOSTメソッドがあった時の処理を指定
+- [[WEBサーバ出力:plugin_express/WEBサーバ出力]] --- クライアントにSを出力
+- [[WEBサーバリダイレクト:plugin_express/WEBサーバリダイレクト]] --- URLにリダイレクトする
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_express:plugin_express]]

@@ -1,0 +1,12 @@
+■ WEBサーバ出力 (WEBさーばしゅつりょく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
+種類 || 関数
+引数 || Sを|Sと
+説明 || クライアントにSを出力
+}}}
+
+#page(plugin_express/WEBサーバ出力__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_express]]

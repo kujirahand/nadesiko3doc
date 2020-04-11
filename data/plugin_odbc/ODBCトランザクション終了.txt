@@ -1,0 +1,12 @@
+■ ODBCトランザクション終了 (ODBCとらんざくしょんしゅうりょう)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
+種類 || 関数
+引数 || 
+説明 || ODBCでトランザクションを終了する
+}}}
+
+#page(plugin_odbc/ODBCトランザクション終了__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_odbc]]

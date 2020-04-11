@@ -1,0 +1,12 @@
+■ DOMテキスト設定 (DOMてきすとせってい)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+種類 || 関数
+引数 || DOMにTEXTを|DOMの|DOMへ
+説明 || DOMにテキストを設定
+}}}
+
+#page(plugin_browser/DOMテキスト設定__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

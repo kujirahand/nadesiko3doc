@@ -1,0 +1,7 @@
+●『[[FIREBASE初期化:plugin_firebase/FIREBASE初期化__解説]]』の詳しい解説
+
+アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
+
+{{{
+# 準備中
+}}}

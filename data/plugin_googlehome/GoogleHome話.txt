@@ -1,0 +1,12 @@
+■ GoogleHome話 (GOOGLEHOMEはなす)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_googlehome]] > [[GoogleHome:plugin_googlehome/GoogleHome]]
+種類 || 関数
+引数 || Sと|Sを
+説明 || GoogleHomeにSと言わせる
+}}}
+
+#page(plugin_googlehome/GoogleHome話__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_googlehome]]

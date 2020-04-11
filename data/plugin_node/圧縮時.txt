@@ -1,0 +1,12 @@
+■ 圧縮時 (あっしゅくしたとき)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_node]] > [[圧縮・解凍:plugin_node/圧縮・解凍]]
+種類 || 関数
+引数 || CALLBACKでAをBに|AからBへ
+説明 || 圧縮処理を行い完了したときにcallback処理を指定
+}}}
+
+#page(plugin_node/圧縮時__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_node]]

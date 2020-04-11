@@ -1,0 +1,12 @@
+■ ホットキー登録 (ほっときーとうろく)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[ホットキー:plugin_browser/ホットキー]]
+種類 || 関数
+引数 || KEYにFNAMEを|KEYで
+説明 || ホットキーKEYにEVENTを登録する
+}}}
+
+#page(plugin_browser/ホットキー登録__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

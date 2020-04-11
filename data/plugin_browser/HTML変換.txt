@@ -1,0 +1,12 @@
+■ HTML変換 (HTMLへんかん)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[HTML操作:plugin_browser/HTML操作]]
+種類 || 関数
+引数 || TEXTを
+説明 || 文字列をHTMLに変換して返す
+}}}
+
+#page(plugin_browser/HTML変換__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_browser]]

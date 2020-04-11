@@ -1,0 +1,7 @@
+●『[[JS関数実行:plugin_system/JS関数実行__解説]]』の詳しい解説
+
+JavaScriptの関数NAMEを引数ARGS(配列)で実行する
+
+{{{
+# 準備中
+}}}

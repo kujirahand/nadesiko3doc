@@ -1,0 +1,12 @@
+■ ASC (ASC)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
+種類 || 関数
+引数 || Vの
+説明 || 文字列Vの最初の文字の文字コードを返す
+}}}
+
+#page(plugin_system/ASC__解説)
+
+▲ 参考
+- [[命令一覧/機能順]] > [[plugin_system]]
