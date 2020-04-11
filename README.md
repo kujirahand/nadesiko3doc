@@ -11,6 +11,10 @@
 ```
 # マニュアル作成ツールのkonawiki3を取得
 git clone git@github.com:kujirahand/konawiki3.git
+
+# konawiki3のwikiデータが格納されているディレクトリに移動
+cd konawiki3/data
+
 # なでしこ3のマニュアルを取得
 git clone git@github.com:kujirahand/nadesiko3doc.git
 ```
