@@ -11,8 +11,15 @@
 ```
 # マニュアル作成ツールのkonawiki3を取得
 git clone git@github.com:kujirahand/konawiki3.git
+
+# konawiki3のディレクトリに移動
+cd konawiki3
+
 # なでしこ3のマニュアルを取得
 git clone git@github.com:kujirahand/nadesiko3doc.git
+
+# konawiki3のWikiデータをなでしこ3のマニュアルに置き換える
+sed -i -e "s|'/data'|'/nadesiko3doc/data'|g" index.php
 ```
 
 ### ツールの開始
@@ -20,7 +27,9 @@ git clone git@github.com:kujirahand/nadesiko3doc.git
 PHP7をインストールしてパスを通しておいてください。
 
 ```
-cd nadesiko3doc
+# konawiki3のディレクトリに移動
+cd konawiki3
+
 php -S localhost:8888
 ```
 
