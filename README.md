@@ -15,6 +15,19 @@ git clone git@github.com:kujirahand/konawiki3.git
 git clone git@github.com:kujirahand/nadesiko3doc.git
 ```
 
+これによって以下のようなファイル構造となります。
+
+```
++
+| - <konawiki3>
+| - <nadesiko3doc>
+|   | - index.php
+|   | - konawiki3.ini.php
+```
+
+
+
+
 ### ツールの開始
 
 PHP7をインストールしてパスを通しておいてください。以下のコマンドを実行するとPHPのWebサーバーが起動します。
