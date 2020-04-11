@@ -15,7 +15,7 @@ git clone git@github.com:kujirahand/konawiki3.git
 git clone git@github.com:kujirahand/nadesiko3doc.git
 ```
 
-これによって以下のようなファイル構造となります。
+なお、これによって以下のようなファイル構造となります。
 
 ```
 +
@@ -25,8 +25,7 @@ git clone git@github.com:kujirahand/nadesiko3doc.git
 |   | - konawiki3.ini.php
 ```
 
-
-
+nadesiko3doc/index.php から konawiki3/kona3engine を参照してWikiを動かすことができます。
 
 ### ツールの開始
 
