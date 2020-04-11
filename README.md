@@ -24,7 +24,7 @@ git clone git@github.com:kujirahand/nadesiko3doc.git
 PHP7をインストールしてパスを通しておいてください。
 
 ```
-cd nadesiko3doc
+cd konawiki3
 php -S localhost:8888
 ```
 
