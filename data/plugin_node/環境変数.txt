@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[環境変数:plugin_node/環境変数]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

@@ -6,7 +6,7 @@
 説明 || 配列Aの値の最小値を調べて返す。
 }}}
 
-#page(plugin_system/配列最小値__解説)
+#include(plugin_system/配列最小値__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

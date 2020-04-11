@@ -6,7 +6,7 @@
 説明 || DOMを配列に変換する
 }}}
 
-#page(plugin_htmlparser/DOM配列変換__解説)
+#include(plugin_htmlparser/DOM配列変換__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_htmlparser]]

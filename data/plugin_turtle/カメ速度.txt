@@ -5,7 +5,7 @@
 初期値 || 100
 }}}
 
-#page(plugin_turtle/カメ速度__解説)
+#include(plugin_turtle/カメ速度__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_turtle]]

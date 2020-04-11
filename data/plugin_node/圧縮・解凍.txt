@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[圧縮・解凍:plugin_node/圧縮・解凍]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

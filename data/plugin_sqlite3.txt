@@ -1,5 +1,5 @@
 ■ plugin_sqlite3 - なでしこ3 [[拡張プラグイン]]
-#page(plugin_sqlite3__解説)
+#include(plugin_sqlite3__解説)
 
 ▲[[plugin_sqlite3/SQLite3]]
 - [[SQLITE3開:plugin_sqlite3/SQLITE3開]] --- SQlite3のデータベースを開いて、データベースオブジェクトを返す

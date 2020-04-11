@@ -6,7 +6,7 @@
 説明 || データベースのパスPATHを参照
 }}}
 
-#page(plugin_firebase/FIREBASEパス参照__解説)
+#include(plugin_firebase/FIREBASEパス参照__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_firebase]]

@@ -6,7 +6,7 @@
 説明 || SをSJIS形式でファイルFへ書き込む
 }}}
 
-#page(plugin_node/SJISファイル保存__解説)
+#include(plugin_node/SJISファイル保存__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_node]]

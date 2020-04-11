@@ -6,7 +6,7 @@
 説明 || 横棒グラフを描画
 }}}
 
-#page(plugin_browser/横棒グラフ描画__解説)
+#include(plugin_browser/横棒グラフ描画__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

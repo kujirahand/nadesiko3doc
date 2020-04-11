@@ -1,5 +1,5 @@
 ■ [[plugin_system]]/[[置換・トリム:plugin_system/置換・トリム]]
-#page(plugin_system__解説)
+#include(plugin_system__解説)
 
 ▲ カテゴリの命令一覧
 

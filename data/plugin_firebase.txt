@@ -1,5 +1,5 @@
 ■ plugin_firebase - なでしこ3 [[拡張プラグイン]]
-#page(plugin_firebase__解説)
+#include(plugin_firebase__解説)
 
 ▲[[plugin_firebase/Firebase]]
 - [[FIREBASE初期化:plugin_firebase/FIREBASE初期化]] --- アカウント設定オブジェクトconfigを与えてFirebaseを初期化する

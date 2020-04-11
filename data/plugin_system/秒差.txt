@@ -6,7 +6,7 @@
 説明 || 時間AとBの差を秒差で求めて返す。A<Bなら正の数、そうでないなら負の数を返す。
 }}}
 
-#page(plugin_system/秒差__解説)
+#include(plugin_system/秒差__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

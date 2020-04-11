@@ -1,5 +1,5 @@
 ■ plugin_mssql - なでしこ3 [[拡張プラグイン]]
-#page(plugin_mssql__解説)
+#include(plugin_mssql__解説)
 
 ▲[[plugin_mssql/SQLServer]]
 - [[MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く

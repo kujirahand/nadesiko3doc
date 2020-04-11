@@ -1,5 +1,5 @@
 ■ [[plugin_firebase]]/[[Firebase:plugin_firebase/Firebase]]
-#page(plugin_firebase__解説)
+#include(plugin_firebase__解説)
 
 ▲ カテゴリの命令一覧
 

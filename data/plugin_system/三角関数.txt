@@ -1,5 +1,5 @@
 ■ [[plugin_system]]/[[三角関数:plugin_system/三角関数]]
-#page(plugin_system__解説)
+#include(plugin_system__解説)
 
 ▲ カテゴリの命令一覧
 

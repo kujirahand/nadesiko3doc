@@ -6,7 +6,7 @@
 説明 || VをAビット右へシフトして返す(符号を維持しない、0で埋める)
 }}}
 
-#page(plugin_system/SHIFT_UR__解説)
+#include(plugin_system/SHIFT_UR__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

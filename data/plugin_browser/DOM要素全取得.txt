@@ -6,7 +6,7 @@
 説明 || DOMの要素をクエリqで全部取得して返す
 }}}
 
-#page(plugin_browser/DOM要素全取得__解説)
+#include(plugin_browser/DOM要素全取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

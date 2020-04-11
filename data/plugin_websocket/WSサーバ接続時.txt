@@ -6,7 +6,7 @@
 説明 || WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
 }}}
 
-#page(plugin_websocket/WSサーバ接続時__解説)
+#include(plugin_websocket/WSサーバ接続時__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_websocket]]

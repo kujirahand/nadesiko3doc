@@ -1,5 +1,5 @@
 ■ [[plugin_system]]/[[指定形式:plugin_system/指定形式]]
-#page(plugin_system__解説)
+#include(plugin_system__解説)
 
 ▲ カテゴリの命令一覧
 

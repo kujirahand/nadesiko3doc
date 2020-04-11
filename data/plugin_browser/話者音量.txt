@@ -5,7 +5,7 @@
 初期値 || 1.0
 }}}
 
-#page(plugin_browser/話者音量__解説)
+#include(plugin_browser/話者音量__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

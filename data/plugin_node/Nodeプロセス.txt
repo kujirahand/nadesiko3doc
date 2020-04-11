@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[Nodeプロセス:plugin_node/Nodeプロセス]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

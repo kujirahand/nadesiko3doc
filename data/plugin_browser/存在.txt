@@ -6,7 +6,7 @@
 説明 || ブラウザのlocalStorageにKEYが存在しているか調べる
 }}}
 
-#page(plugin_browser/存在__解説)
+#include(plugin_browser/存在__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

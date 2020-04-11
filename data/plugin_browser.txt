@@ -1,5 +1,5 @@
 ■ plugin_browser - なでしこ3 プラグイン
-#page(plugin_browser__解説)
+#include(plugin_browser__解説)
 
 ▲[[plugin_browser/色定数]]
 - [[RGB:plugin_browser/RGB]] --- 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す

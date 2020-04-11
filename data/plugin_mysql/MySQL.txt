@@ -1,5 +1,5 @@
 ■ [[plugin_mysql]]/[[MySQL:plugin_mysql/MySQL]]
-#page(plugin_mysql__解説)
+#include(plugin_mysql__解説)
 
 ▲ カテゴリの命令一覧
 

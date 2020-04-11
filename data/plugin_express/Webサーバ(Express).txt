@@ -1,5 +1,5 @@
 ■ [[plugin_express]]/[[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
-#page(plugin_express__解説)
+#include(plugin_express__解説)
 
 ▲ カテゴリの命令一覧
 

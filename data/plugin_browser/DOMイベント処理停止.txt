@@ -6,7 +6,7 @@
 説明 || キーイベントやマウスイベントで、元々ブラウザが行う処理を中止する
 }}}
 
-#page(plugin_browser/DOMイベント処理停止__解説)
+#include(plugin_browser/DOMイベント処理停止__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

@@ -6,7 +6,7 @@
 説明 || JavaScriptの関数NAMEを引数ARGS(配列)で実行する
 }}}
 
-#page(plugin_system/JS関数実行__解説)
+#include(plugin_system/JS関数実行__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

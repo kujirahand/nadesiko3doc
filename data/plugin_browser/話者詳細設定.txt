@@ -6,7 +6,7 @@
 説明 || 音声合成APIの話者の設定をオブジェクト形式で設定する。『速度,声高,ピッチ,音量』を指定
 }}}
 
-#page(plugin_browser/話者詳細設定__解説)
+#include(plugin_browser/話者詳細設定__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

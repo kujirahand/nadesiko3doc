@@ -6,7 +6,7 @@
 説明 || WSサーバでメッセージを受信した時に実行される。受信データは『対象』に代入される
 }}}
 
-#page(plugin_websocket/WSサーバ受信時__解説)
+#include(plugin_websocket/WSサーバ受信時__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_websocket]]

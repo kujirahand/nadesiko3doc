@@ -6,7 +6,7 @@
 説明 || 二次元配列Aの列数を調べて返す。
 }}}
 
-#page(plugin_system/表列数__解説)
+#include(plugin_system/表列数__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

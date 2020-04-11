@@ -1,5 +1,5 @@
 ■ [[plugin_odbc]]/[[ODBC:plugin_odbc/ODBC]]
-#page(plugin_odbc__解説)
+#include(plugin_odbc__解説)
 
 ▲ カテゴリの命令一覧
 

@@ -6,7 +6,7 @@
 説明 || カメの動作速度vに設定(大きいほど遅い)
 }}}
 
-#page(plugin_turtle/カメ速度設定__解説)
+#include(plugin_turtle/カメ速度設定__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_turtle]]

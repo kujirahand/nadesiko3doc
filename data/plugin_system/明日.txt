@@ -6,7 +6,7 @@
 説明 || 明日の日付を「YYYY/MM/DD」の形式で返す (v1非互換)
 }}}
 
-#page(plugin_system/明日__解説)
+#include(plugin_system/明日__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

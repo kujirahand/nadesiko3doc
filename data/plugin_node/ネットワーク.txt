@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[ネットワーク:plugin_node/ネットワーク]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

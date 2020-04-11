@@ -6,7 +6,7 @@
 説明 || 描画先にCanvas(文字列でクエリの指定も可)を指定して描画API(2D)の利用準備する
 }}}
 
-#page(plugin_browser/描画開始__解説)
+#include(plugin_browser/描画開始__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

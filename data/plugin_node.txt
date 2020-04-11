@@ -1,5 +1,5 @@
 ■ plugin_node - なでしこ3 プラグイン
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲[[plugin_node/ファイル入出力]]
 - [[開:plugin_node/開]] --- ファイルSを開く

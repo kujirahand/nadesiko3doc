@@ -6,7 +6,7 @@
 説明 || 度からラジアンに変換
 }}}
 
-#page(plugin_system/ラジアン変換__解説)
+#include(plugin_system/ラジアン変換__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

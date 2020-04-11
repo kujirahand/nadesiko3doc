@@ -1,5 +1,5 @@
 ■ [[plugin_browser]]/[[音声合成:plugin_browser/音声合成]]
-#page(plugin_browser__解説)
+#include(plugin_browser__解説)
 
 ▲ カテゴリの命令一覧
 

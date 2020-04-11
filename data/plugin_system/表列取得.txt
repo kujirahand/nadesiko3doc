@@ -6,7 +6,7 @@
 説明 || 二次元配列AのI列目を返す。
 }}}
 
-#page(plugin_system/表列取得__解説)
+#include(plugin_system/表列取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

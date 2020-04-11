@@ -6,7 +6,7 @@
 説明 || 機械学習のアルゴリズムRandom ForestをOPTIONで開く。OPTION={seed,maxFeatures,replacement=(true
 }}}
 
-#page(plugin_ml/ランダムフォレスト開__解説)
+#include(plugin_ml/ランダムフォレスト開__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_ml]]

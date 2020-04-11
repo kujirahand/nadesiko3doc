@@ -6,7 +6,7 @@
 説明 || DOMのHTML文字列を取得
 }}}
 
-#page(plugin_browser/DOM_HTML取得__解説)
+#include(plugin_browser/DOM_HTML取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

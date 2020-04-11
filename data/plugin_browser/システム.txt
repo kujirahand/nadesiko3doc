@@ -1,5 +1,5 @@
 ■ [[plugin_browser]]/[[システム:plugin_browser/システム]]
-#page(plugin_browser__解説)
+#include(plugin_browser__解説)
 
 ▲ カテゴリの命令一覧
 

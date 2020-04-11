@@ -6,7 +6,7 @@
 説明 || 連想配列をkey=value&key=value...の形式に変換する
 }}}
 
-#page(plugin_browser/POSTデータ生成__解説)
+#include(plugin_browser/POSTデータ生成__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

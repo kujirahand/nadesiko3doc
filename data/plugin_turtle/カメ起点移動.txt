@@ -6,7 +6,7 @@
 説明 || カメの描画起点位置を[x,y]へ移動する
 }}}
 
-#page(plugin_turtle/カメ起点移動__解説)
+#include(plugin_turtle/カメ起点移動__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_turtle]]

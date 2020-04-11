@@ -6,7 +6,7 @@
 説明 || LAN内にある名前NAMEのGoogleHomeに接続する
 }}}
 
-#page(plugin_googlehome/GoogleHome接続__解説)
+#include(plugin_googlehome/GoogleHome接続__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_googlehome]]

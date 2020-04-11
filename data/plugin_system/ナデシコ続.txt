@@ -6,7 +6,7 @@
 説明 || なでしこのコードCODEを実行する
 }}}
 
-#page(plugin_system/ナデシコ続__解説)
+#include(plugin_system/ナデシコ続__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

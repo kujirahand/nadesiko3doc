@@ -1,5 +1,5 @@
 ■ plugin_websocket - なでしこ3 [[拡張プラグイン]]
-#page(plugin_websocket__解説)
+#include(plugin_websocket__解説)
 
 ▲[[plugin_websocket/WebSocketサーバ]]
 - [[WSサーバ起動:plugin_websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する

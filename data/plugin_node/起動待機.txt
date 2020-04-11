@@ -6,7 +6,7 @@
 説明 || シェルコマンドSを起動し実行終了まで待機する
 }}}
 
-#page(plugin_node/起動待機__解説)
+#include(plugin_node/起動待機__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_node]]

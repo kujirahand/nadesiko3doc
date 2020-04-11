@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[クリップボード:plugin_node/クリップボード]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

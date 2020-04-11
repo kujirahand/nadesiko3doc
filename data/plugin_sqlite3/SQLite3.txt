@@ -1,5 +1,5 @@
 ■ [[plugin_sqlite3]]/[[SQLite3:plugin_sqlite3/SQLite3]]
-#page(plugin_sqlite3__解説)
+#include(plugin_sqlite3__解説)
 
 ▲ カテゴリの命令一覧
 

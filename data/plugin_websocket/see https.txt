@@ -1,5 +1,5 @@
 ■ [[plugin_websocket]]/[[see https::plugin_websocket/see https://www.npmjs.com/package/ws#external-https-server]]
-#page(plugin_websocket__解説)
+#include(plugin_websocket__解説)
 
 ▲ カテゴリの命令一覧
 

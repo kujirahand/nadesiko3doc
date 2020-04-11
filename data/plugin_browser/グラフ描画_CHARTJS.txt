@@ -1,5 +1,5 @@
 ■ [[plugin_browser]]/[[グラフ描画_CHARTJS:plugin_browser/グラフ描画_CHARTJS]]
-#page(plugin_browser__解説)
+#include(plugin_browser__解説)
 
 ▲ カテゴリの命令一覧
 

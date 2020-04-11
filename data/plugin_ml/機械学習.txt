@@ -1,5 +1,5 @@
 ■ [[plugin_ml]]/[[機械学習:plugin_ml/機械学習]]
-#page(plugin_ml__解説)
+#include(plugin_ml__解説)
 
 ▲ カテゴリの命令一覧
 

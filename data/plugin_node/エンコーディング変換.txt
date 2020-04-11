@@ -6,7 +6,7 @@
 説明 || 文字列SをCODEへ変換してバイナリバッファを返す
 }}}
 
-#page(plugin_node/エンコーディング変換__解説)
+#include(plugin_node/エンコーディング変換__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_node]]

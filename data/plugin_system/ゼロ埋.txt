@@ -6,7 +6,7 @@
 説明 || 数値VをA桁の0で埋める
 }}}
 
-#page(plugin_system/ゼロ埋__解説)
+#include(plugin_system/ゼロ埋__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

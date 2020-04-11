@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[マウスとキーボード操作:plugin_node/マウスとキーボード操作]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

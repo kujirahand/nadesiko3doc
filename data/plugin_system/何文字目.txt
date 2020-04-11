@@ -6,7 +6,7 @@
 説明 || 文字列SでAが何文字目にあるか調べて返す
 }}}
 
-#page(plugin_system/何文字目__解説)
+#include(plugin_system/何文字目__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

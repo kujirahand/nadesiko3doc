@@ -6,7 +6,7 @@
 説明 || 無名関数FでDOMに対してタッチを開始した時に実行するイベントを設定。
 }}}
 
-#page(plugin_browser/タッチ開始時__解説)
+#include(plugin_browser/タッチ開始時__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

@@ -1,5 +1,5 @@
 ■ plugin_googlehome - なでしこ3 [[拡張プラグイン]]
-#page(plugin_googlehome__解説)
+#include(plugin_googlehome__解説)
 
 ▲[[plugin_googlehome/GoogleHome]]
 - [[GoogleHome接続:plugin_googlehome/GoogleHome接続]] --- LAN内にある名前NAMEのGoogleHomeに接続する

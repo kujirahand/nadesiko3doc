@@ -6,7 +6,7 @@
 説明 || ネットワークアダプターからIPアドレス(IPv6)を取得して配列で返す
 }}}
 
-#page(plugin_node/自分IPV6アドレス取得__解説)
+#include(plugin_node/自分IPV6アドレス取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_node]]

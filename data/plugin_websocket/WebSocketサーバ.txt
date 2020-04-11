@@ -1,5 +1,5 @@
 ■ [[plugin_websocket]]/[[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
-#page(plugin_websocket__解説)
+#include(plugin_websocket__解説)
 
 ▲ カテゴリの命令一覧
 

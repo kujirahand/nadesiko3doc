@@ -1,5 +1,5 @@
 ■ [[plugin_mssql]]/[[SQLServer:plugin_mssql/SQLServer]]
-#page(plugin_mssql__解説)
+#include(plugin_mssql__解説)
 
 ▲ カテゴリの命令一覧
 

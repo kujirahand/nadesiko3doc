@@ -6,7 +6,7 @@
 説明 || 実数型の値Vを丸めてもっとも近い整数値を返す
 }}}
 
-#page(plugin_system/四捨五入__解説)
+#include(plugin_system/四捨五入__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

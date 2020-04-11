@@ -6,7 +6,7 @@
 説明 || 文字列Sの1文字目がカタカナか判定
 }}}
 
-#page(plugin_system/カタカナ判定__解説)
+#include(plugin_system/カタカナ判定__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

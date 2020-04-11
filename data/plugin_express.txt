@@ -1,5 +1,5 @@
 ■ plugin_express - なでしこ3 プラグイン
-#page(plugin_express__解説)
+#include(plugin_express__解説)
 
 ▲[[plugin_express/Webサーバ(Express)]]
 - [[WEBサーバ名前設定:plugin_express/WEBサーバ名前設定]] --- Webサーバの名前を変更する

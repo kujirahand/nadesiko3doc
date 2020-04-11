@@ -6,7 +6,7 @@
 説明 || [x, y]へテキストSを描画する(描画フォント設定でサイズなど指定)
 }}}
 
-#page(plugin_browser/文字描画__解説)
+#include(plugin_browser/文字描画__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

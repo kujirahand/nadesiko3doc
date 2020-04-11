@@ -1,5 +1,5 @@
 ■ [[plugin_system]]/[[JSON:plugin_system/JSON]]
-#page(plugin_system__解説)
+#include(plugin_system__解説)
 
 ▲ カテゴリの命令一覧
 

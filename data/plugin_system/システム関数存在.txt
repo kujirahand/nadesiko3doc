@@ -6,7 +6,7 @@
 説明 || 文字列で関数名を指定してシステム関数が存在するかを調べる
 }}}
 
-#page(plugin_system/システム関数存在__解説)
+#include(plugin_system/システム関数存在__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

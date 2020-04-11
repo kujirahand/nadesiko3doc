@@ -1,5 +1,5 @@
 ■ [[plugin_turtle]]/[[タートルグラフィックス:plugin_turtle/タートルグラフィックス/カメ操作]]
-#page(plugin_turtle__解説)
+#include(plugin_turtle__解説)
 
 ▲ カテゴリの命令一覧
 

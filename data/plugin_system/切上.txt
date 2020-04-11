@@ -6,7 +6,7 @@
 説明 || 数値を正の無限大方向へ切り上げて返す。
 }}}
 
-#page(plugin_system/切上__解説)
+#include(plugin_system/切上__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

@@ -6,7 +6,7 @@
 説明 || 実数式 A の自然対数（Ln(A) = 1）を返す
 }}}
 
-#page(plugin_system/LN__解説)
+#include(plugin_system/LN__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

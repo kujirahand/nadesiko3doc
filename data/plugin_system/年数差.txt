@@ -6,7 +6,7 @@
 説明 || 日付AとBの差を年数で求めて返す。A<Bなら正の数、そうでないなら負の数を返す (v1非互換)。
 }}}
 
-#page(plugin_system/年数差__解説)
+#include(plugin_system/年数差__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

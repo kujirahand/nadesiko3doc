@@ -6,7 +6,7 @@
 説明 || ハッシュAの内容一覧を配列で返す。
 }}}
 
-#page(plugin_system/ハッシュ内容列挙__解説)
+#include(plugin_system/ハッシュ内容列挙__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

@@ -1,5 +1,5 @@
 ■ plugin_mysql - なでしこ3 [[拡張プラグイン]]
-#page(plugin_mysql__解説)
+#include(plugin_mysql__解説)
 
 ▲[[plugin_mysql/MySQL]]
 - [[MYSQL開:plugin_mysql/MYSQL開]] --- データベースを開く

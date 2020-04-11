@@ -6,7 +6,7 @@
 説明 || 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
 }}}
 
-#page(plugin_browser/HTTP取得__解説)
+#include(plugin_browser/HTTP取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

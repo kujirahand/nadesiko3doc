@@ -1,5 +1,5 @@
 ■ [[plugin_browser]]/[[オーディオ:plugin_browser/オーディオ]]
-#page(plugin_browser__解説)
+#include(plugin_browser__解説)
 
 ▲ カテゴリの命令一覧
 

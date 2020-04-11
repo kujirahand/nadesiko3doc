@@ -6,7 +6,7 @@
 説明 || 現在時刻を「HH:mm:ss」の形式で返す
 }}}
 
-#page(plugin_system/今__解説)
+#include(plugin_system/今__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

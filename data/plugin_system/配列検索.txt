@@ -6,7 +6,7 @@
 説明 || 配列Aから文字列Sを探してインデックス番号(0起点)を返す。見つからなければ-1を返す。
 }}}
 
-#page(plugin_system/配列検索__解説)
+#include(plugin_system/配列検索__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

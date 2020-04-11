@@ -6,7 +6,7 @@
 説明 || 直角三角形の二辺の長さA,Bから斜辺を求めて返す。
 }}}
 
-#page(plugin_system/HYPOT__解説)
+#include(plugin_system/HYPOT__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

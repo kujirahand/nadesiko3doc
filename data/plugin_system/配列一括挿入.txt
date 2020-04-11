@@ -6,7 +6,7 @@
 説明 || 配列AのI番目(0起点)に配列bを追加して返す(v1非互換)
 }}}
 
-#page(plugin_system/配列一括挿入__解説)
+#include(plugin_system/配列一括挿入__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

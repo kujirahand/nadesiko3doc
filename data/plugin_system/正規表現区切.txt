@@ -6,7 +6,7 @@
 説明 || 文字列Sを正規表現パターンAで区切って配列で返す(パターンAは/pat/optで指定)
 }}}
 
-#page(plugin_system/正規表現区切__解説)
+#include(plugin_system/正規表現区切__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

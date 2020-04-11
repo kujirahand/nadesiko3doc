@@ -1,5 +1,5 @@
 ■ [[plugin_node]]/[[ファイル入出力:plugin_node/ファイル入出力]]
-#page(plugin_node__解説)
+#include(plugin_node__解説)
 
 ▲ カテゴリの命令一覧
 

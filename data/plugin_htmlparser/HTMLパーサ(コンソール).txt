@@ -1,5 +1,5 @@
 ■ [[plugin_htmlparser]]/[[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
-#page(plugin_htmlparser__解説)
+#include(plugin_htmlparser__解説)
 
 ▲ カテゴリの命令一覧
 

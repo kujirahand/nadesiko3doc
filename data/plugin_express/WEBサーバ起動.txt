@@ -6,7 +6,7 @@
 説明 || ポートPORTNOでWebサーバを起動して成功したら『WEBサーバ起動成功した時』を実行する
 }}}
 
-#page(plugin_express/WEBサーバ起動__解説)
+#include(plugin_express/WEBサーバ起動__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_express]]

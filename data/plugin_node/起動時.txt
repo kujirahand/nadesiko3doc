@@ -6,7 +6,7 @@
 説明 || シェルコマンドSを起動
 }}}
 
-#page(plugin_node/起動時__解説)
+#include(plugin_node/起動時__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_node]]

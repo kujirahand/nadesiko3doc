@@ -6,7 +6,7 @@
 説明 || 文字列Sの前後にある空白を削除する
 }}}
 
-#page(plugin_system/トリム__解説)
+#include(plugin_system/トリム__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

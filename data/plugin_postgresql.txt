@@ -1,5 +1,5 @@
 ■ plugin_postgresql - なでしこ3 [[拡張プラグイン]]
-#page(plugin_postgresql__解説)
+#include(plugin_postgresql__解説)
 
 ▲[[plugin_postgresql/PostgreSQL]]
 - [[PG開:plugin_postgresql/PG開]] --- データベースを開く

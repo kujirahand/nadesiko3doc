@@ -6,7 +6,7 @@
 説明 || SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
 }}}
 
-#page(plugin_sqlite3/SQLITE3実行後__解説)
+#include(plugin_sqlite3/SQLITE3実行後__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_sqlite3]]

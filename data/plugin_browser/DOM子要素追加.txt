@@ -6,7 +6,7 @@
 説明 || DOMの要素PAの子へ要素ELを追加してPAを返す
 }}}
 
-#page(plugin_browser/DOM子要素追加__解説)
+#include(plugin_browser/DOM子要素追加__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]

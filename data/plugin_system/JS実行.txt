@@ -6,7 +6,7 @@
 説明 || JavaScriptのコードSRCを実行する(変数sysでなでしこシステムを参照できる)
 }}}
 
-#page(plugin_system/JS実行__解説)
+#include(plugin_system/JS実行__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

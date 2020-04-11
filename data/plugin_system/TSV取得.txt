@@ -6,7 +6,7 @@
 説明 || TSV形式のデータstrを強制的に二次元配列に変換して返す
 }}}
 
-#page(plugin_system/TSV取得__解説)
+#include(plugin_system/TSV取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

@@ -6,7 +6,7 @@
 説明 || (ビット演算で)AとBの論理積を返す。日本語の「AかつB」に相当する
 }}}
 
-#page(plugin_system/AND__解説)
+#include(plugin_system/AND__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_system]]

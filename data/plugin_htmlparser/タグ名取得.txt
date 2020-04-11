@@ -6,7 +6,7 @@
 説明 || DOMのタグ名を取得する
 }}}
 
-#page(plugin_htmlparser/タグ名取得__解説)
+#include(plugin_htmlparser/タグ名取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_htmlparser]]

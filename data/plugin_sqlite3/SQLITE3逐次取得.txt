@@ -6,7 +6,7 @@
 説明 || 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 }}}
 
-#page(plugin_sqlite3/SQLITE3逐次取得__解説)
+#include(plugin_sqlite3/SQLITE3逐次取得__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_sqlite3]]

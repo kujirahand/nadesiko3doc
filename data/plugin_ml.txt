@@ -1,5 +1,5 @@
 ■ plugin_ml - なでしこ3 [[拡張プラグイン]]
-#page(plugin_ml__解説)
+#include(plugin_ml__解説)
 
 ▲[[plugin_ml/機械学習]]
 - [[SVM開:plugin_ml/SVM開]] --- 機械学習のアルゴリズムSVMをパラメータOPTIONで開く。 OPTION={type,kernel,gamma,cost}

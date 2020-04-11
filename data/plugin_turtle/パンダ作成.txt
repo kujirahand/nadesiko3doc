@@ -6,7 +6,7 @@
 説明 || パンダの画像でタートルグラフィックスを開始してIDを返す
 }}}
 
-#page(plugin_turtle/パンダ作成__解説)
+#include(plugin_turtle/パンダ作成__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_turtle]]

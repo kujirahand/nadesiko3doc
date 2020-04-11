@@ -6,7 +6,7 @@
 説明 || サーバのHTMLや画像などを配置する静的パスを指定する
 }}}
 
-#page(plugin_express/WEBサーバ静的パス指定__解説)
+#include(plugin_express/WEBサーバ静的パス指定__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_express]]

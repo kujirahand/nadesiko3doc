@@ -6,7 +6,7 @@
 説明 || WSサーバ起動が成功した時にcallbackを実行
 }}}
 
-#page(plugin_websocket/WSサーバ起動成功時__解説)
+#include(plugin_websocket/WSサーバ起動成功時__解説)
 
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_websocket]]
