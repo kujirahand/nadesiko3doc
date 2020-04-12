@@ -14,6 +14,8 @@
 git clone git@github.com:kujirahand/konawiki3.git
 # なでしこ3のマニュアルを取得
 git clone git@github.com:kujirahand/nadesiko3doc.git
+# (必要に応じて)なでしこ3のリポジトリ
+git clone git@github.com:kujirahand/nadesiko3
 ```
 
 なお、これによって以下のようなファイル構造となります。
@@ -21,6 +23,7 @@ git clone git@github.com:kujirahand/nadesiko3doc.git
 ```
 +
 | - <konawiki3>
+| - <nadesiko3>
 | - <nadesiko3doc>
 |   | - index.php
 |   | - konawiki3.ini.php
@@ -37,7 +40,7 @@ cd nadesiko3doc
 php -S localhost:8888
 ```
 
-Webブラウザで「localhost:8888」にアクセスし、ユーザー名「nako3」、パスワード「nako3」でログインして作業できます。
+そして、Webブラウザで「localhost:8888」にアクセスし、ユーザー名「nako3」、パスワード「nako3」でログインして作業できます。
 
 
 ### 命令名とファイル名の関係
@@ -50,7 +53,7 @@ Webブラウザで「localhost:8888」にアクセスし、ユーザー名「nak
 data/plugin_system/足__解説.txt
 ```
 
-ただし、マニュアルから自動生成できる基本的なデータは次の形式で書き出されます。そのため「{プラグイン名}/{命令名}.txt」というファイルは編集しても上書きされてしまうので注意してください。
+なでしこのソースコードから自動生成できる基本的なデータは次の形式で書き出されます。そのため「{プラグイン名}/{命令名}.txt」というファイルは編集しても上書きされてしまうので注意してください。
 
 ```
 # 編集してはいけないファイル
