@@ -1,13 +1,6 @@
-■ [[plugin_firebase]]/[[Firebase:plugin_firebase/Firebase]]
-#include(plugin_firebase__解説)
-
-▲ カテゴリの命令一覧
-
-- [[FIREBASE初期化:plugin_firebase/FIREBASE初期化]] --- アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
-- [[FIREBASEパス参照:plugin_firebase/FIREBASEパス参照]] --- データベースのパスPATHを参照
-- [[FIREBASE値設定:plugin_firebase/FIREBASE値設定]] --- データベースのパスPATHにオブジェクトVALUESを設定
-- [[FIREBASE値変更時:plugin_firebase/FIREBASE値変更時]] --- パスpathの値(オブジェクト)が変更された時callbackを実行。引数に値(オブジェクト)が得られる。
-- [[FIREBASE値取得時:plugin_firebase/FIREBASE値取得時]] --- パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_firebase:plugin_firebase]]
+●[[plugin_firebase]]/[[Firebase:plugin_firebase/Firebase]]
+- [[(CONFIGで)FIREBASE初期化:plugin_firebase/FIREBASE初期化]] --- アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
+- [[(PATHを)FIREBASEパス参照:plugin_firebase/FIREBASEパス参照]] --- データベースのパスPATHを参照
+- [[(PATHにVALUESを|PATHへVALUESの)FIREBASE値設定:plugin_firebase/FIREBASE値設定]] --- データベースのパスPATHにオブジェクトVALUESを設定
+- [[(CALLBACKでPATHの)FIREBASE値変更時:plugin_firebase/FIREBASE値変更時]] --- パスpathの値(オブジェクト)が変更された時callbackを実行。引数に値(オブジェクト)が得られる。
+- [[(CALLBACKでPATHの)FIREBASE値取得時:plugin_firebase/FIREBASE値取得時]] --- パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。

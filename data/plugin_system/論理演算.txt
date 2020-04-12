@@ -1,11 +1,4 @@
-■ [[plugin_system]]/[[論理演算:plugin_system/論理演算]]
-#include(plugin_system__解説)
-
-▲ カテゴリの命令一覧
-
-- [[論理OR:plugin_system/論理OR]] --- (ビット演算で)AとBの論理和を返す(v1非互換)。
-- [[論理AND:plugin_system/論理AND]] --- (ビット演算で)AとBの論理積を返す(v1非互換)。日本語の「AかつB」に相当する
-- [[論理NOT:plugin_system/論理NOT]] --- 値Vが0ならば1、それ以外ならば0を返す(v1非互換)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]
+●[[plugin_system]]/[[論理演算:plugin_system/論理演算]]
+- [[(AとBの)論理OR:plugin_system/論理OR]] --- (ビット演算で)AとBの論理和を返す(v1非互換)。
+- [[(AとBの)論理AND:plugin_system/論理AND]] --- (ビット演算で)AとBの論理積を返す(v1非互換)。日本語の「AかつB」に相当する
+- [[(Vの)論理NOT:plugin_system/論理NOT]] --- 値Vが0ならば1、それ以外ならば0を返す(v1非互換)

@@ -1,9 +1,2 @@
-■ [[plugin_node]]/[[テスト:plugin_node/テスト]]
-#include(plugin_node__解説)
-
-▲ カテゴリの命令一覧
-
-- [[ASSERT等:plugin_node/ASSERT等]] --- mochaによるテストで、ASSERTでAとBが正しいことを報告する
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]
+●[[plugin_node]]/[[テスト:plugin_node/テスト]]
+- [[(AとBが)ASSERT等:plugin_node/ASSERT等]] --- mochaによるテストで、ASSERTでAとBが正しいことを報告する

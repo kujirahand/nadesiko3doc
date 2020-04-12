@@ -1,13 +1,6 @@
-■ [[plugin_node]]/[[文字コード:plugin_node/文字コード]]
-#include(plugin_node__解説)
-
-▲ カテゴリの命令一覧
-
-- [[文字コード変換サポート判定:plugin_node/文字コード変換サポート判定]] --- 文字コードCODEをサポートしているか確認
-- [[SJIS変換:plugin_node/SJIS変換]] --- (v1非互換)文字列をShift_JISのバイナリバッファに変換
-- [[SJIS取得:plugin_node/SJIS取得]] --- Shift_JISのバイナリバッファを文字列に変換
-- [[エンコーディング変換:plugin_node/エンコーディング変換]] --- 文字列SをCODEへ変換してバイナリバッファを返す
-- [[エンコーディング取得:plugin_node/エンコーディング取得]] --- バイナリバッファBUFをCODEから変換して返す
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]
+●[[plugin_node]]/[[文字コード:plugin_node/文字コード]]
+- [[(CODEの|CODEを)文字コード変換サポート判定:plugin_node/文字コード変換サポート判定]] --- 文字コードCODEをサポートしているか確認
+- [[(STRに|STRへ|STRを)SJIS変換:plugin_node/SJIS変換]] --- (v1非互換)文字列をShift_JISのバイナリバッファに変換
+- [[(BUFから|BUFを|BUFで)SJIS取得:plugin_node/SJIS取得]] --- Shift_JISのバイナリバッファを文字列に変換
+- [[(SをCODEへ|CODEで)エンコーディング変換:plugin_node/エンコーディング変換]] --- 文字列SをCODEへ変換してバイナリバッファを返す
+- [[(BUFをCODEから|CODEで)エンコーディング取得:plugin_node/エンコーディング取得]] --- バイナリバッファBUFをCODEから変換して返す

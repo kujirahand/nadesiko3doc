@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/12 23:45:49)
+#rem(★スクリプト=cmd2wiki.nako)
+
+#rem(編集するには『plugin_system/表CSV変換__解説』を編集します。)
 ■ 表CSV変換 (ひょうCSVへんかん)
 {{{#csv(flag=||)
 カテゴリ || [[plugin_system]] > [[CSV操作:plugin_system/CSV操作]]
@@ -9,4 +17,5 @@
 #include(plugin_system/表CSV変換__解説)
 
 ▲ 参考
-- [[命令一覧/機能順]] > [[plugin_system]]
+- [[命令一覧/機能順]] > [[plugin_system]] > [[CSV操作:plugin_system/CSV操作]]
+

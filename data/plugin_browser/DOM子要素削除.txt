@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/12 23:45:49)
+#rem(★スクリプト=cmd2wiki.nako)
+
+#rem(編集するには『plugin_browser/DOM子要素削除__解説』を編集します。)
 ■ DOM子要素削除 (DOMこようそさくじょ)
 {{{#csv(flag=||)
 カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
@@ -9,4 +17,5 @@
 #include(plugin_browser/DOM子要素削除__解説)
 
 ▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]]
+- [[命令一覧/機能順]] > [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
+

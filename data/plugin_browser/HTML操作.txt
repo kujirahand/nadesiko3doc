@@ -1,9 +1,2 @@
-■ [[plugin_browser]]/[[HTML操作:plugin_browser/HTML操作]]
-#include(plugin_browser__解説)
-
-▲ カテゴリの命令一覧
-
-- [[HTML変換:plugin_browser/HTML変換]] --- 文字列をHTMLに変換して返す
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]
+●[[plugin_browser]]/[[HTML操作:plugin_browser/HTML操作]]
+- [[(TEXTを)HTML変換:plugin_browser/HTML変換]] --- 文字列をHTMLに変換して返す

@@ -1,11 +1,4 @@
-■ [[plugin_postgresql]]/[[PostgreSQL:plugin_postgresql/PostgreSQL]]
-#include(plugin_postgresql__解説)
-
-▲ カテゴリの命令一覧
-
-- [[PG開:plugin_postgresql/PG開]] --- データベースを開く
+●[[plugin_postgresql]]/[[PostgreSQL:plugin_postgresql/PostgreSQL]]
+- [[(Sを|Sの|Sで)PG開:plugin_postgresql/PG開]] --- データベースを開く
 - [[PG閉:plugin_postgresql/PG閉]] --- データベースを閉じる
-- [[PG逐次実行:plugin_postgresql/PG逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_postgresql:plugin_postgresql]]
+- [[(SQLをPARAMSで)PG逐次実行:plugin_postgresql/PG逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。

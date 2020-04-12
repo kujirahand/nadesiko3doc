@@ -1,0 +1,4 @@
+●[[plugin_browser]]/[[URLエンコードとパラメータ:plugin_browser/URLエンコードとパラメータ]]
+- [[(TEXTを|TEXTから)URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
+- [[(TEXTを|TEXTへ|TEXTに)URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
+- [[(URLを|URLの|URLから)URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す

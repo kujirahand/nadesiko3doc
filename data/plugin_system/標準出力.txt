@@ -1,13 +1,6 @@
-■ [[plugin_system]]/[[標準出力:plugin_system/標準出力]]
-#include(plugin_system__解説)
-
-▲ カテゴリの命令一覧
-
-- [[表示:plugin_system/表示]] --- Sを表示
-- [[表示ログ:plugin_system/表示ログ]] --- 定数
+●[[plugin_system]]/[[標準出力:plugin_system/標準出力]]
+- [[(Sを|Sと)表示:plugin_system/表示]] --- Sを表示
+- [[表示ログ:plugin_system/表示ログ]] -- 定数
 - [[表示ログクリア:plugin_system/表示ログクリア]] --- 表示ログを空にする
-- [[言:plugin_system/言]] --- Sを表示
-- [[コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]
+- [[(Sを|Sと)言:plugin_system/言]] --- Sを表示
+- [[(Sを|Sと)コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)

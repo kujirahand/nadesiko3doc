@@ -1,11 +1,4 @@
-■ [[plugin_mssql]]/[[SQLServer:plugin_mssql/SQLServer]]
-#include(plugin_mssql__解説)
-
-▲ カテゴリの命令一覧
-
-- [[MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
-- [[MSSQL逐次実行:plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+●[[plugin_mssql]]/[[SQLServer:plugin_mssql/SQLServer]]
+- [[(Sを|Sの|Sで)MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
+- [[(SQLをPARAMSで)MSSQL逐次実行:plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
 - [[MSSQL逐次閉:plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_mssql:plugin_mssql]]

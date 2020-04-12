@@ -1,14 +1,7 @@
-■ [[plugin_browser]]/[[WebSocket:plugin_browser/WebSocket]]
-#include(plugin_browser__解説)
-
-▲ カテゴリの命令一覧
-
-- [[WS接続完了時:plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
-- [[WS受信時:plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
-- [[WSエラー発生時:plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
-- [[WS接続:plugin_browser/WS接続]] --- WebSocketサーバsに接続する
-- [[WS送信:plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
+●[[plugin_browser]]/[[WebSocket:plugin_browser/WebSocket]]
+- [[(CALLBACKを)WS接続完了時:plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
+- [[(CALLBACKを)WS受信時:plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
+- [[(CALLBACKを)WSエラー発生時:plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
+- [[(Sに|Sへ|Sの)WS接続:plugin_browser/WS接続]] --- WebSocketサーバsに接続する
+- [[(Sを|Sと)WS送信:plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
 - [[WS切断:plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]

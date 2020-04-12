@@ -1,14 +1,7 @@
-■ [[plugin_browser]]/[[グラフ描画_CHARTJS:plugin_browser/グラフ描画_CHARTJS]]
-#include(plugin_browser__解説)
-
-▲ カテゴリの命令一覧
-
-- [[グラフ描画:plugin_browser/グラフ描画]] --- Chart.jsを利用して、DATAのグラフを描画
-- [[グラフオプション:plugin_browser/グラフオプション]] --- 定数
-- [[線グラフ描画:plugin_browser/線グラフ描画]] --- 線グラフを描画
-- [[棒グラフ描画:plugin_browser/棒グラフ描画]] --- 棒グラフを描画
-- [[横棒グラフ描画:plugin_browser/横棒グラフ描画]] --- 横棒グラフを描画
-- [[円グラフ描画:plugin_browser/円グラフ描画]] --- 円グラフを描画
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]
+●[[plugin_browser]]/[[グラフ描画_CHARTJS:plugin_browser/グラフ描画_CHARTJS]]
+- [[(DATAを|DATAで|DATAの)グラフ描画:plugin_browser/グラフ描画]] --- Chart.jsを利用して、DATAのグラフを描画
+- [[グラフオプション:plugin_browser/グラフオプション]] -- 定数
+- [[(DATAを|DATAで|DATAの)線グラフ描画:plugin_browser/線グラフ描画]] --- 線グラフを描画
+- [[(DATAを|DATAで|DATAの)棒グラフ描画:plugin_browser/棒グラフ描画]] --- 棒グラフを描画
+- [[(DATAを|DATAで|DATAの)横棒グラフ描画:plugin_browser/横棒グラフ描画]] --- 横棒グラフを描画
+- [[(DATAを|DATAで|DATAの)円グラフ描画:plugin_browser/円グラフ描画]] --- 円グラフを描画

@@ -1,0 +1,5 @@
+●[[plugin_markup]]
+#include(plugin_markup__解説)
+▲[[plugin_markup]] / [[マークアップ:plugin_markup/マークアップ]]
+- [[(Sを)マークダウンHTML変換:plugin_markup/マークダウンHTML変換]] --- マークダウン形式で記述された文字列SをHTML形式に変換する
+- [[(Sを)HTML整形:plugin_markup/HTML整形]] --- HTML形式で記述された文字列Sを整形する

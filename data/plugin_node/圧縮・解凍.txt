@@ -1,13 +1,6 @@
-■ [[plugin_node]]/[[圧縮・解凍:plugin_node/圧縮・解凍]]
-#include(plugin_node__解説)
-
-▲ カテゴリの命令一覧
-
-- [[圧縮解凍ツールパス変更:plugin_node/圧縮解凍ツールパス変更]] --- 圧縮解凍に使うツールを取得変更する
-- [[解凍:plugin_node/解凍]] --- (v1非互換)ZIPファイルAをBに解凍(実行には7-zipが必要-https://goo.gl/LmKswH)
-- [[解凍時:plugin_node/解凍時]] --- 解凍処理を行い、処理が完了したときにcallback処理を実行
-- [[圧縮:plugin_node/圧縮]] --- (v1非互換)ファイルAをBにZIP圧縮(実行には7-zipが必要-https://goo.gl/LmKswH)
-- [[圧縮時:plugin_node/圧縮時]] --- 圧縮処理を行い完了したときにcallback処理を指定
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]
+●[[plugin_node]]/[[圧縮・解凍:plugin_node/圧縮・解凍]]
+- [[(Vに|Vへ)圧縮解凍ツールパス変更:plugin_node/圧縮解凍ツールパス変更]] --- 圧縮解凍に使うツールを取得変更する
+- [[(AをBに|AからBへ)解凍:plugin_node/解凍]] --- (v1非互換)ZIPファイルAをBに解凍(実行には7-zipが必要-https://goo.gl/LmKswH)
+- [[(CALLBACKでAをBに|AからBへ)解凍時:plugin_node/解凍時]] --- 解凍処理を行い、処理が完了したときにcallback処理を実行
+- [[(AをBに|AからBへ)圧縮:plugin_node/圧縮]] --- (v1非互換)ファイルAをBにZIP圧縮(実行には7-zipが必要-https://goo.gl/LmKswH)
+- [[(CALLBACKでAをBに|AからBへ)圧縮時:plugin_node/圧縮時]] --- 圧縮処理を行い完了したときにcallback処理を指定

@@ -1,11 +1,4 @@
-■ [[plugin_mysql]]/[[MySQL:plugin_mysql/MySQL]]
-#include(plugin_mysql__解説)
-
-▲ カテゴリの命令一覧
-
-- [[MYSQL開:plugin_mysql/MYSQL開]] --- データベースを開く
+●[[plugin_mysql]]/[[MySQL:plugin_mysql/MySQL]]
+- [[(Sを|Sの|Sで)MYSQL開:plugin_mysql/MYSQL開]] --- データベースを開く
 - [[MYSQL閉:plugin_mysql/MYSQL閉]] --- データベースを閉じる
-- [[MYSQL逐次実行:plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_mysql:plugin_mysql]]
+- [[(SQLをPARAMSで)MYSQL逐次実行:plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。

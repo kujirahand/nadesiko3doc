@@ -1,13 +1,6 @@
-■ [[plugin_node]]/[[Nodeプロセス:plugin_node/Nodeプロセス]]
-#include(plugin_node__解説)
-
-▲ カテゴリの命令一覧
-
+●[[plugin_node]]/[[Nodeプロセス:plugin_node/Nodeプロセス]]
 - [[終:plugin_node/終]] --- Nodeでプログラム実行を強制終了する
 - [[終了:plugin_node/終了]] --- Nodeでプログラム実行を強制終了する
-- [[秒待:plugin_node/秒待]] --- NodeでN秒待つ
+- [[(SEC)秒待:plugin_node/秒待]] --- NodeでN秒待つ
 - [[OS取得:plugin_node/OS取得]] --- OSプラットフォームを返す(darwin/win32/linux)
 - [[OSアーキテクチャ取得:plugin_node/OSアーキテクチャ取得]] --- OSアーキテクチャを返す
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_node:plugin_node]]

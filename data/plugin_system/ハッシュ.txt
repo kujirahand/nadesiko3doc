@@ -1,12 +1,5 @@
-■ [[plugin_system]]/[[ハッシュ:plugin_system/ハッシュ]]
-#include(plugin_system__解説)
-
-▲ カテゴリの命令一覧
-
-- [[ハッシュキー列挙:plugin_system/ハッシュキー列挙]] --- ハッシュAのキー一覧を配列で返す。
-- [[ハッシュ内容列挙:plugin_system/ハッシュ内容列挙]] --- ハッシュAの内容一覧を配列で返す。
-- [[ハッシュキー削除:plugin_system/ハッシュキー削除]] --- ハッシュAからキーKEYを削除して返す。
-- [[ハッシュキー存在:plugin_system/ハッシュキー存在]] --- ハッシュAのキーKEYが存在するか確認
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_system:plugin_system]]
+●[[plugin_system]]/[[ハッシュ:plugin_system/ハッシュ]]
+- [[(Aの)ハッシュキー列挙:plugin_system/ハッシュキー列挙]] --- ハッシュAのキー一覧を配列で返す。
+- [[(Aの)ハッシュ内容列挙:plugin_system/ハッシュ内容列挙]] --- ハッシュAの内容一覧を配列で返す。
+- [[(AからKEYを|Aの)ハッシュキー削除:plugin_system/ハッシュキー削除]] --- ハッシュAからキーKEYを削除して返す。
+- [[(AのKEYが|Aに)ハッシュキー存在:plugin_system/ハッシュキー存在]] --- ハッシュAのキーKEYが存在するか確認

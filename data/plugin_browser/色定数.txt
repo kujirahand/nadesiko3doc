@@ -1,27 +1,20 @@
-■ [[plugin_browser]]/[[色定数:plugin_browser/色定数]]
-#include(plugin_browser__解説)
-
-▲ カテゴリの命令一覧
-
-- [[水色:plugin_browser/水色]] --- 定数
-- [[紫色:plugin_browser/紫色]] --- 定数
-- [[緑色:plugin_browser/緑色]] --- 定数
-- [[青色:plugin_browser/青色]] --- 定数
-- [[赤色:plugin_browser/赤色]] --- 定数
-- [[黄色:plugin_browser/黄色]] --- 定数
-- [[黒色:plugin_browser/黒色]] --- 定数
-- [[白色:plugin_browser/白色]] --- 定数
-- [[茶色:plugin_browser/茶色]] --- 定数
-- [[灰色:plugin_browser/灰色]] --- 定数
-- [[金色:plugin_browser/金色]] --- 定数
-- [[黄金色:plugin_browser/黄金色]] --- 定数
-- [[銀色:plugin_browser/銀色]] --- 定数
-- [[白金色:plugin_browser/白金色]] --- 定数
-- [[オリーブ色:plugin_browser/オリーブ色]] --- 定数
-- [[ベージュ色:plugin_browser/ベージュ色]] --- 定数
-- [[アリスブルー色:plugin_browser/アリスブルー色]] --- 定数
-- [[RGB:plugin_browser/RGB]] --- 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
-- [[色混:plugin_browser/色混]] --- 配列で[RR,GG,BB]を指定して色を混ぜて#RRGGBB形式の値を返す
-
-▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]
+●[[plugin_browser]]/[[色定数:plugin_browser/色定数]]
+- [[水色:plugin_browser/水色]] -- 定数
+- [[紫色:plugin_browser/紫色]] -- 定数
+- [[緑色:plugin_browser/緑色]] -- 定数
+- [[青色:plugin_browser/青色]] -- 定数
+- [[赤色:plugin_browser/赤色]] -- 定数
+- [[黄色:plugin_browser/黄色]] -- 定数
+- [[黒色:plugin_browser/黒色]] -- 定数
+- [[白色:plugin_browser/白色]] -- 定数
+- [[茶色:plugin_browser/茶色]] -- 定数
+- [[灰色:plugin_browser/灰色]] -- 定数
+- [[金色:plugin_browser/金色]] -- 定数
+- [[黄金色:plugin_browser/黄金色]] -- 定数
+- [[銀色:plugin_browser/銀色]] -- 定数
+- [[白金色:plugin_browser/白金色]] -- 定数
+- [[オリーブ色:plugin_browser/オリーブ色]] -- 定数
+- [[ベージュ色:plugin_browser/ベージュ色]] -- 定数
+- [[アリスブルー色:plugin_browser/アリスブルー色]] -- 定数
+- [[(RとGとBで|Bの)RGB:plugin_browser/RGB]] --- 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
+- [[(Aの)色混:plugin_browser/色混]] --- 配列で[RR,GG,BB]を指定して色を混ぜて#RRGGBB形式の値を返す

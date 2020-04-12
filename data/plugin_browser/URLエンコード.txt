@@ -1,11 +1,21 @@
-■ [[plugin_browser]]/[[URLエンコード:plugin_browser/URLエンコード]]
-#include(plugin_browser__解説)
 
-▲ カテゴリの命令一覧
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/12 23:45:49)
+#rem(★スクリプト=cmd2wiki.nako)
 
-- [[URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
-- [[URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
-- [[URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
+#rem(編集するには『plugin_browser/URLエンコード__解説』を編集します。)
+■ URLエンコード (URLえんこーど)
+{{{#csv(flag=||)
+カテゴリ || [[plugin_browser]] > [[URLエンコードとパラメータ:plugin_browser/URLエンコードとパラメータ]]
+種類 || 関数
+引数 || TEXTを|TEXTから
+説明 || URLエンコードして返す
+}}}
+
+#include(plugin_browser/URLエンコード__解説)
 
 ▲ 参考
-- [[命令一覧/機能順]] > [[プラグイン一覧]] > [[plugin_browser:plugin_browser]]
+- [[命令一覧/機能順]] > [[plugin_browser]] > [[URLエンコードとパラメータ:plugin_browser/URLエンコードとパラメータ]]
+
