@@ -1,5 +1,6 @@
-●『[[AJAXオプション:plugin_node/AJAXオプション__解説]]』の詳しい解説
+●『[[AJAXオプション:plugin_node/AJAXオプション]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

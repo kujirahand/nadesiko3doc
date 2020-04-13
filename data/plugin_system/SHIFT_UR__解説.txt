@@ -1,7 +1,6 @@
-●『[[SHIFT_UR:plugin_system/SHIFT_UR__解説]]』の詳しい解説
-
-VをAビット右へシフトして返す(符号を維持しない、0で埋める)
+●『[[SHIFT_UR:plugin_system/SHIFT_UR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

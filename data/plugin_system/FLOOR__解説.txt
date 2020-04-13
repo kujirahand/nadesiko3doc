@@ -1,7 +1,6 @@
-●『[[FLOOR:plugin_system/FLOOR__解説]]』の詳しい解説
-
-数値を負の無限大方向へ切り下げて返す。
+●『[[FLOOR:plugin_system/FLOOR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

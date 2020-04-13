@@ -1,7 +1,6 @@
-●『[[SIN:plugin_system/SIN__解説]]』の詳しい解説
-
-ラジアン単位VのSINを求める
+●『[[SIN:plugin_system/SIN]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

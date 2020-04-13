@@ -1,5 +1,6 @@
-●『[[NULL:plugin_system/NULL__解説]]』の詳しい解説
+●『[[NULL:plugin_system/NULL]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

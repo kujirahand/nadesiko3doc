@@ -1,7 +1,6 @@
-●『[[SHIFT_R:plugin_system/SHIFT_R__解説]]』の詳しい解説
-
-VをAビット右へシフトして返す(符号を維持する)
+●『[[SHIFT_R:plugin_system/SHIFT_R]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

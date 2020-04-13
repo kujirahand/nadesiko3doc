@@ -1,5 +1,6 @@
-●『[[カメ画像URL:plugin_turtle/カメ画像URL__解説]]』の詳しい解説
+●『[[カメ画像URL:plugin_turtle/カメ画像URL]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

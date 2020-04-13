@@ -1,7 +1,6 @@
-●『[[値設定:plugin_htmlparser/値設定__解説]]』の詳しい解説
-
-DOMの値vを設定する
+●『[[値設定:plugin_htmlparser/値設定]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

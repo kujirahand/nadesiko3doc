@@ -1,7 +1,6 @@
-●『[[TOSTR:plugin_system/TOSTR__解説]]』の詳しい解説
-
-値Vを文字列に変換
+●『[[TOSTR:plugin_system/TOSTR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

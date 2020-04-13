@@ -1,7 +1,6 @@
-●『[[JSONエンコード:plugin_system/JSONエンコード__解説]]』の詳しい解説
-
-オブジェクトVをJSON形式にエンコードして返す
+●『[[JSONエンコード:plugin_system/JSONエンコード]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

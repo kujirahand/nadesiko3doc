@@ -1,7 +1,6 @@
-●『[[DOM親要素取得:plugin_htmlparser/DOM親要素取得__解説]]』の詳しい解説
-
-DOMの親要素を取得する
+●『[[DOM親要素取得:plugin_htmlparser/DOM親要素取得]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

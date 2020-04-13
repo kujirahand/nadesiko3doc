@@ -1,7 +1,6 @@
-●『[[WSサーバ起動成功時:plugin_websocket/WSサーバ起動成功時__解説]]』の詳しい解説
-
-WSサーバ起動が成功した時にcallbackを実行
+●『[[WSサーバ起動成功時:plugin_websocket/WSサーバ起動成功時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

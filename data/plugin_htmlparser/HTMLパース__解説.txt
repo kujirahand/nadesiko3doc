@@ -1,7 +1,6 @@
-●『[[HTMLパース:plugin_htmlparser/HTMLパース__解説]]』の詳しい解説
-
-任意のHTML文字列をパースする。
+●『[[HTMLパース:plugin_htmlparser/HTMLパース]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

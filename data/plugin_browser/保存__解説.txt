@@ -1,7 +1,6 @@
-●『[[保存:plugin_browser/保存__解説]]』の詳しい解説
-
-ブラウザのlocalStorageのKにVを保存
+●『[[保存:plugin_browser/保存]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

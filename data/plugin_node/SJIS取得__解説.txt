@@ -1,7 +1,6 @@
-●『[[SJIS取得:plugin_node/SJIS取得__解説]]』の詳しい解説
-
-Shift_JISのバイナリバッファを文字列に変換
+●『[[SJIS取得:plugin_node/SJIS取得]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

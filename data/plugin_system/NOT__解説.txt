@@ -1,7 +1,6 @@
-●『[[NOT:plugin_system/NOT__解説]]』の詳しい解説
-
-(ビット演算で)vの各ビットを反転して返す。
+●『[[NOT:plugin_system/NOT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

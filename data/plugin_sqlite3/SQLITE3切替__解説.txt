@@ -1,7 +1,6 @@
-●『[[SQLITE3切替:plugin_sqlite3/SQLITE3切替__解説]]』の詳しい解説
-
-アクティブなSQlite3のデータベースをDB(SQLITE3開くで開いたもの)に切り替える
+●『[[SQLITE3切替:plugin_sqlite3/SQLITE3切替]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

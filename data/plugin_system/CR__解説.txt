@@ -1,5 +1,6 @@
-●『[[CR:plugin_system/CR__解説]]』の詳しい解説
+●『[[CR:plugin_system/CR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

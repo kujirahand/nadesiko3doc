@@ -1,7 +1,6 @@
-●『[[POST送信時:plugin_node/POST送信時__解説]]』の詳しい解説
-
-AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
+●『[[POST送信時:plugin_node/POST送信時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

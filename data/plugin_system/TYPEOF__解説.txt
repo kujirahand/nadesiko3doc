@@ -1,7 +1,6 @@
-●『[[TYPEOF:plugin_system/TYPEOF__解説]]』の詳しい解説
-
-変数Vの型を返す
+●『[[TYPEOF:plugin_system/TYPEOF]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

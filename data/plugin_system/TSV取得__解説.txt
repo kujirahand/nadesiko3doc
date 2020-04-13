@@ -1,7 +1,6 @@
-●『[[TSV取得:plugin_system/TSV取得__解説]]』の詳しい解説
-
-TSV形式のデータstrを強制的に二次元配列に変換して返す
+●『[[TSV取得:plugin_system/TSV取得]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

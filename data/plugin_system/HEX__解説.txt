@@ -1,7 +1,6 @@
-●『[[HEX:plugin_system/HEX__解説]]』の詳しい解説
-
-値Vを16進数に変換
+●『[[HEX:plugin_system/HEX]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

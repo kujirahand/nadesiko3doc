@@ -1,7 +1,6 @@
-●『[[FIREBASEパス参照:plugin_firebase/FIREBASEパス参照__解説]]』の詳しい解説
-
-データベースのパスPATHを参照
+●『[[FIREBASEパス参照:plugin_firebase/FIREBASEパス参照]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

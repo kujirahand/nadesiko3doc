@@ -1,7 +1,6 @@
-●『[[AJAX送信時:plugin_browser/AJAX送信時__解説]]』の詳しい解説
-
-非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+●『[[AJAX送信時:plugin_browser/AJAX送信時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

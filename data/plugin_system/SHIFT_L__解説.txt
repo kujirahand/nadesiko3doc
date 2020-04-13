@@ -1,7 +1,6 @@
-●『[[SHIFT_L:plugin_system/SHIFT_L__解説]]』の詳しい解説
-
-VをAビット左へシフトして返す
+●『[[SHIFT_L:plugin_system/SHIFT_L]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

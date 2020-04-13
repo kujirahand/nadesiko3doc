@@ -1,7 +1,6 @@
-●『[[FIREBASE値設定:plugin_firebase/FIREBASE値設定__解説]]』の詳しい解説
-
-データベースのパスPATHにオブジェクトVALUESを設定
+●『[[FIREBASE値設定:plugin_firebase/FIREBASE値設定]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

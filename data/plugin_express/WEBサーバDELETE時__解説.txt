@@ -1,7 +1,6 @@
-●『[[WEBサーバDELETE時:plugin_express/WEBサーバDELETE時__解説]]』の詳しい解説
-
-URIにPOSTメソッドがあった時の処理を指定
+●『[[WEBサーバDELETE時:plugin_express/WEBサーバDELETE時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

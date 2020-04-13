@@ -1,5 +1,6 @@
-●『[[POSTデータ:plugin_express/POSTデータ__解説]]』の詳しい解説
+●『[[POSTデータ:plugin_express/POSTデータ]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

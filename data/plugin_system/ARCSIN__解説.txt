@@ -1,7 +1,6 @@
-●『[[ARCSIN:plugin_system/ARCSIN__解説]]』の詳しい解説
-
-ラジアン単位VのARCSINを求める
+●『[[ARCSIN:plugin_system/ARCSIN]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

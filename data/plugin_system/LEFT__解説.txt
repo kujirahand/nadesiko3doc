@@ -1,7 +1,6 @@
-●『[[LEFT:plugin_system/LEFT__解説]]』の詳しい解説
-
-文字列Sの左端からCNT文字を抽出する
+●『[[LEFT:plugin_system/LEFT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

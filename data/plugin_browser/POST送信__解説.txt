@@ -1,7 +1,6 @@
-●『[[POST送信:plugin_browser/POST送信__解説]]』の詳しい解説
-
-逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+●『[[POST送信:plugin_browser/POST送信]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

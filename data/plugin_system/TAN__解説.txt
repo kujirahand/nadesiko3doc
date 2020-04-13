@@ -1,7 +1,6 @@
-●『[[TAN:plugin_system/TAN__解説]]』の詳しい解説
-
-ラジアン単位VのTANを求める
+●『[[TAN:plugin_system/TAN]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

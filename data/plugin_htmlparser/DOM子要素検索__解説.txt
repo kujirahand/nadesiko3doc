@@ -1,7 +1,6 @@
-●『[[DOM子要素検索:plugin_htmlparser/DOM子要素検索__解説]]』の詳しい解説
-
-DOMの子要素Qを取得する
+●『[[DOM子要素検索:plugin_htmlparser/DOM子要素検索]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

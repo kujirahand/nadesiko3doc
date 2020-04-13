@@ -1,7 +1,6 @@
-●『[[INT:plugin_system/INT__解説]]』の詳しい解説
-
-値Vを整数に変換
+●『[[INT:plugin_system/INT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

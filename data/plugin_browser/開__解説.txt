@@ -1,7 +1,6 @@
-●『[[開:plugin_browser/開__解説]]』の詳しい解説
-
-ブラウザのlocalStorageからVを読む
+●『[[開:plugin_browser/開]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

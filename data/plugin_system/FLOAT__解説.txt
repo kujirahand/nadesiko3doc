@@ -1,7 +1,6 @@
-●『[[FLOAT:plugin_system/FLOAT__解説]]』の詳しい解説
-
-値Vを実数に変換
+●『[[FLOAT:plugin_system/FLOAT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[存在:plugin_browser/存在__解説]]』の詳しい解説
-
-ブラウザのlocalStorageにKEYが存在しているか調べる
+●『[[存在:plugin_browser/存在]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

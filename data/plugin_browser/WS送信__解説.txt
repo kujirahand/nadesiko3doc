@@ -1,7 +1,6 @@
-●『[[WS送信:plugin_browser/WS送信__解説]]』の詳しい解説
-
-アクティブなWebSocketへsを送信する
+●『[[WS送信:plugin_browser/WS送信]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

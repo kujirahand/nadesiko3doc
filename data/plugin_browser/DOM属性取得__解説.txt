@@ -1,7 +1,6 @@
-●『[[DOM属性取得:plugin_browser/DOM属性取得__解説]]』の詳しい解説
-
-DOMの属性Sを取得
+●『[[DOM属性取得:plugin_browser/DOM属性取得]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

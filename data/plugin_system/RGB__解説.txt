@@ -1,7 +1,6 @@
-●『[[RGB:plugin_system/RGB__解説]]』の詳しい解説
-
-HTML用のカラーコードを返すRGB(R,G,B)で各値は0-255
+●『[[RGB:plugin_system/RGB]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[RAD2DEG:plugin_system/RAD2DEG__解説]]』の詳しい解説
-
-ラジアンから度に変換
+●『[[RAD2DEG:plugin_system/RAD2DEG]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

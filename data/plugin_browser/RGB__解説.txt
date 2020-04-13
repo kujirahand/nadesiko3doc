@@ -1,7 +1,6 @@
-●『[[RGB:plugin_browser/RGB__解説]]』の詳しい解説
-
-赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
+●『[[RGB:plugin_browser/RGB]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

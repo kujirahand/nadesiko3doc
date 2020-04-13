@@ -1,7 +1,6 @@
-●『[[WS接続:plugin_browser/WS接続__解説]]』の詳しい解説
-
-WebSocketサーバsに接続する
+●『[[WS接続:plugin_browser/WS接続]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

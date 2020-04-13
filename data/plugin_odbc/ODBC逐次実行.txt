@@ -2,10 +2,10 @@
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
 #rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/12 23:50:44)
+#rem(★生成=2020/04/13 09:30:28)
 #rem(★スクリプト=cmd2wiki.nako)
 
-#rem(編集するには『plugin_odbc/ODBC逐次実行__解説』を編集します。)
+#iflogin(▲→編集するには『[[plugin_odbc/ODBC逐次実行__解説]]』へ)
 ■ ODBC逐次実行 (ODBCちくじじっこう)
 {{{#csv(flag=||)
 カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]

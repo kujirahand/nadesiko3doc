@@ -1,7 +1,6 @@
-●『[[DOM配列変換:plugin_htmlparser/DOM配列変換__解説]]』の詳しい解説
-
-DOMを配列に変換する
+●『[[DOM配列変換:plugin_htmlparser/DOM配列変換]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

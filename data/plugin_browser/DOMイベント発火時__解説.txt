@@ -1,7 +1,6 @@
-●『[[DOMイベント発火時:plugin_browser/DOMイベント発火時__解説]]』の詳しい解説
-
-DOMのEVENTが発火した時にCALLBACKを実行するように設定
+●『[[DOMイベント発火時:plugin_browser/DOMイベント発火時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

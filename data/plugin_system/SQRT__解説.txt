@@ -1,7 +1,6 @@
-●『[[SQRT:plugin_system/SQRT__解説]]』の詳しい解説
-
-Aの平方根を返す
+●『[[SQRT:plugin_system/SQRT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

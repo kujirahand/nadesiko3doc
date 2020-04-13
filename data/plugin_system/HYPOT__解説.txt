@@ -1,7 +1,6 @@
-●『[[HYPOT:plugin_system/HYPOT__解説]]』の詳しい解説
-
-直角三角形の二辺の長さA,Bから斜辺を求めて返す。
+●『[[HYPOT:plugin_system/HYPOT]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

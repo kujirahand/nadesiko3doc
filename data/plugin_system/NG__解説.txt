@@ -1,5 +1,6 @@
-●『[[NG:plugin_system/NG__解説]]』の詳しい解説
+●『[[NG:plugin_system/NG]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

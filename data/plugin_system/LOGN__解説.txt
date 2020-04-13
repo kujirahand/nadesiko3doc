@@ -1,7 +1,6 @@
-●『[[LOGN:plugin_system/LOGN__解説]]』の詳しい解説
-
-指定された底AでBの対数を計算して返す
+●『[[LOGN:plugin_system/LOGN]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

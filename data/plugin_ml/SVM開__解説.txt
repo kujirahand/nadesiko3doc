@@ -1,7 +1,6 @@
-●『[[SVM開:plugin_ml/SVM開__解説]]』の詳しい解説
-
-機械学習のアルゴリズムSVMをパラメータOPTIONで開く。 OPTION={type,kernel,gamma,cost}
+●『[[SVM開:plugin_ml/SVM開]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

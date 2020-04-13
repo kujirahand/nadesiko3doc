@@ -1,7 +1,6 @@
-●『[[ARCCOS:plugin_system/ARCCOS__解説]]』の詳しい解説
-
-ラジアン単位VのARCCOSを求める
+●『[[ARCCOS:plugin_system/ARCCOS]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[WSサーバ起動失敗時:plugin_websocket/WSサーバ起動失敗時__解説]]』の詳しい解説
-
-WSサーバ起動が失敗した時にcallbackを実行
+●『[[WSサーバ起動失敗時:plugin_websocket/WSサーバ起動失敗時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

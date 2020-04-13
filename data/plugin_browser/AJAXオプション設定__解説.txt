@@ -1,7 +1,6 @@
-●『[[AJAXオプション設定:plugin_browser/AJAXオプション設定__解説]]』の詳しい解説
-
-Ajax命令でオプションを設定
+●『[[AJAXオプション設定:plugin_browser/AJAXオプション設定]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

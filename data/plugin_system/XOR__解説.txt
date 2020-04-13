@@ -1,7 +1,6 @@
-●『[[XOR:plugin_system/XOR__解説]]』の詳しい解説
-
-(ビット演算で)AとBの排他的論理和を返す。
+●『[[XOR:plugin_system/XOR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

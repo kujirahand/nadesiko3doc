@@ -1,5 +1,6 @@
-●『[[HTML応答ヘッダ:plugin_htmlparser/HTML応答ヘッダ__解説]]』の詳しい解説
+●『[[HTML応答ヘッダ:plugin_htmlparser/HTML応答ヘッダ]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

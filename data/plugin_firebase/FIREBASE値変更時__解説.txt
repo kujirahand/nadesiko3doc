@@ -1,7 +1,6 @@
-●『[[FIREBASE値変更時:plugin_firebase/FIREBASE値変更時__解説]]』の詳しい解説
-
-パスpathの値(オブジェクト)が変更された時callbackを実行。引数に値(オブジェクト)が得られる。
+●『[[FIREBASE値変更時:plugin_firebase/FIREBASE値変更時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

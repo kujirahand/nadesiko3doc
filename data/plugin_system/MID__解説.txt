@@ -1,7 +1,6 @@
-●『[[MID:plugin_system/MID__解説]]』の詳しい解説
-
-文字列SのA文字目からCNT文字を抽出する
+●『[[MID:plugin_system/MID]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

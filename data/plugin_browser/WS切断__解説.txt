@@ -1,7 +1,6 @@
-●『[[WS切断:plugin_browser/WS切断__解説]]』の詳しい解説
-
-アクティブなWebSocketを閉じる
+●『[[WS切断:plugin_browser/WS切断]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

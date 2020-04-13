@@ -1,7 +1,6 @@
-●『[[DOMイベント削除:plugin_browser/DOMイベント削除__解説]]』の詳しい解説
-
-DOMのEVENTからなでしこ関数名funcStrのイベントを削除
+●『[[DOMイベント削除:plugin_browser/DOMイベント削除]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

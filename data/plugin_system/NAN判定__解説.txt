@@ -1,7 +1,6 @@
-●『[[NAN判定:plugin_system/NAN判定__解説]]』の詳しい解説
-
-値VがNaNかどうかを判定
+●『[[NAN判定:plugin_system/NAN判定]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

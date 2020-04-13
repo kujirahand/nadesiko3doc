@@ -1,7 +1,6 @@
-●『[[LOG:plugin_system/LOG__解説]]』の詳しい解説
-
-Aの自然対数（底はE）を返す
+●『[[LOG:plugin_system/LOG]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

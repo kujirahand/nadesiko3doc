@@ -1,7 +1,6 @@
-●『[[表CSV変換:plugin_system/表CSV変換__解説]]』の詳しい解説
-
-二次元配列AをCSV形式に変換して返す
+●『[[表CSV変換:plugin_system/表CSV変換]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

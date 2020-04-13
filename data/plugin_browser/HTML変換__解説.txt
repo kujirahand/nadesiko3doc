@@ -1,7 +1,6 @@
-●『[[HTML変換:plugin_browser/HTML変換__解説]]』の詳しい解説
-
-文字列をHTMLに変換して返す
+●『[[HTML変換:plugin_browser/HTML変換]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,5 +1,6 @@
-●『[[DOM生成個数:plugin_browser/DOM生成個数__解説]]』の詳しい解説
+●『[[DOM生成個数:plugin_browser/DOM生成個数]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

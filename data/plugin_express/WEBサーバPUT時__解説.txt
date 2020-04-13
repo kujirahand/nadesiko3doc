@@ -1,7 +1,6 @@
-●『[[WEBサーバPUT時:plugin_express/WEBサーバPUT時__解説]]』の詳しい解説
-
-URIにPOSTメソッドがあった時の処理を指定
+●『[[WEBサーバPUT時:plugin_express/WEBサーバPUT時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

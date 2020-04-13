@@ -1,5 +1,6 @@
-●『[[LF:plugin_system/LF__解説]]』の詳しい解説
+●『[[LF:plugin_system/LF]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

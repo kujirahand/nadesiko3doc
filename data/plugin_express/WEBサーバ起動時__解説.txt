@@ -1,7 +1,6 @@
-●『[[WEBサーバ起動時:plugin_express/WEBサーバ起動時__解説]]』の詳しい解説
-
-ポートPORTNOでWebサーバを起動して成功したらCALLBACKを実行する
+●『[[WEBサーバ起動時:plugin_express/WEBサーバ起動時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

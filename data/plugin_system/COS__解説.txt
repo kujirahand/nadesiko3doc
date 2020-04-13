@@ -1,7 +1,6 @@
-●『[[COS:plugin_system/COS__解説]]』の詳しい解説
-
-ラジアン単位VのCOSを求める
+●『[[COS:plugin_system/COS]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[ABS:plugin_system/ABS__解説]]』の詳しい解説
-
-Vの絶対値を返す
+●『[[ABS:plugin_system/ABS]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[JSONデコード:plugin_system/JSONデコード__解説]]』の詳しい解説
-
-JSON文字列Sをオブジェクトにデコードして返す
+●『[[JSONデコード:plugin_system/JSONデコード]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

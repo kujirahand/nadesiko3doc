@@ -1,7 +1,6 @@
-●『[[LN:plugin_system/LN__解説]]』の詳しい解説
-
-実数式 A の自然対数（Ln(A) = 1）を返す
+●『[[LN:plugin_system/LN]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

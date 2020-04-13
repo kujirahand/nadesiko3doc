@@ -1,7 +1,6 @@
-●『[[JS実行:plugin_system/JS実行__解説]]』の詳しい解説
-
-JavaScriptのコードSRCを実行する(変数sysでなでしこシステムを参照できる)
+●『[[JS実行:plugin_system/JS実行]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

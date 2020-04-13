@@ -1,6 +1,4 @@
-●『[[HTML整形:plugin_markup/HTML整形__解説]]』の詳しい解説
-
-HTML形式で記述された文字列Sを整形する
+●『[[HTML整形:plugin_markup/HTML整形]]』の詳しい解説
 
 {{{
 # 準備中

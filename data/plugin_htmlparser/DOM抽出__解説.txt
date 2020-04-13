@@ -1,7 +1,6 @@
-●『[[DOM抽出:plugin_htmlparser/DOM抽出__解説]]』の詳しい解説
-
-DOMからクエリQを利用して合致するものを抽出する
+●『[[DOM抽出:plugin_htmlparser/DOM抽出]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

@@ -1,7 +1,6 @@
-●『[[FIREBASE値取得時:plugin_firebase/FIREBASE値取得時__解説]]』の詳しい解説
-
-パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。
+●『[[FIREBASE値取得時:plugin_firebase/FIREBASE値取得時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

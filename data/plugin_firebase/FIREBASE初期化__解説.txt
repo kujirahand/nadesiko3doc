@@ -1,7 +1,6 @@
-●『[[FIREBASE初期化:plugin_firebase/FIREBASE初期化__解説]]』の詳しい解説
-
-アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
+●『[[FIREBASE初期化:plugin_firebase/FIREBASE初期化]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

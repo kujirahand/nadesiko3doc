@@ -1,7 +1,6 @@
-●『[[WEBサーバGET時:plugin_express/WEBサーバGET時__解説]]』の詳しい解説
-
-URIにGETメソッドがあった時の処理を指定
+●『[[WEBサーバGET時:plugin_express/WEBサーバGET時]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+

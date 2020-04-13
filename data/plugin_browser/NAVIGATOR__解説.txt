@@ -1,5 +1,6 @@
-●『[[NAVIGATOR:plugin_browser/NAVIGATOR__解説]]』の詳しい解説
+●『[[NAVIGATOR:plugin_browser/NAVIGATOR]]』の詳しい解説
 
 {{{
 # 準備中
 }}}
+
