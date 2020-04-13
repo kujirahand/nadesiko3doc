@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]
 #include(plugin_system__解説)
 ▲[[plugin_system]] / [[システム定数:plugin_system/システム定数]]

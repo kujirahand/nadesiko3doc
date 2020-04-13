@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_odbc]]/[[ODBC:plugin_odbc/ODBC]]
 - [[(Sを|Sの|Sで)ODBC逐次開:plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
 - [[(Sを|Sの|Sで)ODBC開:plugin_odbc/ODBC開]] --- ODBCのデータベースを同期的に開いてオブジェクトを返す

@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]/[[CSV操作:plugin_system/CSV操作]]
 - [[(STRを|STRの|STRで)CSV取得:plugin_system/CSV取得]] --- CSV形式のデータstrを強制的に二次元配列に変換して返す
 - [[(STRを|STRの|STRで)TSV取得:plugin_system/TSV取得]] --- TSV形式のデータstrを強制的に二次元配列に変換して返す

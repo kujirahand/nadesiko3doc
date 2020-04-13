@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]/[[ビット演算:plugin_system/ビット演算]]
 - [[(AとBの)OR:plugin_system/OR]] --- (ビット演算で)AとBの論理和を返す。
 - [[(AとBの)AND:plugin_system/AND]] --- (ビット演算で)AとBの論理積を返す。日本語の「AかつB」に相当する

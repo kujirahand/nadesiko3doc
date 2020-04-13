@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]/[[型変換:plugin_system/型変換]]
 - [[(Vの)変数型確認:plugin_system/変数型確認]] --- 変数Vの型を返す
 - [[(Vの)TYPEOF:plugin_system/TYPEOF]] --- 変数Vの型を返す

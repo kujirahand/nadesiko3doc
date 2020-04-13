@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]/[[JSON:plugin_system/JSON]]
 - [[(Vを|Vの)JSONエンコード:plugin_system/JSONエンコード]] --- オブジェクトVをJSON形式にエンコードして返す
 - [[(Vを|Vの)JSONエンコード整形:plugin_system/JSONエンコード整形]] --- オブジェクトVをJSON形式にエンコードして整形して返す

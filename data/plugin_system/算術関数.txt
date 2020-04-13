@@ -1,3 +1,11 @@
+
+#rem(★★★ 編集禁止 ★★★)
+#rem(★このファイルはスクリプトで自動で生成されました。)
+#rem(★なでしこ=v3.0.75)
+#rem(★生成=2020/04/13 09:40:07)
+#rem(★スクリプト=cmd2wiki.nako)
+
+
 ●[[plugin_system]]/[[算術関数:plugin_system/算術関数]]
 - [[(Vの)SIGN:plugin_system/SIGN]] --- Vが0なら0を、0超なら1を、0未満なら-1を返す
 - [[(Aの)ABS:plugin_system/ABS]] --- Vの絶対値を返す
