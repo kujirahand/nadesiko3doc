@@ -7,7 +7,6 @@ $file_doc_ini = dirname(__FILE__).'/nadesiko3doc.ini.php';
 define("KONA3_WIKI_TITLE", "なでしこ3マニュアル");
 define("KONA3_WIKI_PRIVATE", FALSE); # TRUE or FALSE
 define("KONA3_WIKI_SKIN", "def"); // def/single
-define("KONA3_WIKI_USERS", "nako3:nako3"); # admin users
 
 // Setting
 define("KONA3_ALLPAGE_FOOTER", "#comment\n#analytics"); // footer
