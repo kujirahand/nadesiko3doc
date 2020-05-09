@@ -4,10 +4,11 @@
 
 - [なでしこ3](https://nadesi.com/doc3/)
 - [なでしこ3マニュアル](https://nadesi.com/v3/doc/)
+- [Konawiki3](https://github.com/kujirahand/konawiki3)
 
 ## プロジェクトの開始方法
 
-マニュアルは基本的にテキストファイルですが、Konawiki3を利用することでWiki上で気軽にマニュアルの作成ができます。
+マニュアルは基本的にテキストファイルですが、Konawiki3を利用することでWiki上で気軽にマニュアルの作成ができます。本プロジェクトのために、Konawiki3を大幅に改良しています。
 
 ```
 # マニュアル作成ツールのkonawiki3を取得

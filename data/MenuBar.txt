@@ -1,9 +1,16 @@
+▲なでしこ3
+- [[なでしこ3:https://nadesi.com/doc3/]]
+- [[簡易エディタ:https://nadesi.com/doc3/go.php?10]]
+
 ▲一覧
 - [[命令一覧/機能順]]
 - [[プラグイン一覧]]
+<<<<<<< HEAD
 
 #recent
 
 #popular
 
 #counter
+=======
+>>>>>>> 2725a6e695e7b4f25ac3606e221375d1ab3fdb7a
