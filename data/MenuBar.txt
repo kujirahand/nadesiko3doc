@@ -2,3 +2,8 @@
 - [[命令一覧/機能順]]
 - [[プラグイン一覧]]
 
+#recent
+
+#popular
+
+#counter
