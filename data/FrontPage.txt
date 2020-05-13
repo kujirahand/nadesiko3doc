@@ -9,5 +9,7 @@
 ▲マニュアルの編集に関して
 
 - [[マニュアルの編集方法]]
+- [[リポジトリ:https://github.com/kujirahand/nadesiko3doc]]
+
 
 

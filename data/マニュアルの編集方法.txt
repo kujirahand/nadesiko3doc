@@ -4,11 +4,7 @@
 
 ●Gitリポジトリ
 
-将来的にWikiを編集すると、[[マニュアルのリポジトリ:https://github.com/kujirahand/nadesiko3doc]]へ反映される予定です。
-
-{{{#column
-ただし現在WebサーバーでGitがうまく動かないため、定期的に手動でリポジトリに反映されることになります。長期間リポジトリに反映されていないことに気づいたら、[[開発者:https://kujirahand.com/wiki/go.php?16]]へ通知してください。
-}}}
+Wikiを編集すると、[[マニュアルのリポジトリ:https://github.com/kujirahand/nadesiko3doc]]へ反映されます。（ただし現在WebサーバーでGitがうまく動かないため、定期的に手動でリポジトリに反映されます。）
 
 ●命名規則とWIKI名の対応
 
