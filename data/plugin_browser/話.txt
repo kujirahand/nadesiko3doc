@@ -1,21 +1,13 @@
+●『[[話:plugin_browser/話]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+音声合成APIを使って、Sを発話する。
 
-#iflogin(▲→編集するには『[[plugin_browser/話__解説]]』へ)
-■ 話 (はなす)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[音声合成:plugin_browser/音声合成]]
-種類 || 関数
-引数 || Sと|Sを|Sの
-説明 || 音声合成APIを使って、Sを発話する
+利用の条件として、WEBブラウザが音声合成API(Speech Synthesis API)に対応している必要がある。([[対応ブラウザ:https://caniuse.com/#search=speech%20Synthesis%20API]]/最新版のChrome/Safari/Edge/Firefoxでは問題なく動きます。)
+
+{{{#nako3
+「こんにちは」と話す。
 }}}
 
-#include(plugin_browser/話__解説)
+▲発話のカスタマイズ
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[音声合成:plugin_browser/音声合成]]
-
+- [[plugin_browser/話者詳細設定]]

@@ -1,21 +1,12 @@
+●『[[PG閉:plugin_postgresql/PG閉]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+データベースを閉じる
 
-#iflogin(▲→編集するには『[[plugin_postgresql/PG閉__解説]]』へ)
-■ PG閉 (PGとじる)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
-種類 || 関数
-引数 || 
-説明 || データベースを閉じる
+{{{
+!「nadesiko3-postgresql」を取り込む
+「postgresql://postgres:hoge@localhost:5432/hoge」をPG開く。
+逐次実行
+　　# --- ここにPG逐次実行 ---
+　　次に、PG閉じる。
+ここまで。
 }}}
-
-#include(plugin_postgresql/PG閉__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
-

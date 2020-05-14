@@ -1,14 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_firebase]]/[[Firebase:plugin_firebase/Firebase]]
-- [[(CONFIGで)FIREBASE初期化:plugin_firebase/FIREBASE初期化]] --- アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
-- [[(PATHを)FIREBASEパス参照:plugin_firebase/FIREBASEパス参照]] --- データベースのパスPATHを参照
-- [[(PATHにVALUESを|PATHへVALUESの)FIREBASE値設定:plugin_firebase/FIREBASE値設定]] --- データベースのパスPATHにオブジェクトVALUESを設定
-- [[(CALLBACKでPATHの)FIREBASE値変更時:plugin_firebase/FIREBASE値変更時]] --- パスpathの値(オブジェクト)が変更された時callbackを実行。引数に値(オブジェクト)が得られる。
-- [[(CALLBACKでPATHの)FIREBASE値取得時:plugin_firebase/FIREBASE値取得時]] --- パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。

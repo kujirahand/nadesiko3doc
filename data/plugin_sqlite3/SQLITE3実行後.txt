@@ -1,21 +1,14 @@
+●『[[SQLITE3実行後:plugin_sqlite3/SQLITE3実行後]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。[[無名関数:無名関数について]]と一緒に使うと便利。
 
-#iflogin(▲→編集するには『[[plugin_sqlite3/SQLITE3実行後__解説]]』へ)
-■ SQLITE3実行後 (SQLITE3じっこうしたあと)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-種類 || 関数
-引数 || FにSQLをPARAMSで
-説明 || SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+sqlCreate = 『
+CREATE TABLE IF NOT EXISTS tt 
+  (id INTEGER PRIMARY KEY, value INTEGER);』
+「ファイル名.sqlite3」をSQLITE3開く。
+sqlCreateを[]でSQLITE3実行後には
+　　「実行しました」と表示。
+ここまで。
 }}}
-
-#include(plugin_sqlite3/SQLITE3実行後__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-

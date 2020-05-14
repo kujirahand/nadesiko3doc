@@ -1,16 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_node]]/[[Ajax:plugin_node/Ajax]]
-- [[(CALLBACKのURLまで|URLへ|URLに)AJAX送信時:plugin_node/AJAX送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
-- [[(CALLBACKのURLまで|URLへ|URLに)GET送信時:plugin_node/GET送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
-- [[(CALLBACKのURLまでPARAMSを|URLへ|URLに)POST送信時:plugin_node/POST送信時]] --- AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
-- [[(CALLBACKのURLまでPARAMSを|URLへ|URLに)POSTフォーム送信時:plugin_node/POSTフォーム送信時]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
-- [[(CALLBACKの)AJAX失敗時:plugin_node/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
-- [[AJAXオプション:plugin_node/AJAXオプション]] -- 定数
-- [[(OPTIONに|OPTIONへ|OPTIONと)AJAXオプション設定:plugin_node/AJAXオプション設定]] --- Ajax命令でオプションを設定

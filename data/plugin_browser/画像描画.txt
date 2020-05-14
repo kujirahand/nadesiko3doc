@@ -1,21 +1,6 @@
+●『[[画像描画:plugin_browser/画像描画]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_browser/画像描画__解説]]』へ)
-■ 画像描画 (がぞうびょうが)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[描画:plugin_browser/描画]]
-種類 || 関数
-引数 || IMGのSXYのDXYへ|IMGをSXYをDXYに
-説明 || ファイル名F(またはImage)の画像を[sx, sy, sw, sh]の[dx, dy, dw, dh]へ描画し、Imageを返す
+{{{
+# 準備中
 }}}
-
-#include(plugin_browser/画像描画__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[描画:plugin_browser/描画]]
 

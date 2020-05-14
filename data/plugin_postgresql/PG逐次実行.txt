@@ -1,21 +1,24 @@
+●『[[PG逐次実行:plugin_postgresql/PG逐次実行]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
 
-#iflogin(▲→編集するには『[[plugin_postgresql/PG逐次実行__解説]]』へ)
-■ PG逐次実行 (PGちくじじっこう)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
-種類 || 関数
-引数 || SQLをPARAMSで
-説明 || 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
+{{{
+!「nadesiko3-postgresql」を取り込む
+CREATE=「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」
+INSERT=「INSERT INTO tt(id,value)VALUES($1,$2)」
+SELECT=「SELECT * FROM tt WHERE id=$1」
+DROP=「DROP TABLE tt」
+「postgresql://postgres:hoge@localhost:5432/hoge」をPG開く。
+逐次実行
+　　先に、CREATEを[]でPG逐次実行。
+　　次に、INSERTを[1,100]でPG逐次実行。
+　　次に、対象を表示。# INSERTの実行結果
+　　次に、INSERTを[2,200]でPG逐次実行。
+　　次に、INSERTを[3,300]でPG逐次実行。
+　　次に、SELECTを[2]でPG逐次実行。
+　　次に、対象[0]["value"]を表示。# 結果->200
+　　次に、DROPを[]でPG逐次実行。
+　　次に、PG閉じる。
+ここまで。
 }}}
-
-#include(plugin_postgresql/PG逐次実行__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_postgresql]] > [[PostgreSQL:plugin_postgresql/PostgreSQL]]
 

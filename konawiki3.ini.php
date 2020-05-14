@@ -9,6 +9,7 @@ define("KONA3_WIKI_PRIVATE", FALSE); # TRUE or FALSE
 define("KONA3_WIKI_SKIN", "def"); // def/single
 
 // Setting
+define("KONA3_ALLPAGE_HEADER", "#nako3doc"); 
 define("KONA3_ALLPAGE_FOOTER", "#comment\n#analytics"); // footer
 define("KONA3_ENC_PAGENAME", FALSE);
 

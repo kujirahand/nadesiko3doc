@@ -1,13 +1,12 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_websocket]](拡張プラグイン)
-#include(plugin_websocket__解説)
 ▲[[plugin_websocket]] / [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
 - [[(PORTNOの|PORTNOで)WSサーバ起動:plugin_websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
 - [[(CONFの|CONFで)WSSサーバ起動:plugin_websocket/WSSサーバ起動]] --- 設定CONF{cert:サーバ証明書,key:キーファイル,port:ポート番号}を指定してWSSサーバを起動して成功したら『WSサーバ起動成功した時』を実行する

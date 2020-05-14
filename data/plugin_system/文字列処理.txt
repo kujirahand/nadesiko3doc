@@ -1,29 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[文字列処理:plugin_system/文字列処理]]
-- [[(Vの)文字数:plugin_system/文字数]] --- 文字列Vの文字数を返す
-- [[(SでAが|Sの)何文字目:plugin_system/何文字目]] --- 文字列SでAが何文字目にあるか調べて返す
-- [[(Vの)CHR:plugin_system/CHR]] --- 文字コードから文字を返す
-- [[(Vの)ASC:plugin_system/ASC]] --- 文字列Vの最初の文字の文字コードを返す
-- [[(SでIにAを|SのIへ)文字挿入:plugin_system/文字挿入]] --- 文字列SのI文字目に文字列Aを挿入する
-- [[(SでAからBを|Sの)文字検索:plugin_system/文字検索]] --- 文字列Sで文字列A文字目からBを検索。見つからなければ0を返す。(類似命令に『何文字目』がある)(v1非互換)
-- [[(SでAを|Sに|Sへ)追加:plugin_system/追加]] --- 文字列SにAを追加して返す(v1非互換)
-- [[(SでAを|Sに|Sへ)一行追加:plugin_system/一行追加]] --- 文字列SにAと改行を追加して返す(v1非互換)
-- [[(Vを|Vの|Vで)文字列分解:plugin_system/文字列分解]] --- 文字列Vを一文字ずつに分解して返す
-- [[(VをCNTで|Vの)リフレイン:plugin_system/リフレイン]] --- 文字列VをCNT回繰り返す(v1非互換)
-- [[(SでAの)出現回数:plugin_system/出現回数]] --- 文字列SにAが何回出現するか数える
-- [[(SでAからCNTを|Sの)MID:plugin_system/MID]] --- 文字列SのA文字目からCNT文字を抽出する
-- [[(SでAからCNTを|SのCNT)文字抜出:plugin_system/文字抜出]] --- 文字列SのA文字目からCNT文字を抽出する
-- [[(SのCNTだけ|Sで)LEFT:plugin_system/LEFT]] --- 文字列Sの左端からCNT文字を抽出する
-- [[(SのCNTだけ|SでCNT)文字左部分:plugin_system/文字左部分]] --- 文字列Sの左端からCNT文字を抽出する
-- [[(SのCNTだけ|Sで)RIGHT:plugin_system/RIGHT]] --- 文字列Sの右端からCNT文字を抽出する
-- [[(SのCNTだけ|SでCNT)文字右部分:plugin_system/文字右部分]] --- 文字列Sの右端からCNT文字を抽出する
-- [[(SのAで|Sを)区切:plugin_system/区切]] --- 文字列Sを区切り文字Aで区切って配列で返す
-- [[(SからAまで|SのAを)切取:plugin_system/切取]] --- 文字列Sから文字列Aまでの部分を抽出する(v1非互換)
-- [[(SのAからBだけ|Bを|B)文字削除:plugin_system/文字削除]] --- 文字列SのA文字目からB文字分を削除して返す

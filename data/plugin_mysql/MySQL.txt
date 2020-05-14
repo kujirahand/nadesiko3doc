@@ -1,12 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_mysql]]/[[MySQL:plugin_mysql/MySQL]]
-- [[(Sを|Sの|Sで)MYSQL開:plugin_mysql/MYSQL開]] --- データベースを開く
-- [[MYSQL閉:plugin_mysql/MYSQL閉]] --- データベースを閉じる
-- [[(SQLをPARAMSで)MYSQL逐次実行:plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。

@@ -1,21 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[型変換:plugin_system/型変換]]
-- [[(Vの)変数型確認:plugin_system/変数型確認]] --- 変数Vの型を返す
-- [[(Vの)TYPEOF:plugin_system/TYPEOF]] --- 変数Vの型を返す
-- [[(Vを)文字列変換:plugin_system/文字列変換]] --- 値Vを文字列に変換
-- [[(Vを)TOSTR:plugin_system/TOSTR]] --- 値Vを文字列に変換
-- [[(Vを)整数変換:plugin_system/整数変換]] --- 値Vを整数に変換
-- [[(Vを)TOINT:plugin_system/TOINT]] --- 値Vを整数に変換
-- [[(Vを)実数変換:plugin_system/実数変換]] --- 値Vを実数に変換
-- [[(Vを)TOFLOAT:plugin_system/TOFLOAT]] --- 値Vを実数に変換
-- [[(Vの)INT:plugin_system/INT]] --- 値Vを整数に変換
-- [[(Vの)FLOAT:plugin_system/FLOAT]] --- 値Vを実数に変換
-- [[(Vを)NAN判定:plugin_system/NAN判定]] --- 値VがNaNかどうかを判定
-- [[(Aの)HEX:plugin_system/HEX]] --- 値Vを16進数に変換

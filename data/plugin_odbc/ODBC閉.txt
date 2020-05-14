@@ -1,21 +1,11 @@
+●『[[ODBC閉:plugin_odbc/ODBC閉]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+ODBCで開いているデータベースを閉じる
 
-#iflogin(▲→編集するには『[[plugin_odbc/ODBC閉__解説]]』へ)
-■ ODBC閉 (ODBCとじる)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-種類 || 関数
-引数 || 
-説明 || ODBCで開いているデータベースを閉じる
+{{{
+!「nadesiko3-odbc」を取り込む。
+
+「DSN=test;UID=kujira;PWD=****」をODBC開く。
+# --- ここに処理 ---
+ODBC閉じる。
 }}}
-
-#include(plugin_odbc/ODBC閉__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-

@@ -1,21 +1,13 @@
+●『[[オーディオ再生:plugin_browser/オーディオ再生]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+AudioオブジェクトOBJを指定してオーディをを再生
 
-#iflogin(▲→編集するには『[[plugin_browser/オーディオ再生__解説]]』へ)
-■ オーディオ再生 (おーでぃおさいせい)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[オーディオ:plugin_browser/オーディオ]]
-種類 || 関数
-引数 || OBJを
-説明 || AudioオブジェクトOBJを指定してオーディをを再生
+{{{
+A=「https://nadesi.com/v3/common/sound/ki.mp3」をオーディオ開く。
+Aをオーディオ再生。
 }}}
 
-#include(plugin_browser/オーディオ再生__解説)
+▲参考
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[オーディオ:plugin_browser/オーディオ]]
-
+- [[plugin_browser/オーディオ再生]]
+- [[plugin_browser/オーディオ停止]]

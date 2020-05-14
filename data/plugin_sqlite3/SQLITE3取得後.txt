@@ -1,21 +1,24 @@
+●『[[SQLITE3取得後:plugin_sqlite3/SQLITE3取得後]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
 
-#iflogin(▲→編集するには『[[plugin_sqlite3/SQLITE3取得後__解説]]』へ)
-■ SQLITE3取得後 (SQLITE3じっこうしゅとくしたあと)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-種類 || 関数
-引数 || FにSQLをPARAMSで
-説明 || SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」をSQLITE3開く。
+
+SQL=「CREATE TABLE IF NOT EXISTS tt (id INTEGER PRIMARY KEY, value INTEGER)」
+SQLを[]でSQLITE3実行後には
+　　SQL=「INSERT INTO tt (value) VALUES (?)」
+　　SQLを[30]でSQLITE3実行後には
+　　　　「30を挿入」と表示。
+　　　　SQLを[50]でSQLITE3実行後には
+　　　　　　「50を挿入」と表示。
+　　　　　　SQL=「SELECT * FROM tt;」
+　　　　　　SQLを[]でSQLITE3取得後には(ROWS)
+　　　　　　　　「抽出」と表示。
+　　　　　　　　ROWSを表示。
+　　　　　　ここまで。
+　　　　ここまで。
+ 　　ここまで。
+ここまで。
 }}}
-
-#include(plugin_sqlite3/SQLITE3取得後__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-

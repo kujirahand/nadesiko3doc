@@ -1,14 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[特殊命令:plugin_system/特殊命令]]
-- [[(SRCを|SRCで)JS実行:plugin_system/JS実行]] --- JavaScriptのコードSRCを実行する(変数sysでなでしこシステムを参照できる)
-- [[(NAMEの)JSオブジェクト取得:plugin_system/JSオブジェクト取得]] --- なでしこで定義した関数や変数nameのJavaScriptオブジェクトを取得する
-- [[(NAMEをARGSで)JS関数実行:plugin_system/JS関数実行]] --- JavaScriptの関数NAMEを引数ARGS(配列)で実行する
-- [[(CODEを|CODEで)ナデシコ:plugin_system/ナデシコ]] --- なでしこのコードCODEを実行する
-- [[(CODEを|CODEで)ナデシコ続:plugin_system/ナデシコ続]] --- なでしこのコードCODEを実行する

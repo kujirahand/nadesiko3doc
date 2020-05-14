@@ -1,21 +1,6 @@
+●『[[HTML整形:plugin_markup/HTML整形]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_markup/HTML整形__解説]]』へ)
-■ HTML整形 (えいちてぃーえむえるせいけい)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_markup]] > [[マークアップ:plugin_markup/マークアップ]]
-種類 || 関数
-引数 || Sを
-説明 || HTML形式で記述された文字列Sを整形する
+{{{
+# 準備中
 }}}
-
-#include(plugin_markup/HTML整形__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_markup]] > [[マークアップ:plugin_markup/マークアップ]]
 

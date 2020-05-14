@@ -1,21 +1,6 @@
+●『[[キー離時:plugin_browser/キー離時]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_browser/キー離時__解説]]』へ)
-■ キー離時 (きーはなしたとき)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
-種類 || 関数
-引数 || FUNCでDOMを|DOMの
-説明 || 無名関数FでDOMに対してキーを離した時に実行するイベントを設定。『押されたキー』が設定される。
+{{{
+# 準備中
 }}}
-
-#include(plugin_browser/キー離時__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
 

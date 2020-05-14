@@ -1,13 +1,12 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]
-#include(plugin_system__解説)
 ▲[[plugin_system]] / [[システム定数:plugin_system/システム定数]]
 - [[ナデシコバージョン:plugin_system/ナデシコバージョン]] -- 定数
 - [[ナデシコエンジン:plugin_system/ナデシコエンジン]] -- 定数
@@ -47,7 +46,6 @@
 - [[(Sを|Sと)言:plugin_system/言]] --- Sを表示
 - [[(Sを|Sと)コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)
 ▲[[plugin_system]] / [[四則演算:plugin_system/四則演算]]
-- [[(AにBを|Aと)足:plugin_system/足]] --- AとBを足す
 - [[(AからBを)引:plugin_system/引]] --- AからBを引く
 - [[(AにBを|Aと)掛:plugin_system/掛]] --- AにBを掛ける
 - [[(Aの)倍:plugin_system/倍]] --- AのB倍を求める
@@ -266,3 +264,7 @@
 - [[プラグイン一覧取得:plugin_system/プラグイン一覧取得]] --- 利用中のプラグイン一覧を得る
 - [[モジュール一覧取得:plugin_system/モジュール一覧取得]] --- 取り込んだモジュール一覧を得る
 - [[対応ブラウザ一覧取得:plugin_system/対応ブラウザ一覧取得]] --- 対応しているブラウザの一覧を取得する
+▲[[plugin_system]] / [[URLエンコードとパラメータ:plugin_system/URLエンコードとパラメータ]]
+- [[(TEXTを|TEXTから)URLエンコード:plugin_system/URLエンコード]] --- URLエンコードして返す
+- [[(TEXTを|TEXTへ|TEXTに)URLデコード:plugin_system/URLデコード]] --- URLデコードして返す
+- [[(URLを|URLの|URLから)URLパラメータ解析:plugin_system/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す

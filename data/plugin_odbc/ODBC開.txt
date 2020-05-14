@@ -1,21 +1,24 @@
+●『[[ODBC開:plugin_odbc/ODBC開]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+ODBCのデータベースを同期的に開いてオブジェクトを返す
 
-#iflogin(▲→編集するには『[[plugin_odbc/ODBC開__解説]]』へ)
-■ ODBC開 (ODBCひらく)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-種類 || 関数
-引数 || Sを|Sの|Sで
-説明 || ODBCのデータベースを同期的に開いてオブジェクトを返す
+▲利用例
+
+{{{
+!「nadesiko3-odbc」を取り込む。
+
+「DSN=test;UID=kujira;PWD=****」をODBC開く。
+逐次実行。
+　　先に、「DROP TABLE tt」を[]でODBC逐次実行。
+　　先に、「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[1, 30]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[2, 50]でODBC逐次実行。
+　　次に、対象を表示。
+　　次に、「SELECT * FROM tt」を[]でODBC逐次実行
+　　次に、対象を表示。
+ここまで。
 }}}
 
-#include(plugin_odbc/ODBC開__解説)
+▲関連
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-
+- [[plguin_odbc/ODBC逐次開]] --- 逐次実行を用いない版

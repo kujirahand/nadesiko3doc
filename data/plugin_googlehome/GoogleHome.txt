@@ -1,13 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_googlehome]]/[[GoogleHome:plugin_googlehome/GoogleHome]]
-- [[(NAMEへ|NAMEに|NAMEの)GoogleHome接続:plugin_googlehome/GoogleHome接続]] --- LAN内にある名前NAMEのGoogleHomeに接続する
-- [[(Sと|Sを)GoogleHome言:plugin_googlehome/GoogleHome言]] --- GoogleHomeにSと言わせる
-- [[(Sと|Sを)GoogleHome話:plugin_googlehome/GoogleHome話]] --- GoogleHomeにSと言わせる
-- [[(Sを|Sで)GoogleHome再生:plugin_googlehome/GoogleHome再生]] --- GoogleHomeでMP3を再生する

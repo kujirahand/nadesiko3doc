@@ -1,21 +1,6 @@
+●『[[追加:plugin_system/追加]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_system/追加__解説]]』へ)
-■ 追加 (ついか)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
-種類 || 関数
-引数 || SでAを|Sに|Sへ
-説明 || 文字列SにAを追加して返す(v1非互換)
+{{{
+# 準備中
 }}}
-
-#include(plugin_system/追加__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_system]] > [[文字列処理:plugin_system/文字列処理]]
 

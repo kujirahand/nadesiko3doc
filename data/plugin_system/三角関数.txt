@@ -1,19 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[三角関数:plugin_system/三角関数]]
-- [[(Vの)SIN:plugin_system/SIN]] --- ラジアン単位VのSINを求める
-- [[(Vの)COS:plugin_system/COS]] --- ラジアン単位VのCOSを求める
-- [[(Vの)TAN:plugin_system/TAN]] --- ラジアン単位VのTANを求める
-- [[(Vの)ARCSIN:plugin_system/ARCSIN]] --- ラジアン単位VのARCSINを求める
-- [[(Vの)ARCCOS:plugin_system/ARCCOS]] --- ラジアン単位VのARCCOSを求める
-- [[(Vの)ARCTAN:plugin_system/ARCTAN]] --- ラジアン単位VのARCTANを求める
-- [[(Vを)RAD2DEG:plugin_system/RAD2DEG]] --- ラジアンから度に変換
-- [[(Vを)DEG2RAD:plugin_system/DEG2RAD]] --- 度からラジアンに変換
-- [[(Vを)度変換:plugin_system/度変換]] --- ラジアンから度に変換
-- [[(Vを)ラジアン変換:plugin_system/ラジアン変換]] --- 度からラジアンに変換

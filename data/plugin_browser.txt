@@ -1,13 +1,12 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]
-#include(plugin_browser__解説)
 ▲[[plugin_browser]] / [[色定数:plugin_browser/色定数]]
 - [[水色:plugin_browser/水色]] -- 定数
 - [[紫色:plugin_browser/紫色]] -- 定数
@@ -114,10 +113,6 @@
 - [[(OPTIONSの)セレクトボックス作成:plugin_browser/セレクトボックス作成]] --- 配列optionsの選択肢を持つselect要素を追加しDOMオブジェクトを返す
 ▲[[plugin_browser]] / [[HTML操作:plugin_browser/HTML操作]]
 - [[(TEXTを)HTML変換:plugin_browser/HTML変換]] --- 文字列をHTMLに変換して返す
-▲[[plugin_browser]] / [[URLエンコードとパラメータ:plugin_browser/URLエンコードとパラメータ]]
-- [[(TEXTを|TEXTから)URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
-- [[(TEXTを|TEXTへ|TEXTに)URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
-- [[(URLを|URLの|URLから)URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
 ▲[[plugin_browser]] / [[ローカルストレージ:plugin_browser/ローカルストレージ]]
 - [[(VをKEYに|KEYへ)保存:plugin_browser/保存]] --- ブラウザのlocalStorageのキーKに文字列Vを保存
 - [[(KEYを|KEYから|KEYの)開:plugin_browser/開]] --- ブラウザのlocalStorageからVを読む

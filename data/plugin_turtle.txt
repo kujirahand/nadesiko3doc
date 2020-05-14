@@ -1,20 +1,19 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_turtle]]
-#include(plugin_turtle__解説)
 ▲[[plugin_turtle]] / [[タートルグラフィックス/カメ操作:plugin_turtle/タートルグラフィックス/カメ操作]]
 - [[カメ作成:plugin_turtle/カメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 - [[ゾウ作成:plugin_turtle/ゾウ作成]] --- ゾウの画像でタートルグラフィックスを開始してIDを返す
 - [[パンダ作成:plugin_turtle/パンダ作成]] --- パンダの画像でタートルグラフィックスを開始してIDを返す
 - [[(IDに|IDへ|IDの)カメ操作対象設定:plugin_turtle/カメ操作対象設定]] --- IDを指定して操作対象となるカメを変更する
-- [[カメ描画先:plugin_turtle/カメ描画先]] -- 定数
-- [[カメ画像URL:plugin_turtle/カメ画像URL]] -- 定数
+- [[カメ描画先:plugin_turtle/カメ描画先]] --- 'turtle_cv'
+- [[カメ画像URL:plugin_turtle/カメ画像URL]] --- 'turtle.png'
 - [[(URLに|URLへ)カメ画像変更:plugin_turtle/カメ画像変更]] --- カメの画像をURLに変更する
 - [[カメ速度:plugin_turtle/カメ速度]] -- 定数
 - [[(Vに|Vへ)カメ速度設定:plugin_turtle/カメ速度設定]] --- カメの動作速度vに設定(大きいほど遅い)

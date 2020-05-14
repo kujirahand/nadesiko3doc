@@ -1,13 +1,12 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_mssql]](拡張プラグイン)
-#include(plugin_mssql__解説)
 ▲[[plugin_mssql]] / [[SQLServer:plugin_mssql/SQLServer]]
 - [[(Sを|Sの|Sで)MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
 - [[(SQLをPARAMSで)MSSQL逐次実行:plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。

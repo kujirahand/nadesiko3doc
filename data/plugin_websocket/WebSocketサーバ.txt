@@ -1,17 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_websocket]]/[[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
-- [[(PORTNOの|PORTNOで)WSサーバ起動:plugin_websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
-- [[(CONFの|CONFで)WSSサーバ起動:plugin_websocket/WSSサーバ起動]] --- 設定CONF{cert:サーバ証明書,key:キーファイル,port:ポート番号}を指定してWSSサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
-- [[(CALLBACKを)WSサーバ起動成功時:plugin_websocket/WSサーバ起動成功時]] --- WSサーバ起動が成功した時にcallbackを実行
-- [[(CALLBACKを)WSサーバ起動失敗時:plugin_websocket/WSサーバ起動失敗時]] --- WSサーバ起動が失敗した時にcallbackを実行
-- [[(CALLBACKを)WSサーバ接続時:plugin_websocket/WSサーバ接続時]] --- WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
-- [[(CALLBACKで)WSサーバ受信時:plugin_websocket/WSサーバ受信時]] --- WSサーバでメッセージを受信した時に実行される。受信データは『対象』に代入される
-- [[(Sを)WSサーバ全送信:plugin_websocket/WSサーバ全送信]] --- WSサーバで全員にメッセージSを送信する
-- [[(Sを)WSクライアント一覧取得:plugin_websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す

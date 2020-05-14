@@ -1,21 +1,6 @@
+●『[[DOM親要素設定:plugin_browser/DOM親要素設定]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_browser/DOM親要素設定__解説]]』へ)
-■ DOM親要素設定 (DOMおやようそせってい)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[DOM部品操作:plugin_browser/DOM部品操作]]
-種類 || 関数
-引数 || ELに|ELへ
-説明 || 「ボタン作成」「エディタ作成」などのDOM要素を追加する対象を指定(デフォルトはdocument)して親要素のDOMオブジェクトを返す
+{{{
+# 準備中
 }}}
-
-#include(plugin_browser/DOM親要素設定__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[DOM部品操作:plugin_browser/DOM部品操作]]
 

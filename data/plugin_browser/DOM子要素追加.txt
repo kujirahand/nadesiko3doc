@@ -1,21 +1,6 @@
+●『[[DOM子要素追加:plugin_browser/DOM子要素追加]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_browser/DOM子要素追加__解説]]』へ)
-■ DOM子要素追加 (DOMこようそついか)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
-種類 || 関数
-引数 || PAにELを|PAへ
-説明 || DOMの要素PAの子へ要素ELを追加してPAを返す
+{{{
+# 準備中
 }}}
-
-#include(plugin_browser/DOM子要素追加__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
 

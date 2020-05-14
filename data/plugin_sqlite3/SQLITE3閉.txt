@@ -1,21 +1,16 @@
+●『[[SQLITE3閉:plugin_sqlite3/SQLITE3閉]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+アクティブなSQlite3のデータベースを閉じる
 
-#iflogin(▲→編集するには『[[plugin_sqlite3/SQLITE3閉__解説]]』へ)
-■ SQLITE3閉 (SQLITE3とじる)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-種類 || 関数
-引数 || 
-説明 || アクティブなSQlite3のデータベースを閉じる
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+
+DBファイル=「{母艦パス}/test.sqlite3」
+DBファイルをSQLITE3開く。
+# 〜〜〜
+SQLITE3閉じる。
 }}}
 
-#include(plugin_sqlite3/SQLITE3閉__解説)
+▲関連
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-
+- [[データベースプラグイン]]

@@ -1,21 +1,6 @@
+●『[[WS切断:plugin_browser/WS切断]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_browser/WS切断__解説]]』へ)
-■ WS切断 (WSせつだん)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
-種類 || 関数
-引数 || 
-説明 || アクティブなWebSocketを閉じる
+{{{
+# 準備中
 }}}
-
-#include(plugin_browser/WS切断__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[WebSocket:plugin_browser/WebSocket]]
 

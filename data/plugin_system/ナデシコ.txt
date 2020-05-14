@@ -1,21 +1,6 @@
+●『[[ナデシコ:plugin_system/ナデシコ]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_system/ナデシコ__解説]]』へ)
-■ ナデシコ (なでしこする)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_system]] > [[特殊命令:plugin_system/特殊命令]]
-種類 || 関数
-引数 || CODEを|CODEで
-説明 || なでしこのコードCODEを実行する
+{{{
+# 準備中
 }}}
-
-#include(plugin_system/ナデシコ__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_system]] > [[特殊命令:plugin_system/特殊命令]]
 

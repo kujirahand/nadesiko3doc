@@ -1,21 +1,16 @@
+●『[[以上:plugin_system/以上]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+AがB以上か
 
-#iflogin(▲→編集するには『[[plugin_system/以上__解説]]』へ)
-■ 以上 (いじょう)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_system]] > [[四則演算:plugin_system/四則演算]]
-種類 || 関数
-引数 || Aが
-説明 || AがB以上か
+{{{#nako3(rows=7)
+A=40
+もし、Aが50以上ならば
+　　「Aは50以上」と表示。
+違えば
+　　「Aは50未満」と表示。
+ここまで
 }}}
 
-#include(plugin_system/以上__解説)
+▲参考
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_system]] > [[四則演算:plugin_system/四則演算]]
-
+- [[以下:plugin_system/以下]]

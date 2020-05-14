@@ -1,28 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]/[[色定数:plugin_browser/色定数]]
-- [[水色:plugin_browser/水色]] -- 定数
-- [[紫色:plugin_browser/紫色]] -- 定数
-- [[緑色:plugin_browser/緑色]] -- 定数
-- [[青色:plugin_browser/青色]] -- 定数
-- [[赤色:plugin_browser/赤色]] -- 定数
-- [[黄色:plugin_browser/黄色]] -- 定数
-- [[黒色:plugin_browser/黒色]] -- 定数
-- [[白色:plugin_browser/白色]] -- 定数
-- [[茶色:plugin_browser/茶色]] -- 定数
-- [[灰色:plugin_browser/灰色]] -- 定数
-- [[金色:plugin_browser/金色]] -- 定数
-- [[黄金色:plugin_browser/黄金色]] -- 定数
-- [[銀色:plugin_browser/銀色]] -- 定数
-- [[白金色:plugin_browser/白金色]] -- 定数
-- [[オリーブ色:plugin_browser/オリーブ色]] -- 定数
-- [[ベージュ色:plugin_browser/ベージュ色]] -- 定数
-- [[アリスブルー色:plugin_browser/アリスブルー色]] -- 定数
-- [[(RとGとBで|Bの)RGB:plugin_browser/RGB]] --- 赤緑青を256段階でそれぞれ指定して、#RRGGBB形式の値を返す
-- [[(Aの)色混:plugin_browser/色混]] --- 配列で[RR,GG,BB]を指定して色を混ぜて#RRGGBB形式の値を返す

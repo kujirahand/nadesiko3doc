@@ -1,21 +1,6 @@
+●『[[WSサーバ起動成功時:plugin_websocket/WSサーバ起動成功時]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_websocket/WSサーバ起動成功時__解説]]』へ)
-■ WSサーバ起動成功時 (WSさーばきどうせいこうしたとき)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
-種類 || 関数
-引数 || CALLBACKを
-説明 || WSサーバ起動が成功した時にcallbackを実行
+{{{
+# 準備中
 }}}
-
-#include(plugin_websocket/WSサーバ起動成功時__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_websocket]] > [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
 

@@ -1,17 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]/[[音声合成:plugin_browser/音声合成]]
-- [[(Sと|Sを|Sの)話:plugin_browser/話]] --- 音声合成APIを使って、Sを発話する
-- [[(CALLBACKでSと|Sを|Sの)話終時:plugin_browser/話終時]] --- 音声合成APIを使って、Sを発話し発話した後でcallbackを実行
-- [[話者一覧取得:plugin_browser/話者一覧取得]] --- 音声合成APIの話者一覧を得る
-- [[(Vに|Vへ)話者設定:plugin_browser/話者設定]] --- 音声合成APIの話者を指定する
-- [[話者速度:plugin_browser/話者速度]] -- 定数
-- [[話者声高:plugin_browser/話者声高]] -- 定数
-- [[話者音量:plugin_browser/話者音量]] -- 定数
-- [[(OBJで|OBJに|OBJへ)話者詳細設定:plugin_browser/話者詳細設定]] --- 音声合成APIの話者の設定をオブジェクト形式で設定する。『速度,声高,ピッチ,音量』を指定

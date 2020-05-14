@@ -1,16 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[ビット演算:plugin_system/ビット演算]]
-- [[(AとBの)OR:plugin_system/OR]] --- (ビット演算で)AとBの論理和を返す。
-- [[(AとBの)AND:plugin_system/AND]] --- (ビット演算で)AとBの論理積を返す。日本語の「AかつB」に相当する
-- [[(AとBの)XOR:plugin_system/XOR]] --- (ビット演算で)AとBの排他的論理和を返す。
-- [[(Vの)NOT:plugin_system/NOT]] --- (ビット演算で)vの各ビットを反転して返す。
-- [[(AをBで)SHIFT_L:plugin_system/SHIFT_L]] --- VをAビット左へシフトして返す
-- [[(AをBで)SHIFT_R:plugin_system/SHIFT_R]] --- VをAビット右へシフトして返す(符号を維持する)
-- [[(AをBで)SHIFT_UR:plugin_system/SHIFT_UR]] --- VをAビット右へシフトして返す(符号を維持しない、0で埋める)

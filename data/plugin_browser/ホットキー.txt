@@ -1,11 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]/[[ホットキー:plugin_browser/ホットキー]]
-- [[(KEYにFNAMEを|KEYで)ホットキー登録:plugin_browser/ホットキー登録]] --- ホットキーKEYにEVENTを登録する
-- [[(KEYを|KEYの)ホットキー解除:plugin_browser/ホットキー解除]] --- ホットキーKEYを解除する

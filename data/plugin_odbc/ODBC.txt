@@ -1,17 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_odbc]]/[[ODBC:plugin_odbc/ODBC]]
-- [[(Sを|Sの|Sで)ODBC逐次開:plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
-- [[(Sを|Sの|Sで)ODBC開:plugin_odbc/ODBC開]] --- ODBCのデータベースを同期的に開いてオブジェクトを返す
-- [[(SQLをPARAMSで)ODBC逐次実行:plugin_odbc/ODBC逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
-- [[(SQLをPARAMSで)ODBC実行:plugin_odbc/ODBC実行]] --- 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
-- [[ODBC閉:plugin_odbc/ODBC閉]] --- ODBCで開いているデータベースを閉じる
-- [[ODBC逐次閉:plugin_odbc/ODBC逐次閉]] --- 逐次実行構文でODBCで開いているデータベースを閉じる
-- [[ODBCトランザクション開始:plugin_odbc/ODBCトランザクション開始]] --- ODBCでトランザクションを開始する
-- [[ODBCトランザクション終了:plugin_odbc/ODBCトランザクション終了]] --- ODBCでトランザクションを終了する

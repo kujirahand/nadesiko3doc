@@ -1,21 +1,6 @@
+●『[[WEBサーバヘッダ出力:plugin_express/WEBサーバヘッダ出力]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_express/WEBサーバヘッダ出力__解説]]』へ)
-■ WEBサーバヘッダ出力 (WEBさーばへっだしゅつりょく)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
-種類 || 関数
-引数 || OBJを|OBJの
-説明 || クライアントにヘッダOBJを出力
+{{{
+# 準備中
 }}}
-
-#include(plugin_express/WEBサーバヘッダ出力__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_express]] > [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
 

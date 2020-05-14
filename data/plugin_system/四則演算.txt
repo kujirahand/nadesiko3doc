@@ -1,20 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_system]]/[[四則演算:plugin_system/四則演算]]
-- [[(AにBを|Aと)足:plugin_system/足]] --- AとBを足す
-- [[(AからBを)引:plugin_system/引]] --- AからBを引く
-- [[(AにBを|Aと)掛:plugin_system/掛]] --- AにBを掛ける
-- [[(Aの)倍:plugin_system/倍]] --- AのB倍を求める
-- [[(AをBで)割:plugin_system/割]] --- AをBで割る
-- [[(AをBで)割余:plugin_system/割余]] --- AをBで割った余りを求める
-- [[(Aが)以上:plugin_system/以上]] --- AがB以上か
-- [[(Aが)以下:plugin_system/以下]] --- AがB以下か
-- [[(Aが)未満:plugin_system/未満]] --- AがB未満か
-- [[(Aが)超:plugin_system/超]] --- AがB超か
-- [[(AがBと)等:plugin_system/等]] --- AがBと等しいか

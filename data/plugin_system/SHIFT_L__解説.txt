@@ -1,6 +1,0 @@
-●『[[SHIFT_L:plugin_system/SHIFT_L]]』の詳しい解説
-
-{{{
-# 準備中
-}}}
-

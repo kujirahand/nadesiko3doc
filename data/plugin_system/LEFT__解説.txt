@@ -1,6 +1,0 @@
-●『[[LEFT:plugin_system/LEFT]]』の詳しい解説
-
-{{{
-# 準備中
-}}}
-

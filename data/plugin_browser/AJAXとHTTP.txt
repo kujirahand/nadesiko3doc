@@ -1,21 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]/[[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
-- [[(CALLBACKのURLまで|URLへ|URLに)AJAX送信時:plugin_browser/AJAX送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
-- [[(CALLBACKのURLまで|URLへ|URLに)GET送信時:plugin_browser/GET送信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
-- [[(PARAMSの|PARAMSを)POSTデータ生成:plugin_browser/POSTデータ生成]] --- 連想配列をkey=value&key=value...の形式に変換する
-- [[(CALLBACKのURLまでPARAMSを|URLへ|URLに)POST送信時:plugin_browser/POST送信時]] --- AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定
-- [[(CALLBACKのURLまでPARAMSを|URLへ|URLに)POSTフォーム送信時:plugin_browser/POSTフォーム送信時]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定
-- [[(CALLBACKの)AJAX失敗時:plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
-- [[AJAXオプション:plugin_browser/AJAXオプション]] -- 定数
-- [[(OPTIONに|OPTIONへ|OPTIONと)AJAXオプション設定:plugin_browser/AJAXオプション設定]] --- Ajax命令でオプションを設定
-- [[(URLまで|URLへ|URLに)AJAX送信:plugin_browser/AJAX送信]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
-- [[(URLの|URLから|URLを)HTTP取得:plugin_browser/HTTP取得]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
-- [[(CALLBACKのURLまでPARAMSを|URLへ|URLに)POST送信:plugin_browser/POST送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
-- [[(URLまでPARAMSを|URLへ|URLに)POSTフォーム送信:plugin_browser/POSTフォーム送信]] --- AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。

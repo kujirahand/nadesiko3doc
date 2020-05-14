@@ -2,16 +2,15 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ■ [[命令一覧/機能順]]
 なでしこ3の命令一覧です。
 
 ●[[plugin_system]]
-#include(plugin_system__解説)
 
 ▲[[plugin_system]] / [[システム定数:plugin_system/システム定数]]
 - [[ナデシコバージョン:plugin_system/ナデシコバージョン]] -- 定数
@@ -54,7 +53,6 @@
 - [[(Sを|Sと)コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)
 
 ▲[[plugin_system]] / [[四則演算:plugin_system/四則演算]]
-- [[(AにBを|Aと)足:plugin_system/足]] --- AとBを足す
 - [[(AからBを)引:plugin_system/引]] --- AからBを引く
 - [[(AにBを|Aと)掛:plugin_system/掛]] --- AにBを掛ける
 - [[(Aの)倍:plugin_system/倍]] --- AのB倍を求める
@@ -293,8 +291,12 @@
 - [[モジュール一覧取得:plugin_system/モジュール一覧取得]] --- 取り込んだモジュール一覧を得る
 - [[対応ブラウザ一覧取得:plugin_system/対応ブラウザ一覧取得]] --- 対応しているブラウザの一覧を取得する
 
+▲[[plugin_system]] / [[URLエンコードとパラメータ:plugin_system/URLエンコードとパラメータ]]
+- [[(TEXTを|TEXTから)URLエンコード:plugin_system/URLエンコード]] --- URLエンコードして返す
+- [[(TEXTを|TEXTへ|TEXTに)URLデコード:plugin_system/URLデコード]] --- URLデコードして返す
+- [[(URLを|URLの|URLから)URLパラメータ解析:plugin_system/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
+
 ●[[plugin_browser]]
-#include(plugin_browser__解説)
 
 ▲[[plugin_browser]] / [[色定数:plugin_browser/色定数]]
 - [[水色:plugin_browser/水色]] -- 定数
@@ -410,11 +412,6 @@
 ▲[[plugin_browser]] / [[HTML操作:plugin_browser/HTML操作]]
 - [[(TEXTを)HTML変換:plugin_browser/HTML変換]] --- 文字列をHTMLに変換して返す
 
-▲[[plugin_browser]] / [[URLエンコードとパラメータ:plugin_browser/URLエンコードとパラメータ]]
-- [[(TEXTを|TEXTから)URLエンコード:plugin_browser/URLエンコード]] --- URLエンコードして返す
-- [[(TEXTを|TEXTへ|TEXTに)URLデコード:plugin_browser/URLデコード]] --- URLデコードして返す
-- [[(URLを|URLの|URLから)URLパラメータ解析:plugin_browser/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
-
 ▲[[plugin_browser]] / [[ローカルストレージ:plugin_browser/ローカルストレージ]]
 - [[(VをKEYに|KEYへ)保存:plugin_browser/保存]] --- ブラウザのlocalStorageのキーKに文字列Vを保存
 - [[(KEYを|KEYから|KEYの)開:plugin_browser/開]] --- ブラウザのlocalStorageからVを読む
@@ -484,15 +481,14 @@
 - [[(DATAを|DATAで|DATAの)円グラフ描画:plugin_browser/円グラフ描画]] --- 円グラフを描画
 
 ●[[plugin_turtle]]
-#include(plugin_turtle__解説)
 
 ▲[[plugin_turtle]] / [[タートルグラフィックス/カメ操作:plugin_turtle/タートルグラフィックス/カメ操作]]
 - [[カメ作成:plugin_turtle/カメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 - [[ゾウ作成:plugin_turtle/ゾウ作成]] --- ゾウの画像でタートルグラフィックスを開始してIDを返す
 - [[パンダ作成:plugin_turtle/パンダ作成]] --- パンダの画像でタートルグラフィックスを開始してIDを返す
 - [[(IDに|IDへ|IDの)カメ操作対象設定:plugin_turtle/カメ操作対象設定]] --- IDを指定して操作対象となるカメを変更する
-- [[カメ描画先:plugin_turtle/カメ描画先]] -- 定数
-- [[カメ画像URL:plugin_turtle/カメ画像URL]] -- 定数
+- [[カメ描画先:plugin_turtle/カメ描画先]] --- 'turtle_cv'
+- [[カメ画像URL:plugin_turtle/カメ画像URL]] --- 'turtle.png'
 - [[(URLに|URLへ)カメ画像変更:plugin_turtle/カメ画像変更]] --- カメの画像をURLに変更する
 - [[カメ速度:plugin_turtle/カメ速度]] -- 定数
 - [[(Vに|Vへ)カメ速度設定:plugin_turtle/カメ速度設定]] --- カメの動作速度vに設定(大きいほど遅い)
@@ -512,7 +508,6 @@
 - [[(FUNCを)カメクリック時:plugin_turtle/カメクリック時]] --- 操作対象のカメをクリックした時のイベントを設定する
 
 ●[[plugin_node]]
-#include(plugin_node__解説)
 
 ▲[[plugin_node]] / [[ファイル入出力:plugin_node/ファイル入出力]]
 - [[(Sを|Sから)開:plugin_node/開]] --- ファイルSを開く
@@ -611,7 +606,6 @@
 - [[(Sを|Sの)窓アクティブ:plugin_node/窓アクティブ]] --- Sの窓をアクティブにする
 
 ●[[plugin_express]]
-#include(plugin_express__解説)
 
 ▲[[plugin_express]] / [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
 - [[GETデータ:plugin_express/GETデータ]] -- 定数
@@ -632,14 +626,12 @@
 - [[(URLへ|URLに)WEBサーバリダイレクト:plugin_express/WEBサーバリダイレクト]] --- URLにリダイレクトする
 
 ●[[plugin_markup]]
-#include(plugin_markup__解説)
 
 ▲[[plugin_markup]] / [[マークアップ:plugin_markup/マークアップ]]
 - [[(Sを)マークダウンHTML変換:plugin_markup/マークダウンHTML変換]] --- マークダウン形式で記述された文字列SをHTML形式に変換する
 - [[(Sを)HTML整形:plugin_markup/HTML整形]] --- HTML形式で記述された文字列Sを整形する
 
 ●[[plugin_sqlite3]](拡張プラグイン)
-#include(plugin_sqlite3__解説)
 
 ▲[[plugin_sqlite3]] / [[SQLite3:plugin_sqlite3/SQLite3]]
 - [[SQLITE3今挿入ID:plugin_sqlite3/SQLITE3今挿入ID]] -- 定数
@@ -652,8 +644,19 @@
 - [[(SQLをPARAMSで)SQLITE3逐次全取得:plugin_sqlite3/SQLITE3逐次全取得]] --- 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 - [[(SQLをPARAMSで)SQLITE3逐次取得:plugin_sqlite3/SQLITE3逐次取得]] --- 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 
+●[[plugin_sqlite3sync]](拡張プラグイン)
+
+▲[[plugin_sqlite3sync]] / [[SQLite3同期:plugin_sqlite3sync/SQLite3同期]]
+- [[(Fを|Fの)SQLITE3開:plugin_sqlite3sync/SQLITE3開]] --- SQlite3のデータベースFを開いて、データベースオブジェクトを返す
+- [[SQLITE3閉:plugin_sqlite3sync/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
+- [[(DBに|DBへ)SQLITE3同期切替:plugin_sqlite3sync/SQLITE3同期切替]] --- 操作対象のデータベースをDB(『SQLITE3同期開』を使用)に切り替える
+- [[(SQLをPARAMSで)SQLITE3実行:plugin_sqlite3sync/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
+- [[(TBLにPARAMSを|TBLへ)INSERT:plugin_sqlite3sync/INSERT]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
+- [[(TBLにPARAMSを|TBLへ)SQLITE3挿入:plugin_sqlite3sync/SQLITE3挿入]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
+- [[(TBLのWHEREをPARAMSに|PARAMSへ)UPDATE:plugin_sqlite3sync/UPDATE]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
+- [[(TBLのWHEREをPARAMSに|PARAMSへ)SQLITE3更新:plugin_sqlite3sync/SQLITE3更新]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
+
 ●[[plugin_odbc]](拡張プラグイン)
-#include(plugin_odbc__解説)
 
 ▲[[plugin_odbc]] / [[ODBC:plugin_odbc/ODBC]]
 - [[(Sを|Sの|Sで)ODBC逐次開:plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
@@ -666,7 +669,6 @@
 - [[ODBCトランザクション終了:plugin_odbc/ODBCトランザクション終了]] --- ODBCでトランザクションを終了する
 
 ●[[plugin_mssql]](拡張プラグイン)
-#include(plugin_mssql__解説)
 
 ▲[[plugin_mssql]] / [[SQLServer:plugin_mssql/SQLServer]]
 - [[(Sを|Sの|Sで)MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
@@ -674,7 +676,6 @@
 - [[MSSQL逐次閉:plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
 
 ●[[plugin_mysql]](拡張プラグイン)
-#include(plugin_mysql__解説)
 
 ▲[[plugin_mysql]] / [[MySQL:plugin_mysql/MySQL]]
 - [[(Sを|Sの|Sで)MYSQL開:plugin_mysql/MYSQL開]] --- データベースを開く
@@ -682,7 +683,6 @@
 - [[(SQLをPARAMSで)MYSQL逐次実行:plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。
 
 ●[[plugin_postgresql]](拡張プラグイン)
-#include(plugin_postgresql__解説)
 
 ▲[[plugin_postgresql]] / [[PostgreSQL:plugin_postgresql/PostgreSQL]]
 - [[(Sを|Sの|Sで)PG開:plugin_postgresql/PG開]] --- データベースを開く
@@ -690,7 +690,6 @@
 - [[(SQLをPARAMSで)PG逐次実行:plugin_postgresql/PG逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
 
 ●[[plugin_firebase]](拡張プラグイン)
-#include(plugin_firebase__解説)
 
 ▲[[plugin_firebase]] / [[Firebase:plugin_firebase/Firebase]]
 - [[(CONFIGで)FIREBASE初期化:plugin_firebase/FIREBASE初期化]] --- アカウント設定オブジェクトconfigを与えてFirebaseを初期化する
@@ -700,7 +699,6 @@
 - [[(CALLBACKでPATHの)FIREBASE値取得時:plugin_firebase/FIREBASE値取得時]] --- パスpathの値を取得した時callbackを実行。引数に値(オブジェクト)が得られる。
 
 ●[[plugin_googlehome]](拡張プラグイン)
-#include(plugin_googlehome__解説)
 
 ▲[[plugin_googlehome]] / [[GoogleHome:plugin_googlehome/GoogleHome]]
 - [[(NAMEへ|NAMEに|NAMEの)GoogleHome接続:plugin_googlehome/GoogleHome接続]] --- LAN内にある名前NAMEのGoogleHomeに接続する
@@ -709,7 +707,6 @@
 - [[(Sを|Sで)GoogleHome再生:plugin_googlehome/GoogleHome再生]] --- GoogleHomeでMP3を再生する
 
 ●[[plugin_websocket]](拡張プラグイン)
-#include(plugin_websocket__解説)
 
 ▲[[plugin_websocket]] / [[WebSocketサーバ:plugin_websocket/WebSocketサーバ]]
 - [[(PORTNOの|PORTNOで)WSサーバ起動:plugin_websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
@@ -722,7 +719,6 @@
 - [[(Sを)WSクライアント一覧取得:plugin_websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す
 
 ●[[plugin_htmlparser]](拡張プラグイン)
-#include(plugin_htmlparser__解説)
 
 ▲[[plugin_htmlparser]] / [[HTMLパーサ(コンソール):plugin_htmlparser/HTMLパーサ(コンソール)]]
 - [[HTML応答ヘッダ:plugin_htmlparser/HTML応答ヘッダ]] -- 定数
@@ -747,7 +743,6 @@
 - [[(DOMから|DOMの)タグ名取得:plugin_htmlparser/タグ名取得]] --- DOMのタグ名を取得する
 
 ●[[plugin_ml]](拡張プラグイン)
-#include(plugin_ml__解説)
 
 ▲[[plugin_ml]] / [[機械学習:plugin_ml/機械学習]]
 - [[(OPTIONで)SVM開:plugin_ml/SVM開]] --- 機械学習のアルゴリズムSVMをパラメータOPTIONで開く。 OPTION={type,kernel,gamma,cost}

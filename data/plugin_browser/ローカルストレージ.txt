@@ -1,17 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_browser]]/[[ローカルストレージ:plugin_browser/ローカルストレージ]]
-- [[(VをKEYに|KEYへ)保存:plugin_browser/保存]] --- ブラウザのlocalStorageのキーKに文字列Vを保存
-- [[(KEYを|KEYから|KEYの)開:plugin_browser/開]] --- ブラウザのlocalStorageからVを読む
-- [[(KEYが)存在:plugin_browser/存在]] --- ブラウザのlocalStorageにKEYが存在しているか調べる
-- [[(KEYにVを|KEYへ)ローカルストレージ保存:plugin_browser/ローカルストレージ保存]] --- ブラウザのlocalStorageのKにVを保存
-- [[(KEYを|KEYから|KEYの)ローカルストレージ読:plugin_browser/ローカルストレージ読]] --- ブラウザのlocalStorageからVを読む
-- [[ローカルストレージキー列挙:plugin_browser/ローカルストレージキー列挙]] --- ブラウザのlocalStorageのキー一覧を返す
-- [[(KEYを|KEYの)ローカルストレージキー削除:plugin_browser/ローカルストレージキー削除]] --- ブラウザのlocalStorageのkeyを削除
-- [[ローカルストレージ全削除:plugin_browser/ローカルストレージ全削除]] --- ブラウザのlocalStorageのデータを全部削除する

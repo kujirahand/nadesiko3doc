@@ -1,21 +1,14 @@
+●『[[GET送信時:plugin_browser/GET送信時]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
 
-#iflogin(▲→編集するには『[[plugin_browser/GET送信時__解説]]』へ)
-■ GET送信時 (GETそうしんしたとき)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
-種類 || 関数
-引数 || CALLBACKのURLまで|URLへ|URLに
-説明 || 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+以下は、郵便番号APIを利用する例:
+
+{{{
+ZIP="221-0824"
+API=「https://api.aoikujira.com/zip/zip.php?zn={ZIP}&fmt=json」
+APIにGET送信した時には
+  J=対象をJSONデコード
+  J["result"]を表示。
+ここまで。
 }}}
-
-#include(plugin_browser/GET送信時__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]] > [[AJAXとHTTP:plugin_browser/AJAXとHTTP]]
-

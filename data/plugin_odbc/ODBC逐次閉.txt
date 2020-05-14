@@ -1,21 +1,18 @@
+●『[[ODBC逐次閉:plugin_odbc/ODBC逐次閉]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+逐次実行構文でODBCで開いているデータベースを閉じる
 
-#iflogin(▲→編集するには『[[plugin_odbc/ODBC逐次閉__解説]]』へ)
-■ ODBC逐次閉 (ODBCちくじとじる)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-種類 || 関数
-引数 || 
-説明 || 逐次実行構文でODBCで開いているデータベースを閉じる
+{{{
+!「nadesiko3-odbc」を取り込む。
+逐次実行。
+　　先に、「DSN=test;UID=kujira;PWD=****」をODBC逐次開く。
+　　次に、「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[1, 30]でODBC逐次実行。
+　　次に、「INSERT INTO tt (id,value) VALUES (?,?)」を[2, 50]でODBC逐次実行。
+　　次に、「SELECT * FROM tt」を[]でODBC逐次実行
+　　次に、対象を表示。
+　　次に、「DROP TABLE tt」を[]でODBC逐次実行。
+　　先に、ODBC逐次閉じる。
+　　次に、「完了」と表示。
+ここまで。
 }}}
-
-#include(plugin_odbc/ODBC逐次閉__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_odbc]] > [[ODBC:plugin_odbc/ODBC]]
-

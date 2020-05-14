@@ -1,14 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_node]]/[[圧縮・解凍:plugin_node/圧縮・解凍]]
-- [[(Vに|Vへ)圧縮解凍ツールパス変更:plugin_node/圧縮解凍ツールパス変更]] --- 圧縮解凍に使うツールを取得変更する
-- [[(AをBに|AからBへ)解凍:plugin_node/解凍]] --- (v1非互換)ZIPファイルAをBに解凍(実行には7-zipが必要-https://goo.gl/LmKswH)
-- [[(CALLBACKでAをBに|AからBへ)解凍時:plugin_node/解凍時]] --- 解凍処理を行い、処理が完了したときにcallback処理を実行
-- [[(AをBに|AからBへ)圧縮:plugin_node/圧縮]] --- (v1非互換)ファイルAをBにZIP圧縮(実行には7-zipが必要-https://goo.gl/LmKswH)
-- [[(CALLBACKでAをBに|AからBへ)圧縮時:plugin_node/圧縮時]] --- 圧縮処理を行い完了したときにcallback処理を指定

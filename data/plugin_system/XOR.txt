@@ -1,21 +1,6 @@
+●『[[XOR:plugin_system/XOR]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_system/XOR__解説]]』へ)
-■ XOR (XOR)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_system]] > [[ビット演算:plugin_system/ビット演算]]
-種類 || 関数
-引数 || AとBの
-説明 || (ビット演算で)AとBの排他的論理和を返す。
+{{{
+# 準備中
 }}}
-
-#include(plugin_system/XOR__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_system]] > [[ビット演算:plugin_system/ビット演算]]
 

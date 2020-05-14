@@ -1,21 +1,6 @@
+●『[[FIREBASE値変更時:plugin_firebase/FIREBASE値変更時]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
-
-#iflogin(▲→編集するには『[[plugin_firebase/FIREBASE値変更時__解説]]』へ)
-■ FIREBASE値変更時 (FIREBASEへんこうしたとき)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
-種類 || 関数
-引数 || CALLBACKでPATHの
-説明 || パスpathの値(オブジェクト)が変更された時callbackを実行。引数に値(オブジェクト)が得られる。
+{{{
+# 準備中
 }}}
-
-#include(plugin_firebase/FIREBASE値変更時__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_firebase]] > [[Firebase:plugin_firebase/Firebase]]
 

@@ -1,13 +1,12 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/15 01:16:20)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_postgresql]](拡張プラグイン)
-#include(plugin_postgresql__解説)
 ▲[[plugin_postgresql]] / [[PostgreSQL:plugin_postgresql/PostgreSQL]]
 - [[(Sを|Sの|Sで)PG開:plugin_postgresql/PG開]] --- データベースを開く
 - [[PG閉:plugin_postgresql/PG閉]] --- データベースを閉じる

@@ -1,21 +1,14 @@
+●『[[SQLITE3開:plugin_sqlite3/SQLITE3開]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+SQlite3のデータベースを開いて、データベースオブジェクトを返す
 
-#iflogin(▲→編集するには『[[plugin_sqlite3/SQLITE3開__解説]]』へ)
-■ SQLITE3開 (SQLITE3ひらく)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-種類 || 関数
-引数 || Sを|Sの
-説明 || SQlite3のデータベースを開いて、データベースオブジェクトを返す
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+
+DBファイル=「{母艦パス}/test.sqlite3」
+DBファイルをSQLITE3開く。
 }}}
 
-#include(plugin_sqlite3/SQLITE3開__解説)
+▲関連
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_sqlite3]] > [[SQLite3:plugin_sqlite3/SQLite3]]
-
+- [[データベースプラグイン]]

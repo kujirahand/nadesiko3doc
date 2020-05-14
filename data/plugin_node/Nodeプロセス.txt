@@ -1,14 +1,9 @@
 
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+#rem(★なでしこ=v3.1.1)
+#rem(★生成=2020/05/14 23:47:00)
+#rem(★スクリプト=cmd2db.nako3)
 
 
 ●[[plugin_node]]/[[Nodeプロセス:plugin_node/Nodeプロセス]]
-- [[終:plugin_node/終]] --- Nodeでプログラム実行を強制終了する
-- [[終了:plugin_node/終了]] --- Nodeでプログラム実行を強制終了する
-- [[(SEC)秒待:plugin_node/秒待]] --- NodeでN秒待つ
-- [[OS取得:plugin_node/OS取得]] --- OSプラットフォームを返す(darwin/win32/linux)
-- [[OSアーキテクチャ取得:plugin_node/OSアーキテクチャ取得]] --- OSアーキテクチャを返す

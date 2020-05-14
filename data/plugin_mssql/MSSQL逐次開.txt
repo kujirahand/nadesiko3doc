@@ -1,21 +1,14 @@
+●『[[MSSQL逐次開:plugin_mssql/MSSQL逐次開]]』の詳しい解説
 
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.0.75)
-#rem(★生成=2020/04/13 09:40:07)
-#rem(★スクリプト=cmd2wiki.nako)
+逐次実行構文にてデータベースを開く
 
-#iflogin(▲→編集するには『[[plugin_mssql/MSSQL逐次開__解説]]』へ)
-■ MSSQL逐次開 (MSSQLちくじひらく)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_mssql]] > [[SQLServer:plugin_mssql/SQLServer]]
-種類 || 関数
-引数 || Sを|Sの|Sで
-説明 || 逐次実行構文にてデータベースを開く
+{{{
+!「nadesiko3-mssql」を取り込む。
+接続STR=「DSN=test;UID=kujira;PWD=****」
+逐次実行。
+　　先に、接続STRをMSSQL逐次開く。
+　　# ここに処理
+　　次に、MSSQL逐次閉じる。
+　　次に、「完了」と表示。
+ここまで。
 }}}
-
-#include(plugin_mssql/MSSQL逐次開__解説)
-
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_mssql]] > [[SQLServer:plugin_mssql/SQLServer]]
-
