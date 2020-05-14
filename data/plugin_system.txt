@@ -2,7 +2,7 @@
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
 #rem(★なでしこ=v3.1.1)
-#rem(★生成=2020/05/15 01:16:20)
+#rem(★生成=2020/05/15 02:09:18)
 #rem(★スクリプト=cmd2db.nako3)
 
 
@@ -46,6 +46,7 @@
 - [[(Sを|Sと)言:plugin_system/言]] --- Sを表示
 - [[(Sを|Sと)コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)
 ▲[[plugin_system]] / [[四則演算:plugin_system/四則演算]]
+- [[(Bを...Aに|...Aと)足:plugin_system/足]] --- AとBを足す(可変引数)
 - [[(AからBを)引:plugin_system/引]] --- AからBを引く
 - [[(AにBを|Aと)掛:plugin_system/掛]] --- AにBを掛ける
 - [[(Aの)倍:plugin_system/倍]] --- AのB倍を求める

@@ -3,7 +3,7 @@
 #rem(★★★ 編集禁止 ★★★)
 #rem(★このファイルはスクリプトで自動で生成されました。)
 #rem(★なでしこ=v3.1.1)
-#rem(★生成=2020/05/15 01:16:20)
+#rem(★生成=2020/05/15 02:09:18)
 #rem(★スクリプト=cmd2db.nako3)
 
 
@@ -53,6 +53,7 @@
 - [[(Sを|Sと)コンソール表示:plugin_system/コンソール表示]] --- Sをコンソール表示する(console.log)
 
 ▲[[plugin_system]] / [[四則演算:plugin_system/四則演算]]
+- [[(Bを...Aに|...Aと)足:plugin_system/足]] --- AとBを足す(可変引数)
 - [[(AからBを)引:plugin_system/引]] --- AからBを引く
 - [[(AにBを|Aと)掛:plugin_system/掛]] --- AにBを掛ける
 - [[(Aの)倍:plugin_system/倍]] --- AのB倍を求める
@@ -647,7 +648,7 @@
 ●[[plugin_sqlite3sync]](拡張プラグイン)
 
 ▲[[plugin_sqlite3sync]] / [[SQLite3同期:plugin_sqlite3sync/SQLite3同期]]
-- [[(Fを|Fの)SQLITE3開:plugin_sqlite3sync/SQLITE3開]] --- SQlite3のデータベースFを開いて、データベースオブジェクトを返す
+- [[(Fを|Fの)SQLITE3開:plugin_sqlite3sync/SQLITE3開]] --- SQLite3のデータベースFを開いて、データベースオブジェクトを返す
 - [[SQLITE3閉:plugin_sqlite3sync/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
 - [[(DBに|DBへ)SQLITE3同期切替:plugin_sqlite3sync/SQLITE3同期切替]] --- 操作対象のデータベースをDB(『SQLITE3同期開』を使用)に切り替える
 - [[(SQLをPARAMSで)SQLITE3実行:plugin_sqlite3sync/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
