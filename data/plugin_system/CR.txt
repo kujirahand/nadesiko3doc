@@ -1,6 +1,7 @@
 ●『[[CR:plugin_system/CR]]』の詳しい解説
 
-{{{
-# 準備中
+{{{#nako3
+ASC(CR)を表示 # → 13
+ASC(LF)を表示 # → 10
 }}}
 
