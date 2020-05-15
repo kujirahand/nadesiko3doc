@@ -1,6 +1,15 @@
 ●『[[TSV取得:plugin_system/TSV取得]]』の詳しい解説
 
-{{{
-# 準備中
+{{{#nako3(rows=8)
+TSV=「aaa{タブ}bbb{タブ}ccc
+ddd{タブ}eee{タブ}fff
+ggg{タブ}hhh{タブ}iii」
+TSVをTSV取得して、Cに代入。
+C[0][0]を表示。# → aaa
+C[1][0]を表示。# → ddd
+C[2][1]を表示。# → hhh
 }}}
 
+▲参考
+
+- [[plugin_system/CSV取得]]

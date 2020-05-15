@@ -1,6 +1,14 @@
 ●『[[JSONデコード:plugin_system/JSONデコード]]』の詳しい解説
 
-{{{
-# 準備中
+文字列のJSONデータをなでしこのオブジェクトに変換します。
+
+▲簡単な利用例
+
+以下を実行するとJSONデータをデコードして、urlのキーを表示します。
+
+{{{#nako3(rows=4)
+S=『{"name":"なでしこ","url":"https://nadesi.com"}』
+SをJSONデコードしてAに代入。
+A@「url」を表示。＃→https://nadesi.com
 }}}
 

@@ -1,6 +1,11 @@
 ●『[[オン:plugin_system/オン]]』の詳しい解説
 
-{{{
-# 準備中
+{{{#nako3(rows=5)
+オンを表示。
+オフを表示。
 }}}
 
+▲参考
+
+- [[plugin_system/オン]]
+- [[plugin_system/オフ]]

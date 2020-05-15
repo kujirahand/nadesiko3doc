@@ -1,6 +1,29 @@
 ●『[[JSONエンコード:plugin_system/JSONエンコード]]』の詳しい解説
 
-{{{
-# 準備中
+オブジェクトをJSON形式にエンコードします。
+
+▲簡単な例
+
+なでしこ3ではソースコードにJSONデータを記述することができます。
+
+{{{#nako3(rows=7)
+情報={
+  "name": "クジラ",
+  "url": "https://kujirahand.com/"
+}
+情報をJSONエンコードして表示。
+# → {"name":"クジラ","url":"https://kujirahand.com/"}
+}}}
+
+▲利用例
+
+なでしこのオブジェクトをJSONエンコードして表示する例です。
+
+{{{#nako3(rows=7)
+情報 = {}
+情報@「name」 = "なでしこ"
+情報@「url」 = "https://nadesi.com"
+情報をJSONエンコードして表示。
+#　→ {"name":"なでしこ","url":"https://nadesi.com"}
 }}}
 
