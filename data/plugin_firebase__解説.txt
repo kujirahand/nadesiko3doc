@@ -1,1 +1,0 @@
-[[plugin_firebase:plugin_firebase__解説]]とは、なでしこv3の[[拡張プラグイン]]。GoogleのFirebaseを操作できます。

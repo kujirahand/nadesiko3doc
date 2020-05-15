@@ -1,3 +1,0 @@
-[[plugin_browser]]とは、なでしこv3のWebブラウザ用のプラグイン。DOM操作やイベント、CanvasやWebストレージなど様々な機能があります。ブラウザ版でのみ利用できます。
-
-#iflogin(> [[plugin_browser__解説]])

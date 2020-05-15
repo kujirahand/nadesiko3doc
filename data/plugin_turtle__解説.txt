@@ -1,2 +1,0 @@
-[[plugin_turtle]]とは、タートルグラフィックスの機能を提供します。Webブラウザ用のプラグイン。
-#iflogin(>[[plugin_turtle__解説]])

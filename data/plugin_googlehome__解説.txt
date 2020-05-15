@@ -1,1 +1,0 @@
-[[plugin_googlehome:plugin_googlehome__解説]]とは、なでしこv3の[[拡張プラグイン]]。コマンドライン版で利用可能で、Google Homeを操作します。

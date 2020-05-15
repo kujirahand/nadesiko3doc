@@ -38,6 +38,7 @@ CREATE UNIQUE INDEX commands_index
 SQL_CREATEを[]でSQLITE3実行。
 「DELETE FROM commands;」を[]でSQLITE3実行。
 
+
 # 変数の初期化
 プラグイン名＝空。
 プラグイン拡張=空。

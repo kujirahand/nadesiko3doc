@@ -1,3 +1,0 @@
-[[plugin_express]]とは、なでしこv3のコンソール版のプラグイン。Webサーバを手軽に作成するのに使います。
-
-#iflogin(>[[plugin_express__解説]])

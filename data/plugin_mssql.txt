@@ -1,13 +1,1 @@
-
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.1.1)
-#rem(★生成=2020/05/15 02:09:18)
-#rem(★スクリプト=cmd2db.nako3)
-
-
-●[[plugin_mssql]](拡張プラグイン)
-▲[[plugin_mssql]] / [[SQLServer:plugin_mssql/SQLServer]]
-- [[(Sを|Sの|Sで)MSSQL逐次開:plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
-- [[(SQLをPARAMSで)MSSQL逐次実行:plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
-- [[MSSQL逐次閉:plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
+[[plugin_mssql:plugin_mssql]]とは、なでしこv3のコンソール版の[[拡張プラグイン]]。MS SQLServerを操作するためのもの。Windowsで利用可能。

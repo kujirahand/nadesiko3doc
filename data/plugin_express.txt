@@ -1,26 +1,3 @@
-
-#rem(★★★ 編集禁止 ★★★)
-#rem(★このファイルはスクリプトで自動で生成されました。)
-#rem(★なでしこ=v3.1.1)
-#rem(★生成=2020/05/15 02:09:18)
-#rem(★スクリプト=cmd2db.nako3)
+[[plugin_express]]とは、なでしこv3のコンソール版のプラグイン。Webサーバを手軽に作成するのに使います。
 
 
-●[[plugin_express]]
-▲[[plugin_express]] / [[Webサーバ(Express):plugin_express/Webサーバ(Express)]]
-- [[GETデータ:plugin_express/GETデータ]] -- 定数
-- [[POSTデータ:plugin_express/POSTデータ]] -- 定数
-- [[(NAMEに|NAMEへ)WEBサーバ名前設定:plugin_express/WEBサーバ名前設定]] --- Webサーバの名前を変更する
-- [[(PORTNOの|PORTNOで)WEBサーバ起動:plugin_express/WEBサーバ起動]] --- ポートPORTNOでWebサーバを起動して成功したら『WEBサーバ起動成功した時』を実行する
-- [[(CALLBACKをPORTNOの|PORTNOで)WEBサーバ起動時:plugin_express/WEBサーバ起動時]] --- ポートPORTNOでWebサーバを起動して成功したらCALLBACKを実行する
-- [[(CALLBACKを)WEBサーバ起動成功時:plugin_express/WEBサーバ起動成功時]] --- WEBサーバ起動が成功した時にcallbackを実行
-- [[(CALLBACKを)WEBサーバ起動失敗時:plugin_express/WEBサーバ起動失敗時]] --- WEBサーバ起動が失敗した時にcallbackを実行
-- [[(URLをPATHに|PATHへ)WEBサーバ静的パス指定:plugin_express/WEBサーバ静的パス指定]] --- サーバのHTMLや画像などを配置する静的パスを指定する
-- [[(CALLBACKをURIに|URIへ)WEBサーバGET時:plugin_express/WEBサーバGET時]] --- URIにGETメソッドがあった時の処理を指定
-- [[(CALLBACKをURIに|URIへ)WEBサーバPOST時:plugin_express/WEBサーバPOST時]] --- URIにPOSTメソッドがあった時の処理を指定
-- [[(CALLBACKをURIに|URIへ)WEBサーバPUT時:plugin_express/WEBサーバPUT時]] --- URIにPOSTメソッドがあった時の処理を指定
-- [[(CALLBACKをURIに|URIへ)WEBサーバDELETE時:plugin_express/WEBサーバDELETE時]] --- URIにPOSTメソッドがあった時の処理を指定
-- [[(OBJを|OBJの)WEBサーバヘッダ出力:plugin_express/WEBサーバヘッダ出力]] --- クライアントにヘッダOBJを出力
-- [[(NOを|NOの)WEBサーバステータス出力:plugin_express/WEBサーバステータス出力]] --- クライアントにステータスNOを出力
-- [[(Sを|Sと)WEBサーバ出力:plugin_express/WEBサーバ出力]] --- クライアントにSを出力
-- [[(URLへ|URLに)WEBサーバリダイレクト:plugin_express/WEBサーバリダイレクト]] --- URLにリダイレクトする

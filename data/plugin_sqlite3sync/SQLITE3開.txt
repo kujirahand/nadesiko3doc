@@ -1,0 +1,10 @@
+●『[[SQLITE3開:plugin_sqlite3sync/SQLITE3開]]』の詳しい解説
+
+SQlite3のデータベースFを開いて、データベースオブジェクトを返す
+
+▲利用例
+
+{{{#nako3
+# 準備中
+}}}
+

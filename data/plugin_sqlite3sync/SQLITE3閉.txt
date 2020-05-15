@@ -1,0 +1,10 @@
+●『[[SQLITE3閉:plugin_sqlite3sync/SQLITE3閉]]』の詳しい解説
+
+アクティブなSQlite3のデータベースを閉じる
+
+▲利用例
+
+{{{#nako3
+# 準備中
+}}}
+

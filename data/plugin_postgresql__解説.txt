@@ -1,1 +1,0 @@
-[[plugin_postgresql:plugin_postgresql__解説]]とは、なでしこv3の[[拡張プラグイン]]。[[データベースプラグイン]]でPostgreSQLを操作できます。
