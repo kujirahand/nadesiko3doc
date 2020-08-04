@@ -1,6 +1,31 @@
 ●『[[JS実行:plugin_system/JS実行]]』の詳しい解説
+JavaScriptのコードSRCを実行する。
+▲利用例 - 標準命令にはない（ほしい）ブラウザ内の表示域を取得する例
+{{{#nako3(rows=10)
+「※ブラウザ内の表示域(スクロールバーを除く)」を表示。
+クライアント幅を表示。
+クライアント高さを表示。
 
-{{{
-# 準備中
+●クライアント幅
+　「document.documentElement.clientWidth」をJS実行。
+ここまで。
+●クライアント高さ
+　「document.documentElement.clientHeight」をJS実行。
+ここまで。
+}}}
+
+▲利用例 - 標準命令にはない（ほしい）ユーザーエージェントを取得する例
+{{{#nako3(rows=10)
+アクセスデバイス取得して表示。
+●アクセスデバイス取得
+　UAとは変数＝「navigator.userAgent;」をJS実行。
+　iPhoneとは変数＝UAの0から「iPhone」を文字検索。
+　iPadとは変数＝UAの0から「iPad」を文字検索。
+　Androidとは変数＝UAの0から「Android」を文字検索。
+　Mobileとは変数＝UAの0から「Mobile」を文字検索。
+　もし、(iPhone＞０)または((Android＞０)かつ(Mobile＞０))ならば、「スマホ」で戻る。
+　違えば、もし、(iPad＞０)または(Android＞０)ならば、「タブレット」で戻る。
+　違えば、「ＰＣ・その他」で戻る。
+ここまで。
 }}}
 

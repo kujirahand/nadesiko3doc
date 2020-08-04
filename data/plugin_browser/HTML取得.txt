@@ -1,6 +1,17 @@
 ●『[[HTML取得:plugin_browser/HTML取得]]』の詳しい解説
 
-{{{
-# 準備中
+DOMのHTML文字列を取得。
+
+▲簡単な利用例
+このページのHTML(<html>タグの中身)を取得して表示します。
+
+{{{#nako3
+「html」のHTML取得して表示。
 }}}
+
+▲参考
+
+- [[plugin_browser/DOM_HTML取得]]
+（HTML取得とDOM_HTML取得は、同じ命令になります）
+
 

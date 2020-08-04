@@ -1,6 +1,24 @@
 ●『[[AJAX送信時:plugin_browser/AJAX送信時]]』の詳しい解説
 
-{{{
-# 準備中
+非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+
+▲利用例
+国土地理院のAPIから今いる場所の標高値をJSONで得る。
+
+{{{#nako3(rows=10)
+●(緯度と経度で)標高取得
+　API=「https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php?lon={経度}&lat={緯度}&outtype=JSON」
+　APIにAJAX送信した時には
+  　J=対象をJSONデコード
+  　J["elevation"]&「m」を表示。
+　ここまで。
+ここまで。
+
+位置情報取得した時には、
+　対象[0]と対象[1]で標高取得。
+ここまで。
 }}}
 
+▲参考
+- [[plugin_browser/GET送信時]]
+（AJAX送信時とGET送信時は、同じ命令になります）

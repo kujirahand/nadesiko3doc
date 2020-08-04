@@ -2,18 +2,42 @@
 
 線グラフを描画。セットアップは[[こちらを参照:plugin_browser/グラフ描画]]。
 
-{{{#nako3(canvas,size=400x300)
+{{{#nako3(canvas,size=400x200)
 #「#chart_cv」へ描画開始。
 dataset = {
-    labels: ['国語', '算数', '理科', '社会'],
+    labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
     datasets: [{
       label: 'タロウ',
-      data: [78, 50, 30, 90],
-      backgroundColor: 'rgba(255,0,0,0.5)'
+      data: [78, 50, 30, 90, 80, 95],
+      borderColor: 'rgba(255,0,0,0.5)'
     },{
       label: 'ジロウ',
-      data: [90, 80, 10, 90],
-      backgroundColor: 'rgba(25,25,255,0.5)'
+      data: [90, 80, 10, 90, 100, 98],
+      borderColor: 'rgba(25,25,255,0.5)'
+    }]}
+datasetの線グラフ描画。
+}}}
+
+▲折れ線グラフ
+「lineTension」を０にすることで直線になります。
+「backgroundColor」のアルファ値を０にすることで、線の下の塗り色が透明になります。
+
+{{{#nako3(canvas,size=400x200,rows=8)
+#「#chart_cv」へ描画開始。
+dataset = {
+    labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
+    datasets: [{
+      label: 'タロウ',
+      data: [78, 50, 30, 90, 80, 95],
+      borderColor: 'rgba(255,0,0,.5)',
+      backgroundColor: 'rgba(255,0,0,0)',
+      lineTension: 0
+    },{
+      label: 'ジロウ',
+      data: [90, 80, 10, 90, 100, 98],
+      borderColor: 'rgba(25,25,255,.5)',
+      backgroundColor: 'rgba(25,25,255,0)',
+      lineTension: 0
     }]}
 datasetの線グラフ描画。
 }}}

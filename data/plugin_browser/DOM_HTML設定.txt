@@ -1,6 +1,16 @@
 ●『[[DOM_HTML設定:plugin_browser/DOM_HTML設定]]』の詳しい解説
+DOMにHTML文字列を設定。
 
-{{{
-# 準備中
+▲利用例 - ラジオボタン
+なでしこのDOM部品操作では作成出来ない(v3.1.2時点)、ラジオボタンを、HTMLで作成する例です。
+{{{#nako3
+DOM親要素に「
+<input type="radio" id="P1" name="Player">1P(左側)でプレイする<BR>
+<input type="radio" id="P0" name="Player">2P(右側)でプレイする
+」をDOM_HTML設定。
 }}}
 
+▲参考
+
+- [[plugin_browser/HTML設定]]
+（HTML設定とDOM_HTML設定は、同じ命令になります）

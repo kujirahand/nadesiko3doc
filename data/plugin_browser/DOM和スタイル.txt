@@ -7,5 +7,27 @@
 
 #include(plugin_browser/DOM和スタイル__解説)
 
+一般的なスタイルシート(CSS)の設定項目は、日本語で設定出来るようになっています。
+▲現在登録されている和スタイルの一覧。
+{{{
+幅	: width
+高さ	: height
+背景色	: background-color
+色	: color
+マージン	: margin
+余白	: padding
+文字サイズ: font-size
+行揃え	: text-align
+左	: left
+右	: right
+中央	: center
+ボーダー	: border
+ボックス表示: display
+なし	: none
+ブロック	: block
+表示位置	: float
+重なり	: z-index
+}}}
+
 ▲ 参考
 - [[命令一覧/機能順]] > [[plugin_browser]]
