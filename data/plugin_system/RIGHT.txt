@@ -1,6 +1,12 @@
 ●『[[RIGHT:plugin_system/RIGHT]]』の詳しい解説
 
-{{{
-# 準備中
+{{{#nako3
+S=「012345」
+RIGHT(S,2)を表示。# 45
 }}}
+
+▲参考
+- [[plugin_system/文字右部分]]
+文字左部分とRIGHTは同じ命令になります。
+
 

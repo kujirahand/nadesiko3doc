@@ -2,7 +2,7 @@
 
 線グラフを描画。セットアップは[[こちらを参照:plugin_browser/グラフ描画]]。
 
-{{{#nako3(canvas,size=400x200)
+{{{#nako3(canvas,size=400x200,rows=13)
 #「#chart_cv」へ描画開始。
 dataset = {
     labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
@@ -22,7 +22,7 @@ datasetの線グラフ描画。
 「lineTension」を０にすることで直線になります。
 「backgroundColor」のアルファ値を０にすることで、線の下の塗り色が透明になります。
 
-{{{#nako3(canvas,size=400x200,rows=8)
+{{{#nako3(canvas,size=400x200,rows=13)
 #「#chart_cv」へ描画開始。
 dataset = {
     labels: ['1月', '2月', '3月', '4月', '5月', '6月'],
