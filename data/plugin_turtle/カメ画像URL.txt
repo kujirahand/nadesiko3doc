@@ -1,6 +1,14 @@
 ●『[[カメ画像URL:plugin_turtle/カメ画像URL]]』の詳しい解説
 
-{{{
-# 準備中
+カメ画像のURL(初期値は「turtle.png」)
+{{{#nako3
+カメ画像URLを言う。
 }}}
 
+▲変数なので変更出来ます
+カメ作成前に、任意の画像のURLを代入する事で、カメの画像を変更出来ます。
+{{{#nako3(canvas,size=310x150)
+カメ画像URL＝「https://nadesi.com/doc/pic/nako_icon.gif」
+カメ作成。
+50だけカメ進む。
+}}}

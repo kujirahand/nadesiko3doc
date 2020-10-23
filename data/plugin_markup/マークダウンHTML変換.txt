@@ -1,6 +1,11 @@
 ●『[[マークダウンHTML変換:plugin_markup/マークダウンHTML変換]]』の詳しい解説
 
+▲簡単な利用例
+Windows版ですと、zipを解凍した状態で入っている「README.md」が、HTML形式に変換されて表示される筈です。
 {{{
-# 準備中
+!『plugin_markup』を取り込む。
+「README.md」を開く。
+それをマークダウンHTML変換して表示。
 }}}
+
 

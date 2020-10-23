@@ -1,6 +1,28 @@
 ●『[[ROUND:plugin_system/ROUND]]』の詳しい解説
-
-{{{
-# 準備中
+Vの値をもっとも近似の整数に四捨五入した値を返します。
+[[四捨五入:plugin_system/四捨五入]]と同じ。
+{{{#nako3
+ROUND(1.456)を表示。
+ROUND(1.567)を表示。
+ROUND(1.5)を表示。
+ROUND(-1.456)を表示。
+ROUND(-1.567)を表示。
+ROUND(-1.5)を表示。
 }}}
 
+▲注意点
+小数部分がきっかり .5である負の値を四捨五入する場合、ｖ１とは結果が異なります。これは、なでしこｖ３の開発言語であるJavascriptのROUND関数の仕様のようです。
+- [[MDN - Math.round():https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Math/round]]より。
+{{{
+引数の小数部分が 0.5 以上の場合、その引数は、次に大きい整数に切り上げられます。
+引数の小数部分が 0.5 未満の場合、その引数は、次に小さい整数に切り下げられます。
+小数部分が 0.5 である場合は、正の無限大の方向で次の整数に丸められます。
+これは多くの言語の round() 関数と異なることに注意してください。
+この場合はたいてい、0 から遠ざかる次の整数に丸められます 
+(小数部分が 0.5 である負の値を四捨五入する場合に、結果が変わります)。
+}}}
+
+▲関連
+- [[plugin_system/CEIL]]
+- [[plugin_system/FLOOR]]
+- [[plugin_system/ROUND]]

@@ -1,6 +1,11 @@
 ●『[[CEIL:plugin_system/CEIL]]』の詳しい解説
-
-{{{
-# 準備中
+Vの値以上である最小の整数を返します。
+[[切上:plugin_system/切上]]と同じ。
+{{{#nako3
+CEIL(1.234)を表示。
+CEIL(-1.234)を表示。
 }}}
-
+▲関連
+- [[plugin_system/CEIL]]
+- [[plugin_system/FLOOR]]
+- [[plugin_system/ROUND]]

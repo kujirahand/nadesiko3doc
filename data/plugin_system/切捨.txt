@@ -1,6 +1,17 @@
 ●『[[切捨:plugin_system/切捨]]』の詳しい解説
-
-{{{
-# 準備中
+Vの値以下である最大の整数を返します。
+[[FLOOR:plugin_system/FLOOR]]と同じ。
+{{{#nako3
+1.234を切捨して表示。
+-1.234を切捨して表示。
 }}}
+
+
+▲関連
+- [[plugin_system/切捨]]
+- [[plugin_system/切上]]
+- [[plugin_system/四捨五入]]
+- [[plugin_system/小数点切下]]
+- [[plugin_system/小数点切上]]
+- [[plugin_system/小数点四捨五入]]
 

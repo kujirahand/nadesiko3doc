@@ -1,6 +1,13 @@
 ●『[[FLOOR:plugin_system/FLOOR]]』の詳しい解説
-
-{{{
-# 準備中
+Vの値以下である最大の整数を返します。
+[[切捨:plugin_system/切捨]]と同じ。
+{{{#nako3
+FLOOR(1.234)を表示。
+FLOOR(-1.234)を表示。
 }}}
+
+▲関連
+- [[plugin_system/CEIL]]
+- [[plugin_system/FLOOR]]
+- [[plugin_system/ROUND]]
 

@@ -1,6 +1,20 @@
 ●『[[カメ画像変更:plugin_turtle/カメ画像変更]]』の詳しい解説
 
-{{{
-# 準備中
+カメの画像を任意のURLの画像に変更する。
+▲簡単な利用例
+途中からカメをナデシコに変更しています。
+{{{#nako3(canvas,rows=12)
+カメ画像URL＝「https://nadesi.com/v3/cdn.php?v=3.1.2&f=/demo/turtle.png」
+N=50
+カメ作成。
+12回
+　もし、回数＝７ならば、
+　　「https://nadesi.com/doc/pic/nako_icon.gif」にカメ画像変更。
+　　「#EEBBCB」にカメペン色設定。
+　ここまで。
+　Nだけカメ進む。
+　90だけカメ右回転。
+　N=N+10。
+ここまで。
 }}}
 
