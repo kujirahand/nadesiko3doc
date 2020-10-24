@@ -1,0 +1,1 @@
+[[plugin_kansuji]]とは漢数字を扱う機能。
