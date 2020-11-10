@@ -1,4 +1,4 @@
-●『[[小数点切上:plugin_system/小数点切上]]』の詳しい解説
+●『[[小数点切上:plugin_math/小数点切上]]』の詳しい解説
 実数Aを小数点第B桁で切り上げして返します。
 {{{#nako3
 1.234を2で小数点切上げして表示。
@@ -9,11 +9,11 @@
 なでしこｖ１では、負数を小数点切上げした場合、絶対値を切上げたものにマイナスが付きましたが、ｖ３では切上げ同様、小数点第B桁でAの値以下である最大の数を返します。
 
 ▲関連
-- [[plugin_system/切捨]]
-- [[plugin_system/切上]]
-- [[plugin_system/四捨五入]]
-- [[plugin_system/小数点切下]]
-- [[plugin_system/小数点切上]]
-- [[plugin_system/小数点四捨五入]]
+- [[plugin_math/切捨]]
+- [[plugin_math/切上]]
+- [[plugin_math/四捨五入]]
+- [[plugin_math/小数点切下]]
+- [[plugin_math/小数点切上]]
+- [[plugin_math/小数点四捨五入]]
 
 

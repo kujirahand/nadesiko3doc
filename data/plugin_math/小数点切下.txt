@@ -1,4 +1,4 @@
-●『[[小数点切下:plugin_system/小数点切下]]』の詳しい解説
+●『[[小数点切下:plugin_math/小数点切下]]』の詳しい解説
 
 ＃小数点切下
 実数Aを小数点第B桁で切り下げして返します。
@@ -11,10 +11,9 @@
 なでしこｖ１では、負数を小数点切下げした場合、絶対値を切下げたものにマイナスが付きましたが、ｖ３では切捨て同様、小数点第B桁でAの値以上である最小の数を返します。
 
 ▲関連
-- [[plugin_system/切捨]]
-- [[plugin_system/切上]]
-- [[plugin_system/四捨五入]]
-- [[plugin_system/小数点切下]]
-- [[plugin_system/小数点切上]]
-- [[plugin_system/小数点四捨五入]]
-
+- [[plugin_math/切捨]]
+- [[plugin_math/切上]]
+- [[plugin_math/四捨五入]]
+- [[plugin_math/小数点切下]]
+- [[plugin_math/小数点切上]]
+- [[plugin_math/小数点四捨五入]]

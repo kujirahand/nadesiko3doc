@@ -1,6 +1,13 @@
 ●『[[マウスX:plugin_browser/マウスX]]』の詳しい解説
 
-{{{
-# 準備中
-}}}
+[[マウス押時:plugin_browser/マウス押時]]、[[マウス移動時:plugin_browser/マウス移動時]]、[[マウス離時:plugin_browser/マウス離時]]のイベントで取得されます。
+イベント発生時のイベントDOM上でのマウスのX座標が入ります。
+
+▲関連
+- [[plugin_browser/マウス押時]]
+- [[plugin_browser/マウス移動時]]
+- [[plugin_browser/マウス離時]]
+- [[plugin_browser/マウスX]]
+- [[plugin_browser/マウスY]]
+
 

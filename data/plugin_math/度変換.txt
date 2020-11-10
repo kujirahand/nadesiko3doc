@@ -1,4 +1,4 @@
-●『[[度変換:plugin_system/度変換]]』の詳しい解説
+●『[[度変換:plugin_math/度変換]]』の詳しい解説
 ラジアンVを度に変換します。
 RAD2DEGと同じ。
 ▲ラジアンとは
@@ -11,8 +11,7 @@ PIを度変換して表示。
 }}}
 
 ▲関連
-- [[plugin_system/度変換]]
-- [[plugin_system/ラジアン変換]]
-- [[plugin_system/RAD2DEG]]
-- [[plugin_system/DEG2RAD]]
-
+- [[plugin_math/度変換]]
+- [[plugin_math/ラジアン変換]]
+- [[plugin_math/RAD2DEG]]
+- [[plugin_math/DEG2RAD]]

@@ -1,6 +1,6 @@
-●『[[ROUND:plugin_system/ROUND]]』の詳しい解説
+●『[[ROUND:plugin_math/ROUND]]』の詳しい解説
 Vの値をもっとも近似の整数に四捨五入した値を返します。
-[[四捨五入:plugin_system/四捨五入]]と同じ。
+『[[四捨五入:plugin_math/四捨五入]]』と同じ。
 {{{#nako3
 ROUND(1.456)を表示。
 ROUND(1.567)を表示。
@@ -23,6 +23,6 @@ ROUND(-1.5)を表示。
 }}}
 
 ▲関連
-- [[plugin_system/CEIL]]
-- [[plugin_system/FLOOR]]
-- [[plugin_system/ROUND]]
+- [[plugin_math/CEIL]]
+- [[plugin_math/FLOOR]]
+- [[plugin_math/ROUND]]

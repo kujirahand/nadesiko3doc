@@ -1,0 +1,11 @@
+●『[[小数部分:plugin_math/小数部分]]』の詳しい解説
+
+実数Aの小数部分を返します。
+『[[FRAC:plugin_math/FRAC]]』と同じ。
+{{{#nako3
+3.5の小数部分を表示。
+}}}
+
+▲関連
+- [[plugin_math/整数部分]]
+- [[plugin_math/小数部分]]

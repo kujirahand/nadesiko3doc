@@ -1,4 +1,4 @@
-●『[[ARCSIN:plugin_system/ARCSIN]]』の詳しい解説
+●『[[ARCSIN:plugin_math/ARCSIN]]』の詳しい解説
 逆三角関数の逆正弦（アークサイン）を返します。
 引数にはラジアンを指定します。
 ▲使用例 - 高さと斜辺から角度を求める

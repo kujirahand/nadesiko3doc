@@ -1,6 +1,7 @@
-●『[[FRAC:plugin_system/FRAC]]』の詳しい解説
+●『[[FRAC:plugin_math/FRAC]]』の詳しい解説
 
 実数Aの小数部分を返します。
+『[[小数部分:plugin_math/小数部分]]』と同じ。
 {{{#nako3
 3.5のFRACを表示。
 FRAC(3.5)を表示。

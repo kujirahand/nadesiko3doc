@@ -1,4 +1,4 @@
-●『[[小数点四捨五入:plugin_system/小数点四捨五入]]』の詳しい解説
+●『[[小数点四捨五入:plugin_math/小数点四捨五入]]』の詳しい解説
 
 実数Aを小数点第B桁で四捨五入して返します。
 {{{#nako3
@@ -9,11 +9,9 @@
 }}}
 
 ▲関連
-- [[plugin_system/切捨]]
-- [[plugin_system/切上]]
-- [[plugin_system/四捨五入]]
-- [[plugin_system/小数点切下]]
-- [[plugin_system/小数点切上]]
-- [[plugin_system/小数点四捨五入]]
-
-
+- [[plugin_math/切捨]]
+- [[plugin_math/切上]]
+- [[plugin_math/四捨五入]]
+- [[plugin_math/小数点切下]]
+- [[plugin_math/小数点切上]]
+- [[plugin_math/小数点四捨五入]]

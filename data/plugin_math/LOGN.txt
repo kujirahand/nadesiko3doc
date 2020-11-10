@@ -1,4 +1,4 @@
-●『[[LOGN:plugin_system/LOGN]]』の詳しい解説
+●『[[LOGN:plugin_math/LOGN]]』の詳しい解説
 指定された底AでBの対数を計算して返す。
 ▲常用対数
 　ｖ１の常用対数（LOG10）

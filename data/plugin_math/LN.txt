@@ -1,4 +1,4 @@
-●『[[LN:plugin_system/LN]]』の詳しい解説
+●『[[LN:plugin_math/LN]]』の詳しい解説
 実数式 A の自然対数（Ln(A) = 1）を返す。
 {{{#nako3
 １０回

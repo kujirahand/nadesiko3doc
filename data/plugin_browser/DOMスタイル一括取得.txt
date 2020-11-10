@@ -1,6 +1,31 @@
 ●『[[DOMスタイル一括取得:plugin_browser/DOMスタイル一括取得]]』の詳しい解説
+DOMのスタイルの値を、配列で複数指定し取得します。
+スタイル設定されていない価（デフォルトや親要素の継承）については取得出来ません。
+取得系では[[DOM和スタイル:plugin_browser/DOM和スタイル]]は使用出来ないようです。一般的なCSSの値で取得します。
 
-{{{
-# 準備中
+▲簡単な利用例
+DOM要素のスタイルをまとめて取得する例です。
+{{{#nako3(rows=15)
+画面＝『<div id="hoge">求め続け、探し続け、叩き続けよう！</div>』
+DOM親要素に画面をHTML設定。
+「#hoge」に{
+  "背景色": 青色,
+  "色": 白色,
+  "文字サイズ": "30px",
+  "余白": "10px"
+}をDOMスタイル一括設定。
+
+「#hoge」の[
+　"background-color",
+　"color",
+　"font-size",
+　"padding"
+]をDOMスタイル一括取得。
+それをJSONエンコード整形して表示。
 }}}
 
+▲関連
+- [[plugin_browser/DOMスタイル取得]]
+- [[plugin_browser/DOMスタイル一括取得]]
+- [[plugin_browser/DOMスタイル設定]]
+- [[plugin_browser/DOMスタイル一括設定]]

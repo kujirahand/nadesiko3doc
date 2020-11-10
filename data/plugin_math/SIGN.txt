@@ -1,6 +1,7 @@
-●『[[SIGN:plugin_system/SIGN]]』の詳しい解説
+●『[[SIGN:plugin_math/SIGN]]』の詳しい解説
 数値Vの符号を返します。
 （Vが0なら0、プラスなら1、マイナスなら-1）
+『[[符号:plugin_math/符号]]』と同じ。
 {{{#nako3
 10のSIGNを表示。
 0のSIGNを表示。

@@ -1,6 +1,6 @@
-●『[[平方根:plugin_system/平方根]]』の詳しい解説
+●『[[平方根:plugin_math/平方根]]』の詳しい解説
 Aの平方根を返します。
-[[SQRT:plugin_system/SQRT]]と同じ。
+『[[SQRT:plugin_math/SQRT]]』と同じ。
 {{{#nako3
 数を２から９まで繰り返す
 　数の平方根を表示。

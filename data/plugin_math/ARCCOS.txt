@@ -1,4 +1,4 @@
-●『[[ARCCOS:plugin_system/ARCCOS]]』の詳しい解説
+●『[[ARCCOS:plugin_math/ARCCOS]]』の詳しい解説
 
 逆三角関数の逆余弦（アークコサイン）を返します。
 引数にはラジアンを指定します。
