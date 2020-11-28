@@ -1,6 +1,12 @@
 ●『[[タッチX:plugin_browser/タッチX]]』の詳しい解説
 
-{{{
-# 準備中
-}}}
+[[タッチ開始時:plugin_browser/タッチ開始時]]、[[タッチ時:plugin_browser/タッチ時]]、[[タッチ終了時:plugin_browser/タッチ終了時]]のイベントで取得されます。
+イベント発生時のイベントDOMの左上を[0,0]としたタッチのX座標が入ります。
 
+▲関連
+- [[plugin_browser/タッチ開始時]]
+- [[plugin_browser/タッチ時]]
+- [[plugin_browser/タッチ終了時]]
+- [[plugin_browser/タッチX]]
+- [[plugin_browser/タッチY]]
+- [[plugin_browser/タッチ配列]]
