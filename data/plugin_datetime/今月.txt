@@ -1,4 +1,4 @@
-●『[[今月:plugin_dateime/今月]]』の詳しい解説
+●『[[今月:plugin_datetime/今月]]』の詳しい解説
 
 今月が何月かを返す。
 {{{#nako3

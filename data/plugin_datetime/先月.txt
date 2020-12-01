@@ -1,4 +1,4 @@
-●『[[先月:plugin_dateime/先月]]』の詳しい解説
+●『[[先月:plugin_datetime/先月]]』の詳しい解説
 
 先月が何月かを返す。
 {{{#nako3

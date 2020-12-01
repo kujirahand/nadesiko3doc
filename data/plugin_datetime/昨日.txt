@@ -1,4 +1,4 @@
-●『[[昨日:plugin_dateime/昨日]]』の詳しい解説
+●『[[昨日:plugin_datetime/昨日]]』の詳しい解説
 
 昨日の日付を「YYYY/MM/DD」の形式で返す。
 MM/DDは、それぞれゼロ埋めで二桁が返ります。
@@ -8,4 +8,4 @@ MM/DDは、それぞれゼロ埋めで二桁が返ります。
 
 ▲参考
 
-- [[plugin_dateime/今日]]
+- [[plugin_datetime/今日]]
