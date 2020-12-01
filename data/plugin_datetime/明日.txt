@@ -1,4 +1,4 @@
-●『[[明日:plugin_system/明日]]』の詳しい解説
+●『[[明日:plugin_dateime/明日]]』の詳しい解説
 明日の日付を「YYYY/MM/DD」の形式で返す。
 MM/DDは、それぞれゼロ埋めで二桁が返ります。
 {{{#nako3
@@ -7,4 +7,4 @@ MM/DDは、それぞれゼロ埋めで二桁が返ります。
 
 ▲参考
 
-- [[plugin_system/今日]]
+- [[plugin_dateime/今日]]

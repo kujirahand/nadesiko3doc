@@ -1,4 +1,4 @@
-●『[[UNIX時間変換:plugin_system/UNIX時間変換]]』の詳しい解説
+●『[[UNIX時間変換:plugin_dateime/UNIX時間変換]]』の詳しい解説
 
 日時SをUNIX時間 (UTC(1970/1/1)からの経過秒数) に変換して返す。
 {{{#nako3
@@ -8,8 +8,8 @@
 }}}
 
 ▲参考
-- [[plugin_system/システム時間]]
-- [[plugin_system/日時変換]]
-- [[plugin_system/UNIXTIME変換]]
+- [[plugin_dateime/システム時間]]
+- [[plugin_dateime/日時変換]]
+- [[plugin_dateime/UNIXTIME変換]]
 UNIX時間変換とUNIXTIME変換は、同じ命令になります。
 

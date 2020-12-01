@@ -1,4 +1,4 @@
-●『[[今:plugin_dateime/今]]』の詳しい解説
+●『[[今:plugin_system/今]]』の詳しい解説
 
 現在時刻を「HH:mm:ss」の形式で返す。
 hh:mm:ssは、それぞれゼロ埋めで二桁が返ります。
@@ -15,5 +15,5 @@ hh:mm:ssは、それぞれゼロ埋めで二桁が返ります。
 
 ▲参考
 
-- [[plugin_dateime/区切]]
+- [[plugin_system/区切]]
 

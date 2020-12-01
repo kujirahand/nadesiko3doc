@@ -1,4 +1,4 @@
-●『[[秒差:plugin_system/秒差]]』の詳しい解説
+●『[[秒差:plugin_dateime/秒差]]』の詳しい解説
 
 時間AとBの差を秒数で求めて返します。AよりBが未来なら正の数で、Bが過去なら負の数で返します。
 引数A、Bは、時刻形式「hh:mm:ss」、日付形式「yyyy/mm/dd」、日時形式「yyyy/mm/dd hh:mm:ss」で指定します。

@@ -1,4 +1,4 @@
-●『[[分差:plugin_system/分差]]』の詳しい解説
+●『[[分差:plugin_dateime/分差]]』の詳しい解説
 
 時間AとBの差を分数で求めて返します。AよりBが未来なら正の数で、Bが過去なら負の数で返します。
 引数A、Bは、時刻形式「hh:mm:ss」、日付形式「yyyy/mm/dd」、日時形式「yyyy/mm/dd hh:mm:ss」で指定します。

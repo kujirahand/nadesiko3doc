@@ -1,4 +1,4 @@
-●『[[システム時間:plugin_system/システム時間]]』の詳しい解説
+●『[[システム時間:plugin_dateime/システム時間]]』の詳しい解説
 現在のUNIX時間 (UTC(1970/1/1)からの経過秒数) を返す。
 ｖ１のシステム時間とは違うので注意が必要です。
 {{{#nako3
@@ -6,5 +6,5 @@
 }}}
 
 ▲参考
-- [[plugin_system/UNIX時間変換]]
-- [[plugin_system/日時変換]]
+- [[plugin_dateime/UNIX時間変換]]
+- [[plugin_dateime/日時変換]]

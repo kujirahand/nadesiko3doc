@@ -1,4 +1,4 @@
-●『[[曜日:plugin_system/曜日]]』の詳しい解説
+●『[[曜日:plugin_dateime/曜日]]』の詳しい解説
 日付Sの曜日を返す。(日,月,火,水,木,金,土)
 日付は「YYYY/MM/DD」で指定。
 不正な日付は「Invalid Date」となるようです。
@@ -8,4 +8,4 @@
 
 ▲参考
 
-- [[plugin_system/曜日番号取得]]
+- [[plugin_dateime/曜日番号取得]]
