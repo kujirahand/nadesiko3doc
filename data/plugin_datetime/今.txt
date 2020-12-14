@@ -15,5 +15,5 @@ hh:mm:ssは、それぞれゼロ埋めで二桁が返ります。
 
 ▲参考
 
-- [[plugin_datetime/区切]]
+- [[plugin_system/区切]]
 

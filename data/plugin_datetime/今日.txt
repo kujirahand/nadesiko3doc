@@ -15,6 +15,6 @@ YYYY/MMは、それぞれ「今年」「今月」でも取得出来ますが、�
 
 ▲参考
 
-- [[plugin_datetime/区切]]
+- [[plugin_system/区切]]
 - [[plugin_datetime/今年]]
 - [[plugin_datetime/今月]]
