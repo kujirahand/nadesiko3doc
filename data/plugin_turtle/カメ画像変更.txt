@@ -18,3 +18,26 @@ N=50
 ここまで。
 }}}
 
+●カメ画像を連続で変更
+
+{{{#nako3(canvas,size=400x400,rows=12)
+画像候補=[
+  "https://nadesi.com/v3/doc/attach/turtle64.png",
+  "https://nadesi.com/v3/doc/attach/elephant64.png",
+  "https://nadesi.com/v3/doc/attach/panda64.png",
+  "https://nadesi.com/v3/doc/attach/nako64.png"
+]
+カメ画像URL＝「https://nadesi.com/v3/doc/attach/turtle64.png」
+カメ作成。
+画像候補を反復
+　　N=10
+　　対象にカメ画像変更。
+　　8回
+　　　Nだけカメ進む。
+　　　90だけカメ右回転。
+　　　N=N+10
+　　ここまで。
+ここまで
+}}}
+
+
