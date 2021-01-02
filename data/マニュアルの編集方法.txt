@@ -4,11 +4,9 @@
 
 ●Gitリポジトリ
 
-Wikiを編集すると、[[マニュアルのリポジトリ:https://github.com/kujirahand/nadesiko3doc]]へ反映されます。
+Wikiを編集すると、定期的に手動で、[[マニュアルのリポジトリ:https://github.com/kujirahand/nadesiko3doc]]へ反映されます。
 
-※ただしWebサーバーの設定でGitがうまく動かない時は定期的に手動でリポジトリに反映されることもあります。
 
-> 2020/11/28 --- サーバーのGit設定がうまくいかないので手動にて運用中。
 
 ●命名規則とWIKI名の対応
 
