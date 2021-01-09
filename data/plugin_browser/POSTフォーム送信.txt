@@ -1,6 +1,31 @@
 ●『[[POSTフォーム送信:plugin_browser/POSTフォーム送信]]』の詳しい解説
 
-{{{
-# 準備中
+POSTメソッドでAjaxを送信します。
+
+▲利用例 - 掲示板へ投稿する
+
+以下は、なでしこv3マニュアルの掲示場にテストメッセージを送信する例です。
+
+{{{#nako3(rows=12)
+URL=「https://nadesi.com/doc3/index.php?test」
+OBJ={
+  "r_name":"なでしこv3", 
+  "r_comment":"送信テスト {今日} {今}",
+  "plugin":"comment", "pid":1, "name":"", "comment":""
+}
+
+逐次実行
+　　先に、URLへOBJをPOST送信
+　　次に、「投稿しました:  https://nadesi.com/doc3/index.php?test」と表示。
+ここまで
 }}}
+
+▲参考
+
+- [[逐次実行:https://nadesi.com/doc3/go.php?7607]] --- 文法の紹介
+- [[plugin_browser/HTTP取得]] --- GETメソッド
+- [[plugin_browser/POST送信]] --- POSTメソッド(逐次実行)
+- [[plugin_browser/POST送信時]] --- コールバック方式でPOST
+- [[plugin_browser/POSTフォーム送信時]] --- コールバック方式でPOST
+
 

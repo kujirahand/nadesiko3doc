@@ -1,6 +1,29 @@
 ●『[[NAVIGATOR:plugin_browser/NAVIGATOR]]』の詳しい解説
 
-{{{
-# 準備中
+ブラウザのnavigatorオブジェクトです。
+
+▲利用例 - 簡単な利用例
+
+{{{#nako3
+DOCUMENT["title"]を表示。
+NAVIGATOR["userAgent"]を表示。
+WINDOW["location"]["href"]を表示。
 }}}
 
+▲利用例 - navigatorの情報を得る
+
+{{{#nako3
+INFO=["appCodeName", "appName", "appVersion", 
+  "cpuClass", "onLine", "platform","userAgent"]
+INFOを反復
+　　V=NAVIGATOR[対象]
+ 　　「{対象}={V}」を表示
+ここまで
+}}}
+
+
+▲参考
+
+- [[plugin_browser/DOCUMENT]]
+- [[plugin_browser/WINDOW]]
+- [[plugin_browser/NAVIGATOR]]

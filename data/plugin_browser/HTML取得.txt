@@ -1,17 +1,23 @@
 ●『[[HTML取得:plugin_browser/HTML取得]]』の詳しい解説
 
-DOMのHTML文字列を取得。
+DOMのHTML文字列(innerHTMLの値)を取得。
 
 ▲簡単な利用例
-このページのHTML(<html>タグの中身)を取得して表示します。
+
+以下は、idが"baseball"である要素を取得し、そのinnerHTMLの値を取得して表示します。
 
 {{{#nako3
-「html」のHTML取得して表示。
+DOM親要素に「
+<div id="baseball"><p>野球</p></div>
+」をHTML設定。
+D=「#baseball」のDOM要素取得。
+DのHTML取得して表示。
 }}}
 
 ▲参考
 
-- [[plugin_browser/DOM_HTML取得]]
-（HTML取得とDOM_HTML取得は、同じ命令になります）
+- [[plugin_browser/HTML設定]]
+- [[plugin_browser/HTML取得]] --- DOM_HTML取得と同じ命令
+- [[plugin_browser/DOM_HTML取得]] --- HTML取得と同じ命令
 
 

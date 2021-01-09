@@ -1,6 +1,4 @@
 ●『[[AJAXオプション設定:plugin_browser/AJAXオプション設定]]』の詳しい解説
 
-{{{
-# 準備中
-}}}
+[[AJAXオプション:plugin_browser/AJAXオプション]]を変更するメソッドです。
 
