@@ -1,6 +1,20 @@
 ●『[[WEBサーバ起動時:plugin_express/WEBサーバ起動時]]』の詳しい解説
 
 {{{
-# 準備中
+!「plugin_express.js」を取り込む。
+
+PORT=8888
+PORTでWEBサーバ起動した時には
+　　「サーバ起動しました」と表示。
+　　# ルーティング設定。
+　　「/」へWEBサーバGETした時には
+　　　　# サーバからWEBブラウザへ出力
+　　　　「<h1>Hello</h1>」をWEBサーバ出力。
+　　ここまで
+ここまで
 }}}
+
+●参考
+
+- [[plugin_express/WEBサーバGET時]]
 
