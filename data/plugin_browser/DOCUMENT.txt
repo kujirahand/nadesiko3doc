@@ -1,6 +1,16 @@
 ●『[[DOCUMENT:plugin_browser/DOCUMENT]]』の詳しい解説
 
-{{{
-# 準備中
+ブラウザのdocumentオブジェクトです。
+
+{{{#nako3
+DOCUMENT["title"]を表示。
+NAVIGATOR["userAgent"]を表示。
+WINDOW["location"]["href"]を表示。
 }}}
+
+▲参考
+
+- [[plugin_browser/DOCUMENT]]
+- [[plugin_browser/WINDOW]]
+- [[plugin_browser/NAVIGATOR]]
 

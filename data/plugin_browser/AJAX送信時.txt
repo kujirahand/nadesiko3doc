@@ -2,7 +2,22 @@
 
 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
 
-▲利用例
+
+▲利用例 - 郵便番号APIを使う
+
+郵便番号「221-0824」を調べます。
+
+{{{#nako3(rows=7)
+ZIP = "221-0824"
+API = "https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}"
+APIにAJAX送信した時には
+　　J=対象をJSONデコード
+　　J["result"]を表示。
+ここまで。
+}}}
+
+▲利用例 - 国土地理院のWeb APIを使う
+
 国土地理院のAPIから今いる場所の標高値をJSONで得る。
 
 {{{#nako3(rows=10)
@@ -20,5 +35,5 @@
 }}}
 
 ▲参考
-- [[plugin_browser/GET送信時]]
-（AJAX送信時とGET送信時は、同じ命令になります）
+- [[plugin_browser/GET送信時]]（AJAX送信時とGET送信時は、同じ命令になります）
+- [[plugin_browser/AJAX送信]] --- 逐次実行と組み合わせて使う方法

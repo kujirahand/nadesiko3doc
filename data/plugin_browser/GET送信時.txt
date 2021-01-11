@@ -14,5 +14,5 @@ APIにGET送信した時には
 }}}
 
 ▲参考
-- [[plugin_browser/AJAX送信時]]
-（AJAX送信時とGET送信時は、同じ命令になります）
+- [[plugin_browser/AJAX送信時]] --- AJAX送信時とGET送信時は、同じ命令
+- [[plugin_browser/AJAX送信]] --- 逐次実行と組み合わせて使う方法

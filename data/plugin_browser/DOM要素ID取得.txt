@@ -1,6 +1,17 @@
 ●『[[DOM要素ID取得:plugin_browser/DOM要素ID取得]]』の詳しい解説
 
-{{{
-# 準備中
+ID属性を指定してDOM要素を取得します。
+
+{{{#nako3
+DOM親要素に「
+<div id="baseball">野球</div>
+」をHTML設定。
+「baseball」のDOM要素ID取得してテキスト取得して表示。
 }}}
+
+
+▲参考
+
+- [[DOM要素取得:plugin_browser/DOM要素取得]] ... CSSクエリで1つ要素を得る
+- [[DOM要素取得:plugin_browser/DOM要素全取得]] ... CSSクエリで全要素を得る
 

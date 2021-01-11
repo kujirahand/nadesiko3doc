@@ -3,12 +3,24 @@ DOMにHTML文字列を設定。
 
 ▲利用例 - 色選択ダイアログ
 なでしこのDOM部品操作では作成出来ない(v3.1.2時点)、色選択ダイアログを、HTMLで作成する例です。
-{{{#nako3
+
+{{{#nako3(rows=2)
 DOM親要素に「<input type="color" id="color">」をHTML設定。
+}}}
+
+▲簡単な利用例
+
+以下は、idが"baseball"である要素を設定します。
+
+{{{#nako3
+DOM親要素に「
+<div id="baseball"><p>野球</p></div>
+」をHTML設定。
 }}}
 
 ▲参考
 
-- [[plugin_browser/DOM_HTML設定]]
-（HTML設定とDOM_HTML設定は、同じ命令になります）
+- [[plugin_browser/HTML設定]]
+- [[plugin_browser/HTML取得]] --- HTML取得とDOM_HTML取得は同じ命令
+- [[plugin_browser/DOM_HTML取得]] --- HTML取得とDOM_HTML取得は同じ命令
 

@@ -1,6 +1,23 @@
 ●『[[DOM要素全取得:plugin_browser/DOM要素全取得]]』の詳しい解説
 
-{{{
-# 準備中
+CSSクエリセレクタを使ってDOM要素を全部取得します。
+
+▲使用例
+
+要素を全部取得してそのテキストを得て表示します。
+
+{{{#nako3
+DOM親要素に「
+<div id="baseball1" class="baseball">野球1</div>
+<div id="baseball2" class="baseball">野球2</div>
+」をHTML設定。
+「.baseball」のDOM要素全取得して反復
+　　対象のテキスト取得して表示。
+ここまで。
 }}}
+
+▲参考
+
+- [[DOM要素取得:plugin_browser/DOM要素取得]] ... CSSクエリで1つ要素を得る
+- [[DOM要素取得:plugin_browser/DOM要素全取得]] ... CSSクエリで全要素を得る
 
