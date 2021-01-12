@@ -1,0 +1,43 @@
+●詳しい説明
+
+plugin_turtleの内部コマンドを文字列で指定して実行します。
+
+指定できるコマンド:
+
+{{{#csv(flag=||)
+コマンド || 意味
+xy X,Y || 起点の座標を(X, Y)へ移動
+begin || パスを始める
+close || パスを閉じる
+fill || 指定したパスを塗りつぶす
+stroke || 指定したパスの枠線を引く
+text STR || STRのテキストを描画
+textset STR || テキスト描画設定をSTRにする
+fillStyle S|| 塗り色をSに設定
+mv X,Y|| 座標(X,Y)に移動
+fd N || Nだけ前に移動
+angle A || 角度をA度にする
+rotr A || 右にA度回転する
+rotl A || 左にA度回転する
+color S || ペン色をSに変更
+size V || 線太さをVに変更
+penOn V || ペンを下げる(V=1)、ペンを上げる(V=0)
+visible V || カメを非表示に(V=0)、表示(V=1)
+changeImage V || カメの画像をVに変更 
+}}}
+
+▲利用例
+
+{{{#nako3(canvas,size=400x400)
+カメ作成。
+「xy10,10
+color,red
+fillStyle,blue
+begin
+mv390,390
+mv10,390
+fill
+stroke
+」のカメコマンド実行。
+}}}
+
