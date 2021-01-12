@@ -1,6 +1,11 @@
 ●『[[グラフオプション:plugin_browser/グラフオプション]]』の詳しい解説
 
+Chart.jsの描画オプションを指定します。
+
 {{{
 # 準備中
 }}}
 
+▲参考
+
+- [[plugin_browser/グラフ描画_CHARTJS]]

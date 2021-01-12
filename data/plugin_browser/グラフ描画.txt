@@ -1,18 +1,10 @@
 ●『[[グラフ描画:plugin_browser/グラフ描画]]』の詳しい解説
 
-[[Chart.js:https://www.chartjs.org/]]を利用して、DATAのグラフを描画します。引数に指定するのは、Chart.jsに与えるJSONデータと同じです。
+[[Chart.js:https://www.chartjs.org/]]を利用して、DATAのグラフを描画します。引数に指定するのは、Chart.jsに与えるJSONデータです。
 
-▲セットアップ
+比較的面倒なデータを指定する必要があるので、カスタマイズが必要なければ、直接『棒グラフ描画』や『円グラフ描画』『線グラフ描画』などを使うと良いでしょう。
 
-描画に際して、JavaScriptを取り込んでおく必要があります。HTMLに以下のコードを挿入しておきます。
-
-{{{
-<script type="text/javascript" 
- src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js">
-</script>
-}}}
-
-▲サンプル
+▲利用例
 
 簡単な使い方です。引数には、グラフの種類やオプションを含めたJSONデータを指定します。
 
@@ -36,4 +28,6 @@ data_frame = {
 data_frameのグラフ描画。
 }}}
 
+▲参考
 
+- [[plugin_browser/グラフ描画_CHARTJS]]
