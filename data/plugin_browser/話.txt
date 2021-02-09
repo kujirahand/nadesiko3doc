@@ -2,7 +2,7 @@
 
 音声合成APIを使って、Sを発話する。
 
-利用の条件として、WEBブラウザが音声合成API(Speech Synthesis API)に対応している必要がある。([[対応ブラウザ:https://caniuse.com/#search=speech%20Synthesis%20API]]/最新版のChrome/Safari/Edge/Firefoxでは問題なく動きます。)
+利用の条件として、WEBブラウザが音声合成API(Speech Synthesis API)に対応している必要がある。([[👉対応ブラウザはこちら:https://caniuse.com/#search=speech%20Synthesis%20API]]) モバイルブラウザを含めて、最新版の主要WebブラウザのChrome/Safari/Edge/Firefoxであれば問題なく動く。
 
 {{{#nako3
 「こんにちは」と話す。
