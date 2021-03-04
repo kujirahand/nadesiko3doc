@@ -15,6 +15,6 @@
 
 ▲参照
 
-- [[グラフィックスについて]]
+- [[グラフィックスについて:https://nadesi.com/v3/doc/index.php?plugin_browser%2F%E6%8F%8F%E7%94%BB&show]]
 
 

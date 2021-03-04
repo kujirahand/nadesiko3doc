@@ -1,6 +1,6 @@
 ●簡易エディタv2
 
-#nako3(edit,canvas)
+#nako3(edit,canvas,rows=12)
 
 ▲参考
 
