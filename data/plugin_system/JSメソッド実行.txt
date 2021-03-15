@@ -1,0 +1,11 @@
+▲使い方
+
+JavaScriptの「window.alert('こんにちは')」をなでしこで実行するには、以下のように記述します。
+
+{{{#nako3
+「window」の「alert」を["こんにちは"]でJSメソッド実行。
+}}}
+
+▲参考
+
+- [[plugin_system/JS関数実行]]

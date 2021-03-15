@@ -39,3 +39,8 @@ JavaScriptのコードSRCを実行する。
 ここまで。
 }}}
 
+▲参考
+
+- [[plugin_system/JSオブジェクト取得]]
+- [[plugin_system/実行]]
+- [[plugin_system/JS関数実行]]
