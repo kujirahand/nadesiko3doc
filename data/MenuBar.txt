@@ -11,9 +11,5 @@
 ▲その他
 - [[最近更新]]
 
-#recent
-
-#popular
-
 #counter
 
