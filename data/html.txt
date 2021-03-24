@@ -1,0 +1,136 @@
+■HTMLへの埋め込み方法
+
+なでしこ３は、スクリプトを取り込むことにより、JavaScriptの代わりに利用することができるようになっています。
+
+●利用準備
+
+HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一行を付け加える``だけ``です。
+
+{{{
+<script type="text/javascript"
+ src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"
+></script>
+}}}
+
+そして、『<script type="なでしこ">...</script>』と記述すると、なでしこのプログラムを実行できます。
+
+以下、利用例です。
+
+{{{
+<html><body>
+<!-- なでしこのプログラム -->
+<script type="なでしこ">
+「こんにちは」と言う。
+</script>
+
+<!-- なでしこの実行エンジンを取り込む -->
+<script type="text/javascript"
+ src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"
+></script>
+</body></html>
+}}}
+
+●プラグインについて
+
+ちなみに「wnako3.js」を取り込むだけでは、最低限のシステム命令とブラウザ命令が使えるだけです。それで、タートルグラフィックスを利用したい場合は、タートルグラフィックスのプラグインをscriptタグで取り込みます。
+
+{{{
+<script type="text/javascript"
+ src="https://nadesi.com/v3/cdn.php?v=3.1.7&f=release/plugin_turtle.js"
+></script>
+}}}
+
+▲一緒に使って便利なプラグイン
+
+プラグインの一覧が[[こちら:https://nadesi.com/v3/doc/index.php?%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E4%B8%80%E8%A6%A7]]にあります。
+
+なお、なでしこ3簡易エディタでは、以下のようにプラグインを読み込んでいます。
+
+{{{
+<!-- なでしこエンジン -->
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js&run'></script>
+
+<!-- 関連プラグイン -->
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_csv.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_datetime.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_markup.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_kansuji.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_turtle.js'></script>
+
+<!-- chart.js を使う時 -->
+<script defer src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+}}}
+
+{{{#column
+▲script要素の記述について
+以下にintegrity 属性をつけたscript要素一覧があります
+- https://nadesi.com/v3/cdn.php?v=3.1.21&f=/release/_script-tags.txt
+}}}
+
+
+●バージョン番号について
+
+URLには、バージョン番号が入ります。xxxの部分には、なでしこ3の最新版のバージョンを入れてください。oooの部分にはファイル名を入れます。
+
+{{{
+【なでしこのプログラムの自動実行モードを使う】
+https://nadesi.com/v3/cdn.php?v=xxx&f=ooooo&run
+}}}
+
+{{{
+【任意のタイミングでなでしこを実行する】
+https://nadesi.com/v3/cdn.php?v=xxx&f=ooooo
+}}}
+
+●最新版のなでしこ
+
+- ``最新版のなでしこ``を使うことをオススメしています。
+-- 最新版のなでしこは、[[こちらのURL:https://nadesi.com/v3/]]から確認できます。
+
+●JavaScriptでなでしこの関数を追加する
+
+上記のように「なでしこ」のエンジンを取り込むと、navigator.nako3 というオブジェクトが使えるようになります。そのsetFuncを使ってJavaScriptの関数を取り込めます。
+
+{{{
+<html><body>
+<!-- なでしこのプログラムを記述 -->
+<script type="なでしこ">
+3と5をテスト加算。
+</script>
+
+<!-- なでしこエンジンの取り込み ---(*1) -->
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js'></script>
+
+<script>
+// JavaScriptで関数を作る
+function testAdd(a, b) {
+  const c = a + b
+  alert(c)
+}
+// なでしこエンジンのロード完了時にカスタム関数を追加 --- (*2)
+window.addEventListener('DOMContentLoaded', (e) => {
+  // なでしこに関数を追加
+  navigator.nako3.setFunc("テスト加算", [['と'], ['を']], testAdd)
+  // なでしこのプログラムを実行
+  navigator.nako3.runNakoScript()
+})
+</script>
+</body><html>
+}}}
+
+ポイントとしては、(*1)でなでしこエンジンを取り込むときに、自動実行しないようにURL末尾のオプションrunをつけないようにします。
+
+そして、(*2)でなでしこエンジンのロード完了時のイベントを指定します。ここでは、setFuncでカスタムJS関数を追加して、runNakoScriptで<script type="なでしこ">のスクリプトを実行します。
+
+{{{
+[書式] カスタム関数の登録方法
+navigator.nako3.setFunc("関数名", 引数, JS関数オブジェクト)
+}}}
+
+●なでしこプラグインの作り方
+
+とは言え、JavaScriptが分かれば、カスタムなでしこプラグインを作ることもできます。
+
+- [[プラグイン作成ドキュメント:https://github.com/kujirahand/nadesiko3/blob/master/doc/plugins.md]]
+
+
