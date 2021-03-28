@@ -4,12 +4,11 @@
 
 ●利用準備
 
-HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一行を付け加える``だけ``です。
+HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一行を付け加えるだけです。
 
 {{{
-<script type="text/javascript"
- src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"
-></script>
+<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run">
+</script>
 }}}
 
 そして、『<script type="なでしこ">...</script>』と記述すると、なでしこのプログラムを実行できます。
@@ -24,9 +23,7 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 </script>
 
 <!-- なでしこの実行エンジンを取り込む -->
-<script type="text/javascript"
- src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"
-></script>
+<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"></script>
 </body></html>
 }}}
 
@@ -35,8 +32,7 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 ちなみに「wnako3.js」を取り込むだけでは、最低限のシステム命令とブラウザ命令が使えるだけです。それで、タートルグラフィックスを利用したい場合は、タートルグラフィックスのプラグインをscriptタグで取り込みます。
 
 {{{
-<script type="text/javascript"
- src="https://nadesi.com/v3/cdn.php?v=3.1.7&f=release/plugin_turtle.js"
+<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_turtle.js"
 ></script>
 }}}
 
@@ -48,14 +44,14 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 
 {{{
 <!-- なでしこエンジン -->
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js&run'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run'></script>
 
 <!-- 関連プラグイン -->
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_csv.js'></script>
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_datetime.js'></script>
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_markup.js'></script>
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_kansuji.js'></script>
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/plugin_turtle.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_csv.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_datetime.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_markup.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_kansuji.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_turtle.js'></script>
 
 <!-- chart.js を使う時 -->
 <script defer src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
@@ -99,7 +95,7 @@ https://nadesi.com/v3/cdn.php?v=xxx&f=ooooo
 </script>
 
 <!-- なでしこエンジンの取り込み ---(*1) -->
-<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js'></script>
+<script defer src='https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js'></script>
 
 <script>
 // JavaScriptで関数を作る
@@ -124,7 +120,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
 {{{
 [書式] カスタム関数の登録方法
-navigator.nako3.setFunc("関数名", 引数, JS関数オブジェクト)
+navigator.nako3.setFunc("関数名", 引数, JS関数オブジェクト, 戻り値がない関数か)
 }}}
 
 ●なでしこプラグインの作り方
