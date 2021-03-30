@@ -1,16 +1,15 @@
 ▲なでしこ3
-- [[なでしこ3:https://nadesi.com/doc3/]]
+- [[なでしこ3トップ:https://nadesi.com/doc3/]]
 - [[簡易エディタ:https://nadesi.com/doc3/go.php?10]]
+- [[文法一覧:https://nadesi.com/doc3/index.php?%E6%96%87%E6%B3%95]]
 
-▲一覧
+▲命令一覧
 - [[命令一覧/機能順]]
 - [[命令一覧/カナ順]]
 - [[プラグイン一覧]]
+
+▲その他
 - [[最近更新]]
-
-#recent
-
-#popular
 
 #counter
 

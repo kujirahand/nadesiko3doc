@@ -2,9 +2,8 @@
 
 ▲簡単な利用例
 一行に繋がったHTMLが、読みやすく整形されて表示されます。
-{{{
-!『plugin_markup』を取り込む。
+{{{#nako3
 『<H1>なでしこ３まにゅある</H1><ul class="title"><li class="title"><B>マークアップ</B><span class="setumei">plugin_markupはマークアップに関する機能を提供するプラグインです。</span></li><ul><li>マークダウンHTML変換</li><div class="setumei">　マークダウン形式で記述された文字列SをHTML形式に変換する</div><li>HTML整形</li><div class="setumei">　HTML形式で記述された文字列Sを整形する</div></ul></ul>
-』をHTML整形して表示。
+』をHTML整形して言う。
 }}}
 
