@@ -53,6 +53,32 @@ API＝「https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}」
 ここまで。
 }}}
 
+●v3.2.x 系の逐次実行 
+
+v3.2.xでは逐次実行の書き方が変わります。
+
+・[[#912:https://github.com/kujirahand/nadesiko3/issues/914]]
+・[[#717:https://github.com/kujirahand/nadesiko3/issues/717]]
+・「先に」「次に」を書かなくても使えます。
+・それでも、「次に」「先に」を書くと、そこから「ここまで」のようにブロックを指定できます。
+・エラー時の処理を記述できます。
+
+{{{
+# 逐次実行の例
+逐次実行
+　「あ」を表示。
+　1秒逐次待機
+　「い」を表示。
+　1秒逐次待機
+　「う」を表示。
+　エラーならば
+　　「エラーになりました」と表示
+　ここまで
+ここまで
+}}}
+
+●参考
+
 - (参考) [[plugin_browser/HTTP取得]]
 - (参考) [[plugin_browser/AJAXとHTTP]]
 
