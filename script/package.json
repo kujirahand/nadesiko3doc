@@ -1,0 +1,16 @@
+{
+  "name": "nadesiko3doc/script",
+  "version": "1.0.0",
+  "description": "なでしこ3マニュアル生成スクリプト",
+  "scripts": {
+    "start": "cnako3 cmd2db.nako3",
+    "build": "cnako3 cmd2db.nako3"
+  },
+  "dependencies": {
+    "nadesiko3-sqlite3sync": "^0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kujirahand/nadesiko3doc.git"
+  }
+}
