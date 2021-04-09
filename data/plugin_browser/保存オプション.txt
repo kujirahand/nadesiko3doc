@@ -1,0 +1,10 @@
+▲説明
+
+『[[plugin_browser/保存オプション設定]]』で値を変更します。
+そして、ブラウザの『[[保存:plugin_browser/保存]]』や『[[読:plugin_browser/読]]』などに影響します。
+
+▲参考
+
+- [[plugin_browser/保存オプション設定]]
+- [[plugin_browser/保存]]
+- [[plugin_browser/読]]』

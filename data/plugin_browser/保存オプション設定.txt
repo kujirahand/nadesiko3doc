@@ -1,0 +1,9 @@
+▲説明
+
+ブラウザの『[[保存:plugin_browser/保存]]』や『[[読:plugin_browser/読]]』などに影響します。「json」を指定すると、ローカルストレージに保存する際、JSONにエンコードしてデータを保存します。
+
+▲参考
+
+- [[plugin_browser/保存オプション設定]]
+- [[plugin_browser/保存]]
+- [[plugin_browser/読]]』
