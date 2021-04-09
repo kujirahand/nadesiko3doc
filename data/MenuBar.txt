@@ -1,7 +1,7 @@
 ▲なでしこ3
 - [[なでしこ3トップ:https://nadesi.com/doc3/]]
 - [[簡易エディタ:https://nadesi.com/doc3/go.php?10]]
-- [[文法一覧:https://nadesi.com/doc3/index.php?%E6%96%87%E6%B3%95]]
+- [[文法]]
 
 ▲命令一覧
 - [[命令一覧/機能順]]

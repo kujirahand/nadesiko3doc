@@ -1,0 +1,26 @@
+●『[[HTTP逐次取得:plugin_browser/HTTP逐次取得]]』の詳しい解説
+
+『[[逐次実行:文法/逐次実行]]』構文にて、非同期通信(Ajax)でURLにデータを送信します。成功すると『対象』にデータが代入されます。
+
+●利用例
+
+郵便番号APIにアクセスします。
+
+{{{#nako3(rows=8)
+ZIP＝「221-0824」
+API＝「https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}」
+逐次実行
+　先に、APIをHTTP逐次取得。
+　次に、対象をJSONデコードして結果に代入。
+　次に、結果["result"]を表示。
+ここまで。
+}}}
+
+▲参考
+
+- [[文法/逐次実行]]
+- [[plugin_browser/HTTP取得]] --- GETメソッド
+- [[plugin_browser/POST送信]] --- POSTメソッド(逐次実行)
+- [[plugin_browser/POST送信時]] --- コールバック方式でPOST
+- [[plugin_browser/POSTフォーム送信時]] --- コールバック方式でPOST
+

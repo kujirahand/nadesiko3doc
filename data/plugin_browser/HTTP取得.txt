@@ -1,22 +1,8 @@
 ●『[[HTTP取得:plugin_browser/HTTP取得]]』の詳しい解説
 
-逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
-
-{{{#nako3(rows=8)
-ZIP＝「221-0824」
-API＝「https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}」
-逐次実行
-　先に、APIをHTTP取得。
-　次に、対象をJSONデコードして結果に代入。
-　次に、結果["result"]を表示。
-ここまで。
-}}}
+『[[HTTP逐次取得:plugin_browser/HTTP逐次取得]]』と同じ命令です。
 
 ▲参考
 
-- [[逐次実行について:https://nadesi.com/doc3/index.php?%E9%80%90%E6%AC%A1%E5%AE%9F%E8%A1%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6]]
-- [[plugin_browser/HTTP取得]] --- GETメソッド
-- [[plugin_browser/POST送信]] --- POSTメソッド(逐次実行)
-- [[plugin_browser/POST送信時]] --- コールバック方式でPOST
-- [[plugin_browser/POSTフォーム送信時]] --- コールバック方式でPOST
+・[[HTTP逐次取得:plugin_browser/HTTP逐次取得]]
 
