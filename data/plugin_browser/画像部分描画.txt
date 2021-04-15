@@ -1,21 +1,22 @@
-●『[[画像描画:plugin_browser/画像描画]]』の詳しい解説
+●『[[画像描画:plugin_browser/画像部分描画]]』の詳しい解説
 
 　キャンバスに画像を描画する命令です。
 　指定の座標にそのまま描画する他、画像サイズを拡大・縮小して描画したり、元画像の一部を切取って描画したりすることが出来ます。
 
 ▲①座標を指定して、元画像をそのまま描画する。
 {{{#nako3(canvas,size=310x150,rows=5) 
-#[dx,dy]にIMGを画像描画。
-[0,0]に「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」を画像描画。
+#[dx,dy]にIMGを画像部分描画。
+「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」の[0,0]から[0,0]へ画像部分描画。
 }}}
+
 ▲②指定した座標に、幅と高さを指定して画像を描画する。
 {{{#nako3(canvas,size=310x150,rows=5) 
 #[dx,dy,dw,dh]にIMGを画像描画。
-[0,0,100,50]に「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」を画像描画。
-}}}
-▲③指定した幅と高さに画像を切り取り、指定した座標に、幅と高さを指定して画像を描画する。
-{{{#nako3(canvas,size=310x150,rows=5)
-#IMGを[sx,sy,sw,sh,dx,dy, dw, dh]へ画像描画。 
-「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」を[110,30,170,40,0,0,170,40]へ画像描画。
+[0,0,100,50]に「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」の画像部分描画。
 }}}
 
+▲③指定した幅と高さに画像を切り取り、指定した座標に、幅と高さを指定して画像を描画する。
+{{{#nako3(canvas,size=310x150,rows=5)
+#[dx,dy,dw,dh]にIMGの[sx,sy,sw,sh]を画像部分描画。 
+[0,0,170,40]に「https://nadesi.com/top/skin/nadesi.com/resource/logo_nadesiko_title.gif?m=1548939468」の[110,30,170,40]を画像部分描画。
+}}}
