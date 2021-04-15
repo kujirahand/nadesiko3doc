@@ -4,6 +4,15 @@
 // ----------------------------------------------------
 define('KONA3_FILE_CONFIG', 'konawiki3.ini.php');
 
+// http => https
+if (empty($_SERVER['HTTPS'])) {
+  if ($_SERVER['HTTP_HOST'] == 'nadesi.com') {
+    header("Location: https://".
+        $_SERVER['HTTP_HOST'].
+        $_SERVER['REQUEST_URI']);
+  }
+}
+
 // Check config file
 $file_config = dirname(__FILE__).'/'.KONA3_FILE_CONFIG;
 if (!file_exists($file_config)) {
