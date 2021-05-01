@@ -1,0 +1,38 @@
+■2021年4月のなでしこ3更新を振り返る
+
+2021年4月は大幅になでしこ3をバージョンアップしました。なんと、6回も！
+
+- [[v3.2.1:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.1]]
+- [[v3.2.2:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.2]]
+- [[v3.2.3:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.3]]
+- [[v3.2.4:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.4]]
+- [[v3.2.5:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.5]]
+- [[v3.2.6:https://github.com/kujirahand/nadesiko3/releases/tag/3.2.6]]
+
+変更点を簡単にまとめてみましょう。
+
+●文法の変更点
+
+- [[文法/間]] ---『Nの間』文で『Nの間繰り返す』と冗長に書けるようにしました。
+- [[文法/回]] --- 「N回」文を冗長に「N回、繰り返す」と書けるようにしました。
+- [[文法/字句解析]] --- 語句の末尾に『[[ 以上:plugin_system/以上]]』『以下』『超』『未満』があれば字句解析で分割します。
+- [[文法/逐次実行]] --- 非同期処理を手軽に記述する逐次実行構文を改善しました。
+- [[文法/💧]] --- 「。。。」を「ここまで」と同じ意味にしました。
+- [[文法/代入文]] --- 「AはBである」と記述できるようにしました。
+- 非同期処理を記述しやすくする[[プロミスプラグイン:plugin_promise]]を追加しました。
+- [[文法/辞書型変数]] --- 用語「オブジェクト変数」「ハッシュ変数」「連想配列」を「辞書型変数」に統一しました。
+- [[文法/プラグイン取込]] --- プラグイン管理の仕組みを追加しました。
+
+●追加や修正された関数や定数
+
+- 『[[真:plugin_system/真]]』『[[偽:plugin_system/偽]]』『[[永遠:plugin_system/永遠]]』『[[キャンセル:plugin_system/キャンセル]]』定数を追加しました。
+- 『[[等しく無い:plugin_system/等無]]』関数を追加しました。
+- 『[[画像描画:plugin_browser:画像描画]]』関数を『[[画像部分描画:plugin_browser:画像部分描画]]』に分割して使いやすくしました。
+- 画像を読み込む関数『[[画像読時:plugin_browser/画像読時]]』『[[画像逐次読:plugin_browser/画像逐次読]]』を追加しました。
+- 『[[DOM子要素取得:plugin_browser/DOM子要素取得]]』『[[DOM子要素全取得:plugin_browser/DOM子要素全取得]]』命令を追加しました。
+- 描画機能を拡張する関数『[[描画起点設定:plugin_browser/描画起点設定]]』『[[描画回転:plugin_browser/描画回転]]』『[[描画拡大:plugin_browser/描画拡大]]』『[[描画変換マトリクス設定 :plugin_browser/描画変換マトリクス設定]]』『[[描画変換マトリクス追加:plugin_browser/描画変換マトリクス追加]]』を追加しました。
+- 『[[秒後:plugin_system/秒後]]』関数でタイマーIDが変数『対象』に代入されるようになりました。
+- 『配列切取』のエイリアス『[[配列削除:plugin_system/配列削除]]』関数を追加しました。
+- 『[[描画データURL変換:plugin_browser/描画データURL変換]]』『[[描画ダウンロードリンク作成:plugin_browser/描画ダウンロードリンク作成]]』関数を追加します。
+
+

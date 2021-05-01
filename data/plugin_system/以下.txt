@@ -20,8 +20,12 @@ A=50
 　　「Aは50超」と表示。
 ここまで
 }}}
+
+
 ▲参考
 
 - [[以上:plugin_system/以上]]
+- [[以下:plugin_system/以下]]
+- [[超:plugin_system/超]]
 - [[未満:plugin_system/未満]]
 
