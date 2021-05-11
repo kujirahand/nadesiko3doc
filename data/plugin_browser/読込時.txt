@@ -1,6 +1,22 @@
 ●『[[読込時:plugin_browser/読込時]]』の詳しい解説
 
-{{{
-# 準備中
+loadイベントが発火した時のイベントを登録します。
+
+▲利用例
+
+以下は、画像を読み込み、それが完了した時にメッセージを表示する例です。
+
+{{{#nako3(canvas)
+IMG=「img」のDOM要素作成。
+DOM親要素へIMGをDOM子要素追加。
+IMGを読込した時には
+    「読み込み完了」と表示。
+ここまで。
+IMG["src"] = "https://nadesi.com/v3/storage/image.php?f=1.jpg"
 }}}
+
+- [[plugin_browser/DOM要素作成]]
+- [[plugin_browser/DOM子要素追加]]
+
+
 

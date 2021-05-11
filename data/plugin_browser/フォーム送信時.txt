@@ -1,6 +1,27 @@
 ●『[[フォーム送信時:plugin_browser/フォーム送信時]]』の詳しい解説
 
-{{{
-# 準備中
+フォーム送信時のイベント(submit)にイベントを登録します。
+
+▲利用例
+
+以下の例では、submitイベントが発生した時に、DOMイベント処理停止を呼ぶため、フォームが送信されません。
+
+{{{#nako3
+HTML=『
+<form id="testform"
+ action="https://api.aoikujira.com/tenki/week.php?fmt=json&city=319"
+ method="get">
+ <input type="submit" value="天気ページを取得">
+</form>
+』
+DOM親要素へHTMLをHTML設定。
+「#testform」のフォーム送信時には
+    「送信しません」と表示。
+    対象イベントのDOMイベント処理停止。
+ここまで。
 }}}
+
+▲参考
+
+- [[plugin_browser/DOMイベント処理停止]]
 
