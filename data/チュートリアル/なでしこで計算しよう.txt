@@ -6,7 +6,7 @@
 
 なでしこを使うと手軽にいろいろな計算が可能になります。ここでは、計算の方法を学びましょう！
 
-#ref(https://nadesi.com/v3/storage/image.php?f=13.jpg,w=300,*なでしこで計算してみよう)
+#ref(https://nadesi.com/v3/storage/image.php?f=17.png,w=300,*なでしこで計算してみよう)
 
 
 ▲「なでしこ」は計算しかできないの？
