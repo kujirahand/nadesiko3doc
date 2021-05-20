@@ -31,7 +31,7 @@
 
 ●なでしこ関連リンク
 
-- [[🏦なでしこ貯蔵庫(nako3storage):https://nadesi.com/v3/storage]]
+- [[🏦なでしこ貯蔵庫(nako3storage):https://n3s.nadesi.com/]]
 - [[📝簡易エディタv2:簡易エディタv2]] (本Wikiのエディタ)
 
 ●各命令はプラグインごとに分かれて管理されます
