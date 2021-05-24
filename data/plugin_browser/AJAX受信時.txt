@@ -1,0 +1,16 @@
+●使い方
+
+非同期通信(Ajax)を利用してURLからデータを受信した時callbackが実行されます。その際『対象』にデータが代入されます。『AJAXオプション設定』でオプションを指定できます。
+
+▲利用例 - 郵便番号APIを使う
+
+郵便番号「221-0824」を調べます。
+
+{{{#nako3(rows=7)
+ZIP = "221-0824"
+API = "https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}"
+APIからAJAX受信した時には
+　　J=対象をJSONデコード
+　　J["result"]を表示。
+ここまで。
+}}}

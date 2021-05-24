@@ -1,6 +1,6 @@
 ●『[[AJAX送信時:plugin_browser/AJAX送信時]]』の詳しい解説
 
-非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入されます。
 
 
 ▲利用例 - 郵便番号APIを使う
@@ -37,3 +37,5 @@ APIにAJAX送信した時には
 ▲参考
 - [[plugin_browser/GET送信時]]（AJAX送信時とGET送信時は、同じ命令になります）
 - [[plugin_browser/AJAX送信]] --- 逐次実行と組み合わせて使う方法
+- [[plugin_browser/AJAX受信時]] --- 「AJAX送信時」と同じ動作の命令
+
