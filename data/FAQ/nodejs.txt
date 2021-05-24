@@ -1,0 +1,43 @@
+■FAQ/なでしこのPC版って何？
+
+なでしこ３は主にWebブラウザで動作するプログラミング言語です。
+
+しかし、PC上にインストールして動かすこともできます。その場合、Node.jsと呼ばれるJavaScript実行エンジン上で動作します。
+
+▲PC版のなでしこのインストール方法(主要なOSにて)
+
+PC版をインストールするには、最初にNode.jsをインストールした後で、Node.jsのパッケージマネージャーnpmを利用してなでしこをインストールできます。
+
+- [[Node.jsのダウンロード:https://nodejs.org/ja/]]
+
+そして、Node.jsをインストールしたら、以下のコマンドを実行します。
+
+{{{
+npm install -g nadesiko3
+}}}
+
+▲Windows版もある！
+
+ちなみに、なでしこ3のWindows版を使うと、Node.jsも一緒に全部入っています。インストールもお手軽です。以下よりダウンロードできます。
+
+- https://github.com/kujirahand/nadesiko3win32/releases
+
+▲その他の詳しいインストール方法
+
+以下のページに詳しく書かれています。Windows/macOS/Raspberry Pi OS/Android/Chromebook/CentOSなどいろいろなＯＳごとのセットアップ方法が記されています。
+
+- https://nadesi.com/doc3/go.php?16414
+
+▲PC版を使う時のヒント
+
+なでしこのエディタを使うと、長いプログラムも楽々書けます。
+
+- [[Visual Studio Code用の拡張機能:https://marketplace.visualstudio.com/items?itemName=yy0931.nadesiko3-vscode]]⭐ --- Visual Studio Codeの拡張機能です。文法チェックもあり超高機能です。 by yy0931さん
+- [[サクラエディタ(win):https://qiita.com/snowdrops89/items/c9f5941ed1ad30a6272e]] --- 導入方法を紹介しています。 by 雪乃さん
+- [[CotEditor(mac):https://nadesi.com/doc3/index.php?CotEditor]]
+
+
+
+
+
+
