@@ -15,5 +15,7 @@
 
 - [[FAQ/なでしこのPC版って何？:FAQ/nodejs]]
 
+●プラグイン
 
+- [[FAQ/JSプラグインの作り方:FAQ/plugins]]
 

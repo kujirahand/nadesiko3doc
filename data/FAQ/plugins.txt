@@ -1,0 +1,14 @@
+■なでしこプラグインについて
+
+なでしこのプラグインには、なでしこで作った「なでしこプラグイン」と、JavaScriptで作った「JSプラグイン」があります。
+
+●なでしこプラグイン
+
+なでしこで関数を定義するだけです。
+
+●JSプラグイン
+
+以下GitHubに仕様があります。
+
+- https://github.com/kujirahand/nadesiko3/blob/master/doc/plugins.md
+
