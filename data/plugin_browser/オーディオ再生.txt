@@ -2,9 +2,9 @@
 
 AudioオブジェクトOBJを指定してオーディをを再生
 
-{{{
-A=「https://nadesi.com/v3/common/sound/ki.mp3」をオーディオ開く。
-Aをオーディオ再生。
+{{{#nako3
+MP3=「https://nadesi.com/v3/common/sound/ki.mp3」をオーディオ開く。
+MP3をオーディオ再生。
 }}}
 
 ▲参考

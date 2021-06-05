@@ -11,3 +11,7 @@
 GitHubで最新版を確認できます。
 
 - https://github.com/kujirahand/nadesiko3/releases
+
+または、なでしこ貯蔵庫からJSON形式で取得できます。
+
+- https://n3s.nadesi.com/nako_version.json
