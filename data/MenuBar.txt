@@ -1,15 +1,20 @@
 ▲なでしこ3
-- [[なでしこ3トップ:https://nadesi.com/doc3/]]
-- [[簡易エディタ:https://nadesi.com/doc3/go.php?10]]
-- [[文法について:文法]]
+- [[🌸v3トップ:https://nadesi.com/doc3/]]
+- [[🍰チュートリアル:チュートリアル]]
+- [[📌文法について:文法]]
+- [[❓FAQ:FAQ]]
 
 ▲命令一覧
 - [[命令一覧/機能順]]
 - [[命令一覧/カナ順]]
 - [[プラグイン一覧]]
 
+▲ツール
+- [[🍯貯蔵庫:https://n3s.nadesi.com/]]
+- [[📝簡易エディタ:https://nadesi.com/doc3/go.php?10]]
+
 ▲その他
-- [[なでしこ3貯蔵庫:https://nadesi.com/v3/storage]]
+
 - [[最近更新]]
 
 #counter
