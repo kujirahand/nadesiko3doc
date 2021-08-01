@@ -7,7 +7,7 @@
     "build": "cnako3 cmd2db.nako3"
   },
   "dependencies": {
-    "nadesiko3-sqlite3sync": "^0.0.1"
+    "nadesiko3-sqlite3sync": "^0.0.3"
   },
   "repository": {
     "type": "git",

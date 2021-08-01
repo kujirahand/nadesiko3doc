@@ -9,6 +9,11 @@ NADESIKO3DOC = ROOT&「/nadesiko3doc」
 元ファイル = 「{NADESIKO3}/batch/command.txt」
 WIKIフォルダ = 「{NADESIKO3DOC}/data」
 DBFILE=「{WIKIフォルダ}/nako3commands.db」
+もし、DBFILEが存在するならば # DBは常にゼロから作り直す
+　　「ファイル削除」と表示
+　　DBFILEをファイル削除。
+ここまで。
+「*** DBFILE: 」&DBFILEを表示
 DBFILEをSQLITE3開く。
 拡張=""
 
@@ -19,10 +24,11 @@ DBFILEをSQLITE3開く。
 　　「エラー: 存在しません: {元ファイル}」と表示して終わる。
 ここまで。
 
-SQL_CREATE=「CREATE TABLE IF NOT EXISTS commands (
+SQL_CREATE=「
+/* コマンド一覧 */
+CREATE TABLE IF NOT EXISTS commands (
   command_id INTEGER PRIMARY KEY,
   pagename TEXT NOT NULL,
-  nakotype TEXT,
   plugin TEXT,
   genre TEXT,
   name TEXT,
@@ -33,12 +39,21 @@ SQL_CREATE=「CREATE TABLE IF NOT EXISTS commands (
   ctime INTEGER,
   mtime INTEGER
 );
-CREATE UNIQUE INDEX commands_index
-  ON commands (pagename);
+/* コマンド一覧のインデックス */
+CREATE UNIQUE INDEX commands_index ON commands (pagename);
+/* プラグインの説明 */
+CREATE TABLE IF NOT EXISTS plugins (
+  name TEXT NOT NULL,
+  desc TEXT DEFAULT '',
+  nakotype TEXT DEFAULT ''
+);
+/* プラグイン一覧のインデックス */
+CREATE UNIQUE INDEX plugins_index ON plugins (name);
 」
 
-SQL_CREATEを[]でSQLITE3実行。
-「DELETE FROM commands;」を[]でSQLITE3実行。
+SQL_CREATEを「;」で区切って反復
+　　対象&「;」を[]でSQLITE3実行。
+ここまで。
 
 
 # 変数の初期化
@@ -112,6 +127,8 @@ PLUG拡張={}
 　　プラグイン名は、抽出文字列[0]
 　　拡張=抽出文字列[1]
 　　拡張＝トリム（拡張）
+　　SQL="INSERT INTO plugins (name,nakotype) VALUES (?,?)"
+　　SQLを[プラグイン名, 拡張]でSQLITE3実行
 　　拡張プラグイン辞書[プラグイン名] = 拡張。
 　　プラグイン一覧にプラグイン名を配列追加。
 　　＃命令一覧
@@ -148,20 +165,23 @@ PLUG拡張={}
 　　ここまで。
 　　＃ページ名など
 　　システム時間をVに代入。
-　　"- {プラグイン名}/{F名前} ... {F拡張}"を表示。
-　　「commands」に{
-      "pagename": "{プラグイン名}/{F名前}"
-      "plugin": プラグイン名,
-      "nakotype": F拡張,
-      "genre": 表題,
-      "type": Fタイプ,
-      "name": F名前,
-      "args": F引数,
-      "desc": F説明,
-      "kana": Fヨミ,
-      "ctime": V,
-      "mtime": V
-    }をINSERT
+　　"- {プラグイン名}/{F名前}"を表示。
+　　DATA=[
+      "{プラグイン名}/{F名前}",
+      プラグイン名,
+      表題,
+      Fタイプ,
+      F名前,
+      F引数,
+      F説明,
+      Fヨミ,
+      V,
+      V
+    ];
+    #DATAをJSONエンコードして表示。
+　　「INSERT INTO commands
+      (pagename,plugin,genre,type,name,args,desc,kana,ctime,mtime)
+VALUES(?,?,?,?,?,?,?,?,?,?)」をDATAでSQLITE3実行
 　　ページ名＝「{プラグイン名}/{F名前}」
 　　もし、Fタイプ＝「定数」ならば
 　　　　FF=「- [[{F名前}:{ページ名}]] -- 定数{改行}」。
