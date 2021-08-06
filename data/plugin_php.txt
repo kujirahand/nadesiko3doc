@@ -1,0 +1,1 @@
+plugin_php は[[なでしこ3PHP:https://nadesi.com/doc3/index.php?nadesiko3php]]用のプラグインで、Webアプリを作るのに便利な命令を備えています。

@@ -1,0 +1,1 @@
+nadesiko3-sqlite3syncは非同期でSQLite3を使うためのプラグインです。

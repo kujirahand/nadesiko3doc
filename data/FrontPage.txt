@@ -13,10 +13,10 @@
 <style> #kona3_main .column a { text-decoration: none; } </style>
 }}}
 
-[[🏠 なでしこ全体:https://nadesi.com]] > [[🌸 なでしこ3:https://nadesi.com/doc3]]
+[[🏠 なでしこ全体:https://nadesi.com]] > [[なでしこ3:https://nadesi.com/doc3]]
 
 {{{#column
-[[🗒 命令一覧 > 機能順:命令一覧/機能順]] ｜ [[📃名前順:命令一覧/カナ順]] ｜ [[📃カナ順:命令一覧/ヨミガナ]]
+[[🗒 命令一覧 > 機能順:命令一覧/機能順]] ｜ [[名前順:命令一覧/カナ順]] ｜ [[カナ順:命令一覧/ヨミガナ]]
 }}}
 
 {{{{#column
@@ -25,16 +25,17 @@
 <img src="https://n3s.nadesi.com/image.php?f=26.png" width="100" style="border:none;float:left;">
 }}}
 
-[[📌 文法 - なでしこ3の文法について:文法]]
-[[🍰 チュートリアル:チュートリアル]]
+[[文法 - なでしこ3の文法について:文法]]
+[[チュートリアル:チュートリアル]]
 [[🍯 なでしこ貯蔵庫(nako3storage):https://n3s.nadesi.com/]]
-[[🍮 よくある質問と答え:FAQ]]
+[[よくある質問と答え:FAQ]]
 
 {{{#html
 <div style="clear:both"></div>
 </div><!--  #frontpage_top -->
 }}}
 }}}}
+
 
 ●ピックアップ
 
