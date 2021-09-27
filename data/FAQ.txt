@@ -15,6 +15,7 @@
 ●ＰＣ版に関する質問
 
 - [[FAQ/なでしこのPC版って何？:FAQ/nodejs]]
+- [[FAQ/cnako3では「今年」と「今月」が使えない？:FAQ/datetime]]
 
 ●プラグイン
 
