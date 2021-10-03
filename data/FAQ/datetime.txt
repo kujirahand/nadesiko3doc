@@ -1,0 +1,22 @@
+■ FAQ/cnako3では「今年」と「今月」が使えない？
+
+WEBの「なでしこ3簡易エディタ」だと大丈夫なのですが cnako3だと「今年」と「今月」が未定義になってしまいます。どうしてでしょうか。
+
+実は、cnako3では、自動的に日付処理(plugin_datetime.js)が取り込まれません。明示的に取り込んでください。
+
+- https://nadesi.com/v3/doc/index.php?plugin_datetime
+
+なお、plugin_systemには簡易の日時処理を実装されており「今日」だけは使えるようになっています。
+
+- https://nadesi.com/v3/doc/index.php?plugin_system%2F%E6%97%A5%E6%99%82%E5%87%A6%E7%90%86%28%E7%B0%A1%E6%98%93%29
+
+▲cnako3で「今年」を使う方法
+
+PC版(cnako3)で以下のように記述します。
+
+{{{
+!「plugin_datetime」を取り込む。
+今年を表示。
+}}}
+
+

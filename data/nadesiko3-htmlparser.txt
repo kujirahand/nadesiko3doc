@@ -1,0 +1,1 @@
+nadesiko3-htmlparserとは、HTMLファイルをパースしてCSSクエリを利用してHTML内の特定の要素を取り出す命令を持ったプラグインです。

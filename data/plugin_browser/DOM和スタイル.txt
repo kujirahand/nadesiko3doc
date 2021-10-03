@@ -1,13 +1,9 @@
 ■ DOM和スタイル (DOMわすたいる)
-{{{#csv(flag=||)
-カテゴリ || [[plugin_browser]] > [[DOM操作:plugin_browser/DOM操作]]
-種類 || 定数
-初期値 || 
-}}}
 
 一般的なスタイルシート(CSS)の設定項目は、日本語で設定出来るようになっています。
 ▲現在登録されている和スタイルの一覧。
-{{{
+{{{#csv(flag=:)
+和スタイル: CSS
 幅	: width
 高さ	: height
 背景色	: background-color
@@ -27,5 +23,8 @@
 重なり	: z-index
 }}}
 
-▲ 参考
-- [[命令一覧/機能順]] > [[plugin_browser]]
+▲関連
+- [[plugin_browser/DOMスタイル取得]]
+- [[plugin_browser/DOMスタイル一括取得]]
+- [[plugin_browser/DOMスタイル設定]]
+- [[plugin_browser/DOMスタイル一括設定]]
