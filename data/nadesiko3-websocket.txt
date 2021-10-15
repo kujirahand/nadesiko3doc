@@ -1,1 +1,1 @@
-nadesiko3-websocketは、WebSocketサーバを利用するためのプラグインです。
+[[nadesiko3-websocket]]は、WebSocketサーバを利用するためのプラグインです。コンソール版で利用して、WebSocketサーバを作成するのに使います。
