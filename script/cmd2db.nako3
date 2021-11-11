@@ -1,7 +1,7 @@
 #
 # command.txt を読んでDBに入れる
 #
-!「nadesiko3-sqlite3sync」を取り込む。
+!「../../nadesiko3-sqlite3sync/nadesiko3-sqlite3sync.js」を取り込む。
 # パスの解決
 ROOT = 母艦パスを「../../」で相対パス展開
 NADESIKO3 = ROOT&「/nadesiko3」
