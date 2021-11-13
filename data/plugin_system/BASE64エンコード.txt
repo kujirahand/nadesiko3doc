@@ -1,0 +1,16 @@
+●説明
+
+UTF-8文字列をBASE64に変換します。
+
+●利用例
+
+{{{#nako3
+「テスト」をBASE64エンコードして表示。
+「44OG44K544OI」をBASE64デコードして表示。
+}}}
+
+
+●参照
+
+- [[plugin_system/BASE64エンコード]]
+- [[plugin_system/BASE64デコード]]
