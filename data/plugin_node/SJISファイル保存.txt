@@ -1,6 +1,18 @@
 ●『[[SJISファイル保存:plugin_node/SJISファイル保存]]』の詳しい解説
 
+なでしこの内部では、Unicodeで文字列処理が行われるので、「保存」命令では正しく文字列を保存できません。そこで、文字エンコーディングがShift_JISのファイルを書き込むには、「SJISファイル保存」を使います。
+
+●利用例
+
+文字エンコーディングがShift_JISのsjis.txtを読み込んで、置換処理を行って、sjis2.txtへ保存するプログラムです。
+
 {{{
-# 準備中
+「siis.txt」をSJISファイル読む。
+「aaa」を「bbb」に置換。
+それを「siis.txt」へSJISファイル保存。
 }}}
 
+●参考
+
+- [[plugin_node/SJISファイル読]]
+- [[plugin_node/SJISファイル保存]]
