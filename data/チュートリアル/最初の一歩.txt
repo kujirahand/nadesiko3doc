@@ -6,7 +6,10 @@
 
 {{{{#column
 {{{#html
-<a href="https://www.youtube.com/watch?v=03IOibOVq-U" target="new">→30秒の動画で概要を確認する</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=03IOibOVq-U" target="new">→YouTube 30秒の動画で概要を確認する(第1回)</a>
+<li><a href="https://www.youtube.com/watch?v=03IOibOVq-U" target="new">→YouTube 30秒の動画で概要を確認する(第2回)「こんにちは」と表示</a>
+</ul>
 }}}
 }}}}
 
