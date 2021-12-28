@@ -1,0 +1,65 @@
+●解説
+
+今後『ボタン作成』や『エディタ作成』で作成する部品にスキンを設定します。スキンは『[[DOMスキン辞書:plugin_browser/DOMスキン辞書]]』で定義する必要があります。
+
+▲利用例 - スキンを定義して使う
+
+以下は、「赤青」という名前のスキンを定義し、作成する部品全てに「RED」というクラスを設定します。
+
+{{{#nako3(rows=10)
+DOM部品オプション@"自動改行"=オン
+# --- style要素でREDというクラスを定義
+DOM親要素に『
+<style>
+.RED { color: red; font-size: 30px; background-color:blue; }
+</style>
+』をHTML設定。
+# --- スキンを定義
+DOMスキン辞書@「赤青」=関数(TYPE,OBJ)
+　　TYPEを表示。
+　　OBJの「className」に「RED」をDOM属性設定。
+ここまで。
+# --- スキンを設定
+「赤青」のDOMスキン設定。
+
+# ボタン作成などの命令を呼ぶとスキンが適用される
+「いろは」のラベル作成。
+「OK」のボタン作成。
+「テスト」のエディタ作成。
+}}}
+
+▲複数のスキンを使い分ける
+
+以下複数のスキンを定義し、スキンを切り替えて使う例です。
+
+{{{#nako3(rows=10)
+DOM部品オプション@"自動改行"=オン
+
+DOM親要素に『
+<style>
+.RED { color: white; font-size: 30px; background-color:red; }
+.BLUE { color: white; font-size: 30px; background-color:blue; }
+</style>
+』をHTML設定。
+
+# --- 複数のスキンを定義
+DOMスキン辞書@「赤」=関数(TYPE,OBJ)
+　　OBJの「className」に「RED」をDOM属性設定。
+ここまで。
+DOMスキン辞書@「青」=関数(TYPE,OBJ)
+　　OBJの「className」に「BLUE」をDOM属性設定。
+ここまで。
+
+# --- スキンを切り替えて部品を作成
+「赤」のDOMスキン設定。
+「笑うのに時があり」のラベル作成。
+「青」のDOMスキン設定。
+「泣くのに時がある」のラベル作成。
+}}}
+
+
+▲参考
+
+- [[plugin_browser/DOMスキン]] --- 現在のスキン名
+- [[plugin_browser/DOMスキン辞書]] --- スキンを定義
+- [[plugin_browser/DOMスキン設定]] --- 今後作る部品のスキンを変更

@@ -1,0 +1,90 @@
+●解説
+
+投稿フォームの一覧を簡単に作成します。第一引数には、投稿フォームの設定{method: "GET", action: "URL"}などを指定し、第二引数には入力項目の一覧を一行ずつ指定します。
+
+> (メモ) なでしこv1の[[項目記入:http://nadesi.com/man/index.php?%E9%A0%85%E7%9B%AE%E8%A8%98%E5%85%A5]]を目指して作成されています。([[#1122:https://github.com/kujirahand/nadesiko3/issues/1122]])
+
+▲利用例 - APIを呼び出すフォーム
+
+以下は[[郵便番号API:https://api.aoikujira.com/index.php?zip]]を呼び出す入力フォームを作成する例です。
+
+{{{#nako3
+郵便番号API＝「https://api.aoikujira.com/zip/zip.php」
+{action:郵便番号API}の「
+fmt=xml
+zn=2210824
+=?送信
+」をフォーム作成。
+}}}
+
+▲普通に入力項目をたくさん作るのに使う
+
+たくさんの入力項目を一気に作成できます。
+
+{{{#nako3(rows=10)
+L=「受けるより与える方が幸せだ」のラベル作成。
+{}の「
+color=#ffc0c0
+backgroundColor=#909090
+fontSize=32px
+」をフォーム作成。
+「適用」のボタン作成して適用ボタンに代入。
+適用ボタンをクリックした時には
+　　V＝「#nako3form_color」のテキスト取得。
+　　Lの「color」にVをDOMスタイル設定。
+　　V＝「#nako3form_fontSize」のテキスト取得。
+　　Lの「fontSize」にVをDOMスタイル設定。
+　　V＝「#nako3form_backgroundColor」のテキスト取得。
+　　Lの「backgroundColor」にVをDOMスタイル設定。
+ここまで。
+}}}
+
+v3.2.33以降で使える『フォーム入力一括取得』を使うとより便利です。
+
+{{{#nako3(rows=10)
+L=「知恵はサンゴに勝る」のラベル作成。
+F={}の「
+color=#ffc0c0
+backgroundColor=#909090
+fontSize=32px
+」をフォーム作成。
+OKボタン＝「OK」のボタン作成。
+OKボタンをクリックした時には
+    Fのフォーム入力一括取得してOBJに代入。
+    LにOBJをDOMスタイル一括設定。
+ここまで。
+}}}
+
+●入力オプション(v3.2.33以降)
+
+指定できる入力オプションは以下の通り。
+
+{{{#csv(flag=||)
+オプション || 解説 || 指定例
+?送信 || 送信ボタンを表示 || =?送信
+?c初期値 || 色の入力ボックスを表示 || 色=?c#FF1122
+?(選択肢1|選択肢2|選択肢3)初期値 ||  選択ボックスで選ぶ || 好物は=?(寿司|蕎麦|天ぷら)蕎麦
+}}}
+
+▲選択肢などの利用例
+
+{{{#nako3
+L=「知恵はサンゴに勝る」のラベル作成。
+F=空の「
+color=?(#ffc0c0|red|blue|white)red
+backgroundColor=?c#101010
+fontSize=32px
+」をフォーム作成。
+OKボタン＝「OK」のボタン作成。
+OKボタンをクリックした時には
+    Fのフォーム入力一括取得してOBJに代入。
+    LにOBJをDOMスタイル一括設定。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_browser/フォーム入力一括取得]]
+
+
+
