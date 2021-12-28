@@ -2,8 +2,6 @@
 
 投稿フォームの一覧を簡単に作成します。第一引数には、投稿フォームの設定{method: "GET", action: "URL"}などを指定し、第二引数には入力項目の一覧を一行ずつ指定します。
 
-> (メモ) なでしこv1の[[項目記入:http://nadesi.com/man/index.php?%E9%A0%85%E7%9B%AE%E8%A8%98%E5%85%A5]]を目指して作成されています。([[#1122:https://github.com/kujirahand/nadesiko3/issues/1122]])
-
 ▲利用例 - APIを呼び出すフォーム
 
 以下は[[郵便番号API:https://api.aoikujira.com/index.php?zip]]を呼び出す入力フォームを作成する例です。
@@ -19,16 +17,16 @@ zn=2210824
 
 ▲普通に入力項目をたくさん作るのに使う
 
-たくさんの入力項目を一気に作成できます。
+たくさんの入力項目を一気に作成できます。なお入力項目のIDには「#nako3form_***」というIDが付与されるのでこの値を利用して、特定の項目だけを取り出すことが可能です。
 
 {{{#nako3(rows=10)
-L=「受けるより与える方が幸せだ」のラベル作成。
+L=「本が好きだ。読書が好きだ。」のラベル作成。
 {}の「
 color=#ffc0c0
 backgroundColor=#909090
 fontSize=32px
 」をフォーム作成。
-「適用」のボタン作成して適用ボタンに代入。
+「スタイル適用」のボタン作成して適用ボタンに代入。
 適用ボタンをクリックした時には
 　　V＝「#nako3form_color」のテキスト取得。
 　　Lの「color」にVをDOMスタイル設定。
@@ -48,7 +46,7 @@ color=#ffc0c0
 backgroundColor=#909090
 fontSize=32px
 」をフォーム作成。
-OKボタン＝「OK」のボタン作成。
+OKボタン＝「スタイル適用」のボタン作成。
 OKボタンをクリックした時には
     Fのフォーム入力一括取得してOBJに代入。
     LにOBJをDOMスタイル一括設定。
@@ -75,12 +73,16 @@ color=?(#ffc0c0|red|blue|white)red
 backgroundColor=?c#101010
 fontSize=32px
 」をフォーム作成。
-OKボタン＝「OK」のボタン作成。
+OKボタン＝「スタイル適用」のボタン作成。
 OKボタンをクリックした時には
     Fのフォーム入力一括取得してOBJに代入。
     LにOBJをDOMスタイル一括設定。
 ここまで。
 }}}
+
+▲メモ
+
+なでしこv1の[[項目記入:http://nadesi.com/man/index.php?%E9%A0%85%E7%9B%AE%E8%A8%98%E5%85%A5]]を目指して作成されています。([[開発#1122:https://github.com/kujirahand/nadesiko3/issues/1122]])
 
 ▲参考
 
