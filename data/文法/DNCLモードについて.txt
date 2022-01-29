@@ -8,7 +8,8 @@ DNCLから、なでしこ3の豊富な命令([[こちら:https://nadesi.com/v3/d
 
 ●DNCLについて
 
-・DNCLについて詳細が[[こちら(PDF):https://www.dnc.ac.jp/albums/abm.php?f=abm00004841.pdf&n=H23_dncl.pdf]]より独立行政法人大学入試センターより公表されています。
+・DNCLについて詳細が[[こちら(PDF):https://www.dnc.ac.jp/albums/abm00039945.pdf]]([[旧版:https://www.dnc.ac.jp/albums/abm.php?f=abm00004841.pdf&n=H23_dncl.pdf]])より独立行政法人大学入試センターより公表されています。
+
 ・DNCLとなでしこの1:1の対応表もあります。 [[こちら(PDF):https://www.eznavi.net/site/press/eznavi/img/2021/20211013-1.pdf]]
 
 ●なでしこの『！DNCLモード』について
@@ -65,6 +66,7 @@ x←3
 ●より具体的な例題は？
 
 - [[DNCL 2016年度 第3問 問2:https://n3s.nadesi.com/index.php?page=910&action=show]]
+- [[FizzBuzz問題をDNCLで解く:https://n3s.nadesi.com/id.php?911]]
 
 ●注意点
 
