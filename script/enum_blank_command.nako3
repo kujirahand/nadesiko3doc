@@ -7,7 +7,13 @@ NADESIKO3DOC = ROOT&「/nadesiko3doc」
 WIKIフォルダ = 「{NADESIKO3DOC}/data」
 DBFILE=「{WIKIフォルダ}/nako3commands.db」
 DBFILEをSQLITE3開く。
-TTT=""
+TTT=「
+●まだ解説がない命令一覧
+
+以下の命令にはまだ解説がありません。ぜひ、マニュアル増強にご協力ください。
+（なお、以下のリストは、バージョンアップごとに更新されます。）
+
+」
 
 チェック={} 
 「SELECT * FROM commands」を[]でSQLITE3実行。
