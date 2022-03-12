@@ -1,0 +1,29 @@
+●解説
+
+非同期処理によりサーバーURLへアクセスし、JSON形式で返される結果をなでしこのオブジェクト形式で取得します。
+
+▲利用例
+
+天気予報APIにアクセスする例：
+
+{{{#nako3
+# 東京の天気予報を表示
+URL=「https://api.aoikujira.com/tenki/week.php?fmt=json&city=319」
+N=URLからAJAX_JSON取得
+N[319][0]["weathers"]を表示。
+}}}
+
+郵便番号APIにアクセスする例:
+
+{{{#nako3
+# 郵便番号を表示
+ZIP=「221-0022」
+API=「https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}」
+結果=APIからAJAX_JSON取得
+結果["result"]を表示。
+}}}
+
+
+▲参考
+
+- [[plugin_browser/AJAXテキスト取得]]

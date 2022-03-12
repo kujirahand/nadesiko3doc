@@ -1,6 +1,7 @@
 ●『[[秒後:plugin_system/秒後]]』の詳しい解説
 
 無名関数（あるいは、文字列で関数名を指定）FをN秒後に実行します。
+単にN秒処理を待機したい場合には、[[N秒待つ:plugin_system/秒待]]を使います。
 
 ▲簡単な利用例
 
@@ -53,6 +54,7 @@ A=「こんにちは」
 
 ▲参考
 
+- [[plugin_system/秒待]]
 - [[plugin_system/秒毎]]
 - [[plugin_system/秒タイマー開始時]]
 - [[plugin_system/タイマー停止]]
