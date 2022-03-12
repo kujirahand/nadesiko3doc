@@ -6,9 +6,6 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/真]] --- 1
-- [[plugin_system/偽]] --- 0
-- [[plugin_system/キャンセル]] --- 0
 - [[plugin_system/NULL]] --- null
 - [[plugin_system/undefined]] --- undefined
 - [[plugin_system/未定義]] --- undefined
