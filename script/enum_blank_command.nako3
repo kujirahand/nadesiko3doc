@@ -1,0 +1,49 @@
+!「../../nadesiko3-sqlite3sync/nadesiko3-sqlite3sync.js」を取り込む。
+# パスの解決
+ROOT = 母艦パスを「../../」で相対パス展開
+NADESIKO3 = ROOT&「/nadesiko3」
+NADESIKO3DOC = ROOT&「/nadesiko3doc」
+元ファイル = 「{NADESIKO3}/batch/command.txt」
+WIKIフォルダ = 「{NADESIKO3DOC}/data」
+DBFILE=「{WIKIフォルダ}/nako3commands.db」
+DBFILEをSQLITE3開く。
+TTT=""
+
+チェック={} 
+「SELECT * FROM commands」を[]でSQLITE3実行。
+それを反復
+　　O=対象。
+　　NAME=O["name"]
+　　PLUG=O["plugin"]
+　　DESC=O["desc"]
+　　# ファイルが存在しない場合
+　　PATH=「{WIKIフォルダ}/{PLUG}/{NAME}.txt」
+　　PATHが存在
+　　もし、それがいいえならば
+　　　　命令表示。
+　　　　続ける。
+　　ここまで。
+　　# ファイルがあってもサンプルがない場合
+　　S=PATHを開く。
+　　Sで『{{{#nako3』が何文字目。
+　　もし、それ＝0ならば
+　　　　命令表示。
+　　ここまで。
+ここまで。
+TTTを「{WIKIフォルダ}/wanted.txt」に保存。
+「OK」と表示。
+
+●命令表示
+　　# 見出しが必要？
+　　もし、チェック[PLUG]=undefinedならば
+　　　　チェック[PLUG] = 真
+　　　　S=「{改行}▲ [[{PLUG}]]」
+　　　　TTT=TTT&S&改行
+　　　　Sを表示。
+　　ここまで。
+　　S=「- [[{PLUG}/{NAME}]] --- {DESC}」
+　　TTT=TTT&S&改行
+　　Sを表示。
+ここまで。
+
+ 
