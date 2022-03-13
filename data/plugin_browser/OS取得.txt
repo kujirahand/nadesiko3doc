@@ -1,0 +1,8 @@
+●詳しい解説
+
+OSプラットフォームを返します。
+(darwin/windows/ubuntu/linux/android/iphone/ipad/unknown) 
+
+{{{#nako3
+OS取得して表示。
+}}}
