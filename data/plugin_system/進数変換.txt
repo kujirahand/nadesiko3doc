@@ -18,5 +18,6 @@
 
 - [[plugin_system/HEX]] ... 16進数に変換
 - [[文法/数値]] ... なでしこでは、0xFFなどの数値を記述可能
-
+- [[二進:plugin_system/二進]]
+- [[二進表示:plugin_system/二進表示]]
  
