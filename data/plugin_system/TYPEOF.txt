@@ -1,7 +1,17 @@
 ●『[[TYPEOF:plugin_system/TYPEOF]]』の詳しい解説
 
+変数Vの型を返します。
+「変数型確認」と同じです。
+
 {{{#nako3
-S=「あああ」
+S=「あああ」。N=123。O=[1,2,3]。
+
 TYPEOF(S)を表示。
+TYPEOF(N)を表示。
+TYPEOF(O)を表示。
 }}}
 
+▲関連
+
+- [[plugin_system/変数型確認]]
+- [[plugin_system/TYPEOF]]

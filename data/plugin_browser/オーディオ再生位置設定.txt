@@ -1,0 +1,17 @@
+●『[[オーディオ再生位置設定:plugin_browser/オーディオ再生位置設定]]』の詳しい解説
+AudioオブジェクトOBJを指定してオーディオの位置を数値Vで設定します。
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
+Aを4にオーディオ再生位置設定。
+Aをオーディオ再生。
+}}}
+
+▲関連
+
+- [[plugin_browser/オーディオ長取得:plugin_browser/オーディオ長取得]]
+- [[plugin_browser/オーディオ再生位置取得:plugin_browser/オーディオ再生位置取得]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し

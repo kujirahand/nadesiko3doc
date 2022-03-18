@@ -1,6 +1,17 @@
 ●『[[TOINT:plugin_system/TOINT]]』の詳しい解説
+値Vを整数に変換します。
+「整数変換」と同じです。
 
-{{{
-# 準備中
+{{{#nako3
+TOINT(10÷3)を表示。# 3
+TOINT("123.45")を表示。# 123
+TOINT("-123.45")を表示。# -123
+TOINT("　123　")を表示。# 123
+TOINT("あいう")を表示。# NaN(数字ではない)
 }}}
 
+▲関連
+
+- [[plugin_system/整数変換]]
+- [[plugin_system/INT]]
+- [[plugin_system/TOINT]]

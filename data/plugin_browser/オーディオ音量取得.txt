@@ -1,0 +1,17 @@
+●『[[オーディオ音量取得:plugin_browser/オーディオ音量取得]]』の詳しい解説
+
+AudioオブジェクトOBJの音量を取得して返します。
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
+Aのオーディオ音量取得して表示。
+Aをオーディオ再生。
+}}}
+
+▲関連
+
+- [[plugin_browser/オーディオ音量設定:plugin_browser/オーディオ音量設定]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し

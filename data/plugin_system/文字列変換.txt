@@ -1,6 +1,17 @@
 ●『[[文字列変換:plugin_system/文字列変換]]』の詳しい解説
 
-{{{
-# 準備中
+値Vを文字列に変換します。
+TOSTR関数と同じように使えます。
+
+{{{#nako3
+A=1+1。
+Aの変数型確認して表示。# number
+A=Aを文字列変換。
+Aの変数型確認して表示。# string
 }}}
+
+▲関連
+
+- [[plugin_system/文字列変換]]
+- [[plugin_system/TOSTR]]
 

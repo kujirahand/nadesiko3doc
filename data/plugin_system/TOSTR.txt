@@ -1,6 +1,16 @@
 ●『[[TOSTR:plugin_system/TOSTR]]』の詳しい解説
 
-{{{
-# 準備中
+引数に指定した実数Vを整数に変換します。
+「文字列変換」と同じです。
+
+{{{#nako3
+A=1+1。
+TYPEOF(A)を表示。# number
+A=TOSTR(A)。
+TYPEOF(A)を表示。# string
 }}}
 
+▲関連
+
+- [[plugin_system/文字列変換]]
+- [[plugin_system/TOSTR]]

@@ -1,0 +1,19 @@
+●『[[オーディオ長取得:plugin_browser/オーディオ長取得]]』の詳しい解説
+
+AudioオブジェクトOBJを指定してオーディオの長さを取得して返します。
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
+1秒後には　// 少し待たないとうまく取得出来ない
+　Aのオーディオ長さ取得して表示。
+ここまで。
+}}}
+
+▲関連
+
+- [[plugin_browser/オーディオ再生位置取得:plugin_browser/オーディオ再生位置取得]]
+- [[plugin_browser/オーディオ再生位置設定:plugin_browser/オーディオ再生位置設定]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し

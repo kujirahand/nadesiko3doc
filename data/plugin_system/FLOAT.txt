@@ -1,6 +1,19 @@
 ●『[[FLOAT:plugin_system/FLOAT]]』の詳しい解説
 
-{{{
-# 準備中
+値Vを実数に変換します。
+「実数変換」と同じです。
+
+{{{#nako3
+FLOAT(10÷3)を表示。# 3.3333333333333335
+FLOAT("123.45")を表示。# 123.45
+FLOAT("-123.45")を表示。# -123.45
+FLOAT("　123　")を表示。# 123
+FLOAT("あいう")を表示。# NaN(数字ではない)
 }}}
+
+▲関連
+
+- [[plugin_system/実数変換]]
+- [[plugin_system/FLOAT]]
+- [[plugin_system/TOFLOAT]]
 

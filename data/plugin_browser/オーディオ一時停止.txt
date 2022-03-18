@@ -1,6 +1,27 @@
 ●『[[オーディオ一時停止:plugin_browser/オーディオ一時停止]]』の詳しい解説
 
-{{{
-# 準備中
+AudioオブジェクトOBJを指定してオーディオを一時停止します。
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
+Aをオーディオ再生。
+1秒後には
+　　Aをオーディオ一時停止。
+　　「一時停止」を表示。
+　　2秒後には
+　　　　Aをオーディオ再生。
+　　　　「再生再開」を表示。
+　　ここまで。
+ここまで。
 }}}
+
+▲関連
+
+- [[plugin_browser/オーディオ開:plugin_browser/オーディオ開]]
+- [[plugin_browser/オーディオ再生:plugin_browser/オーディオ再生]]
+- [[plugin_browser/オーディオ停止:plugin_browser/オーディオ停止]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し
 

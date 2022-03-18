@@ -1,6 +1,6 @@
 ●『[[オーディオ停止:plugin_browser/オーディオ停止]]』の詳しい解説
 
-AudioオブジェクトOBJを指定してオーディをを停止
+AudioオブジェクトOBJを指定してオーディオを停止します。
 
 {{{#nako3
 A=「https://nadesi.com/v3/common/sound/wow.mp3」をオーディオ開く。
@@ -10,7 +10,11 @@ Aをオーディオ再生。
 ここまで。
 }}}
 
-▲参考
+▲関連
 
 - [[plugin_browser/オーディオ再生]]
-- [[plugin_browser/オーディオ停止]]
+- [[plugin_browser/オーディオ一時停止]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し

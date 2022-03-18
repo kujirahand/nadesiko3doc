@@ -1,0 +1,21 @@
+●『[[オーディオループ再生:plugin_browser/オーディオループ再生]]』の詳しい解説
+
+AudioオブジェクトOBJを指定してオーディオをループ再生します。
+
+{{{#nako3
+A=「https://nadesi.com/v3/common/sound/ki.mp3」をオーディオ開く。
+Aをオーディオループ再生。
+2秒後には
+　　Aをオーディオ停止。
+ここまで。
+}}}
+
+▲関連
+
+- [[plugin_browser/オーディオ開:plugin_browser/オーディオ開]]
+- [[plugin_browser/オーディオ再生:plugin_browser/オーディオ再生]]
+- [[plugin_browser/オーディオ停止:plugin_browser/オーディオ停止]]
+
+▲参考
+
+- [[なでしこ貯蔵庫/オーディオテスト:https://n3s.nadesi.com/id.php?587]] --- v3.2.20で刷新されたオーディオ関連命令を一通りお試し
