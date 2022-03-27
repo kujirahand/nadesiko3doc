@@ -29,6 +29,6 @@ C=3。
 ▲参考
 
 - [[plugin_system/秒後]]
-- [[plugin_system/秒タイマー開始時]]
+- [[plugin_system/秒毎]]
 - [[plugin_system/タイマー停止]]
 
