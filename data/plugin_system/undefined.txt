@@ -1,6 +1,11 @@
 ●『[[undefined:plugin_system/undefined]]』の詳しい解説
 
-{{{
-# 準備中
+undefinedとは何も値が定義されていない状態を示すための値です。
+なでしこ3ではJavaScriptのundefinedを利用するために用意されています。
+
+{{{#nako3
+A=undefined
+確認用＝(A=undefined)
+確認用を表示。
 }}}
 

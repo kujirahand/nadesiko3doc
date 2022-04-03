@@ -1,6 +1,9 @@
 ●『[[NULL:plugin_system/NULL]]』の詳しい解説
 
-{{{
-# 準備中
+NULLとは何も値が存在しないことを表現するデータです。
+なでしこ3では、JavaScriptのnullを表現するために存在します。
+
+{{{#nako3
+NULLを表示。
 }}}
 
