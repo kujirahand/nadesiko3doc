@@ -31,6 +31,9 @@ TTT=「
 　　ここまで。
 　　# ファイルがあってもサンプルがない場合
 　　S=PATHを開く。
+　　もし、PLUG=「plugin_node」ならば、続ける。
+　　もし、PLUG=「plugin_php」ならば、続ける。
+　　もし、PLUG=「plugin_express」ならば、続ける。
 　　Sで『{{{#nako3』が何文字目。
 　　もし、それ＝0ならば
 　　　　命令表示。
