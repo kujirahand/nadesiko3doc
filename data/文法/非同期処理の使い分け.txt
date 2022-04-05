@@ -72,6 +72,12 @@ API結果=APIからAJAX_JSON取得
 -- [[AJAXテキスト取得:plugin_browser/AJAXテキスト取得]]
 -- [[AJAX_JSON取得:plugin_browser/AJAX_JSON取得]]
 
+~
+~
+
+> 以下の機能は、緩やかに非推奨、あるいは非推奨の機能です。
+
+
 
 ●！非同期モード （緩やかに非推奨）
 

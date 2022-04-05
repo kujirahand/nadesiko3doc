@@ -1,6 +1,9 @@
 ●『[[未定義:plugin_system/未定義]]』の詳しい解説
 
-{{{
-# 準備中
+JavaScriptのundefinedを表現するために利用します。
+
+{{{#nako3
+未定義を表示。
 }}}
+
 
