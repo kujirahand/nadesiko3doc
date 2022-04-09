@@ -1,4 +1,4 @@
-●『[[plugin_browser/ブラウザURL]]』の詳しい解説
+●『[[ブラウザURL:plugin_browser/ブラウザURL]]』の詳しい解説
 ブラウザのURLを返します。
 {{{#nako3
 ブラウザURLを表示。

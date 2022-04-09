@@ -1,0 +1,22 @@
+●『[[DOM親部品設定:plugin_browser/DOM親部品設定]]』の詳しい解説
+DOM部品作成でDOM要素を追加する親の対象を指定します。
+『[[DOM親要素設定:plugin_browser/DOM親要素設定]]』と同じ。 
+▲使用例
+{{{#nako3(rows=12)
+HTML＝「<fieldset id="グループ１"><legend>グループ１</legend></fieldset><fieldset id="グループ２"><legend>グループ２</legend></fieldset>」
+DOM親要素へHTMLをHTML設定。
+
+「#グループ１」にDOM親部品設定。
+「1」のチェックボックス作成。
+「2」のチェックボックス作成。
+「3」のチェックボックス作成。
+
+「#グループ２」にDOM親部品設定。
+「A」のチェックボックス作成。
+「B」のチェックボックス作成。
+「C」のチェックボックス作成。
+}}}
+
+▲参考
+- [[plugin_browser/DOM親要素]]
+- [[plugin_browser/DOM親要素設定]]
