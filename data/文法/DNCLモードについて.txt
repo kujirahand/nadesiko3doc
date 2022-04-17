@@ -99,6 +99,8 @@ z←9
 zを二進で表示する。
 }}}
 
+
+
 ●より具体的な例題は？
 
 - [[DNCL 2016年度 第3問 問2:https://n3s.nadesi.com/index.php?page=910&action=show]]

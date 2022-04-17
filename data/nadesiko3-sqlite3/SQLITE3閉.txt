@@ -1,0 +1,12 @@
+●使い方
+
+アクティブなSQlite3のデータベースを閉じます。
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「./aaa.sqlite3」をSQLITE3開く。
+#
+# ここでSQLITE3の処理
+#
+SQLITE3閉。
+}}}
