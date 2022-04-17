@@ -52,9 +52,11 @@ CREATE UNIQUE INDEX plugins_index ON plugins (name);
 」
 
 SQL_CREATEを「;」で区切って反復
+　　トリム
+　　もし、それが空ならば、続ける。
+　　「--- 実行 --- {対象}」を表示。
 　　対象&「;」を[]でSQLITE3実行。
 ここまで。
-
 
 # 変数の初期化
 プラグイン名＝空。
@@ -89,6 +91,7 @@ PLUG拡張={}
 
 # メイン処理
 元ファイルロード。
+SQLITE3閉。
 終わる。
 
 ●(SをFへ|Fに)WIKI保存とは
@@ -156,7 +159,7 @@ PLUG拡張={}
 　　F引数＝トリム(C[2])の「/」を「|」に置換
 　　F説明＝トリム(C[3])
 　　Fヨミ＝トリム(C[4])
-　　Fカナ1＝LEFT(ヨミ,1)
+　　Fカナ1＝LEFT(Fヨミ,1)
 　　F拡張＝拡張プラグイン辞書[プラグイン名]
 　　# エラーチェック - 表題とコマンドが同名はエラーに
 　　もし、表題＝F名前ならば
@@ -167,21 +170,19 @@ PLUG拡張={}
 　　システム時間をVに代入。
 　　"- {プラグイン名}/{F名前}"を表示。
 　　DATA=[
-      "{プラグイン名}/{F名前}",
-      プラグイン名,
-      表題,
-      Fタイプ,
-      F名前,
-      F引数,
-      F説明,
-      Fヨミ,
-      V,
-      V
-    ];
-    #DATAをJSONエンコードして表示。
-　　「INSERT INTO commands
-      (pagename,plugin,genre,type,name,args,desc,kana,ctime,mtime)
-VALUES(?,?,?,?,?,?,?,?,?,?)」をDATAでSQLITE3実行
+　　　　"{プラグイン名}/{F名前}",
+　　　　プラグイン名,
+　　　　表題,
+　　　　Fタイプ,
+　　　　F名前,
+　　　　F引数,
+　　　　F説明,
+　　　　Fヨミ,
+　　　　V,
+　　　　V
+　　];
+　　# DATAをJSONエンコードして表示。
+　　「INSERT INTO commands (pagename, plugin, genre, type, name, args, desc, kana, ctime, mtime) VALUES (?,?,?,?,?,?,?,?,?,?)」をDATAでSQLITE3実行
 　　ページ名＝「{プラグイン名}/{F名前}」
 　　もし、Fタイプ＝「定数」ならば
 　　　　FF=「- [[{F名前}:{ページ名}]] -- 定数{改行}」。
