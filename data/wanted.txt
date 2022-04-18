@@ -157,16 +157,6 @@
 - [[nadesiko3-sqlite3/SQLITE3逐次全取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 - [[nadesiko3-sqlite3/SQLITE3逐次取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 
-▲ [[nadesiko3-sqlite3sync]]
-- [[nadesiko3-sqlite3sync/SQLITE3開]] --- SQlite3のデータベースFを開いて、データベースオブジェクトを返す
-- [[nadesiko3-sqlite3sync/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
-- [[nadesiko3-sqlite3sync/SQLITE3同期切替]] --- 操作対象のデータベースをDB(『SQLITE3同期開』を使用)に切り替える
-- [[nadesiko3-sqlite3sync/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
-- [[nadesiko3-sqlite3sync/INSERT]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
-- [[nadesiko3-sqlite3sync/SQLITE3挿入]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
-- [[nadesiko3-sqlite3sync/UPDATE]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
-- [[nadesiko3-sqlite3sync/SQLITE3更新]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
-
 ▲ [[nadesiko3-drone]]
 - [[nadesiko3-drone/ドローン接続]] --- ドローンに接続する
 - [[nadesiko3-drone/ドローン緊急停止]] --- ドローン緊急停止する
