@@ -1,0 +1,27 @@
+●使い方
+
+SQLite3を使うことができます。
+
+{{{
+# 必要な宣言
+!「nadesiko3-sqlite3」を取り込む。
+
+# ファイルを開く
+「test.sqlite3」のSQLITE3開く。
+
+# SQLを実行
+『CREATE TABLE IF NOT EXISTS books(id, name)』を[]でSQLITE3実行。
+『INSERT INTO books (id,name) VALUES(?,?)』を[1,"aaa"]でSQLITE3実行。
+
+# SQLを実行して結果を得る
+『SELECT * FROM books』を[]でSQLITE3全取得
+それをJSONエンコードして表示。
+}}}
+
+▲インストールに関して
+
+Node.jsがインストールされており、パスが通っている状態ならば、以下のコマンドを実行してインストールできます。
+
+{{{
+$ npm install nadesiko3-sqlite3
+}}}
