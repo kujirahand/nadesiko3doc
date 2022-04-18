@@ -4,3 +4,283 @@
 以下の命令にはまだ解説がありません。ぜひ、マニュアル増強にご協力ください。
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
+
+▲ [[plugin_browser]]
+- [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
+- [[plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[plugin_browser/AJAXオプション]] --- ''
+- [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
+- [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
+- [[plugin_browser/AJAX送信]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。
+- [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/HTTP取得]] --- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/POST逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/POSTフォーム逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
+- [[plugin_browser/マウスX]] --- 0
+- [[plugin_browser/マウスY]] --- 0
+- [[plugin_browser/タッチX]] --- 0
+- [[plugin_browser/タッチY]] --- 0
+- [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
+- [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
+- [[plugin_browser/画面更新処理取消]] --- 識別IDを指定して『画面更新時実行』を取り消す
+- [[plugin_browser/DOMスキン]] --- ''
+- [[plugin_browser/DOMスキン辞書]] --- {}
+- [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
+- [[plugin_browser/保存オプション]] --- 'json'
+- [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
+- [[plugin_browser/描画中コンテキスト]] --- null
+- [[plugin_browser/話者速度]] --- 1.0
+- [[plugin_browser/話者声高]] --- 1.0
+- [[plugin_browser/話者音量]] --- 1.0
+- [[plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
+- [[plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
+- [[plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
+- [[plugin_browser/WS接続]] --- WebSocketサーバsに接続する
+- [[plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
+- [[plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
+- [[plugin_browser/グラフオプション]] --- {}
+- [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
+
+▲ [[plugin_turtle]]
+- [[plugin_turtle/カメ描画先]] --- 'turtle_cv'
+- [[plugin_turtle/カメ速度]] --- 100
+
+▲ [[plugin_node]]
+- [[plugin_node/絶対パス変換]] --- 相対パスから絶対パスに変換して返す
+- [[plugin_node/圧縮解凍ツールパス]] --- '7z'
+- [[plugin_node/強制終了時]] --- Nodeでctrl+cでプログラムの実行が終了した時FUNCを実行する。もしFUNCが偽を返すと終了しない。非同期処理のとき動作する(#1010)
+- [[plugin_node/AJAX受信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
+- [[plugin_node/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_node/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_node/GET保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_node/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_node/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
+- [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
+- [[plugin_node/AJAXテキスト取得]] --- AJAXでURLにアクセスしテキスト形式で結果を得る。送信時AJAXオプションの値を参照。
+- [[plugin_node/AJAX_JSON取得]] --- AJAXでURLにアクセスしJSONの結果を得て、送信時AJAXオプションの値を参照。
+
+▲ [[plugin_caniuse]]
+- [[plugin_caniuse/ブラウザ名変換表]] --- require('./browsers_agents.json')
+
+▲ [[plugin_weykturtle3d]]
+- [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
+- [[plugin_weykturtle3d/T3Dカメ操作対象設定]] --- IDを指定して操作対象となるカメを変更する
+- [[plugin_weykturtle3d/T3Dカメ描画先]] --- 'turtle3d_div'
+- [[plugin_weykturtle3d/T3DカメモデルURL]] --- ''
+- [[plugin_weykturtle3d/T3Dカメモデル変更]] --- カメのモデルをURLに変更する
+- [[plugin_weykturtle3d/T3Dカメ速度]] --- 100
+- [[plugin_weykturtle3d/T3Dカメ速度設定]] --- カメの動作速度vに設定(大きいほど遅い)
+- [[plugin_weykturtle3d/T3Dカメ移動]] --- カメの位置を[x,y,z]へ移動する
+- [[plugin_weykturtle3d/T3Dカメ原点設定]] --- カメの原点を現在の位置・向きに設定する
+- [[plugin_weykturtle3d/T3Dカメ原点移動]] --- カメを原点の位置・向きに移動する(描画はしない)
+- [[plugin_weykturtle3d/T3Dカメ起点移動]] --- カメの描画起点位置を[x,y,z]へ移動する
+- [[plugin_weykturtle3d/T3Dカメ進]] --- カメの位置をVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ戻]] --- カメの位置をVだけ戻す
+- [[plugin_weykturtle3d/T3Dカメ上平行移動]] --- カメの位置を上にVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ下平行移動]] --- カメの位置を下にVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ左平行移動]] --- カメの位置を左にVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ右平行移動]] --- カメの位置を右にVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ動]] --- カメの位置をDIRにVだけ進める
+- [[plugin_weykturtle3d/T3Dカメ角度設定]] --- カメの向きをオイラー(XYZ)にて設定する
+- [[plugin_weykturtle3d/T3Dカメ右回転]] --- カメの向きをDEGだけ右に向ける
+- [[plugin_weykturtle3d/T3Dカメ左回転]] --- カメの向きをDEGだけ左に向ける
+- [[plugin_weykturtle3d/T3Dカメ上回転]] --- カメの向きをDEGだけ上に向ける
+- [[plugin_weykturtle3d/T3Dカメ下回転]] --- カメの向きをDEGだけ下に向ける
+- [[plugin_weykturtle3d/T3Dカメ回転]] --- カメの向きをDEGだけDIRに向ける
+- [[plugin_weykturtle3d/T3Dカメ右ロール]] --- カメをDEGだけ右に傾ける
+- [[plugin_weykturtle3d/T3Dカメ左ロール]] --- カメのDEGだけ左に傾ける
+- [[plugin_weykturtle3d/T3Dカメ傾]] --- カメをDEGだけDIRに傾ける
+- [[plugin_weykturtle3d/T3Dカメペン色設定]] --- カメのペン描画色をCに設定する
+- [[plugin_weykturtle3d/T3Dカメペンサイズ設定]] --- カメペンのサイズをWに設定する
+- [[plugin_weykturtle3d/T3Dカメペン設定]] --- カメペンを使うかどうかをV(オン/オフ)に設定する
+- [[plugin_weykturtle3d/T3Dカメ全消去]] --- 表示しているカメと描画内容を全部消去する
+- [[plugin_weykturtle3d/T3Dカメ非表示]] --- カメのモデルを非表示にする。描画に影響しない。
+- [[plugin_weykturtle3d/T3Dカメ表示]] --- 非表示にしたカメのモデルを表示する。
+- [[plugin_weykturtle3d/T3D視点カメ設定]] --- 指定したカメを視点として使用する
+- [[plugin_weykturtle3d/T3D描画準備]] --- 指定したDOMのIDに対する描画を準備し、描画オブジェクトを返す
+- [[plugin_weykturtle3d/T3D描画]] --- 現在の状態を描画する
+- [[plugin_weykturtle3d/T3D背景色設定]] --- canvasをクリアする際の背景色を設定する
+- [[plugin_weykturtle3d/T3D背景透過設定]] --- canvasをクリアする際の背景のアルファ値を設定する
+- [[plugin_weykturtle3d/T3DJSON取得]] --- 描画した線のJSON形式で取得する
+- [[plugin_weykturtle3d/T3Dコントロール有効]] --- 組み込んだコントロールを有効にする
+- [[plugin_weykturtle3d/T3Dコントロール無効]] --- 組み込んだコントロールを無効にする
+- [[plugin_weykturtle3d/T3Dカメラヘルパ表示]] --- カメラヘルパーを表示する
+- [[plugin_weykturtle3d/T3Dカメラヘルパ非表示]] --- カメラヘルパーを非表示にする
+- [[plugin_weykturtle3d/T3D軸線ヘルパ表示]] --- 座標軸ヘルパーを表示する
+- [[plugin_weykturtle3d/T3D軸線ヘルパ非表示]] --- 座標軸ヘルパーを非表示にする
+
+▲ [[plugin_webworker]]
+- [[plugin_webworker/対象イベント]] --- ''
+- [[plugin_webworker/受信データ]] --- ''
+- [[plugin_webworker/ワーカーURL]] --- ''
+- [[plugin_webworker/ワーカーURL設定]] --- なでしこv3のファイルのあるURLを設定
+- [[plugin_webworker/ワーカー起動]] --- 指定したURLでWebWorkerを起動する。ワーカオブジェクトを返す。
+- [[plugin_webworker/ワーカーJS起動]] --- 指定したJavascriptのソースでWebWorkerを起動する。ワーカオブジェクトを返す。
+- [[plugin_webworker/NAKOワーカー起動]] --- 指定したなでしこ３のWebWorkerを起動する。ワーカオブジェクトを返す。(可変引数)
+- [[plugin_webworker/NAKOワーカーハンドラ設定]] --- ワーカーにNAKOワーカーのための設定を行う。
+- [[plugin_webworker/NAKOワーカーデータ受信時]] --- 無名関数Fでなでしこv3エンジンに対してワーカーメッセージによりデータを受信した時に実行するイベントを設定。『受信データ』に受信したデータ。『対象イベント』にイベント引数。(可変引数)
+- [[plugin_webworker/NAKOワーカー表示時]] --- 無名関数Fでなでしこv3エンジンに対してワーカーメッセージにより表示データを受信した時に実行するイベントを設定。『受信データ』に表示しようとしたデータ。『対象イベント』にイベント引数。
+- [[plugin_webworker/ワーカーメッセージ受信時]] --- 無名関数Fでworkに対してメッセージを受信した時に実行するイベントを設定。『受信データ』に受信したデータ。『対象イベント』にイベント引数。(可変引数)
+- [[plugin_webworker/NAKOワーカープログラム起動]] --- WORKERに固有の形式でプログラムの転送と実行行う。
+- [[plugin_webworker/NAKOワーカーリセット]] --- WORKERに固有の形式でプログラムの転送と実行行う。
+- [[plugin_webworker/ワーカー終了]] --- WORKERを終了する。(可変引数)
+- [[plugin_webworker/NAKOワーカー終了]] --- WORKERを終了する。(可変引数)
+- [[plugin_webworker/NAKOワーカーデータ送信]] --- WORKERに固有の形式でデータを送信する。(可変引数)
+- [[plugin_webworker/ワーカーメッセージ送信]] --- WORKERにメッセージを送信する。(可変引数)
+- [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
+
+▲ [[plugin_promise]]
+- [[plugin_promise/そ]] --- ''
+- [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
+- [[plugin_promise/成功時]] --- 非同期処理で成功したときにcallbackが実行される。その際『対象』にデータが代入される。
+- [[plugin_promise/処理時]] --- 非同期処理で終了した時にcbFuncが実行される。引数と『対象』は、成功時は真とデータが設定され、失敗時は、偽と理由が設定される。
+- [[plugin_promise/失敗時]] --- 非同期処理で失敗したときにcallbackが実行される。その際『対象』にエラーが代入される。
+- [[plugin_promise/終了時]] --- 非同期処理で終了したときにcallbackが実行される。成功時・失敗時・処理時とは別に実行される。
+- [[plugin_promise/束]] --- 非同期処理をまとめる。
+
+▲ [[nadesiko3-sqlite3]]
+- [[nadesiko3-sqlite3/SQLITE3今挿入ID]] --- '?'
+- [[nadesiko3-sqlite3/SQLITE3開]] --- SQlite3のデータベースを開いて、データベースオブジェクトを返す
+- [[nadesiko3-sqlite3/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
+- [[nadesiko3-sqlite3/SQLITE3切替]] --- アクティブなSQlite3のデータベースをDB(SQLITE3開くで開いたもの)に切り替える
+- [[nadesiko3-sqlite3/SQLITE3実行時]] --- SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
+- [[nadesiko3-sqlite3/SQLITE3取得時]] --- SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
+- [[nadesiko3-sqlite3/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
+- [[nadesiko3-sqlite3/SQLITE3取得]] --- SQLをパラメータPARAMSで取得する。
+- [[nadesiko3-sqlite3/SQLITE3全取得]] --- SQLをパラメータPARAMSで全部取得する。
+- [[nadesiko3-sqlite3/SQLITE3逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+- [[nadesiko3-sqlite3/SQLITE3逐次全取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+- [[nadesiko3-sqlite3/SQLITE3逐次取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+
+▲ [[nadesiko3-sqlite3sync]]
+- [[nadesiko3-sqlite3sync/SQLITE3開]] --- SQlite3のデータベースFを開いて、データベースオブジェクトを返す
+- [[nadesiko3-sqlite3sync/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
+- [[nadesiko3-sqlite3sync/SQLITE3同期切替]] --- 操作対象のデータベースをDB(『SQLITE3同期開』を使用)に切り替える
+- [[nadesiko3-sqlite3sync/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
+- [[nadesiko3-sqlite3sync/INSERT]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
+- [[nadesiko3-sqlite3sync/SQLITE3挿入]] --- INSERT文を実行。TBLへハッシュPARAMSを挿入。
+- [[nadesiko3-sqlite3sync/UPDATE]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
+- [[nadesiko3-sqlite3sync/SQLITE3更新]] --- UPDATE文を実行。TBLのWHEREをPARAMSに更新。
+
+▲ [[nadesiko3-drone]]
+- [[nadesiko3-drone/ドローン接続]] --- ドローンに接続する
+- [[nadesiko3-drone/ドローン緊急停止]] --- ドローン緊急停止する
+- [[nadesiko3-drone/ドローン送信]] --- コマンドをドローンに送信する
+- [[nadesiko3-drone/ドローン接続時]] --- ドローンに接続した時にFを実行する
+- [[nadesiko3-drone/ドローン受信時]] --- ドローンからデータを受信した時にFを実行する
+- [[nadesiko3-drone/ドローン離陸]] --- 離陸コマンドをドローンに送信する
+- [[nadesiko3-drone/ドローン着陸]] --- 着陸コマンドをドローンに送信する
+- [[nadesiko3-drone/ドローン移動]] --- ドローンを方向(上下左右前後)にN(20-500cm)だけ動かす
+- [[nadesiko3-drone/ドローン回転]] --- ドローンをN(1から360/-1から-360)度だけ右回転させる
+- [[nadesiko3-drone/ドローン速度設定]] --- ドローンの速度をN(10-100)に設定
+- [[nadesiko3-drone/ドローンWIFI設定]] --- ドローンのWi-FiをSSIDのPASSに設定
+
+▲ [[nadesiko3-htmlparser]]
+- [[nadesiko3-htmlparser/HTML応答ヘッダ]] --- ''
+- [[nadesiko3-htmlparser/HTML逐次URL開]] --- 任意のURLを開いてパースする。
+- [[nadesiko3-htmlparser/HTMLパース]] --- 任意のHTML文字列をパースする。
+- [[nadesiko3-htmlparser/DOM要素取得]] --- パース済みHTMLからクエリQに該当するDOMを取得する
+- [[nadesiko3-htmlparser/DOM子要素検索]] --- DOMの子要素Qを取得する
+- [[nadesiko3-htmlparser/DOM子要素全取得]] --- DOMの子要素を全部取得する
+- [[nadesiko3-htmlparser/DOM親要素取得]] --- DOMの親要素を取得する
+- [[nadesiko3-htmlparser/DOM次要素取得]] --- DOMの親要素を取得する
+- [[nadesiko3-htmlparser/DOM抽出]] --- DOMからクエリQを利用して合致するものを抽出する
+- [[nadesiko3-htmlparser/属性取得]] --- DOMの属性Kを取得する
+- [[nadesiko3-htmlparser/テキスト取得]] --- DOMのテキストを取得する
+- [[nadesiko3-htmlparser/HTML取得]] --- DOMのHTMLを取得する
+- [[nadesiko3-htmlparser/HTML設定]] --- DOMにSを設定する
+- [[nadesiko3-htmlparser/プロパティ取得]] --- DOMのプロパティPROPを取得する
+- [[nadesiko3-htmlparser/値取得]] --- DOMの値を取得する
+- [[nadesiko3-htmlparser/値設定]] --- DOMの値vを設定する
+- [[nadesiko3-htmlparser/スタイル取得]] --- DOMのスタイルKを取得する
+- [[nadesiko3-htmlparser/データ取得]] --- DOMのデータkを取得する
+- [[nadesiko3-htmlparser/DOM配列変換]] --- DOMを配列に変換する
+- [[nadesiko3-htmlparser/タグ名取得]] --- DOMのタグ名を取得する
+
+▲ [[nadesiko3-websocket]]
+- [[nadesiko3-websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
+- [[nadesiko3-websocket/WSSサーバ起動]] --- 設定CONF{cert:サーバ証明書,key:キーファイル,port:ポート番号}を指定してWSSサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
+- [[nadesiko3-websocket/WSサーバ起動成功時]] --- WSサーバ起動が成功した時にcallbackを実行
+- [[nadesiko3-websocket/WSサーバ起動失敗時]] --- WSサーバ起動が失敗した時にcallbackを実行
+- [[nadesiko3-websocket/WSサーバ接続時]] --- WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
+- [[nadesiko3-websocket/WSサーバ受信時]] --- WSサーバでメッセージを受信した時に実行される。クライアントのIPアドレスとポートは『WSサーバー相手』に受信データは『対象』に代入される
+- [[nadesiko3-websocket/WSサーバ全送信]] --- WSサーバで全員にメッセージSを送信する
+- [[nadesiko3-websocket/WSサーバ相手]] --- ''
+- [[nadesiko3-websocket/WSサーバ個別送信]] --- WSサーバで個別にメッセージSを送信する
+- [[nadesiko3-websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す
+
+▲ [[nadesiko3-ml]]
+- [[nadesiko3-ml/SVM開]] --- 機械学習のアルゴリズムSVMをパラメータOPTIONで開く。 OPTION={type,kernel,gamma,cost}
+- [[nadesiko3-ml/ランダムフォレスト開]] --- 機械学習のアルゴリズムRandom ForestをOPTIONで開く。OPTION={seed,maxFeatures,replacement=(true/false),nEstimators}
+- [[nadesiko3-ml/ランダムフォレスト回帰開]] --- 機械学習のアルゴリズムRandom Forestの回帰をパラメータPARAMSで開く
+- [[nadesiko3-ml/学習]] --- 入力配列inputsとラベル配列labelsで機械学習する
+- [[nadesiko3-ml/予測]] --- 入力配列inputsで予測し機械学習の結果を配列で返す
+- [[nadesiko3-ml/アヤメデータ取得]] --- アヤメデータをJSON形式で取得して返す
+- [[nadesiko3-ml/モデル取得]] --- 現在学習済みのモデルを取得する
+- [[nadesiko3-ml/モデル設定]] --- 現在学習済みのモデルMを設定する
+- [[nadesiko3-ml/データランダム分割]] --- データとラベルの組をRATEで分割して{学習:{データ:[..],ラベル:[..]},テスト:{データ:[..],ラベル:[..]}}の形式で返す
+- [[nadesiko3-ml/正解率計算]] --- 配列T(正解)とP(予測)の正解率を計算して返す
+
+▲ [[nadesiko3-mecab]]
+- [[nadesiko3-mecab/MECABバージョン]] --- '?'
+- [[nadesiko3-mecab/MECABオプション]] --- ''
+- [[nadesiko3-mecab/MECABオプション設定]] --- Mecab実行時のオプションを指定する
+- [[nadesiko3-mecab/MECAB]] --- Sについて形態素解析を行って結果を二次元配列で返す
+- [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
+
+▲ [[plugin_odbc]]
+- [[plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
+- [[plugin_odbc/ODBC開]] --- ODBCのデータベースを同期的に開いてオブジェクトを返す
+- [[plugin_odbc/ODBC逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+- [[plugin_odbc/ODBC実行]] --- 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
+- [[plugin_odbc/ODBC閉]] --- ODBCで開いているデータベースを閉じる
+- [[plugin_odbc/ODBC逐次閉]] --- 逐次実行構文でODBCで開いているデータベースを閉じる
+- [[plugin_odbc/ODBCトランザクション開始]] --- ODBCでトランザクションを開始する
+- [[plugin_odbc/ODBCトランザクション終了]] --- ODBCでトランザクションを終了する
+
+▲ [[plugin_mssql]]
+- [[plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
+- [[plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+- [[plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
+
+▲ [[plugin_mysql]]
+- [[plugin_mysql/MYSQL開]] --- データベースを開く
+- [[plugin_mysql/MYSQL閉]] --- データベースを閉じる
+- [[plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。
+
+▲ [[plugin_postgresql]]
+- [[plugin_postgresql/PG開]] --- データベースを開く
+- [[plugin_postgresql/PG閉]] --- データベースを閉じる
+- [[plugin_postgresql/PG逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
+
+▲ [[plugin_php]]
+- [[plugin_php/PHPバージョン]] --- phpversion()
+- [[plugin_php/PHP取込]] --- PHPファイルを取り込む。
+- [[plugin_php/セッション開始]] --- PHPセッションを開始する。
+- [[plugin_php/クッキー取得]] --- cookieパラメータのKEYを、省略値DEFで取得する
+- [[plugin_php/クッキー設定]] --- cookieのKEYをVに設定する
+- [[plugin_php/クッキーオプション]] --- []
+- [[plugin_php/クッキーオプション設定]] --- cookieのオプションを辞書型で設定する
+- [[plugin_php/GET]] --- []
+- [[plugin_php/POST]] --- []
+- [[plugin_php/FILES]] --- []
+- [[plugin_php/SESSION]] --- []
+- [[plugin_php/GET取得]] --- GETパラメータのKEYを、省略値DEFで取得する
+- [[plugin_php/POST取得]] --- POSTパラメータのKEYを、省略値DEFで取得する
+- [[plugin_php/セッション取得]] --- セッションパラメータのKEYを、省略値DEFで取得する
+- [[plugin_php/セッション設定]] --- セッションパラメータのKEYをVに設定する
+- [[plugin_php/ヘッダ設定]] --- HTTPヘッダをVに設定する
+- [[plugin_php/PDOオブジェクト]] --- null
+- [[plugin_php/PDO生成]] --- DSNを指定してPDOを生成して返す
+- [[plugin_php/PDO設定]] --- 生成済みのPDOオブジェクトを切り替える。
+- [[plugin_php/PDO実行]] --- SQLコマンドをデータ配列Aで実行して結果を返す
+- [[plugin_php/PDO全取得]] --- SQLコマンドをデータ配列Aで実行して結果を全部取得して返す
+- [[plugin_php/PDO一行取得]] --- SQLコマンドをデータ配列Aで実行して結果を一行取得して返す
+- [[plugin_php/PDO挿入ID取得]] --- PDO実行の結果、挿入したIDを得る。
+- [[plugin_php/HTML変換]] --- 文字列SをHTMLに変換して返す
+- [[plugin_php/HTML埋込]] --- 文字列Sの中に辞書型データDICの値を埋め込んで返す。書式は「xxx[[変数名]]xx」のように書く。展開時に安全にHTML変換する。変換したくないものには[[変数名/raw]]と書く。または[[変数名/書式]]を記述(書式はsprintfかdate/time/datetime)。
