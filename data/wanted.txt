@@ -157,19 +157,6 @@
 - [[nadesiko3-sqlite3/SQLITE3逐次全取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 - [[nadesiko3-sqlite3/SQLITE3逐次取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 
-▲ [[nadesiko3-drone]]
-- [[nadesiko3-drone/ドローン接続]] --- ドローンに接続する
-- [[nadesiko3-drone/ドローン緊急停止]] --- ドローン緊急停止する
-- [[nadesiko3-drone/ドローン送信]] --- コマンドをドローンに送信する
-- [[nadesiko3-drone/ドローン接続時]] --- ドローンに接続した時にFを実行する
-- [[nadesiko3-drone/ドローン受信時]] --- ドローンからデータを受信した時にFを実行する
-- [[nadesiko3-drone/ドローン離陸]] --- 離陸コマンドをドローンに送信する
-- [[nadesiko3-drone/ドローン着陸]] --- 着陸コマンドをドローンに送信する
-- [[nadesiko3-drone/ドローン移動]] --- ドローンを方向(上下左右前後)にN(20-500cm)だけ動かす
-- [[nadesiko3-drone/ドローン回転]] --- ドローンをN(1から360/-1から-360)度だけ右回転させる
-- [[nadesiko3-drone/ドローン速度設定]] --- ドローンの速度をN(10-100)に設定
-- [[nadesiko3-drone/ドローンWIFI設定]] --- ドローンのWi-FiをSSIDのPASSに設定
-
 ▲ [[nadesiko3-htmlparser]]
 - [[nadesiko3-htmlparser/HTML応答ヘッダ]] --- ''
 - [[nadesiko3-htmlparser/HTML逐次URL開]] --- 任意のURLを開いてパースする。
@@ -222,6 +209,20 @@
 - [[nadesiko3-mecab/MECABオプション設定]] --- Mecab実行時のオプションを指定する
 - [[nadesiko3-mecab/MECAB]] --- Sについて形態素解析を行って結果を二次元配列で返す
 - [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
+
+▲ [[nadesiko3-office]]
+- [[nadesiko3-office/OFFICEバージョン]] --- '?'
+- [[nadesiko3-office/エクセル新規ブック]] --- Excelの新規ワークブックを生成してオブジェクトを返す
+- [[nadesiko3-office/エクセル開]] --- ファイルFILEからExcelワークブックを読んで返す
+- [[nadesiko3-office/エクセル保存]] --- ファイルFILEへ作業中のExcelワークブックを保存する
+- [[nadesiko3-office/エクセルCSV保存]] --- ファイルFILEへ作業中のExcelワークブックをCSVで保存する
+- [[nadesiko3-office/エクセル新規シート]] --- Excelの作業中のワークブックに新規シートNAMEを追加して返す
+- [[nadesiko3-office/エクセルシート取得]] --- NAMEのシートを取得して返す
+- [[nadesiko3-office/エクセルシート注目]] --- NAMEのシートを取得して返す
+- [[nadesiko3-office/エクセルセル設定]] --- セルA(例えば「A1」)へVを設定する
+- [[nadesiko3-office/エクセルセル取得]] --- セルA(例えば「A1」)の値を取得して返す
+- [[nadesiko3-office/エクセルシート一覧取得]] --- 作業中のブックのシート一覧取得して返す
+- [[nadesiko3-office/エクセルシート削除]] --- 作業中のブックのシートNAMEを削除する
 
 ▲ [[plugin_odbc]]
 - [[plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
