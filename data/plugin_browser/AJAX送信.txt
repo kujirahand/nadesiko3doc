@@ -1,5 +1,7 @@
 ●『[[AJAX送信:plugin_browser/AJAX送信]]』の詳しい解説
 
+(非推奨) 『[[plugin_browser/AJAXテキスト取得]]』の利用を推奨します。
+
 逐次実行と組み合わせて、順次Ajax通信を行います。
 その際、[[AJAXオプション:plugin_browser/AJAXオプション]]を指定できます。
 
