@@ -5,6 +5,46 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_browser]]
+- [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
+- [[plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[plugin_browser/AJAXオプション]] --- ''
+- [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
+- [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
+- [[plugin_browser/AJAX送信]] --- (非推奨)『AJAXテキスト取得』をご利用ください。- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。
+- [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/HTTP取得]] --- (非推奨)『AJAXテキスト取得』をご利用ください。- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/POST逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/POSTフォーム逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
+- [[plugin_browser/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
+- [[plugin_browser/マウスX]] --- 0
+- [[plugin_browser/マウスY]] --- 0
+- [[plugin_browser/タッチX]] --- 0
+- [[plugin_browser/タッチY]] --- 0
+- [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
+- [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
+- [[plugin_browser/画面更新処理取消]] --- 識別IDを指定して『画面更新時実行』を取り消す
+- [[plugin_browser/DOMスキン]] --- ''
+- [[plugin_browser/DOMスキン辞書]] --- {}
+- [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
+- [[plugin_browser/保存オプション]] --- 'json'
+- [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
+- [[plugin_browser/描画中コンテキスト]] --- null
+- [[plugin_browser/話者速度]] --- 1.0
+- [[plugin_browser/話者声高]] --- 1.0
+- [[plugin_browser/話者音量]] --- 1.0
+- [[plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
+- [[plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
+- [[plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
+- [[plugin_browser/WS接続]] --- WebSocketサーバsに接続する
+- [[plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
+- [[plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
+- [[plugin_browser/グラフオプション]] --- {}
+- [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
+
 ▲ [[plugin_turtle]]
 - [[plugin_turtle/カメ描画先]] --- 'turtle_cv'
 - [[plugin_turtle/カメ速度]] --- 100
