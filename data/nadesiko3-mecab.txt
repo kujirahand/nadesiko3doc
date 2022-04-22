@@ -1,0 +1,1 @@
+nadesiko3-mecabは形態素解析器MeCabを使うプラグインです。詳しくは[[こちら:https://github.com/kujirahand/nadesiko3-mecab]]をご覧ください。
