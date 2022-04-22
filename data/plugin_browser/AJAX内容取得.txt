@@ -1,0 +1,5 @@
+(非推奨) 今後は以下の関数を利用してください。
+
+-  『[[plugin_browser/AJAXテキスト取得]]』
+-  『[[plugin_browser/AJAX_JSON取得]]』
+
