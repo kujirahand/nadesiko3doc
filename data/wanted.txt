@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
+
 ▲ [[plugin_browser]]
 - [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
 - [[plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
@@ -26,13 +29,11 @@
 - [[plugin_browser/タッチY]] --- 0
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
-- [[plugin_browser/画面更新処理取消]] --- 識別IDを指定して『画面更新時実行』を取り消す
 - [[plugin_browser/DOMスキン]] --- ''
 - [[plugin_browser/DOMスキン辞書]] --- {}
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
-- [[plugin_browser/描画中コンテキスト]] --- null
 - [[plugin_browser/話者速度]] --- 1.0
 - [[plugin_browser/話者声高]] --- 1.0
 - [[plugin_browser/話者音量]] --- 1.0
@@ -63,9 +64,6 @@
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
 - [[plugin_node/AJAXテキスト取得]] --- AJAXでURLにアクセスしテキスト形式で結果を得る。送信時AJAXオプションの値を参照。
 - [[plugin_node/AJAX_JSON取得]] --- AJAXでURLにアクセスしJSONの結果を得て、送信時AJAXオプションの値を参照。
-
-▲ [[plugin_caniuse]]
-- [[plugin_caniuse/ブラウザ名変換表]] --- agents
 
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
@@ -254,7 +252,8 @@
 ▲ [[plugin_postgresql]]
 - [[plugin_postgresql/PG開]] --- データベースを開く
 - [[plugin_postgresql/PG閉]] --- データベースを閉じる
-- [[plugin_postgresql/PG逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
+- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。
+- [[plugin_postgresql/PG逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
 
 ▲ [[plugin_php]]
 - [[plugin_php/PHPバージョン]] --- phpversion()
