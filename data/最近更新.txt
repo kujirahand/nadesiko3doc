@@ -1,3 +1,9 @@
 ■ 最近更新された命令
 
+{{{#column
+[memo] どのマニュアルがどのように修正されたのかは、[[GitHubの更新履歴:https://github.com/kujirahand/nadesiko3doc/commits/master]]に詳細な記録があります。
+}}}
+
+以下、最近更新されたページの100件:
+
 #recent(100)
