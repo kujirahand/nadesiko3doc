@@ -1,0 +1,3 @@
+▲ちょっと簡易エディタ
+
+#nako3(edit,canvas,rows=6)
