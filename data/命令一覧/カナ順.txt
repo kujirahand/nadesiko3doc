@@ -1,1 +1,9 @@
+{{{#html
+<iframe
+  width="99%"
+  height="380"
+  style="border:none;"
+  src="https://n3s.nadesi.com/widget.php?451&run=1&mute_name=1"></iframe>
+}}}
+
 #nako3doc(list-kana)
