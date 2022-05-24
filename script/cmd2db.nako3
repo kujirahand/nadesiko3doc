@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS commands (
   kana TEXT,
   args TEXT,
   desc TEXT,
+  src_url TEXT DEFAULT '',
   ctime INTEGER,
   mtime INTEGER
 );
@@ -158,6 +159,7 @@ PLUG拡張={}
 　　F引数＝トリム(C[2])の「/」を「|」に置換
 　　F説明＝トリム(C[3])
 　　Fヨミ＝トリム(C[4])
+　　FURL＝トリム(C[5])
 　　Fカナ1＝LEFT(Fヨミ,1)
 　　F拡張＝拡張プラグイン辞書[プラグイン名]
 　　# エラーチェック - 表題とコマンドが同名はエラーに
@@ -177,11 +179,12 @@ PLUG拡張={}
 　　　　F引数,
 　　　　F説明,
 　　　　Fヨミ,
+　　　　FURL,
 　　　　V,
 　　　　V
 　　];
 　　# DATAをJSONエンコードして表示。
-　　「INSERT INTO commands (pagename, plugin, genre, type, name, args, desc, kana, ctime, mtime) VALUES (?,?,?,?,?,?,?,?,?,?)」をDATAでSQLITE3実行
+　　「INSERT INTO commands (pagename, plugin, genre, type, name, args, desc, kana, src_url,ctime, mtime) VALUES (?,?,?,?,?,?,?,?,?,?,?)」をDATAでSQLITE3実行
 　　# 1秒待つ
 　　ページ名＝「{プラグイン名}/{F名前}」
 　　もし、Fタイプ＝「定数」ならば
