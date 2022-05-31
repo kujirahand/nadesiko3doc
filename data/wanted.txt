@@ -6,6 +6,7 @@
 
 
 ▲ [[plugin_system]]
+- [[plugin_system/ナデシコ言語バージョン]] --- '?'
 - [[plugin_system/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
 
 ▲ [[plugin_promise]]
@@ -74,6 +75,15 @@
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
 - [[plugin_node/AJAXテキスト取得]] --- AJAXでURLにアクセスしテキスト形式で結果を得る。送信時AJAXオプションの値を参照。
 - [[plugin_node/AJAX_JSON取得]] --- AJAXでURLにアクセスしJSONの結果を得て、送信時AJAXオプションの値を参照。
+
+▲ [[plugin_httpserver]]
+- [[plugin_httpserver/GETデータ]] --- ''
+- [[plugin_httpserver/簡易HTTPサーバ起動時]] --- ポート番号PORTを指定して簡易HTTPサーバを起動して、CALLBACKを実行する。
+- [[plugin_httpserver/簡易HTTPサーバ静的パス指定]] --- 静的コンテンツのパスを指定。URLをPATHへマップする。
+- [[plugin_httpserver/簡易HTTPサーバ受信時]] --- URLを指定して合致するリクエストが来たら処理を実行する。
+- [[plugin_httpserver/簡易HTTPサーバ出力]] --- 受信時に、データSを出力する。
+- [[plugin_httpserver/簡易HTTPサーバヘッダ出力]] --- 受信時にステータスコードNOで、ヘッダHEAD(辞書形式)を出力する。
+- [[plugin_httpserver/簡易HTTPサーバ移動]] --- 受信時にヘッダ302(リダイレクト)を出力してURLへページを移動力する。
 
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す

@@ -1,4 +1,4 @@
-!「../../nadesiko3-sqlite3sync/nadesiko3-sqlite3sync.js」を取り込む。
+!「nadesiko3-sqlite3」を取り込む。
 # パスの解決
 ROOT = 母艦パスを「../../」で相対パス展開
 NADESIKO3 = ROOT&「/nadesiko3」
@@ -6,7 +6,9 @@ NADESIKO3DOC = ROOT&「/nadesiko3doc」
 元ファイル = 「{NADESIKO3}/batch/command.txt」
 WIKIフォルダ = 「{NADESIKO3DOC}/data」
 DBFILE=「{WIKIフォルダ}/nako3commands.db」
+DBFILEを表示
 DBFILEをSQLITE3開く。
+それをJSONエンコードして表示
 TTT=「
 ●まだ解説がない命令一覧
 
@@ -16,8 +18,9 @@ TTT=「
 」
 
 チェック={} 
-「SELECT * FROM commands」を[]でSQLITE3実行。
-それを反復
+「SELECT * FROM commands」を[]でSQLITE3全取得して、FFに代入。
+FFをJSONエンコードして表示
+FFを反復
 　　O=対象。
 　　NAME=O["name"]
 　　PLUG=O["plugin"]
