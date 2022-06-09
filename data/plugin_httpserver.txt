@@ -1,0 +1,1 @@
+plugin_httpserverとは、expressを利用しない簡易HTTPサーバです。(v3.3.49以降)
