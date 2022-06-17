@@ -1,0 +1,75 @@
+■自作のプラグインをnpmで公開しよう
+
+なでしこは、Node.jsのエコシステム上で動作するように配慮されています。
+そのため、自分の作ったプラグインをnpm上で公開すると、みんなに使ってもらいやすくなります。
+
+●npmでプロジェクトを初期化
+
+コマンドラインで以下のコマンドを実行します。以下は「nadesiko3-fuga」という名前のプロジェクトを作成します。なでしこのプラグインは「nadesiko3-xxx」という名前にしておくと、みんなから探しやすくなります。
+
+{{{
+# プロジェクトフォルダを作成
+mkdir nadesiko3-fuga
+cd nadesiko3-fuga
+# npm でプロジェクトを初期化
+npm -f init
+# 開発用になでしこをインストール
+npm install nadesiko3 --save-dev
+}}}
+
+●プラグインを作成
+
+以下を参考にプラグインを作りましょう。
+
+- [[文法/JSプラグインの作り方]] 
+
+なお、ひな形となるプロジェクトがnadesiko3-hogeです。このプロジェクトを参考に作ってみてください。
+
+- https://github.com/kujirahand/nadesiko3-hoge
+
+●npmでプラグインを公開
+
+まず、[[npmにユーザー登録(Sign Up):https://www.npmjs.com/]]します。
+
+公開情報をpackage.jsonに記述します。特に、versionが重要で、同じバージョンを公開することができないようになっています。
+
+{{{
+{
+  "name": "ライブラリ名",
+  "version": "バージョン情報(重要)",
+  "description": "ライブラリの説明",
+  ....
+}
+}}}
+
+最後に以下のコマンドを実行して公開します。
+
+{{{
+npm publish
+}}}
+
+- (参考) [[フリーのjsDelivrを使おう その2:https://news.mynavi.jp/techplus/article/zerojavascript-16/]]
+- (参考) [[Qiita - npmパッケージの公開手順:https://qiita.com/ShinKano/items/3e9f7813ff37379dd7ff]]
+
+●npmで公開すると...
+
+jsDeliverというCDNを介して、世界中にライブラリが公開されます。
+
+{{{
+●jsDelivrのURL規則
+https://cdn.jsdelivr.net/npm/パッケージ名@バージョン/ファイル名
+}}}
+
+例えば、ライブラリ「nadeisko3-hoge」のバージョン0.0.6に含まれるファイル「nadesiko3-hoge.mjs」を取得するURLは以下のようになります。
+
+{{{
+https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs
+}}}
+
+●使用例
+
+{{{#nako3
+!「https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs」を取り込む。
+
+3と5をHOGE足して表示。
+}}}

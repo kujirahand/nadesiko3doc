@@ -129,4 +129,13 @@ typeプロパティに「var」(変数)や「const」(定数)を指定して、v
 
 - https://github.com/kujirahand/nadesiko3/blob/master/doc/plugins.md
 
+●プラグインをnpmで公開しよう
+
+なでしこは、Node.jsのエコシステム上で動作するように配慮されています。
+そのため、自分の作ったプラグインをnpm上で公開すると、みんなに使ってもらいやすくなります。
+
+- [[FAQ/作ったプラグインをnpmで公開する方法]]
+
+
+
 
