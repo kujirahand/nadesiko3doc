@@ -1,1 +1,5 @@
 [[nadesiko3-websocket]]は、WebSocketサーバを利用するためのプラグインです。コンソール版で利用して、WebSocketサーバを作成するのに使います。
+
+▲WebSocketサーバを手軽に構築する方法
+
+- (参考) [[Google Colabを使う方法:https://nadesi.com/doc3/go.php?16418]]
