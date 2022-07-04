@@ -49,7 +49,7 @@
 
 簡単な正規表現のルールを用いて、順次プログラムをマッチさせています。
 
-- [[なでしこのソースコード/字句解析ルール(GitHub):https://github.com/kujirahand/nadesiko3/blob/master/src/nako_lex_rules.js]]
+- [[なでしこのソースコード/字句解析ルール(GitHub):https://github.com/kujirahand/nadesiko3core/blob/4f89cbf32f45584248f00719b7f6b5d0495d6c5c/src/nako_lex_rules.mts]]
 
 
 
