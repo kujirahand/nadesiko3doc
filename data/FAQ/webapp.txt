@@ -1,0 +1,28 @@
+■なでしこ3でWebアプリ作れますか？
+
+はい。作れます。なでしこ3ならサーバー側/クライアント(ブラウザ)側の両方を実装できます。サーバー側にはいくつかの選択肢があります。
+
+●（選択肢1）Node.jsエンジンの利用
+
+Node.jsの仕組みを使って、Webサーバーを実装できます。
+
+- [[HTTPサーバ(Expressエンジン):nadesiko3-server/HTTPサーバ(Express)]]
+- [[HTTPサーバ簡易実装:plugin_httpserver/簡易HTTPサーバ]]
+
+●（選択肢2）なでしこ3PHPを使う - PHPエンジン
+
+格安レンタルサーバーにはだいたいPHPが入っています。
+なでしこ3PHPを使ってサーバー側のロジックを実装できます。
+
+- [[なでしこ3PHP:https://nadesi.com/doc3/index.php?nadesiko3php]]
+
+●（選択肢3）CGIの利用 - Node.jsエンジン
+
+なでしこ3のコンソール版cnako3を使ってCGIを実装できます。
+
+{{{#html
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">日本語プログラミング言語「なでしこ」v3でもCGI書けます！ ↓こんなやつ<br>---<br>#!/usr/bin/env cnako3<br>「Content-Type: text/plain; charset=UTF-8{改行}」を表示。<br>「こんにちは」と表示。<br>---<br>84文字で十分動きます。</p>&mdash; クジラ飛行机 (@kujirahand) <a href="https://twitter.com/kujirahand/status/1552097846689685505?ref_src=twsrc%5Etfw">July 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+}}}
+
+なお、上記CGIを動かすためには、なでしこ3(Node.js版)をインストールし、cnako3にパスが通っていることが前提です。また、Webサーバー側でCGIを有効にする必要もあります。
+
