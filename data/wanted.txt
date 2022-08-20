@@ -75,8 +75,6 @@
 - [[plugin_node/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
-- [[plugin_node/AJAXテキスト取得]] --- AJAXでURLにアクセスしテキスト形式で結果を得る。送信時AJAXオプションの値を参照。
-- [[plugin_node/AJAX_JSON取得]] --- AJAXでURLにアクセスしJSONの結果を得て、送信時AJAXオプションの値を参照。
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。
 
 ▲ [[plugin_httpserver]]
