@@ -1,0 +1,15 @@
+●『[[AJAXテキスト取得:plugin_node/AJAXテキスト取得]]』の詳しい解説
+
+非同期処理によりサーバーURLへアクセスし、結果をテキスト形式で取得します。
+
+▲利用例
+{{{
+# 東京の天気予報を取得
+URL=「https://api.aoikujira.com/tenki/week.php?fmt=json&city=319」
+データ=URLからAJAXテキスト取得
+N=データをJSONデコード。
+N[319][0]["weathers"]を表示。
+}}}
+
+▲関連
+- [[AJAX_JSON取得:plugin_node/AJAX_JSON取得]]

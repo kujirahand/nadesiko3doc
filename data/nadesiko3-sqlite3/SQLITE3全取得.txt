@@ -1,0 +1,21 @@
+●説明
+
+『SQLITE3開く』で開いたデータベースに対して、SQLをパラメータPARAMSで全部取得します。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」のSQLITE3開く。
+『CREATE TABLE IF NOT EXISTS books(id, name)』を[]でSQLITE3実行。
+『INSERT INTO books (id,name) VALUES(?,?)』を[1,"aaa"]でSQLITE3実行。
+『SELECT * FROM books』を[]でSQLITE3全取得
+それをJSONエンコードして表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-sqlite3/SQLITE3開]]
+- [[nadesiko3-sqlite3/SQLITE3実行]]
+- [[nadesiko3-sqlite3/SQLITE3全取得]]
+
