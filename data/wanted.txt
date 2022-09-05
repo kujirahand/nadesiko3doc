@@ -21,20 +21,21 @@
 ▲ [[plugin_browser]]
 - [[plugin_browser/WNAKOバージョン]] --- ''
 - [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
-- [[plugin_browser/AJAX失敗時]] --- Ajax命令でエラーが起きたとき
+- [[plugin_browser/HTTP取得]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
+- [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
-- [[plugin_browser/AJAX送信]] --- (非推奨)『AJAXテキスト取得』をご利用ください。- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。
+- [[plugin_browser/AJAX失敗時]] --- AJAX命令でエラーが起きたとき
+- [[plugin_browser/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(blob)形式で結果を得る。送信時『AJAXオプション』の値を参照。
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/HTTP取得]] --- (非推奨)『AJAXテキスト取得』をご利用ください。- 逐次実行構文にて、非同期通信(Ajax)でURLにデータを送信する。成功すると『対象』にデータが代入される。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/POST逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/POSTフォーム逐次送信]] --- 逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
-- [[plugin_browser/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(blob)形式で結果を得る。送信時AJAXオプションの値を参照。
+- [[plugin_browser/AJAX内容取得]] --- 「保証」を使った非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
+- [[plugin_browser/BLOB作成]] --- DATA(配列型)をOPTIONS(辞書型)でBlobオブジェクトを作成する。
+- [[plugin_browser/POST逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/マウスX]] --- 0
 - [[plugin_browser/マウスY]] --- 0
 - [[plugin_browser/タッチX]] --- 0
@@ -46,6 +47,7 @@
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
+- [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
 - [[plugin_browser/話者速度]] --- 1.0
 - [[plugin_browser/話者声高]] --- 1.0
 - [[plugin_browser/話者音量]] --- 1.0
@@ -65,6 +67,7 @@
 ▲ [[plugin_node]]
 - [[plugin_node/絶対パス変換]] --- 相対パスから絶対パスに変換して返す
 - [[plugin_node/テンポラリフォルダ]] --- テンポラリフォルダのパスを取得して返す
+- [[plugin_node/一時フォルダ作成]] --- 指定のフォルダに作業用の一時フォルダを作成して取得して返す
 - [[plugin_node/圧縮解凍ツールパス]] --- '7z'
 - [[plugin_node/強制終了時]] --- Nodeでctrl+cでプログラムの実行が終了した時FUNCを実行する。もしFUNCが偽を返すと終了しない。非同期処理のとき動作する(#1010)
 - [[plugin_node/AJAX受信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
