@@ -38,7 +38,7 @@ const pluginObj = {
   '関数名': { 定義 },
   '定数名': { 定義 },
 }
-# --- なでしこ3の本体に関数を登録する ---
+// --- なでしこ3の本体に関数を登録する ---
 if (typeof (navigator) === 'object') {
   navigator.nako3.addPluginObject("pluginHello", pluginObj)
 } else {
@@ -108,6 +108,17 @@ typeプロパティに「var」(変数)や「const」(定数)を指定して、v
   ...
 }}}}
 
+▲初期化とクリアメソッド
+
+これを利用する事で、現在なでしこが実行されているかどうかを判定できます。
+
+{{{#nako3(rows=3)
+!「https://n3s.nadesi.com/plain/PluginActiveCheck.js」を取り込む。
+# プログラムを実行し、ブラウザの開発者ツールで、コンソールを確認してください。
+# なでしこがアクティブかどうかを確認できます。
+}}}
+
+- https://n3s.nadesi.com/id.php?1809 の内容を確認してみてください。
 
 ●プラグイン側からシステム変数へのアクセス
 
