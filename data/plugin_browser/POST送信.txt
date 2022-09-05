@@ -14,10 +14,8 @@ OBJ={
   "plugin":"comment", "pid":1, "name":"", "comment":""
 }
 
-逐次実行
-　　先に、URLへOBJをPOST送信
-　　次に、「投稿しました:  https://nadesi.com/doc3/index.php?test」と表示。
-ここまで
+URLへOBJをPOST送信
+「投稿しました:  https://nadesi.com/doc3/index.php?test」と表示。
 }}}
 
 ▲参考
