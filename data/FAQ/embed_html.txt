@@ -1,0 +1,45 @@
+■HTMLへの埋め込み方法
+
+なでしこ３は、スクリプトを取り込むことにより、JavaScriptの代わりに利用することができるようになっています。
+
+{{{#column
+さらに詳しい情報が以下にあります。
+
+- [[HTMLへの埋め込み:https://nadesi.com/v3/doc/index.php?html&show]]
+}}}
+
+> また、[[なでしこ3貯蔵庫(nako3storage):https://nadesi.com/v3/storage]]を使うと手軽にプログラムを配布できます。
+
+●利用準備
+
+HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一行を付け加える``だけ``です。
+
+{{{
+<script type="text/javascript"
+ src="https://nadesi.com/v3/cdn.php?v=3.3.&f=release/wnako3.js&run"
+></script>
+}}}
+
+そして、『<script type="なでしこ">...</script>』と記述すると、なでしこのプログラムを実行できます。
+
+以下、利用例です。
+
+{{{
+<html><body>
+<!-- なでしこのプログラム -->
+<script type="なでしこ">
+「こんにちは」と言う。
+</script>
+
+<!-- なでしこの実行エンジンを取り込む -->
+<script type="text/javascript"
+ src="https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js&run"
+></script>
+</body></html>
+}}}
+
+●さらに詳しい情報
+
+- [[HTMLへの埋め込み:https://nadesi.com/v3/doc/index.php?html&show]]
+
+
