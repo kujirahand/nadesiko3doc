@@ -1,4 +1,8 @@
-●簡易エディタv2
+●簡易エディタv2 - デバッグ版
+
+#nako3(edit,canvas,rows=12,debug)
+
+●簡易エディタv2 - 通常版
 
 #nako3(edit,canvas,rows=12,debug)
 
