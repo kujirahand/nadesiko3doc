@@ -1,0 +1,7 @@
+●解説
+
+Nodemailerパッケージを利用してメールを送信します。
+
+- [[Nodemailerのマニュアル:https://nodemailer.com/smtp/]]
+
+なお、[[nadesiko3-smtp/GMAIL送信]]の利用を推奨します。

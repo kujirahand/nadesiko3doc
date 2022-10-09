@@ -1,0 +1,1 @@
+なでしこ3のPC版でメールを送信します。より詳しくは、[[こちら:https://github.com/kujirahand/nadesiko3-smtp]]をご覧ください。
