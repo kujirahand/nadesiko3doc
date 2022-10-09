@@ -7,7 +7,11 @@
 
 ▲ [[plugin_system]]
 - [[plugin_system/ナデシコ言語バージョン]] --- '?'
+- [[plugin_system/TRUE]] --- true
+- [[plugin_system/FALSE]] --- false
+- [[plugin_system/終]] --- 終わる
 - [[plugin_system/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
+- [[plugin_system/名前空間設定]] --- 名前空間が変更される
 
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
@@ -247,6 +251,10 @@
 - [[nadesiko3-mecab/MECAB]] --- Sについて形態素解析を行って結果を二次元配列で返す
 - [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
 
+▲ [[nadesiko3-smtp]]
+- [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'',pass:''},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す
+- [[nadesiko3-smtp/GMAIL送信]] --- 辞書型のデータ{user:'xxx',pass:'xxx',宛先:'xxx',件名:'xxx',本文:'xxx',html:'xxx',添付:[{filename:'xxx', path:'xxx'}]}を指定してGMAILからメール送信して情報を返す
+
 ▲ [[nadesiko3-office]]
 - [[nadesiko3-office/OFFICEバージョン]] --- '?'
 - [[nadesiko3-office/エクセル新規ブック]] --- Excelの新規ワークブックを生成してオブジェクトを返す
@@ -323,7 +331,6 @@
 - [[plugin_php/PDO挿入ID取得]] --- PDO実行の結果、挿入したIDを得る。
 - [[plugin_php/HTML変換]] --- 文字列SをHTMLに変換して返す
 - [[plugin_php/HTML埋込]] --- 文字列Sの中に辞書型データDICの値を埋め込んで返す。書式は「xxx[[変数名]]xx」のように書く。展開時に安全にHTML変換する。変換したくないものには[[変数名/raw]]と書く。改行を変換したい場合は[[変数名/br]]と書く。または[[変数名/書式]]を記述(書式はsprintfかdate/time/datetime)。
-- [[plugin_php/KUDB接続]] --- 簡易ドキュメントデータベースKUDBに接続する。DBにはファイルパスを指定する。
 - [[plugin_php/KUDB全取得]] --- KUDBに挿入したドキュメントを全部返す
 - [[plugin_php/KUDB部分取得]] --- KUDBの(0起点)INDEXからCOUNT件だけ取得
 - [[plugin_php/KUDB末尾取得]] --- KUDBの(0起点)末尾から数えてINDEXからCOUNT件取得
