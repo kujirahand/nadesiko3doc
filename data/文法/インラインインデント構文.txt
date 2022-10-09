@@ -59,6 +59,9 @@ Cを表示。
 ・半角スペース・全角スペース
 ・タブ文字
 ・中点「・」
+・縦線「|」
+・罫線「│└─┃┗━」など
+・・[[罫線素片の一覧表はこちら:https://github.com/kujirahand/unicode-sheets/blob/main/box-drawing.md]]
 
 ▲メモ
 
@@ -66,5 +69,6 @@ Cを表示。
 
 ▲参考
 
+- [[文法/インデント構文]]
 - [[GitHub/Issues/インラインインデント構文の実装:https://github.com/kujirahand/nadesiko3/issues/1215]]
 

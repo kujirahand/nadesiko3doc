@@ -9,7 +9,7 @@
 HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一行を付け加えるだけです。
 
 {{{
-<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run">
+<script src="https://nadesi.com/v3/cdn.php?v=3.3.71&f=release/wnako3.js&run">
 </script>
 }}}
 
@@ -25,7 +25,7 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 </script>
 
 <!-- なでしこの実行エンジンを取り込む -->
-<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/wnako3.js&run"></script>
+<script src="https://nadesi.com/v3/cdn.php?v=3.3.71&f=release/wnako3.js&run"></script>
 </body></html>
 }}}
 
@@ -34,7 +34,7 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 ちなみに「wnako3.js」を取り込むだけでは、最低限のシステム命令とブラウザ命令が使えるだけです。それで、タートルグラフィックスを利用したい場合は、タートルグラフィックスのプラグインをscriptタグで取り込みます。
 
 {{{
-<script src="https://nadesi.com/v3/cdn.php?v=3.1.21&f=release/plugin_turtle.js"
+<script src="https://nadesi.com/v3/cdn.php?v=3.3.71&f=release/plugin_turtle.js"
 ></script>
 }}}
 
@@ -82,8 +82,13 @@ https://nadesi.com/v3/cdn.php?v=xxx&f=ooooo
 
 ●最新版のなでしこ
 
-- ``最新版のなでしこ``を使うことをオススメしています。
--- 最新版のなでしこは、[[こちらのURL:https://nadesi.com/v3/]]から確認できます。
+``最新版のなでしこ``を使うことをオススメしています。
+
+{{{#nako3(rows=2)
+ナデシコバージョンを表示。
+}}}
+
+
 
 ●JavaScriptでなでしこの関数を追加する
 
@@ -130,5 +135,9 @@ navigator.nako3.setFunc("関数名", 引数, JS関数オブジェクト, 戻り�
 とは言え、JavaScriptが分かれば、カスタムなでしこプラグインを作ることもできます。
 
 - [[プラグイン作成ドキュメント:https://github.com/kujirahand/nadesiko3/blob/master/doc/plugins.md]]
+
+●参考
+
+- [[JavaScriptの代わりになでしこを使ってみよう:https://qiita.com/kujirahand/items/a9ac3145a8d535a372dc]]
 
 

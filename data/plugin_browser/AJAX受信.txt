@@ -1,13 +1,9 @@
-(非推奨) 『[[plugin_browser/AJAXテキスト取得]]』の利用を推奨します。
-
 AJAXでデータを受信します。
-「！非同期モード」で使うと便利です。
 
 ▲利用例
 
 {{{#nako3
-!非同期モード
 API=「https://api.aoikujira.com/time/get.php」
-APIからAJAX受信。
-「現在時刻は：｛対象｝」と表示。
+S=APIからAJAX受信。
+「現在時刻は：｛S｝」と表示。
 }}}
