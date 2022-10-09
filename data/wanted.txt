@@ -25,7 +25,6 @@
 ▲ [[plugin_browser]]
 - [[plugin_browser/WNAKOバージョン]] --- ''
 - [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
-- [[plugin_browser/HTTP取得]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
@@ -252,7 +251,7 @@
 - [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
 
 ▲ [[nadesiko3-smtp]]
-- [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'',pass:''},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す
+- [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'xxx',pass:'xxx'},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す
 - [[nadesiko3-smtp/GMAIL送信]] --- 辞書型のデータ{user:'xxx',pass:'xxx',宛先:'xxx',件名:'xxx',本文:'xxx',html:'xxx',添付:[{filename:'xxx', path:'xxx'}]}を指定してGMAILからメール送信して情報を返す
 
 ▲ [[nadesiko3-office]]
