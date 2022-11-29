@@ -1,0 +1,44 @@
+▲解説
+
+JavaScriptの非同期関数(async)に、awaitを付けて実行します。
+
+▲サンプル
+
+{{{#nako3(rows=10)
+●AAA(SEC)とは
+　　ASYNC
+　　「あ」と表示。
+　　(SEC)秒待つ。
+ここまで。
+
+3回
+　　「AAA」を[0.5]でAWAIT実行して表示。
+ここまで。
+}}}
+
+▲サンプル - JSとの連携
+
+JavaScriptでasync関数を定義して、それをなでしこ側でawait実行する例です。
+
+{{{#nako3(rows=13)
+AAA=『
+(async function (msec) {
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+            resolve(msec)
+        }, msec)
+    })
+})』をJS実行。
+AAAを表示。
+3回
+　　AAAを[500]でAWAIT実行して表示。
+　　「---」を表示。
+ここまで。
+}}}
+
+
+▲参考
+
+- [[plugin_system/JS実行]]
+- [[plunin_system/ASYNC]]
+

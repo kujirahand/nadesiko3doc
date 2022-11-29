@@ -39,6 +39,18 @@ JavaScriptのコードSRCを実行する。
 ここまで。
 }}}
 
+▲サンプル - JavaScriptで関数を定義してなでしこで実行する
+
+JavaScriptで関数を定義してなでしこで実行する方法です。
+
+{{{#nako3
+X2=『(function (n) { return n*2})』をJS実行。
+X2を表示。
+3回
+　　X2を[300]でJS関数実行して表示。
+ここまで。
+}}}
+
 ▲参考
 
 - [[plugin_system/JSオブジェクト取得]]
