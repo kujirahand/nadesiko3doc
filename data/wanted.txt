@@ -204,15 +204,14 @@
 - [[nadesiko3-sqlite3/SQLITE3逐次取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 
 ▲ [[nadesiko3-htmlparser]]
-- [[nadesiko3-htmlparser/HTML応答ヘッダ]] --- ''
-- [[nadesiko3-htmlparser/HTML逐次URL開]] --- 任意のURLを開いてパースする。
+- [[nadesiko3-htmlparser/HTML_URL開]] --- 任意のURLを開いてパースする。
 - [[nadesiko3-htmlparser/HTMLパース]] --- 任意のHTML文字列をパースする。
-- [[nadesiko3-htmlparser/DOM要素取得]] --- パース済みHTMLからクエリQに該当するDOMを取得する
-- [[nadesiko3-htmlparser/DOM子要素検索]] --- DOMの子要素Qを取得する
+- [[nadesiko3-htmlparser/DOM検索]] --- DOMからクエリQを利用して合致するものを検索して配列で返す
+- [[nadesiko3-htmlparser/DOM要素取得]] --- パース済みHTMLからクエリQに該当するDOMを取得して返す
 - [[nadesiko3-htmlparser/DOM子要素全取得]] --- DOMの子要素を全部取得する
 - [[nadesiko3-htmlparser/DOM親要素取得]] --- DOMの親要素を取得する
 - [[nadesiko3-htmlparser/DOM次要素取得]] --- DOMの親要素を取得する
-- [[nadesiko3-htmlparser/DOM抽出]] --- DOMからクエリQを利用して合致するものを抽出する
+- [[nadesiko3-htmlparser/DOM抽出]] --- DOMからクエリQを利用して合致するものを抽出して配列で返す
 - [[nadesiko3-htmlparser/属性取得]] --- DOMの属性Kを取得する
 - [[nadesiko3-htmlparser/テキスト取得]] --- DOMのテキストを取得する
 - [[nadesiko3-htmlparser/HTML取得]] --- DOMのHTMLを取得する
