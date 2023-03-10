@@ -18,3 +18,8 @@
 - [[#1394:https://github.com/kujirahand/nadesiko3/issues/1394]]
 
 
+{{{{#rem
+{{{#nako3
+# wanted防止
+}}}
+}}}}

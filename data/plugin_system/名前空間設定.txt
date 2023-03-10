@@ -6,3 +6,8 @@
 - [[plugin_system/名前空間ポップ]]
 - [[plugin_system/名前空間設定]]
 
+{{{{#rem
+{{{#nako3
+# wanted防止
+}}}
+}}}}
