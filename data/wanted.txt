@@ -6,7 +6,6 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/ナデシコ言語バージョン]] --- '?'
 - [[plugin_system/TRUE]] --- true
 - [[plugin_system/FALSE]] --- false
 - [[plugin_system/終]] --- 終わる
@@ -30,7 +29,7 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/WNAKOバージョン]] --- ''
+- [[plugin_browser/WNAKOバージョン]] --- '?'
 - [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
 - [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
@@ -62,7 +61,6 @@
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
 - [[plugin_browser/画像読待]] --- 画像のURLを読み込んでImageオブジェクトを返す。その際、画像の読み込みが終わるまで待つ。
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
-- [[plugin_browser/話終]] --- 音声合成APIを使ってSを発話し終えるまで待機する
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/話者速度]] --- 1.0
 - [[plugin_browser/話者声高]] --- 1.0
