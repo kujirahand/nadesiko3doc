@@ -10,6 +10,11 @@
 - [[plugin_system/TRUE]] --- true
 - [[plugin_system/FALSE]] --- false
 - [[plugin_system/終]] --- 終わる
+- [[plugin_system/__DEBUG]] --- デバッグモードにする
+- [[plugin_system/__DEBUG強制待機]] --- 0
+- [[plugin_system/__DEBUGブレイクポイント一覧]] --- []
+- [[plugin_system/__DEBUG待機フラグ]] --- 0
+- [[plugin_system/__DEBUG_BP_WAIT]] --- エディタのブレイクポイント機能のための待機
 - [[plugin_system/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
 - [[plugin_system/名前空間]] --- ''
 - [[plugin_system/名前空間設定]] --- 名前空間をSに設定する(システムにより自動的に変更される。ファイル名から拡張子を削ったもの)
@@ -51,10 +56,14 @@
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/DOMスキン]] --- ''
 - [[plugin_browser/DOMスキン辞書]] --- {}
+- [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
+- [[plugin_browser/画像読待]] --- 画像のURLを読み込んでImageオブジェクトを返す。その際、画像の読み込みが終わるまで待つ。
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
+- [[plugin_browser/話終]] --- 音声合成APIを使ってSを発話し終えるまで待機する
+- [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/話者速度]] --- 1.0
 - [[plugin_browser/話者声高]] --- 1.0
 - [[plugin_browser/話者音量]] --- 1.0
@@ -87,7 +96,10 @@
 - [[plugin_node/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
+- [[plugin_node/POSTデータ生成]] --- 辞書形式のデータPARAMSをkey=value&key=value...の形式に変換する
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。
+- [[plugin_node/LINE送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへMESSAGEをLINE送信する。
+- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。
 
 ▲ [[plugin_httpserver]]
 - [[plugin_httpserver/GETデータ]] --- ''
