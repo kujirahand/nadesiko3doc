@@ -6,16 +6,10 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/TRUE]] --- true
-- [[plugin_system/FALSE]] --- false
-- [[plugin_system/終]] --- 終わる
-- [[plugin_system/__DEBUG]] --- デバッグモードにする
 - [[plugin_system/__DEBUG強制待機]] --- 0
 - [[plugin_system/__DEBUGブレイクポイント一覧]] --- []
 - [[plugin_system/__DEBUG待機フラグ]] --- 0
 - [[plugin_system/__DEBUG_BP_WAIT]] --- エディタのブレイクポイント機能のための待機
-- [[plugin_system/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
-- [[plugin_system/名前空間]] --- ''
 - [[plugin_system/名前空間設定]] --- 名前空間をSに設定する(システムにより自動的に変更される。ファイル名から拡張子を削ったもの)
 - [[plugin_system/名前空間ポップ]] --- システム利用のため呼ぶべからず。(名前空間を一つ前の値に戻す)
 
@@ -29,8 +23,6 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/WNAKOバージョン]] --- '?'
-- [[plugin_browser/終]] --- ブラウザでプログラムの実行を強制終了する
 - [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
