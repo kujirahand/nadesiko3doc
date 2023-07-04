@@ -19,7 +19,7 @@ if (file_exists($file_doc_ini)) {
 } else {
   define("KONA3_SHOW_DATA_DIR", TRUE); // show local path 
   define("KONA3_DIR_ENGINE", 
-  dirname(dirname(__FILE__)).'/konawiki3/kona3engine');
+    dirname(dirname(__FILE__)).'/konawiki3/kona3engine');
   define("KONA3_DIR_DATA", dirname(__FILE__).'/data');
   define("KONA3_DIR_PRIVATE", dirname(__FILE__).'/private');
   define("KONA3_DSN", "sqlite:".KONA3_DIR_PRIVATE."/data.sqlite");
