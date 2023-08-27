@@ -13,7 +13,6 @@
 <style>
   #kona3_main .top_navi a { text-decoration: none; }
   #kona3_main .column a { text-decoration: none; }
-  .nodeco a { text-decoration: none; } 
   #nako3doc h1 {
     font-size:1.1em;
     margin: 2px;
@@ -25,6 +24,12 @@
     background-color: #fff0f0;
     padding: 4px;
   }
+  .nodeco {
+    border:1px solid #e0c0c0; 
+    margin: 2px;
+    padding:1em;
+  }
+  .nodeco a { text-decoration: none; } 
 </style>
 
 <div id="nako3doc">
@@ -51,7 +56,7 @@
 
 #rem(---------- メインリンク---------- )
 {{{#html
-<div class="nodeco" style="border:1px solid #e0c0c0; margin: 2px; padding:1em;">
+<div class="nodeco">
 }}}
 
 ・[[命令一覧:命令一覧/機能順]] ([[名前順:命令一覧/カナ順]]/[[カナ順:命令一覧/ヨミガナ]])
@@ -65,6 +70,10 @@
 
 {{{#html
 </div><!-- nodeco -->
+<div class="nodeco" style="background-color:#fff0f0;padding:0.5em;">
+  <div class="memo">「なでしこ」とは…「誰でも簡単プログラマー」を目標にしたプログラミング言語です。なでしこを使うと、日本語で手軽にプログラムを作れます。また、ブラウザでもPCでもいろいろな端末で動きます。
+  </div>
+</div>
 }}}
 #rem(---------- メインリンク---------- )
 
