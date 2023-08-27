@@ -2,35 +2,48 @@
 -------------------------------------------------------------
 ⭐⭐⭐ なでしこ３マニュアル ⭐⭐⭐
 -------------------------------------------------------------
-
 編集に参加してくださり、誠にありがとうございます。
 マニュアルの編集方法は以下をご覧ください。
 [URL] https://nadesi.com/v3/doc/go.php?6
-
 -------------------------------------------------------------
 [お願い] 👉このページは編集しないでください。
 -------------------------------------------------------------
 }}}
+{{{#html
+<style>
+  #kona3_main .top_navi a { text-decoration: none; }
+  #kona3_main .column a { text-decoration: none; }
+  .nodeco a { text-decoration: none; } 
+  #nako3doc h1 {
+    font-size:1.1em;
+    margin: 2px;
+    padding: 0.5em;
+    font-weight: normal;
+    text-align: center;
+  }
+  #nako3doc .top_navi {
+    background-color: #fff0f0;
+    padding: 4px;
+  }
+</style>
 
-#rem(---------- ぱんくずメニュー ---------- )
-[[🏠 なでしこ全体:https://nadesi.com]] > [[v3:https://nadesi.com/doc3]] > マニュアル
-#rem(---------- /ぱんくずメニュー ---------- )
+<div id="nako3doc">
+  <h1>日本語プログラミング言語「なでしこ3」</h1>
+</div><!-- #nako3doc -->
+}}}
 
-■ 日本語プログラミング言語「なでしこ3」マニュアル
+
 
 #rem(---------- トップ絵---------- )
 {{{#html
-<style> #kona3_main .column a { text-decoration: none; } </style>
-<style> .nodeco a { text-decoration: none; } </style>
-
 <div style="text-align:center">
+  <a href="https://nadesi.com/v3/doc/index.php?wnako">
+    <img src="https://n3s.nadesi.com/image.php?f=201.jpg" width=98%">
+  </a>
   <div style="border:1px solid silver; padding: 10px; margin:2px; background-color: #fff0f0;">
     <a href="https://nadesi.com/v3/doc/index.php?wnako" style="text-decoration: none;">
         🌐 ブラウザで使える命令一覧</a>
   </div>
-  <a href="https://nadesi.com/v3/doc/index.php?wnako">
-  <img src="https://n3s.nadesi.com/image.php?f=201.jpg" width=98%">
-  </a>
 </div>
 }}}
 #rem(---------- /トップ絵---------- )
@@ -38,7 +51,7 @@
 
 #rem(---------- メインリンク---------- )
 {{{#html
-<div class="nodeco">
+<div class="nodeco" style="border:1px solid #e0c0c0; margin: 2px; padding:1em;">
 }}}
 
 ・[[命令一覧:命令一覧/機能順]] ([[名前順:命令一覧/カナ順]]/[[カナ順:命令一覧/ヨミガナ]])
