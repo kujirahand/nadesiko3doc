@@ -30,4 +30,18 @@ Node.jsがマルチプラットフォーム対応のため、Win/Mac/Android/Lin
 
 詳しくは[[こちら:https://nadesi.com/doc3/index.php?nadesiko3php]]をご覧ください。
 
+● 🍜 なでしこ3配布キット(軽量版)
+
+Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットです。
+Chrome/Safari/Edgeなどのブラウザコンポーネントを使って動かします。
+
+- [[なでしこ3配布キット:https://nadesi.com/doc3/go.php?16421]]
+-- [[配布キット直接ダウンロード:https://github.com/kujirahand/nadesiko3webkit/releases]]
+
+● 🍜 なでしこ3配布キット(Electron版)
+
+Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットのElectron版です。ブラウザコンポーネントへの依存がありません。ただし、ダウンロードサイズが少し大きくなります。
+
+- [[配布キットElectron版直接ダウンロード:https://github.com/kujirahand/nadesiko3electron]]
+
 
