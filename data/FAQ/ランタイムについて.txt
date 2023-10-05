@@ -38,7 +38,7 @@ Chrome/Safari/Edgeなどのブラウザコンポーネントを使って動か�
 - [[なでしこ3配布キット:https://nadesi.com/doc3/go.php?16421]]
 -- [[配布キット直接ダウンロード:https://github.com/kujirahand/nadesiko3webkit/releases]]
 
-● 🍜 なでしこ3配布キット(Electron版)
+● 🍜 なでしこ3配布キット(Electron版) - [[enako]]
 
 Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットのElectron版です。ブラウザコンポーネントへの依存がありません。ただし、ダウンロードサイズが少し大きくなります。
 
