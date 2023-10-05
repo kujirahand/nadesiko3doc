@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/配列数値変換]] --- 配列Aを変換変換して返す(A自体を変更)
+
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
 - [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
@@ -29,8 +32,6 @@
 - [[plugin_browser/BLOB作成]] --- DATA(配列型)をOPTIONS(辞書型)でBlobオブジェクトを作成する。
 - [[plugin_browser/POST逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
-- [[plugin_browser/DOM和属性]] --- undefined
-- [[plugin_browser/DOM和スタイル]] --- undefined
 - [[plugin_browser/マウスX]] --- 0
 - [[plugin_browser/マウスY]] --- 0
 - [[plugin_browser/タッチX]] --- 0
@@ -42,7 +43,7 @@
 - [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
-- [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」を設定する
+- [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」または「raw」を設定する
 - [[plugin_browser/画像読待]] --- 画像のURLを読み込んでImageオブジェクトを返す。その際、画像の読み込みが終わるまで待つ。
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
@@ -70,6 +71,8 @@
 - [[plugin_node/一時フォルダ作成]] --- 指定のフォルダに作業用の一時フォルダを作成して取得して返す
 - [[plugin_node/圧縮解凍ツールパス]] --- '7z'
 - [[plugin_node/強制終了時]] --- Nodeでctrl+cでプログラムの実行が終了した時FUNCを実行する。もしFUNCが偽を返すと終了しない。非同期処理のとき動作する(#1010)
+- [[plugin_node/文字尋]] --- 標準入力を一行取得する。ただし自動で数値に変換しない
+- [[plugin_node/標準入力全取得]] --- 標準入力を全部取得して返す
 - [[plugin_node/AJAX受信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
 - [[plugin_node/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -338,3 +341,57 @@
 - [[plugin_php/KUDBタグ検索]] --- KUDBでデータ一覧からTAGプロパティを検索する
 - [[plugin_php/KUDBタグ削除]] --- KUDBでTAGを指定して削除
 - [[plugin_php/KUDBタグ更新]] --- KUDBで指定TAGの内容をVに更新
+
+▲ [[plugin_electron_node]]
+- [[plugin_electron_node/Eアプリ]] --- app
+- [[plugin_electron_node/IPCメイン]] --- ipcMain
+- [[plugin_electron_node/アプリID設定]] --- アプリIDを設定する
+- [[plugin_electron_node/QUIT]] --- Electronのアプリを終了する
+- [[plugin_electron_node/終了]] --- Electronのアプリを終了する
+- [[plugin_electron_node/強制終了]] --- Electronのアプリを強制終了する
+- [[plugin_electron_node/再起動予約]] --- アプリが終了した際に自動的に起動する
+- [[plugin_electron_node/Eアプリ準備完了]] --- アプリの準備が完了していれば真を返す
+- [[plugin_electron_node/Eアプリ準備完了時]] --- アプリの準備が完了した際に呼び去られる処理を登録する
+- [[plugin_electron_node/Eアプリフォーカス獲得]] --- アプリがフォーカスの獲得を試みる
+- [[plugin_electron_node/Eアプリバージョン取得]] --- package.jsonで設定しているアプリのバージョンを返す
+- [[plugin_electron_node/Eアプリ名取得]] --- package.jsonで設定しているアプリの名前(name,productName)を返す
+- [[plugin_electron_node/ブラウザウインドウ作成]] --- オプションに従いブラウザウインドウを作成して返す
+- [[plugin_electron_node/ブラウザ読込]] --- ウインドウに指定のURLから読み込みを行う
+- [[plugin_electron_node/全ウインドウ数取得]] --- アプリに存在する全てのWindowの数を返す
+- [[plugin_electron_node/フォーカスウインドウ取得]] --- フォーカスを獲得しているWindowを返す
+- [[plugin_electron_node/ウインドウ再読込]] --- 指定したウインドウの再読み込みを行う
+- [[plugin_electron_node/ウインドウ表示]] --- 指定したウインドウを表示状態にする
+- [[plugin_electron_node/開発ツールトグル]] --- 指定したウインドウの開発者ツールの表示状態をトグルする
+- [[plugin_electron_node/メニュー設定]] --- menuをウインドウのメニューに設定する
+- [[plugin_electron_node/アプリメニュー設定]] --- menuをアプリのメインメニューに設定する
+- [[plugin_electron_node/アプリメニュー取得]] --- アプリのメインメニューに取得して返す
+- [[plugin_electron_node/メニュー一括作成]] --- メニューをテンプレートから一括作成し作成したメニューを返す
+- [[plugin_electron_node/メニューポップアップ開]] --- メニューをポップアップメニューとして開く
+- [[plugin_electron_node/メニューポップアップ閉]] --- ポップアップメニューとして開かれたこのメニューを閉じる
+- [[plugin_electron_node/メニューアイテム追加]] --- メニューにメニュー項目を追加する
+- [[plugin_electron_node/メニュー項目追加]] --- メニューにメニュー項目を追加する
+- [[plugin_electron_node/メニューアイテム挿入]] --- メニューの指定位置にメニュー項目を挿入する
+- [[plugin_electron_node/メニュー項目挿入]] --- メニューの指定位置にメニュー項目を挿入する
+- [[plugin_electron_node/メニューアイテム取得]] --- メニューから指定したIDを持つメニューアイテムを返す
+- [[plugin_electron_node/メニューIDクリック時]] --- メニューから指定したIDを持つ項目をクリックした時の処理を登録する
+- [[plugin_electron_node/メニュー項目作成]] --- メニュー項目を作成して返す
+- [[plugin_electron_node/発生時]] --- 対象にて指定のイベントが発生した時の処理を登録する
+- [[plugin_electron_node/単発発生時]] --- 対象にて指定のイベントが発生した時の処理を登録する。イベント発生時に自動削除される
+- [[plugin_electron_node/呼出時]] --- 対象にて指定のInvoke呼び出しを受けた時の処理を登録する(evt, ...args)
+- [[plugin_electron_node/呼出]] --- 対象のInvokeを呼び出す
+- [[plugin_electron_node/ファイル選択]] --- ファイルを選択するダイアログを表示して結果を返す
+- [[plugin_electron_node/フォルダ選択]] --- フォルダを選択するダイアログを表示して結果を返す
+- [[plugin_electron_node/保存ファイル選択]] --- ファイルを保存するためのダイアログを表示して結果を返す
+- [[plugin_electron_node/カーソル絶対位置取得]] --- マウスポインタの絶対位置をDIPポイント単位で返す
+- [[plugin_electron_node/主モニター取得]] --- 主画面に指定されているモニターのDisplayを返す
+- [[plugin_electron_node/全モニター取得]] --- 全てのモニターをDisplayの配列で返す
+- [[plugin_electron_node/付近モニター取得]] --- 指定した点に最も近いモニターのDisplayを返す
+- [[plugin_electron_node/該当モニター取得]] --- 指定した矩形に最も近いモニターのDisplayを返す
+- [[plugin_electron_node/PX2DIP点変換]] --- Pointを物理的な単位からDIP単位に変換して返す
+- [[plugin_electron_node/DIP2PX点変換]] --- PointをDIP単位から物理的な単位に変換して返す
+- [[plugin_electron_node/PX2DIP矩形変換]] --- Rectangleを物理的な単位からDIP単位に変換して返す。DPIは指定したウインドウと相対的に計算する
+- [[plugin_electron_node/DIP2PXP矩形変換]] --- RectangleをDIP単位から物理的な単位に変換して返す。DPIは指定したウインドウと相対的に計算する
+- [[plugin_electron_node/データ受信時]] --- レンダラからのデータ送信を受けた時の処理を登録する(evt, key, msg)
+- [[plugin_electron_node/データ呼出時]] --- レンダラからの呼び出しを受けた時の処理を登録する(evt, key, msg)
+- [[plugin_electron_node/データ送信]] --- レンダラにデータを送信する(webContent, key, data)
+- [[plugin_electron_node/データ呼出]] --- レンダラにデータを呼び出す(webContent, key, data)
