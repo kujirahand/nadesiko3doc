@@ -162,6 +162,13 @@
 - [[plugin_webworker/ワーカーメッセージ送信]] --- WORKERにメッセージを送信する。(可変引数)
 - [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
 
+▲ [[nadesiko3-music]]
+- [[nadesiko3-music/MML演奏]] --- MMLを演奏する
+- [[nadesiko3-music/MML停止]] --- MML演奏で開始した演奏を停止する
+- [[nadesiko3-music/MIDI演奏]] --- MIDIファイルのあるURLを指定して演奏する
+- [[nadesiko3-music/MIDI停止]] --- MIDI演奏で開始した演奏を停止する
+- [[nadesiko3-music/MIDIループ再生設定]] --- V(オン/オフ)にMML演奏/MIDI演奏で再生をループするように指定
+
 ▲ [[nadesiko3-tools]]
 - [[nadesiko3-tools/クリップボード取得]] --- クリップボードを取得する
 - [[nadesiko3-tools/クリップボード設定]] --- クリップボードを取得する
