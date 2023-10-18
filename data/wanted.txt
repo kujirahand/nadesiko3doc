@@ -40,6 +40,7 @@
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/DOMスキン]] --- ''
 - [[plugin_browser/DOMスキン辞書]] --- {}
+- [[plugin_browser/マーメイド作成]] --- Mermaid記法を使ってSRCのチャートを作成する
 - [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
