@@ -1,0 +1,17 @@
+●詳細な解説
+
+mermaid.jsのMermaid記法を使って、図(チャート)を追加します。
+
+●簡単な使い方
+
+{{{#nako3
+「graph LR
+  A --> B --> C
+  A --> D --> E」のマーメイド作成。
+}}}
+
+●参考
+
+- [[mermaid.js公式Webサイト:https://mermaid.js.org/]]
+- [[mermaidチート表:https://note.com/_kikiyo_/n/n67ca638d8c5c]]
+- [[手軽にチャートを組み込めるmermaid.js(マイナビJS連載):https://news.mynavi.jp/techplus/article/zerojavascript-27/]]
