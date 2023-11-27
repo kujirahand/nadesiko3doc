@@ -1,8 +1,8 @@
 「ドレミ」のテキストで音楽を演奏したり、MIDIファイルを指定して音楽を演奏できます。標準プラグインではないので「取り込む」でプラグインを読み込む必要があります。
 
-{{{
-!『https://cdn.jsdelivr.net/npm/nadesiko3-music@latest/nadesiko3-music.js』を取り込む
-「ドードレミーソー」をMML演奏。
+{{{#nako3(rows=5)
+!『拡張プラグイン:music.js』を取り込む
+「音符8 ドードレミミソー」をMML演奏。
 3秒待つ
 MML停止。
 }}}

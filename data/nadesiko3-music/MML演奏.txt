@@ -6,7 +6,7 @@
 
 {{{#nako3(rows=10)
 # --- ライブラリの取り込みが必要 ---
-!『https://cdn.jsdelivr.net/npm/nadesiko3-music@1.0.2/nadesiko3-music.js』を取り込む
+!『拡張プラグイン:nadesiko3-music.js』を取り込む
 # --- ループ再生を指定 ---
 オンにMIDIループ再生設定。
 # --- 音楽を再生
@@ -30,8 +30,7 @@ MML停止。
 以下は日本民謡のさくらさくらを演奏する例です。
 
 {{{#nako3(rows=10)
-!『https://cdn.jsdelivr.net/npm/nadesiko3-music@1.0.2/nadesiko3-music.js』を取り込む
-
+!『拡張プラグイン:nadesiko3-music.js』を取り込む
 『
 TrackName = {"さくらさくら 日本民謡"}
 テンポ100	//テンポの設定
@@ -91,7 +90,7 @@ Time(1:1:0);
 スクリプトやMML(ABC記法)と呼ばれる記述法を利用した曲データとなっています。
 
 {{{#nako3(rows=10)
-!『https://cdn.jsdelivr.net/npm/nadesiko3-music@1.0.2/nadesiko3-music.js』を取り込む
+!『拡張プラグイン:nadesiko3-music.js』を取り込む
 『
 //-------------------------------------------------
 TrackName     = {"Candy of kujirahand"}
