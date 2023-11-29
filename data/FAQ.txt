@@ -1,5 +1,14 @@
 ■よくある質問と答え
 
+{{{#html
+<!-- トップ絵 -->
+<div style="text-align:center">
+  <a href="https://nadesi.com/v3/doc/index.php?wnako">
+    <img src="https://n3s.nadesi.com/image.php?f=201.jpg" width=98%">
+  </a>
+</div>
+}}}
+
 ●一般的な質問
 
 - [[FAQ/何から始めたら良いの？]]

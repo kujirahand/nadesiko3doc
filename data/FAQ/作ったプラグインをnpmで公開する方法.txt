@@ -73,3 +73,22 @@ https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs
 
 3と5をHOGE足して表示。
 }}}
+
+●命名規則をうまく利用しよう
+
+命名規則をうまく利用すると拡張プラグインとしてURLの省略記法が可能です。
+以下の二つの記述方法は同じ意味になります。
+
+{{{
+!「https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs」を取り込む
+!「拡張プラグイン:hoge.mjs@0.0.6」を取り込む
+}}}
+
+つまり、プラグイン名を以下のようにすることで、拡張プラグイン記法が可能です。
+
+{{{
+nadesiko3-(名前)@0.0.6/nadesiko3-(名前).mjs」を取り込む
+}}}
+
+- [[(参考) #1574:https://github.com/kujirahand/nadesiko3/issues/1574]]
+
