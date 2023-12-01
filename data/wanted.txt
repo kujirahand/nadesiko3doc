@@ -6,7 +6,7 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/配列数値変換]] --- 配列Aを変換変換して返す(A自体を変更)
+- [[plugin_system/配列数値変換]] --- 配列Aの各要素を数値に変換して返す(変数A自体を変更)
 
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
@@ -18,6 +18,7 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
+- [[plugin_browser/ダイアログキャンセル値]] --- ''
 - [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
@@ -40,7 +41,6 @@
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/DOMスキン]] --- ''
 - [[plugin_browser/DOMスキン辞書]] --- {}
-- [[plugin_browser/マーメイド作成]] --- Mermaid記法を使ってSRCのチャートを作成する
 - [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
@@ -164,7 +164,6 @@
 - [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
 
 ▲ [[nadesiko3-music]]
-- [[nadesiko3-music/MML演奏]] --- MMLを演奏する
 - [[nadesiko3-music/MML停止]] --- MML演奏で開始した演奏を停止する
 - [[nadesiko3-music/MIDI演奏]] --- MIDIファイルのあるURLを指定して演奏する
 - [[nadesiko3-music/MIDI停止]] --- MIDI演奏で開始した演奏を停止する
