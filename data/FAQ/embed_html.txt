@@ -42,4 +42,8 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 
 - [[HTMLへの埋め込み:https://nadesi.com/v3/doc/index.php?html&show]]
 
+●参考
+
+- [[Qiita > なでしことGoogle Siteで、ちょっと便利なページをつくる:https://qiita.com/Osane/items/761b9c38eb8d5b6b6a1d]]
+
 
