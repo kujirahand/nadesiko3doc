@@ -1,0 +1,11 @@
+●使い方
+URLにある画像(Imageオブジェクト)を読み込み、読み込み完了を待ちます。
+『[[plugin_browser/画像読]]』とは違い、ウェイトを入れずとも描画できます。
+
+●簡単な例
+{{{#nako3(canvas)
+URL=「https://nadesi.com/v3/storage/image.php?f=9.png」
+URLの画像読み待ってIMに代入。
+IMを[0,0]に画像描画。
+}}}
+
