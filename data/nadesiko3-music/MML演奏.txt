@@ -1,4 +1,4 @@
-▲MML演奏の解説
+●MML演奏の解説
 
 「ドレミ」のテキストで音楽を演奏できます。標準プラグインではないので「取り込む」でプラグインを読み込む必要があります。
 
@@ -24,6 +24,7 @@ MML停止。
 
 - [[テキスト音楽「サクラ」:https://sakuramml.com/]]
 -- [[サクラのチュートリアル:https://sakuramml.com/go.php?16]]
+-- [[コマンド一覧:https://github.com/kujirahand/sakuramml-rust/blob/main/src/command.md]]
 
 ▲本格的な曲の利用例 - さくらさくら
 
@@ -189,3 +190,7 @@ PLAY(A02,___,C02,___,___,___,___,I02,I02,J02); //
 PLAY(C01,I02,___,___,___,___,___,___,___,___); //Last
 』をMML演奏。
 }}}
+
+▲関連
+- [[nadesiko3-music/MML停止]]
+- [[nadesiko3-music/MIDIループ再生設定]]

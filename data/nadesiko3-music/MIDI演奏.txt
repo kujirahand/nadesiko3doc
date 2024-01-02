@@ -1,0 +1,21 @@
+●『[[MIDI演奏:nadesiko3-music/MIDI演奏]]』の詳しい解説
+
+URLを指定してMIDIファイルを演奏します。
+標準プラグインではないので「取り込む」でプラグインを読み込む必要があります。
+
+▲使用例
+{{{#nako3(rows=10)
+# プラグインを取り込む
+!『拡張プラグイン:music.js』を取り込む。
+
+#MIDIファイルのあるURL
+URL＝「https://n3s.nadesi.com/image.php?f=388.mid」
+
+#演奏する
+URLをMIDI演奏。
+}}}
+
+▲関連
+- [[nadesiko3-music/MIDI停止]]
+- [[nadesiko3-music/MIDIループ再生設定]]
+

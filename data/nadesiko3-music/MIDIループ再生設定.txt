@@ -1,0 +1,35 @@
+●『[[MIDIループ再生設定:nadesiko3-music/MIDIループ再生設定]]』の詳しい解説
+
+オンに設定すると [[MML演奏:nadesiko3-music/MML演奏]]/[[MIDI演奏:nadesiko3-music/MIDI演奏]]の再生をループさせることが出来ます。
+[[MML停止:nadesiko3-music/MML停止]]/[[MIDI停止:nadesiko3-music/MIDI停止]]するまでループ再生し続けます。
+
+▲使用例
+{{{#nako3(rows=8)
+!『拡張プラグイン:music.js』を取り込む。
+URL＝「https://n3s.nadesi.com/image.php?f=388.mid」
+
+#ループ再生を設定
+オンにMIDIループ再生設定。
+
+#演奏する
+URLをMIDI演奏。
+}}}
+
+▲MML演奏もループできます
+{{{#nako3(rows=8)
+!『拡張プラグイン:music.js』を取り込む。
+
+#ループ再生を設定
+オンにMIDIループ再生設定。
+
+#演奏する
+「テンポ108　音符16　音階４
+大きく2　ドミソ↑ドミソ↑ドミソ↑ドミ"ソ
+小さく2　ド↓ソミドソミド↓ソミド↓ソミ」をMML演奏。
+}}}
+
+▲関連
+- [[nadesiko3-music/MML演奏]]
+- [[nadesiko3-music/MML停止]]
+- [[nadesiko3-music/MIDI演奏]]
+- [[nadesiko3-music/MIDI停止]]

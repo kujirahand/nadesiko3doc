@@ -1,0 +1,20 @@
+●『[[MIDI停止:nadesiko3-music/MIDI停止]]』の詳しい解説
+
+[[MIDI演奏:nadesiko3-music/MIDI演奏]]で開始した演奏を停止します。
+
+▲使用例
+{{{#nako3(rows=10)
+!『拡張プラグイン:music.js』を取り込む。
+URL＝「https://n3s.nadesi.com/image.php?f=388.mid」
+URLをMIDI演奏。
+
+# 5秒後に停める
+「５秒後に演奏停止します」と表示。
+5秒待つ。
+MIDI停止。
+
+「停止しました！」と表示。
+}}}
+
+▲関連
+- [[nadesiko3-music/MIDI演奏]]
