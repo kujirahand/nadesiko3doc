@@ -55,6 +55,16 @@
 
 - (参考) [[#1379:https://github.com/kujirahand/nadesiko3/issues/1379]]
 
+▲「もの」構文(v3.5.1以降)
+
+助詞の先頭に「もの」を付けても問題なく記述できます。
+
+{{{#nako3
+1に2を足したものを表示。
+1に2を足したものに5を掛けて表示。
+}}}
+
+- (参考) [[#1614:https://github.com/kujirahand/nadesiko3/issues/1614]]
 
 ●具体的にどのように区切っているの？
 
