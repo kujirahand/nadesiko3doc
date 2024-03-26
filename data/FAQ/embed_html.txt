@@ -16,7 +16,7 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 
 {{{
 <script type="text/javascript"
- src="https://nadesi.com/v3/cdn.php?v=3.3.&f=release/wnako3.js&run"
+ src="https://nadesi.com/v3/cdn.php?v=3.5.2&f=release/wnako3.js&run"
 ></script>
 }}}
 
@@ -33,10 +33,12 @@ HTMLに以下のJavaScriptのコードを記述します。HTMLに以下の一�
 
 <!-- なでしこの実行エンジンを取り込む -->
 <script type="text/javascript"
- src="https://nadesi.com/v3/cdn.php?v=3.1.8&f=release/wnako3.js&run"
+ src="https://nadesi.com/v3/cdn.php?v=3.5.2&f=release/wnako3.js&run"
 ></script>
 </body></html>
 }}}
+
+エンジンを指定する「nadesi.com/v3/cdn.php?v=3.5.2」の末尾のバージョンを変更すると任意のなでしこバージョンになります。
 
 ●さらに詳しい情報
 
