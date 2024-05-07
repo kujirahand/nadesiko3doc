@@ -1,6 +1,6 @@
 ●『[[HTTP取得:plugin_browser/HTTP取得]]』の詳しい解説
 
-『[[plugin_browser/AJAXテキスト取得]]』と同じです。
+『[[plugin_browser/AJAXテキスト取得]]』と同じです。なお、『[[オリジン間リソース共有 (CORS):https://developer.mozilla.org/ja/docs/Web/HTTP/CORS]]』の原則があるため、特別な許可のないWebサイトのデータは取得できないようになっています。なでしこ貯蔵庫で共有しているリソースは取得できるようになっています。
 
 {{{#nako3
 # 東京の天気予報を取得
