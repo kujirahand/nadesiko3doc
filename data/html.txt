@@ -138,6 +138,6 @@ navigator.nako3.setFunc("関数名", 引数, JS関数オブジェクト, 戻り�
 
 ●参考
 
-- [[JavaScriptの代わりになでしこを使ってみよう:https://qiita.com/kujirahand/items/a9ac3145a8d535a372dc]]
-
+- [[Qiita > JavaScriptの代わりになでしこを使ってみよう:https://qiita.com/kujirahand/items/a9ac3145a8d535a372dc]]
+- [[Qiita > なでしこ3で「表示」の出力先を変更したい:https://qiita.com/Osane/items/3dcf6fd76f9fd1834e0c]]
 
