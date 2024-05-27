@@ -21,7 +21,7 @@
 
 - [[plugin_browser/言]] --- ダイアログにメッセージを表示
 - [[plugin_browser/尋]]  --- 一行入力ボックスを表示
-- [[plugin_browser/表示ログ]] 
+- [[plugin_system/表示ログ]] 
 
 
 
