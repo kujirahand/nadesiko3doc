@@ -6,7 +6,7 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/配列数値変換]] --- 配列Aの各要素を数値に変換して返す(変数A自体を変更)
+- [[plugin_system/LEN]] --- Aの要素数を返す。Aには配列/辞書型/文字列を指定する。
 
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
@@ -18,7 +18,6 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/ダイアログキャンセル値]] --- ''
 - [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
@@ -45,7 +44,6 @@
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」または「raw」を設定する
-- [[plugin_browser/画像読待]] --- 画像のURLを読み込んでImageオブジェクトを返す。その際、画像の読み込みが終わるまで待つ。
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/話者速度]] --- 1.0
@@ -61,7 +59,7 @@
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 
 ▲ [[plugin_turtle]]
-- [[plugin_turtle/カメ描画先]] --- 'turtle_cv'
+- [[plugin_turtle/カメ描画先]] --- '#turtle_cv'
 - [[plugin_turtle/カメ速度]] --- 100
 
 ▲ [[plugin_node]]
@@ -163,12 +161,6 @@
 - [[plugin_webworker/ワーカーメッセージ送信]] --- WORKERにメッセージを送信する。(可変引数)
 - [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
 
-▲ [[nadesiko3-music]]
-- [[nadesiko3-music/MML停止]] --- MML演奏で開始した演奏を停止する
-- [[nadesiko3-music/MIDI演奏]] --- MIDIファイルのあるURLを指定して演奏する
-- [[nadesiko3-music/MIDI停止]] --- MIDI演奏で開始した演奏を停止する
-- [[nadesiko3-music/MIDIループ再生設定]] --- V(オン/オフ)にMML演奏/MIDI演奏で再生をループするように指定
-
 ▲ [[nadesiko3-tools]]
 - [[nadesiko3-tools/クリップボード取得]] --- クリップボードを取得する
 - [[nadesiko3-tools/クリップボード設定]] --- クリップボードを取得する
@@ -199,13 +191,11 @@
 - [[nadesiko3-sqlite3/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
 - [[nadesiko3-sqlite3/SQLITE3切替]] --- アクティブなSQlite3のデータベースをDB(SQLITE3開くで開いたもの)に切り替える
 - [[nadesiko3-sqlite3/SQLITE3実行時]] --- SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
+- [[nadesiko3-sqlite3/SQLITE3実行後]] --- 『SQLITE3実行時』と同じ。
 - [[nadesiko3-sqlite3/SQLITE3取得時]] --- SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
 - [[nadesiko3-sqlite3/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
 - [[nadesiko3-sqlite3/SQLITE3取得]] --- SQLをパラメータPARAMSで取得する。
 - [[nadesiko3-sqlite3/SQLITE3全取得]] --- SQLをパラメータPARAMSで全部取得する。
-- [[nadesiko3-sqlite3/SQLITE3逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
-- [[nadesiko3-sqlite3/SQLITE3逐次全取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
-- [[nadesiko3-sqlite3/SQLITE3逐次取得]] --- (非推奨)逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
 
 ▲ [[nadesiko3-htmlparser]]
 - [[nadesiko3-htmlparser/HTML_URL開]] --- 任意のURLを開いてパースする。
