@@ -44,4 +44,8 @@ Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキッ�
 
 - [[配布キットElectron版直接ダウンロード:https://github.com/kujirahand/nadesiko3electron]]
 
+●参考
+
+- [[FAQ/なでしこ3をインストールして使うには？]]
+
 

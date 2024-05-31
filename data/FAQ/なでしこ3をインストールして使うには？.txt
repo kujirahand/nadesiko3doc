@@ -1,0 +1,63 @@
+●FAQ/なでしこ3をインストールして使うには？
+
+なでしこ3には、いくつかのバリエーションがあります。
+
+・Webブラウザ上で動かす[[wnako]]
+・コマンドラインから動かすコマンドライン版の[[cnako]]
+・ブラウザエンジンを利用して動かす[[配布キット]]
+・PHPが動くWebサーバー上で動かせる[[phpnako]]
+
+この点、詳しくは、[[FAQ/ランタイムについて]]をご覧ください。
+
+このうち、一番の主力は、Webブラウザ上で動かせる[[wnako]]です。また、作ったプログラムを誰かに配付したり、PC上で動かすには[[配布キット]]がオススメです。
+事務処理など作業を自動化する目的で使うのであれば、[[cnako]]を使います。
+
+●wnakoを動かす方法 - HTMLに埋め込む方法
+
+なでしこ3は単なるJavaScriptのライブラリです。特にインストールしなくても、HTMLLにscriptタグを差し込むだけで手軽に実行できます。
+
+- [[FAQ/html]] ... HTMLへの埋め込み方法について
+
+●wnakoを動かす方法 - なでしこ3貯蔵庫を使う
+
+主力のwnakoのプログラムを最も簡単に動かすことができるのが、[[なでしこ3貯蔵庫:https://n3s.nadesi.com/]]です。アカウントさえ作れば、作ったプログラムを保存して、公開できます。
+
+この貯蔵庫は、とても便利でして、単に公開するだけでなく、パスワードで保護したり、選んだ人だけが実行できる限定公開機能も用意しています。
+
+- なでしこ3貯蔵庫 - https://n3s.nadesi.com/
+
+●wnakoを動かす方法 - 自分のサーバーに貯蔵庫をインストール
+
+なお「なでしこ3貯蔵庫」自体もオープンソースで公開しています。そのため、自分のサーバーに貯蔵庫をインストールして活用することが可能です。
+
+- オープンソース版なでしこ3貯蔵庫(nako3storage) - https://github.com/kujirahand/nako3storage/
+
+●wnakoを動かす方法 - KonaWikiのなでしこ3プラグインを使う
+
+また、なでしこ3のマニュアル（今見ているWebページ）もオープンソースで公開されているものです。これは、KonaWiki3というWikiアプリです。
+
+KonaWiki3には、なでしこを手軽に実行する[[nako3]]というプラグインが用意されています。このプラグインを利用することで、文章の中になでしこのプログラムを埋め込んだり、直接実行したりできます。
+
+- KonaWiki3 - https://github.com/kujirahand/konawiki3/
+-- [[nako3プラグインについて:https://kujirahand.com/konawiki3/index.php?nako3]]
+
+
+
+●cnakoを動かす方法 - Node.jsを使う
+
+コマンドライン版のなでしこcnako3を使うには、最初にNode.jsをインストールします。そして、コマンドラインから次のコマンドを実行してインストールします。
+
+なお、cnakoにはWindows版も用意しています。
+
+- [[Windowsでcnakoを使う方法:https://nadesi.com/doc3/index.php?Windows%2FDownload]]
+- [[macOSでcnakoを使う方法:https://nadesi.com/doc3/index.php?macos%2Finstall]]
+- [[Raspberry Piでcnakoを使う方法:https://nadesi.com/doc3/index.php?%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%9D%E3%81%86]]
+- [[OSごとの利用方法:https://nadesi.com/doc3/index.php?OS%E5%88%A5]]
+
+▲cnakoで使えるプラグインの一覧
+
+cnakoで使えるプラグインは、Node.jsのパッケージマネージャー「npm」に登録されています。以下で一覧を確認できます。
+
+- [[NPM > nadesiko3:https://www.npmjs.com/search?q=nadesiko3-]]
+
+

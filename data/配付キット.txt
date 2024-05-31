@@ -1,0 +1,144 @@
+■「なでしこ3配布キット」
+
+なでしこ3(Web版)のプログラムを、Windows/Mac/Linuxのデスクトップアプリとして配布できます。
+
+●配布キットの概要
+
+なでしこ3(Web版)のプログラムは、基本的にWebブラウザで動くプログラムです。そのため、なでしこ3(Web版)で作ったプログラムを、誰かに使ってもらいたい場合には、「[[なでしこ3貯蔵庫:https://n3s.nadesi.com/]]」に書き込んで使うのが簡単です。
+
+しかし、WindowsやmacOSのアプリとして配布したいとか、ネットがない環境でも動かしたい場合もあります。そこで、利用するのが「[[なでしこ3配布配布キット(nadesiko3webkit):https://github.com/kujirahand/nadesiko3webkit]]」です。
+
+●配布ファイルの作成方法
+
+Windows版とmacOS版とLinux版の実行ファイルを作成できます。
+
+▲(手順1) パッケージのダウンロード
+
+まずは、基本パッケージをダウンロードしましょう。下記の配布URLから、作成したいOS向けのパッケージをダウンロードします。 
+
+- [配布URL] [[基本パッケージのダウンロード:https://github.com/kujirahand/nadesiko3webkit/releases]]
+-- Win/Macはダウンロード可能(Linux版は[[ビルド:https://github.com/kujirahand/nadesiko3webkit]]が必要です。)
+
+▲ パッケージの種類について
+
+どのZIPファイルをダウンロードしたら良いのでしょうか？
+
+【Windows用】
+
+| win-nako3-webview.zip | WebView(Edge)ランタイム(※1)
+| win-nako3-chrome.zip  | Chomeランタイム
+
+【macOS用】
+
+| mac-nako3-webview.zip | WebView(Safari)ランタイム
+| mac-nako3-chrome.zip | Chomeランタイム
+
+(※1) Microsoftのサイトから[[WebView2ランタイム:https://developer.microsoft.com/ja-jp/microsoft-edge/webview2/]]のインストールが必要になります。
+
+(指南) 多くの方はGoogle Chromeをインストールしているため、Chromeランタイムがオススメです。しかし、Chromeのインストールをしたくない・できない方がいるので、その場合、WebViewランタイムも便利です。両方を配布してもそれほど大きなサイズではないので、ユーザーに選んでもらうのも良い選択かもしれません。
+
+
+▲(手順2) 実行テストしよう
+
+ZIPファイルを解凍したら、nadesiko3.exe(macならnadesiko3.app)の実行ファイルをダブルクリックしてみてください。無事になでしこ3が動くごとが分かったら次の作業に移りましょう。
+
+#ref(https://nadesi.com/doc3/attach/11.png,*無事に実行できるとカメが図形を描きます。,@https://github.com/kujirahand/nadesiko3webkit/releases)
+
+{{{#column
+(実行時のメモ) OSのセキュリティ保護機能により、Webサイトからダウンロードした実行ファイルは、実行が禁止される場合があります。
+
+- Windowsでは右クリック > プロパティで「許可する」のチェックを入れる必要があります。
+
+#ref(https://nadesi.com/doc3/attach/13.png,*Winではプロパティを表示して「許可する」にチェックを入れよう)
+
+- macOSの場合も、右クリックして実行をする必要がある可能性があります。
+
+（ファイアウォールのダイアログについて）配布キットの特徴ですが、Web版のなでしこ3をローカルPCで動かすために、簡易HTTPサーバーを起動します。一度、実行を許可すると、その後ダイアログは出ません。なでしこのプログラムとその素材ファイルにしかアクセスしないので安心してご利用ください。
+}}}
+
+
+▲(手順3) プログラムを差し替えよう
+
+配布用プログラムには、webappフォルダが含まれています。このフォルダを開くと「main.nako3」というファイルがあります。 このファイルが起動してすぐに実行されるプログラムです。テキストエディタなどを利用して配布したいプログラムに書き換えましょう。
+
+また、ウィンドウサイズやタイトルを変更したい場合は「index.json」を編集してください。
+
+#ref(https://nadesi.com/doc3/attach/12.png,*「webapp」フォルダの「main.nako3」を書き換えよう)
+
+macOSの場合は、nadesiko3.app/Contents/MacOS/webappにwebappディレクトリがあります。 nadesiko3.appを右クリックして「パッケージ内容を表示」を選択すると、Finderにファイルが表示されます。
+
+#ref(https://nadesi.com/doc3/attach/10.png,*macOS版のアーカイブ,@https://github.com/kujirahand/nadesiko3webkit/releases)
+
+
+そして、改めて「nadesiko3.exe(macならnadesiko3.app)」を実行します。なお画像ファイルを使いたい場合も、webappフォルダにコピーすれば利用できます。
+
+●特定のバージョンのなでしこ３で動かしたい場合
+
+「webapp/nadesiko3」以下に、[[ビルド済みのなでしこ3(こちら):https://www.jsdelivr.com/package/npm/nadesiko3]]のreleaseフォルダ以下のファイルをコピーします。
+
+●その他の情報
+
+▲プログラムがうまく動かない場合
+
+プログラムのエラーで動かない場合、画面を右クリックして「検証」を選択すると、デベロッパーツールが表示されます。 「Console」タブを開いてエラーが出ていないか確認してみましょう。 できるだけ、ユーザーにエラーを見せないように配慮して、わざとエラーを画面に出さないようにしています。
+
+{{{#column
+▲より安定した完全なアプリとして配布したい場合
+
+別の選択肢もあります。Node.jsのインストールが必要になり、アプリの配布サイズが大きくなりますが、フルブラウザ機能を搭載した配布パッケージ(210MB前後)を作成できます。これを使えば、実行ファイルの中にリソースファイルを全て梱包して1つの実行ファイルを作成できます。
+
+- [[なでしこ配布パック(electron版):https://github.com/kujirahand/nadesiko3electron]]
+
+}}}
+
+▲特殊命令について
+
+以下の特殊命令を使って、任意のアプリを起動したり、ローカルPCにファイルを保存したり、環境変数を参照したりできます。
+
+{{{#column
+- ファイル保存
+- ファイル読
+- ファイル一覧取得
+- 起動
+- 環境変数取得
+- 環境変数設定
+- 環境変数一覧取得
+}}}
+
+以下の命令は「**には ... ここまで」構文と組み合わせて使います。
+
+{{{#column
+- ファイル保存した時
+- ファイル読んだ時
+- ファイル一覧取得した時
+- 起動した時
+- 環境変数取得時
+- 環境変数設定時
+- 環境変数一覧取得時
+}}}
+
+詳しくは、[[こちら:https://github.com/kujirahand/nadesiko3webkit/blob/main/batch/res/README.md#%E7%89%B9%E6%AE%8A%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6]]を確認してください。
+
+▲(メモ)WindowsでWebView2を利用したい場合
+
+WindowsのWebView版は、最初からインストールされているEdge(Chromium)をランタイムに使います。とは言え、WebView2を使うには、WebView2ランタイムが必要になります。
+
+・Edge(Chromium版)がインストールされていること
+・[[WebView2のランタイム:https://developer.microsoft.com/ja-jp/microsoft-edge/webview2/]]
+
+WebView2のランタイムは以下のページ（一番下）より、「Evergreen Standalone Installer」を選んでインストールしてください。
+
+-[ランタイムのURL] [[ランタイムのダウンロード:https://developer.microsoft.com/en-us/microsoft-edge/webview2/]]
+
+▲ハマりポイントなど
+
+- [[(Qiita)なでしこ3配布キットを使ってみたよ！:https://qiita.com/snowdrops89/items/580e3b8a6b3383d64311]]が参考になります。特に以下の点。
+-- タイトルとウィンドウサイズの変更
+-- タイトル設定
+-- ローディングが消えない？！
+
+
+●更新情報
+
+- 2021/11/04 v0.0.5 --- macOS版はv0.0.5よりユニバーサルバイナリとなりIntel版、macOS版共通になりました。また、「起動時」命令を追加し、任意の外部アプリを実行できました。
+- 2021/10/17 v0.0.1 --- 初版リリース。
