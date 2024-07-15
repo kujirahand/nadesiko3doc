@@ -5,9 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/LEN]] --- Aの要素数を返す。Aには配列/辞書型/文字列を指定する。
-
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
 - [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
@@ -81,6 +78,8 @@
 - [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
 - [[plugin_node/POSTデータ生成]] --- 辞書形式のデータPARAMSをkey=value&key=value...の形式に変換する
+- [[plugin_node/POST送信]] --- 非同期通信(AJAX)でPOSTメソッドにてURLへPARAMS(辞書型)を送信して応答を戻す。
+- [[plugin_node/POSTフォーム送信]] --- 非同期通信(AJAX)でURLにPARAMS(辞書型)をフォームとしてPOSTメソッドにてURLへ送信し応答を返す。
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。
 - [[plugin_node/LINE送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへMESSAGEをLINE送信する。
 - [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。
@@ -95,33 +94,39 @@
 - [[plugin_httpserver/簡易HTTPサーバ移動]] --- 受信時にヘッダ302(リダイレクト)を出力してURLへページを移動力する。
 
 ▲ [[plugin_weykturtle3d]]
+- [[plugin_weykturtle3d/THREE]] --- ''
+- [[plugin_weykturtle3d/T3DベースURL]] --- 'https://cdn.jsdelivr.net/npm/three@0.127.0'
+- [[plugin_weykturtle3d/T3Dライブラリ読込]] --- ThreeJSのライブラリを動的に読み込む
+- [[plugin_weykturtle3d/T3Dライブラリ読込後]] --- ThreeJSのライブラリを動的に読み込む
+- [[plugin_weykturtle3d/T3Dプラグイン読込]] --- ThreeJSのプラグインを動的に読み込む
+- [[plugin_weykturtle3d/T3Dプラグイン読込後]] --- ThreeJSのプラグインを動的に読み込む
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 - [[plugin_weykturtle3d/T3Dカメ操作対象設定]] --- IDを指定して操作対象となるカメを変更する
 - [[plugin_weykturtle3d/T3Dカメ描画先]] --- 'turtle3d_div'
 - [[plugin_weykturtle3d/T3DカメモデルURL]] --- ''
 - [[plugin_weykturtle3d/T3Dカメモデル変更]] --- カメのモデルをURLに変更する
 - [[plugin_weykturtle3d/T3Dカメ速度]] --- 100
-- [[plugin_weykturtle3d/T3Dカメ速度設定]] --- カメの動作速度vに設定(大きいほど遅い)
+- [[plugin_weykturtle3d/T3Dカメ速度設定]] --- カメの動作速度Vに設定(大きいほど遅い)
 - [[plugin_weykturtle3d/T3Dカメ移動]] --- カメの位置を[x,y,z]へ移動する
 - [[plugin_weykturtle3d/T3Dカメ原点設定]] --- カメの原点を現在の位置・向きに設定する
 - [[plugin_weykturtle3d/T3Dカメ原点移動]] --- カメを原点の位置・向きに移動する(描画はしない)
 - [[plugin_weykturtle3d/T3Dカメ起点移動]] --- カメの描画起点位置を[x,y,z]へ移動する
-- [[plugin_weykturtle3d/T3Dカメ進]] --- カメの位置をVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ戻]] --- カメの位置をVだけ戻す
-- [[plugin_weykturtle3d/T3Dカメ上平行移動]] --- カメの位置を上にVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ下平行移動]] --- カメの位置を下にVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ左平行移動]] --- カメの位置を左にVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ右平行移動]] --- カメの位置を右にVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ動]] --- カメの位置をDIRにVだけ進める
-- [[plugin_weykturtle3d/T3Dカメ角度設定]] --- カメの向きをオイラー(XYZ)にて設定する
-- [[plugin_weykturtle3d/T3Dカメ右回転]] --- カメの向きをDEGだけ右に向ける
-- [[plugin_weykturtle3d/T3Dカメ左回転]] --- カメの向きをDEGだけ左に向ける
-- [[plugin_weykturtle3d/T3Dカメ上回転]] --- カメの向きをDEGだけ上に向ける
-- [[plugin_weykturtle3d/T3Dカメ下回転]] --- カメの向きをDEGだけ下に向ける
-- [[plugin_weykturtle3d/T3Dカメ回転]] --- カメの向きをDEGだけDIRに向ける
-- [[plugin_weykturtle3d/T3Dカメ右ロール]] --- カメをDEGだけ右に傾ける
-- [[plugin_weykturtle3d/T3Dカメ左ロール]] --- カメのDEGだけ左に傾ける
-- [[plugin_weykturtle3d/T3Dカメ傾]] --- カメをDEGだけDIRに傾ける
+- [[plugin_weykturtle3d/T3Dカメ進]] --- カメの位置をLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ戻]] --- カメの位置をLだけ戻す
+- [[plugin_weykturtle3d/T3Dカメ上平行移動]] --- カメの位置を上にLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ下平行移動]] --- カメの位置を下にLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ左平行移動]] --- カメの位置を左にLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ右平行移動]] --- カメの位置を右にLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ動]] --- カメの位置をDIRにLだけ進める
+- [[plugin_weykturtle3d/T3Dカメ角度設定]] --- カメの向きをオイラー([x,y,z,XYZ])にて設定する
+- [[plugin_weykturtle3d/T3Dカメ右回転]] --- カメの向きをAだけ右に向ける
+- [[plugin_weykturtle3d/T3Dカメ左回転]] --- カメの向きをAだけ左に向ける
+- [[plugin_weykturtle3d/T3Dカメ上回転]] --- カメの向きをAだけ上に向ける
+- [[plugin_weykturtle3d/T3Dカメ下回転]] --- カメの向きをAだけ下に向ける
+- [[plugin_weykturtle3d/T3Dカメ回転]] --- カメの向きをAだけDIRに向ける
+- [[plugin_weykturtle3d/T3Dカメ右ロール]] --- カメをAだけ右に傾ける
+- [[plugin_weykturtle3d/T3Dカメ左ロール]] --- カメのAだけ左に傾ける
+- [[plugin_weykturtle3d/T3Dカメ傾]] --- カメをAだけDIRに傾ける
 - [[plugin_weykturtle3d/T3Dカメペン色設定]] --- カメのペン描画色をCに設定する
 - [[plugin_weykturtle3d/T3Dカメペンサイズ設定]] --- カメペンのサイズをWに設定する
 - [[plugin_weykturtle3d/T3Dカメペン設定]] --- カメペンを使うかどうかをV(オン/オフ)に設定する
@@ -129,11 +134,22 @@
 - [[plugin_weykturtle3d/T3Dカメ非表示]] --- カメのモデルを非表示にする。描画に影響しない。
 - [[plugin_weykturtle3d/T3Dカメ表示]] --- 非表示にしたカメのモデルを表示する。
 - [[plugin_weykturtle3d/T3D視点カメ設定]] --- 指定したカメを視点として使用する
+- [[plugin_weykturtle3d/T3D自動描画]] --- true
+- [[plugin_weykturtle3d/T3D自動実行]] --- true
 - [[plugin_weykturtle3d/T3D描画準備]] --- 指定したDOMのIDに対する描画を準備し、描画オブジェクトを返す
 - [[plugin_weykturtle3d/T3D描画]] --- 現在の状態を描画する
+- [[plugin_weykturtle3d/T3D上書描画]] --- 現在の状態を元イメージをクリアせずに描画する
+- [[plugin_weykturtle3d/T3D実行]] --- 各カメの動きを経過時間等に従い実行する
 - [[plugin_weykturtle3d/T3D背景色設定]] --- canvasをクリアする際の背景色を設定する
 - [[plugin_weykturtle3d/T3D背景透過設定]] --- canvasをクリアする際の背景のアルファ値を設定する
 - [[plugin_weykturtle3d/T3DJSON取得]] --- 描画した線のJSON形式で取得する
+- [[plugin_weykturtle3d/T3Dレンダラ破棄]] --- 内部で使用しているレンダラを捨てる
+- [[plugin_weykturtle3d/T3D内部レンダラ取得]] --- 本プラグイン内部で使用しているレンダラを返す
+- [[plugin_weykturtle3d/T3D内部シーン取得]] --- 本プラグイン内部で使用しているシーンを返す
+- [[plugin_weykturtle3d/T3D内部カメラ取得]] --- 本プラグイン内部で使用しているカメラを返す
+- [[plugin_weykturtle3d/T3D内部線描画参照取得]] --- 本プラグイン内部で保持している描いた線のデータの参照を返す
+- [[plugin_weykturtle3d/T3D内部線描画取出]] --- 本プラグイン内部で保持している描いた線のデータを取り出して返す
+- [[plugin_weykturtle3d/T3D待]] --- Promiseの終了を待って結果を返す
 - [[plugin_weykturtle3d/T3Dコントロール有効]] --- 組み込んだコントロールを有効にする
 - [[plugin_weykturtle3d/T3Dコントロール無効]] --- 組み込んだコントロールを無効にする
 - [[plugin_weykturtle3d/T3Dカメラヘルパ表示]] --- カメラヘルパーを表示する
