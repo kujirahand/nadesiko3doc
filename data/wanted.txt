@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/範囲切取]] --- 文字列Sで文字列AからBまでの部分を抽出して返す。切り取った残りは特殊変数『対象』に代入される。(v1非互換)
+
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
 - [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
@@ -408,3 +411,7 @@
 - [[plugin_electron_node/データ呼出時]] --- レンダラからの呼び出しを受けた時の処理を登録する(evt, key, msg)
 - [[plugin_electron_node/データ送信]] --- レンダラにデータを送信する(webContent, key, data)
 - [[plugin_electron_node/データ呼出]] --- レンダラにデータを呼び出す(webContent, key, data)
+
+▲ [[nadesiko3-toml]]
+- [[nadesiko3-toml/TOMLデコード]] --- TOML文字列をオブジェクトにデコードして返す
+- [[nadesiko3-toml/TOMLエンコード]] --- オブジェクトをTOML文字列にエンコードする
