@@ -1,0 +1,13 @@
+TOMLは設定ファイル用の簡潔で読みやすいフォーマットです。特に構造化されたデータを人間が読みやすく書けるように設計されています。Windowsで使われているINIファイルにも似ています。
+
+{{{#nako3
+!「拡張プラグイン:toml.js@3.6.10」を取り込む。
+
+TOML=『
+name = { first = "kujira", last = "hand" }
+point = { x = 1, y = 2 }
+animal = { type.name = "pug" }』
+
+TOMLをTOMLデコードしてJSONエンコードして表示。
+TOMLをTOMLデコードしてTOMLエンコードして表示。
+}}}

@@ -1,0 +1,25 @@
+▲解説
+
+オブジェクトをTOML文字列にエンコードする
+
+▲利用例
+
+{{{#nako3
+!「拡張プラグイン:toml.js@3.6.10」を取り込む。
+
+TOML=『
+name = { first = "kujira", last = "hand" }
+point = { x = 1, y = 2 }
+animal = { type.name = "pug" }』
+
+TOMLをTOMLデコードしてJSONエンコードして表示。
+TOMLをTOMLデコードしてTOMLエンコードして表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-toml/TOMLエンコード]]
+- [[nadesiko3-toml/TOMLデコード]]
+- [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONデコード]]
+
