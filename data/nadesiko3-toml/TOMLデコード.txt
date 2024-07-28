@@ -1,0 +1,24 @@
+▲解説
+
+TOMLは設定ファイル用の簡潔で読みやすいフォーマットです。『TOMLデコード』　で文字列で書かれたTOMLデータをなでしこのオブジェクトに変換できます。
+
+▲利用例
+
+{{{#nako3
+!「拡張プラグイン:toml.js@3.6.10」を取り込む。
+
+TOML=『
+name = { first = "kujira", last = "hand" }
+point = { x = 1, y = 2 }
+animal = { type.name = "pug" }』
+
+TOMLをTOMLデコードしてJSONエンコードして表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-toml/TOMLエンコード]]
+- [[nadesiko3-toml/TOMLデコード]]
+- [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONデコード]]
+
