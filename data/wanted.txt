@@ -15,12 +15,12 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。
+- [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。(非同期関数)
 - [[plugin_browser/AJAXオプション]] --- ''
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX失敗時]] --- AJAX命令でエラーが起きたとき
-- [[plugin_browser/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(blob)形式で結果を得る。送信時『AJAXオプション』の値を参照。
+- [[plugin_browser/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(blob)形式で結果を得る。送信時『AJAXオプション』の値を参照。(非同期関数)
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -38,12 +38,12 @@
 - [[plugin_browser/DOMスキン]] --- ''
 - [[plugin_browser/DOMスキン辞書]] --- {}
 - [[plugin_browser/ヘッダ無テーブル作成]] --- 二次元配列AA(あるいは文字列の簡易CSVデータ)からヘッダ無しのTABLE要素を作成し、DOMオブジェクトを返す
-- [[plugin_browser/テーブルセル変更]] --- ARRAY<ARRAY<STRING>>に/V
-- [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。
+- [[plugin_browser/テーブルセル変更]] --- TABLE要素のセル[行,列]をVへ変更する。Vが二次元配列変数であれば複数のセルを一括変更する
+- [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。(非同期関数)
 - [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
 - [[plugin_browser/保存オプション]] --- 'json'
 - [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」または「raw」を設定する
-- [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。
+- [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/話者速度]] --- 1.0
 - [[plugin_browser/話者声高]] --- 1.0
@@ -65,8 +65,8 @@
 - [[plugin_node/一時フォルダ作成]] --- 指定のフォルダに作業用の一時フォルダを作成して取得して返す
 - [[plugin_node/圧縮解凍ツールパス]] --- '7z'
 - [[plugin_node/強制終了時]] --- Nodeでctrl+cでプログラムの実行が終了した時FUNCを実行する。もしFUNCが偽を返すと終了しない。非同期処理のとき動作する(#1010)
-- [[plugin_node/文字尋]] --- 標準入力を一行取得する。ただし自動で数値に変換しない
-- [[plugin_node/標準入力全取得]] --- 標準入力を全部取得して返す
+- [[plugin_node/文字尋]] --- 標準入力を一行取得する。ただし自動で数値に変換しない(非同期関数)
+- [[plugin_node/標準入力全取得]] --- 標準入力を全部取得して返す(非同期関数)
 - [[plugin_node/AJAX受信時]] --- 非同期通信(Ajax)でURLにデータを送信し、成功するとcallbackが実行される。その際『対象』にデータが代入される。
 - [[plugin_node/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -76,11 +76,11 @@
 - [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
 - [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
 - [[plugin_node/POSTデータ生成]] --- 辞書形式のデータPARAMSをkey=value&key=value...の形式に変換する
-- [[plugin_node/POST送信]] --- 非同期通信(AJAX)でPOSTメソッドにてURLへPARAMS(辞書型)を送信して応答を戻す。
-- [[plugin_node/POSTフォーム送信]] --- 非同期通信(AJAX)でURLにPARAMS(辞書型)をフォームとしてPOSTメソッドにてURLへ送信し応答を返す。
-- [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。
-- [[plugin_node/LINE送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへMESSAGEをLINE送信する。
-- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。
+- [[plugin_node/POST送信]] --- 非同期通信(AJAX)でPOSTメソッドにてURLへPARAMS(辞書型)を送信して応答を戻す。(非同期関数)
+- [[plugin_node/POSTフォーム送信]] --- 非同期通信(AJAX)でURLにPARAMS(辞書型)をフォームとしてPOSTメソッドにてURLへ送信し応答を返す。(非同期関数)
+- [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。(非同期関数)
+- [[plugin_node/LINE送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへMESSAGEをLINE送信する。(非同期関数)
+- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。(非同期関数)
 
 ▲ [[plugin_httpserver]]
 - [[plugin_httpserver/GETデータ]] --- ''
@@ -94,9 +94,9 @@
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/THREE]] --- ''
 - [[plugin_weykturtle3d/T3DベースURL]] --- 'https://cdn.jsdelivr.net/npm/three@0.127.0'
-- [[plugin_weykturtle3d/T3Dライブラリ読込]] --- ThreeJSのライブラリを動的に読み込む
+- [[plugin_weykturtle3d/T3Dライブラリ読込]] --- ThreeJSのライブラリを動的に読み込む(非同期関数)
 - [[plugin_weykturtle3d/T3Dライブラリ読込後]] --- ThreeJSのライブラリを動的に読み込む
-- [[plugin_weykturtle3d/T3Dプラグイン読込]] --- ThreeJSのプラグインを動的に読み込む
+- [[plugin_weykturtle3d/T3Dプラグイン読込]] --- ThreeJSのプラグインを動的に読み込む(非同期関数)
 - [[plugin_weykturtle3d/T3Dプラグイン読込後]] --- ThreeJSのプラグインを動的に読み込む
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 - [[plugin_weykturtle3d/T3Dカメ操作対象設定]] --- IDを指定して操作対象となるカメを変更する
@@ -147,7 +147,7 @@
 - [[plugin_weykturtle3d/T3D内部カメラ取得]] --- 本プラグイン内部で使用しているカメラを返す
 - [[plugin_weykturtle3d/T3D内部線描画参照取得]] --- 本プラグイン内部で保持している描いた線のデータの参照を返す
 - [[plugin_weykturtle3d/T3D内部線描画取出]] --- 本プラグイン内部で保持している描いた線のデータを取り出して返す
-- [[plugin_weykturtle3d/T3D待]] --- Promiseの終了を待って結果を返す
+- [[plugin_weykturtle3d/T3D待]] --- Promiseの終了を待って結果を返す(非同期関数)
 - [[plugin_weykturtle3d/T3Dコントロール有効]] --- 組み込んだコントロールを有効にする
 - [[plugin_weykturtle3d/T3Dコントロール無効]] --- 組み込んだコントロールを無効にする
 - [[plugin_weykturtle3d/T3Dカメラヘルパ表示]] --- カメラヘルパーを表示する
@@ -207,12 +207,12 @@
 - [[nadesiko3-sqlite3/SQLITE3実行時]] --- SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
 - [[nadesiko3-sqlite3/SQLITE3実行後]] --- 『SQLITE3実行時』と同じ。
 - [[nadesiko3-sqlite3/SQLITE3取得時]] --- SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
-- [[nadesiko3-sqlite3/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。
-- [[nadesiko3-sqlite3/SQLITE3取得]] --- SQLをパラメータPARAMSで取得する。
-- [[nadesiko3-sqlite3/SQLITE3全取得]] --- SQLをパラメータPARAMSで全部取得する。
+- [[nadesiko3-sqlite3/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。(非同期関数)
+- [[nadesiko3-sqlite3/SQLITE3取得]] --- SQLをパラメータPARAMSで取得する。(非同期関数)
+- [[nadesiko3-sqlite3/SQLITE3全取得]] --- SQLをパラメータPARAMSで全部取得する。(非同期関数)
 
 ▲ [[nadesiko3-htmlparser]]
-- [[nadesiko3-htmlparser/HTML_URL開]] --- 任意のURLを開いてパースする。
+- [[nadesiko3-htmlparser/HTML_URL開]] --- 任意のURLを開いてパースする。(非同期関数)
 - [[nadesiko3-htmlparser/HTMLパース]] --- 任意のHTML文字列をパースする。
 - [[nadesiko3-htmlparser/DOM検索]] --- DOMからクエリQを利用して合致するものを検索して配列で返す
 - [[nadesiko3-htmlparser/DOM要素取得]] --- パース済みHTMLからクエリQに該当するDOMを取得して返す
@@ -264,15 +264,15 @@
 - [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
 
 ▲ [[nadesiko3-smtp]]
-- [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'xxx',pass:'xxx'},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す
-- [[nadesiko3-smtp/GMAIL送信]] --- 辞書型のデータ{user:'xxx',pass:'xxx',宛先:'xxx',件名:'xxx',本文:'xxx',html:'xxx',添付:[{filename:'xxx', path:'xxx'}]}を指定してGMAILからメール送信して情報を返す
+- [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'xxx',pass:'xxx'},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す(非同期関数)
+- [[nadesiko3-smtp/GMAIL送信]] --- 辞書型のデータ{user:'xxx',pass:'xxx',宛先:'xxx',件名:'xxx',本文:'xxx',html:'xxx',添付:[{filename:'xxx', path:'xxx'}]}を指定してGMAILからメール送信して情報を返す(非同期関数)
 
 ▲ [[nadesiko3-office]]
 - [[nadesiko3-office/OFFICEバージョン]] --- '?'
 - [[nadesiko3-office/エクセル新規ブック]] --- Excelの新規ワークブックを生成してオブジェクトを返す
-- [[nadesiko3-office/エクセル開]] --- ファイルFILEからExcelワークブックを読んで返す
-- [[nadesiko3-office/エクセル保存]] --- ファイルFILEへ作業中のExcelワークブックを保存する
-- [[nadesiko3-office/エクセルCSV保存]] --- ファイルFILEへ作業中のExcelワークブックをCSVで保存する(ただしUTF-8のCSVとなる)
+- [[nadesiko3-office/エクセル開]] --- ファイルFILEからExcelワークブックを読んで返す(非同期関数)
+- [[nadesiko3-office/エクセル保存]] --- ファイルFILEへ作業中のExcelワークブックを保存する(非同期関数)
+- [[nadesiko3-office/エクセルCSV保存]] --- ファイルFILEへ作業中のExcelワークブックをCSVで保存する(ただしUTF-8のCSVとなる)(非同期関数)
 - [[nadesiko3-office/エクセル新規シート]] --- Excelの作業中のワークブックに新規シートNAMEを追加して返す
 - [[nadesiko3-office/エクセルシート取得]] --- NAMEのシートを取得して返す
 - [[nadesiko3-office/エクセルシート注目]] --- NAMEのシートを取得して返す
@@ -311,7 +311,7 @@
 ▲ [[plugin_postgresql]]
 - [[plugin_postgresql/PG開]] --- データベースを開く
 - [[plugin_postgresql/PG閉]] --- データベースを閉じる
-- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。
+- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。(非同期関数)
 - [[plugin_postgresql/PG逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
 
 ▲ [[plugin_php]]
@@ -390,9 +390,9 @@
 - [[plugin_electron_node/単発発生時]] --- 対象にて指定のイベントが発生した時の処理を登録する。イベント発生時に自動削除される
 - [[plugin_electron_node/呼出時]] --- 対象にて指定のInvoke呼び出しを受けた時の処理を登録する(evt, ...args)
 - [[plugin_electron_node/呼出]] --- 対象のInvokeを呼び出す
-- [[plugin_electron_node/ファイル選択]] --- ファイルを選択するダイアログを表示して結果を返す
-- [[plugin_electron_node/フォルダ選択]] --- フォルダを選択するダイアログを表示して結果を返す
-- [[plugin_electron_node/保存ファイル選択]] --- ファイルを保存するためのダイアログを表示して結果を返す
+- [[plugin_electron_node/ファイル選択]] --- ファイルを選択するダイアログを表示して結果を返す(非同期関数)
+- [[plugin_electron_node/フォルダ選択]] --- フォルダを選択するダイアログを表示して結果を返す(非同期関数)
+- [[plugin_electron_node/保存ファイル選択]] --- ファイルを保存するためのダイアログを表示して結果を返す(非同期関数)
 - [[plugin_electron_node/カーソル絶対位置取得]] --- マウスポインタの絶対位置をDIPポイント単位で返す
 - [[plugin_electron_node/主モニター取得]] --- 主画面に指定されているモニターのDisplayを返す
 - [[plugin_electron_node/全モニター取得]] --- 全てのモニターをDisplayの配列で返す
