@@ -13,4 +13,14 @@ DOM親要素に「<input type="color" id="color">」をHTML設定。
 ここまで。
 }}}
 
+▲HTMLのdata属性を取得する
+
+HTMLタグの「data-xxx」のような属性を取得するには次のようにします。
+
+{{{#nako3
+DOM親要素に「<a id="myLink" data-hoge="aaa">テスト</a>」をHTML設定。
+A=「#myLink」の「dataset」をDOM属性取得
+AをJSONエンコードして表示。
+}}}
+
 
