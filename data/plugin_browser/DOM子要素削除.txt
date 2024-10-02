@@ -38,4 +38,4 @@ DOMの要素PAの子から要素ELを削除してPAを返します。
 - [[plugin_browser/DOM要素作成]]
 - [[plugin_browser/DOM子要素追加]]
 - [[plugin_browser/DOM子要素削除]]
-
+- [[plugin_browser/DOM部品削除]]
