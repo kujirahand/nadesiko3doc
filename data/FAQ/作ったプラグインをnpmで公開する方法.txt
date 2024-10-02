@@ -60,16 +60,16 @@ jsDeliverというCDNを介して、世界中にライブラリが公開され�
 https://cdn.jsdelivr.net/npm/パッケージ名@バージョン/ファイル名
 }}}
 
-例えば、ライブラリ「nadeisko3-hoge」のバージョン0.0.6に含まれるファイル「nadesiko3-hoge.mjs」を取得するURLは以下のようになります。
+例えば、ライブラリ「nadeisko3-hoge」のバージョン3.6.15に含まれるファイル「nadesiko3-hoge.mjs」を取得するURLは以下のようになります。
 
 {{{
-https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs
+https://cdn.jsdelivr.net/npm/nadesiko3-hoge@3.6.15/nadesiko3-hoge.mjs
 }}}
 
 ●使用例
 
 {{{#nako3
-!「https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs」を取り込む。
+!「https://cdn.jsdelivr.net/npm/nadesiko3-hoge@3.6.15/nadesiko3-hoge.mjs」を取り込む。
 
 3と5をHOGE足して表示。
 }}}
@@ -84,10 +84,10 @@ https://cdn.jsdelivr.net/npm/nadesiko3-hoge@0.0.6/nadesiko3-hoge.mjs
 !「拡張プラグイン:hoge.mjs@0.0.6」を取り込む
 }}}
 
-つまり、プラグイン名を以下のようにすることで、拡張プラグイン記法が可能です。
+つまり、npmに公開したプラグインであれば、下記のように指定することで、プラグインの取り込みが可能です。
 
 {{{
-nadesiko3-(名前)@0.0.6/nadesiko3-(名前).mjs」を取り込む
+!「拡張プラグイン:nadesiko3-(名前)@0.0.6/nadesiko3-(名前).mjs」を取り込む
 }}}
 
 - [[(参考) #1574:https://github.com/kujirahand/nadesiko3/issues/1574]]
