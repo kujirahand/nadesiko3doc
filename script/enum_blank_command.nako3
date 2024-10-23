@@ -22,9 +22,11 @@ TTT=「
 FFをJSONエンコードして表示
 FFを反復
 　　O=対象。
+　　# OをJSONエンコードして表示。
 　　NAME=O["name"]
 　　PLUG=O["plugin"]
 　　DESC=O["desc"]
+　　TYPE=O["type"]
 　　# ファイルが存在しない場合
 　　PATH=「{WIKIフォルダ}/{PLUG}/{NAME}.txt」
 　　PATHが存在
@@ -37,6 +39,8 @@ FFを反復
 　　もし、PLUG=「plugin_node」ならば、続ける。
 　　もし、PLUG=「plugin_php」ならば、続ける。
 　　もし、PLUG=「plugin_express」ならば、続ける。
+　　# 関数の時はサンプルコードが必須
+　　もし、TYPE=「定数」あるいはTYPE=「変数」ならば、続ける。
 　　Sで『{{{#nako3』が何文字目。
 　　もし、それ＝0ならば
 　　　　命令表示。
