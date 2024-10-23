@@ -1,32 +1,29 @@
 ●『[[AJAX送信:plugin_browser/AJAX送信]]』の詳しい解説
 
-(非推奨) 『[[plugin_browser/AJAXテキスト取得]]』の利用を推奨します。
+「AJAXテキスト取得」と同じです。
 
-逐次実行と組み合わせて、順次Ajax通信を行います。
-その際、[[AJAXオプション:plugin_browser/AJAXオプション]]を指定できます。
+> v3.5.1以降、逐次実行が非推奨になり、命令の仕様が変更されています。
 
 ▲利用例 - 郵便番号APIを使う例
 
 221-0824の郵便番号から住所を調べます。
 
-{{{
+{{{#nako3
 ZIP = "221-0824"
 API = "https://api.aoikujira.com/zip/zip.php?fmt=json&zn={ZIP}"
-
-逐次実行
-　　先に、APIにAJAX送信。
-　　次に、J=対象をJSONデコード
-　　次に、J["result"]を表示。
-ここまで。
+J=APIにAJAX送信してJSONデコード。
+J["result"]を表示。
 }}}
 
 
 ●参考
 
-- [[逐次実行:https://nadesi.com/doc3/go.php?7607]] --- 文法の紹介
 - [[plugin_browser/HTTP取得]] --- GETメソッド
 - [[plugin_browser/POST送信]] --- POSTメソッド(逐次実行)
 - [[plugin_browser/AJAX送信時]] --- コールバック方式
 - [[plugin_browser/POST送信時]] --- コールバック方式でPOST
 - [[plugin_browser/POSTフォーム送信時]] --- コールバック方式でPOST
 
+▲仕様変更メモ
+
+- [[文法/逐次実行]] --- v3.5.1で廃止され「AJAX送信」命令の仕様は変更になりました
