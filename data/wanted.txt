@@ -15,7 +15,6 @@
 - [[plugin_promise/束]] --- 非同期処理をまとめる。
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/AJAX送信]] --- 「AJAXテキスト取得」と同じ。非同期通信(AJAX)でURLからテキストデータを取得する。(非同期関数)
 - [[plugin_browser/AJAXオプション設定]] --- AJAX命令でオプションを設定
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX失敗時]] --- AJAX命令でエラーが起きたとき
