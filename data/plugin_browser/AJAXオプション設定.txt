@@ -2,3 +2,27 @@
 
 [[AJAXオプション:plugin_browser/AJAXオプション]]を変更するメソッドです。
 
+▲利用例
+
+以下はオプションを無効にする例です。デフォルトでは無効になっています。
+
+{{{#nako3
+「」にAJAXオプション設定。
+}}}
+
+▲利用例
+
+GETメソッドを明示して送る場合、次のように指定します。
+
+{{{#nako3
+API=「https://api.aoikujira.com/like/api.php?m=get&item_id=1」
+{ method: 'GET' }にAJAXオプション設定。
+APIからAJAXテキスト取得して表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/AJAXオプション]]
+- [[plugin_browser/AJAXオプション設定]]
+
+

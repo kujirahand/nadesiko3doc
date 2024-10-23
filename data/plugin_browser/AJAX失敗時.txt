@@ -1,6 +1,22 @@
 ●『[[AJAX失敗時:plugin_browser/AJAX失敗時]]』の詳しい解説
 
-{{{
-# 準備中
+「AJAX送信時」命令で、AJAXに失敗した時に実行される関数を設定します。
+
+▲利用例
+
+{{{#nako3(rows=10)
+# 存在しないAPIを指定
+API_ERR = "https://api.aoikujira.com/zip/zip.php8"
+# 失敗時を指定
+AJAX失敗した時には(CODE)
+　　「[AJAX失敗] {CODE}」を表示。
+ここまで。
+APIにAJAX送信した時には
+　　対象を表示。
+ここまで。
 }}}
 
+▲参考
+
+- [[plugin_browser/AJAX送信時]]
+- [[plugin_browser/AJAX失敗時]]

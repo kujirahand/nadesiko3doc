@@ -2,4 +2,24 @@
 
 『[[AJAX送信:plugin_browser/AJAX送信]]』時のオプションを指定します。
 
+▲利用例
+
+{{{#nako3
+「」にAJAXオプション設定。
+}}}
+
+▲影響のある関数
+
+- [[plugin_browser/AJAXテキスト取得]]
+- [[plugin_browser/AJAX_JSON取得]]
+- [[plugin_browser/AJAXバイナリ取得]]
+- [[plugin_browser/AJAX保障送信]]
+- [[plugin_browser/AJAX受信時]]
+- [[plugin_browser/AJAX送信時]]
+
+▲参考
+
+- [[plugin_browser/AJAXオプション]]
+- [[plugin_browser/AJAXオプション設定]]
+
 
