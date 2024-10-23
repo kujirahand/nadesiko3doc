@@ -16,7 +16,6 @@
 
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
-- [[plugin_browser/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(blob)形式で結果を得る。送信時『AJAXオプション』の値を参照。(非同期関数)
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -27,9 +26,6 @@
 - [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
-- [[plugin_browser/クリップボード取得]] --- クリップボードの値を取得して結果を返す(ユーザーの許可が必要)。(非同期関数)
-- [[plugin_browser/読]] --- ブラウザのlocalStorageからVを読む
-- [[plugin_browser/保存オプション設定]] --- ブラウザのlocalStorageへの保存オプション「json」または「raw」を設定する
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
