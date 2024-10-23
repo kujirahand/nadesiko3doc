@@ -1,0 +1,15 @@
+▲説明
+
+AJAXでURLにアクセスしバイナリ(blob)形式で結果を得ます。
+送信時『AJAXオプション』の値を参照します。
+
+▲利用例
+
+{{{#nako3
+URL=「https://n3s.nadesi.com/image.php?f=44.png」
+URLからAJAXバイナリ取得して表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/AJAXオプション]]

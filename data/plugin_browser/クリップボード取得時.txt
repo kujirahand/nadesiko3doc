@@ -17,4 +17,5 @@
 
 ▲関連
 - [[plugin_browser/クリップボード設定]]
+- [[plugin_browser/クリップボード取得]]
 - [[plugin_browser/クリップボード取得時]]
