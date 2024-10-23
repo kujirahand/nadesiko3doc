@@ -1,35 +1,26 @@
 <?php
 // ----------------------------------------------------
-// konawiki3 index
+// konawiki3 - index.php
 // ----------------------------------------------------
-define('KONA3_FILE_CONFIG', 'konawiki3.ini.php');
+define('KONA3_DIR_INDEX', __DIR__);
 
-// http => https
-if (empty($_SERVER['HTTPS'])) {
-  if ($_SERVER['HTTP_HOST'] == 'nadesi.com') {
-    header("Location: https://".
-        $_SERVER['HTTP_HOST'].
-        $_SERVER['REQUEST_URI']);
-  }
+// Read Directories info
+$file_kona3dir_def = __DIR__.'/kona3dir.def.php';
+if (file_exists($file_kona3dir_def)) {
+  require_once $file_kona3dir_def;
+} else {
+  define('KONA3_DIR_ENGINE',  __DIR__.'/kona3engine');
+  define('KONA3_DIR_SKIN',    __DIR__.'/skin');
+  define('KONA3_DIR_DATA',    __DIR__.'/data');
+  define('KONA3_DIR_PRIVATE', __DIR__.'/private');
+  define('KONA3_DIR_CACHE',   __DIR__.'/cache');
 }
 
-// Check config file
-$file_config = dirname(__FILE__).'/'.KONA3_FILE_CONFIG;
-if (!file_exists($file_config)) {
-  $url = 'http://kujirahand.com/konawiki3/index.php?install';
-  echo "<html><body><h1>";
-  echo "<a href='$url'>Please install.</a>";
-  echo "</h1></body></html>";
+// Execute kona3engine/index.inc.php
+$engine_index = KONA3_DIR_ENGINE.'/index.inc.php';
+if (!file_exists($engine_index)) {
+  echo '<p><a href="https://kujirahand.com/konawiki3/index.php?install%2Fkona3dir.def.php">Please check KONA3_DIR_ENGINE</a></p>'."\n";
   exit;
 }
-// Read config
-require_once($file_config);
-
-// Include kona3engine/index.inc.php
-$engine_index = "kona3engine/index.inc.php";
-if (defined("KONA3_DIR_ENGINE")) {
-  $engine_index = KONA3_DIR_ENGINE."/index.inc.php";
-}
-require_once($engine_index);
-
+include_once $engine_index;
 
