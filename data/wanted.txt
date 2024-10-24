@@ -24,6 +24,7 @@
 - [[plugin_browser/BLOB作成]] --- DATA(配列型)をOPTIONS(辞書型)でBlobオブジェクトを作成する。
 - [[plugin_browser/POST逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
+- [[plugin_browser/右クリック時]] --- 無名関数FでDOMを右クリックした時に実行するイベント(contextmenu)を設定
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
