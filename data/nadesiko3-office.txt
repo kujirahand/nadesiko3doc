@@ -1,1 +1,2 @@
-Excelファイルを読み書きするための命令群です。詳しくは[[こちら:https://github.com/kujirahand/nadesiko3-office]]
+Excelファイルを読み書きするための命令群です。詳しくは[[こちら:https://github.com/kujirahand/nadesiko3-office]]。
+拡張プラグインであるため、利用前にプラグインを追加する必要があります。
