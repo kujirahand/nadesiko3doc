@@ -2,6 +2,7 @@
 - [[🏠全体トップ:https://nadesi.com/]]
 - [[📙チュートリアル:チュートリアル]]
 - [[📙文法について:文法]]
+- [[🍯貯蔵庫:https://n3s.nadesi.com/]]
 - [[👣ランタイムとは:FAQ/ランタイムについて]]
 - [[❓FAQ...:FAQ]]
 - [[🔽ダウンロード:ダウンロード]]
@@ -13,21 +14,18 @@
 - [[🐘PHP版の命令:phpnako]]
 - [[📖全端末の命令:命令一覧/機能順]]
 
-▲命令一覧 > カナ順
-- [[命令一覧/カナ順]]
-- [[プラグイン一覧]]
-
-▲ツール
-- [[🍯貯蔵庫:https://n3s.nadesi.com/]]
-- [[📝簡易エディタ:https://nadesi.com/doc3/go.php?10]]
-- [[🐂なでしこ3配布パック:https://nadesi.com/doc3/go.php?16421]]
-- [[🐂なでしこ3ハブ:https://github.com/kujirahand/nadesiko3hub]]
-- [[#なでしこさん(Twitter):https://twitter.com/search?q=%23%E3%81%AA%E3%81%A7%E3%81%97%E3%81%93%E3%81%95%E3%82%93]]
+▲命令一覧 > 索引
+- [[📒カナ順:命令一覧/カナ順]]
+- [[📒プラグイン一覧:プラグイン一覧]]
 
 ▲その他
+- [[📍最近更新:最近更新]]
+- [[📍X:https://x.com/search?q=%23%E3%81%AA%E3%81%A7%E3%81%97%E3%81%93%E3%81%95%E3%82%93&src=typed_query]]
+- [[😊Discord:https://discord.gg/WkaQAxbDaE]]
 
-- [[最近更新]]
+{{{#rem
 - [[投稿コメントについて]]
+}}}
 
 #counter
 

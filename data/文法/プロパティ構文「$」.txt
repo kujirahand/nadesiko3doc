@@ -78,9 +78,36 @@ B$幅=3em
 C$幅=3em
 }}}
 
+▲DOMに対する解説
+
+DOMに対するプロパティ構文は次のチュートリアルで分かりやすく紹介しています。
+
+- [[チュートリアル/プロパティ構文]]
+
+▲__setProp/__getPropメソッドの定義
+
+オブジェクトに「__setProp(prop, value)」と「__getProp(prop)」を定義すると、プロパティを参照した時にそのメソッドが呼び出されます。
+
+{{{#nako3(rows=10)
+# --- setter / getter を定義 ---
+FN_GET=JS実行(『(function(p){ return this[p]; })』)
+FN_SET=JS実行(『(function(p, v){this[p]=v*10;})』)
+# --- オブジェクトに特殊メソッドを定義 ---
+A={
+  "犬": 30,
+  "__setProp": FN_SET,
+  "__getProp": FN_GET
+}
+# --- setter が10倍されるのを確認 ---
+A$犬=2
+A$犬を表示。
+}}}
+
+
+
 ●参照
 
 - [[プロパティ「$」構文 #1793:https://github.com/kujirahand/nadesiko3/issues/1793]]
 - [[CSSの単位を文字列に変換する #1811:https://github.com/kujirahand/nadesiko3/issues/1811]]
-
+- [[DOMのプロパティ構文でカスタムプロパティ…#1823:https://github.com/kujirahand/nadesiko3/issues/1823]]
 
