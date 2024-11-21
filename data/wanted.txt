@@ -71,7 +71,6 @@
 - [[plugin_weykturtle3d/T3Dカメ原点設定]] --- カメの原点を現在の位置・向きに設定する
 - [[plugin_weykturtle3d/T3Dカメ原点移動]] --- カメを原点の位置・向きに移動する(描画はしない)
 - [[plugin_weykturtle3d/T3Dカメ起点移動]] --- カメの描画起点位置を[x,y,z]へ移動する
-- [[plugin_weykturtle3d/T3Dカメ進]] --- カメの位置をLだけ進める
 - [[plugin_weykturtle3d/T3Dカメ戻]] --- カメの位置をLだけ戻す
 - [[plugin_weykturtle3d/T3Dカメ上平行移動]] --- カメの位置を上にLだけ進める
 - [[plugin_weykturtle3d/T3Dカメ下平行移動]] --- カメの位置を下にLだけ進める
@@ -201,15 +200,15 @@
 - [[nadesiko3-websocket/WSサーバ起動失敗時]] --- WSサーバ起動が失敗した時にcallbackを実行
 - [[nadesiko3-websocket/WSサーバ接続時]] --- WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
 - [[nadesiko3-websocket/WSサーバ受信時]] --- WSサーバでメッセージを受信した時に実行される。クライアントのIPアドレスとポートは『WSサーバー相手』に受信データは『対象』に代入される
-- [[nadesiko3-websocket/WSサーバ相手]] --- ''
 - [[nadesiko3-websocket/WSサーバ全送信]] --- WSサーバで全員にメッセージSを送信する
+- [[nadesiko3-websocket/WSサーバ相手]] --- ''
 - [[nadesiko3-websocket/WSサーバ個別送信]] --- WSサーバで個別にメッセージSを送信する
 - [[nadesiko3-websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す
 
 ▲ [[nadesiko3-ml]]
 - [[nadesiko3-ml/SVM開]] --- 機械学習のアルゴリズムSVMをパラメータOPTIONで開く。 OPTION={type,kernel,gamma,cost}
-- [[nadesiko3-ml/ランダムフォレスト回帰開]] --- 機械学習のアルゴリズムRandom Forestの回帰をパラメータPARAMSで開く
 - [[nadesiko3-ml/ランダムフォレスト開]] --- 機械学習のアルゴリズムRandom ForestをOPTIONで開く。OPTION={seed,maxFeatures,replacement=(true/false),nEstimators}
+- [[nadesiko3-ml/ランダムフォレスト回帰開]] --- 機械学習のアルゴリズムRandom Forestの回帰をパラメータPARAMSで開く
 - [[nadesiko3-ml/学習]] --- 入力配列inputsとラベル配列labelsで機械学習する
 - [[nadesiko3-ml/予測]] --- 入力配列inputsで予測し機械学習の結果を配列で返す
 - [[nadesiko3-ml/アヤメデータ取得]] --- アヤメデータをJSON形式で取得して返す
@@ -220,7 +219,6 @@
 
 ▲ [[nadesiko3-mecab]]
 - [[nadesiko3-mecab/MECABバージョン]] --- '?'
-- [[nadesiko3-mecab/MECABオプション]] --- ''
 - [[nadesiko3-mecab/MECABオプション設定]] --- Mecab実行時のオプションを指定する
 - [[nadesiko3-mecab/MECAB]] --- Sについて形態素解析を行って結果を二次元配列で返す
 - [[nadesiko3-mecab/MECABヨミガナ取得]] --- Sについてヨミガナを取得する
@@ -262,8 +260,8 @@
 
 ▲ [[plugin_mssql]]
 - [[plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
-- [[plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
 - [[plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
+- [[plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
 
 ▲ [[plugin_mysql]]
 - [[plugin_mysql/MYSQL開]] --- データベースを開く
@@ -272,6 +270,8 @@
 
 ▲ [[plugin_postgresql]]
 - [[plugin_postgresql/PG開]] --- データベースを開く
-- [[plugin_postgresql/PG逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
-- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。(非同期関数)
 - [[plugin_postgresql/PG閉]] --- データベースを閉じる
+- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。(非同期関数)
+- [[plugin_postgresql/PG逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
+- [[nadesiko3-mecab/MECABオプション]] --- ''
+- [[plugin_weykturtle3d/T3Dカメ進]] --- カメの位置をLだけ進める
