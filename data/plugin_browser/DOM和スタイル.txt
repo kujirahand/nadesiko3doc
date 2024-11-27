@@ -26,4 +26,5 @@ DOM和スタイルをJSONエンコード整形して表示。
 - [[plugin_browser/DOMスタイル設定]]
 - [[plugin_browser/DOMスタイル一括設定]]
 - [[plugin_browser/DOM和属性]]
+- [[plugin_browser/DOMプロパティ情報]]
 - [[文法/プロパティ構文「$」]]
