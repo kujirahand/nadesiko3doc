@@ -6,9 +6,15 @@
 
 
 ▲ [[plugin_system]]
+- [[plugin_system/右トリム]] --- 文字列Sの末尾にある空白を削除する
+- [[plugin_system/末尾空白除去]] --- 文字列Sの末尾にある空白を削除する
 - [[plugin_system/JSON_E]] --- オブジェクトVをJSON形式にエンコードして返す(JSONエンコードと同じ)
 - [[plugin_system/JSON_ES]] --- オブジェクトVをJSON形式にエンコードして整形して返す(JSONエンコード整形と同じ)
 - [[plugin_system/JSON_D]] --- JSON文字列Sをオブジェクトにデコードして返す(JSONデコードと同じ)
+- [[plugin_system/配列只結合]] --- 配列Aの要素をただ結合して文字列で返す。(「」で配列結合と同じ)
+- [[plugin_system/デバッグ表示]] --- デバッグ用にSを表示する
+- [[plugin_system/ハテナ関数設定]] --- ハテナ関数「?? (計算式)」の動作をカスタマイズする。文字列の配列を指定可能で、システム関数名か「js:code」を指定可能。
+- [[plugin_system/ハテナ関数実行]] --- 『ハテナ関数設定』で設定した関数を実行する
 
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
@@ -29,7 +35,6 @@
 - [[plugin_browser/BLOB作成]] --- DATA(配列型)をOPTIONS(辞書型)でBlobオブジェクトを作成する。
 - [[plugin_browser/POST逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
-- [[plugin_browser/DOMプロパティ情報]] --- undefined
 - [[plugin_browser/DOM設定変更]] --- DOMの属性とスタイルPROP(配列で指定可能)を適当にVALUEに設定
 - [[plugin_browser/DOM設定取得]] --- DOMの属性とスタイルPROP(配列で指定可能)の値を適当に取得
 - [[plugin_browser/DOM有効設定]] --- DOMのdata-有効の値を設定
@@ -70,6 +75,7 @@
 - [[plugin_node/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_node/AJAX内容取得]] --- 非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
+- [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
 - [[plugin_node/POSTデータ生成]] --- 辞書形式のデータPARAMSをkey=value&key=value...の形式に変換する
 - [[plugin_node/POST送信]] --- 非同期通信(AJAX)でPOSTメソッドにてURLへPARAMS(辞書型)を送信して応答を戻す。(非同期関数)
 - [[plugin_node/POSTフォーム送信]] --- 非同期通信(AJAX)でURLにPARAMS(辞書型)をフォームとしてPOSTメソッドにてURLへ送信し応答を返す。(非同期関数)
@@ -273,8 +279,8 @@
 - [[nadesiko3-office/エクセルシート注目]] --- NAMEのシートを取得して返す
 - [[nadesiko3-office/エクセルセル設定]] --- セル(例えば「A1」)へVを設定する
 - [[nadesiko3-office/エクセル設定]] --- セル(例えば「A1」)へVを設定する
-- [[nadesiko3-office/エクセルセル取得]] --- セル(例えば「A1」)の値を取得して返す
 - [[nadesiko3-office/エクセル一括設定]] --- 左上のセル(例えば「A1」)を起点にして、二次元配列変数VALUESを一括設定する
+- [[nadesiko3-office/エクセルセル取得]] --- セル(例えば「A1」)の値を取得して返す
 - [[nadesiko3-office/エクセル取得]] --- セル(例えば「A1」)の値を取得して返す
 - [[nadesiko3-office/エクセル一括取得]] --- 左上のセルC1(例えば「A1」)から右下のC2までの値を取得して二次元配列変数で返す
 - [[nadesiko3-office/エクセルシート列挙]] --- 作業中のブックのシート一覧取得して返す
@@ -401,4 +407,3 @@
 - [[plugin_electron_node/データ呼出時]] --- レンダラからの呼び出しを受けた時の処理を登録する(evt, key, msg)
 - [[plugin_electron_node/データ送信]] --- レンダラにデータを送信する(webContent, key, data)
 - [[plugin_electron_node/データ呼出]] --- レンダラにデータを呼び出す(webContent, key, data)
-- [[plugin_node/AJAX受信]] --- 「!非同期モード」で非同期通信(Ajax)でURLからデータを受信する。『AJAXオプション』を指定できる。結果は変数『対象』に入る
