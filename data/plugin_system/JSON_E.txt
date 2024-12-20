@@ -1,0 +1,14 @@
+▲解説
+
+『JSONエンコード』の簡略版です。
+
+▲利用例
+
+{{{#nako3
+[1,2,3]をJSON_Eして表示。
+}}}
+
+▲参考
+
+- [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONデコード]]
