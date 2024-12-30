@@ -39,7 +39,7 @@ F鍵=「テスト:abcd」#「キー:パスワード」を指定
 (リポジトリ) https://github.com/kujirahand/nako3kvs
 }}}
 
-- [[なでしこ簡単保存APIの拡張ライブラリ:https://n3s.nadesi.com/index.php?page=877]]
+- [[なでしこ簡単保存APIの拡張ライブラリ:https://n3s.nadesi.com/show/nako3kvs]]
 
 
 
