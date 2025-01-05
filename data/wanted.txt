@@ -6,14 +6,14 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/右トリム]] --- 文字列Sの末尾にある空白を削除する
-- [[plugin_system/末尾空白除去]] --- 文字列Sの末尾にある空白を削除する
-- [[plugin_system/JSON_E]] --- オブジェクトVをJSON形式にエンコードして返す(JSONエンコードと同じ)
+- [[plugin_system/MAX]] --- 2個以上の数値のうち最大値を返す。(可変引数)
+- [[plugin_system/最大値]] --- 2個以上の数値のうち最大値を返す。(可変引数)
+- [[plugin_system/MIN]] --- 2個以上の数値のうち最小値を返す。(可変引数)
+- [[plugin_system/最小値]] --- 2個以上の数値のうち最小値を返す。(可変引数)
+- [[plugin_system/CLAMP]] --- 数値を下限から上限の範囲内に収めた値を返す。
 - [[plugin_system/JSON_ES]] --- オブジェクトVをJSON形式にエンコードして整形して返す(JSONエンコード整形と同じ)
 - [[plugin_system/JSON_D]] --- JSON文字列Sをオブジェクトにデコードして返す(JSONデコードと同じ)
 - [[plugin_system/配列只結合]] --- 配列Aの要素をただ結合して文字列で返す。(「」で配列結合と同じ)
-- [[plugin_system/デバッグ表示]] --- デバッグ用にSを表示する
-- [[plugin_system/ハテナ関数設定]] --- ハテナ関数「?? (計算式)」の動作をカスタマイズする。文字列の配列を指定可能で、システム関数名か「js:code」を指定可能。
 - [[plugin_system/ハテナ関数実行]] --- 『ハテナ関数設定』で設定した関数を実行する
 
 ▲ [[plugin_promise]]
@@ -57,6 +57,9 @@
 - [[plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
 - [[plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
+- [[plugin_browser/ハッシュ値計算]] --- データSをアルゴリズムALG(sha-256/sha-384/sha-512)のエンコーディングでハッシュ値を計算して返す(非同期関数)
+- [[plugin_browser/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
+- [[plugin_browser/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
@@ -82,6 +85,8 @@
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。(非同期関数)
 - [[plugin_node/LINE送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへMESSAGEをLINE送信する。(非同期関数)
 - [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。(非同期関数)
+- [[plugin_node/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
+- [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
 ▲ [[plugin_httpserver]]
 - [[plugin_httpserver/GETデータ]] --- ''
