@@ -5,17 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/MAX]] --- 2個以上の数値のうち最大値を返す。(可変引数)
-- [[plugin_system/最大値]] --- 2個以上の数値のうち最大値を返す。(可変引数)
-- [[plugin_system/MIN]] --- 2個以上の数値のうち最小値を返す。(可変引数)
-- [[plugin_system/最小値]] --- 2個以上の数値のうち最小値を返す。(可変引数)
-- [[plugin_system/CLAMP]] --- 数値を下限から上限の範囲内に収めた値を返す。
-- [[plugin_system/JSON_ES]] --- オブジェクトVをJSON形式にエンコードして整形して返す(JSONエンコード整形と同じ)
-- [[plugin_system/JSON_D]] --- JSON文字列Sをオブジェクトにデコードして返す(JSONデコードと同じ)
-- [[plugin_system/配列只結合]] --- 配列Aの要素をただ結合して文字列で返す。(「」で配列結合と同じ)
-- [[plugin_system/ハテナ関数実行]] --- 『ハテナ関数設定』で設定した関数を実行する
-
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
 - [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
