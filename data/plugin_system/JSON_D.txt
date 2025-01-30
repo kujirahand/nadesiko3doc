@@ -11,3 +11,4 @@ JSON文字列Sをオブジェクトにデコードして返します。(JSONデ�
 ▲参考
 
 - [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONデコード]]
