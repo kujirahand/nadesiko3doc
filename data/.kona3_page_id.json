@@ -1146,5 +1146,7 @@
     "plugin_system\/最大値": 4665,
     "plugin_system\/MIN": 4666,
     "plugin_system\/最小値": 4667,
-    "plugin_system\/CLAMP": 4668
+    "plugin_system\/CLAMP": 4668,
+    "plugin_webworker\/ワーカーJS起動": 4669,
+    "plugin_node\/絶対パス変換": 4670
 }
