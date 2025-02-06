@@ -1,0 +1,8 @@
+●説明
+
+LINE Notifyを利用してメッセージを送信する命令です。
+ただし、LINE Notifyは、2025年3月で終了してしまいます。
+そのため、2025年4月以降にこの命令を使うと、エラーを出力します。
+
+- https://notify-bot.line.me/closing-announce
+
