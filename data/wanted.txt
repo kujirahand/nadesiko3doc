@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_csv]]
+- [[plugin_csv/CSVオプション設定]] --- 「CSV取得」「表CSV変換」命令のオプションOBJ{delimiter,eol,auto_convert_number}をオブジェクトで指定
+
 ▲ [[plugin_promise]]
 - [[plugin_promise/そ]] --- ''
 - [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
@@ -53,7 +56,6 @@
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
 - [[plugin_node/EUCファイル保存]] --- Sをeuc-jp形式でファイルFへ書き込む
-- [[plugin_node/絶対パス変換]] --- 相対パスから絶対パスに変換して返す
 - [[plugin_node/テンポラリフォルダ]] --- テンポラリフォルダのパスを取得して返す
 - [[plugin_node/一時フォルダ作成]] --- 指定のフォルダに作業用の一時フォルダを作成して取得して返す
 - [[plugin_node/圧縮解凍ツールパス]] --- '7z'
