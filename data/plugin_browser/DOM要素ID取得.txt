@@ -13,5 +13,5 @@ DOM親要素に「
 ▲参考
 
 - [[DOM要素取得:plugin_browser/DOM要素取得]] ... CSSクエリで1つ要素を得る
-- [[DOM要素取得:plugin_browser/DOM要素全取得]] ... CSSクエリで全要素を得る
+- [[DOM要素全取得:plugin_browser/DOM要素全取得]] ... CSSクエリで全要素を得る
 
