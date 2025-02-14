@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/真偽判定]] --- 引数bが真(true)ならば「真」を偽(false)ならば「偽」を返す
+
 ▲ [[plugin_csv]]
 - [[plugin_csv/CSVオプション設定]] --- 「CSV取得」「表CSV変換」命令のオプションOBJ{delimiter,eol,auto_convert_number}をオブジェクトで指定
 
