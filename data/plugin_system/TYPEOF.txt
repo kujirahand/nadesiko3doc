@@ -1,14 +1,12 @@
 ●『[[TYPEOF:plugin_system/TYPEOF]]』の詳しい解説
 
-変数Vの型を返します。
-「変数型確認」と同じです。
+変数Vの型を返します。「[[変数型確認:plugin_system/変数型確認]]」と同じです。
 
-{{{#nako3
-S=「あああ」。N=123。O=[1,2,3]。
-
-TYPEOF(S)を表示。
-TYPEOF(N)を表示。
-TYPEOF(O)を表示。
+{{{#nako3(rows=5)
+TYPEOF(「あああ」)を表示。# string
+TYPEOF(123)を表示。# number
+TYPEOF([1,2,3])を表示。# object
+TYPEOF(真)を表示。# boolean
 }}}
 
 ▲関連

@@ -7,5 +7,7 @@
 
 ▲参考
 
+- [[文法/真偽値]]
+- [[plugin_system/真偽判定]]
 - [[plugin_system/オン]]
 - [[plugin_system/オフ]]

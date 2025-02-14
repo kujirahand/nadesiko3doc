@@ -9,6 +9,7 @@
 
 ▲参考
 
+- [[文法/真偽値]]
 - [[plugin_system/真]]
 - [[plugin_system/偽]]
 

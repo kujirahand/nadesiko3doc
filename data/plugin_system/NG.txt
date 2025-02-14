@@ -1,7 +1,21 @@
-●『[[NG:plugin_system/NG]]』の詳しい解説
+●解説
+
+真偽型の偽(false)を表します。
+
+▲利用例
 
 {{{#nako3
-OKを表示。# →1
-NGを表示。# →0
+OKを表示。# →true
+NGを表示。# →false
 }}}
+
+▲参照
+
+- [[文法/真偽値]]
+- [[plugin_system/はい]]
+- [[plugin_system/いいえ]]
+- [[plugin_system/オン]]
+- [[plugin_system/オフ]]
+- [[plugin_system/OK]]
+- [[plugin_system/NG]]
 
