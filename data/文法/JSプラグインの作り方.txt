@@ -52,7 +52,7 @@ if (typeof (navigator) === 'object') {
 
 {{{
 {
-  '関数名': { // @関数の説明 // @ヨミガナ
+  '関数名': { // @関数の説明 // @よみがな
     type: 'func', // 関数であれば func にする
     josi: [['を', 'から'], ['まで']], // 助詞を配列で宣言する (可変長引数として扱いたい助詞は末尾で宣言する)
     isVariableJosi: false, // 末尾の助詞を可変長引数として扱う場合 true にする
@@ -71,8 +71,8 @@ typeプロパティに「var」(変数)や「const」(定数)を指定して、v
 
 {{{
 {
-    { type: 'const', value: 100 }, // @ヨミガナ
-    { type: 'const', value: 100 }, // @ヨミガナ
+    { type: 'const', value: 100 }, // @よみがな
+    { type: 'const', value: 100 }, // @よみがな
 ....
 }
 }}}
