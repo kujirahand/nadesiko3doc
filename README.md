@@ -41,7 +41,12 @@ nadesiko3doc/index.php から konawiki3/kona3engine を参照してWikiを動か
 
 ### ツールの開始
 
-PHP8以降をインストールしてパスを通しておいてください。以下のコマンドを実行するとPHPのWebサーバーが起動します。
+PHP8以降をインストールしてパスを通しておいてください。下記のパッケージが必要です。
+
+- `php-mbstring`
+- `php-pdo-sqlite`
+
+以下のコマンドを実行するとPHPのWebサーバーが起動します。
 
 ```sh
 cd nadesiko3doc
