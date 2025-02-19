@@ -71,8 +71,8 @@ typeプロパティに「var」(変数)や「const」(定数)を指定して、v
 
 {{{
 {
-    { type: 'const', value: 100 }, // @よみがな
-    { type: 'const', value: 100 }, // @よみがな
+    '変数名': { type: 'var', value: 100 }, // @よみがな
+    '定数名': { type: 'const', value: 100 }, // @よみがな
 ....
 }
 }}}
