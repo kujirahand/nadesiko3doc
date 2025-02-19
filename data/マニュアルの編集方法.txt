@@ -40,7 +40,7 @@
 
 - Wikiを編集すると定期的に、[[マニュアルのリポジトリ:https://github.com/kujirahand/nadesiko3doc]]へ反映されます。
 
-そのため、GitHubのなでしこ3マニュアルのリポジトリよりPull Requestを送ることでもマニュアルを編集できます。
+そのため、GitHubのなでしこ3マニュアルのリポジトリよりPull Requestを送ることでマニュアルを編集できます。
 
 お手数おかけします。よろしくお願いします！
 

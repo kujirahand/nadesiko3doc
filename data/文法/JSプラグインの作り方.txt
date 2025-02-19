@@ -2,21 +2,107 @@
 
 なでしこ3には、JavaScriptで開発する「[[JSプラグイン:文法/JSプラグインの作り方]]」となでしこ自身で開発する「[[NAKO3プラグイン:文法/NAKO3プラグインの作り方]]」の二種類があります。
 
-また、ブラウザ版のプラグインの作り方と、PC版(Node.js)のプラグインの作り方で、JavaScriptならではの異なる点があります。
+- 「[[文法/NAKO3プラグインの作り方]]」… なでしこで作るなでしこプラグイン
+- 「[[文法/JSプラグインの作り方]]」 ... 本記事(JavaScriptで作るなでしこプラグイン)
+
+ただし、JSプラグインは、【ブラウザ版】と【PC版(Node.js)】でプラグインの作り方が異なります。
 
 ●ブラウザ版 - JSプラグインの使い方
 
 ブラウザ版のJSプラグインを利用するには、(1)「[[取り込む構文:文法/プラグイン取込]]」を使う方法と、(2)HTMLの<script>タグを使う方法の二種類があります。
 
 {{{
-# --- (1) なでしこのプログラム内で「取り込む」文を使う
+# (1) なでしこのプログラム内で「取り込む」文を使う
 !「xxx.js」を取り込む
+}}}
 
-# --- (2) HTMLファイル内で<script>タグを記述する
+{{{
+<!-- (2) HTMLファイル内で<script>タグを記述する -->
 <script src="xxx.js"></script>
 }}}
 
-●プラグイン側の実装 - (1)取り込む文を使う場合
+●ブラウザ版 > (1)取り込む文を使う場合
+
+最初に、「取り込む構文」を使う方法を紹介します。貯蔵庫にJSプラグインを保存した場合には、下記のように「貯蔵庫:プラグイン名.js」を取り込むと記述するとプラグインを利用できる状態になります。
+
+{{{#nako3
+!「貯蔵庫:nadesiko3-hello.js」を取り込む
+3と5を掛算テストして表示。
+}}}
+
+そして、貯蔵庫に下記のようなJSプラグインを作成します。
+
+{{{
+// プラグインを表すオブジェクトを定義
+const pluginHello = {
+  'meta': {
+    type: 'const',
+    value: { // プラグインに関する情報を指定する
+      pluginName: 'nadesiko3-hello', // プラグインの名前
+      description: 'プラグインのひな形', // プラグインの説明
+      pluginVersion: '3.6.15', // プラグインのバージョン
+      nakoRuntime: ['wnako'], // 対象ランタイム
+      nakoVersion: '3.6.15' // 要求なでしこバージョン
+    }
+  },
+  // 関数を定義
+  '掛算テスト': { // @掛け算をするだけのテスト関数 // @かけざんてすと
+    type: 'func', // 関数であれば func にする
+    josi: [['と'],['を']], // 助詞を配列で宣言する
+    fn: function (a, b) {
+        return a * b
+    }
+  }
+}
+// なでしこにプラグインを登録
+if (typeof (navigator) === 'object') {
+  navigator.nako3.addPluginObject("pluginHello", pluginHello)
+} else {
+  module.exports = pluginHello
+}
+}}}
+
+- [[こちら:https://n3s.nadesi.com/id.php?554]]に完全な「nadesiko3-hello.js」というプラグインがあります。
+
+▲プラグイン作成の書式
+
+以下のようにプラグインを記述します。プラグインを記述した後で、なでしこ本体(navigator.nako3)にプラグインを登録する処理が必要になります。
+
+{{{
+// --- なでしこプラグインのオブジェクトを宣言 ---
+const pluginObj = {
+  '関数名': { 定義 },
+  '定数名': { 定義 },
+}
+// --- なでしこ3の本体に関数を登録する ---
+if (typeof (navigator) === 'object') {
+  navigator.nako3.addPluginObject("プラグイン名", pluginObj)
+} else {
+  module.exports = pluginObj
+}
+}}}
+
+●ブラウザ版 > (2)HTMLで<script>タグを使う場合
+
+HTMLの<script>タグでプラグインを読み込む場合も手順はほぼ同じです。下記のように、<script>タグを記述します。ここでは『[[nadesiko3-hello.js:https://n3s.nadesi.com/plain/nadesiko3-hello.js]]』を使う方法を記述します。
+
+wnako3.jsを取り込んだ後で、下記のような<script>タグを記述します。
+
+{{{
+<!-- HTMLファイル内で<script>タグを記述する -->
+<script src="https://n3s.nadesi.com/plain/nadesiko3-hello.js"></script>
+}}}
+
+すると「！「...」を取り込む」を書かなくても、プラグイン内で宣言した関数が使えます。
+
+{{{
+3と5を掛算テストして表示。
+}}}
+
+ただし、<script src=".../wnako3.js">の後で、プラグインを取り込みます。
+
+
+● PC(Node.js)版を使う場合
 
 プラグインの実体は、JavaScriptのオブジェクトです。取り込む文でプラグインを取り込む場合、必ずオブジェクトをエクスポートするように設定してください。なでしこv3.3以降、なでしこは、ESModuleを採用しています。ESModuleでは「export default { ... }」のように記述します。
 
@@ -28,22 +114,29 @@ export default {
 }
 }}}
 
-●プラグイン側の実装 - (2)HTMLで<script>タグを使う場合
-
-HTMLの<script>タグでプラグインを読み込む場合、以下のようにプラグインを記述します。プラグインを記述した後で、なでしこ本体(navigator.nako3)にプラグインを登録する処理が必要になります。
+具体的には、下記のようなJSファイルを作成します。
 
 {{{
-// CommonJS方式で自動登録を実装
-const pluginObj = {
-  '関数名': { 定義 },
-  '定数名': { 定義 },
+const pluginHello = {
+  'meta': {
+    type: 'const',
+    value: { // プラグインに関する情報を指定する
+      pluginName: 'nadesiko3-hello', // プラグインの名前
+      description: 'プラグインのひな形', // プラグインの説明
+      pluginVersion: '3.6.15', // プラグインのバージョン
+      nakoRuntime: ['wnako'], // 対象ランタイム
+      nakoVersion: '3.6.15' // 要求なでしこバージョン
+    }
+  },
+  '掛算テスト': { // @掛け算をするだけのテスト関数 // @かけざんてすと
+    type: 'func', // 関数であれば func にする
+    josi: [['と'],['を']], // 助詞を配列で宣言する
+    fn: function (a, b) {
+        return a * b
+    }
+  }
 }
-// --- なでしこ3の本体に関数を登録する ---
-if (typeof (navigator) === 'object') {
-  navigator.nako3.addPluginObject("pluginHello", pluginObj)
-} else {
-  module.exports = pluginObj
-}
+export default pluginHello
 }}}
 
 ●関数の定義
