@@ -1,0 +1,59 @@
+■真偽値について
+
+なでしこ3では、真偽を表す真偽値型の変数を扱えます。真偽値は、真(true)と偽(false)のどちらかを表します。
+
+以下は真偽型を利用したプログラム例です。
+
+{{{#nako3(rows=6)
+猫好き＝真
+もし、猫好きなら：
+　　「猫好きです」と表示。
+違えば：
+　　「？」と表示。
+}}}
+
+●真偽型の内部的な表現について
+
+なでしこ3の真偽型を「表示」命令で表示するとき、内部的な事情で、真はtrue、偽はfalseとして表示されます。
+
+{{{#nako3(rows=3)
+真を表示 # → true
+偽を表示 # → false
+}}}
+
+真か偽の文字列で答えを得たい場合には、命令『[[真偽判定:plugin_system/真偽判定]]』を利用します。
+
+{{{#nako3(rows=3)
+真を真偽判定して表示 # → "真"
+偽を真偽判定して表示 # → "偽"
+}}}
+
+●真偽型の別名の一覧
+
+真偽型は便利なので、下記のような別名(エイリアス)が用意されています。プログラムを記述する際に自然な表現で真偽型を記述できます。
+
+{{{#csv(flag=---)
+真 --- 偽
+[[真:plugin_system/真]] --- [[偽:plugin_system/偽]]
+[[はい:plugin_system/はい]] --- [[いいえ:plugin_system/いいえ]]
+[[OK:plugin_system/OK]] --- [[NG:plugin_system/NG]]
+[[TRUE:plugin_system/TRUE]] --- [[FALSE:plugin_system/FALSE]]
+[[true:plugin_system/true]] --- [[false:plugin_system/false]]
+}}}
+
+●TYPEOFについて
+
+データ型を確認するには、[[TYPEOF:plugin_system/TYPEOF]]を利用します。
+
+{{{#nako3
+TYPEOF(真)を表示 # → boolean
+TYPEOF(偽)を表示 # → boolean
+}}}
+
+
+▲参考
+
+- [[文法/真偽値]]
+- [[plugin_system/真偽判定]]
+- [[plugin_system/TYPEOF]]
+

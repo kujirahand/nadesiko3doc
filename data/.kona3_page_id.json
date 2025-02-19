@@ -1148,5 +1148,9 @@
     "plugin_system\/MIN": 4666,
     "plugin_system\/最小値": 4667,
     "plugin_system\/CLAMP": 4668,
-    "plugin_node\/LINE送信": 4670
+    "plugin_node\/LINE送信": 4670,
+    "plugin_system\/真偽判定": 4671,
+    "文法\/真偽値": 4672,
+    "plugin_system\/false": 4673,
+    "plugin_system\/true": 4674
 }

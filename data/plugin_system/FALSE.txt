@@ -14,5 +14,6 @@ TYPEOF(FALSE)を表示。
 
 ▲参考
 
+- [[文法/真偽値]]
 - [[plugin_system/TRUE]]
 - [[plugin_system/FALSE]]

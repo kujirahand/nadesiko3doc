@@ -15,4 +15,9 @@ B=5
 }}}
 
 ▲参考
-[[文法/論理演算子:https://nadesi.com/v3/doc/index.php?%E6%96%87%E6%B3%95%2F%E6%BC%94%E7%AE%97%E5%AD%90&show#hb0ae157d]]
+- [[文法/論理演算子:https://nadesi.com/v3/doc/index.php?%E6%96%87%E6%B3%95%2F%E6%BC%94%E7%AE%97%E5%AD%90&show#hb0ae157d]]
+- [[plugin_system/論理AND]]
+- [[plugin_system/論理OR]]
+- [[plugin_system/論理NOT]]
+- [[plugin_system/真偽判定]]
+
