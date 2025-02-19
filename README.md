@@ -10,6 +10,10 @@ GitHubを通じてマニュアル作成に参加できます。マニュアル�
 - [Konawiki3](https://github.com/kujirahand/konawiki3)
 - [なでしこ3](https://nadesi.com/doc3/)
 
+以下のURLでマニュアルへの貢献度が確認できます。
+
+- [GitHub > 貢献度グラフ](https://github.com/kujirahand/nadesiko3doc/graphs/contributors)
+
 ## プロジェクトの開始方法
 
 マニュアルプロジェクトに参加するには、このリポジトリを直接編集して、プルリクエストを送信してください。
