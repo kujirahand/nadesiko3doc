@@ -4,6 +4,11 @@
 
 以下のマニュアル編集ルールをご覧の上、編集にご参加ください。
 
+誰がどのくらい編集しているのか貢献度を確認できます。以下にて確認できます。
+
+- https://github.com/kujirahand/nadesiko3doc/graphs/contributors
+
+> ただし、上記のグラフですが、WikiユーザーがWiki上で編集した内容は、kujirahandの編集となります。今後は、Wiki上ではなく、GitHub経由で編集すると貢献度が分かりやすくなります。
 
 ●命名規則とWiki名の対応
 

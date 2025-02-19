@@ -68,9 +68,8 @@ https://cdn.jsdelivr.net/npm/nadesiko3-hoge@3.6.15/nadesiko3-hoge.mjs
 
 ●使用例
 
-{{{#nako3
+{{{
 !「https://cdn.jsdelivr.net/npm/nadesiko3-hoge@3.6.15/nadesiko3-hoge.mjs」を取り込む。
-
 3と5をHOGE足して表示。
 }}}
 
