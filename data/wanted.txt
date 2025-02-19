@@ -5,9 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/真偽判定]] --- 引数bが真(true)ならば「真」を偽(false)ならば「偽」を返す
-
 ▲ [[plugin_csv]]
 - [[plugin_csv/CSVオプション設定]] --- 「CSV取得」「表CSV変換」命令のオプションOBJ{delimiter,eol,auto_convert_number}をオブジェクトで指定
 
@@ -176,7 +173,7 @@
 
 ▲ [[nadesiko3-tools]]
 - [[nadesiko3-tools/クリップボード取得]] --- クリップボードを取得する
-- [[nadesiko3-tools/クリップボード設定]] --- クリップボードを取得する
+- [[nadesiko3-tools/クリップボード設定]] --- クリップボードを設定する
 - [[nadesiko3-tools/キー送信]] --- Sのキーを送信
 - [[nadesiko3-tools/窓アクティブ]] --- Sの窓をアクティブにする
 
