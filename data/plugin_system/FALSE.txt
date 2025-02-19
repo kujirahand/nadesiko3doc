@@ -1,19 +1,20 @@
 ▲解説
 
-真偽型の偽を表します。真偽型は(真)か(偽)の値のどちらかを表します。
-この値は、なでしこ3では、JavaScriptのboolean型です。
+真偽型の偽(false)を表します。
 
 ▲利用例
 
 {{{#nako3
-TRUEを表示。
-TYPEOF(TRUE)を表示。
-FALSEを表示。
-TYPEOF(FALSE)を表示。
+trueを表示 # true
+falseを表示 # false
+trueを真偽判定して表示。# 真
+falseを真偽判定して表示。# 偽
 }}}
 
-▲参考
+▲参照
 
 - [[文法/真偽値]]
+- [[plugin_system/true]]
+- [[plugin_system/false]]
 - [[plugin_system/TRUE]]
 - [[plugin_system/FALSE]]
