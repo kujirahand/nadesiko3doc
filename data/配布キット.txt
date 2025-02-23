@@ -6,7 +6,7 @@
 
 なでしこ3(Web版)のプログラムは、基本的にWebブラウザで動くプログラムです。そのため、なでしこ3(Web版)で作ったプログラムを、誰かに使ってもらいたい場合には、「[[なでしこ3貯蔵庫:https://n3s.nadesi.com/]]」に書き込んで使うのが簡単です。
 
-しかし、WindowsやmacOSのアプリとして配布したいとか、ネットがない環境でも動かしたい場合もあります。そこで、利用するのが「[[なでしこ3配布配布キット(nadesiko3webkit):https://github.com/kujirahand/nadesiko3webkit]]」です。
+しかし、WindowsやmacOSのアプリとして配布したいとか、ネットがない環境でも動かしたい場合もあります。そこで、利用するのが「[[なでしこ3配布キット(nadesiko3webkit):https://github.com/kujirahand/nadesiko3webkit]]」です。
 
 ●配布ファイルの作成方法
 
@@ -26,12 +26,12 @@ Windows版とmacOS版とLinux版の実行ファイルを作成できます。
 【Windows用】
 
 | win-nako3-webview.zip | WebView(Edge)ランタイム(※1)
-| win-nako3-chrome.zip  | Chomeランタイム
+| win-nako3-chrome.zip  | Chromeランタイム
 
 【macOS用】
 
 | mac-nako3-webview.zip | WebView(Safari)ランタイム
-| mac-nako3-chrome.zip | Chomeランタイム
+| mac-nako3-chrome.zip | Chromeランタイム
 
 (※1) Microsoftのサイトから[[WebView2ランタイム:https://developer.microsoft.com/ja-jp/microsoft-edge/webview2/]]のインストールが必要になります。
 
@@ -40,7 +40,7 @@ Windows版とmacOS版とLinux版の実行ファイルを作成できます。
 
 ▲(手順2) 実行テストしよう
 
-ZIPファイルを解凍したら、nadesiko3.exe(macならnadesiko3.app)の実行ファイルをダブルクリックしてみてください。無事になでしこ3が動くごとが分かったら次の作業に移りましょう。
+ZIPファイルを解凍したら、nadesiko3.exe(macならnadesiko3.app)の実行ファイルをダブルクリックしてみてください。無事になでしこ3が動くことが分かったら次の作業に移りましょう。
 
 #ref(https://nadesi.com/doc3/attach/11.png,*無事に実行できるとカメが図形を描きます。,@https://github.com/kujirahand/nadesiko3webkit/releases)
 
