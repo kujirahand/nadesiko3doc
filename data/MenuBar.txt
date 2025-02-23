@@ -19,6 +19,12 @@
 - [[📒プラグイン一覧:プラグイン一覧]]
 - [[🔌拡張ライブラリ:https://n3s.nadesi.com/index.php?action=library]]
 
+▲Webツール
+- [[簡易エディタ1:https://nadesi.com/v3/start]]
+- [[簡易エディタ2:https://nadesi.com/v3/doc/go.php?857]]
+- [[貯蔵庫エディタ:https://n3s.nadesi.com/index.php?page=new&action=edit]]
+- [[学習用パッド:https://www.manabu-tech.net/nakopad/]]
+
 ▲その他
 - [[📍最近更新:最近更新]]
 - [[📍X:https://x.com/search?q=%23%E3%81%AA%E3%81%A7%E3%81%97%E3%81%93%E3%81%95%E3%82%93&src=typed_query]]
