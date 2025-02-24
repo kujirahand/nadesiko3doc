@@ -1152,5 +1152,11 @@
     "plugin_system\/真偽判定": 4671,
     "文法\/真偽値": 4672,
     "plugin_system\/false": 4673,
-    "plugin_system\/true": 4674
+    "plugin_system\/true": 4674,
+    "plugin_promise\/そ": 4675,
+    "plugin_promise\/束": 4676,
+    "plugin_promise\/動時": 4677,
+    "plugin_promise\/終了時": 4678,
+    "plugin_promise\/成功時": 4679,
+    "plugin_promise\/処理時": 4680
 }
