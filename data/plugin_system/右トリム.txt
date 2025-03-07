@@ -13,5 +13,5 @@ A2=「def」
 ▲参考
 
 - [[plugin_system/空白除去]]
-- [[plugin_system/右トリム]] ... 同じ
-- [[plugin_system/末尾空白除去]]
+- [[plugin_system/右トリム]]
+- [[plugin_system/末尾空白除去]] ... 同じ
