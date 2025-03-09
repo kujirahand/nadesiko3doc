@@ -1246,5 +1246,6 @@
     ".\/命令一覧": 4765,
     ".\/互換性": 4766,
     "plugin_promise\/失敗時": 4767,
-    "plugin_system\/左トリム": 4768
+    "plugin_system\/左トリム": 4768,
+    "plugin_system\/連結": 4769
 }
