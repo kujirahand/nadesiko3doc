@@ -1247,5 +1247,7 @@
     ".\/互換性": 4766,
     "plugin_promise\/失敗時": 4767,
     "plugin_system\/左トリム": 4768,
-    "plugin_system\/連結": 4769
+    "plugin_system\/連結": 4769,
+    "plugin_csv\/CSVオプション設定": 4770,
+    "plugin_system\/合計": 4771
 }
