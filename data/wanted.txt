@@ -6,20 +6,13 @@
 
 
 ▲ [[plugin_system]]
+- [[plugin_system/合計]] --- 引数(可変)に指定した値を全て合計して返す(可変引数)
 - [[plugin_system/連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
+- [[plugin_system/文字列連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
 - [[plugin_system/左トリム]] --- 文字列Sの先頭にある空白を削除する
 
 ▲ [[plugin_csv]]
 - [[plugin_csv/CSVオプション設定]] --- 「CSV取得」「表CSV変換」命令のオプションOBJ{delimiter,eol,auto_convert_number}をオブジェクトで指定
-
-▲ [[plugin_promise]]
-- [[plugin_promise/そ]] --- ''
-- [[plugin_promise/動時]] --- 非同期処理を作成する。非同期処理オブジェクト(Promise)を返す。
-- [[plugin_promise/成功時]] --- 非同期処理で成功したときにcallbackが実行される。その際『対象』にデータが代入される。
-- [[plugin_promise/処理時]] --- 非同期処理で終了した時にcbFuncが実行される。引数と『対象』は、成功時は真とデータが設定され、失敗時は、偽と理由が設定される。
-- [[plugin_promise/失敗時]] --- 非同期処理で失敗したときにcallbackが実行される。その際『対象』に理由が代入される。
-- [[plugin_promise/終了時]] --- 非同期処理で終了したときにcallbackが実行される。成功時・失敗時・処理時とは別に実行される。
-- [[plugin_promise/束]] --- 非同期処理をまとめる。(可変引数)
 
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
@@ -55,7 +48,7 @@
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 - [[plugin_browser/ハッシュ値計算]] --- データSをアルゴリズムALG(sha-256/sha-384/sha-512)のエンコーディングでハッシュ値を計算して返す(非同期関数)
 - [[plugin_browser/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
-- [[plugin_browser/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
+- [[plugin_browser/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定の長さで返す
 
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
@@ -401,7 +394,8 @@
 - [[plugin_electron_node/PX2DIP点変換]] --- Pointを物理的な単位からDIP単位に変換して返す
 - [[plugin_electron_node/DIP2PX点変換]] --- PointをDIP単位から物理的な単位に変換して返す
 - [[plugin_electron_node/PX2DIP矩形変換]] --- Rectangleを物理的な単位からDIP単位に変換して返す。DPIは指定したウインドウと相対的に計算する
-- [[plugin_electron_node/DIP2PXP矩形変換]] --- RectangleをDIP単位から物理的な単位に変換して返す。DPIは指定したウインドウと相対的に計算する
+- [[plugin_electron_node/DIP2PX矩形変換]] --- RectangleをDIP単位から物理的な単位に変換して返す。DPIは指定したウインドウと相対的に計算する
+- [[plugin_electron_node/DIP2PXP矩形変換]] --- 『DIP2PX矩形変換』命令の誤字。互換性のために存在する。
 - [[plugin_electron_node/データ受信時]] --- レンダラからのデータ送信を受けた時の処理を登録する(evt, key, msg)
 - [[plugin_electron_node/データ呼出時]] --- レンダラからの呼び出しを受けた時の処理を登録する(evt, key, msg)
 - [[plugin_electron_node/データ送信]] --- レンダラにデータを送信する(webContent, key, data)
