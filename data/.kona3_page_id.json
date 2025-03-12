@@ -1249,5 +1249,6 @@
     "plugin_system\/左トリム": 4768,
     "plugin_system\/連結": 4769,
     "plugin_csv\/CSVオプション設定": 4770,
-    "plugin_system\/合計": 4771
+    "plugin_system\/合計": 4771,
+    "plugin_system\/文字列連結": 4772
 }
