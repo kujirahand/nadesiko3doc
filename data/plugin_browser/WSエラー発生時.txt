@@ -1,6 +1,24 @@
 ●『[[WSエラー発生時:plugin_browser/WSエラー発生時]]』の詳しい解説
 
-{{{
-# 準備中
+WebSocketでエラーが発生した時に実行する関数を指定します。
+
+▲使用例
+
+存在しないドメインへの接続を試み、エラーを発生させます。
+#rem(".invalid" は、RFC6761 で規定された「存在しない」ドメイン)
+
+{{{#nako3
+「wss://example.invalid/」にWS接続。
+WSエラー発生時には
+  「エラー発生」と表示。
+ここまで。
 }}}
 
+▲参考
+
+- [[WS接続完了時:plugin_browser/WS接続完了時]]
+- [[WS受信時:plugin_browser/WS受信時]]
+- [[WSエラー発生時:plugin_browser/WSエラー発生時]]
+- [[WS接続:plugin_browser/WS接続]]
+- [[WS送信:plugin_browser/WS送信]]
+- [[WS切断:plugin_browser/WS切断]]
