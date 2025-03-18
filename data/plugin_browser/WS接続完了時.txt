@@ -1,6 +1,23 @@
 ●『[[WS接続完了時:plugin_browser/WS接続完了時]]』の詳しい解説
 
-{{{
-# 準備中
+WebSocketサーバへの接続が完了した時に実行する関数を指定します。
+
+▲使用例
+
+[[WebSocket Echo Server | WebSocket.org:https://websocket.org/tools/websocket-echo-server/]] に接続します。
+
+{{{#nako3
+「wss://echo.websocket.org/」にWS接続。
+WS接続完了した時には
+  「接続しました」と表示。
+ここまで。
 }}}
 
+▲参考
+
+- [[WS接続完了時:plugin_browser/WS接続完了時]]
+- [[WS受信時:plugin_browser/WS受信時]]
+- [[WSエラー発生時:plugin_browser/WSエラー発生時]]
+- [[WS接続:plugin_browser/WS接続]]
+- [[WS送信:plugin_browser/WS送信]]
+- [[WS切断:plugin_browser/WS切断]]
