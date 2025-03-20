@@ -1250,5 +1250,9 @@
     "plugin_system\/連結": 4769,
     "plugin_csv\/CSVオプション設定": 4770,
     "plugin_system\/合計": 4771,
-    "plugin_system\/文字列連結": 4772
+    "plugin_system\/文字列連結": 4772,
+    "plugin_browser\/DOM有効取得": 4773,
+    "plugin_browser\/DOM有効設定": 4774,
+    "plugin_browser\/DOM可視設定": 4775,
+    "plugin_browser\/DOM可視取得": 4776
 }
