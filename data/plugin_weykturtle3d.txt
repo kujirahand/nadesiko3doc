@@ -1,1 +1,11 @@
  3D版のタートルグラフィックス。
+標準プラグインではないので「取り込む」でプラグインを読み込む必要があります。
+{{{
+# 取り込み文
+#最新版
+!『https://cdn.jsdelivr.net/npm/nadesiko3@latest/release/plugin_weykturtle3d.js』を取り込む。
+
+# バージョンを指定する場合
+!「https://nadesi.com/v3/cdn.php?v=3.7.3&f=release/plugin_weykturtle3d.js」を取り込む。
+※「3.7.3」の部分は使用しているなでしこ３のバージョンに合わせて下さい。
+}}}
