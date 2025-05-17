@@ -16,3 +16,4 @@ INT("あいう")を表示。# NaN(数字ではない)
 - [[plugin_system/整数変換]]
 - [[plugin_system/INT]]
 - [[plugin_system/TOINT]]
+- [[文法/語順]] --- 関数『INT(v)』などのC言語風関数呼び出しの注意点を記載しています。
