@@ -5,15 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/合計]] --- 引数(可変)に指定した値を全て合計して返す(可変引数)
-- [[plugin_system/連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
-- [[plugin_system/文字列連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
-- [[plugin_system/左トリム]] --- 文字列Sの先頭にある空白を削除する
-
-▲ [[plugin_csv]]
-- [[plugin_csv/CSVオプション設定]] --- 「CSV取得」「表CSV変換」命令のオプションOBJ{delimiter,eol,auto_convert_number}をオブジェクトで指定
-
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -26,10 +17,6 @@
 - [[plugin_browser/POSTフォーム逐次送信]] --- (非推奨)逐次実行構文にて、AjaxでURLにPARAMSをフォームとしてPOST送信し『対象』にデータを設定。失敗すると『AJAX失敗時』を実行。
 - [[plugin_browser/DOM設定変更]] --- DOMの属性とスタイルPROP(配列で指定可能)を適当にVALUEに設定
 - [[plugin_browser/DOM設定取得]] --- DOMの属性とスタイルPROP(配列で指定可能)の値を適当に取得
-- [[plugin_browser/DOM有効設定]] --- DOMのdata-有効の値を設定
-- [[plugin_browser/DOM有効取得]] --- DOMのdata-有効の値を取得
-- [[plugin_browser/DOM可視設定]] --- DOMのdata-可視の値を設定
-- [[plugin_browser/DOM可視取得]] --- DOMのdata-可視の値を取得
 - [[plugin_browser/DOMポケット取得]] --- DOMのポケット(data-pocket属性)の値を取得(エンコードされるので辞書型や配列も取得できる)
 - [[plugin_browser/DOMポケット設定]] --- DOMのポケット(data-pocket属性)に値Vを設定(エンコードされるので辞書型や配列も設定できる)
 - [[plugin_browser/DOMヒント取得]] --- DOMのヒント(title属性)の値を取得
@@ -37,18 +24,21 @@
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/テーブル更新]] --- 既に作成したテーブルTBLを二次元配列AA(あるいは文字列の簡易CSVデータ)で更新する
+- [[plugin_browser/ビデオ作成]] --- ビデオ部品を作成して返す
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
-- [[plugin_browser/WS接続完了時]] --- WebSocketでサーバに接続完了した時に実行されるイベントを指定
-- [[plugin_browser/WS受信時]] --- WebSocketでサーバからメッセージを受信した時に実行されるイベントを指定
-- [[plugin_browser/WSエラー発生時]] --- WebSocketでエラーが発生した時に実行されるイベントを指定
-- [[plugin_browser/WS接続]] --- WebSocketサーバsに接続する
-- [[plugin_browser/WS送信]] --- アクティブなWebSocketへsを送信する
-- [[plugin_browser/WS切断]] --- アクティブなWebSocketを閉じる
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 - [[plugin_browser/ハッシュ値計算]] --- データSをアルゴリズムALG(sha-256/sha-384/sha-512)のエンコーディングでハッシュ値を計算して返す(非同期関数)
 - [[plugin_browser/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
 - [[plugin_browser/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定の長さで返す
+- [[plugin_browser/カメラオプション]] --- { video: true, audio: false }
+- [[plugin_browser/カメラ起動]] --- カメラを起動する(非同期関数)
+- [[plugin_browser/カメラ終了]] --- カメラを終了
+- [[plugin_browser/カメラ映像再生]] --- カメラ映像を再生する
+- [[plugin_browser/カメラ映像一時停止]] --- カメラ映像の再生を一時停止する
+- [[plugin_browser/カメラ設定取得]] --- カメラ設定を取得して返す
+- [[plugin_browser/メディアストリーム取得]] --- メディアストリームを取得して返す(カメラオプションを参照)(非同期関数)
+- [[plugin_browser/メディアストリーム停止]] --- メディアストリームを停止する
 
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
@@ -71,7 +61,9 @@
 - [[plugin_node/POST送信]] --- 非同期通信(AJAX)でPOSTメソッドにてURLへPARAMS(辞書型)を送信して応答を戻す。(非同期関数)
 - [[plugin_node/POSTフォーム送信]] --- 非同期通信(AJAX)でURLにPARAMS(辞書型)をフォームとしてPOSTメソッドにてURLへ送信し応答を返す。(非同期関数)
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。(非同期関数)
-- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。(非同期関数)
+- [[plugin_node/DISCORD送信]] --- DISCORDのウェブフックURLにSのメッセージを送信する。宛先のウェブフックを取得しておく必要がある。(非同期関数)
+- [[plugin_node/DISCORDファイル送信]] --- DISCORDのウェブフックURLにファイルF(パスを指定)とメッセージSを送信する。(非同期関数)
+- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。
 - [[plugin_node/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
 - [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
@@ -292,9 +284,9 @@
 - [[plugin_odbc/ODBCトランザクション終了]] --- ODBCでトランザクションを終了する
 
 ▲ [[plugin_mssql]]
-- [[plugin_mssql/MSSQL逐次開]] --- 逐次実行構文にてデータベースを開く
-- [[plugin_mssql/MSSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
-- [[plugin_mssql/MSSQL逐次閉]] --- 開いているデータベースを閉じる
+- [[plugin_mssql/MSSQL開]] --- データベースを開く(非同期関数)
+- [[plugin_mssql/MSSQL実行]] --- SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。(非同期関数)
+- [[plugin_mssql/MSSQL閉]] --- 開いているデータベースを閉じる(非同期関数)
 
 ▲ [[plugin_mysql]]
 - [[plugin_mysql/MYSQL開]] --- データベースを開く
