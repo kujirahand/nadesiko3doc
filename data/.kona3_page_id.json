@@ -1254,5 +1254,14 @@
     "plugin_browser\/DOM有効取得": 4773,
     "plugin_browser\/DOM有効設定": 4774,
     "plugin_browser\/DOM可視設定": 4775,
-    "plugin_browser\/DOM可視取得": 4776
+    "plugin_browser\/DOM可視取得": 4776,
+    "plugin_browser\/カメラ起動": 4777,
+    "plugin_browser\/ビデオ作成": 4778,
+    "plugin_browser\/カメラ終了": 4779,
+    "plugin_browser\/カメラオプション": 4780,
+    "plugin_browser\/メディアストリーム取得": 4781,
+    "plugin_browser\/カメラ設定取得": 4782,
+    "plugin_browser\/メディアストリーム停止": 4783,
+    "plugin_browser\/カメラ映像一時停止": 4784,
+    "plugin_browser\/カメラ映像再生": 4785
 }

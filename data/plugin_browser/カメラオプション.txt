@@ -1,0 +1,23 @@
+▲説明
+
+『[[カメラ起動:plugin_browser/カメラ起動]]』に指定する、カメラオプションを指定します。
+
+▲バリエーション
+
+オプションの指定ができます。
+
+{{{
+カメラオプション.video＝{facingMode: "user"}  # 前面カメラ
+カメラオプション.video＝{facingMode: { exact: "environment"}}  # リアカメラ（モバイルのみ）
+}}}
+
+パラメータは下記でさらに確認できます。
+
+- https://developer.mozilla.org/ja/docs/Web/API/MediaDevices/getUserMedia
+
+▲参考
+
+- [[plugin_browser/ビデオ作成]]
+- [[plugin_browser/カメラ起動]]
+- [[plugin_browser/カメラ終了]]
+
