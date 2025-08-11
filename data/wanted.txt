@@ -9,6 +9,10 @@
 - [[plugin_system/文字始]] --- 文字列SがAから始まるならば真を返す
 - [[plugin_system/文字終]] --- 文字列SがAで終わるならば真を返す
 
+▲ [[plugin_toml]]
+- [[plugin_toml/TOML取得]] --- TOML文字列をオブジェクトにデコードして返す
+- [[plugin_toml/TOML変換]] --- オブジェクトをTOML文字列にエンコードする
+
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -28,21 +32,12 @@
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/テーブル更新]] --- 既に作成したテーブルTBLを二次元配列AA(あるいは文字列の簡易CSVデータ)で更新する
-- [[plugin_browser/ビデオ作成]] --- ビデオ部品を作成して返す
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 - [[plugin_browser/ハッシュ値計算]] --- データSをアルゴリズムALG(sha-256/sha-384/sha-512)のエンコーディングでハッシュ値を計算して返す(非同期関数)
 - [[plugin_browser/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
 - [[plugin_browser/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定の長さで返す
-- [[plugin_browser/カメラオプション]] --- { video: true, audio: false }
-- [[plugin_browser/カメラ起動]] --- カメラを起動する(非同期関数)
-- [[plugin_browser/カメラ終了]] --- カメラを終了
-- [[plugin_browser/カメラ映像再生]] --- カメラ映像を再生する
-- [[plugin_browser/カメラ映像一時停止]] --- カメラ映像の再生を一時停止する
-- [[plugin_browser/カメラ設定取得]] --- カメラ設定を取得して返す
-- [[plugin_browser/メディアストリーム取得]] --- メディアストリームを取得して返す(カメラオプションを参照)(非同期関数)
-- [[plugin_browser/メディアストリーム停止]] --- メディアストリームを停止する
 
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
