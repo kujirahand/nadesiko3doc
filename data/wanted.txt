@@ -5,14 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/文字始]] --- 文字列SがAから始まるならば真を返す
-- [[plugin_system/文字終]] --- 文字列SがAで終わるならば真を返す
-
-▲ [[plugin_toml]]
-- [[plugin_toml/TOML取得]] --- TOML文字列をオブジェクトにデコードして返す
-- [[plugin_toml/TOML変換]] --- オブジェクトをTOML文字列にエンコードする
-
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
