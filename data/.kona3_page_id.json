@@ -1263,5 +1263,9 @@
     "plugin_browser\/カメラ設定取得": 4782,
     "plugin_browser\/メディアストリーム停止": 4783,
     "plugin_browser\/カメラ映像一時停止": 4784,
-    "plugin_browser\/カメラ映像再生": 4785
+    "plugin_browser\/カメラ映像再生": 4785,
+    "plugin_system\/文字始": 4786,
+    "plugin_system\/文字終": 4787,
+    "plugin_toml\/TOML取得": 4788,
+    "plugin_toml\/TOML変換": 4789
 }

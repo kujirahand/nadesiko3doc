@@ -1,0 +1,15 @@
+▲解説
+
+なでしこのオブジェクトをTOML文字列に変換して返します。
+
+▲サンプル
+
+{{{#nako3
+O={"setting": {"foo": 3, "bar": 5}}
+OをTOML変換して表示。
+}}}
+
+▲参考
+
+- [[plugin_toml/TOML取得]]
+- [[plugin_toml/TOML変換]]
