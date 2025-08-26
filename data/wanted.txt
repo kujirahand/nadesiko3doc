@@ -5,6 +5,9 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/出現]] --- 文字列(配列)SにAが出現する場合に真を返す
+
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
