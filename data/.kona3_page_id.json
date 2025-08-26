@@ -1267,5 +1267,6 @@
     "plugin_system\/文字始": 4786,
     "plugin_system\/文字終": 4787,
     "plugin_toml\/TOML取得": 4788,
-    "plugin_toml\/TOML変換": 4789
+    "plugin_toml\/TOML変換": 4789,
+    "plugin_system\/出現": 4790
 }
