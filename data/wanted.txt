@@ -5,9 +5,6 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
-▲ [[plugin_system]]
-- [[plugin_system/出現]] --- 文字列(配列)SにAが出現する場合に真を返す
-
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -153,6 +150,13 @@
 - [[plugin_webworker/NAKOワーカーデータ送信]] --- WORKERに固有の形式でデータを送信する。(可変引数)
 - [[plugin_webworker/ワーカーメッセージ送信]] --- WORKERにメッセージを送信する。(可変引数)
 - [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
+
+▲ [[nadesiko3-music]]
+- [[nadesiko3-music/MMLコンパイル]] --- MMLをコンパイルしてMIDIファイルに変換する(非同期関数)
+- [[nadesiko3-music/サウンドフォント読]] --- サウンドフォントのURLを指定して読み込む。URLに「デフォルト」を指定可能(非同期関数)
+- [[nadesiko3-music/サウンドフォントMIDI演奏]] --- MIDIデータ(バイナリ)を指定して演奏する(非同期関数)
+- [[nadesiko3-music/サウンドフォントMIDI演奏停止]] --- 再生中のMIDI演奏を停止する(非同期関数)
+- [[nadesiko3-music/サウンドフォントMML演奏]] --- MMLをサウンドフォントで演奏する(非同期関数)
 
 ▲ [[nadesiko3-tools]]
 - [[nadesiko3-tools/クリップボード取得]] --- クリップボードを取得する
