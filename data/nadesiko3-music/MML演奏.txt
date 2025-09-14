@@ -194,3 +194,5 @@ PLAY(C01,I02,___,___,___,___,___,___,___,___); //Last
 ▲関連
 - [[nadesiko3-music/MML停止]]
 - [[nadesiko3-music/MIDIループ再生設定]]
+- [[nadesiko3-music/サウンドフォントMML演奏]]
+

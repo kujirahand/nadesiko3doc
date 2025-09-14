@@ -1270,5 +1270,6 @@
     "plugin_toml\/TOML変換": 4789,
     "plugin_system\/出現": 4790,
     "チュートリアル\/ドローン": 4791,
-    "nadesiko3-drone\/ドローンバッテリ残量取得": 4792
+    "nadesiko3-drone\/ドローンバッテリ残量取得": 4792,
+    "nadesiko3-music\/サウンドフォントMML演奏": 4793
 }
