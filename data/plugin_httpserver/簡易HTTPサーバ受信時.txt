@@ -3,6 +3,9 @@
 指定したURLにリクエストが来たら処理を実行します。
 
 ▲利用例
+
+簡単な利用例です。
+
 {{{
 # まずプラグインを取り込み、指定したポートで簡易HTTPサーバを起動
 !『plugin_httpserver.mjs』を取り込む。
@@ -13,10 +16,37 @@ PORTで簡易HTTPサーバ起動した時には、
 　　「/」へ簡易HTTPサーバ受信した時には、
 　　　　# 処理の内容
 　　　　「こんにちは、なでしこさん☆」と簡易HTTPサーバ出力。
+　　　　?? GETデータ  # ←←← GETデータを表示
 　　ここまで。
 ここまで。
 }}}
 
+▲ヘッダを出力する例
+
+以下は、ブラウザのセキュリティCORSの制限を回避するため、Access-Control-Allow-Originヘッダを出力するサーバーの例です。
+
+{{{
+# まずプラグインを取り込みます
+!『plugin_httpserver.mjs』を取り込む。
+
+# 適当なポート番号
+PORT＝8000。
+
+# 簡易サーバ起動
+PORTで簡易HTTPサーバ起動した時には、
+　　「{PORT}でサーバ起動しました」と表示。
+　　「/」へ簡易HTTPサーバ受信した時には、
+　　　　# 処理の内容
+　　　　200で{"Content-Type": "text/plain; charset=utf-8","Access-Control-Allow-Origin": "*"}を簡易HTTPサーバヘッダ出力
+　　　　「こんにちは、なでしこさん☆」と簡易HTTPサーバ出力。
+　　　　?? GETデータ
+　　ここまで。
+ここまで。
+}}}
+
+
 ▲関連
+
 - [[簡易HTTPサーバ起動時:plugin_httpserver/簡易HTTPサーバ起動時]]
 - [[簡易HTTPサーバ出力:plugin_httpserver/簡易HTTPサーバ出力]]
+- [[GETデータ:plugin_httpserver/GETデータ]]
