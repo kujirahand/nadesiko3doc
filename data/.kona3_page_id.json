@@ -1275,5 +1275,6 @@
     "nadesiko3-music\/サウンドフォント": 4794,
     "nadesiko3-music\/サウンドフォント読": 4795,
     "FAQ\/html": 4796,
-    "plugin_httpserver\/GETデータ": 4797
+    "plugin_httpserver\/GETデータ": 4797,
+    ".\/FAQ\/html": 4798
 }
