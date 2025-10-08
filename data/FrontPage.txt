@@ -63,7 +63,7 @@
 - [[📝簡易エディタv2:簡易エディタv2]] (本Wikiのエディタ)
 - [[📝簡易エディタv1:https://nadesi.com/doc3/go.php?10]]
 - [[🍯 なでしこ3貯蔵庫:https://n3s.nadesi.com/]] --- 作品を共有
-- [[😊 なでしこDiscord:https://discord.gg/WkaQAxbDaE]] --- 楽しくチャット
+- [[😊 なでしこDiscord(2):https://discord.com/invite/FAtjTQr3kk]]
 - [[🐂なでしこ3ハブ:https://github.com/kujirahand/nadesiko3hub]] --- プログラム検索が便利
 - [[🐂なでしこ3配布パック:https://nadesi.com/doc3/go.php?16421]]
 
