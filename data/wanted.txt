@@ -24,6 +24,7 @@
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
 - [[plugin_browser/テーブル更新]] --- 既に作成したテーブルTBLを二次元配列AA(あるいは文字列の簡易CSVデータ)で更新する
+- [[plugin_browser/描画クリップ]] --- 描画命令のあとに使うと以後その範囲のみに描くことができるようになる
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
@@ -59,7 +60,6 @@
 - [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
 ▲ [[plugin_httpserver]]
-- [[plugin_httpserver/GETデータ]] --- ''
 - [[plugin_httpserver/簡易HTTPサーバ起動時]] --- ポート番号PORTを指定して簡易HTTPサーバを起動して、CALLBACKを実行する。
 - [[plugin_httpserver/簡易HTTPサーバ静的パス指定]] --- 静的コンテンツのパスを指定。URLをPATHへマップする。
 - [[plugin_httpserver/簡易HTTPサーバ受信時]] --- URLを指定して合致するリクエストが来たら処理を実行する。
@@ -153,10 +153,9 @@
 
 ▲ [[nadesiko3-music]]
 - [[nadesiko3-music/MMLコンパイル]] --- MMLをコンパイルしてMIDIファイルに変換する(非同期関数)
-- [[nadesiko3-music/サウンドフォント読]] --- サウンドフォントのURLを指定して読み込む。URLに「デフォルト」を指定可能(非同期関数)
 - [[nadesiko3-music/サウンドフォントMIDI演奏]] --- MIDIデータ(バイナリ)を指定して演奏する(非同期関数)
 - [[nadesiko3-music/サウンドフォントMIDI演奏停止]] --- 再生中のMIDI演奏を停止する(非同期関数)
-- [[nadesiko3-music/サウンドフォントMML演奏]] --- MMLをサウンドフォントで演奏する(非同期関数)
+- [[nadesiko3-music/サウンドフォント待時間設定]] --- 再生前の待機時間をミリ秒で指定(エラーが出るときに指定)(非同期関数)
 
 ▲ [[nadesiko3-tools]]
 - [[nadesiko3-tools/クリップボード取得]] --- クリップボードを取得する
