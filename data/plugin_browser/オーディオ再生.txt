@@ -2,9 +2,24 @@
 
 AudioオブジェクトOBJを指定してオーディオを再生します。
 
+▲利用例
+
 {{{#nako3
 MP3=「https://nadesi.com/v3/common/sound/ki.mp3」をオーディオ開く。
 MP3をオーディオ再生。
+}}}
+
+▲利用例
+
+なお、開発者コンソールに「NotAllowedError: play() failed because the user didn't interact with the document first」のようなエラーが出る場合があります。これが出る理由は、セキュリティの制約により音声の自動再生ができないというものです。理由は、ユーザーがボタンを押すなどのアクションを経由しないと、任意の音声を再生できないというものです。下記のように、ボタンを作成して、再生すれば問題ありません。
+
+{{{#nako3
+# MP3の再生テスト
+URL=「https://n3s.nadesi.com/image.php?f=213.mp3」
+「再生」のボタン作成
+それをクリック時には：
+　　MP3=URLをオーディオ開く。
+　　MP3をオーディオ再生。
 }}}
 
 ▲関連
