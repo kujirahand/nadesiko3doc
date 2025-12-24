@@ -1,0 +1,18 @@
+■貯蔵庫の著作権について
+
+貯蔵庫でプログラムを公開するとき、下記のようなライセンスを指定できます。
+
+- 未指定 - 未指定/貯蔵庫のみ
+- [[MIT - 改変可/表示:https://ja.wikipedia.org/wiki/MIT_License]]
+- N3S_ONLY - 貯蔵庫のみ/転載不可/改変不可/ハブ保存可
+- [[CC0 - 著作権破棄:https://creativecommons.jp/sciencecommons/aboutcc0/]]
+- [[CC-BY-ND - 著作権表示/改変不可:https://creativecommons.org/licenses/by-nd/4.0/deed.ja]]
+- [[BSD - 改変可/著作権表示:https://ja.wikipedia.org/wiki/BSD%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9]]
+- [[Apache - 改変可/著作権継承:https://ja.wikipedia.org/wiki/Apache_License]]
+- [[GPL2 - 改変可/継承:https://ja.wikipedia.org/wiki/GNU_General_Public_License]]
+- 自分用 - 貯蔵庫のみ/転載不可/ハブ保存なし
+
+おすすめは「MIT」で「なでしこ」と同じライセンスです。
+
+また、上記の「未指定」「自分用」以外を選択すると、定期的にプログラムが「なでしこハブ」にバックアップが行われます。 すると、プログラムの部分検索ができるようになり、オープンソースの発展に貢献できます。 
+
