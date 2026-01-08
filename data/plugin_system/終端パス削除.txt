@@ -1,0 +1,14 @@
+▲解説
+
+フォルダ名DIRの末尾にあるパス記号を削除します。
+
+▲利用例
+
+{{{#nako3
+「https://example.com/a/b/c/」から終端パス削除して表示
+}}}
+
+▲参考
+
+- [[plugin_system/終端パス追加]]
+- [[plugin_system/終端パス削除]]と[[plugin_system/終端パス除去]]は全く同じ命令
