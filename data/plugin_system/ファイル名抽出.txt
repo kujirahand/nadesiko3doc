@@ -1,0 +1,14 @@
+▲解説
+
+パスPATHからファイル名を抽出して返します。
+
+▲利用例
+
+{{{#nako3
+「https://nadesi.com/v3/doc/index.php」からファイル名抽出して表示。
+}}}
+
+▲参考
+
+- [[plugin_system/パス抽出]]
+- [[plugin_system/拡張子抽出]]
