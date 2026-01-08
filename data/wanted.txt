@@ -5,6 +5,15 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system]]
+- [[plugin_system/拡張子抽出]] --- ファイル名Sから拡張子を抽出する
+- [[plugin_system/拡張子変更]] --- ファイル名Aの拡張子をBに変更して返す
+- [[plugin_system/終端パス追加]] --- パスSの終端にパス区切り文字を追加して返す
+- [[plugin_system/終端パス除去]] --- フォルダ名DIRの末尾にあるパス記号を削除する
+- [[plugin_system/終端パス削除]] --- フォルダ名DIRの末尾にあるパス記号を削除する
+- [[plugin_system/ファイル名抽出]] --- パスPATHからファイル名を抽出して返す
+- [[plugin_system/パス抽出]] --- パスPATHからディレクトリ部分を抽出して返す
+
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -23,6 +32,7 @@
 - [[plugin_browser/DOMヒント設定]] --- DOMのヒント(title属性)に値Vを設定
 - [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
+- [[plugin_browser/ヘッダ有テーブル作成]] --- 二次元配列AA(あるいは文字列の簡易CSVデータ)からヘッダ有りのTABLE要素を作成し、DOMオブジェクトを返す
 - [[plugin_browser/テーブル更新]] --- 既に作成したテーブルTBLを二次元配列AA(あるいは文字列の簡易CSVデータ)で更新する
 - [[plugin_browser/描画クリップ]] --- 描画命令のあとに使うと以後その範囲のみに描くことができるようになる
 - [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
@@ -35,6 +45,9 @@
 ▲ [[plugin_node]]
 - [[plugin_node/EUCファイル読]] --- euc-jp形式のファイルSを読み込む
 - [[plugin_node/EUCファイル保存]] --- Sをeuc-jp形式でファイルFへ書き込む
+- [[plugin_node/エクスプローラー起動]] --- Windowsでエクスプローラー、macOSでFinderを使って、fnameを起動する
+- [[plugin_node/ファイル上書コピー]] --- パスAをパスBへファイルコピーする(上書きを許可する)
+- [[plugin_node/ファイル上書移動]] --- パスAをパスBへ移動する(上書きも許可する)
 - [[plugin_node/テンポラリフォルダ]] --- テンポラリフォルダのパスを取得して返す
 - [[plugin_node/一時フォルダ作成]] --- 指定のフォルダに作業用の一時フォルダを作成して取得して返す
 - [[plugin_node/圧縮解凍ツールパス]] --- '7z'
