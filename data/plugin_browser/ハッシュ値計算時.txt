@@ -29,6 +29,7 @@ S2を「sha-256」でハッシュ値計算した時には
 
 ●参考
 
-- [[plugin_node/ハッシュ値計算]] --- PC版
 - [[plugin_browser/ハッシュ値計算時]] --- ブラウザ版
+- [[plugin_browser/ハッシュ値計算]] --- ブラウザ版
+- [[plugin_node/ハッシュ値計算]] --- PC版
 - [[plugin_node/ハッシュ関数一覧取得]]

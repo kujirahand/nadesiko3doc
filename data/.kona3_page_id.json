@@ -1287,5 +1287,8 @@
     "plugin_system\/終端パス除去": 4806,
     "plugin_system\/終端パス削除": 4807,
     "plugin_system\/ファイル名抽出": 4808,
-    "plugin_system\/パス抽出": 4809
+    "plugin_system\/パス抽出": 4809,
+    "plugin_browser\/ハッシュ値計算": 4810,
+    "plugin_browser\/ランダムUUID生成": 4811,
+    "plugin_browser\/ランダム配列生成": 4812
 }
