@@ -18,3 +18,4 @@ TをJSONエンコード整形して表示。
 
 - [[plugin_toml/TOML取得]]
 - [[plugin_toml/TOML変換]]
+- [[plugin_toml/TOML]]

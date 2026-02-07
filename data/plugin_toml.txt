@@ -1,0 +1,1 @@
+[[TOML形式のデータ:plugin_toml/TOML]]を扱うプラグイン。

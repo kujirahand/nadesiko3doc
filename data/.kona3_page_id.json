@@ -1290,5 +1290,7 @@
     "plugin_system\/パス抽出": 4809,
     "plugin_browser\/ハッシュ値計算": 4810,
     "plugin_browser\/ランダムUUID生成": 4811,
-    "plugin_browser\/ランダム配列生成": 4812
+    "plugin_browser\/ランダム配列生成": 4812,
+    "plugin_toml\/TOML": 4813,
+    "plugin_toml": 4814
 }
