@@ -1,3 +1,7 @@
+``互換性の注意: この命令は ver3.8 で削除予定です`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
+
+今後、[[plugin_csv/CSV変換]]を利用してください。
+
 ●『[[表CSV変換:plugin_csv/表CSV変換]]』の詳しい解説
 
 {{{#nako3(rows=8)

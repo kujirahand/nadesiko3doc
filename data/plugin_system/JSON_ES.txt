@@ -1,3 +1,5 @@
+``互換性の注意: この命令は ver3.8 で削除予定です`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
+
 ▲解説
 
 オブジェクトVをJSON形式にエンコードして整形して返します。(JSONエンコード整形と同じです。)

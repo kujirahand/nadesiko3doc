@@ -1,0 +1,36 @@
+●詳しい解説
+
+オブジェクトをJSON文字列に変換します。
+
+▲利用例
+
+なでしこのオブジェクトをJSONエンコードして表示する例です。
+
+{{{#nako3(rows=7)
+情報 = {}
+情報@「name」 = "なでしこ"
+情報@「url」 = "https://nadesi.com"
+情報をJSON変換して表示。
+#　→ {"name":"なでしこ","url":"https://nadesi.com"}
+}}}
+
+▲参考
+
+- (参考) [[文法/文字列]] --- 文字列について
+- (参考) [[文法/辞書型変数]] --- JSONデータを直接記述することもできます
+
+▲参考
+
+- [[plugin_system/JSON取得]] ... JSON文字列をなでしこのオブジェクトに変換する
+- [[plugin_system/JSON変換]] ... なでしこのオブジェクトをJSON文字列に変換する
+- [[plugin_system/JSONエンコード]] ... JSON取得と同じ
+- [[plugin_system/JSONデコード]] ... JSON変換と同じ
+
+▲参考
+
+- [[plugin_csv/CSV取得]]
+- [[plugin_csv/表CSV変換]]
+- [[plugin_toml/TOML取得]]
+- [[plugin_toml/TOML変換]]
+
+

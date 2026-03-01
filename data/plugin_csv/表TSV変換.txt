@@ -1,3 +1,7 @@
+``互換性の注意: この命令は ver3.8 で削除予定です`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
+
+今後は、[[plugin_csv/TSV変換]]を使ってください。
+
 ●『[[表TSV変換:plugin_csv/表TSV変換]]』の詳しい解説
 
 {{{#nako3(rows=7)
