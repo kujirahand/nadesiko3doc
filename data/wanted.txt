@@ -6,13 +6,7 @@
 
 
 ▲ [[plugin_system]]
-- [[plugin_system/JSON変換]] --- オブジェクトVをJSON形式の文字列に変換して返す
-- [[plugin_system/JSON取得]] --- JSON文字列をパースして、なでしこのオブジェクトとして返す
 - [[plugin_system/正規表現抽出]] --- 文字列Sを正規表現パターンREで正規表現マッチし、すべてのキャプチャグループ( )を一次元配列として返す。抽出文字列には二次元配列を返す
-
-▲ [[plugin_csv]]
-- [[plugin_csv/CSV変換]] --- 二次元配列AをCSV形式に変換して返す
-- [[plugin_csv/TSV変換]] --- 二次元配列AをTSV形式に変換して返す
 
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
@@ -67,7 +61,6 @@
 - [[plugin_node/AJAXバイナリ取得]] --- AJAXでURLにアクセスしバイナリ(arrayBuffer)形式で結果を得る。送信時AJAXオプションの値を参照。(非同期関数)
 - [[plugin_node/DISCORD送信]] --- DISCORDのウェブフックURLにSのメッセージを送信する。宛先のウェブフックを取得しておく必要がある。(非同期関数)
 - [[plugin_node/DISCORDファイル送信]] --- DISCORDのウェブフックURLにファイルF(パスを指定)とメッセージSを送信する。(非同期関数)
-- [[plugin_node/LINE画像送信]] --- LINEにメッセージを送信する。先にLINE Notifyのページで宛先のトークンを取得する。TOKENへIMAGE_FILEとMESSAGEをLINE画像送信する。
 - [[plugin_node/ランダムUUID生成]] --- ランダムに生成された36文字のv4 UUID(文字列)を返す
 - [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
