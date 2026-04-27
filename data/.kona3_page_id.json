@@ -1297,5 +1297,6 @@
     "plugin_system\/JSON取得": 4816,
     "plugin_node\/LINE画像送信": 4817,
     "plugin_csv\/CSV変換": 4818,
-    "plugin_csv\/TSV変換": 4819
+    "plugin_csv\/TSV変換": 4819,
+    "plugin_system\/正規表現抽出": 4820
 }
