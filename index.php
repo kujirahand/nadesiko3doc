@@ -32,7 +32,7 @@ define('KONA3_DIR_DATA',    '{$here}/data');
 define('KONA3_DIR_PRIVATE', '{$here}/private');
 define('KONA3_DIR_CACHE',   '{$here}/cache');
 __EOS__;
-    file_put_contents($file_kona3dir_def, $def . "\n");
+    file_put_contents($file_kona3dir_def, $def);
     // mkdir
     foreach (['data', 'private', 'cache'] as $d) {
         $dir = "{$here}/{$d}";
