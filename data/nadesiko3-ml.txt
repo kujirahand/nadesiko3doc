@@ -1,1 +1,4 @@
 nadesiko3-ml はなでしこで機械学習を実践するためのプラグインです。
+
+- [[リポジトリ:https://github.com/kujirahand/nadesiko3-ml]]
+- [[npm:https://nadesi.com/v3/doc/index.php?nadesiko3-ml]]
