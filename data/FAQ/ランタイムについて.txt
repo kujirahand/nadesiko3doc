@@ -35,7 +35,7 @@ Node.jsがマルチプラットフォーム対応のため、Win/Mac/Android/Lin
 Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットです。
 Chrome/Safari/Edgeなどのブラウザコンポーネントを使って動かします。
 
-- [[なでしこ3配布キット:https://nadesi.com/doc3/go.php?16421]]
+- [[なでしこ3配布キット(GitHub):https://github.com/kujirahand/nadesiko3webkit]]
 -- [[配布キット直接ダウンロード:https://github.com/kujirahand/nadesiko3webkit/releases]]
 
 ● 🍜 なでしこ3配布キット(Electron版) - [[enako]]
