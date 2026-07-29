@@ -5,6 +5,302 @@
 （なお、以下のリストは、バージョンアップごとに更新されます。）
 
 
+▲ [[plugin_system_debug]]
+- [[plugin_system_debug/JS実行]] --- JavaScriptのコードSRCを実行する(変数sysでなでしこシステムを参照できる)
+- [[plugin_system_debug/JSオブジェクト取得]] --- なでしこで定義した関数や変数nameのJavaScriptオブジェクトを取得する
+- [[plugin_system_debug/JS関数実行]] --- JavaScriptの関数NAMEを引数ARGS(配列)で実行する
+- [[plugin_system_debug/ASYNC]] --- なでしこのユーザー関数定義でASYNC(非同期関数である)ことを宣言する(非同期関数)
+- [[plugin_system_debug/AWAIT実行]] --- JavaScriptの非同期関数(Promise/async関数)のFを引数ARGSでawait実行する(非同期関数)
+- [[plugin_system_debug/JSメソッド実行]] --- JavaScriptのオブジェクトOBJのメソッドMを引数ARGS(配列)で実行する
+- [[plugin_system_debug/ナデシコ]] --- なでしこのコードCODEを実行する(非同期関数)
+- [[plugin_system_debug/ナデシコ続]] --- なでしこのコードCODEを実行する(非同期関数)
+- [[plugin_system_debug/実行]] --- 無名関数（あるいは、文字列で関数名を指定）Fを実行する(Fが関数でなければ無視する)
+- [[plugin_system_debug/実行時間計測]] --- 関数Fを実行して要した時間をミリ秒で返す
+- [[plugin_system_debug/終]] --- 終わる
+- [[plugin_system_debug/デバッグ表示]] --- デバッグ用にSを表示する
+- [[plugin_system_debug/ハテナ関数設定]] --- ハテナ関数「?? (計算式)」の動作をカスタマイズする。文字列の配列を指定可能で、システム関数名か「js:code」を指定可能。
+- [[plugin_system_debug/ハテナ関数実行]] --- 『ハテナ関数設定』で設定した関数を実行する
+- [[plugin_system_debug/エラー発生]] --- 故意にエラーSを発生させる
+- [[plugin_system_debug/__DEBUG]] --- デバッグモードにする
+- [[plugin_system_debug/__DEBUG強制待機]] --- 0
+- [[plugin_system_debug/__DEBUGブレイクポイント一覧]] --- []
+- [[plugin_system_debug/__DEBUG待機フラグ]] --- 0
+- [[plugin_system_debug/__DEBUG_BP_WAIT]] --- エディタのブレイクポイント機能のための待機(非同期関数)
+- [[plugin_system_debug/グローバル関数一覧取得]] --- グローバル変数にある関数一覧を取得
+- [[plugin_system_debug/システム関数一覧取得]] --- システム関数の一覧を取得
+- [[plugin_system_debug/システム関数存在]] --- 文字列で関数名を指定してシステム関数が存在するかを調べる
+- [[plugin_system_debug/プラグイン一覧取得]] --- 利用中のプラグイン一覧を得る
+- [[plugin_system_debug/モジュール一覧取得]] --- 取り込んだモジュール一覧を得る
+- [[plugin_system_debug/助詞一覧取得]] --- 文法として定義されている助詞の一覧を取得する
+- [[plugin_system_debug/予約語一覧取得]] --- 文法として定義されている予約語の一覧を取得する
+- [[plugin_system_debug/プラグイン名]] --- 'メイン'
+- [[plugin_system_debug/プラグイン名設定]] --- プラグイン名をSに変更する(システムにより自動的に「メイン」あるいはプラグインのファイル名が呼ばれる)
+- [[plugin_system_debug/名前空間]] --- ''
+- [[plugin_system_debug/名前空間設定]] --- 名前空間をSに設定する(システムにより自動的に変更される。ファイル名から拡張子を削ったもの)
+- [[plugin_system_debug/名前空間ポップ]] --- システム利用のため呼ぶべからず。(名前空間を一つ前の値に戻す)
+
+▲ [[plugin_system_math]]
+- [[plugin_system_math/足]] --- AとBを足す(算術演算を行う)
+- [[plugin_system_math/合計]] --- 引数(可変)に指定した値を全て合計して返す(可変引数)
+- [[plugin_system_math/引]] --- AからBを引く
+- [[plugin_system_math/掛]] --- AにBを掛ける
+- [[plugin_system_math/倍]] --- AのB倍を求める
+- [[plugin_system_math/割]] --- AをBで割る
+- [[plugin_system_math/割余]] --- AをBで割った余りを求める
+- [[plugin_system_math/偶数]] --- Aが偶数なら真を返す
+- [[plugin_system_math/奇数]] --- Aが奇数なら真を返す
+- [[plugin_system_math/二乗]] --- Aを二乗する
+- [[plugin_system_math/べき乗]] --- AのB乗を求める
+- [[plugin_system_math/以上]] --- AがB以上か
+- [[plugin_system_math/以下]] --- AがB以下か
+- [[plugin_system_math/未満]] --- AがB未満か
+- [[plugin_system_math/超]] --- AがB超か
+- [[plugin_system_math/等]] --- AがBと等しいか
+- [[plugin_system_math/等無]] --- AがBと等しくないか
+- [[plugin_system_math/一致]] --- AがBと一致するか(配列や辞書も比較可能)
+- [[plugin_system_math/不一致]] --- AがBと不一致か(配列や辞書も比較可能)
+- [[plugin_system_math/範囲内]] --- VがAからBの範囲内か
+- [[plugin_system_math/範囲]] --- AからBの範囲を表現する範囲オブジェクトを返す
+- [[plugin_system_math/連続加算]] --- A1+A2+A3...にBを足す(可変引数)
+- [[plugin_system_math/MAX]] --- 2個以上の数値のうち最大値を返す。(可変引数)
+- [[plugin_system_math/最大値]] --- 2個以上の数値のうち最大値を返す。(可変引数)
+- [[plugin_system_math/MIN]] --- 2個以上の数値のうち最小値を返す。(可変引数)
+- [[plugin_system_math/最小値]] --- 2個以上の数値のうち最小値を返す。(可変引数)
+- [[plugin_system_math/CLAMP]] --- 数値を下限から上限の範囲内に収めた値を返す。
+- [[plugin_system_math/論理OR]] --- AとBの論理和を返す(v1非互換)。
+- [[plugin_system_math/論理AND]] --- AとBの論理積を返す(v1非互換)。日本語の「AかつB」に相当する
+- [[plugin_system_math/論理NOT]] --- 値Vが0や空ならばtrue、それ以外ならばfalseを返す(v1非互換)
+- [[plugin_system_math/OR]] --- (ビット演算で)AとBの論理和を返す。
+- [[plugin_system_math/AND]] --- (ビット演算で)AとBの論理積を返す。日本語の「AかつB」に相当する
+- [[plugin_system_math/XOR]] --- (ビット演算で)AとBの排他的論理和を返す。
+- [[plugin_system_math/NOT]] --- (ビット演算で)Vの各ビットを反転して返す。
+- [[plugin_system_math/SHIFT_L]] --- VをAビット左へシフトして返す
+- [[plugin_system_math/SHIFT_R]] --- VをAビット右へシフトして返す(符号を維持する)
+- [[plugin_system_math/SHIFT_UR]] --- VをAビット右へシフトして返す(符号を維持しない、0で埋める)
+
+▲ [[plugin_system_string]]
+- [[plugin_system_string/文字数]] --- 文字列Vの文字数を返す
+- [[plugin_system_string/何文字目]] --- 文字列SでAが何文字目にあるか調べて返す。見つからなければ0を返す。
+- [[plugin_system_string/CHR]] --- 文字コードV(あるいは文字列配列)から文字を返す
+- [[plugin_system_string/ASC]] --- 文字列V(あるいは文字列配列)の最初の文字の文字コードを返す
+- [[plugin_system_string/文字挿入]] --- 文字列SのI文字目に文字列Aを挿入する
+- [[plugin_system_string/文字検索]] --- 文字列SでA文字目から文字列Bを検索。見つからなければ0を返す。(類似命令に『何文字目』がある)(v1非互換)
+- [[plugin_system_string/追加]] --- 文字列または配列SにAを追加して返す(v1非互換)
+- [[plugin_system_string/一行追加]] --- 文字列または配列SにAと改行を追加して返す(v1非互換)
+- [[plugin_system_string/連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
+- [[plugin_system_string/文字列連結]] --- 引数(可変)に指定した文字列を連結して文字列を返す(可変引数)
+- [[plugin_system_string/文字列分解]] --- 文字列Vを一文字ずつに分解して返す
+- [[plugin_system_string/リフレイン]] --- 文字列VをCNT回繰り返す(v1非互換)
+- [[plugin_system_string/出現回数]] --- 文字列SにAが何回出現するか数える
+- [[plugin_system_string/MID]] --- 文字列SのA文字目からCNT文字を抽出する(『文字抜出』と同じ)
+- [[plugin_system_string/文字抜出]] --- 文字列SのA文字目からCNT文字を抽出する(Aが0未満の時は後ろからA文字目からCNT文字を抽出)
+- [[plugin_system_string/LEFT]] --- 文字列Sの左端からCNT文字を抽出する
+- [[plugin_system_string/文字左部分]] --- 文字列Sの左端からCNT文字を抽出する
+- [[plugin_system_string/RIGHT]] --- 文字列Sの右端からCNT文字を抽出する(『文字右部分』と同じ)
+- [[plugin_system_string/文字右部分]] --- 文字列Sの右端からCNT文字を抽出する
+- [[plugin_system_string/区切]] --- 文字列Sを区切り文字Aで区切って配列で返す
+- [[plugin_system_string/文字列分割]] --- 文字列Sを区切り文字Aで分割して配列で返す
+- [[plugin_system_string/切取]] --- 文字列Sから文字列Aまでの部分を抽出する。切り取った残りは特殊変数『対象』に代入される。(v1非互換)
+- [[plugin_system_string/範囲切取]] --- 文字列Sで文字列AからBまでの部分を抽出して返す。切り取った残りは特殊変数『対象』に代入される。(v1非互換)
+- [[plugin_system_string/文字削除]] --- 文字列SのA文字目からB文字分を削除して返す
+- [[plugin_system_string/文字始]] --- 文字列SがAから始まるならば真を返す
+- [[plugin_system_string/文字終]] --- 文字列SがAで終わるならば真を返す
+- [[plugin_system_string/出現]] --- 文字列(配列)SにAが出現する場合に真を返す
+- [[plugin_system_string/置換]] --- 文字列Sのうち文字列AをBに全部置換して返す
+- [[plugin_system_string/単置換]] --- 文字列Sのうち、最初に出現するAだけをBに置換して返す
+- [[plugin_system_string/トリム]] --- 文字列Sの前後にある空白を削除する
+- [[plugin_system_string/空白除去]] --- 文字列Sの前後にある空白を削除する
+- [[plugin_system_string/右トリム]] --- 文字列Sの末尾にある空白を削除する
+- [[plugin_system_string/左トリム]] --- 文字列Sの先頭にある空白を削除する
+- [[plugin_system_string/末尾空白除去]] --- 文字列Sの末尾にある空白を削除する
+- [[plugin_system_string/大文字変換]] --- アルファベットの文字列Sを大文字に変換
+- [[plugin_system_string/小文字変換]] --- アルファベットの文字列Sを小文字に変換
+- [[plugin_system_string/平仮名変換]] --- 文字列Sのカタカナをひらがなに変換
+- [[plugin_system_string/カタカナ変換]] --- 文字列Sのひらがなをカタカナに変換
+- [[plugin_system_string/英数全角変換]] --- 文字列Sの半角英数文字を全角に変換
+- [[plugin_system_string/英数半角変換]] --- 文字列Sの全角英数文字を半角に変換
+- [[plugin_system_string/英数記号全角変換]] --- 文字列Sの半角英数記号文字を全角に変換
+- [[plugin_system_string/英数記号半角変換]] --- 文字列Sの記号文字を半角に変換
+- [[plugin_system_string/カタカナ全角変換]] --- 文字列Sの半角カタカナを全角に変換
+- [[plugin_system_string/カタカナ半角変換]] --- 文字列Sの全角カタカナを半角に変換
+- [[plugin_system_string/全角変換]] --- 文字列Sの半角文字を全角に変換
+- [[plugin_system_string/半角変換]] --- 文字列Sの全角文字を半角に変換
+- [[plugin_system_string/全角カナ一覧]] --- 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンァィゥェォャュョッ、。ー「」'
+- [[plugin_system_string/全角カナ濁音一覧]] --- 'ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ'
+- [[plugin_system_string/半角カナ一覧]] --- 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜｦﾝｧｨｩｪｫｬｭｮｯ､｡ｰ｢｣ﾞﾟ'
+- [[plugin_system_string/半角カナ濁音一覧]] --- 'ｶﾞｷﾞｸﾞｹﾞｺﾞｻﾞｼﾞｽﾞｾﾞｿﾞﾀﾞﾁﾞﾂﾞﾃﾞﾄﾞﾊﾞﾋﾞﾌﾞﾍﾞﾎﾞﾊﾟﾋﾟﾌﾟﾍﾟﾎﾟ'
+- [[plugin_system_string/通貨形式]] --- 数値Vを三桁ごとにカンマで区切る
+- [[plugin_system_string/ゼロ埋]] --- 数値VをA桁の0で埋める
+- [[plugin_system_string/空白埋]] --- 文字列VをA桁の空白で埋める
+- [[plugin_system_string/かなか判定]] --- 文字列Sの1文字目がひらがなか判定
+- [[plugin_system_string/カタカナ判定]] --- 文字列Sの1文字目がカタカナか判定
+- [[plugin_system_string/数字判定]] --- 文字列Sの1文字目が数字か判定
+- [[plugin_system_string/数列判定]] --- 文字列S全部が数字か判定
+
+▲ [[plugin_system_array]]
+- [[plugin_system_array/配列結合]] --- 配列Aを文字列Sでつなげて文字列で返す
+- [[plugin_system_array/配列只結合]] --- 配列Aの要素をただ結合して文字列で返す。(「」で配列結合と同じ)
+- [[plugin_system_array/配列検索]] --- 配列Aから文字列Sを探してインデックス番号(0起点)を返す。見つからなければ-1を返す。
+- [[plugin_system_array/配列要素数]] --- 配列Aの要素数を返す
+- [[plugin_system_array/要素数]] --- Aの要素数を返す。Aには配列/辞書型/文字列を指定する。
+- [[plugin_system_array/LEN]] --- Aの要素数を返す。Aには配列/辞書型/文字列を指定する。
+- [[plugin_system_array/配列挿入]] --- 配列AのI番目(0起点)に要素Sを追加して返す(v1非互換)
+- [[plugin_system_array/配列一括挿入]] --- 配列AのI番目(0起点)に配列bを追加して返す(v1非互換)
+- [[plugin_system_array/配列ソート]] --- 配列Aをソートして返す(A自体を変更)
+- [[plugin_system_array/配列数値変換]] --- 配列Aの各要素を数値に変換して返す(変数A自体を変更)
+- [[plugin_system_array/配列数値ソート]] --- 配列Aをソートして返す(A自体を変更)
+- [[plugin_system_array/配列カスタムソート]] --- 関数Fで配列Aをソートして返す(引数A自体を変更)
+- [[plugin_system_array/配列逆順]] --- 配列Aを逆にして返す。Aを書き換える(A自体を変更)。
+- [[plugin_system_array/配列シャッフル]] --- 配列Aをシャッフルして返す。Aを書き換える
+- [[plugin_system_array/配列削除]] --- 配列AのI番目(0起点)の要素を削除して返す。Aの内容を書き換える。辞書型変数ならキーIを削除する。
+- [[plugin_system_array/配列切取]] --- 配列AのI番目(0起点)の要素を切り取って返す。Aの内容を書き換える。引数Iには範囲オブジェクトを指定できる。その場合戻り値は配列型となる。辞書型変数ならキーIを削除する。
+- [[plugin_system_array/配列取出]] --- 配列AのI番目(0起点)からCNT個の要素を取り出して返す。Aの内容を書き換える
+- [[plugin_system_array/配列ポップ]] --- 配列Aの末尾を取り出して返す。Aの内容を書き換える。
+- [[plugin_system_array/配列プッシュ]] --- 配列Aの末尾にNを追加。Aの内容を書き換える。(『配列追加』と同じ)
+- [[plugin_system_array/配列追加]] --- 配列Aの末尾にBを追加して返す。Aの内容を書き換える。
+- [[plugin_system_array/配列複製]] --- 配列Aを複製して返す。
+- [[plugin_system_array/配列範囲コピー]] --- 配列Aの範囲I(数値化範囲オブジェクト)を複製して返す。
+- [[plugin_system_array/参照]] --- 値A(配列/文字列/辞書型)の範囲I(キーまたは範囲オブジェクト)を参照して(コピーせず)返す
+- [[plugin_system_array/配列参照]] --- 値A(配列/文字列/辞書型)の範囲I(キーまたは範囲オブジェクト)を参照して(コピーせず)返す(『参照』と同じ)
+- [[plugin_system_array/配列足]] --- 配列Aに配列Bを足し合わせて返す。
+- [[plugin_system_array/配列最大値]] --- 配列Aの値の最大値を調べて返す。
+- [[plugin_system_array/配列最小値]] --- 配列Aの値の最小値を調べて返す。
+- [[plugin_system_array/配列合計]] --- 配列Aの値を全て足して返す。配列の各要素を数値に変換して計算する。数値に変換できない文字列は0になる。
+- [[plugin_system_array/配列入替]] --- 配列Aの(0から数えて)I番目とJ番目の要素を入れ替えて返す。Aの内容を書き換える。
+- [[plugin_system_array/配列連番作成]] --- AからBまでの連番配列を生成して返す。
+- [[plugin_system_array/配列要素作成]] --- 値AをB個持つ配列を生成して返す。引数Bに配列を指定すると二次元以上の配列を生成する。
+- [[plugin_system_array/配列関数適用]] --- 引数を1つ持つ関数Fを、配列Aの全要素に適用した、新しい配列を返す。
+- [[plugin_system_array/配列マップ]] --- 引数を1つ持つ関数Fを、配列Aの全要素に適用した、新しい配列を返す。(『配列関数適用』と同じ)
+- [[plugin_system_array/配列フィルタ]] --- 引数を1つ持ち真偽を返す関数Fを利用して、配列Aの要素をフィルタして、新しい配列として返す。
+- [[plugin_system_array/表ソート]] --- 二次元配列AでB列目(0起点)(あるいはキー名)をキーに文字列順にソートする。Aの内容を書き換える。
+- [[plugin_system_array/表数値ソート]] --- 二次元配列AでB列目(0起点)(あるいはキー名)をキーに数値順にソートする。Aの内容を書き換える。
+- [[plugin_system_array/表ピックアップ]] --- 配列Aの列番号B(0起点)(あるいはキー名)で検索文字列Sを含む行を返す
+- [[plugin_system_array/表完全一致ピックアップ]] --- 配列Aの列番号B(0起点)(あるいはキー名)で検索文字列Sと一致する行を返す
+- [[plugin_system_array/表検索]] --- 二次元配列AでCOL列目(0起点)からキーSを含む行をROW行目から検索して何行目にあるか返す。見つからなければ-1を返す。
+- [[plugin_system_array/表列数]] --- 二次元配列Aの列数を調べて返す。
+- [[plugin_system_array/表行数]] --- 二次元配列Aの行数を調べて返す。
+- [[plugin_system_array/表行列交換]] --- 二次元配列Aの行と列を交換して返す。
+- [[plugin_system_array/表右回転]] --- 二次元配列Aを90度回転して返す。
+- [[plugin_system_array/表重複削除]] --- 二次元配列AのI列目にある重複項目を削除して返す。
+- [[plugin_system_array/表列取得]] --- 二次元配列AのI列目を返す。
+- [[plugin_system_array/表列挿入]] --- 二次元配列Aの(0から数えて)I列目に配列Sを挿入して返す
+- [[plugin_system_array/表列削除]] --- 二次元配列Aの(0から数えて)I列目削除して返す
+- [[plugin_system_array/表列合計]] --- 二次元配列Aの(0から数えて)I列目を合計して返す。
+- [[plugin_system_array/表曖昧検索]] --- 二次元配列AのROW行目からCOL列目(0起点)で正規表現Sにマッチする行を検索して何行目にあるか返す。見つからなければ-1を返す。(v1非互換)
+- [[plugin_system_array/表正規表現ピックアップ]] --- 二次元配列AでI列目(0起点)から正規表現パターンSにマッチする行をピックアップして返す。
+
+▲ [[plugin_system_datetime]]
+- [[plugin_system_datetime/元号データ]] --- [{ '元号': '令和', '改元日': '2019/05/01' }, { '元号': '平成', '改元日': '1989/01/08' }, { '元号': '昭和', '改元日': '1926/12/25' }, { '元号': '大正', '改元日': '1912/07/30' }, { '元号': '明治', '改元日': '1868/10/23' }]
+- [[plugin_system_datetime/今]] --- 現在時刻を「HH:mm:ss」の形式で返す
+- [[plugin_system_datetime/システム時間]] --- 現在のUNIX時間 (UTC(1970/1/1)からの経過秒数) を返す
+- [[plugin_system_datetime/システム時間ミリ秒]] --- 現在のUNIX時間 (UTC(1970/1/1)からの経過秒数) をミリ秒で返す
+- [[plugin_system_datetime/今日]] --- 今日の日付を「YYYY/MM/DD」の形式で返す
+- [[plugin_system_datetime/明日]] --- 明日の日付を「YYYY/MM/DD」の形式で返す
+- [[plugin_system_datetime/昨日]] --- 昨日の日付を「YYYY/MM/DD」の形式で返す
+- [[plugin_system_datetime/今年]] --- 今年が何年かを西暦で返す
+- [[plugin_system_datetime/来年]] --- 来年が何年かを西暦で返す
+- [[plugin_system_datetime/去年]] --- 去年が何年かを西暦で返す
+- [[plugin_system_datetime/今月]] --- 今月が何月かを返す
+- [[plugin_system_datetime/来月]] --- 来月が何月かを返す
+- [[plugin_system_datetime/先月]] --- 先月が何月かを返す
+- [[plugin_system_datetime/曜日]] --- Sに指定した日付の曜日を返す。不正な日付の場合は今日の曜日を返す。
+- [[plugin_system_datetime/曜日番号取得]] --- Sに指定した日付の曜日番号を番号で返す。不正な日付の場合は今日の曜日番号を返す。(0=日/1=月/2=火/3=水/4=木/5=金/6=土)
+- [[plugin_system_datetime/UNIXTIME変換]] --- 日時SをUNIX時間 (UTC(1970/1/1)からの経過秒数) に変換して返す(v1非互換)
+- [[plugin_system_datetime/UNIX時間変換]] --- 日時SをUNIX時間 (UTC(1970/1/1)からの経過秒数) に変換して返す(v1非互換)
+- [[plugin_system_datetime/日時変換]] --- UNIX時間 (UTC(1970/1/1)からの経過秒数) を「YYYY/MM/DD HH:mm:ss」の形式に変換
+- [[plugin_system_datetime/日時書式変換]] --- UNIX時間TM(または日付文字列)を「YYYY/MM/DD HH:mm:ss」または「YY-M-D H:m:s」その他、W:曜日、WWW:曜日英、MMM:月英、ccc:ミリ秒の書式に変換
+- [[plugin_system_datetime/和暦変換]] --- Sを和暦に変換する。Sは明治以降の日付が有効。
+- [[plugin_system_datetime/年数差]] --- 日付AとBの差を年数で求めて返す。A<Bなら正の数、そうでないなら負の数を返す (v1非互換)。
+- [[plugin_system_datetime/月数差]] --- 日付AとBの差を月数で求めて返す。A<Bなら正の数、そうでないなら負の数を返す (v1非互換)。
+- [[plugin_system_datetime/日数差]] --- 日付AとBの差を日数で求めて返す。A<Bなら正の数、そうでないなら負の数を返す。
+- [[plugin_system_datetime/時間差]] --- 時間AとBの時間の差を求めて返す。A<Bなら正の数、そうでないなら負の数を返す。
+- [[plugin_system_datetime/分差]] --- 時間AとBの分数の差を求めて返す。A<Bなら正の数、そうでないなら負の数を返す。
+- [[plugin_system_datetime/秒差]] --- 時間AとBの差を秒差で求めて返す。A<Bなら正の数、そうでないなら負の数を返す。
+- [[plugin_system_datetime/日時差]] --- 日時AとBの差を種類unitで返す。A<Bなら正の数、そうでないなら負の数を返す (v1非互換)。
+- [[plugin_system_datetime/時間加算]] --- 時間SにAを加えて返す。Aには「(+｜-)hh:nn:dd」で指定する。
+- [[plugin_system_datetime/日付加算]] --- 日付SにAを加えて返す。Aには「(+｜-)yyyy/mm/dd」で指定する。
+- [[plugin_system_datetime/日時加算]] --- 日時SにAを加えて返す。Aは「(+｜-)1(年/ヶ月/日/週/時間/分/秒)」のように指定する (v1非互換)。
+- [[plugin_system_datetime/時間ミリ秒取得]] --- ミリ秒単位の時間を数値で返す。結果は実装に依存する。
+
+▲ [[plugin_system_url]]
+- [[plugin_system_url/URLエンコード]] --- URLエンコードして返す
+- [[plugin_system_url/URLデコード]] --- URLデコードして返す
+- [[plugin_system_url/URLパラメータ解析]] --- URLパラメータを解析してハッシュで返す
+- [[plugin_system_url/BASE64エンコード]] --- BASE64エンコードして返す
+- [[plugin_system_url/BASE64デコード]] --- BASE64デコードして返す
+- [[plugin_system_url/拡張子抽出]] --- ファイル名Sから拡張子を抽出する
+- [[plugin_system_url/拡張子変更]] --- ファイル名Aの拡張子をBに変更して返す
+- [[plugin_system_url/終端パス追加]] --- パスSの終端にパス区切り文字を追加して返す
+- [[plugin_system_url/終端パス除去]] --- フォルダ名DIRの末尾にあるパス記号を削除する
+- [[plugin_system_url/終端パス削除]] --- フォルダ名DIRの末尾にあるパス記号を削除する
+- [[plugin_system_url/ファイル名抽出]] --- パスPATHからファイル名を抽出して返す
+- [[plugin_system_url/パス抽出]] --- パスPATHからディレクトリ部分を抽出して返す
+
+▲ [[plugin_system_types]]
+- [[plugin_system_types/変数型確認]] --- 変数Vの型を返す
+- [[plugin_system_types/TYPEOF]] --- 変数Vの型を返す
+- [[plugin_system_types/文字列変換]] --- 値Vを文字列に変換
+- [[plugin_system_types/TOSTR]] --- 値Vを文字列に変換
+- [[plugin_system_types/整数変換]] --- 値Vを整数に変換
+- [[plugin_system_types/TOINT]] --- 値Vを整数に変換
+- [[plugin_system_types/実数変換]] --- 値Vを実数に変換
+- [[plugin_system_types/TOFLOAT]] --- 値Vを実数に変換
+- [[plugin_system_types/INT]] --- 値Vを整数に変換
+- [[plugin_system_types/FLOAT]] --- 値Vを実数に変換
+- [[plugin_system_types/NAN判定]] --- 値VがNaNかどうかを判定(命令『非数判定』を使う事を推奨)
+- [[plugin_system_types/非数判定]] --- 値Vが非数かどうかを判定(NAN判定より堅牢)
+- [[plugin_system_types/HEX]] --- 値Vを16進数に変換
+- [[plugin_system_types/進数変換]] --- 値VをN進数に変換
+- [[plugin_system_types/二進]] --- 値Vを2進数に変換
+- [[plugin_system_types/二進表示]] --- 値Vを2進数に変換して表示
+- [[plugin_system_types/RGB]] --- HTML用のカラーコードを返すRGB(R,G,B)で各値は0-255
+
+▲ [[plugin_system_json]]
+- [[plugin_system_json/JSON変換]] --- オブジェクトVをJSON形式の文字列に変換して返す
+- [[plugin_system_json/JSON取得]] --- JSON文字列をパースして、なでしこのオブジェクトとして返す
+- [[plugin_system_json/JSONエンコード]] --- オブジェクトVをJSON形式に変換して返す(『JSON変換』と同じ)
+- [[plugin_system_json/JSONエンコード整形]] --- オブジェクトVをJSON形式の文字列(整形済み)に変換して整形して返す
+- [[plugin_system_json/JSONデコード]] --- JSON文字列Sをオブジェクトにして返す(『JSON取得』と同じ)
+- [[plugin_system_json/JSON_E]] --- オブジェクトVをJSON形式の文字列に変換して返す(『JSON変換』と同じ)
+- [[plugin_system_json/JSON_ES]] --- オブジェクトVをJSON形式の文字列(整形済み)に変換して返す(『JSONエンコード整形』と同じ)
+- [[plugin_system_json/JSON_D]] --- JSON文字列Sをオブジェクトにして返す(『JSON取得』と同じ)
+
+▲ [[plugin_system_regexp]]
+- [[plugin_system_regexp/正規表現マッチ]] --- 文字列Aを正規表現パターンBでマッチして結果を返す(パターンBは「/pat/opt」の形式で指定。optにgの指定がなければ部分マッチが『抽出文字列』に入る)
+- [[plugin_system_regexp/正規表現抽出]] --- 文字列Sを正規表現パターンREで正規表現マッチし、すべてのキャプチャグループ( )を一次元配列として返す。抽出文字列には二次元配列を返す
+- [[plugin_system_regexp/抽出文字列]] --- []
+- [[plugin_system_regexp/正規表現置換]] --- 文字列Sの正規表現パターンAをBに置換して結果を返す(パターンAは/pat/optで指定)
+- [[plugin_system_regexp/正規表現区切]] --- 文字列Sを正規表現パターンAで区切って配列で返す(パターンAは/pat/optで指定)
+
+▲ [[plugin_system_dict]]
+- [[plugin_system_dict/辞書キー列挙]] --- 辞書型変数Aのキーの一覧を配列で返す。
+- [[plugin_system_dict/辞書キー削除]] --- 辞書型変数AからキーKEYを削除して返す（A自体を変更する）。
+- [[plugin_system_dict/辞書キー存在]] --- 辞書型変数AのキーKEYが存在するか確認
+- [[plugin_system_dict/ハッシュキー列挙]] --- ハッシュAのキー一覧を配列で返す。
+- [[plugin_system_dict/ハッシュ内容列挙]] --- ハッシュAの内容一覧を配列で返す。
+- [[plugin_system_dict/ハッシュキー削除]] --- ハッシュAからキーKEYを削除して返す。
+- [[plugin_system_dict/ハッシュキー存在]] --- ハッシュAのキーKEYが存在するか確認
+
+▲ [[plugin_system_stdio]]
+- [[plugin_system_stdio/表示]] --- Sを表示
+- [[plugin_system_stdio/継続表示]] --- Sを改行なしで表示(ただし「表示」命令を使うことで画面出力される)
+- [[plugin_system_stdio/連続表示]] --- 引数に指定した引数を全て表示する(可変引数)
+- [[plugin_system_stdio/連続無改行表示]] --- 引数に指定した引数を全て表示する（改行しない)(可変引数)
+- [[plugin_system_stdio/表示ログ]] --- ''
+- [[plugin_system_stdio/表示ログクリア]] --- 表示ログを空にする
+- [[plugin_system_stdio/言]] --- Sを表示
+- [[plugin_system_stdio/コンソール表示]] --- Sをコンソール表示する(console.log)
+
+▲ [[plugin_system_timer]]
+- [[plugin_system_timer/秒待]] --- N秒の間待機する(非同期関数)
+- [[plugin_system_timer/秒待機]] --- N秒の間待機する(『秒待』と同じ)(非同期関数)
+- [[plugin_system_timer/秒逐次待機]] --- (非推奨) 逐次実行構文にて、N秒の間待機する (廃止予定)(非同期関数)
+- [[plugin_system_timer/秒後]] --- 無名関数（あるいは、文字列で関数名を指定）FをN秒後に実行する。変数『対象』にタイマーIDを代入する。
+- [[plugin_system_timer/秒毎]] --- 無名関数（あるいは、文字列で関数名を指定）FをN秒ごとに実行する(『タイマー停止』で停止できる)。変数『対象』にタイマーIDを代入する。
+- [[plugin_system_timer/秒タイマー開始時]] --- 無名関数（あるいは、文字列で関数名を指定）FをN秒ごとに実行する(『秒毎』と同じ)
+- [[plugin_system_timer/タイマー停止]] --- 『秒毎』『秒後』や『秒タイマー開始』で開始したタイマーを停止する
+- [[plugin_system_timer/全タイマー停止]] --- 『秒毎』『秒後』や『秒タイマー開始』で開始したタイマーを全部停止する
+
 ▲ [[plugin_browser]]
 - [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
 - [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
@@ -37,8 +333,6 @@
 - [[plugin_node/コンソールクリア]] --- コンソール画面をクリアする
 - [[plugin_node/エクスプローラー起動]] --- Windowsでエクスプローラー、macOSでFinderを使って、fnameを起動する
 - [[plugin_node/ファイルコピーデフォルト動作]] --- '上書禁止'
-- [[plugin_node/ファイル上書コピー]] --- パスAをパスBへファイルコピーする(コピー先に内容をマージしてコピー)(非同期関数)
-- [[plugin_node/ファイル上書移動]] --- パスAをパスBへ移動する(移動先に内容をマージしてコピー後、元を削除)(非同期関数)
 - [[plugin_node/ファイル処理時]] --- ファイルコピー・移動の処理状況をコールバックFで報告する(変数『対象』に{"件数":N,"現在":M}をセット)
 - [[plugin_node/ファイル処理強制停止]] --- 『ファイルコピー』『ファイル移動』などの処理を強制停止する
 - [[plugin_node/テンポラリフォルダ]] --- テンポラリフォルダのパスを取得して返す
@@ -65,6 +359,8 @@
 - [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
 ▲ [[plugin_httpserver]]
+- [[plugin_httpserver/POSTデータ]] --- ''
+- [[plugin_httpserver/FILESデータ]] --- ''
 - [[plugin_httpserver/簡易HTTPサーバ起動時]] --- ポート番号PORTを指定して簡易HTTPサーバを起動して、CALLBACKを実行する。
 - [[plugin_httpserver/簡易HTTPサーバ静的パス指定]] --- 静的コンテンツのパスを指定。URLをPATHへマップする。
 - [[plugin_httpserver/簡易HTTPサーバ受信時]] --- URLを指定して合致するリクエストが来たら処理を実行する。
