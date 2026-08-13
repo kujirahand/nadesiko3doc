@@ -1,5 +1,11 @@
 ●『[[ブラウザURL:plugin_browser/ブラウザURL]]』の詳しい解説
+
 ブラウザのURLを返します。
+
 {{{#nako3
 ブラウザURLを表示。
 }}}
+
+▲参考
+
+- [[plugin_system/URLパラメータ解析]]

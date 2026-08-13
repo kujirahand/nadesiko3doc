@@ -12,3 +12,8 @@ VをJSONエンコードして表示。
 
 }}}
 
+▲参考
+
+- [[plugin_browser/ブラウザURL]]
+- https://tkizzz.hatenablog.jp/entry/2026/07/27/200903
+
