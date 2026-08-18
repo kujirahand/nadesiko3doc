@@ -4,18 +4,27 @@
 
 ▲サンプル
 
-{{{#nako3(rows=9)
+ASYNCを付けた関数は『[[AWAIT実行:plugin_system/AWAIT実行]]』で呼び出します。
+
+{{{#nako3(rows=11)
 ●AAA(SEC)とは
 　　ASYNC
 　　「あ」と表示。
 　　(SEC)秒待つ。
+　　「{SEC}秒待ちました」で戻る。
 ここまで。
 
-3回
-　　「AAA」を[0.5]でAWAIT実行して表示。
+2回
+　　「AAA」を[0.1]でAWAIT実行して表示。
 ここまで。
+### 表示結果: あ
+### 0.1秒待ちました
+### あ
+### 0.1秒待ちました
 }}}
 
 ▲参考
 
 - [[plugin_system/AWAIT実行]]
+- [[plugin_system/秒待]]
+- [[文法/非同期処理の使い分け]]

@@ -8,5 +8,12 @@ A["a"]=100
 A["b"]=200
 AをJSONエンコードして表示。
 # → {"a":100,"b":200}
+### 表示結果: {"a":100,"b":200}
 }}}
 
+▲参考
+
+- [[plugin_system/空辞書]]
+- [[plugin_system/空オブジェクト]]
+- [[plugin_system/空配列]]
+- [[plugin_system/辞書キー列挙]]

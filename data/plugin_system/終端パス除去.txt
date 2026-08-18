@@ -6,6 +6,7 @@
 
 {{{#nako3
 「https://example.com/a/b/c/」から終端パス除去して表示
+### 表示結果: https://example.com/a/b/c
 }}}
 
 ▲参考

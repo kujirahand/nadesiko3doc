@@ -10,5 +10,20 @@
 S=『{"name":"なでしこ","url":"https://nadesi.com"}』
 SをJSONデコードしてAに代入。
 A@「url」を表示。＃→https://nadesi.com
+### 表示結果: https://nadesi.com
 }}}
 
+配列のJSONもデコードできます。
+
+{{{#nako3
+S＝『[1, 2, 3]』
+SをJSONデコード。
+それの配列合計を表示。
+### 表示結果: 6
+}}}
+
+▲参考
+
+- [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONエンコード整形]]
+- [[plugin_system/JSON_D]]

@@ -13,6 +13,7 @@
 }
 情報をJSONエンコードして表示。
 # → {"name":"クジラ","url":"https://kujirahand.com/"}
+### 表示結果: {"name":"クジラ","url":"https://kujirahand.com/"}
 }}}
 
 ▲利用例
@@ -25,5 +26,6 @@
 情報@「url」 = "https://nadesi.com"
 情報をJSONエンコードして表示。
 #　→ {"name":"なでしこ","url":"https://nadesi.com"}
+### 表示結果: {"name":"なでしこ","url":"https://nadesi.com"}
 }}}
 
