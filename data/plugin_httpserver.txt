@@ -1,1 +1,222 @@
-plugin_httpserverとは、expressを利用しない簡易HTTPサーバです。(v3.3.49以降)
+■ plugin_httpserver (HTTP簡易サーバー)
+
+「plugin_httpserver」は、Expressなどの追加パッケージをインストールすることなく、Node.js標準のHTTPサーバー機能を利用して手軽にWebサーバーを構築できるなでしこ3のプラグインです。(cnako3専用)
+
+Webページの配信はもちろん、Web APIの作成、GET/POSTによるフォーム送受信、ファイルのアップロード処理までシンプルに記述できます。
+
+● プラグインの取り込み
+
+スクリプトの先頭で以下のように取り込みます。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+}}}
+
+● 基本的なサーバーの起動と応答
+
+サーバーを起動するには[[簡易HTTPサーバ起動時:plugin_httpserver/簡易HTTPサーバ起動時]]を使い、指定したURLに対するリクエストを処理するには[[簡易HTTPサーバ受信時:plugin_httpserver/簡易HTTPサーバ受信時]]を使います。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+「/」で簡易HTTPサーバ受信した時には
+    「こんにちは、なでしこWebサーバーです！」を簡易HTTPサーバ出力。
+ここまで。
+}}}
+
+● 【チュートリアル1】GETを利用した簡単な計算サーバー
+
+GETメソッドで送信されたURLパラメータ（クエリ文字列）は、[[GETデータ:plugin_httpserver/GETデータ]]という辞書型変数に自動的に格納されます。
+
+例えば、ブラウザから `/calc?a=10&b=20` にアクセスすると、`GETデータ["a"]` に「10」、`GETデータ["b"]` に「20」が入ります。
+
+以下は、フォームから2つの数値を入力して足し算を行う計算サーバーの例です。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ で計算サーバーが起動しました。」と表示。
+ここまで。
+
+「/」で簡易HTTPサーバ受信した時には
+    # GETパラメータから a と b を取得
+    A＝GETデータ["a"]
+    B＝GETデータ["b"]
+    
+    # パラメータが指定されていない場合は入力フォームを表示
+    もし、(Aが空)または(Bが空)ならば
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>足し算計算サーバー</h1>
+<form action="/" method="GET">
+    <input type="number" name="a" value="10"> +
+    <input type="number" name="b" value="20">
+    <button type="submit">計算する</button>
+</form>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    違えば
+        # パラメータがある場合は計算結果を表示
+        答え＝(Aを実数変換)＋(Bを実数変換)
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>計算結果</h1>
+<p>{A} + {B} = {答え}</p>
+<p><a href="/">もう一度計算する</a></p>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    ここまで。
+ここまで。
+}}}
+
+● 【チュートリアル2】POSTを利用した文字数カウントサーバー
+
+フォームからPOST送信されたデータやJSONデータは、[[POSTデータ:plugin_httpserver/POSTデータ]]という辞書型変数に格納されます。また、現在のリクエスト種別は[[HTTPメソッド:plugin_httpserver/HTTPメソッド]]変数（"GET"、"POST"など）で確認できます。
+
+以下は、フォームにテキストを入力してPOST送信すると、その文字数をカウントして結果を表示するサーバーの例です。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ で文字数カウントサーバーが起動しました。」と表示。
+ここまで。
+
+「/」で簡易HTTPサーバ受信した時には
+    # POSTリクエストが送られてきた場合
+    もし、HTTPメソッド＝"POST"ならば
+        本文＝POSTデータ["text"]
+        もし、本文が空ならば
+            本文＝""
+        ここまで。
+        
+        # 文字数をカウント
+        テキスト長＝本文の文字数。
+        
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>文字数カウント結果</h1>
+<p>文字数: <b>{テキスト長}</b> 文字</p>
+<hr>
+<pre>{本文}</pre>
+<hr>
+<p><a href="/">もう一度入力する</a></p>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    違えば
+        # GETリクエストの場合は入力フォームを表示
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>文字数カウント</h1>
+<form action="/" method="POST">
+    <textarea name="text" rows="8" cols="50" placeholder="ここにテキストを入力してください"></textarea><br><br>
+    <button type="submit">文字数をカウント</button>
+</form>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    ここまで。
+ここまで。
+}}}
+
+● 【チュートリアル3】POSTを利用したファイルのアップロード
+
+フォームから `enctype="multipart/form-data"` 形式でファイルがPOST送信されると、[[FILESデータ:plugin_httpserver/FILESデータ]]という配列型変数にアップロードされたファイル情報が格納されます。
+
+FILESデータの各要素は辞書型で、以下の情報が含まれています。
+
+| キー | 説明 | 例 |
+| `name` | アップロードされた元のファイル名 | `sample.png` |
+| `path` | サーバー上の一時保存先フルパス | `/tmp/...` |
+| `size` | ファイルサイズ（バイト数） | `1024` |
+| `type` | MIMEタイプ | `image/png` |
+| `fieldName` | フォームのinputタグのname属性 | `upload_file` |
+
+アップロードされた一時ファイルを目的のフォルダへ保存するには、`ファイル上書コピー` や `ファイル上書移動` を使用します。
+
+以下は、ファイルをアップロードしてサーバーの作業フォルダへ保存するサーバーの例です。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でアップロードサーバーが起動しました。」と表示。
+ここまで。
+
+「/」で簡易HTTPサーバ受信した時には
+    もし、HTTPメソッド＝"POST"ならば
+        # アップロードされたファイルが存在するか確認
+        もし、(FILESデータの要素数) > 0ならば
+            ファイル情報＝FILESデータ[0]
+            アップ名＝ファイル情報["name"]
+            一時パス＝ファイル情報["path"]
+            ファイル容量＝ファイル情報["size"]
+            ファイル種別＝ファイル情報["type"]
+            
+            # アップロードされたファイルをカレントディレクトリに保存
+            保存先＝「./{アップ名}」
+            一時パスを保存先へファイル上書コピー。
+            
+            HTML＝「<html><meta charset="utf-8"><body>
+<h1>ファイルアップロード成功</h1>
+<ul>
+    <li>ファイル名: {アップ名}</li>
+    <li>ファイルサイズ: {ファイル容量} バイト</li>
+    <li>ファイル種別: {ファイル種別}</li>
+    <li>保存先パス: {保存先}</li>
+</ul>
+<p><a href="/">戻る</a></p>
+</body></html>」
+            HTMLを簡易HTTPサーバ出力。
+        違えば
+            「ファイルが選択されていません。<br><a href="/">戻る</a>」を簡易HTTPサーバ出力。
+        ここまで。
+    違えば
+        # アップロードフォームを表示
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>ファイルアップロード</h1>
+<form action="/" method="POST" enctype="multipart/form-data">
+    <input type="file" name="upload_file"><br><br>
+    <button type="submit">アップロード開始</button>
+</form>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    ここまで。
+ここまで。
+}}}
+
+● 静的ファイルの配信
+
+HTMLファイルやCSS、画像ファイルなどをそのまま配信したい場合は、[[簡易HTTPサーバ静的パス指定:plugin_httpserver/簡易HTTPサーバ静的パス指定]]を使ってURLとローカルフォルダを関連付けます。
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+# 「/public」へのアクセスをローカルの「./public」フォルダ内のファイルにマッピング
+「/public」を「./public」に簡易HTTPサーバ静的パス指定。
+}}}
+
+● 関連する命令・変数
+
+- 起動・ルーティング・制御
+-- [[簡易HTTPサーバ起動時:plugin_httpserver/簡易HTTPサーバ起動時]] - 指定ポートでサーバーを起動してコールバックを実行する
+-- [[簡易HTTPサーバ受信時:plugin_httpserver/簡易HTTPサーバ受信時]] - 指定URLへのリクエストを受信してコールバックを実行する
+-- [[簡易HTTPサーバ静的パス指定:plugin_httpserver/簡易HTTPサーバ静的パス指定]] - URLとフォルダを関連付けて静的ファイルを配信する
+-- [[簡易HTTPサーバ出力:plugin_httpserver/簡易HTTPサーバ出力]] - レスポンスデータ（HTML等）を出力する
+-- [[簡易HTTPサーバヘッダ出力:plugin_httpserver/簡易HTTPサーバヘッダ出力]] - ステータスコードとHTTPヘッダを出力する
+-- [[簡易HTTPサーバ移動:plugin_httpserver/簡易HTTPサーバ移動]] - リダイレクト(302)を行ってページを移動する
+
+- リクエストデータ
+-- [[HTTPメソッド:plugin_httpserver/HTTPメソッド]] - リクエストのHTTPメソッド（"GET", "POST", "PUT", "DELETE" など）
+-- [[GETデータ:plugin_httpserver/GETデータ]] - GETパラメータが格納された辞書型変数
+-- [[POSTデータ:plugin_httpserver/POSTデータ]] - POSTパラメータが格納された辞書型変数
+-- [[FILESデータ:plugin_httpserver/FILESデータ]] - アップロードされたファイル情報が格納された配列型変数
