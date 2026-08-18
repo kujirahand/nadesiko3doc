@@ -1,0 +1,31 @@
+●『[[簡易HTTPサーバ静的パス指定:plugin_httpserver/簡易HTTPサーバ静的パス指定]]』の詳しい解説
+
+URLのパスとローカルのフォルダパスを関連付け、指定フォルダ内のHTML・CSS・JavaScript・画像などの静的ファイルを直接配信できるようにします。
+
+- URLに対応するローカルファイルが存在すれば、適切なMIMEタイプを自動判別して返却します。
+- ディレクトリへのアクセス時（例: `/public/`）は、そのディレクトリ内の `index.html` が存在すれば自動的に返却します。
+- セキュリティのため、URL内の上位パス参照（`..`）は自動的に除去されます。
+
+▲ 引数
+
+- URL: マッピング元のURLパス（例: `"/"`, `"/public"`）
+- PATH: マッピング先のローカルフォルダパス（例: `"./public"`, `"/var/www/html"`）
+
+▲ 利用例
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+# 「/public」へのアクセスをカレントディレクトリの「./public」フォルダにマッピング
+「/public」を「./public」に簡易HTTPサーバ静的パス指定。
+}}}
+
+▲ 関連
+
+- [[plugin_httpserver/簡易HTTPサーバ起動時]]
+- [[plugin_httpserver/簡易HTTPサーバ受信時]]

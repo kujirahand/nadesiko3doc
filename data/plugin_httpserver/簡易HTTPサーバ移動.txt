@@ -1,23 +1,38 @@
 ●『[[簡易HTTPサーバ移動:plugin_httpserver/簡易HTTPサーバ移動]]』の詳しい解説
- 
-受信時にヘッダ302(リダイレクト)を出力して、指定したURLへページを移動します。
 
-▲利用例
+[[plugin_httpserver/簡易HTTPサーバ受信時]]の処理内で、HTTPステータスコード `302 Found`（リダイレクト）と `Location` ヘッダを出力し、指定したURLへブラウザをリダイレクト移動させます。
+
+フォーム送信後の完了ページへのリダイレクトや、別サイトへの誘導などに利用します。
+
+▲ 引数
+
+- URL: 移動先となるURLパスまたは完全なURL（例: `"/thanks"`, `"https://nadesi.com/"`）
+
+▲ 利用例
+
 {{{
-# まずプラグインを取り込み、指定したポートで簡易HTTPサーバを起動
 !『plugin_httpserver.mjs』を取り込む。
+
 PORT＝8000。
-PORTで簡易HTTPサーバ起動した時には、
-　　「{PORT}でサーバ起動しました」と表示。
-　　# 受信
-　　「/」へ簡易HTTPサーバ受信した時には、
-　　　　# なでしこのホームページに移動
-　　　　「https://nadesi.com/」へ簡易HTTPサーバ移動。
-　　ここまで。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+# 「/docs」にアクセスがあったら公式サイトへ移動
+「/docs」で簡易HTTPサーバ受信した時には
+    「https://nadesi.com/v3/doc/」へ簡易HTTPサーバ移動。
+ここまで。
+
+# 「/」へのアクセス
+「/」で簡易HTTPサーバ受信した時には
+    「<p>トップページです。<a href="/docs">マニュアルはこちら</a></p>」を簡易HTTPサーバ出力。
 ここまで。
 }}}
-これを実行し、ブラウザで「http://localhost:8000/」を開くと、「なでしこ」のホームページに移動します。
 
-▲関連
-- [[簡易HTTPサーバ起動時:plugin_httpserver/簡易HTTPサーバ起動時]]
-- [[簡易HTTPサーバ受信時:plugin_httpserver/簡易HTTPサーバ受信時]]
+ブラウザで「http://localhost:8000/docs」を開くと、「https://nadesi.com/v3/doc/」に自動転送されます。
+
+▲ 関連
+
+- [[plugin_httpserver/簡易HTTPサーバ受信時]]
+- [[plugin_httpserver/簡易HTTPサーバ出力]]
+- [[plugin_httpserver/簡易HTTPサーバ起動時]]
