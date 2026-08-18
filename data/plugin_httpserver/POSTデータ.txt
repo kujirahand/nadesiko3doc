@@ -1,0 +1,59 @@
+● 説明
+
+[[plugin_httpserver/簡易HTTPサーバ受信時]]で、POSTメソッドのリクエストを受信した際に、送信されたボディデータ（フォームデータやJSONなど）が解析され、辞書型変数「POSTデータ」に自動的に代入されます。
+
+対応している送信形式（Content-Type）と格納内容：
+
+- **`application/x-www-form-urlencoded`**（通常のHTMLフォーム送信）:
+  各input要素のname属性をキーとする辞書型。
+- **`multipart/form-data`**（ファイル送信フォーム）:
+  通常のテキストフィールドが辞書型として格納されます。（※アップロードされたファイル自体は[[FILESデータ:plugin_httpserver/FILESデータ]]に入ります）
+- **`application/json`**（JavaScriptのfetchやAPI送信）:
+  JSONがオブジェクト（辞書型または配列）に自動パースされて格納されます。JSON形式でない場合は文字列として格納されます。
+- **その他のテキスト/バイナリ**:
+  UTF-8文字列として格納されます。
+
+▲ 利用例
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+「/」で簡易HTTPサーバ受信した時には
+    もし、HTTPメソッド＝"POST"ならば
+        # POST送信されたフォームから「message」を取得
+        本文＝POSTデータ["message"]
+        もし、本文が空ならば
+            本文＝"（未入力）"
+        ここまで。
+        
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>メッセージを受信しました</h1>
+<p>内容: <b>{本文}</b></p>
+<p><a href="/">戻る</a></p>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    違えば
+        # GETリクエスト時は入力フォームを表示
+        HTML＝「<html><meta charset="utf-8"><body>
+<h1>メッセージ送信</h1>
+<form action="/" method="POST">
+    <input type="text" name="message" size="40">
+    <button type="submit">送信</button>
+</form>
+</body></html>」
+        HTMLを簡易HTTPサーバ出力。
+    ここまで。
+ここまで。
+}}}
+
+▲ 参考
+
+- [[plugin_httpserver/簡易HTTPサーバ受信時]]
+- [[plugin_httpserver/HTTPメソッド]]
+- [[plugin_httpserver/FILESデータ]]
+- [[plugin_httpserver/GETデータ]]

@@ -12,6 +12,7 @@
 情報@「url」 = "https://nadesi.com"
 情報をJSON変換して表示。
 #　→ {"name":"なでしこ","url":"https://nadesi.com"}
+### 表示結果: {"name":"なでしこ","url":"https://nadesi.com"}
 }}}
 
 ▲参考

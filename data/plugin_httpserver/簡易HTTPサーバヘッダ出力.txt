@@ -1,0 +1,37 @@
+●『[[簡易HTTPサーバヘッダ出力:plugin_httpserver/簡易HTTPサーバヘッダ出力]]』の詳しい解説
+
+[[plugin_httpserver/簡易HTTPサーバ受信時]]の処理内で、ステータスコードNOとレスポンスヘッダHEAD（辞書形式）を出力します。
+
+JSON形式のAPIレスポンスを返す場合や、ブラウザのCORS制限（クロスオリジンアクセス）を解除するためのヘッダを付与したい場合に利用します。
+
+▲ 引数
+
+- NO: HTTPステータスコード（数値、例: `200`, `404`, `500` など）
+- HEAD: 出力するHTTPヘッダの辞書（例: `{"Content-Type": "application/json; charset=utf-8"}`）
+
+▲ 利用例 (JSON APIの作成)
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でAPIサーバーが起動しました。」と表示。
+ここまで。
+
+「/api/time」で簡易HTTPサーバ受信した時には
+    # JSON用ヘッダとCORS許可ヘッダを設定
+    ヘッダ＝{"Content-Type": "application/json; charset=utf-8", "Access-Control-Allow-Origin": "*"}
+    200でヘッダを簡易HTTPサーバヘッダ出力。
+    
+    # データをJSON文字列にして出力
+    返却データ＝{"status": "ok", "now": 今, "msg": "こんにちは"}
+    (返却データをJSONエンコード)を簡易HTTPサーバ出力。
+ここまで。
+}}}
+
+▲ 関連
+
+- [[plugin_httpserver/簡易HTTPサーバ受信時]]
+- [[plugin_httpserver/簡易HTTPサーバ出力]]
+- [[plugin_httpserver/簡易HTTPサーバ起動時]]

@@ -10,6 +10,13 @@
 123をNAN判定して表示。# false
 １２３をNAN判定して表示。# false
 1+2+3をNAN判定して表示。# false
+### 表示結果: true
+### false
+### true
+### true
+### false
+### false
+### false
 }}}
 
 カッコ（「」）で括られた数字は、半角と全角で結果が違うので注意。

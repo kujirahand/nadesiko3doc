@@ -9,6 +9,10 @@ trueを表示 # true
 falseを表示 # false
 trueを真偽判定して表示。# 真
 falseを真偽判定して表示。# 偽
+### 表示結果: true
+### false
+### 真
+### 偽
 }}}
 
 ▲参照

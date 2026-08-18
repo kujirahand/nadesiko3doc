@@ -1,6 +1,16 @@
-●『[[LF:plugin_system/LF]]』の詳しい解説
+▲説明
+
+ラインフィード文字（ASCIIコード 10 / \n）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
-ASC(CR)を表示 # → 13
-ASC(LF)を表示 # → 10
+ASC(LF)を表示。# → 10
+### 表示結果: 10
 }}}
+
+▲参考
+
+- [[plugin_system/CR]]
+- [[plugin_system/改行]]
+- [[plugin_system/タブ]]

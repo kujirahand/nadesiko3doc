@@ -9,6 +9,26 @@ B=2。        # 00000000000000000000000000000010
 SHIFT_L(A,B) # 00000000000000000000000000010100
 
 SHIFT_L(A,B)を表示。# 20
+### 表示結果: 20
 }}}
 
+1ビット左へシフトするたびに、値は2倍になります。
 
+{{{#nako3
+SHIFT_L(1,0)を表示。
+SHIFT_L(1,1)を表示。
+SHIFT_L(1,2)を表示。
+SHIFT_L(1,3)を表示。
+### 表示結果: 1
+### 2
+### 4
+### 8
+}}}
+
+▲参考
+
+- [[plugin_system/SHIFT_R]]
+- [[plugin_system/SHIFT_UR]]
+- [[plugin_system/AND]]
+- [[plugin_system/OR]]
+- [[plugin_system/二進]]

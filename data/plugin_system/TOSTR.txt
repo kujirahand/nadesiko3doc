@@ -8,6 +8,8 @@ A=1+1。
 TYPEOF(A)を表示。# number
 A=TOSTR(A)。
 TYPEOF(A)を表示。# string
+### 表示結果: number
+### string
 }}}
 
 ▲関連

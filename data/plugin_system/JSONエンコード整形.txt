@@ -7,7 +7,14 @@
 情報@「name」 = "なでしこ"
 情報@「url」 = "https://nadesi.com"
 情報をJSONエンコード整形して表示。
+### 表示結果: {
+###   "name": "なでしこ",
+###   "url": "https://nadesi.com"
+### }
 }}}
 
+▲参考
 
-
+- [[plugin_system/JSONエンコード]] --- 整形せずに1行で出力します
+- [[plugin_system/JSONデコード]]
+- [[plugin_system/JSON_ES]]

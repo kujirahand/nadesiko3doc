@@ -7,6 +7,10 @@ TYPEOF(「あああ」)を表示。# string
 TYPEOF(123)を表示。# number
 TYPEOF([1,2,3])を表示。# object
 TYPEOF(真)を表示。# boolean
+### 表示結果: string
+### number
+### object
+### boolean
 }}}
 
 ▲関連

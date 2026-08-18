@@ -7,5 +7,6 @@ undefinedとは何も値が定義されていない状態を示すための値�
 A=undefined
 確認用＝(A=undefined)
 確認用を表示。
+### 表示結果: true
 }}}
 

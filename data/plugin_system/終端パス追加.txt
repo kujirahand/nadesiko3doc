@@ -6,6 +6,7 @@
 
 {{{#nako3
 「http://example.com/a」に終端パス追加して表示。
+### 表示結果: http://example.com/a/
 }}}
 
 ▲参考

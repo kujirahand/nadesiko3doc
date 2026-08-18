@@ -1,7 +1,19 @@
-●解説
+▲説明
 
-JavaScriptのInfinityを利用するときに使います。
+JavaScriptの正の無限大（Infinity）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
-無限大を表示。
+無限大を表示。# → Infinity
+もし 100 < 無限大 ならば
+　「無限大より小さいです」と表示。
+ここまで
+### 表示結果: Infinity
+### 無限大より小さいです
 }}}
+
+▲参考
+
+- [[plugin_system/非数]]
+- [[plugin_system/非数判定]]

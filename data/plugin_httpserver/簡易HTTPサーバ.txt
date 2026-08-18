@@ -1,4 +1,48 @@
-▲プラグインを取り込んで使います
+■ plugin_httpserver (簡易HTTPサーバ)
+
+● 説明
+
+「plugin_httpserver」は、Node.js標準のHTTPサーバーモジュールを利用して、軽量なWebサーバーやWeb APIサーバーを構築できるなでしこ3の拡張プラグインです。(cnako3専用)
+
+Expressなどの追加モジュールを別途インストールすることなく、なでしこ単体で手軽にWebアプリケーションを作成できます。静的ファイルの配信、GET/POSTパラメータの取得、ファイルアップロードの処理などがサポートされています。
+
+▲ プラグインの取り込み
+
+プログラムの先頭で以下のように取り込みます。
+
 {{{
 !『plugin_httpserver.mjs』を取り込む。
 }}}
+
+▲ 基本的な使い方
+
+{{{
+!『plugin_httpserver.mjs』を取り込む。
+
+# ポート番号を指定してサーバーを起動
+PORT＝8000。
+PORTで簡易HTTPサーバ起動時には
+    「http://localhost:{PORT}/ でサーバーが起動しました。」と表示。
+ここまで。
+
+# 「/」にアクセスがあった時の処理を定義
+「/」で簡易HTTPサーバ受信した時には
+    「<h1>こんにちは、なでしこWebサーバーです！</h1>」を簡易HTTPサーバ出力。
+ここまで。
+}}}
+
+▲ 提供されている命令・変数一覧
+
+- サーバーの制御・応答
+-- [[簡易HTTPサーバ起動時:plugin_httpserver/簡易HTTPサーバ起動時]] - ポートを指定してサーバーを起動する
+-- [[簡易HTTPサーバ受信時:plugin_httpserver/簡易HTTPサーバ受信時]] - 指定したURLへのリクエストを受信して処理を行う
+-- [[簡易HTTPサーバ出力:plugin_httpserver/簡易HTTPサーバ出力]] - レスポンス本文（HTML等）を出力する
+-- [[簡易HTTPサーバヘッダ出力:plugin_httpserver/簡易HTTPサーバヘッダ出力]] - ステータスコードとヘッダを出力する
+-- [[簡易HTTPサーバ静的パス指定:plugin_httpserver/簡易HTTPサーバ静的パス指定]] - 指定URLに静的フォルダをマップする
+-- [[簡易HTTPサーバ移動:plugin_httpserver/簡易HTTPサーバ移動]] - リダイレクト(HTTP 302)を行う
+
+- リクエスト情報の取得
+-- [[HTTPメソッド:plugin_httpserver/HTTPメソッド]] - リクエストのHTTPメソッド（GET/POST等）
+-- [[GETデータ:plugin_httpserver/GETデータ]] - URLクエリパラメータの辞書
+-- [[POSTデータ:plugin_httpserver/POSTデータ]] - POST送信されたデータの辞書
+-- [[FILESデータ:plugin_httpserver/FILESデータ]] - アップロードされたファイル情報の配列
