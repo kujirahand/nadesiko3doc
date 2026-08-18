@@ -12,10 +12,41 @@ bar = 5
 # -----------
 」のTOML取得。
 TをJSONエンコード整形して表示。
+### 表示結果: {
+###   "setting": {
+###     "foo": 3,
+###     "bar": 5
+###   }
+### }
+}}}
+
+▲サンプル - 配列や文字列を含む場合
+
+{{{#nako3
+T=「name = "なでしこ"
+langs = ["JS", "PHP"]」のTOML取得。
+(T["name"])を表示。
+(T["langs"][1])を表示。
+### 表示結果: なでしこ
+### PHP
+}}}
+
+▲サンプル - 入れ子になったテーブル
+
+TOMLの`[テーブル名]`は、入れ子になったオブジェクトとして取得できます。
+
+{{{#nako3
+T=「[owner]
+name = "kujirahand"
+[owner.contact]
+mail = "example@example.com"」のTOML取得。
+(T["owner"]["name"])を表示。
+(T["owner"]["contact"]["mail"])を表示。
+### 表示結果: kujirahand
+### example@example.com
 }}}
 
 ▲参考
 
-- [[plugin_toml/TOML取得]]
 - [[plugin_toml/TOML変換]]
 - [[plugin_toml/TOML]]

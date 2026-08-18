@@ -7,9 +7,35 @@
 {{{#nako3
 O={"setting": {"foo": 3, "bar": 5}}
 OをTOML変換して表示。
+### 表示結果: [setting]
+### foo = 3
+### bar = 5
+}}}
+
+▲サンプル - 配列や文字列を含む場合
+
+{{{#nako3
+O={"name":"なでしこ","langs":["JS","PHP"]}
+OをTOML変換して表示。
+### 表示結果: name = "なでしこ"
+### langs = [ "JS", "PHP" ]
+}}}
+
+▲サンプル - 入れ子になったオブジェクト
+
+なでしこのオブジェクトを入れ子にすると、TOMLの`[テーブル名]`として出力されます。
+
+{{{#nako3
+O={"owner": {"name": "kujirahand", "contact": {"mail": "example@example.com"}}}
+OをTOML変換して表示。
+### 表示結果: [owner]
+### name = "kujirahand"
+###
+### [owner.contact]
+### mail = "example@example.com"
 }}}
 
 ▲参考
 
 - [[plugin_toml/TOML取得]]
-- [[plugin_toml/TOML変換]]
+- [[plugin_toml/TOML]]
