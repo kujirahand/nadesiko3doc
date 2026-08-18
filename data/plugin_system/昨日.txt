@@ -1,11 +1,16 @@
-●『[[昨日:plugin_datetime/昨日]]』の詳しい解説
+▲説明
 
-昨日の日付を「YYYY/MM/DD」の形式で返す。
-MM/DDは、それぞれゼロ埋めで二桁が返ります。
+昨日の日付を「YYYY/MM/DD」の形式の文字列で返します。
+
+▲利用例
+
 {{{#nako3
-昨日を表示。
+昨日は昨日
+「昨日の日付は{昨日}でした」を表示。
 }}}
 
 ▲参考
 
-- [[plugin_datetime/今日]]
+- [[plugin_system/今日]]
+- [[plugin_system/明日]]
+- [[plugin_system/今]]

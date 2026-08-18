@@ -1,7 +1,15 @@
-●『[[CR:plugin_system/CR]]』の詳しい解説
+▲説明
+
+キャリッジリターン文字（ASCIIコード 13 / \r）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
-ASC(CR)を表示 # → 13
-ASC(LF)を表示 # → 10
+ASC(CR)を表示。# → 13
 }}}
 
+▲参考
+
+- [[plugin_system/LF]]
+- [[plugin_system/改行]]
+- [[plugin_system/タブ]]

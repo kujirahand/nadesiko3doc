@@ -1,10 +1,16 @@
-●『[[明日:plugin_datetime/明日]]』の詳しい解説
-明日の日付を「YYYY/MM/DD」の形式で返す。
-MM/DDは、それぞれゼロ埋めで二桁が返ります。
+▲説明
+
+明日の日付を「YYYY/MM/DD」の形式の文字列で返します。
+
+▲利用例
+
 {{{#nako3
-明日を表示。
+明日は明日
+「明日の日付は{明日}です」を表示。
 }}}
 
 ▲参考
 
-- [[plugin_datetime/今日]]
+- [[plugin_system/今日]]
+- [[plugin_system/昨日]]
+- [[plugin_system/今]]

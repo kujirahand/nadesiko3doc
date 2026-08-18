@@ -1,12 +1,18 @@
-●『[[RIGHT:plugin_system/RIGHT]]』の詳しい解説
+▲説明
+
+文字列Sの右端からCNT文字を抽出して返します。命令『文字右部分』と同じです。
+
+▲利用例
 
 {{{#nako3
-S=「012345」
-RIGHT(S,2)を表示。# 45
+S＝「012345」
+RIGHT(S, 2)を表示。# → 45
+Sの3だけRIGHTを表示。# → 345
 }}}
 
 ▲参考
+
 - [[plugin_system/文字右部分]]
-文字左部分とRIGHTは同じ命令になります。
-
-
+- [[plugin_system/LEFT]]
+- [[plugin_system/MID]]
+- [[plugin_system/文字抜出]]

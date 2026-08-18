@@ -1,11 +1,17 @@
-●『[[HEX:plugin_system/HEX]]』の詳しい解説
+▲説明
 
-値を16進数に変換します。
+数値Vを16進数の文字列に変換して返します。
+
+▲利用例
 
 {{{#nako3
-HEX(255)を表示。
+HEX(255)を表示。# → ff
+HEX(16)を表示。# → 10
+255のHEXを表示。# → ff
 }}}
 
 ▲参考
 
-- [[plugin_system/進数変換]] 
+- [[plugin_system/進数変換]]
+- [[plugin_system/二進]]
+- [[plugin_system/二進表示]]

@@ -1,9 +1,18 @@
-●『[[未定義:plugin_system/未定義]]』の詳しい解説
+▲説明
 
-JavaScriptのundefinedを表現するために利用します。
+JavaScriptの未定義値（undefined）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
-未定義を表示。
+A＝未定義
+もし A ＝＝ 未定義 ならば
+　「未定義です」を表示。
+ここまで
 }}}
 
+▲参考
 
+- [[plugin_system/NULL]]
+- [[plugin_system/空]]
+- [[plugin_system/変数型確認]]

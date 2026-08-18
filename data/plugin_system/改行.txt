@@ -1,9 +1,16 @@
-●『[[改行:plugin_system/改行]]』の詳しい解説
+▲説明
 
-改行(0xA)を表す。
+改行文字（ASCIIコード 10 / \n）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
-ASC(改行)を表示。# → 10
-ASC(CHR(10))を表示。# → 10
+「1行目」と改行と「2行目」を表示。
 }}}
 
+▲参考
+
+- [[plugin_system/タブ]]
+- [[plugin_system/CR]]
+- [[plugin_system/LF]]
+- [[plugin_system/一行追加]]

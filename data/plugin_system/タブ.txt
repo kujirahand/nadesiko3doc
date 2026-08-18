@@ -1,7 +1,16 @@
-●『[[タブ:plugin_system/タブ]]』の詳しい解説
+▲説明
+
+タブ文字（ASCIIコード 9 / \t）を表すシステム定数です。
+
+▲利用例
 
 {{{#nako3
+「名前」とタブと「年齢」を表示。
 ASC(タブ)を表示。# → 9
-ASC(CHR(9))を表示。# → 9
 }}}
 
+▲参考
+
+- [[plugin_system/改行]]
+- [[plugin_system/CR]]
+- [[plugin_system/LF]]

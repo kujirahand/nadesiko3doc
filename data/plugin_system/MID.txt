@@ -1,10 +1,19 @@
-●『[[MID:plugin_system/MID]]』の詳しい解説
+▲説明
+
+文字列SのA文字目からCNT文字を抽出して返します。命令『文字抜出』と同じです。
+
+▲利用例
 
 {{{#nako3
-S=「012345」
-MID(S,3,2)を表示。# 23
+S＝「012345」
+MID(S, 3, 2)を表示。# → 23
+Sの2から3文字をMIDで表示。# → 123
 }}}
 
 ▲参考
+
 - [[plugin_system/文字抜出]]
-文字抜出とMIDは同じ命令になります。
+- [[plugin_system/LEFT]]
+- [[plugin_system/RIGHT]]
+- [[plugin_system/文字左部分]]
+- [[plugin_system/文字右部分]]

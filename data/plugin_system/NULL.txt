@@ -1,9 +1,17 @@
-●『[[NULL:plugin_system/NULL]]』の詳しい解説
+▲説明
 
-NULLとは何も値が存在しないことを表現するデータです。
-なでしこ3では、JavaScriptのnullを表現するために存在します。
+値が存在しないことを表すシステム定数です。JavaScriptのnullを表します。
+
+▲利用例
 
 {{{#nako3
-NULLを表示。
+A＝NULL
+もし A ＝＝ NULL ならば
+　「NULLです」を表示。
+ここまで
 }}}
 
+▲参考
+
+- [[plugin_system/未定義]]
+- [[plugin_system/空]]
