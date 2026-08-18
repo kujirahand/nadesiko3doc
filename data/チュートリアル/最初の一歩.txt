@@ -6,7 +6,7 @@
 
 世の中の多くのプログラミング言語は、英語をベースにして作られていますが、なでしこは日本語をベースにしているので、日本語話者にとっては、ほかの言語よりも、容易に学ぶことができます✨
 
-#ref(https://n3s.nadesi.com/image.php?f=2.png,w=300,*なでしこでプログラミングをはじめよう,@https://nadesi.com/v3/doc/index.php?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F%E6%9C%80%E5%88%9D%E3%81%AE%E4%B8%80%E6%AD%A9&show)
+#image(https://n3s.nadesi.com/image.php?f=2.png,w=300,*なでしこでプログラミングをはじめよう,@https://nadesi.com/v3/doc/index.php?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F%E6%9C%80%E5%88%9D%E3%81%AE%E4%B8%80%E6%AD%A9&show)
 
 {{{#column
 このページの内容をYouTube動画で確認することもできます。
@@ -19,7 +19,7 @@
 
 なでしこは、スマートフォンやタブレットのブラウザで動かすことができます。実際にチュートリアルを見ながら動かしてみると、いっそう効果的に学べます。空き時間にゴロゴロしながらでも、プログラミングをマスターできるかもしれません。
 
-#ref(https://n3s.nadesi.com/image.php?f=546.jpg,*なでしこはスマホやタブレット、PCで動かすことができます,@https://nadesi.com/v3/doc/go.php?995)
+#image(https://n3s.nadesi.com/image.php?f=546.jpg,*なでしこはスマホやタブレット、PCで動かすことができます,@https://nadesi.com/v3/doc/go.php?995)
 
 ●プログラムとは？
 

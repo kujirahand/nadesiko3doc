@@ -12,7 +12,7 @@ https://youtu.be/EPRytF4Jdo4
 
 なでしこを使うと手軽にいろいろな計算が可能になります。ここでは、計算の方法を学びましょう！
 
-#ref(https://nadesi.com/v3/storage/image.php?f=17.png,w=300,*なでしこで計算してみよう,@https://nadesi.com/v3/doc/index.php?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F%E3%81%AA%E3%81%A7%E3%81%97%E3%81%93%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%97%E3%82%88%E3%81%86&show)
+#image(https://nadesi.com/v3/storage/image.php?f=17.png,w=300,*なでしこで計算してみよう,@https://nadesi.com/v3/doc/index.php?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F%E3%81%AA%E3%81%A7%E3%81%97%E3%81%93%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%97%E3%82%88%E3%81%86&show)
 
 
 

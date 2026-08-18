@@ -2,7 +2,7 @@
 
 これから、日本語プログラミング言語「なでしこ」を使って、プログラミングを学んで行きましょう。このチュートリアルは、プログラミングを経験したことのない人に向けて作っています。
 
-#ref(https://n3s.nadesi.com/image.php?f=44.png,*なでしこをはじめよう！,@https://nadesi.com/v3/doc/go.php?997)
+#image(https://n3s.nadesi.com/image.php?f=44.png,*なでしこをはじめよう！,@https://nadesi.com/v3/doc/go.php?997)
 
 ●基礎編の目次
 

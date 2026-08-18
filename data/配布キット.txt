@@ -42,14 +42,14 @@ Windows版とmacOS版とLinux版の実行ファイルを作成できます。
 
 ZIPファイルを解凍したら、nadesiko3.exe(macならnadesiko3.app)の実行ファイルをダブルクリックしてみてください。無事になでしこ3が動くことが分かったら次の作業に移りましょう。
 
-#ref(https://nadesi.com/doc3/attach/11.png,*無事に実行できるとカメが図形を描きます。,@https://github.com/kujirahand/nadesiko3webkit/releases)
+#image(https://nadesi.com/doc3/attach/11.png,*無事に実行できるとカメが図形を描きます。,@https://github.com/kujirahand/nadesiko3webkit/releases)
 
 {{{#column
 (実行時のメモ) OSのセキュリティ保護機能により、Webサイトからダウンロードした実行ファイルは、実行が禁止される場合があります。
 
 - Windowsでは右クリック > プロパティで「許可する」のチェックを入れる必要があります。
 
-#ref(https://nadesi.com/doc3/attach/13.png,*Winではプロパティを表示して「許可する」にチェックを入れよう)
+#image(https://nadesi.com/doc3/attach/13.png,*Winではプロパティを表示して「許可する」にチェックを入れよう)
 
 - macOSの場合も、右クリックして実行をする必要がある可能性があります。
 
@@ -63,11 +63,11 @@ ZIPファイルを解凍したら、nadesiko3.exe(macならnadesiko3.app)の実�
 
 また、ウィンドウサイズやタイトルを変更したい場合は「index.json」を編集してください。
 
-#ref(https://nadesi.com/doc3/attach/12.png,*「webapp」フォルダの「main.nako3」を書き換えよう)
+#image(https://nadesi.com/doc3/attach/12.png,*「webapp」フォルダの「main.nako3」を書き換えよう)
 
 macOSの場合は、nadesiko3.app/Contents/MacOS/webappにwebappディレクトリがあります。 nadesiko3.appを右クリックして「パッケージ内容を表示」を選択すると、Finderにファイルが表示されます。
 
-#ref(https://nadesi.com/doc3/attach/10.png,*macOS版のアーカイブ,@https://github.com/kujirahand/nadesiko3webkit/releases)
+#image(https://nadesi.com/doc3/attach/10.png,*macOS版のアーカイブ,@https://github.com/kujirahand/nadesiko3webkit/releases)
 
 
 そして、改めて「nadesiko3.exe(macならnadesiko3.app)」を実行します。なお画像ファイルを使いたい場合も、webappフォルダにコピーすれば利用できます。

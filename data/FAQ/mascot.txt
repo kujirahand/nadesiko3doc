@@ -2,15 +2,15 @@
 
 なでしこのトップに掲載されているキャラクターは「なでしこ君」と「ナコ」です。2021年になでしこ3本の発売に合わせて、イラストレーターのしまさんが描いてくださいました。
 
-#ref(https://n3s.nadesi.com/image.php?f=44.png,*なでしこ君とナコとパコ)
-#ref(https://n3s.nadesi.com/image.php?f=43.png,*ナデシコ君とナコ旅立ち)
+#image(https://n3s.nadesi.com/image.php?f=44.png,*なでしこ君とナコとパコ)
+#image(https://n3s.nadesi.com/image.php?f=43.png,*ナデシコ君とナコ旅立ち)
 
 ▲ナコ
 
 ・元祖、なでしこの公式キャラクター。
 ・箱を被った猫がモチーフ。
 
-#ref(https://n3s.nadesi.com/image.php?f=66.png,*元祖なでしこ公式キャラクター/2008年頃)
+#image(https://n3s.nadesi.com/image.php?f=66.png,*元祖なでしこ公式キャラクター/2008年頃)
 
 ▲パコ
 
@@ -23,7 +23,7 @@
 
 （参考）以下は初代なでしこ本の時のなでしこ君
 
-#ref(https://nadesi.com/doc2/attach/1.png,w=300)
+#image(https://nadesi.com/doc2/attach/1.png,w=300)
 
 
 
