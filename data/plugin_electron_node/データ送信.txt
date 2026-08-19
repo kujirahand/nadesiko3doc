@@ -1,0 +1,16 @@
+▲説明
+
+指定したwebContents(レンダラ)にデータを送信します(内部で`webContents.send('main-send', キー, データ)`を呼び出します)。レンダラ側(`plugin_electron_nako3api`)の「データ受信時」命令で受け取ります。
+
+助詞は「webContentsに」「キーで」「データを」の順で指定します。
+
+▲利用例
+
+{{{
+窓["webContents"]に「greeting」で「こんにちは」をデータ送信。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/データ受信時]]
+- [[plugin_electron_node/データ呼出]]

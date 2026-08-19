@@ -1,0 +1,19 @@
+●説明
+
+『[[SQLITE3実行時:nadesiko3-sqlite3/SQLITE3実行時]]』と全く同じ働きをする命令です。文章の流れとして「～した後には」という表現を使いたいときに、こちらの名前を使うことができます。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」のSQLITE3開く。
+sqlCreate=『CREATE TABLE IF NOT EXISTS books(id INTEGER PRIMARY KEY, name)』
+(sqlCreateを[]でSQLITE3実行後)には
+　　「テーブルを作成しました」と表示。
+ここまで
+}}}
+
+▲参考
+
+- [[nadesiko3-sqlite3/SQLITE3実行時]]
+- [[nadesiko3-sqlite3/SQLITE3取得時]]

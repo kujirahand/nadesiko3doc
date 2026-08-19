@@ -1,6 +1,20 @@
-●『[[DOM親要素取得:plugin_htmlparser/DOM親要素取得]]』の詳しい解説
+●説明
+
+DOMの親要素を取得します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<div id="wrap"><span id="inner">こんにちは</span></div>』
+HTMLをHTMLパース。
+「#inner」のDOM要素取得して、DOM親要素取得して、Aに代入。
+Aの属性「id」を取得して表示。
+# → wrap
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM子要素全取得]]
+- [[plugin_htmlparser/DOM次要素取得]]
+- [[plugin_htmlparser/属性取得]]

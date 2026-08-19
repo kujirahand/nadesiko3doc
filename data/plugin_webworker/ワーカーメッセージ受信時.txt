@@ -1,0 +1,31 @@
+▲説明
+
+無名関数Fで、WORKER（[[plugin_webworker/ワーカー起動]]や[[plugin_webworker/ワーカーJS起動]]で作成した通常のWebWorker）に対してメッセージ（`postMessage`）を受信した時に実行するイベントを設定します。
+
+イベントが実行される際、受信したメッセージのデータはシステム変数『[[plugin_webworker/受信データ]]』に、イベントの引数（`MessageEvent`）はシステム変数『[[plugin_webworker/対象イベント]]』にそれぞれ自動的に代入されます。
+
+WORKERの指定を省略した場合は、この命令が実行されている側（ワーカー内部）自身が対象になります。なでしこ専用の[[plugin_webworker/NAKOワーカー起動]]で作成したワーカーとの通信には、代わりに[[plugin_webworker/NAKOワーカーデータ受信時]]を使ってください。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# 「worker.js」で汎用のWebWorkerを起動
+「worker.js」でワーカー起動して、Wに代入。
+
+WからワーカーメッセージF受信した時には
+    「受信: {受信データ}」と表示。
+ここまで。
+
+「こんにちは」をWにワーカーメッセージ送信。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカーメッセージ送信]]
+- [[plugin_webworker/受信データ]]
+- [[plugin_webworker/対象イベント]]
+- [[plugin_webworker/ワーカー起動]]
+- [[plugin_webworker/ワーカーJS起動]]
+- [[plugin_webworker/NAKOワーカーデータ受信時]]

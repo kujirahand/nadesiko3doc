@@ -64,8 +64,6 @@
 - [[plugin_node/ランダム配列生成]] --- 暗号強度の強い乱数のバイト配列(Uint8Array)を指定個数返す
 
 ▲ [[plugin_httpserver]]
-- [[plugin_httpserver/POSTデータ]] --- ''
-- [[plugin_httpserver/FILESデータ]] --- ''
 - [[plugin_httpserver/簡易HTTPサーバ起動時]] --- ポート番号PORTを指定して簡易HTTPサーバを起動して、CALLBACKを実行する。
 - [[plugin_httpserver/簡易HTTPサーバ静的パス指定]] --- 静的コンテンツのパスを指定。URLをPATHへマップする。
 - [[plugin_httpserver/簡易HTTPサーバ受信時]] --- URLを指定して合致するリクエストが来たら処理を実行する。

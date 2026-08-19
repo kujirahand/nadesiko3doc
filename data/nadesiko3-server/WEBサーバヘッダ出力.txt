@@ -1,0 +1,27 @@
+▲説明
+
+[[nadesiko3-server/WEBサーバGET時]]などのコールバック処理内で、クライアントへ送信するレスポンスヘッダOBJ（辞書型）を出力します。
+
+JSON形式のAPIレスポンスを返す場合や、ブラウザのCORS制限（クロスオリジンアクセス）を解除するためのヘッダを付与したい場合などに利用します。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/api/time」へWEBサーバGETした時には
+    ヘッダ＝{"Content-Type": "application/json; charset=utf-8", "Access-Control-Allow-Origin": "*"}
+    ヘッダをWEBサーバヘッダ出力。
+    返却データ＝{"status": "ok", "now": 今}
+    (返却データをJSONエンコード)をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバステータス出力]]
+- [[nadesiko3-server/WEBサーバ出力]]

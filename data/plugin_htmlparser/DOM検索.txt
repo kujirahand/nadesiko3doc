@@ -1,0 +1,22 @@
+●説明
+
+DOM(またはパース済みのHTML全体)から、クエリQを使って合致する要素を検索し、配列で返します。クエリQには、CSSセレクタ（例:「.クラス名」「#ID名」「タグ名」など）を指定できます。
+
+『[[DOM抽出:plugin_htmlparser/DOM抽出]]』は本命令のエイリアスで、全く同じ動作をします。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<ul><li class="item">A</li><li class="item">B</li></ul>』
+HTMLをHTMLパース。
+HTMLから「.item」をDOM検索して、Aに代入。
+Aの要素数を表示。# → 2
+(Aの0番目)をテキスト取得して表示。# → A
+}}}
+
+▲参考
+
+- [[plugin_htmlparser/DOM抽出]]
+- [[plugin_htmlparser/DOM要素取得]]
+- [[plugin_htmlparser/HTMLパース]]

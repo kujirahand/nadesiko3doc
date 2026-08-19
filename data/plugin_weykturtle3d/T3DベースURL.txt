@@ -1,0 +1,16 @@
+▲説明
+
+ThreeJSのライブラリやプラグインを動的に読み込む際に使用するベースURLです。初期値は`https://cdn.jsdelivr.net/npm/three@0.127.0`です。『T3Dライブラリ読込』『T3Dプラグイン読込』などの命令は、このURLを基準にしてスクリプトファイルを読み込みます。空文字列を設定すると、`import`文で`three`という名前で解決されるパス(バンドラのエイリアス設定など)から読み込みます。
+
+▲利用例
+
+{{{#nako3
+# ベースURLを別のCDNに変更する
+「https://cdn.jsdelivr.net/npm/three@0.127.0」をT3DベースURLに代入。
+T3Dライブラリ読込を待つ。
+}}}
+
+▲参考
+
+- [[plugin_weykturtle3d/T3Dライブラリ読込]]
+- [[plugin_weykturtle3d/T3Dプラグイン読込]]

@@ -1,0 +1,24 @@
+▲説明
+
+非同期通信(Ajax)で、URLへ辞書型のデータPARAMSを`FormData`(フォーム)形式としてPOST送信を開始する非同期処理オブジェクト(Promise)を作成して返します。
+
+ファイルのアップロードなど、フォーム形式での送信が必要な場合に利用します。値の変換に`multipart/form-data`が使われます。
+
+助詞は「URLへ(に)」「PARAMSを」の順で指定します。
+
+▲利用例
+
+{{{
+!非同期モード
+PARAMS={"name":"太郎","age":20}
+# URLへフォーム形式でPOST送信を開始する（実行例。ネットワーク環境が必要）
+応答=「https://example.com/post」へPARAMSをPOSTフォーム保障送信。
+本文=応答から「テキスト」でAJAX内容取得。
+本文を表示。
+}}}
+
+▲参考
+
+- [[plugin_node/POSTフォーム送信]]
+- [[plugin_node/POST保障送信]]
+- [[plugin_node/AJAX内容取得]]

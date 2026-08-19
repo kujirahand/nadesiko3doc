@@ -1,6 +1,18 @@
-●『[[値取得:plugin_htmlparser/値取得]]』の詳しい解説
+●説明
+
+DOMの値(input要素やselect要素などのvalue)を取得します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<input id="name" type="text" value="なでしこ">』
+HTMLをHTMLパース。
+「#name」のDOM要素取得して、値取得して表示。
+# → なでしこ
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/値設定]]
+- [[plugin_htmlparser/プロパティ取得]]

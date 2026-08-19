@@ -1,0 +1,27 @@
+▲説明
+
+[[plugin_webworker/ワーカー起動]]や[[plugin_webworker/ワーカーJS起動]]で作成した通常のWebWorkerオブジェクトWORKERに対して、NAKOワーカー（[[文法/NAKOワーカー]]）として扱うために必要な内部ハンドラ（メッセージ振り分け処理）を設定します。
+
+通常は[[plugin_webworker/NAKOワーカー起動]]を使えば自動的にこの設定が行われるため、意識する必要はありません。すでに`Worker`で起動済みのオブジェクトを後からNAKOワーカーとして扱いたい場合など、特殊なケースで利用します。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# あらかじめ用意したなでしこ実行用ワーカーファイルで起動
+「wnako3webworker.js」でワーカー起動して、Wに代入。
+
+# WORKERをNAKOワーカーとして扱えるように設定
+WにNAKOワーカーハンドラ設定。
+
+WからNAKOワーカーデータ受信した時には
+    受信データを表示。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_webworker/NAKOワーカー起動]]
+- [[plugin_webworker/ワーカー起動]]
+- [[plugin_webworker/NAKOワーカーデータ受信時]]

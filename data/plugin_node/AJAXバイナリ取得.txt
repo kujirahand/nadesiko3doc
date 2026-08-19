@@ -1,0 +1,22 @@
+▲説明
+
+非同期通信(AJAX)でURLにアクセスし、応答をバイナリ(ArrayBuffer)形式で取得する非同期関数です。
+
+送信時には『AJAXオプション』の値が参照されます。設定されていない場合はGETメソッドで送信します([[plugin_node/AJAXオプション設定]])。
+
+非同期関数なので、`!非同期モード`の宣言、または無名関数内での`await`のような使い方([[plugin_system/AWAIT]])が必要です。
+
+▲利用例
+
+{{{
+!非同期モード
+# URLから画像などのバイナリデータを取得する（実行例。ネットワーク環境が必要）
+バイナリ=「https://example.com/image.png」からAJAXバイナリ取得。
+バイナリを表示。
+}}}
+
+▲参考
+
+- [[plugin_node/AJAXテキスト取得]]
+- [[plugin_node/AJAX_JSON取得]]
+- [[plugin_node/AJAXオプション設定]]

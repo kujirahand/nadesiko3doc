@@ -1,0 +1,26 @@
+▲説明
+
+URLパスURIにPUTメソッドでリクエストが届いた時に、CALLBACKを実行するように設定します。
+
+主に、既存のリソースをまるごと更新するようなAPIを作る際に使います。コールバック内では、送信されたボディデータが[[nadesiko3-server/POSTデータ]]に格納されます。応答を返すには、[[nadesiko3-server/WEBサーバ出力]]などを使います。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/items/1」へWEBサーバPUTした時には
+    データ＝POSTデータ["value"]
+    「更新しました: {データ}」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバPOST時]]
+- [[nadesiko3-server/WEBサーバDELETE時]]
+- [[nadesiko3-server/POSTデータ]]

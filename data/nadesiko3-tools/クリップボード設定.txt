@@ -1,0 +1,18 @@
+▲説明
+
+OS(パソコン)のクリップボードに、指定した文字列を設定します。
+
+内部的には[[clipboardy:https://www.npmjs.com/package/clipboardy]]パッケージを利用しています。cnako3(Node.js版のなでしこ3)専用の命令です。
+
+▲利用例
+
+{{{#nako3
+!『拡張プラグイン:nadesiko3-tools.mjs』を取り込む
+
+「あいうえお」をクリップボード設定。
+クリップボード取得して表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-tools/クリップボード取得]]

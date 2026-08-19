@@ -1,0 +1,28 @@
+▲説明
+
+指定したURLにあるJavaScriptファイルを使って、ブラウザの標準的なWebWorker（`Worker`オブジェクト）を起動します。ワーカオブジェクトを返します。
+
+なでしこv3のプログラムをワーカーで実行したい場合は、この命令の代わりに[[plugin_webworker/NAKOワーカー起動]]を利用してください。この命令は、純粋なJavaScriptのWebWorkerファイルを起動したい場合に使います。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# 「worker.js」というJavaScriptファイルでワーカーを起動
+「worker.js」でワーカー起動して、Wに代入。
+
+WからワーカーメッセージF受信した時には
+    受信データを表示。
+ここまで。
+
+「こんにちは」をWにワーカーメッセージ送信。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカーJS起動]]
+- [[plugin_webworker/NAKOワーカー起動]]
+- [[plugin_webworker/ワーカーメッセージ受信時]]
+- [[plugin_webworker/ワーカーメッセージ送信]]
+- [[plugin_webworker/ワーカー終了]]

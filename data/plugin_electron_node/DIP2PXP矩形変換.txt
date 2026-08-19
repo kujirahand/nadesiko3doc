@@ -1,0 +1,9 @@
+▲説明
+
+『[[plugin_electron_node/DIP2PX矩形変換]]』命令の誤字による別名です。互換性のために存在します。動作は『DIP2PX矩形変換』と全く同じです。
+
+新しくプログラムを書く場合は、誤字のないこちらではなく『[[plugin_electron_node/DIP2PX矩形変換]]』を使ってください。廃止予定・非推奨の命令です。
+
+▲参考
+
+- [[plugin_electron_node/DIP2PX矩形変換]]

@@ -1,0 +1,18 @@
+▲説明
+
+ThreeJSの拡張プラグイン(OrbitControlsなど)を動的に読み込む非同期関数です。読み込みたいプラグインのファイル名を配列で指定します。ファイル名は『T3DベースURL』の`/examples/jsm/`以下のパスとして解決されます。全てのプラグインの読み込みが完了すると処理が続行され、いずれかの読み込みに失敗するとエラーになります。
+
+▲利用例
+
+{{{#nako3
+# OrbitControlsプラグインを読み込む
+T3Dライブラリ読込を待つ。
+["controls/OrbitControls.js"]をT3Dプラグイン読込を待つ。
+T3Dオービットコントロール設定。
+}}}
+
+▲参考
+
+- [[plugin_weykturtle3d/T3Dプラグイン読込後]]
+- [[plugin_weykturtle3d/T3DベースURL]]
+- [[plugin_weykturtle3d/T3Dライブラリ読込]]

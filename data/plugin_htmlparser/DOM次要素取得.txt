@@ -1,6 +1,21 @@
-●『[[DOM次要素取得:plugin_htmlparser/DOM次要素取得]]』の詳しい解説
+●説明
+
+DOMの次(次の兄弟)要素を取得します。
+
+なお、実装コード上のコメントには「親要素を取得する」と書かれていますが、実際の動作は次の要素(兄弟要素)を取得するというものです。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<ul><li id="first">A</li><li id="second">B</li></ul>』
+HTMLをHTMLパース。
+「#first」のDOM要素取得して、DOM次要素取得して、Aに代入。
+Aをテキスト取得して表示。
+# → B
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM親要素取得]]
+- [[plugin_htmlparser/DOM子要素全取得]]

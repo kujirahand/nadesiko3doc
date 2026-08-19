@@ -1,0 +1,25 @@
+▲説明
+
+URLパスURIにGETメソッドでリクエストが届いた時に、CALLBACKを実行するように設定します。
+
+コールバック内では、URLのクエリパラメータが[[nadesiko3-server/GETデータ]]に格納されます。応答を返すには、[[nadesiko3-server/WEBサーバ出力]]などを使います。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/」へWEBサーバGETした時には
+    「ハローワールド！」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバPOST時]]
+- [[nadesiko3-server/GETデータ]]
+- [[nadesiko3-server/WEBサーバ出力]]

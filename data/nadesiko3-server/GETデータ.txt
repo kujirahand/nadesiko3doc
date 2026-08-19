@@ -1,0 +1,28 @@
+▲説明
+
+[[nadesiko3-server/WEBサーバGET時]]や[[nadesiko3-server/WEBサーバPOST時]]などでリクエストを受信した際に、URLに含まれるクエリパラメータ（GETパラメータ）が自動的に解析され、辞書型のシステム変数「GETデータ」に代入されます。
+
+内部的にはExpressの`req.query`がそのまま格納されます。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+# 「/greet?name=なでしこ」のようにアクセスするとGETデータが取得できる
+「/greet」へWEBサーバGETした時には
+    名前＝GETデータ["name"]
+    もし、名前が空ならば、名前＝「ゲスト」
+    「こんにちは、{名前}さん！」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/POSTデータ]]
+- [[nadesiko3-server/WEBサーバGET時]]
+- [[nadesiko3-server/WEBサーバ出力]]

@@ -1,0 +1,24 @@
+▲説明
+
+[[nadesiko3-server/WEBサーバGET時]]などのコールバック処理内で、クライアントへHTTPステータスコードNOを出力して応答を終了します。
+
+エラー応答（404や500など）を返したい場合に利用します。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/notfound」へWEBサーバGETした時には
+    404をWEBサーバステータス出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバヘッダ出力]]
+- [[nadesiko3-server/WEBサーバ出力]]

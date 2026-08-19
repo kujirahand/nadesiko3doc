@@ -1,0 +1,20 @@
+▲説明
+
+Electron の Main プロセスが持つ `ipcMain` オブジェクトを参照するシステム定数です。レンダラプロセス(画面側)とのプロセス間通信(IPC)を受け取る際の対象として使います。
+
+『[[plugin_electron_node/呼出時]]』の対象に指定すると、レンダラから`ipcRenderer.invoke`で呼び出された処理を受け取ることができます。
+
+▲利用例
+
+{{{
+# レンダラから「greet」という名前で呼び出された時の処理を登録する
+IPCメインの「greet」呼出時には(イベント, 名前)
+　「こんにちは、{名前}さん」を戻す。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_electron_node/呼出時]]
+- [[plugin_electron_node/発生時]]
+- [[plugin_electron_node/データ受信時]]

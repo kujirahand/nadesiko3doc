@@ -1,0 +1,15 @@
+▲説明
+
+『nadesiko3-office』プラグインのバージョン番号を表すシステム定数です。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-office」を取り込む
+
+OFFICEバージョンを表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-office/エクセル新規ブック]]

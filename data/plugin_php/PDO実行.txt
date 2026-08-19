@@ -1,0 +1,20 @@
+▲説明
+
+SQLコマンドSQLを、バインドするデータ配列Aを与えて実行します。[[plugin_php/PDOオブジェクト]]に設定されているPDOに対して`prepare()`・`execute()`を呼び出すことで、SQLインジェクション対策済みのプレースホルダ(`?`)付きSQLを安全に実行できます。
+
+助詞は「SQLを」「Aで」(または「Aの」)の順です。SELECT文の結果を受け取りたい場合は、この命令の代わりに[[plugin_php/PDO全取得]]や[[plugin_php/PDO一行取得]]を使います。事前に[[plugin_php/PDO生成]]でPDOを用意しておく必要があります。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+"sqlite:test.db"をPDO生成。
+「CREATE TABLE IF NOT EXISTS tbl(id INTEGER PRIMARY KEY, name TEXT)」を[]でPDO実行。
+「INSERT INTO tbl(name) VALUES(?)」を["太郎"]でPDO実行。
+}}}
+
+▲参考
+
+- [[plugin_php/PDO生成]]
+- [[plugin_php/PDO全取得]]
+- [[plugin_php/PDO一行取得]]
+- [[plugin_php/PDO挿入ID取得]]

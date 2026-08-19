@@ -1,6 +1,19 @@
-●『[[DOM要素取得:plugin_htmlparser/DOM要素取得]]』の詳しい解説
+●説明
+
+『[[HTMLパース:plugin_htmlparser/HTMLパース]]』や『[[HTML_URL開:plugin_htmlparser/HTML_URL開]]』でパース済みのHTMLから、クエリQに該当するDOM要素を取得して返します。クエリQには、CSSセレクタ（例:「.クラス名」「#ID名」「タグ名」など）を指定できます。取得したDOM要素は、『テキスト取得』『属性取得』『HTML設定』などの命令に渡して利用します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<html><body><p id="msg">こんにちは</p></body></html>』
+HTMLをHTMLパース。
+「#msg」のDOM要素取得して、テキスト取得して表示。
+# → こんにちは
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM検索]]
+- [[plugin_htmlparser/テキスト取得]]
+- [[plugin_htmlparser/HTMLパース]]

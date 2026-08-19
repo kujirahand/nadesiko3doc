@@ -1,0 +1,14 @@
+▲説明
+
+`package.json`で設定しているアプリの名前(`name`、または`productName`)を返します(`app.getName()`)。
+
+▲利用例
+
+{{{
+アプリ名=Eアプリ名取得。
+「アプリ名: {アプリ名}」を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/Eアプリバージョン取得]]

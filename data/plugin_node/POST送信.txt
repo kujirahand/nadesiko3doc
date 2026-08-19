@@ -1,0 +1,23 @@
+▲説明
+
+非同期通信(AJAX)で、POSTメソッドによりURLへ辞書型のデータPARAMSを送信し、応答(テキスト)を返す非同期関数です。
+
+内部でPARAMSは[[plugin_node/POSTデータ生成]]と同じ形式(`application/x-www-form-urlencoded`)に変換されて送信されます。
+
+非同期関数なので、`!非同期モード`の宣言、または無名関数内での`await`のような使い方([[plugin_system/AWAIT]])が必要です。
+
+▲利用例
+
+{{{
+!非同期モード
+PARAMS={"name":"太郎","age":20}
+# URLへPOSTデータを送信し、応答を取得する（実行例。ネットワーク環境が必要）
+結果=「https://example.com/post」へPARAMSをPOST送信。
+結果を表示。
+}}}
+
+▲参考
+
+- [[plugin_node/POSTデータ生成]]
+- [[plugin_node/POST保障送信]]
+- [[plugin_node/POSTフォーム送信]]

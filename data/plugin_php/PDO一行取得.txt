@@ -1,0 +1,19 @@
+▲説明
+
+SQLコマンドSQLを、バインドするデータ配列Aを与えて実行し、結果を1行だけ取得して連想配列で返します。内部では`fetch(PDO::FETCH_ASSOC)`が使われます。
+
+助詞は「SQLを」「Aで」(または「Aの」)の順です。主キーなどで1件だけ検索したい場合に、[[plugin_php/PDO全取得]]より簡潔に結果を受け取れます。事前に[[plugin_php/PDO生成]]でPDOを用意しておく必要があります。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+"sqlite:test.db"をPDO生成。
+「SELECT * FROM tbl WHERE id = ?」を[1]でPDO一行取得。
+それ@"name"を表示。
+}}}
+
+▲参考
+
+- [[plugin_php/PDO全取得]]
+- [[plugin_php/PDO実行]]
+- [[plugin_php/PDO生成]]

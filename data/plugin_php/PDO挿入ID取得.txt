@@ -1,0 +1,20 @@
+▲説明
+
+直前の[[plugin_php/PDO実行]]によるINSERT文の実行結果、自動採番(AUTO INCREMENT)で挿入されたIDを取得して返します。PHPの`PDO::lastInsertId()`を呼び出します。
+
+助詞はありません。事前に[[plugin_php/PDO生成]]でPDOを用意し、INSERT文を[[plugin_php/PDO実行]]で実行しておく必要があります。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+"sqlite:test.db"をPDO生成。
+「CREATE TABLE IF NOT EXISTS tbl(id INTEGER PRIMARY KEY, name TEXT)」を[]でPDO実行。
+「INSERT INTO tbl(name) VALUES(?)」を["太郎"]でPDO実行。
+新ID=PDO挿入ID取得。
+新IDを表示。
+}}}
+
+▲参考
+
+- [[plugin_php/PDO実行]]
+- [[plugin_php/PDO生成]]

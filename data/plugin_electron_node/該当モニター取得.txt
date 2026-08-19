@@ -1,0 +1,18 @@
+▲説明
+
+指定した矩形(四角形の領域)に最も近いモニターのDisplay情報を返します(`screen.getDisplayMatching(rect)`)。矩形は`{x, y, width(w), height(h)}`形式のオブジェクトで指定します。
+
+助詞は「矩形の(から)」の順で指定します。
+
+▲利用例
+
+{{{
+矩形=({x: 0, y: 0, width: 800, height: 600})
+モニター=矩形の該当モニター取得。
+(モニター["workArea"])を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/付近モニター取得]]
+- [[plugin_electron_node/主モニター取得]]

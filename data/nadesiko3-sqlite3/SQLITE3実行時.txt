@@ -1,0 +1,23 @@
+●説明
+
+『SQLITE3開く』で開いたデータベースに対して、SQLをパラメータPARAMSで実行します。実行が完了すると、コールバック関数Fが呼び出されます。SQLが正しく実行できたかどうかを非同期に確認したいときに利用します。[[無名関数:無名関数について]]と一緒に使うと便利です。
+
+なお、INSERT文を実行した場合は、実行完了時にシステム変数『[[SQLITE3今挿入ID:nadesiko3-sqlite3/SQLITE3今挿入ID]]』に挿入したレコードのIDが代入されます。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」のSQLITE3開く。
+sqlCreate=『CREATE TABLE IF NOT EXISTS books(id INTEGER PRIMARY KEY, name)』
+(sqlCreateを[]でSQLITE3実行時)には
+　　「テーブルを作成しました」と表示。
+ここまで
+}}}
+
+▲参考
+
+- [[nadesiko3-sqlite3/SQLITE3実行後]]
+- [[nadesiko3-sqlite3/SQLITE3取得時]]
+- [[nadesiko3-sqlite3/SQLITE3実行]]
+- [[nadesiko3-sqlite3/SQLITE3今挿入ID]]

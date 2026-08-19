@@ -1,0 +1,16 @@
+▲説明
+
+『nadesiko3-mecab』プラグインのバージョン番号を表すシステム定数です。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-mecab」を取り込む
+
+MECABバージョンを表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-mecab/MECAB]]
+- [[nadesiko3-mecab/MECABオプション]]

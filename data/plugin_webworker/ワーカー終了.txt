@@ -1,0 +1,24 @@
+▲説明
+
+WORKER（[[plugin_webworker/ワーカー起動]]や[[plugin_webworker/ワーカーJS起動]]で作成した通常のWebWorker）を終了します。
+
+内部的には、標準の`Worker.terminate()`メソッドを呼び出します。WORKERの指定を省略した場合は、この命令が実行されている側（ワーカー内部）自身を終了しようとしますが、ワーカー自身を終了する場合は通常[[plugin_webworker/NAKOワーカー終了]]を使います。
+
+なでしこ専用の[[plugin_webworker/NAKOワーカー起動]]で作成したワーカーを終了する場合は、代わりに[[plugin_webworker/NAKOワーカー終了]]を使ってください。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+「worker.js」でワーカー起動して、Wに代入。
+
+# 何らかの処理の後、不要になったワーカーを終了する
+Wをワーカー終了。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカー起動]]
+- [[plugin_webworker/ワーカーJS起動]]
+- [[plugin_webworker/NAKOワーカー終了]]

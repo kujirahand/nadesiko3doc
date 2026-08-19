@@ -1,0 +1,27 @@
+▲説明
+
+WEBサーバの起動([[nadesiko3-server/WEBサーバ起動]])に成功した時に実行されるコールバック(CALLBACK)を設定します。
+
+[[nadesiko3-server/WEBサーバ起動時]]を使うと、この命令と[[nadesiko3-server/WEBサーバ起動]]をまとめて1つの命令で行えます。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+WEBサーバ起動成功時には
+    「サーバーが起動しました」と表示。
+ここまで。
+
+3000でWEBサーバ起動。
+
+「/」へWEBサーバGETした時には
+    「ハローワールド！」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバ起動]]
+- [[nadesiko3-server/WEBサーバ起動時]]
+- [[nadesiko3-server/WEBサーバ起動失敗時]]

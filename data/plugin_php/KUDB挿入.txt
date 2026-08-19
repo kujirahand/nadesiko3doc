@@ -1,0 +1,23 @@
+▲説明
+
+[[plugin_php/KUDB接続]]で接続したKUDBに、辞書型のオブジェクトVを1件挿入します。戻り値は、SQLiteが自動採番したID(整数)です。
+
+助詞は「Vを」です。Vの中に`TAG`というキーを含めておくと、そのタグ値がインデックス列(tag)にも保存され、[[plugin_php/KUDBタグ検索]]・[[plugin_php/KUDBタグ削除]]・[[plugin_php/KUDBタグ更新]]で高速に検索・操作できるようになります。事前に[[plugin_php/KUDB接続]]で接続していない場合は例外が発生します。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+「test.db」にKUDB接続。
+
+# TAGを指定して挿入すると、後からタグ検索できる
+{"名前": "太郎", "年齢": 13, "TAG": "太郎"}をKUDB挿入。
+新ID={"名前": "次郎", "年齢": 12}をKUDB挿入。
+新IDを表示。 # 挿入したドキュメントのID
+}}}
+
+▲参考
+
+- [[plugin_php/KUDB接続]]
+- [[plugin_php/KUDB更新]]
+- [[plugin_php/KUDB削除]]
+- [[plugin_php/KUDBタグ検索]]

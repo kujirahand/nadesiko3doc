@@ -1,0 +1,22 @@
+▲説明
+
+[[plugin_php/KUDB接続]]で接続したKUDBの、ID番目のドキュメントの内容をVに更新します。
+
+助詞は「IDを」「Vに」(または「Vへ」)の順です。IDには[[plugin_php/KUDB挿入]]の戻り値や、[[plugin_php/KUDB全取得]]などで取得したドキュメントの`_id`を指定します。タグを指定して一括更新したい場合は、代わりに[[plugin_php/KUDBタグ更新]]を使います。事前に[[plugin_php/KUDB接続]]で接続していない場合は例外が発生します。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+「test.db」にKUDB接続。
+新ID={"名前": "太郎", "年齢": 13}をKUDB挿入。
+
+# IDを指定して内容を更新する
+新IDを{"名前": "太郎", "年齢": 14}にKUDB更新。
+}}}
+
+▲参考
+
+- [[plugin_php/KUDB接続]]
+- [[plugin_php/KUDB挿入]]
+- [[plugin_php/KUDB削除]]
+- [[plugin_php/KUDBタグ更新]]

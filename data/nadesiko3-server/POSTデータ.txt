@@ -1,0 +1,27 @@
+▲説明
+
+[[nadesiko3-server/WEBサーバPOST時]]や[[nadesiko3-server/WEBサーバPUT時]]などでリクエストを受信した際に、送信されたボディデータ（フォームデータやJSONなど）が解析され、辞書型のシステム変数「POSTデータ」に自動的に代入されます。
+
+内部的にはExpressの`body-parser`ミドルウェアを利用しており、`application/json`、`application/x-www-form-urlencoded`、`text/plain`のいずれの形式でも自動的に解析されて`req.body`が格納されます。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/」へWEBサーバPOSTした時には
+    本文＝POSTデータ["message"]
+    もし、本文が空ならば、本文＝「（未入力）」
+    「メッセージを受信しました: {本文}」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/GETデータ]]
+- [[nadesiko3-server/WEBサーバPOST時]]
+- [[nadesiko3-server/WEBサーバ出力]]

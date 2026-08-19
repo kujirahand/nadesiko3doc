@@ -1,6 +1,19 @@
-●『[[タグ名取得:plugin_htmlparser/タグ名取得]]』の詳しい解説
+●説明
+
+DOMのタグ名を取得します。取得できるタグ名は小文字になります。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<a id="link" href="https://nadesi.com/">なでしこ</a>』
+HTMLをHTMLパース。
+「#link」のDOM要素取得して、Aに代入。
+Aのタグ名取得して表示。
+# → a
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM要素取得]]
+- [[plugin_htmlparser/属性取得]]

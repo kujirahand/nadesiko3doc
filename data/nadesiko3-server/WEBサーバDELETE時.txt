@@ -1,0 +1,25 @@
+▲説明
+
+URLパスURIにDELETEメソッドでリクエストが届いた時に、CALLBACKを実行するように設定します。
+
+主に、リソースを削除するAPIを作る際に使います。応答を返すには、[[nadesiko3-server/WEBサーバ出力]]などを使います。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+「/items/1」へWEBサーバDELETEした時には
+    「削除しました」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバPUT時]]
+- [[nadesiko3-server/WEBサーバGET時]]
+- [[nadesiko3-server/WEBサーバ出力]]

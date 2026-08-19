@@ -1,6 +1,19 @@
-●『[[プロパティ取得:plugin_htmlparser/プロパティ取得]]』の詳しい解説
+●説明
+
+DOMのプロパティPROPを取得します。属性(attribute)ではなく、DOM要素が持つプロパティ(例えば、チェックボックスの「checked」など)を取得したいときに使います。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<input id="chk" type="checkbox" checked>』
+HTMLをHTMLパース。
+「#chk」のDOM要素取得して、Aに代入。
+Aから「checked」をプロパティ取得して表示。
+# → true
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/属性取得]]
+- [[plugin_htmlparser/値取得]]

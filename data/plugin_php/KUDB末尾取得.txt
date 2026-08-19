@@ -1,0 +1,22 @@
+▲説明
+
+[[plugin_php/KUDB接続]]で接続したKUDBから、末尾(最後に挿入されたもの)を0番目としたINDEX番目から、COUNT件だけドキュメントを取得して配列で返します。SQLの`ORDER BY id DESC`＋`LIMIT`・`OFFSET`に相当し、新しく挿入したものから順に取得したい場合(掲示板の新着一覧など)に便利です。
+
+助詞は「INDEXから」「COUNTだけ」(または「COUNTを」)の順です。事前に[[plugin_php/KUDB接続]]で接続していない場合は例外が発生します。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+「test.db」にKUDB接続。
+
+# 最新の投稿から5件だけ取得する
+0から5だけKUDB末尾取得して反復
+　　対象を表示。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_php/KUDB接続]]
+- [[plugin_php/KUDB全取得]]
+- [[plugin_php/KUDB部分取得]]

@@ -1,6 +1,20 @@
-●『[[DOM子要素全取得:plugin_htmlparser/DOM子要素全取得]]』の詳しい解説
+●説明
+
+DOMの子要素を全部取得します。取得した結果は配列のように扱うことができます。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<ul id="list"><li>A</li><li>B</li></ul>』
+HTMLをHTMLパース。
+「#list」のDOM要素取得して、DOM子要素全取得して、Aに代入。
+Aの要素数を表示。# → 2
+(Aの0番目)をテキスト取得して表示。# → A
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM要素取得]]
+- [[plugin_htmlparser/DOM親要素取得]]
+- [[plugin_htmlparser/DOM次要素取得]]

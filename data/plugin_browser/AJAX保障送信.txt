@@ -1,0 +1,23 @@
+▲説明
+
+非同期通信(Ajax)でURLにデータの送信を開始し、非同期処理オブジェクト(Promise)を返します。送信時には「AJAXオプション」の値が使われます（未設定ならGETメソッド）。
+
+命令名の「保障」は、`fetch`が返すPromiseをそのまま返す系統の命令であることを表しています。取得した応答(Response)から実際の中身を取り出すには「AJAX内容取得」を使ってください。
+
+ブラウザ環境で動作する命令です。
+
+▲利用例
+
+{{{
+「https://api.aoikujira.com/zip/zip.php?fmt=json&zn=221-0824」へAJAX保障送信して、
+    「JSON」でAJAX内容取得したものを、
+        JSONデコードして表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/HTTP保障取得]] --- 同じ動作の別名
+- [[plugin_browser/AJAX内容取得]] --- 応答から内容を取り出す
+- [[plugin_browser/POST保障送信]]
+- [[plugin_browser/AJAXオプション]]
+- [[plugin_browser/AJAX送信時]] --- コールバック方式

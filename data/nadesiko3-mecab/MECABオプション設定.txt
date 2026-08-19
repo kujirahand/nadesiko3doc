@@ -1,0 +1,18 @@
+▲説明
+
+Mecabコマンドを実行する時のオプションOPTを指定します。あらかじめMecab本体をインストールし、パスを通しておく必要があります。指定したオプションは、以降の『MECAB』命令の実行時にそのまま利用されます。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-mecab」を取り込む
+
+# 辞書ディレクトリを指定する例
+「-d /usr/local/lib/mecab/dic/ipadic」をMECABオプション設定。
+「今日は良い天気です。」をMECABして表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-mecab/MECABオプション]]
+- [[nadesiko3-mecab/MECAB]]

@@ -1,0 +1,22 @@
+▲説明
+
+非同期通信(Ajax)でURLに辞書型のデータPARAMSをフォーム(FormData)としてPOST送信し、非同期処理オブジェクト(Promise)を返します。ファイルのアップロードなど、フォーム形式での送信が必要な場合に利用します。
+
+取得したPromise(応答)から実際の中身を取り出すには「AJAX内容取得」を使ってください。
+
+ブラウザ環境で動作する命令です。
+
+▲利用例
+
+{{{
+PARAMS={"name":"太郎","age":20}
+「https://example.com/post.php」へPARAMSをPOSTフォーム保障送信して、
+    「TEXT」でAJAX内容取得したものを表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/POST保障送信]] --- URLエンコード形式で送信する場合
+- [[plugin_browser/AJAX内容取得]] --- 応答から内容を取り出す
+- [[plugin_browser/POSTフォーム送信]] --- 逐次実行と組み合わせる方法
+- [[plugin_browser/POSTフォーム送信時]] --- コールバック方式

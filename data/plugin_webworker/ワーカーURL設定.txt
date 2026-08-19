@@ -1,0 +1,21 @@
+▲説明
+
+なでしこv3のファイル（`wnako3.js`や`wnako3webworker.js`など）が配置されているURLを、システム変数[[plugin_webworker/ワーカーURL]]に設定します。
+
+[[plugin_webworker/NAKOワーカー起動]]は、この設定されたURLをもとにワーカー用のなでしこ実行環境を読み込みます。なでしこの`<script>`タグから自動判定できない環境（CDN構成が特殊な場合など）で使用してください。指定したURLの末尾に`/`が無い場合は自動的に付加されます。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# なでしこ本体一式が置かれているURLを明示的に指定
+「https://cdn.jsdelivr.net/npm/nadesiko3@3/release/」をワーカーURL設定。
+
+NAKOワーカー起動して、Wに代入。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカーURL]]
+- [[plugin_webworker/NAKOワーカー起動]]

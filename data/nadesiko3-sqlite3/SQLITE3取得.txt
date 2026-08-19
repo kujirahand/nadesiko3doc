@@ -1,0 +1,20 @@
+●説明
+
+『SQLITE3開く』で開いたデータベースに対して、SQLをパラメータPARAMSで取得(SELECTなど)します。非同期関数なので、『待って』文や無名関数と組み合わせて使います。結果に該当するレコードが複数ある場合でも、先頭の1件だけが返ります。全件取得したい場合は『[[SQLITE3全取得:nadesiko3-sqlite3/SQLITE3全取得]]』を使ってください。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」のSQLITE3開く。
+『CREATE TABLE IF NOT EXISTS books(id INTEGER PRIMARY KEY, name)』を[]でSQLITE3実行。
+『INSERT INTO books (name) VALUES(?)』を["なでしこ"]でSQLITE3実行。
+『SELECT * FROM books WHERE id=?』を[1]でSQLITE3取得。
+それをJSONエンコードして表示。
+}}}
+
+▲参考
+
+- [[nadesiko3-sqlite3/SQLITE3全取得]]
+- [[nadesiko3-sqlite3/SQLITE3取得時]]
+- [[nadesiko3-sqlite3/SQLITE3実行]]

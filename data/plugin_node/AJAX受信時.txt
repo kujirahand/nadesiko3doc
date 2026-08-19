@@ -1,0 +1,22 @@
+▲説明
+
+非同期通信(Ajax)で、URLへデータを送信し、成功するとcallbackが実行されます。内部的には[[plugin_browser/AJAX送信時]]と同じ処理が呼び出され、通信結果はシステム変数『対象』にも代入されます。
+
+助詞は「callbackで」「URLから(を)」の順で指定します。
+
+▲利用例
+
+{{{
+# URLからデータを非同期通信で受信する（実行例。ネットワーク環境が必要）
+「表示処理」というCALLBACKで「https://example.com/」からAJAX受信時。
+
+●表示処理(S)とは
+    Sを表示。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_node/AJAX受信]]
+- [[plugin_node/AJAXテキスト取得]]
+- [[plugin_node/AJAX失敗時]]

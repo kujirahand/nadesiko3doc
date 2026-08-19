@@ -1,0 +1,21 @@
+●『[[PG実行:plugin_postgresql/PG実行]]』の詳しい解説
+
+SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。非同期関数のため、実行が完了するまで自動的に処理を待ち合わせてから次の行が実行される。SELECT文を実行した場合は取得した行の配列が戻り値になり、それ以外の場合は実行結果を表すオブジェクトが戻り値になる。あらかじめ[[plugin_postgresql/PG開]]でデータベースに接続しておく必要がある。
+
+{{{
+!「nadesiko3-postgresql」を取り込む
+
+「postgresql://postgres:hoge@localhost:5432/hoge」をPG開く。
+「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でPG実行。
+「INSERT INTO tt(id,value)VALUES($1,$2)」を[1,100]でPG実行。
+結果=「SELECT * FROM tt WHERE id=$1」を[1]でPG実行。
+結果[0]["value"]を表示。# 結果->100
+「DROP TABLE tt」を[]でPG実行。
+PG閉じる。
+}}}
+
+▲関連
+
+- [[plugin_postgresql/PG開]]
+- [[plugin_postgresql/PG閉]]
+- [[plugin_postgresql/PG逐次実行]] --- (非推奨)逐次実行構文を使う版

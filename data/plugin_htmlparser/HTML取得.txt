@@ -1,6 +1,18 @@
-●『[[HTML取得:plugin_htmlparser/HTML取得]]』の詳しい解説
+●説明
+
+DOMのHTML(タグを含む中身)を文字列として取得します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<div id="box"><b>太字</b>です</div>』
+HTMLをHTMLパース。
+「#box」のDOM要素取得して、HTML取得して表示。
+# → <b>太字</b>です
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/HTML設定]]
+- [[plugin_htmlparser/テキスト取得]]

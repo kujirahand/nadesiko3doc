@@ -1,0 +1,18 @@
+▲説明
+
+辞書形式のデータPARAMSを、`key=value&key=value...`の形式のURLエンコードされた文字列に変換して返します。キーと値はそれぞれ`encodeURIComponent`によりURLエンコードされます。
+
+POST送信のリクエストボディを自分で組み立てたい場合などに利用します。
+
+▲利用例
+
+{{{
+PARAMS={"name":"太郎","age":20}
+PARAMSのPOSTデータ生成して表示。
+### 表示結果: name=%E5%A4%AA%E9%83%8E&age=20
+}}}
+
+▲参考
+
+- [[plugin_node/POST送信]]
+- [[plugin_node/POST保障送信]]

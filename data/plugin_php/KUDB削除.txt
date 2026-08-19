@@ -1,0 +1,22 @@
+▲説明
+
+[[plugin_php/KUDB接続]]で接続したKUDBから、ID番目のドキュメントを削除します。
+
+助詞は「IDを」です。IDには[[plugin_php/KUDB挿入]]の戻り値や、[[plugin_php/KUDB全取得]]などで取得したドキュメントの`_id`を指定します。タグを指定してまとめて削除したい場合は、代わりに[[plugin_php/KUDBタグ削除]]を使います。事前に[[plugin_php/KUDB接続]]で接続していない場合は例外が発生します。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+「test.db」にKUDB接続。
+新ID={"名前": "太郎"}をKUDB挿入。
+
+# IDを指定して削除する
+新IDをKUDB削除。
+}}}
+
+▲参考
+
+- [[plugin_php/KUDB接続]]
+- [[plugin_php/KUDB挿入]]
+- [[plugin_php/KUDB更新]]
+- [[plugin_php/KUDBタグ削除]]

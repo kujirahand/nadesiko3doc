@@ -1,0 +1,29 @@
+▲説明
+
+MSGを、WORKER（[[plugin_webworker/ワーカー起動]]や[[plugin_webworker/ワーカーJS起動]]で作成した通常のWebWorker）に対してメッセージとして送信します。
+
+内部的には、標準の`Worker.postMessage()`メソッドをそのまま呼び出します。WORKERの指定を省略した場合は、この命令が実行されている側（ワーカー内部）からメインスレッド側へメッセージを送信します。
+
+なでしこ専用の[[plugin_webworker/NAKOワーカー起動]]で作成したワーカーとの通信には、代わりに[[plugin_webworker/NAKOワーカーデータ送信]]を使ってください。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+「worker.js」でワーカー起動して、Wに代入。
+
+WからワーカーメッセージF受信した時には
+    受信データを表示。
+ここまで。
+
+# ワーカーへメッセージを送信
+「こんにちは」をWにワーカーメッセージ送信。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカーメッセージ受信時]]
+- [[plugin_webworker/ワーカー起動]]
+- [[plugin_webworker/ワーカーJS起動]]
+- [[plugin_webworker/NAKOワーカーデータ送信]]

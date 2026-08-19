@@ -1,6 +1,18 @@
-●『[[テキスト取得:plugin_htmlparser/テキスト取得]]』の詳しい解説
+●説明
+
+DOMのテキスト(タグを除いた文字列)を取得します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<p id="msg">こんにちは<b>世界</b></p>』
+HTMLをHTMLパース。
+「#msg」のDOM要素取得して、テキスト取得して表示。
+# → こんにちは世界
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/HTML取得]]
+- [[plugin_htmlparser/DOM要素取得]]

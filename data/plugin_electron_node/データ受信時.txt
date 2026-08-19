@@ -1,0 +1,21 @@
+▲説明
+
+レンダラプロセスからのデータ送信を受けた時の処理を登録します(内部で`ipcMain.on('renderer-send', callback)`を呼び出します)。callbackには`(イベント, キー, メッセージ)`の形式で引数が渡されます。
+
+レンダラ側(`plugin_electron_nako3api`)の「データ送信」命令とペアで使う、Main-Renderer間のユーザー定義データ通信用の命令です。
+
+助詞は「callbackで」の順で指定します。
+
+▲利用例
+
+{{{
+データ受信時には(イベント, キー, メッセージ)
+　「受信: {キー} = {メッセージ}」を表示。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_electron_node/データ送信]]
+- [[plugin_electron_node/データ呼出時]]
+- [[plugin_electron_node/データ呼出]]

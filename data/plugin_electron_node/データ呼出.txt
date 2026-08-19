@@ -1,0 +1,18 @@
+▲説明
+
+指定したwebContents(レンダラ)にデータの呼び出し(Invoke)を行い、その結果を返す非同期関数です(内部で`webContents.invoke('main-invoke', キー, データ)`を呼び出します)。レンダラ側(`plugin_electron_nako3api`)の「データ呼出時」命令で登録された処理が呼び出されます。
+
+助詞は「webContentsに」「キーで」「データを」の順で指定します。
+
+▲利用例
+
+{{{
+!非同期モード
+結果=窓["webContents"]に「ask」で「元気?」をデータ呼出。
+結果を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/データ送信]]
+- [[plugin_electron_node/データ呼出時]]

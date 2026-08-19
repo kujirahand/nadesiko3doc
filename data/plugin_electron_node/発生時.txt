@@ -1,0 +1,24 @@
+▲説明
+
+対象(app、BrowserWindow、webContentsなど)にて、指定のイベントが発生した時の処理を登録します。対象がEventEmitterの場合は`obj.on(種類, callback)`が、対象がMenuItemの場合は`obj["種類"] = callback`が呼び出され、`click`イベントなどを設定できます。
+
+Electronの様々なオブジェクト(『[[plugin_electron_node/Eアプリ]]』、ウインドウ、webContentsなど)が発行するイベントを購読する、汎用的な命令です。1回だけ処理したい場合は『[[plugin_electron_node/単発発生時]]』を使ってください。
+
+助詞は「callbackで」「対象の」「種類」の順で指定します。
+
+▲利用例
+
+{{{
+Eアプリの「activate」発生時には(イベント)
+　「アプリがアクティブになりました」を表示。
+ここまで
+
+窓の「closed」発生時には(イベント)
+　「ウインドウが閉じられました」を表示。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_electron_node/単発発生時]]
+- [[plugin_electron_node/呼出時]]

@@ -1,0 +1,18 @@
+▲説明
+
+PHPのサーバー・実行環境情報($_SERVER)がそのまま代入されているシステム変数です。初期値は空配列`[]`ですが、なでしこ3PHPのプログラム開始時に自動的にPHPの$_SERVERの内容で上書きされます。
+
+リクエストメソッドやリモートIPアドレス、リクエストURIなどを調べたいときに参照します。この変数はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+(SERVER@"REQUEST_METHOD")を表示。 # → GET または POST など
+(SERVER@"REMOTE_ADDR")を表示。 # → 接続元のIPアドレス
+}}}
+
+▲参考
+
+- [[plugin_php/GET]]
+- [[plugin_php/POST]]
+- [[plugin_php/FILES]]

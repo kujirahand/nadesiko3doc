@@ -1,0 +1,19 @@
+▲説明
+
+なでしこv3本体（`wnako3.js`）や、[[plugin_webworker/NAKOワーカー起動]]が読み込む`wnako3webworker.js`が配置されているURL（ディレクトリ）を保持するシステム変数です。
+
+初期化時には、なでしこを読み込んでいる`<script>`タグのURLから自動的に設定されます。自動判定がうまくいかない場合は、[[plugin_webworker/ワーカーURL設定]]で明示的に指定してください。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# 現在のワーカーURLを確認
+ワーカーURLを表示。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカーURL設定]]
+- [[plugin_webworker/NAKOワーカー起動]]

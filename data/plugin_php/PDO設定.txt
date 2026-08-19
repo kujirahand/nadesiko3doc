@@ -1,0 +1,25 @@
+▲説明
+
+生成済みのPDOオブジェクトPDOを、現在利用中のPDOとして[[plugin_php/PDOオブジェクト]]システム変数に設定します。複数のデータベースを切り替えながら操作したい場合に使います。
+
+助詞は「PDOに」(または「PDOへ」)です。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+db1="sqlite:db1.db"をPDO生成。
+db2="sqlite:db2.db"をPDO生成。
+
+# db1を使う
+db1をPDO設定。
+「SELECT * FROM tbl」を[]でPDO全取得して表示。
+
+# db2に切り替える
+db2をPDO設定。
+「SELECT * FROM tbl」を[]でPDO全取得して表示。
+}}}
+
+▲参考
+
+- [[plugin_php/PDOオブジェクト]]
+- [[plugin_php/PDO生成]]

@@ -1,0 +1,19 @@
+▲説明
+
+DSN(データソース名。接続先データベースの種類と場所を表す文字列)を指定してPDOオブジェクトを生成し、それを返します。生成したPDOオブジェクトは、自動的に[[plugin_php/PDOオブジェクト]]システム変数に保存され、以後の[[plugin_php/PDO実行]]などで使われます。
+
+助詞は「DSNで」(または「DSNの」「DSNを」)です。生成されたPDOには`PDO::ATTR_ERRMODE`に`PDO::ERRMODE_EXCEPTION`が設定されるため、SQL実行時のエラーは例外として扱われます。この命令はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+# SQLiteのファイルデータベースに接続する
+"sqlite:test.db"をPDO生成。
+「CREATE TABLE IF NOT EXISTS tbl(id INTEGER PRIMARY KEY, name TEXT)」を[]でPDO実行。
+}}}
+
+▲参考
+
+- [[plugin_php/PDOオブジェクト]]
+- [[plugin_php/PDO設定]]
+- [[plugin_php/PDO実行]]

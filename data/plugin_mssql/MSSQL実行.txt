@@ -1,0 +1,22 @@
+●『[[MSSQL実行:plugin_mssql/MSSQL実行]]』の詳しい解説
+
+SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。非同期関数のため、実行が完了するまで自動的に処理を待ち合わせてから次の行が実行される。あらかじめ[[plugin_mssql/MSSQL開]]でデータベースに接続しておく必要がある。
+
+{{{
+!「nadesiko3-mssql」を取り込む。
+
+接続STR=「server=.;Database=Master;Trusted_Connection=Yes;Driver={SQL Server Native Client 11.0}」
+接続STRをMSSQL開く。
+「CREATE TABLE tt (id BIGINT PRIMARY KEY,value BIGINT)」を[]でMSSQL実行。
+「INSERT INTO tt (id,value) VALUES (?,?)」を[1, 30]でMSSQL実行。
+「INSERT INTO tt (id,value) VALUES (?,?)」を[2, 50]でMSSQL実行。
+「SELECT * FROM tt」を[]でMSSQL実行。
+対象を表示。
+「DROP TABLE tt」を[]でMSSQL実行。
+MSSQL閉じる。
+}}}
+
+▲関連
+
+- [[plugin_mssql/MSSQL開]]
+- [[plugin_mssql/MSSQL閉]]

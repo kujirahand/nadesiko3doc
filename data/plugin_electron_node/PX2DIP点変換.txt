@@ -1,0 +1,17 @@
+▲説明
+
+Point(座標点)を物理的なピクセル単位からDIP(Device Independent Pixel)単位に変換して返します(`screen.screenToDipPoint(point)`)。高DPI(高解像度)ディスプレイ環境でのウインドウ位置計算などに使います。
+
+助詞は「点の(から)」の順で指定します。
+
+▲利用例
+
+{{{
+DIP座標=({x: 200, y: 100})のPX2DIP点変換。
+(DIP座標)を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/DIP2PX点変換]]
+- [[plugin_electron_node/PX2DIP矩形変換]]

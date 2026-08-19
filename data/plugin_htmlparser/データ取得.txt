@@ -1,6 +1,19 @@
-●『[[データ取得:plugin_htmlparser/データ取得]]』の詳しい解説
+●説明
+
+DOMのデータ属性(data-*)Kを取得します。例えば「data-id」属性を取得したい場合は、Kに「id」を指定します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<div id="box" data-id="123">こんにちは</div>』
+HTMLをHTMLパース。
+「#box」のDOM要素取得して、Aに代入。
+Aから「id」をデータ取得して表示。
+# → 123
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/属性取得]]
+- [[plugin_htmlparser/スタイル取得]]

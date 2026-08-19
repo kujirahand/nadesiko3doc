@@ -1,6 +1,20 @@
-●『[[DOM配列変換:plugin_htmlparser/DOM配列変換]]』の詳しい解説
+●説明
+
+DOMを配列に変換します。『[[DOM検索:plugin_htmlparser/DOM検索]]』などで複数要素をまとめて取得した後、なでしこの配列命令(反復や配列アクセスなど)で扱いたいときに使います。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<ul><li>A</li><li>B</li><li>C</li></ul>』
+HTMLをHTMLパース。
+HTMLから「li」をDOM検索して、DOM配列変換して、Aに代入。
+Aを反復
+　　対象をテキスト取得して表示。
+ここまで
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM検索]]
+- [[plugin_htmlparser/DOM抽出]]

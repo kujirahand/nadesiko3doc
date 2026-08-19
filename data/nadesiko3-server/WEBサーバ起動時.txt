@@ -1,0 +1,27 @@
+▲説明
+
+ポート番号PORTNOを指定してWebサーバー（内部的にはExpress）を起動し、起動に成功したらCALLBACKを実行します。
+
+[[nadesiko3-server/WEBサーバ起動成功時]]でコールバックを設定してから[[nadesiko3-server/WEBサーバ起動]]する処理を、まとめて1つの命令で行えます。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+# 3000番ポートでWEBサーバーを起動
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+# ルーティング設定 (GET /)
+「/」へWEBサーバGETした時には
+    「ハローワールド！」をWEBサーバ出力。
+ここまで。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバ起動]]
+- [[nadesiko3-server/WEBサーバ起動成功時]]
+- [[nadesiko3-server/WEBサーバ起動失敗時]]

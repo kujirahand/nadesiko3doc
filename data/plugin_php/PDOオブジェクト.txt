@@ -1,0 +1,17 @@
+▲説明
+
+現在利用中のPDO(PHP Data Objects)オブジェクトが代入されているシステム変数です。初期値は`null`で、[[plugin_php/PDO生成]]でPDOを生成したとき、または[[plugin_php/PDO設定]]で切り替えたときに更新されます。
+
+[[plugin_php/PDO実行]]・[[plugin_php/PDO全取得]]・[[plugin_php/PDO一行取得]]・[[plugin_php/PDO挿入ID取得]]は、この変数に入っているPDOオブジェクトに対してSQLを実行します。通常は直接この変数を書き換えず、[[plugin_php/PDO生成]]や[[plugin_php/PDO設定]]を使ってください。この変数はなでしこ3PHP(phpnako)専用です。
+
+▲利用例
+
+{{{
+"sqlite:test.db"をPDO生成。
+PDOオブジェクトが null でなければ「接続済み」と表示。
+}}}
+
+▲参考
+
+- [[plugin_php/PDO生成]]
+- [[plugin_php/PDO設定]]

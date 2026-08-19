@@ -1,0 +1,24 @@
+▲説明
+
+(非推奨)「POSTフォーム送信」の利用を推奨します。
+
+「逐次実行」構文の中で、AjaxでURLに辞書型のデータPARAMSをフォーム(FormData)としてPOST送信し、成功すると『対象』にデータを設定します。失敗すると「AJAX失敗時」に指定した関数が実行されます。
+
+ブラウザ環境で動作する命令です。
+
+▲利用例
+
+{{{
+PARAMS={"name":"太郎","age":20}
+逐次実行
+    「https://example.com/post.php」へPARAMSをPOSTフォーム逐次送信。
+    対象を表示。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_browser/POSTフォーム送信]] --- 推奨される代替命令
+- [[plugin_browser/POST逐次送信]] --- URLエンコード形式で送信する場合
+- [[plugin_browser/AJAX逐次送信]]
+- [[plugin_browser/AJAX失敗時]]

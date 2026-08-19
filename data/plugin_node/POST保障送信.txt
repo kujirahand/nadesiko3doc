@@ -1,0 +1,25 @@
+▲説明
+
+非同期通信(Ajax)で、URLへ辞書型のデータPARAMSを`application/x-www-form-urlencoded`形式でPOST送信を開始する非同期処理オブジェクト(Promise)を作成して返します。
+
+内部でPARAMSの各キーと値を`key=value&key=value...`の形式に変換して送信します([[plugin_node/POSTデータ生成]]と同様の変換)。
+
+助詞は「URLへ(に)」「PARAMSを」の順で指定します。
+
+▲利用例
+
+{{{
+!非同期モード
+PARAMS={"name":"太郎","age":20}
+# URLへPOST送信を開始し、応答の内容をテキストで取得する（実行例。ネットワーク環境が必要）
+応答=「https://example.com/post」へPARAMSをPOST保障送信。
+本文=応答から「テキスト」でAJAX内容取得。
+本文を表示。
+}}}
+
+▲参考
+
+- [[plugin_node/POST送信]]
+- [[plugin_node/POSTフォーム保障送信]]
+- [[plugin_node/POSTデータ生成]]
+- [[plugin_node/AJAX内容取得]]

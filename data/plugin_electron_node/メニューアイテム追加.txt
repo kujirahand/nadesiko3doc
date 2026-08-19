@@ -1,0 +1,20 @@
+▲説明
+
+メニューにメニュー項目(MenuItem)を末尾に追加します(`menu.append(item)`)。追加する項目は『[[plugin_electron_node/メニュー項目作成]]』で作成したMenuItemオブジェクトを指定します。
+
+助詞は「メニューに」「項目を」の順で指定します。
+
+同じ動作をする命令として『[[plugin_electron_node/メニュー項目追加]]』もあります。
+
+▲利用例
+
+{{{
+項目=({ラベル: "終了", ID: "exit"})からメニュー項目作成。
+メニューに項目をメニューアイテム追加。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/メニュー項目追加]]
+- [[plugin_electron_node/メニューアイテム挿入]]
+- [[plugin_electron_node/メニュー項目作成]]

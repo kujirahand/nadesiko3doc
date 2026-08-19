@@ -1,0 +1,21 @@
+▲説明
+
+対象にて、指定のInvoke呼び出しを受けた時の処理を登録します(`obj.handle(種類, callback)`)。主に『[[plugin_electron_node/IPCメイン]]』を対象に指定し、レンダラプロセスから`ipcRenderer.invoke()`で呼び出された処理をMainプロセス側で受け取るために使います。
+
+callbackには`(イベント, ...引数)`の形式で引数が渡され、戻り値がそのまま呼び出し元(レンダラ)へ返されます。
+
+助詞は「callbackで」「対象の」「種類」の順で指定します。
+
+▲利用例
+
+{{{
+IPCメインの「greet」呼出時には(イベント, 名前)
+　「こんにちは、{名前}さん」を戻す。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_electron_node/呼出]]
+- [[plugin_electron_node/発生時]]
+- [[plugin_electron_node/IPCメイン]]

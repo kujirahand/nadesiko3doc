@@ -1,0 +1,18 @@
+▲説明
+
+Rectangle(矩形)を物理的なピクセル単位からDIP(Device Independent Pixel)単位に変換して返します(`screen.screenToDipRect(win, rect)`)。DPI(拡大率)は指定したウインドウが表示されているモニターを基準に相対的に計算されます。
+
+助詞は「矩形の(から)」「ウインドウで」の順で指定します。
+
+▲利用例
+
+{{{
+矩形=({x: 0, y: 0, width: 800, height: 600})
+DIP矩形=矩形の窓でPX2DIP矩形変換。
+(DIP矩形)を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/DIP2PX矩形変換]]
+- [[plugin_electron_node/PX2DIP点変換]]

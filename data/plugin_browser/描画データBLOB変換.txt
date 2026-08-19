@@ -1,0 +1,22 @@
+▲説明
+
+「描画中キャンバス」の描画内容を、PNG形式のBLOBオブジェクトに変換して返す非同期関数です。得られたBLOBは「BLOB作成」の引数にしたり、「POSTフォーム送信」などでサーバーへアップロードしたりするのに利用できます。
+
+▲利用例
+
+{{{
+# --- キャンバスへ四角を描画 ---
+黒色に塗り色設定。
+[0,0,8,8]へ四角描画。
+
+# --- BLOBを得てアップロード ---
+IMG=描画データBLOB変換。
+「https://example.com/index.php?m=upload」へ{"file": IMG}をPOSTフォーム送信して表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/BLOB作成]]
+- [[plugin_browser/描画ダウンロードリンク作成]]
+- [[plugin_browser/POSTフォーム送信]]
+- [[plugin_browser/描画データURL変換]]

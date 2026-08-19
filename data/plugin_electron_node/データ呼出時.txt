@@ -1,0 +1,20 @@
+▲説明
+
+レンダラプロセスからの呼び出し(Invoke)を受けた時の処理を登録します(内部で`ipcMain.handle('renderer-invoke', callback)`を呼び出します)。callbackには`(イベント, キー, メッセージ)`の形式で引数が渡され、戻り値がレンダラ側へ返されます。
+
+レンダラ側(`plugin_electron_nako3api`)の「データ呼出」命令とペアで使う、Main-Renderer間のユーザー定義データ通信用の命令です。
+
+助詞は「callbackで(の)」の順で指定します。
+
+▲利用例
+
+{{{
+データ呼出時には(イベント, キー, メッセージ)
+　「応答: {メッセージ}」を戻す。
+ここまで
+}}}
+
+▲参考
+
+- [[plugin_electron_node/データ呼出]]
+- [[plugin_electron_node/データ受信時]]

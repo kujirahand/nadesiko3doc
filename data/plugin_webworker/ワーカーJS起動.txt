@@ -1,0 +1,33 @@
+▲説明
+
+指定したJavaScriptのソースコード（文字列）を使って、ブラウザの標準的なWebWorker（`Worker`オブジェクト）を起動します。ワーカオブジェクトを返します。
+
+内部では、渡されたソース文字列から`Blob`を作成し、`URL.createObjectURL`でURLに変換してワーカーを起動しています。外部にJavaScriptファイルを別途用意しなくても、プログラム中にワーカーのコードを直接書ける点が[[plugin_webworker/ワーカー起動]]との違いです。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+# ワーカー側で実行するJavaScriptのソースをそのまま文字列で用意
+JSソース＝「
+self.onmessage = function(e) {
+  self.postMessage(e.data * 2)
+}
+」
+
+JSソースでワーカーJS起動して、Wに代入。
+
+WからワーカーメッセージF受信した時には
+    受信データを表示。
+ここまで。
+
+10をWにワーカーメッセージ送信。
+}}}
+
+▲参考
+
+- [[plugin_webworker/ワーカー起動]]
+- [[plugin_webworker/ワーカーメッセージ受信時]]
+- [[plugin_webworker/ワーカーメッセージ送信]]
+- [[plugin_webworker/ワーカー終了]]

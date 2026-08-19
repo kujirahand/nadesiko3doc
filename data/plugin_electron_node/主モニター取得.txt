@@ -1,0 +1,15 @@
+▲説明
+
+主画面(プライマリディスプレイ)に指定されているモニターのDisplay情報を返します(`screen.getPrimaryDisplay()`)。戻り値には解像度(`size`)、作業領域(`workArea`)、拡大率(`scaleFactor`)などが含まれます。
+
+▲利用例
+
+{{{
+モニター=主モニター取得。
+(モニター["size"])を表示。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/全モニター取得]]
+- [[plugin_electron_node/付近モニター取得]]

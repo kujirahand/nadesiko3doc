@@ -1,0 +1,17 @@
+▲説明
+
+Electronのアプリを直ちに強制終了します(`app.exit(終了コード)`)。『[[plugin_electron_node/終了]]』とは異なり、`before-quit`や`window-all-closed`などの終了イベントを待たずに、指定した終了コードでプロセスを即座に終了させます。
+
+助詞は「終了コードで」の順で指定します。
+
+▲利用例
+
+{{{
+# 終了コード0でアプリを即座に終了する
+0で強制終了。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/終了]]
+- [[plugin_electron_node/QUIT]]

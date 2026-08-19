@@ -1,6 +1,21 @@
-●『[[WSサーバ受信時:plugin_websocket/WSサーバ受信時]]』の詳しい解説
+●説明
+
+WSサーバでメッセージを受信した時に実行するcallbackを登録します。受信したメッセージはシステム変数『対象』に、送信元クライアントのIPアドレスとポートはシステム変数『[[WSサーバ相手:nadesiko3-websocket/WSサーバ相手]]』に代入されます。『[[WSサーバ起動:nadesiko3-websocket/WSサーバ起動]]』より前に登録しておく必要があります。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-websocket」を取り込む。
+WSサーバ受信時には
+　　「{WSサーバ相手}から受信:{対象}」と表示。
+　　# 受信したメッセージを全員に送信(エコー)
+　　対象をWSサーバ全送信。
+ここまで
+5001でWSサーバ起動。
 }}}
 
+▲参考
+
+- [[nadesiko3-websocket/WSサーバ相手]]
+- [[nadesiko3-websocket/WSサーバ全送信]]
+- [[nadesiko3-websocket/WSサーバ個別送信]]

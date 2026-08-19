@@ -1,0 +1,20 @@
+▲説明
+
+「AJAX保障送信」と同じ動作の命令です。非同期通信(Ajax)でURLにデータの送信を開始し、非同期処理オブジェクト(Promise)を返します。送信時には「AJAXオプション」の値が使われます（未設定ならGETメソッド）。
+
+ブラウザ環境で動作する命令です。
+
+▲利用例
+
+{{{
+「https://api.aoikujira.com/zip/zip.php?fmt=json&zn=221-0824」からHTTP保障取得して、
+    「JSON」でAJAX内容取得したものを、
+        JSONデコードして表示。
+}}}
+
+▲参考
+
+- [[plugin_browser/AJAX保障送信]] --- 同じ動作の命令
+- [[plugin_browser/AJAX内容取得]] --- 応答から内容を取り出す
+- [[plugin_browser/AJAXオプション]]
+- [[plugin_browser/HTTP取得]]

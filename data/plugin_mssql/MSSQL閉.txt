@@ -1,0 +1,17 @@
+●『[[MSSQL閉:plugin_mssql/MSSQL閉]]』の詳しい解説
+
+[[plugin_mssql/MSSQL開]]で開いているMSSQL(SQLServer)のデータベースを閉じる。非同期関数のため、処理が完了するまで自動的に待ち合わせてから次の行が実行される。
+
+{{{
+!「nadesiko3-mssql」を取り込む。
+
+接続STR=「server=.;Database=Master;Trusted_Connection=Yes;Driver={SQL Server Native Client 11.0}」
+接続STRをMSSQL開く。
+# ---
+MSSQL閉じる。
+}}}
+
+▲関連
+
+- [[plugin_mssql/MSSQL開]]
+- [[plugin_mssql/MSSQL実行]]

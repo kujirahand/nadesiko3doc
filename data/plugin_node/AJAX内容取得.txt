@@ -1,0 +1,27 @@
+▲説明
+
+[[plugin_node/AJAX保障送信]]や[[plugin_node/GET保障送信]]・[[plugin_node/POST保障送信]]などが返す応答(Responseオブジェクト)から、指定した形式で内容を取り出すための非同期処理オブジェクト(Promise)を返します。
+
+助詞は「応答から」「形式で」の順で指定します。typeには次の値を指定できます(大文字・小文字は区別しません)。
+
+- 「テキスト」または「TEXT」: テキスト形式で取得
+- 「JSON」: JSON形式でデコードして取得
+- 「BLOB」: バイナリ(Blob)形式で取得
+- 「配列」または「ARRAY」: バイナリ(ArrayBuffer)形式で取得
+- 「本体」または「BODY」: ストリーム(ReadableStream)形式で取得
+
+▲利用例
+
+{{{
+!非同期モード
+# URLへ通信し、応答をJSON形式で取得する（実行例。ネットワーク環境が必要）
+応答=「https://example.com/api」へAJAX保障送信。
+データ=応答から「JSON」でAJAX内容取得。
+データを表示。
+}}}
+
+▲参考
+
+- [[plugin_node/AJAX保障送信]]
+- [[plugin_node/GET保障送信]]
+- [[plugin_node/POST保障送信]]

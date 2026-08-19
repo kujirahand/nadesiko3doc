@@ -1,0 +1,16 @@
+▲説明
+
+現在フォーカスを獲得している(最前面でアクティブな)BrowserWindowを返します(`BrowserWindow.getFocusedWindow()`)。どのウインドウもフォーカスされていない場合はNULLを返します。
+
+▲利用例
+
+{{{
+# フォーカス中のウインドウを再読み込みする
+フォーカスウインドウ取得をウインドウ再読込。
+}}}
+
+▲参考
+
+- [[plugin_electron_node/ウインドウ再読込]]
+- [[plugin_electron_node/開発ツールトグル]]
+- [[plugin_electron_node/全ウインドウ数取得]]

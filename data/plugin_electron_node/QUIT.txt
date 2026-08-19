@@ -1,0 +1,16 @@
+▲説明
+
+Electronのアプリを終了します。『[[plugin_electron_node/終了]]』と全く同じ動作をする命令です（`app.quit()`を呼び出します）。英語名の命令として用意されています。
+
+詳しい説明・利用例は『[[plugin_electron_node/終了]]』を参照してください。
+
+▲利用例
+
+{{{
+QUIT
+}}}
+
+▲参考
+
+- [[plugin_electron_node/終了]]
+- [[plugin_electron_node/強制終了]]

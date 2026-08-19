@@ -1,0 +1,18 @@
+●説明
+
+任意のURLを開いてHTMLを取得し、パースします。非同期関数なので、『待って』文や無名関数と組み合わせて使います。パースした結果は、『[[DOM要素取得:plugin_htmlparser/DOM要素取得]]』などの命令で利用できます。
+
+なお、この命令はcnako(Node.js版)専用です。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-htmlparser」を取り込む。
+「https://nadesi.com/top/」をHTML_URL開く。
+「title」のDOM要素取得して、テキスト取得して表示。
+}}}
+
+▲参考
+
+- [[plugin_htmlparser/HTMLパース]]
+- [[plugin_htmlparser/DOM要素取得]]

@@ -1,6 +1,19 @@
-●『[[スタイル取得:plugin_htmlparser/スタイル取得]]』の詳しい解説
+●説明
+
+DOMのスタイル(CSSプロパティ)Kを取得します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<h1 id="title" style="color:red">こんにちは</h1>』
+HTMLをHTMLパース。
+「#title」のDOM要素取得して、Aに代入。
+Aから「color」をスタイル取得して表示。
+# → red
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/属性取得]]
+- [[plugin_htmlparser/データ取得]]

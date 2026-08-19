@@ -1,6 +1,35 @@
-●『[[WSSサーバ起動:plugin_websocket/WSSサーバ起動]]』の詳しい解説
+●説明
+
+暗号化通信(wss://)に対応したWebSocketサーバを起動します。設定CONFには、次のキーを持つオブジェクトを指定します。
+
+- cert --- サーバ証明書ファイルのパス
+- key --- 秘密鍵ファイルのパス
+- port --- ポート番号
+
+起動に成功すると『[[WSサーバ起動成功時:nadesiko3-websocket/WSサーバ起動成功時]]』に登録した処理が実行されます。使い方は『[[WSサーバ起動:nadesiko3-websocket/WSサーバ起動]]』と同様です。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-websocket」を取り込む。
+CONF={
+  "cert": "server.crt",
+  "key": "server.key",
+  "port": 5002
+}
+
+WSサーバ起動成功した時には
+　　「WSSサーバを起動しました」と表示。
+ここまで
+WSサーバ受信時には
+　　対象をWSサーバ全送信。
+ここまで
+
+CONFでWSSサーバ起動。
 }}}
 
+▲参考
+
+- [[nadesiko3-websocket/WSサーバ起動]]
+- [[nadesiko3-websocket/WSサーバ起動成功時]]
+- [[nadesiko3-websocket/WSサーバ起動失敗時]]

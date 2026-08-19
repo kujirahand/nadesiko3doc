@@ -1,6 +1,20 @@
-●『[[属性取得:plugin_htmlparser/属性取得]]』の詳しい解説
+●説明
+
+DOMの属性Kを取得します。例えば、リンクタグの「href」属性や、画像タグの「src」属性などを取得するのに使います。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<a id="link" href="https://nadesi.com/">なでしこ</a>』
+HTMLをHTMLパース。
+「#link」のDOM要素取得して、Aに代入。
+Aから「href」を属性取得して表示。
+# → https://nadesi.com/
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/DOM要素取得]]
+- [[plugin_htmlparser/プロパティ取得]]
+- [[plugin_htmlparser/スタイル取得]]

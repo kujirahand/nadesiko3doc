@@ -1,0 +1,25 @@
+▲説明
+
+WebWorker関連のイベント処理（[[plugin_webworker/NAKOワーカーデータ受信時]]・[[plugin_webworker/NAKOワーカー表示時]]・[[plugin_webworker/ワーカーメッセージ受信時]]など）で無名関数が実行される際に、そのイベントオブジェクト（引数）が自動的に代入されるシステム変数です。
+
+イベントハンドラ内で参照するために利用します。通常のプログラムでは代入する必要はありません。
+
+▲利用例
+
+{{{
+!『plugin_webworker.mjs』を取り込む。
+
+NAKOワーカー起動して、Wに代入。
+
+WからNAKOワーカーデータ受信した時には
+    「イベント発生: {対象イベント}」と表示。
+    受信データを表示。
+ここまで。
+}}}
+
+▲参考
+
+- [[plugin_webworker/受信データ]]
+- [[plugin_webworker/NAKOワーカーデータ受信時]]
+- [[plugin_webworker/NAKOワーカー表示時]]
+- [[plugin_webworker/ワーカーメッセージ受信時]]

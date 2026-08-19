@@ -1,0 +1,23 @@
+▲説明
+
+URLパスURLとローカルのフォルダパスPATHを関連付け、指定フォルダ内のHTML・CSS・JavaScript・画像などの静的ファイルを配信できるようにします。
+
+内部的にはExpressの`express.static`ミドルウェアを利用しています。
+
+▲利用例
+
+{{{#nako3
+!「nadesiko3-server」を取り込む。
+
+3000でWEBサーバ起動した時には
+    「サーバーが http://localhost:3000 で起動しました」と表示。
+ここまで。
+
+# 「/public」へのアクセスをカレントディレクトリの「./public」フォルダにマッピング
+「/public」を「./public」へWEBサーバ静的パス指定。
+}}}
+
+▲参考
+
+- [[nadesiko3-server/WEBサーバ起動]]
+- [[nadesiko3-server/WEBサーバGET時]]

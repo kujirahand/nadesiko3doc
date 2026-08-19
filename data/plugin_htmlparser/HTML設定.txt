@@ -1,6 +1,20 @@
-●『[[HTML設定:plugin_htmlparser/HTML設定]]』の詳しい解説
+●説明
+
+DOMにSをHTMLとして設定(書き換え)します。
+
+▲簡単なサンプル
 
 {{{
-# 準備中
+!「nadesiko3-htmlparser」を取り込む。
+HTML=『<div id="box">元のテキスト</div>』
+HTMLをHTMLパース。
+「#box」のDOM要素取得して、Aに代入。
+Aに「<b>書き換えたテキスト</b>」をHTML設定。
+Aをテキスト取得して表示。
+# → 書き換えたテキスト
 }}}
 
+▲参考
+
+- [[plugin_htmlparser/HTML取得]]
+- [[plugin_htmlparser/値設定]]

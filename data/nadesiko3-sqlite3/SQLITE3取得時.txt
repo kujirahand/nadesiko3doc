@@ -1,0 +1,19 @@
+●説明
+
+『SQLITE3開く』で開いたデータベースに対して、SQLをパラメータPARAMSで取得実行(SELECTなど)します。実行が完了すると、コールバック関数Fが呼び出され、取得した結果(行の配列)が第一引数に渡されます。
+
+▲簡単なサンプル
+
+{{{
+!「nadesiko3-sqlite3」を取り込む。
+「test.sqlite3」のSQLITE3開く。
+『SELECT * FROM books』を[]でSQLITE3取得時には(結果)
+　　結果をJSONエンコードして表示。
+ここまで
+}}}
+
+▲参考
+
+- [[nadesiko3-sqlite3/SQLITE3実行時]]
+- [[nadesiko3-sqlite3/SQLITE3取得]]
+- [[nadesiko3-sqlite3/SQLITE3全取得]]
