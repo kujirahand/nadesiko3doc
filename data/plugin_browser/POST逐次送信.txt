@@ -1,24 +1,33 @@
-▲説明
+``互換性の注意: この命令は ver3.8 で削除されました`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
 
-``この命令は、ver3.8で削除されました``
-「[[plugin_browser/POST送信]]」をご利用ください。
+●代わりの命令
 
-ブラウザ環境で動作する命令です。
-「逐次実行」構文の中で、AjaxでURLに辞書型のデータPARAMSをPOST送信し、成功すると『対象』にデータを設定します。失敗すると「AJAX失敗時」に指定した関数が実行されます。
+『[[POST送信:plugin_browser/POST送信]]』を利用してください。
 
-▲利用例
+『POST逐次送信』は『[[逐次実行:文法/逐次実行]]』構文と組み合わせて使う命令でしたが、
+『逐次実行』構文そのものが廃止された([[#1611:https://github.com/kujirahand/nadesiko3/issues/1611]])ため削除されました。
+辞書型のデータをURLエンコード形式でPOST送信する動作は『POST送信』と同じです。
 
-{{{
+●書き換え方
+
+```
+# 古い書き方(ver3.8で削除されました)
 PARAMS={"name":"太郎","age":20}
 逐次実行
-    「https://example.com/post.php」へPARAMSをPOST逐次送信。
-    対象を表示。
+　　「https://example.com/post.php」へPARAMSをPOST逐次送信。
+　　対象を表示。
 ここまで。
+```
+
+{{{#nako3(rows=5)
+# 新しい書き方(ブラウザ環境で実行してください)
+PARAMS={"name":"太郎","age":20}
+結果＝「https://example.com/post.php」へPARAMSをPOST送信。
+結果を表示。
 }}}
 
-▲参考
+●参考
 
 - [[plugin_browser/POST送信]] --- 推奨される代替命令
-- [[plugin_browser/POSTフォーム逐次送信]] --- フォーム形式で送信する場合
-- [[plugin_browser/AJAX逐次送信]]
-- [[plugin_browser/AJAX失敗時]]
+- [[plugin_browser/POSTフォーム送信]] --- フォーム形式で送信する場合
+- [[plugin_browser/POST送信時]] --- コールバック方式

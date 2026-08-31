@@ -1,17 +1,25 @@
 ``互換性の注意: この命令は ver3.8 で削除されました`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
 
-▲解説
+●代わりの命令
 
-『JSONエンコード』の簡略版です。
+『[[JSONエンコード:plugin_system/JSONエンコード]]』を利用してください。
+『JSON_E』は『JSONエンコード』の別名でしたが、名前が分かりにくいため削除されました。動作は全く同じです。
 
-▲利用例
+●書き換え方
 
-{{{
+```
+# 古い書き方(ver3.8で削除されました)
 [1,2,3]をJSON_Eして表示。
+```
+
+{{{#nako3
+# 新しい書き方
+[1,2,3]をJSONエンコードして表示。
 ### 表示結果: [1,2,3]
 }}}
 
-▲参考
+●参考
 
-- [[plugin_system/JSONエンコード]]
+- [[plugin_system/JSONエンコード]] --- 推奨される代替命令
+- [[plugin_system/JSONエンコード整形]]
 - [[plugin_system/JSONデコード]]

@@ -1,2 +1,23 @@
-``互換性の注意: この命令は ver3.8 で削除予定です`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
+``互換性の注意: この命令は ver3.8 で削除されました`` [[#2234:https://github.com/kujirahand/nadesiko3/issues/2234]]
 
+●代わりの命令
+
+代替となる命令はありません。別のサービスをご利用ください。
+
+なでしこには『[[DISCORDファイル送信:plugin_node/DISCORDファイル送信]]』があるので、
+画像の通知用途であれば、Discordのウェブフックへの乗り換えを検討してください。
+
+●削除された理由
+
+『LINE画像送信』は、LINE Notifyを利用して画像付きのメッセージを送信する命令でした。
+しかし、LINE Notify自体が2025年3月末でサービスを終了したため、この命令は動作しなくなりました。
+
+- [[LINE Notifyのサービス終了について:https://notify-bot.line.me/closing-announce]]
+
+ver3.8より前のなでしこでは、2025年4月以降にこの命令を使うとエラーを表示するようになっていましたが、
+ver3.8で命令そのものが削除されました。
+
+●参考
+
+- [[plugin_node/DISCORDファイル送信]] --- Discordへファイルを送る
+- [[plugin_node/LINE送信]]
