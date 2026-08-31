@@ -38,7 +38,7 @@
 [[はい:plugin_system/はい]] --- [[いいえ:plugin_system/いいえ]]
 [[OK:plugin_system/OK]] --- [[NG:plugin_system/NG]]
 [[TRUE:plugin_system/TRUE]] --- [[FALSE:plugin_system/FALSE]]
-[[true:plugin_system/true]] --- [[false:plugin_system/false]]
+[[true:plugin_system/TRUE]] --- [[false:plugin_system/FALSE]]
 }}}
 
 ●TYPEOFについて

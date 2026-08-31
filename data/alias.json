@@ -647,8 +647,8 @@
   "4670": "plugin_node/LINE送信",
   "4671": "plugin_system/真偽判定",
   "4672": "文法/真偽値",
-  "4673": "plugin_system/false",
-  "4674": "plugin_system/true",
+  "4673": "plugin_system/FALSE",
+  "4674": "plugin_system/TRUE",
   "4675": "plugin_promise/そ",
   "4676": "plugin_promise/束",
   "4677": "plugin_promise/動時",
@@ -1308,5 +1308,7 @@
   "996": "チュートリアル/命令は書式に沿って使う",
   "997": "チュートリアル",
   "998": "チュートリアル/なでしこで計算しよう",
-  "999": "チュートリアル/変数を使ってみよう"
+  "999": "チュートリアル/変数を使ってみよう",
+  "plugin_system/false": "plugin_system/FALSE",
+  "plugin_system/true": "plugin_system/TRUE"
 }

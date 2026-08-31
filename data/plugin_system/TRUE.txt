@@ -1,20 +1,25 @@
 ▲解説
 
-真偽型の真(true)を表します。
+真偽型の真(TRUE / true)を表す定数です。
+なでしこ3では、大文字の「TRUE」だけでなく、小文字の「true」も同じ真を表す定数として利用できます。
 
 ▲利用例
 
 {{{#nako3
+TRUEを表示 # true
 trueを表示 # true
-falseを表示 # false
+TRUEを真偽判定して表示。# 真
 trueを真偽判定して表示。# 真
-falseを真偽判定して表示。# 偽
+### 表示結果: true
+### true
+### 真
+### 真
 }}}
 
 ▲参照
 
 - [[文法/真偽値]]
-- [[plugin_system/true]]
-- [[plugin_system/false]]
-- [[plugin_system/TRUE]]
 - [[plugin_system/FALSE]]
+- [[plugin_system/真]]
+- [[plugin_system/OK]]
+- [[plugin_system/はい]]
