@@ -3,14 +3,14 @@
 なでしこ3には、いくつかのバリエーションがあります。
 
 ・Webブラウザ上で動かす[[wnako]]
-・コマンドラインから動かすコマンドライン版の[[cnako]]
-・ブラウザエンジンを利用して動かす[[配布キット]]
-・PHPが動くWebサーバー上で動かせる[[phpnako]]
+・PC上でGUI/CUIを動かす[[gonako]]
+・Node.jsで動かすCUI版の[[cnako]]
+・ブラウザエンジンを利用して動かす[[配布キット]] --- 現在非推奨
+・PHPが動くWebサーバー上で動かせる[[phpnako]] --- 現在非推奨
 
 この点、詳しくは、[[FAQ/ランタイムについて]]をご覧ください。
 
-このうち、一番の主力は、Webブラウザ上で動かせる[[wnako]]です。また、作ったプログラムを誰かに配付したり、PC上で動かすには[[配布キット]]がオススメです。
-事務処理など作業を自動化する目的で使うのであれば、[[cnako]]を使います。
+このうち、一番の主力は、Webブラウザ上で動かせる[[wnako]]です。また、作ったプログラムを誰かに配付したり、PC上で動かすには[[gonako]]がオススメです。事務処理など作業を自動化する目的で使えます。
 
 ●wnakoを動かす方法 - HTMLに埋め込む方法
 
@@ -41,7 +41,11 @@ KonaWiki3には、なでしこを手軽に実行するnako3というプラグイ
 - KonaWiki3 - https://github.com/kujirahand/konawiki3/
 -- [[nako3プラグインについて:https://kujirahand.com/konawiki3/index.php?nako3]]
 
+●なでしこ3(GO版) - gonakoを動かす方法
 
+PC上でなでしこ3をGUI/CUIで使えるのがgonakoです。これは、開発エディタ一体型のなでしこで、コマンド一発でPCにインストールできます。
+
+- [[なでしこ3(GO版) > インストール:https://github.com/kujirahand/nadesiko3go/blob/master/README.md#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95]]
 
 ●cnakoを動かす方法 - Node.jsを使う
 

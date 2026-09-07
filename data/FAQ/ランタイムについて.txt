@@ -2,7 +2,7 @@
 
 なでしこ3には、用途別に異なる実行環境（ランタイム）が存在します。
 
-それぞれ共通で使える命令もあれば、用途に合わせた専用の命令もあります。共通で使える命令は、[[plugin_system]]や[[plugin_math]]、[[pluhin_csv]]があります。
+それぞれ共通で使える命令もあれば、用途に合わせた専用の命令もあります。共通で使える命令は、[[plugin_system]]や[[plugin_math]]、[[pluhin_csv]]です。
 
 ここでは、いろいろなランタイムについて紹介します。
 
@@ -10,12 +10,11 @@
 
 [[簡易エディタ:https://nadesi.com/v3/start]]や、[[貯蔵庫:https://n3s.nadesi.com]]で動くなでしこ3はブラウザ向けです。一番力を入れて開発されています。[[ブラウザ向け:plugin_browser]]や描画向けの各種の命令が利用できます。
 
-なお、[[なでしこ3配布キット:https://nadesi.com/doc3/go.php?16421]]を利用することで、手軽にPC向けアプリとして配布できます。
+●☕️ [[gonako]] --- PC向けGUI/CUIをサポート
 
-●☕️ [[gonako]] --- PC向けCUI/GUI
+PC向けで動作するランタイムです。手軽に、PC内でなでしこを動かすことができます。CUI/GUI用のツールを作成できます。ファイル処理/SQlite/ExcelやPDF編集の機能を持っています。Win/Mac/Linux バージョンを用意しています。作ったツールは、実行ファイル1つになるので配布も簡単です。
 
-PC向けで動作するランタイムです。手軽に、PC内でなでしこを動かすことができます。CUI/GUI用のツールを作成できます。ファイル処理/SQlite/ExcelやPDF編集の機能を持っています。Win/Mac/Linux バージョンを用意しています。
-
+- 詳しくは、[[なでしこ3(GO版):https://github.com/kujirahand/nadesiko3go/blob/master/README.md]] をご覧ください。
 
 ●☕️ [[cnako]] --- PC向けコマンドライン版(Node.js版)
 
@@ -27,26 +26,31 @@ Node.jsがマルチプラットフォーム対応のため、Win/Mac/Android/Lin
 
 - (参考) [[FAQ/拡張プラグインについて]]
 
+-------------------
 
-● 🐘 [[phpnako]] ---  サーバ向け
+{{{#column
+●現在は非推奨のランタイム
+
+いずれも[[gonako]]に置き換えられました。
+
+▲ 🍜 なでしこ3配布キット(軽量版)
+
+Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットです。OSにインストールしているWebViewを使って動かします。
+
+- [[なでしこ3配布キット(GitHub):https://github.com/kujirahand/nadesiko3webkit]]
+
+▲ 🍜 なでしこ3配布キット(Electron版) - [[enako]]
+
+Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットのElectron版です。ブラウザコンポーネントへの依存がありません。ただし、ダウンロードサイズが少し大きくなります。
+
+- [[配布キットElectron版:https://github.com/kujirahand/nadesiko3electron]]
+
+▲ 🐘 [[phpnako]] ---  サーバ向け
 
 サーバ向けのランタイムです。なでしこをphpというプログラミング言語上で動かすことができます。phpは多くのWEBサーバで動かすことのできる言語でありWEBアプリを作れます。大半のレンタルサーバーにインストールされているため、気軽になでしこを動かせます。
 
 詳しくは[[こちら:https://nadesi.com/doc3/index.php?nadesiko3php]]をご覧ください。
-
-● 🍜 なでしこ3配布キット(軽量版)
-
-Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットです。
-Chrome/Safari/Edgeなどのブラウザコンポーネントを使って動かします。
-
-- [[なでしこ3配布キット(GitHub):https://github.com/kujirahand/nadesiko3webkit]]
--- [[配布キット直接ダウンロード:https://github.com/kujirahand/nadesiko3webkit/releases]]
-
-● 🍜 なでしこ3配布キット(Electron版) - [[enako]]
-
-Windows/macOS/LinuxなどデスクトップPCでなでしこ3を動かすキットのElectron版です。ブラウザコンポーネントへの依存がありません。ただし、ダウンロードサイズが少し大きくなります。
-
-- [[配布キットElectron版直接ダウンロード:https://github.com/kujirahand/nadesiko3electron]]
+}}}
 
 ●参考
 
