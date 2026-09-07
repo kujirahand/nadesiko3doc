@@ -1,6 +1,6 @@
 ●説明
 
-URL AへPARAMS（辞書型データ）BをPOSTメソッドで送信し、応答本文を文字列として返す。Bが辞書であれば`key=value&key=value...`形式にURLエンコードして`application/x-www-form-urlencoded`として送信し、辞書でなければ値を文字列化してそのまま送信する。実際に外部サーバーへHTTP通信を行う命令のため、このマニュアルでは実行結果を検証していない。
+URL AへPARAMS（辞書型データ）BをPOSTメソッドで送信し、応答本文を文字列として返します。Bが辞書であれば`key=value&key=value...`形式にURLエンコードして`application/x-www-form-urlencoded`として送信し、辞書でなければ値を文字列化してそのまま送信します。実際に外部サーバーへHTTP通信を行う命令のため、このマニュアルでは実行結果を検証していません。
 
 ●利用例
 

@@ -1,6 +1,6 @@
 ●説明
 
-実行環境のCPUアーキテクチャ名を返す。値はGo言語の `runtime.GOARCH` そのままで、たとえば64bit Intel/AMD系なら「amd64」、Apple Silicon等のArm64系なら「arm64」になる。実行するマシンによって値が変わるため、このマニュアルでは実行結果を検証していない。
+実行環境のCPUアーキテクチャ名を返します。値はGo言語の `runtime.GOARCH` そのままで、たとえば64bit Intel/AMD系なら「amd64」、Apple Silicon等のArm64系なら「arm64」になります。実行するマシンによって値が変わるため、このマニュアルでは実行結果を検証していません。
 
 ●利用例
 
