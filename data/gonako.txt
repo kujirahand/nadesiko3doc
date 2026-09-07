@@ -1,0 +1,10 @@
+■ [[命令一覧]] / [[機能順:命令一覧/機能順]] / gonako - PC向け
+
+[[gonako]]は「なでしこ3(Go版)」のことで、PC上でなでしこ3を動かすためのランタイムです。[[こちら:https://github.com/kujirahand/nadesiko3go/blob/master/README.md#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95]]からインストールできます。
+
+#nako3doc(list-func,gonako)
+
+▲参考
+
+- [[命令一覧]] / [[機能順:命令一覧/機能順]]
+
