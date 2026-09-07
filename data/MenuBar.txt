@@ -10,7 +10,8 @@
 
 ▲命令一覧 > 端末別
 - [[📙ブラウザ版の命令:wnako]]
-- [[💻PC版の命令:cnako]]
+- [[💻PC版(gonako):gonako]]
+- [[💻PC版(cnako):cnako]]
 - [[🐘PHP版の命令:phpnako]]
 - [[📖全端末の命令:命令一覧/機能順]]
 
