@@ -1,0 +1,22 @@
+●説明
+
+SQLiteのデータベースファイルSを開き、以降のSQLITE3系命令が対象とするデータベースとして登録する。戻り値はデータベースを識別する数値ハンドルで、複数のデータベースを同時に開いた場合は[[gonako/SQLITE3切替]]でこのハンドルを使って操作対象を切り替える。Sに「:memory:」を指定するとディスクに書き込まないメモリ上のデータベースを開ける。ファイルが存在しない場合は新規に作成される。
+
+●利用例
+
+{{{#nako3
+「:memory:」をSQLITE3開。
+「CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)」を{}でSQLITE3実行。
+「INSERT INTO users (name) VALUES ('太郎')」を{}でSQLITE3実行。
+「SELECT * FROM users」を{}でSQLITE3全取得してAに代入。
+(A[0][「name」])を表示。
+SQLITE3閉。
+### GO表示結果: 太郎
+}}}
+
+●参照
+
+- [[gonako/SQLITE3閉]]
+- [[gonako/SQLITE3切替]]
+- [[gonako/SQLITE3実行]]
+- [[gonako/SQLITE3全取得]]

@@ -1,0 +1,18 @@
+●説明
+
+現在操作対象になっているSQLiteデータベースの接続を閉じ、ハンドルを解放する。閉じたあとに操作対象のデータベースがなくなるので、続けてSQLITE3系の命令を使うには再度[[gonako/SQLITE3開]]するか、[[gonako/SQLITE3切替]]で他のデータベースに切り替える必要がある。
+
+●利用例
+
+{{{#nako3
+「:memory:」をSQLITE3開。
+「CREATE TABLE t (v TEXT)」を{}でSQLITE3実行。
+SQLITE3閉。
+「閉じました」と表示。
+### GO表示結果: 閉じました
+}}}
+
+●参照
+
+- [[gonako/SQLITE3開]]
+- [[gonako/SQLITE3切替]]

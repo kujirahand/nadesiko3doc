@@ -1,0 +1,13 @@
+●説明
+
+DiscordのWebhook URL Aに、ファイルB（パスを指定）とメッセージCを送信する。ファイルはリソースとして同梱されていれば同梱データを、なければ通常のファイルとして読み込んで、メッセージとともにmultipart/form-data形式でPOST送信する。実際に外部サービスへネットワーク通信を行う命令のため、このマニュアルでは実行結果を検証していない。
+
+●利用例
+
+{{{#nako3
+「https://discord.com/api/webhooks/xxxx/yyyy」へ「result.png」と「実行結果です」をDISCORDファイル送信。
+}}}
+
+●参照
+
+- [[gonako/DISCORD送信]]

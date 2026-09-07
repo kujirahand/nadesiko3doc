@@ -1,0 +1,16 @@
+●説明
+
+URL AへPARAMS（辞書型データ）Bをmultipart/form-data形式のフォームとしてPOST送信し、応答本文を文字列として返す。HTMLの `<form>` からファイルアップロードなどを行う場合と同じ形式で送信される。実際に外部サーバーへHTTP通信を行う命令のため、このマニュアルでは実行結果を検証していない。
+
+●利用例
+
+{{{#nako3
+P={"name":"太郎", "age":"20"}
+「https://example.com/api」までPをPOSTフォーム送信して表示。
+}}}
+
+●参照
+
+- [[gonako/POST送信]]
+- [[gonako/POSTフォーム送信時]]
+- [[gonako/POSTフォーム保障送信]]

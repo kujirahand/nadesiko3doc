@@ -1,0 +1,24 @@
+●説明
+
+以降のSQLITE3系命令の操作対象を、数値ハンドルSで指定したデータベースに切り替える。[[gonako/SQLITE3開]]は開くたびに新しいハンドルを返してそれを操作対象にするため、複数のデータベースを同時に開いている状態で以前開いたデータベースへ戻りたいときに使う。Sが開かれていないハンドルの場合はエラーになる。
+
+●利用例
+
+{{{#nako3
+「:memory:」をSQLITE3開してAに代入。
+「:memory:」をSQLITE3開してBに代入。
+「CREATE TABLE t (v TEXT)」を{}でSQLITE3実行。
+「INSERT INTO t VALUES ('B側')」を{}でSQLITE3実行。
+AにSQLITE3切替。
+「CREATE TABLE t (v TEXT)」を{}でSQLITE3実行。
+「INSERT INTO t VALUES ('A側')」を{}でSQLITE3実行。
+「SELECT v FROM t」を{}でSQLITE3全取得してRに代入。
+(R[0][「v」])を表示。
+### GO表示結果: A側
+}}}
+
+Aに切り替えたので、AのデータベースへINSERTした「A側」が取得される。
+
+●参照
+
+- [[gonako/SQLITE3開]]

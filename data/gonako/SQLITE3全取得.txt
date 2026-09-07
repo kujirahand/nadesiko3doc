@@ -1,0 +1,24 @@
+●説明
+
+現在の操作対象データベースに対してSELECT文Aをパラメータ配列（または辞書）Bをバインドして実行し、結果のすべての行を配列で返す。各行は列名をキーとした辞書になる。該当する行がなければ空配列を返す。
+
+●利用例
+
+{{{#nako3
+「:memory:」をSQLITE3開。
+「CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)」を{}でSQLITE3実行。
+「INSERT INTO users (name) VALUES ('太郎')」を{}でSQLITE3実行。
+「INSERT INTO users (name) VALUES ('花子')」を{}でSQLITE3実行。
+「SELECT * FROM users ORDER BY id」を{}でSQLITE3全取得してBに代入。
+(Bの要素数)を表示。
+(B[0][「name」])を表示。
+(B[1][「name」])を表示。
+### GO表示結果: 2
+### 太郎
+### 花子
+}}}
+
+●参照
+
+- [[gonako/SQLITE3取得]]
+- [[gonako/SQLITE3実行]]

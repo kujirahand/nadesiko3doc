@@ -1,0 +1,19 @@
+●説明
+
+[[gonako/SQLITE3実行時]]と全く同じ命令の別名。コールバックFで、現在の操作対象データベースに対してSQL文Bをパラメータ配列（または辞書）Cをバインドして実行し、完了したらFを呼び出す。実行は内部のイベントキューに登録される非同期処理のため、このマニュアルでは実行結果を検証していない。
+
+●利用例
+
+{{{#nako3
+「:memory:」をSQLITE3開。
+「CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)」を{}でSQLITE3実行。
+●実行完了とは
+　「登録しました」と表示。
+ここまで
+「実行完了」に「INSERT INTO users (name) VALUES ('六郎')」を{}でSQLITE3実行後。
+}}}
+
+●参照
+
+- [[gonako/SQLITE3実行時]]
+- [[gonako/SQLITE3取得時]]

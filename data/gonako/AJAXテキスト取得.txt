@@ -1,0 +1,16 @@
+●説明
+
+AJAXでURL Sにアクセスし、応答本文をテキスト形式の文字列として返す。内部的にはHTTP GETリクエストを送信し、応答ボディをそのまま文字列化する。実際に外部サーバーへHTTP通信を行う命令のため、このマニュアルでは実行結果を検証していない。
+
+●利用例
+
+{{{#nako3
+「https://example.com/readme.txt」からAJAXテキスト取得して表示。
+}}}
+
+●参照
+
+- [[gonako/AJAX_JSON取得]]
+- [[gonako/AJAXバイナリ取得]]
+- [[gonako/AJAX内容取得]]
+- [[gonako/AJAX受信]]
