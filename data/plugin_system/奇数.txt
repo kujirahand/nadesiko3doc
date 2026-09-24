@@ -4,7 +4,11 @@
 {{{#nako3
 １が奇数かを表示。#true
 ２が奇数かを表示。#false
+-３が奇数かを表示。#true
+-２が奇数かを表示。#false
 ### 表示結果: true
+### false
+### true
 ### false
 }}}
 
