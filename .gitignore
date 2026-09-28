@@ -1,4 +1,11 @@
+# Wikiの設定
 private/
+cache/
+kona3dir.def.php
+favicon.ico
+sw.js
 nadesiko3doc.ini.php
+
+# macøß
 .DS_Store
 
