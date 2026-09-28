@@ -63,3 +63,97 @@ DOMスキン辞書@「青」=関数(TYPE,OBJ)
 - [[plugin_browser/DOMスキン]] --- 現在のスキン名
 - [[plugin_browser/DOMスキン辞書]] --- スキンを定義
 - [[plugin_browser/DOMスキン設定]] --- 今後作る部品のスキンを変更
+
+■ 4種類のスキンを試す
+
+以下の例は、それぞれ単独で実行できます。「デフォルト」は標準の見た目です。残りの例では、CSSとスキン関数を定義してから部品やダイアログを表示します。
+
+スキン関数は TYPE（タグ名）と OBJ（作成されたDOM要素）を受け取ります。DOMダイアログでは、外枠に「dialog」、ボタンに「button」、入力欄に「input」、選択リストに「select」などが渡されます。ダイアログの各要素には「nako3dialog」で始まるクラスも付いているので、CSSで細かく指定できます。カスタムダイアログの本文に自分で書いたHTMLは、スキン関数の対象外です。
+
+▲デフォルト ― すっきりした標準表示
+
+空文字列を指定すると、登録済みのスキンを使わずに作成します。
+
+{{{#nako3(rows=8)
+「」のDOMスキン設定。
+「デフォルトのボタン」のボタン作成。
+「デフォルトの入力欄」のエディタ作成。
+選択は["# 標準のダイアログ", "OK", "あとで"]のボタン選択。
+}}}
+
+▲ビジネスライク ― 落ち着いた紺と青
+
+会議や業務アプリをイメージした配色です。CSSのクラスを部品とダイアログの両方に付けます。
+
+{{{#nako3(rows=20)
+スタイルは「style」のDOM部品作成。
+スタイルに『
+.skin-business.nako3dialog { background:#f8fafc; color:#1e293b; border:1px solid #cbd5e1; border-top:5px solid #2563eb; box-shadow:0 18px 45px #0f172a33; }
+.skin-business.nako3dialog-label { font-weight:700; font-size:18px; color:#0f172a; }
+.skin-business.nako3dialog-button, button.skin-business { background:#2563eb; color:white; border:1px solid #1d4ed8; border-radius:6px; padding:9px 18px; font-weight:600; }
+.skin-business.nako3dialog-button:hover, button.skin-business:hover { background:#1d4ed8; }
+.skin-business.nako3dialog-close { background:transparent; color:#64748b; border:0; padding:0; }
+.skin-business.nako3dialog-input, input.skin-business { border:1px solid #94a3b8; border-radius:6px; padding:9px; background:white; color:#0f172a; }
+span.skin-business { color:#334155; font-weight:600; margin-right:8px; }
+』をDOMテキスト設定。
+DOMスキン辞書@「ビジネス」=関数(TYPE,OBJ)
+　OBJの「className」に「skin-business」をDOM属性設定。
+ここまで。
+「ビジネス」のDOMスキン設定。
+「営業レポート」のラベル作成。
+「レポートを開く」のボタン作成。
+「担当者名」のエディタ作成。
+担当者は「担当者を入力してください」と文字尋ねる。
+}}}
+
+▲超リッチ ― ダークなグラデーションと光
+
+深い背景色に鮮やかなアクセントを合わせた表示です。カスタムダイアログにも同じスキンを使えます。
+
+{{{#nako3(rows=20)
+スタイルは「style」のDOM部品作成。
+スタイルに『
+.skin-rich.nako3dialog { background:linear-gradient(145deg,#17142e,#30205b 60%,#101a36); color:#f8f5ff; border:1px solid #8b5cf6; border-radius:20px; box-shadow:0 28px 90px #09051699, inset 0 1px #ffffff55; }
+.skin-rich.nako3dialog::backdrop { background:#050510aa; backdrop-filter:blur(8px); }
+.skin-rich.nako3dialog-label { font-size:20px; font-weight:800; color:#f5d0fe; }
+.skin-rich.nako3dialog-body { color:#e9d5ff; }
+.skin-rich.nako3dialog-button, button.skin-rich { color:white; background:linear-gradient(120deg,#7c3aed,#ec4899); border:1px solid #f0abfc; border-radius:999px; padding:10px 22px; box-shadow:0 6px 22px #c026d355; font-weight:700; }
+.skin-rich.nako3dialog-button:hover, button.skin-rich:hover { filter:brightness(1.15); }
+.skin-rich.nako3dialog-close { color:#f5d0fe; background:transparent; border:0; box-shadow:none; padding:0; }
+.skin-rich.nako3dialog-input, input.skin-rich { background:#1e1b3b; color:white; border:1px solid #a78bfa; border-radius:10px; padding:10px; }
+span.skin-rich { color:#6d28d9; font-weight:800; margin-right:8px; }
+』をDOMテキスト設定。
+DOMスキン辞書@「超リッチ」=関数(TYPE,OBJ)
+　OBJの「className」に「skin-rich」をDOM属性設定。
+ここまで。
+「超リッチ」のDOMスキン設定。
+「プレミアム体験」のラベル作成。
+「特典を見る」のボタン作成。
+「<h2>今夜だけの特別な体験</h2><p>好きなコースを選んでください。</p>」で["スタート","また今度"]をカスタムダイアログ表示。
+}}}
+
+▲ファンシー ― パステルカラーと丸い部品
+
+やわらかな色と丸みを使った表示です。リスト選択も同じ色合いになります。
+
+{{{#nako3(rows=20)
+スタイルは「style」のDOM部品作成。
+スタイルに『
+.skin-fancy.nako3dialog { background:#fff4fb; color:#6b3765; border:3px solid #f9a8d4; border-radius:24px; box-shadow:0 18px 0 #fbcfe8, 0 25px 50px #db277744; }
+.skin-fancy.nako3dialog-label { color:#be185d; font-size:19px; font-weight:800; }
+.skin-fancy.nako3dialog-button, button.skin-fancy { background:#f9a8d4; color:#831843; border:2px solid #f472b6; border-radius:999px; padding:9px 18px; font-weight:700; }
+.skin-fancy.nako3dialog-button:hover, button.skin-fancy:hover { background:#fbcfe8; }
+.skin-fancy.nako3dialog-close { background:transparent; border:0; color:#be185d; padding:0; }
+.skin-fancy.nako3dialog-list, .skin-fancy.nako3dialog-input, input.skin-fancy { background:white; color:#6b3765; border:2px solid #f9a8d4; border-radius:12px; padding:8px; }
+span.skin-fancy { color:#be185d; font-weight:700; margin-right:8px; }
+』をDOMテキスト設定。
+DOMスキン辞書@「ファンシー」=関数(TYPE,OBJ)
+　OBJの「className」に「skin-fancy」をDOM属性設定。
+ここまで。
+「ファンシー」のDOMスキン設定。
+「今日のおやつ」のラベル作成。
+「おやつを選ぶ」のボタン作成。
+おやつは["# どれにする？", "いちごケーキ", "マカロン", "プリン"]のリスト選択。
+}}}
+
+ダイアログを閉じるときは、各ボタン、右上の「×」、またはEscキーを使えます。スキンを切り替えると、それ以降に作成した部品とダイアログに新しい設定が反映されます。
