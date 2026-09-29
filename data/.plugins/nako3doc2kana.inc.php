@@ -30,9 +30,14 @@ function nako3doc_list_kana($mode, $env = null)
     if (!$ra) {
         return "[ERROR]";
     }
-    $wiki = "* [[命令一覧]] / [[カナ順:命令一覧/カナ順]]\n";
-    if ($env == 'gonako') {
+    if ($env === 'gonako') {
         $wiki = "* [[命令一覧:gonako]] / [[カナ順:gonako-カナ順]]\n";
+    } elseif ($env === 'wnako') {
+        $wiki = "* [[命令一覧:wnako]] / [[カナ順:wnako-カナ順]]\n";
+    } elseif ($env === 'cnako') {
+        $wiki = "* [[命令一覧:cnako]] / [[カナ順:cnako-カナ順]]\n";
+    } else {
+        $wiki = "* [[命令一覧]] / [[カナ順:命令一覧/カナ順]]\n";
     }
     // ページ内リンクを生成する(五十音順・1行5文字)
     $navFirst = []; // 行の基本文字 => 最初に現れる見出し文字

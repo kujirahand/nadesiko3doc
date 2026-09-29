@@ -16,16 +16,16 @@ function nako3doc_getDBFile($env = null)
         return KONA3_DIR_DATA . '/nako3commands.db';
     }
     $page = isset($kona3conf['page']) ? $kona3conf['page'] : '';
-    if (preg_match('#^gonako(?:/|_|$)#', $page)) {
+    if (preg_match('#^gonako(?:[/_\-]|$)#', $page)) {
         return KONA3_DIR_DATA . '/gonako-commands.db';
     }
     $dbfile = KONA3_DIR_DATA . '/nako3commands.db';
     return $dbfile;
 }
 
-function nako3doc_getDBTime()
+function nako3doc_getDBTime($env = null)
 {
-    $dbfile = nako3doc_getDBFile();
+    $dbfile = nako3doc_getDBFile($env);
     if (!file_exists($dbfile)) {
         return 0;
     }
