@@ -27,12 +27,9 @@
 
 ●📖 ニュース
 
+- 2026/09/30 - カナ検索がランタイム別になりました
 - [[2026/09/14 - Gemini Notebookで質問できます！:https://notebook.google.com/notebook/8cf495cf-c1cb-4c3f-9ea4-102c15cc5ef2]]
--- 質問例: 
----「なでしこでどんな計算ができるの？」
----「なでしこで関数ってどうやって定義する？」
---- 「特定の日付まで調べるには？」
-- [[2026/09/07 - PC版として新しい「なでしこ3(Go版)」がリリースされました:gonako-preview]]
+- [[2026/09/07 - 新しいPC版「gonako」がリリースされました:gonako-preview]]
 
 ● 🌱 [[チュートリアル]]
 
@@ -42,11 +39,9 @@
 
 ・[[📒 文法 - なでしこ3の文法:文法]] --- なでしこに慣れてきたら、文法をチェックして便利な書き方をマスターしましょう。
 
-●📒 [[なでしこの命令の一覧:命令一覧/機能順]]
+●📒 [[なでしこの命令の一覧:命令一覧]]
 
-・[[命令一覧/機能順]]
-・[[命令一覧/カナ順]]
-・実行環境別…[[ブラウザで使える命令:wnako]] / [[PC版で使える命令:gonako]] / [[？:FAQ/ランタイムについて]]
+・[[ランタイムについて:FAQ/ランタイムについて]]
 ・[[🔌なでしこ公式プラグインの一覧:プラグイン一覧]]
 ・[[🔌なでしこ拡張ライブラリ(貯蔵庫):https://n3s.nadesi.com/index.php?action=library]] --- ユーザーによる便利なライブラリ
 
@@ -76,6 +71,8 @@
 - [[😊 なでしこDiscord(2):https://discord.com/invite/FAtjTQr3kk]]
 - [[🐂なでしこ3ハブ:https://github.com/kujirahand/nadesiko3hub]] --- プログラム検索が便利
 - [[🐂なでしこ3配布パック:https://nadesi.com/doc3/go.php?16421]]
+- [[😃 なでしこ3Gemini Notebookで質問:https://notebook.google.com/notebook/8cf495cf-c1cb-4c3f-9ea4-102c15cc5ef2]]
+- [[😸 本WIKIを検索できるAPI(doc-api):doc-api]]
 
 ●ランキングとマニュアル更新情報
 
