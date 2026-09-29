@@ -9,20 +9,20 @@
 - [[🔗なでしこv1...:https://nadesi.com/man]]
 
 ▲命令一覧 
-- [[📙ブラウザの命令:wnako]]
-- [[💻PCの命令:gonako]]
-- [[📖全ての命令:命令一覧/機能順]]
+- [[🌍ブラウザ版:wnako]]
+- [[💻PC版(gonako):gonako]]
+- [[💻PC版(cnako):cnako]]
+- [[👣 ランタイム...:FAQ/ランタイムについて]]
 
-▲命令一覧 > 索引
-- [[📒カナ順:命令一覧/カナ順]]
-- [[📒プラグイン一覧:プラグイン一覧]]
-- [[🔌拡張ライブラリ:https://n3s.nadesi.com/index.php?action=library]]
+▲プラグイン一覧
+- [[📒 プラグイン一覧:プラグイン一覧]]
+- [[🔌 拡張ライブラリ:https://n3s.nadesi.com/index.php?action=library]]
 
 ▲Webツール
-- [[簡易エディタ1:https://nadesi.com/v3/start]]
-- [[簡易エディタ2:https://nadesi.com/v3/doc/go.php?857]]
-- [[貯蔵庫エディタ:https://n3s.nadesi.com/index.php?page=new&action=edit]]
-- [[学習用パッド:https://www.manabu-tech.net/nakopad/]]
+- [[📝簡易エディタ1:https://nadesi.com/v3/start]]
+- [[📝簡易エディタ2:https://nadesi.com/v3/doc/go.php?857]]
+- [[📝貯蔵庫エディタ:https://n3s.nadesi.com/index.php?page=new&action=edit]]
+- [[📝学習用パッド:https://www.manabu-tech.net/nakopad/]]
 
 ▲その他
 - [[📍最近更新:最近更新]]

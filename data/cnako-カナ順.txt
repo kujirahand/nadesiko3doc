@@ -1,8 +1,8 @@
 ■ [[命令一覧]] / [[機能順:命令一覧/機能順]] / cnako - PC向け
 
-PC向けなでしこ3ランタイム[[cnako]]に用意されている命令一覧です。[[→カナ順:cnako-カナ順]]
+PC向けなでしこ3ランタイム[[cnako]]に用意されている命令一覧です。[[→機能順:cnako]]
 
-#nako3doc(list-func,cnako)
+#nako3doc2kana(kana,cnako)
 
 ▲参考
 
