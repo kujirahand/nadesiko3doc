@@ -25,10 +25,10 @@ function kona3plugins_nako3doc_execute($parg)
         return nako3doc_list_func($type);
     }
     if ($pa == 'list-kana') {
-        return nako3doc_list_kana('kana');
+        return nako3doc_list_kana('kana', array_shift($parg));
     }
     if ($pa == 'list-yomi') {
-        return nako3doc_list_kana('yomi');
+        return nako3doc_list_kana('yomi', array_shift($parg));
     }
     if ($pa == 'list-plugins' || $pa == 'plugins') {
         return nako3doc_list_plugins();
@@ -435,12 +435,13 @@ function nako3doc_list_func($pagetype)
     return $wiki_html;
 }
 
-function nako3doc_list_kana($mode)
+function nako3doc_list_kana($mode, $runtime = '')
 {
     $ra = nako3doc_run(
         "SELECT * FROM commands " .
             "ORDER BY kana ASC",
-        []
+        [],
+        $runtime
     );
     if (!$ra) {
         return "[ERROR]";
@@ -449,10 +450,10 @@ function nako3doc_list_kana($mode)
 
     // 同名の命令があればプラグインを明示
     $names = [];
-    for ($i = 0; $i < count($ra) - 1; $i++) {
+    for ($i = 0; $i < count($ra); $i++) {
         $j = $i;
         $name1 = $ra[$i]['name'];
-        if (!empty($names[$name1])) {
+        if (isset($names[$name1])) {
             $j = $names[$name1];
         } else {
             $names[$name1] = $i;
@@ -576,10 +577,12 @@ function nako3doc_checkPlugin($page)
     return konawiki_parser_convert($wiki);
 }
 
-function nako3doc_getDBFile()
+function nako3doc_getDBFile($runtime = '')
 {
     global $kona3conf;
-    $page = isset($kona3conf['page']) ? $kona3conf['page'] : '';
+    $page = ($runtime !== null && $runtime !== '')
+        ? $runtime
+        : (isset($kona3conf['page']) ? $kona3conf['page'] : '');
     if (preg_match('#^gonako(?:/|_|$)#', $page)) {
         return KONA3_DIR_DATA . '/gonako-commands.db';
     }
@@ -596,25 +599,23 @@ function nako3doc_getDBTime()
     return filemtime($dbfile);
 }
 
-function nako3doc_getDB()
+function nako3doc_getDB($runtime = '')
 {
-    global $kona3conf;
     global $nako3doc_db;
-    if (isset($nako3doc_db)) {
-        return $nako3doc_db;
+    $dbfile = nako3doc_getDBFile($runtime);
+    if (!isset($nako3doc_db[$dbfile])) {
+        $nako3doc_db[$dbfile] = new PDO("sqlite:$dbfile");
     }
-    $dbfile = nako3doc_getDBFile();
-    $nako3doc_db = new PDO("sqlite:$dbfile");
-    return $nako3doc_db;
+    return $nako3doc_db[$dbfile];
 }
 
-function nako3doc_run($sql, $params = [])
+function nako3doc_run($sql, $params = [], $runtime = '')
 {
     // DBファイルが無い場合は、空のDBを作らずに空の結果を返す
-    if (!file_exists(nako3doc_getDBFile())) {
+    if (!file_exists(nako3doc_getDBFile($runtime))) {
         return [];
     }
-    $db = nako3doc_getDB();
+    $db = nako3doc_getDB($runtime);
     try {
         $stmt = $db->prepare($sql);
         $stmt->execute($params);
