@@ -1,0 +1,85 @@
+* 命令情報API (doc-api.php)
+
+なでしこの命令情報をJSONで得られるAPIです。なでしこのプログラムから、AJAXで命令の使い方を調べることができます。
+
+■ 基本
+
+{{{
+/doc-api.php?runtime=ランタイム&name=名前
+}}}
+
+- runtime --- 実行環境を指定します。wnako, cnako, phpnako, enako, gonako のいずれかです。省略すると、gonako以外の全プラグインが対象です。
+- name --- プラグイン名/命令グループ名/命令名のいずれかを指定します。
+- action --- 省略可能です。plugins, groups, commands, command のいずれかを指定します。省略すると、name から自動判定します。
+
+結果は、JSON形式で返ります。エラーの場合は、{"ok": false, "error": "..."} が返り、HTTPステータスは400または404です。
+
+■ できること
+
+● プラグイン一覧を得る
+
+nameを省略します。(action=plugins)
+
+{{{
+/doc-api.php?runtime=wnako
+}}}
+
+● プラグインから命令グループを得る
+
+nameにプラグイン名を指定します。(action=groups)
+
+{{{
+/doc-api.php?runtime=wnako&name=plugin_system
+}}}
+
+● 命令グループから命令一覧を得る
+
+nameに「プラグイン名/グループ名」を指定します。(action=commands)
+
+{{{
+/doc-api.php?runtime=wnako&name=plugin_system/置換・トリム
+}}}
+
+● 命令から属する命令グループを得る/命令の使い方を得る
+
+nameに命令名を指定します。(action=command)
+結果の plugin と group が、その命令の属するプラグインと命令グループです。args は引数の書式の配列で、desc は説明です。
+
+{{{
+/doc-api.php?runtime=wnako&name=置換
+}}}
+
+{{{
+{
+    "ok": true,
+    "action": "command",
+    "commands": [
+        {
+            "name": "置換",
+            "kana": "ちかん",
+            "plugin": "plugin_system",
+            "group": "置換・トリム",
+            "type": "関数",
+            "args": ["SのAをBに", "SでAからBへ"],
+            "desc": "文字列Sのうち文字列AをBに全部置換して返す",
+            "pagename": "plugin_system/置換",
+            "src_url": "https://github.com/..."
+        }
+    ]
+}
+}}}
+
+■ なでしこからの利用例
+
+{{{
+※ 命令『置換』の説明を調べる
+URL=「https://nadesi.com/v3/doc/doc-api.php?runtime=wnako&name=置換」
+S=URLからAJAXテキスト取得。
+R=SをJSONデコード。
+R@「commands」@0@「desc」を表示。
+}}}
+
+■ 補足
+
+- DBは、`data/nako3commands.db`(gonakoのみ`data/gonako-commands.db`)を利用します。
+- どのオリジンからも呼び出せるように、`Access-Control-Allow-Origin: *`を返します。
