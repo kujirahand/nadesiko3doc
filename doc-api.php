@@ -54,12 +54,16 @@ function doc_api_commandInfo($r)
 $runtime = isset($_GET['runtime']) ? trim($_GET['runtime']) : '';
 $action = isset($_GET['action']) ? trim($_GET['action']) : '';
 $name = isset($_GET['name']) ? trim($_GET['name']) : '';
+$validRuntimes = ['', 'wnako', 'cnako', 'phpnako', 'enako', 'gonako'];
+if (!in_array($runtime, $validRuntimes, true)) {
+    doc_api_error("不明なruntimeです: {$runtime}");
+}
 list($env, $nakotype) = doc_api_getEnv($runtime);
 
 // プラグイン一覧を取得(runtime で絞り込み)
 $plugins = [];
 foreach (nako3doc_run('SELECT * FROM plugins ORDER BY rowid', [], $env) as $p) {
-    if ($nakotype !== '' && strpos($p['nakotype'], $nakotype) === false) {
+    if ($nakotype !== '' && !in_array($nakotype, explode(',', $p['nakotype']), true)) {
         continue;
     }
     $plugins[$p['name']] = $p['nakotype'];
