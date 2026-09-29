@@ -4,6 +4,8 @@
  * - [備考] data/nako3commands.db に nadesiko3doc リポジトリのDBを配置
  */
 
+require_once __DIR__ . '/nako3doc_utils.php';
+
 /** ページの編集履歴(GitHub)へのリンク書式 - {WikiName} がページ名に置換される */
 if (!defined('NAKO3DOC_HISTORY_URL')) {
     define('NAKO3DOC_HISTORY_URL', 'https://github.com/kujirahand/nadesiko3doc/commits/master/data/{WikiName}.txt');
@@ -24,11 +26,11 @@ function kona3plugins_nako3doc_execute($parg)
         $type = array_shift($parg);
         return nako3doc_list_func($type);
     }
-    if ($pa == 'list-kana') {
-        return nako3doc_list_kana('kana');
-    }
-    if ($pa == 'list-yomi') {
-        return nako3doc_list_kana('yomi');
+    // カナ順/読み順の一覧は nako3doc2kana.inc.php に分離(互換のため委譲)
+    if ($pa == 'list-kana' || $pa == 'list-yomi') {
+        require_once __DIR__ . '/nako3doc2kana.inc.php';
+        $env = array_shift($parg);
+        return nako3doc_list_kana($pa == 'list-kana' ? 'kana' : 'yomi', $env);
     }
     if ($pa == 'list-plugins' || $pa == 'plugins') {
         return nako3doc_list_plugins();
@@ -230,16 +232,17 @@ function nako3doc_getPluginInfo($plugin)
     return $p;
 }
 
-function nako3doc_getPlugins($pagetype = '')
+function nako3doc_getPlugins($pagetype = '', $env = null)
 {
     if ($pagetype) {
         $pluginQ = nako3doc_run(
             "SELECT * FROM plugins WHERE nakotype LIKE ?",
-            ["%$pagetype%"]
+            ["%$pagetype%"],
+            $env
         );
     } else {
         // all
-        $pluginQ = nako3doc_run("SELECT * FROM plugins", []);
+        $pluginQ = nako3doc_run("SELECT * FROM plugins", [], $env);
     }
     $pluginInfo = [];
     foreach ($pluginQ as $q) {
@@ -435,90 +438,17 @@ function nako3doc_list_func($pagetype)
     return $wiki_html;
 }
 
-function nako3doc_list_kana($mode)
-{
-    $ra = nako3doc_run(
-        "SELECT * FROM commands " .
-            "ORDER BY kana ASC",
-        []
-    );
-    if (!$ra) {
-        return "[ERROR]";
-    }
-    $wiki = "* [[命令一覧]] / [[カナ順:命令一覧/カナ順]]\n";
-
-    // 同名の命令があればプラグインを明示
-    $names = [];
-    for ($i = 0; $i < count($ra) - 1; $i++) {
-        $j = $i;
-        $name1 = $ra[$i]['name'];
-        if (!empty($names[$name1])) {
-            $j = $names[$name1];
-        } else {
-            $names[$name1] = $i;
-        }
-        if ($i == $j) {
-            if (isset($ra[$i]['name_show'])) continue;
-            $ra[$i]['name_show'] = $ra[$i]['name'];
-            $ra[$i]['kana_show'] = $ra[$i]['kana'];
-            continue;
-        }
-        $plugin1 = $ra[$i]['plugin'];
-        $plugin2 = $ra[$j]['plugin'];
-        $plugin1 = str_replace('plugin_', '', $plugin1);
-        $plugin2 = str_replace('plugin_', '', $plugin2);
-        $plugin1 = str_replace('nadesiko3-', '', $plugin1);
-        $plugin2 = str_replace('nadesiko3-', '', $plugin2);
-        $kana1 = $ra[$i]['kana'];
-        $ra[$i]['name_show'] = "$name1 ($plugin1)";
-        $ra[$j]['name_show'] = "$name1 ($plugin2)";
-        $ra[$i]['kana_show'] = "$kana1 ($plugin1)";
-        $ra[$j]['kana_show'] = "$kana1 ($plugin2)";
-    }
-
-    $ch = $chLast = '';
-    foreach ($ra as $r) {
-        $plugin = $r['plugin'];
-        $genre = $r['genre'];
-        $pagename = $r['pagename'];
-        $type = $r['type'];
-        $name = $r['name'];
-        $name_show = $r['name_show'];
-        $kana_show = $r['kana_show'];
-        $args = $r['args'];
-        $desc = $r['desc'];
-        $kana = $r['kana'];
-        $ctime = $r['ctime'];
-        $mtime = $r['mtime'];
-        $ch = mb_substr($kana, 0, 1);
-        if ($ch != $chLast) {
-            $wiki .= "** $ch\n";
-            $chLast = $ch;
-        }
-        if ($mode == 'kana') {
-            if ($type == '定数') {
-                $wiki .= "- [[$name_show:$pagename]]\n";
-            } else {
-                $wiki .= "- [[$name_show:$pagename]]\n";
-            }
-        } else {
-            if ($type == '定数') {
-                $wiki .= "- [[$kana_show - $name:$pagename]]\n";
-            } else {
-                $wiki .= "- [[$kana_show - $name:$pagename]]\n";
-            }
-        }
-    }
-    $wiki_html = konawiki_parser_convert($wiki);
-    if ($mode == 'yomi') {
-        return $wiki_html;
-    }
-    return $wiki_html;
-}
-
 function nako3doc_list_plugins()
 {
-    $plugins = nako3doc_getPlugins();
+    // 全てのDB(通常版・Go版)からプラグインの一覧を取得
+    $plugins = [];
+    foreach (['nako3', 'gonako'] as $env) {
+        foreach (nako3doc_getPlugins('', $env) as $name => $nakotype) {
+            if (!isset($plugins[$name])) {
+                $plugins[$name] = $nakotype;
+            }
+        }
+    }
     $wiki = "* [[命令一覧]] > プラグイン一覧\n";
     foreach ($plugins as $plugin => $r) {
         $type = preg_replace('/([a-z]+)/', '[[\1]]', $r);
@@ -574,54 +504,6 @@ function nako3doc_checkPlugin($page)
         }
     }
     return konawiki_parser_convert($wiki);
-}
-
-function nako3doc_getDBFile()
-{
-    $dbfile = KONA3_DIR_DATA . '/nako3commands.db';
-    return $dbfile;
-}
-
-function nako3doc_getDBTime()
-{
-    $dbfile = nako3doc_getDBFile();
-    if (!file_exists($dbfile)) {
-        return 0;
-    }
-    return filemtime($dbfile);
-}
-
-function nako3doc_getDB()
-{
-    global $kona3conf;
-    global $nako3doc_db;
-    if (isset($nako3doc_db)) {
-        return $nako3doc_db;
-    }
-    $dbfile = nako3doc_getDBFile();
-    $nako3doc_db = new PDO("sqlite:$dbfile");
-    return $nako3doc_db;
-}
-
-function nako3doc_run($sql, $params = [])
-{
-    // DBファイルが無い場合は、空のDBを作らずに空の結果を返す
-    if (!file_exists(nako3doc_getDBFile())) {
-        return [];
-    }
-    $db = nako3doc_getDB();
-    try {
-        $stmt = $db->prepare($sql);
-        $stmt->execute($params);
-        $r = $stmt->fetchAll(PDO::FETCH_BOTH);
-    } catch (PDOException $e) {
-        // テーブルが無いなど、DBが不完全な場合
-        return [];
-    }
-    if (empty($r)) {
-        return [];
-    }
-    return $r;
 }
 
 // action

@@ -1,0 +1,5 @@
+■ [[gonako]] / [[カナ順:gonako-カナ順]] / gonako - PC向け
+
+[[gonako]]とは「なでしこ3(Go版)」のことで、PC上でなでしこ3を動かすためのランタイムです。(詳しくは[[こちら:gonako-preview]]をご覧ください。) [[→機能順:gonako]]
+
+#nako3doc2kana(kana,gonako)
