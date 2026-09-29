@@ -1,0 +1,5 @@
+●[[wnako]] > [[カナ順:wnako-カナ順]]
+
+Webブラウザ向けなでしこ3ランタイムに用意されている命令一覧です。[[→機能順:wnako]]
+
+#nako3doc2kana(kana,wnako)
