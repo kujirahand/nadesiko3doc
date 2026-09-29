@@ -578,6 +578,11 @@ function nako3doc_checkPlugin($page)
 
 function nako3doc_getDBFile()
 {
+    global $kona3conf;
+    $page = isset($kona3conf['page']) ? $kona3conf['page'] : '';
+    if (preg_match('#^gonako(?:/|_|$)#', $page)) {
+        return KONA3_DIR_DATA . '/gonako-commands.db';
+    }
     $dbfile = KONA3_DIR_DATA . '/nako3commands.db';
     return $dbfile;
 }
