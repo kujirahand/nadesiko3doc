@@ -439,14 +439,34 @@ function nako3doc_list_kana($mode, $runtime = '')
 {
     $ra = nako3doc_run(
         "SELECT * FROM commands " .
-            "ORDER BY kana ASC",
+            "ORDER BY (kana IS NULL OR kana = '') ASC, kana ASC",
         [],
         $runtime
     );
     if (!$ra) {
         return "[ERROR]";
     }
-    $wiki = "* [[命令一覧]] / [[カナ順:命令一覧/カナ順]]\n";
+    if ($runtime == 'gonako') {
+        $wiki = "* [[命令一覧:gonako]] / [[カナ順:gonako-カナ順]]\n";
+    } else {
+        $wiki = "* [[命令一覧]] / [[カナ順:命令一覧/カナ順]]\n";
+    }
+
+    // 実際に存在する頭文字だけを、ページ内の各見出しへの索引にする。
+    $initials = [];
+    foreach ($ra as $r) {
+        $ch = mb_substr($r['kana'] ?? '', 0, 1);
+        if ($ch === '') $ch = 'その他';
+        if (!isset($initials[$ch])) {
+            $initials[$ch] = 'nako3doc-kana-' . bin2hex($ch);
+        }
+    }
+    $links = [];
+    foreach ($initials as $ch => $anchor) {
+        $label = htmlspecialchars($ch, ENT_QUOTES, 'UTF-8');
+        $links[] = "<a href='#{$anchor}'>{$label}</a>";
+    }
+    $wiki .= '#html(' . implode(' / ', $links) . ")\n";
 
     // 同名の命令があればプラグインを明示
     $names = [];
@@ -491,8 +511,12 @@ function nako3doc_list_kana($mode, $runtime = '')
         $kana = $r['kana'];
         $ctime = $r['ctime'];
         $mtime = $r['mtime'];
-        $ch = mb_substr($kana, 0, 1);
+        $ch = mb_substr($kana ?? '', 0, 1);
+        if ($ch === '') $ch = 'その他';
         if ($ch != $chLast) {
+            if (isset($initials[$ch])) {
+                $wiki .= "#html(<a id='{$initials[$ch]}'></a>)\n";
+            }
             $wiki .= "** $ch\n";
             $chLast = $ch;
         }
