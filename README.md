@@ -50,7 +50,19 @@ PHP8以降をインストールしてパスを通しておいてください。�
 - `php-mbstring`
 - `php-pdo-sqlite`
 
+また、[just](https://github.com/casey/just)をインストールすることをお勧めします。justを使うことで、各種操作を簡単に行えます。
+
+#### justを使ったサーバー起動
+
 以下のコマンドを実行するとPHPのWebサーバーが起動します。
+
+```sh
+just server
+```
+
+#### 直接PHPを実行する場合
+
+以下のコマンドでもPHPのWebサーバーが起動します。
 
 ```sh
 cd nadesiko3doc
@@ -61,6 +73,37 @@ Webブラウザを開いて「localhost:8888」にアクセスします。
 管理者のメールアドレスとパスワードの指定画面が出ますので任意のものを指定してください。
 この設定は、Konawiki3を使うためのもので、リポジトリには反映されるものではありません。
 すると、FrontPageにアクセスするように言われますので、リンクをクリックします。
+
+### justコマンドの使い方
+
+このプロジェクトでは、[just](https://github.com/casey/just)を使って各種操作を簡単に行えます。
+justをインストールした後、以下のコマンドが利用できます。
+
+```sh
+# 利用可能なコマンド一覧を表示
+just
+
+# PHPの開発サーバーを起動
+just server
+
+# コマンド一覧をDBに変換
+just cmd2db
+
+# 解説がない命令を一覧表示
+just enum-blank
+
+# 全スクリプトを実行（cmd2db + enum-blank）
+just build
+
+# メタ情報を更新
+just update-meta
+
+# npmの依存関係をインストール
+just install-deps
+
+# 開発環境をセットアップ
+just setup
+```
 
 ### Konawiki3の設定を変更しよう
 
