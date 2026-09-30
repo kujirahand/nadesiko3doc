@@ -6,57 +6,19 @@
 
 
 ▲ [[plugin_browser]]
-- [[plugin_browser/AJAXオプションPOST設定]] --- AJAXオプションにPOSTメソッドとパラメータPARAMSを設定
-- [[plugin_browser/AJAX保障送信]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/HTTP保障取得]] --- 非同期通信(Ajax)でURLにデータの送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/POST保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
-- [[plugin_browser/POSTフォーム保障送信]] --- 非同期通信(Ajax)でURLにPARAMSをフォームとしてPOST送信を開始する非同期処理オブジェクト(Promise)を作成する。
 - [[plugin_browser/AJAX内容取得]] --- 「保証」を使った非同期通信(Ajax)の応答から内容を指定した形式で取り出すための非同期処理オブジェクト(Promise)を返す。
-- [[plugin_browser/BLOB作成]] --- DATA(配列型)をOPTIONS(辞書型)でBlobオブジェクトを作成する。
-- [[plugin_browser/タッチイベント計算]] --- タッチイベントで座標計算を行う。『タッチX』『タッチY』『タッチ配列』『対象』『対象イベント』が設定される。『タッチ配列』の内容が返る
 - [[plugin_browser/タッチキャンセル時]] --- 無名関数FでDOMに対してタッチイベントをキャンセルした時の動作を設定。
-- [[plugin_browser/描画データBLOB変換]] --- 描画内容をPNG形式のBLOBオブジェクトに変換して戻す。(非同期関数)
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
-
-▲ [[plugin_httpserver]]
-- [[plugin_httpserver/簡易HTTPサーバ起動時]] --- ポート番号PORTを指定して簡易HTTPサーバを起動して、CALLBACKを実行する。
-- [[plugin_httpserver/簡易HTTPサーバ静的パス指定]] --- 静的コンテンツのパスを指定。URLをPATHへマップする。
-- [[plugin_httpserver/簡易HTTPサーバ受信時]] --- URLを指定して合致するリクエストが来たら処理を実行する。
-- [[plugin_httpserver/簡易HTTPサーバ出力]] --- 受信時に、データSを出力する。
-- [[plugin_httpserver/簡易HTTPサーバヘッダ出力]] --- 受信時にステータスコードNOで、ヘッダHEAD(辞書形式)を出力する。
-- [[plugin_httpserver/簡易HTTPサーバ移動]] --- 受信時にヘッダ302(リダイレクト)を出力してURLへページを移動力する。
 
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 
 ▲ [[plugin_webworker]]
-- [[plugin_webworker/ワーカーURL設定]] --- なでしこv3のファイルのあるURLを設定
-- [[plugin_webworker/ワーカー起動]] --- 指定したURLでWebWorkerを起動する。ワーカオブジェクトを返す。
-- [[plugin_webworker/ワーカーJS起動]] --- 指定したJavascriptのソースでWebWorkerを起動する。ワーカオブジェクトを返す。
 - [[plugin_webworker/NAKOワーカー起動]] --- 指定したなでしこ３のWebWorkerを起動する。ワーカオブジェクトを返す。(可変引数)
-- [[plugin_webworker/NAKOワーカーハンドラ設定]] --- ワーカーにNAKOワーカーのための設定を行う。
-- [[plugin_webworker/NAKOワーカーデータ受信時]] --- 無名関数Fでなでしこv3エンジンに対してワーカーメッセージによりデータを受信した時に実行するイベントを設定。『受信データ』に受信したデータ。『対象イベント』にイベント引数。(可変引数)
-- [[plugin_webworker/NAKOワーカー表示時]] --- 無名関数Fでなでしこv3エンジンに対してワーカーメッセージにより表示データを受信した時に実行するイベントを設定。『受信データ』に表示しようとしたデータ。『対象イベント』にイベント引数。
-- [[plugin_webworker/ワーカーメッセージ受信時]] --- 無名関数Fでworkに対してメッセージを受信した時に実行するイベントを設定。『受信データ』に受信したデータ。『対象イベント』にイベント引数。(可変引数)
-- [[plugin_webworker/NAKOワーカープログラム起動]] --- WORKERに固有の形式でプログラムの転送と実行行う。
-- [[plugin_webworker/NAKOワーカーリセット]] --- WORKERに固有の形式でプログラムの転送と実行行う。
-- [[plugin_webworker/ワーカー終了]] --- WORKERを終了する。(可変引数)
-- [[plugin_webworker/NAKOワーカー終了]] --- WORKERを終了する。(可変引数)
-- [[plugin_webworker/NAKOワーカーデータ送信]] --- WORKERに固有の形式でデータを送信する。(可変引数)
-- [[plugin_webworker/ワーカーメッセージ送信]] --- WORKERにメッセージを送信する。(可変引数)
-- [[plugin_webworker/NAKOワーカー転送]] --- WORKERにユーザー定義関数またはユーザ定義のグローバル変数を転送する。(可変引数)
 
 ▲ [[nadesiko3-sqlite3]]
-- [[nadesiko3-sqlite3/SQLITE3開]] --- SQlite3のデータベースを開いて、データベースオブジェクトを返す
-- [[nadesiko3-sqlite3/SQLITE3閉]] --- アクティブなSQlite3のデータベースを閉じる
 - [[nadesiko3-sqlite3/SQLITE3切替]] --- アクティブなSQlite3のデータベースをDB(SQLITE3開くで開いたもの)に切り替える
-- [[nadesiko3-sqlite3/SQLITE3実行時]] --- SQLをパラメータPARAMSで実行する。完了するとコールバック関数Fを実行する。
-- [[nadesiko3-sqlite3/SQLITE3実行後]] --- 『SQLITE3実行時』と同じ。
-- [[nadesiko3-sqlite3/SQLITE3取得時]] --- SQLをパラメータPARAMSで取得実行する。完了するとコールバック関数Fが実行され、結果は第一引数に与えられる。
-- [[nadesiko3-sqlite3/SQLITE3実行]] --- SQLをパラメータPARAMSで実行する。(非同期関数)
-- [[nadesiko3-sqlite3/SQLITE3取得]] --- SQLをパラメータPARAMSで取得する。(非同期関数)
-- [[nadesiko3-sqlite3/SQLITE3全取得]] --- SQLをパラメータPARAMSで全部取得する。(非同期関数)
 
 ▲ [[nadesiko3-htmlparser]]
 - [[nadesiko3-htmlparser/HTML_URL開]] --- 任意のURLを開いてパースする。(非同期関数)
@@ -79,107 +41,14 @@
 - [[nadesiko3-htmlparser/DOM配列変換]] --- DOMを配列に変換する
 - [[nadesiko3-htmlparser/タグ名取得]] --- DOMのタグ名を取得する
 
-▲ [[nadesiko3-websocket]]
-- [[nadesiko3-websocket/WSサーバ起動]] --- ポートPORTNOでサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
-- [[nadesiko3-websocket/WSSサーバ起動]] --- 設定CONF{cert:サーバ証明書,key:キーファイル,port:ポート番号}を指定してWSSサーバを起動して成功したら『WSサーバ起動成功した時』を実行する
-- [[nadesiko3-websocket/WSサーバ起動成功時]] --- WSサーバ起動が成功した時にcallbackを実行
-- [[nadesiko3-websocket/WSサーバ起動失敗時]] --- WSサーバ起動が失敗した時にcallbackを実行
-- [[nadesiko3-websocket/WSサーバ接続時]] --- WSサーバにクライアントが接続してきた時callbackを実行。接続情報は、変数『対象』に入る
-- [[nadesiko3-websocket/WSサーバ受信時]] --- WSサーバでメッセージを受信した時に実行される。クライアントのIPアドレスとポートは『WSサーバー相手』に受信データは『対象』に代入される
-- [[nadesiko3-websocket/WSサーバ全送信]] --- WSサーバで全員にメッセージSを送信する
-- [[nadesiko3-websocket/WSサーバ個別送信]] --- WSサーバで個別にメッセージSを送信する
-- [[nadesiko3-websocket/WSクライアント一覧取得]] --- WSサーバに接続しているクライアントの一覧を返す
-
 ▲ [[nadesiko3-smtp]]
 - [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'xxx',pass:'xxx'},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す(非同期関数)
-- [[nadesiko3-smtp/GMAIL送信]] --- 辞書型のデータ{user:'xxx',pass:'xxx',宛先:'xxx',件名:'xxx',本文:'xxx',html:'xxx',添付:[{filename:'xxx', path:'xxx'}]}を指定してGMAILからメール送信して情報を返す(非同期関数)
-
-▲ [[plugin_odbc]]
-- [[plugin_odbc/ODBC逐次開]] --- 逐次実行構文にて、ODBCのデータベースを開く
-- [[plugin_odbc/ODBC開]] --- ODBCのデータベースを同期的に開いてオブジェクトを返す
-- [[plugin_odbc/ODBC逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。
-- [[plugin_odbc/ODBC実行]] --- 逐次実行構文内で、SQLとパラメータPARAMSでSQLを実行して結果を得る。
-- [[plugin_odbc/ODBC閉]] --- ODBCで開いているデータベースを閉じる
-- [[plugin_odbc/ODBC逐次閉]] --- 逐次実行構文でODBCで開いているデータベースを閉じる
-- [[plugin_odbc/ODBCトランザクション開始]] --- ODBCでトランザクションを開始する
-- [[plugin_odbc/ODBCトランザクション終了]] --- ODBCでトランザクションを終了する
-
-▲ [[plugin_mssql]]
-- [[plugin_mssql/MSSQL開]] --- データベースを開く(非同期関数)
-- [[plugin_mssql/MSSQL実行]] --- SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。(非同期関数)
-- [[plugin_mssql/MSSQL閉]] --- 開いているデータベースを閉じる(非同期関数)
-
-▲ [[plugin_mysql]]
-- [[plugin_mysql/MYSQL開]] --- データベースを開く
-- [[plugin_mysql/MYSQL閉]] --- データベースを閉じる
-- [[plugin_mysql/MYSQL逐次実行]] --- 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。INSERT句の場合は『対象[insertId]』でIDが得られる。
-
-▲ [[plugin_postgresql]]
-- [[plugin_postgresql/PG開]] --- データベースを開く
-- [[plugin_postgresql/PG閉]] --- データベースを閉じる
-- [[plugin_postgresql/PG実行]] --- SQLとパラメータPARAMSでSQLを実行し、戻り値に結果を得る。(非同期関数)
-- [[plugin_postgresql/PG逐次実行]] --- (非推奨) 逐次実行構文にて、SQLとパラメータPARAMSでSQLを実行し、変数『対象』に結果を得る。SELECT句以外を実行した時も情報が『対象』に入る。
 
 ▲ [[plugin_electron_node]]
-- [[plugin_electron_node/アプリID設定]] --- アプリIDを設定する
-- [[plugin_electron_node/QUIT]] --- Electronのアプリを終了する
-- [[plugin_electron_node/終了]] --- Electronのアプリを終了する
-- [[plugin_electron_node/強制終了]] --- Electronのアプリを強制終了する
-- [[plugin_electron_node/再起動予約]] --- アプリが終了した際に自動的に起動する
-- [[plugin_electron_node/Eアプリ準備完了]] --- アプリの準備が完了していれば真を返す
-- [[plugin_electron_node/Eアプリ準備完了時]] --- アプリの準備が完了した際に呼び去られる処理を登録する
-- [[plugin_electron_node/Eアプリフォーカス獲得]] --- アプリがフォーカスの獲得を試みる
-- [[plugin_electron_node/Eアプリバージョン取得]] --- package.jsonで設定しているアプリのバージョンを返す
-- [[plugin_electron_node/Eアプリ名取得]] --- package.jsonで設定しているアプリの名前(name,productName)を返す
-- [[plugin_electron_node/ブラウザウインドウ作成]] --- オプションに従いブラウザウインドウを作成して返す
-- [[plugin_electron_node/ブラウザ読込]] --- ウインドウに指定のURLから読み込みを行う
-- [[plugin_electron_node/全ウインドウ数取得]] --- アプリに存在する全てのWindowの数を返す
-- [[plugin_electron_node/フォーカスウインドウ取得]] --- フォーカスを獲得しているWindowを返す
-- [[plugin_electron_node/ウインドウ再読込]] --- 指定したウインドウの再読み込みを行う
-- [[plugin_electron_node/ウインドウ表示]] --- 指定したウインドウを表示状態にする
-- [[plugin_electron_node/開発ツールトグル]] --- 指定したウインドウの開発者ツールの表示状態をトグルする
-- [[plugin_electron_node/メニュー設定]] --- menuをウインドウのメニューに設定する
-- [[plugin_electron_node/アプリメニュー設定]] --- menuをアプリのメインメニューに設定する
-- [[plugin_electron_node/アプリメニュー取得]] --- アプリのメインメニューに取得して返す
-- [[plugin_electron_node/メニュー一括作成]] --- メニューをテンプレートから一括作成し作成したメニューを返す
-- [[plugin_electron_node/メニューポップアップ開]] --- メニューをポップアップメニューとして開く
-- [[plugin_electron_node/メニューポップアップ閉]] --- ポップアップメニューとして開かれたこのメニューを閉じる
-- [[plugin_electron_node/メニューアイテム追加]] --- メニューにメニュー項目を追加する
-- [[plugin_electron_node/メニュー項目追加]] --- メニューにメニュー項目を追加する
-- [[plugin_electron_node/メニューアイテム挿入]] --- メニューの指定位置にメニュー項目を挿入する
-- [[plugin_electron_node/メニュー項目挿入]] --- メニューの指定位置にメニュー項目を挿入する
-- [[plugin_electron_node/メニューアイテム取得]] --- メニューから指定したIDを持つメニューアイテムを返す
-- [[plugin_electron_node/メニューIDクリック時]] --- メニューから指定したIDを持つ項目をクリックした時の処理を登録する
-- [[plugin_electron_node/メニュー項目作成]] --- メニュー項目を作成して返す
-- [[plugin_electron_node/発生時]] --- 対象にて指定のイベントが発生した時の処理を登録する
-- [[plugin_electron_node/単発発生時]] --- 対象にて指定のイベントが発生した時の処理を登録する。イベント発生時に自動削除される
-- [[plugin_electron_node/呼出時]] --- 対象にて指定のInvoke呼び出しを受けた時の処理を登録する(evt, ...args)
-- [[plugin_electron_node/呼出]] --- 対象のInvokeを呼び出す
-- [[plugin_electron_node/ファイル選択]] --- ファイルを選択するダイアログを表示して結果を返す(非同期関数)
-- [[plugin_electron_node/フォルダ選択]] --- フォルダを選択するダイアログを表示して結果を返す(非同期関数)
-- [[plugin_electron_node/保存ファイル選択]] --- ファイルを保存するためのダイアログを表示して結果を返す(非同期関数)
-- [[plugin_electron_node/カーソル絶対位置取得]] --- マウスポインタの絶対位置をDIPポイント単位で返す
-- [[plugin_electron_node/主モニター取得]] --- 主画面に指定されているモニターのDisplayを返す
-- [[plugin_electron_node/全モニター取得]] --- 全てのモニターをDisplayの配列で返す
-- [[plugin_electron_node/付近モニター取得]] --- 指定した点に最も近いモニターのDisplayを返す
-- [[plugin_electron_node/該当モニター取得]] --- 指定した矩形に最も近いモニターのDisplayを返す
-- [[plugin_electron_node/PX2DIP点変換]] --- Pointを物理的な単位からDIP単位に変換して返す
-- [[plugin_electron_node/DIP2PX点変換]] --- PointをDIP単位から物理的な単位に変換して返す
-- [[plugin_electron_node/PX2DIP矩形変換]] --- Rectangleを物理的な単位からDIP単位に変換して返す。DPIは指定したウインドウと相対的に計算する
-- [[plugin_electron_node/DIP2PX矩形変換]] --- RectangleをDIP単位から物理的な単位に変換して返す。DPIは指定したウインドウと相対的に計算する
 - [[plugin_electron_node/DIP2PXP矩形変換]] --- 『DIP2PX矩形変換』命令の誤字。互換性のために存在する。
-- [[plugin_electron_node/データ受信時]] --- レンダラからのデータ送信を受けた時の処理を登録する(evt, key, msg)
-- [[plugin_electron_node/データ呼出時]] --- レンダラからの呼び出しを受けた時の処理を登録する(evt, key, msg)
-- [[plugin_electron_node/データ送信]] --- レンダラにデータを送信する(webContent, key, data)
-- [[plugin_electron_node/データ呼出]] --- レンダラにデータを呼び出す(webContent, key, data)
 
 ▲ [[nadesiko3-drone]]
-- [[nadesiko3-drone/ドローン接続]] --- ドローンに接続する(非同期関数)
-- [[nadesiko3-drone/ドローンバッテリ残量取得]] --- ドローンからバッテリ残量を得る(非同期関数)
 - [[nadesiko3-drone/ドローン緊急停止]] --- ドローン緊急停止する
-- [[nadesiko3-drone/ドローン送信]] --- コマンドをドローンに送信する(非同期関数)
-- [[nadesiko3-drone/ドローン接続時]] --- ドローンに接続した時にFを実行する
-- [[nadesiko3-drone/ドローン受信時]] --- ドローンからデータを受信した時にFを実行する
 - [[nadesiko3-drone/ドローン離陸]] --- 離陸コマンドをドローンに送信する(非同期関数)
 - [[nadesiko3-drone/ドローン着陸]] --- 着陸コマンドをドローンに送信する(非同期関数)
 - [[nadesiko3-drone/ドローン移動]] --- ドローンを方向(上下左右前後)にN(20-500cm)だけ動かす(非同期関数)
