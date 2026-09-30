@@ -1,0 +1,34 @@
+name: Update meta
+
+# PRをマージ(masterへpush)したときに、konawiki3のメタ情報(data/.meta)を更新する
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'data/**'
+      - '!data/.meta/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-meta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 全履歴が必要
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+      - name: Generate meta
+        run: php script/update-meta.php
+      - name: Commit
+        run: |
+          if [ -n "$(git status --porcelain data/.meta)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/.meta
+            git commit -m "Update meta [skip ci]"
+            git push
+          fi
