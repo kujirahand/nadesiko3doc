@@ -1,1 +1,1 @@
-#include(plugin_system/JSオブジェクト取得)
+#include(plugin_js/JSオブジェクト取得)

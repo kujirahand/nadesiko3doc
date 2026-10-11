@@ -8,4 +8,4 @@ JavaScriptの「window.alert('こんにちは')」をなでしこで実行する
 
 ▲参考
 
-- [[plugin_system/JS関数実行]]
+- [[plugin_js/JS関数実行]]

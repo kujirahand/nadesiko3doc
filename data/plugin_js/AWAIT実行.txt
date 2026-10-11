@@ -57,7 +57,7 @@ AAAを表示。
 
 ▲参考
 
-- [[plugin_system/JS実行]]
+- [[plugin_js/JS実行]]
 - [[plugin_system/ASYNC]]
 - [[plugin_system/秒待]]
 
