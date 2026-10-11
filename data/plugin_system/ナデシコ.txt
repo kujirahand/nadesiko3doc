@@ -13,7 +13,7 @@ AAAを表示
 
 ▲参考
 
-- [[plugin_system/JSオブジェクト取得]]
-- [[plugin_system/JSメソッド実行]]
-- [[plugin_system/JS関数実行]]
+- [[plugin_js/JSオブジェクト取得]]
+- [[plugin_js/JSメソッド実行]]
+- [[plugin_js/JS関数実行]]
 

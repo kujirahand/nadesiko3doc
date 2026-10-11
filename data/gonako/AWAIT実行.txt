@@ -1,1 +1,1 @@
-#include(plugin_system/AWAIT実行)
+#include(plugin_js/AWAIT実行)

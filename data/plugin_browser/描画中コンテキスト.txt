@@ -22,5 +22,5 @@
 ▲参考
 
 -[[plugin_browser/描画開始]]
--[[plugin_system/JSメソッド実行]]
+-[[plugin_js/JSメソッド実行]]
 
