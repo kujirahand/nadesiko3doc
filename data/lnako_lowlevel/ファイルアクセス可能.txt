@@ -1,0 +1,30 @@
+▲説明
+
+指定したパス PATH のファイルに対して、現在のプロセスがアクセス権限 MODE（読み取り: 4, 書き込み: 2, 実行: 1, 存在確認: 0）を持つかを判定します。POSIX の access に相当します。アクセス可能なら true、不可なら false を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 権限・属性管理
+- 助詞: PATHをMODEで/PATHがMODEで
+- 戻り値: `boolean`
+- 実装状況: 実装済み
+- 機能 ID (capability): `access`
+- 発生し得るエラー: EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_access.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_access.txt」を4でファイルアクセス可能。
+それを表示。
+「/tmp/test_access.txt」をファイルリンク削除。
+### lnako表示結果: true
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル権限設定]]
+- [[lnako_lowlevel/ファイル詳細情報取得]]

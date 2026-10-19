@@ -1,0 +1,18 @@
+▲説明
+
+『[[lnako_node/AJAX送信時]]』『[[lnako_node/GET送信時]]』『[[lnako_node/POST送信時]]』などの非同期 HTTP 通信命令でエラーが発生したときに呼び出すコールバック関数を登録します。
+
+▲利用例
+
+{{{#nako3
+●通信エラー処理(ERR)とは
+　　「通信に失敗しました: {ERR}」と表示。
+ここまで
+「通信エラー処理」にAJAX失敗時。
+}}}
+
+▲参考
+
+- [[lnako_node/AJAX送信時]]
+- [[lnako_node/GET送信時]]
+- [[lnako_node/POST送信時]]

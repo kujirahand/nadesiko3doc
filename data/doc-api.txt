@@ -8,7 +8,7 @@
 /doc-api.php?runtime=ランタイム&name=名前
 }}}
 
-- runtime --- 実行環境を指定します。wnako, cnako, phpnako, enako, gonako のいずれかです。省略すると、gonako以外の全プラグインが対象です。
+- runtime --- 実行環境を指定します。wnako, cnako, phpnako, enako, gonako, lnako のいずれかです。省略すると、gonako・lnako以外の全プラグインが対象です。
 - name --- プラグイン名/命令グループ名/命令名のいずれかを指定します。
 - action --- 省略可能です。plugins, groups, commands, command のいずれかを指定します。省略すると、name から自動判定します。
 

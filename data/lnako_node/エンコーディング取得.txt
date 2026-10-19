@@ -1,0 +1,19 @@
+▲説明
+
+文字コード CODE のバイト列（バイナリデータ）を UTF-8 の文字列へデコードして返します。
+`Shift_JIS`（`sjis`）、`EUC-JP`、`UTF-8`、`UTF-16`、`UTF-16LE`、`UTF-16BE`、`UTF-32`、`CESU-8`、`UTF-7`、`ASCII`、`latin1`、`hex`、`base64` などの文字コード名を指定できます。
+
+▲利用例
+
+{{{#nako3
+BIN = 「なでしこ3」を「euc-jp」へエンコーディング変換。
+S = BINを「euc-jp」でエンコーディング取得。
+Sを表示。
+### lnako表示結果: なでしこ3
+}}}
+
+▲参考
+
+- [[lnako_node/エンコーディング変換]]
+- [[lnako_node/SJIS取得]]
+- [[lnako_node/SJIS変換]]

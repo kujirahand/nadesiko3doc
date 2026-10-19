@@ -1,0 +1,41 @@
+▲説明
+
+ファイルハンドル HANDLE から最大 SIZE バイトのバイナリデータ（Bytes）を読み込んで返します。ファイルの終端（EOF）に達した場合は、長さ 0 の空の Bytes を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEをSIZEで/HANDLEからSIZEを
+- 戻り値: `bytes`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+B = Hをハッシュ完了。
+F = 「/tmp/test_read.bin」を「w+b」でファイル開く。
+FへBをファイルバイト書く。
+Fをファイル閉じる。
+
+F2 = 「/tmp/test_read.bin」を「rb」でファイル開く。
+B2 = F2から32をファイルバイト読む。
+F2をファイル閉じる。
+「/tmp/test_read.bin」をファイルリンク削除。
+
+H2 = 「sha256」でハッシュ開始。
+H2へB2をハッシュ追加。
+R = H2を「hex」でハッシュ完了。
+Rを表示。
+### lnako表示結果: 5df6e0e2761359d30a8275058e299fcc0381534545f55cf43e41983f5d4c9456
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル開く]]
+- [[lnako_lowlevel/ファイルバイト書く]]
+- [[lnako_lowlevel/ファイル閉じる]]

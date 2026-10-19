@@ -1,0 +1,28 @@
+▲説明
+
+進行中のハッシュハンドル HANDLE を破棄し、リソースを解放します。すでに破棄したハンドルや無効なハンドルを指定すると EBADF エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ハッシュストリーム
+- 助詞: HANDLEを/HANDLEの
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `incremental_hash`
+- 発生し得るエラー: EBADF
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+Hをハッシュ破棄。
+「ハッシュ破棄成功」と表示。
+### lnako表示結果: ハッシュ破棄成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ハッシュ開始]]
+- [[lnako_lowlevel/ハッシュ完了]]

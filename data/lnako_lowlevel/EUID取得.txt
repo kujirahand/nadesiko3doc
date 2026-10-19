@@ -1,0 +1,29 @@
+▲説明
+
+現在のプロセスの実効ユーザー ID（EUID）を数値で返します。POSIX の geteuid に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 権限・属性管理
+- 助詞: なし（引数なし）
+- 戻り値: `uid`
+- 実装状況: 実装済み
+- 機能 ID (capability): `uid_gid`
+- 発生し得るエラー: ENOTSUP
+
+▲利用例
+
+{{{#nako3
+EUID取得。
+U = それ。
+もし、(U >= 0)ならば
+　　「EUID取得成功」と表示。
+ここまで
+### lnako表示結果: EUID取得成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/UID取得]]

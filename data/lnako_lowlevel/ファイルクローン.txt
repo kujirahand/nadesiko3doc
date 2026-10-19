@@ -1,0 +1,35 @@
+▲説明
+
+Copy-on-Write（CoW / reflink）機能を使って、SRC から DST へ高速かつ省容量でファイルを複製（クローン）します。APFS や Btrfs などの CoW 対応ファイルシステムで利用でき、非対応の環境では ENOTSUP エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 高度ファイルシステム
+- 助詞: SRCをDSTへMODEで/SRCをDSTに
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `reflink`
+- 発生し得るエラー: ENOENT, EEXIST, EACCES, EPERM, EXDEV, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+# クローン対応環境での例:
+「stream_file_io」を低レイヤー機能対応判定。
+F = 「/tmp/test_clone_src.bin」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「reflink」を低レイヤー機能対応判定。
+もし、それがtrueならば
+　　「/tmp/test_clone_src.bin」を「/tmp/test_clone_dst.bin」にファイルクローン。
+　　「/tmp/test_clone_dst.bin」をファイルリンク削除。
+ここまで
+「/tmp/test_clone_src.bin」をファイルリンク削除。
+「クローン処理完了」と表示。
+### lnako表示結果: クローン処理完了
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル領域確保]]

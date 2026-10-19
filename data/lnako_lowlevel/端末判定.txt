@@ -1,0 +1,29 @@
+▲説明
+
+指定したストリーム STREAM（"stdin", "stdout", "stderr"）が端末（TTY）に接続されているかを真偽値（true / false）で返します。POSIX の isatty に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: STREAMを/STREAMで
+- 戻り値: `boolean`
+- 実装状況: 実装済み
+- 機能 ID (capability): `tty_isatty`
+- 発生し得るエラー: EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+「stdin」を端末判定。
+R = それ。
+もし、(R == true または R == false)ならば
+　　「端末判定成功」と表示。
+ここまで
+### lnako表示結果: 端末判定成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/端末サイズ取得]]

@@ -1,0 +1,27 @@
+▲説明
+
+現在の実行環境（OS やファイルシステム）で、指定した低レイヤー機能 NAME（capability ID）が利用できるかを判定します。対応していれば true、非対応または未知の機能名であれば false を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 機能問い合わせ
+- 助詞: NAMEの/NAMEを
+- 戻り値: `boolean`
+- 実装状況: 実装済み
+
+▲利用例
+
+{{{#nako3
+「stream_file_io」を低レイヤー機能対応判定。
+それを表示。
+「unknown_cap」を低レイヤー機能対応判定。
+それを表示。
+### lnako表示結果: true
+### false
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/低レイヤー機能一覧取得]]

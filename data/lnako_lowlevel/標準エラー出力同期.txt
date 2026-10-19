@@ -1,0 +1,27 @@
+▲説明
+
+標準エラー出力のバッファを同期（フラッシュ）します。
+
+端末やパイプ環境では OS の制限によりエラーになる場合があるため、DocTest では実行結果を検証していません。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 標準入出力
+- 助詞: なし（引数なし）
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `raw_stdio`
+- 発生し得るエラー: EPIPE, EINVAL, ENOTSUP, EBADF
+
+▲利用例
+
+{{{#nako3
+標準エラー出力同期。
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/標準エラー出力バイト書く]]
+- [[lnako_lowlevel/標準出力同期]]

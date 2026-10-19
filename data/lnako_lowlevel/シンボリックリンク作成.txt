@@ -1,0 +1,32 @@
+▲説明
+
+TARGET を指すシンボリックリンクを LINK のパスに作成します。POSIX の symlink に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: TARGETをLINKへ/LINKにTARGETを
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `symlink`
+- 発生し得るエラー: EEXIST, ENOENT, EACCES, ENOTDIR, EPERM, ELOOP, EROFS, ENOSPC, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_sym_src.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_sym_src.txt」を「/tmp/test_sym_link.txt」へシンボリックリンク作成。
+LINFO = 「/tmp/test_sym_link.txt」のシンボリックリンク情報取得。
+「/tmp/test_sym_link.txt」をファイルリンク削除。
+「/tmp/test_sym_src.txt」をファイルリンク削除。
+LINFO[「kind」]を表示。
+### lnako表示結果: symlink
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/シンボリックリンク先取得]]
+- [[lnako_lowlevel/ハードリンク作成]]

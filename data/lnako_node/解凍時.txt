@@ -1,0 +1,23 @@
+▲説明
+
+『[[lnako_node/解凍]]』と同様に ZIP ファイル ZIP をフォルダ PATH へ展開し、完了したあとにコールバック関数 F を実行します。
+
+▲利用例
+
+{{{#nako3
+TMP = 一時フォルダ作成。
+「data」を(TMP & "/a.txt")に保存。
+(TMP & "/a.txt")から(TMP & "/out.zip")へ圧縮。
+●解凍CB
+　　「解凍完了」と表示。
+　　「復元:{(TMP & "/dest/a.txt")が存在}」と表示。
+ここまで
+「解凍CB」で(TMP & "/out.zip")から(TMP & "/dest")へ解凍時。
+### lnako表示結果: 解凍完了
+### 復元:true
+}}}
+
+▲参考
+
+- [[lnako_node/解凍]]
+- [[lnako_node/圧縮時]]

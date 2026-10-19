@@ -1,0 +1,30 @@
+▲説明
+
+指定したパス PATH のアクセス権限（パーミッション）を数値 MODE（例: 0o644, 0o755）で設定します。POSIX の chmod に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 権限・属性管理
+- 助詞: PATHをMODEで/PATHをMODEに
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `chmod`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, ENOTDIR, ELOOP, EROFS, ENOSPC, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_chmod.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_chmod.txt」を0o644でファイル権限設定。
+「/tmp/test_chmod.txt」をファイルリンク削除。
+「権限設定成功」と表示。
+### lnako表示結果: 権限設定成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル所有者設定]]
+- [[lnako_lowlevel/ファイルアクセス可能]]

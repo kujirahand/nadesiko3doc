@@ -1,0 +1,29 @@
+▲説明
+
+ロケールの照合規則に従って文字列 A と文字列 B を比較します。A < B ならば -1、A = B ならば 0、A > B ならば 1 を返します。OPTIONS には locale キーを持つ辞書（例: {"locale": "ja_JP.UTF-8"}）を指定できます。OPTIONS を省略した場合や C ロケール（"C", "POSIX", "C.UTF-8" など）を指定した場合は、UTF-8 バイト列の辞書順で比較します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 国際化・表示幅
+- 助詞: AをBとOPTIONSで/AをBと
+- 戻り値: `number`
+- 実装状況: 実装済み
+- 機能 ID (capability): `locale_collate`
+- 発生し得るエラー: EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+「apple」を「banana」とロケール文字列比較。
+C = それ。
+もし、(C < 0)ならば
+　　「比較成功」と表示。
+ここまで
+### lnako表示結果: 比較成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/文字表示幅取得]]

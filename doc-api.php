@@ -30,6 +30,9 @@ function doc_api_getEnv($runtime)
     if ($runtime === 'gonako') {
         return ['gonako', ''];
     }
+    if ($runtime === 'lnako') {
+        return ['lnako', ''];
+    }
     // wnako / cnako / phpnako / enako 等は通常のDBを nakotype で絞り込む
     return ['nako3', $runtime];
 }
@@ -54,7 +57,7 @@ function doc_api_commandInfo($r)
 $runtime = isset($_GET['runtime']) ? trim($_GET['runtime']) : '';
 $action = isset($_GET['action']) ? trim($_GET['action']) : '';
 $name = isset($_GET['name']) ? trim($_GET['name']) : '';
-$validRuntimes = ['', 'wnako', 'cnako', 'phpnako', 'enako', 'gonako'];
+$validRuntimes = ['', 'wnako', 'cnako', 'phpnako', 'enako', 'gonako', 'lnako'];
 if (!in_array($runtime, $validRuntimes, true)) {
     doc_api_error("不明なruntimeです: {$runtime}");
 }

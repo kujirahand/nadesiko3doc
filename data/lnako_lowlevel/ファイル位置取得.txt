@@ -1,0 +1,34 @@
+▲説明
+
+ファイルハンドル HANDLE の現在のシーク位置（先頭からのバイトオフセット）を取得して返します。POSIX の lseek(fd, 0, SEEK_CUR) に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEを/HANDLEの
+- 戻り値: `offset`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+B = Hをハッシュ完了。
+F = 「/tmp/test_tell.bin」を「w+b」でファイル開く。
+FへBをファイルバイト書く。
+Fを12でファイル位置変更。
+POS = Fのファイル位置取得。
+Fをファイル閉じる。
+「/tmp/test_tell.bin」をファイルリンク削除。
+POSを表示。
+### lnako表示結果: 12
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル位置変更]]
+- [[lnako_lowlevel/ファイル開く]]

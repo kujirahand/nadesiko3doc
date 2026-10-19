@@ -1,0 +1,28 @@
+▲説明
+
+指定したパス PATH が属するファイルシステムの情報（ブロックサイズ blockSize、総ブロック数 blocks、空きブロック数 free、利用可能ブロック数 available、総 i ノード数 files など）を辞書で返します。POSIX の statvfs / statfs に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 高度ファイルシステム
+- 助詞: PATHを/PATHの
+- 戻り値: `fsInfo`
+- 実装状況: 実装済み
+- 機能 ID (capability): `statfs`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, ENOTDIR, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+FS = 「/tmp」のファイルシステム情報取得。
+もし、(FS[「blockSize」] > 0)ならば
+　　「FS情報取得成功」と表示。
+ここまで
+### lnako表示結果: FS情報取得成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル詳細情報取得]]

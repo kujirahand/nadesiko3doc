@@ -1,0 +1,6 @@
+▲lnako での動作
+
+[[lnako]] の通常モードでは JavaScript 互換機能が無効になっており、そのまま呼び出すと `ENOTSUP` エラーになります。
+コマンドライン引数に `--compat-js` フラグを付けて実行したときのみ、内蔵の QuickJS エンジン上の JavaScript オブジェクトのメソッドを呼び出せます。
+
+#include(plugin_system/JSメソッド実行)

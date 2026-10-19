@@ -1,0 +1,33 @@
+▲説明
+
+ファイルハンドル HANDLE へバイナリデータ BYTES（Bytes 型）を書き込み、実際に書き込まれたバイト数を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEをBYTESで/HANDLEへBYTESを
+- 戻り値: `number`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOSPC, EPIPE, ENOTSUP, EROFS
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+B = Hをハッシュ完了。
+F = 「/tmp/test_write.bin」を「w+b」でファイル開く。
+N = FへBをファイルバイト書く。
+Fをファイル閉じる。
+「/tmp/test_write.bin」をファイルリンク削除。
+Nを表示。
+### lnako表示結果: 32
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル開く]]
+- [[lnako_lowlevel/ファイルバイト読む]]
+- [[lnako_lowlevel/ファイル同期]]

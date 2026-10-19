@@ -1,0 +1,26 @@
+▲説明
+
+指定したストリーム STREAM（"stdin", "stdout", "stderr"）が接続されている端末画面の行数 rows と列数 columns を辞書で返します。ioctl の TIOCGWINSZ に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: STREAMを/STREAMで
+- 戻り値: `ttySize`
+- 実装状況: 実装済み
+- 機能 ID (capability): `tty_isatty`
+- 発生し得るエラー: EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+# 端末サイズを取得する例:
+「stdout」を端末サイズ取得。
+SIZE = それ。
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/端末判定]]

@@ -1,0 +1,30 @@
+▲説明
+
+指定したパス PATH のファイルやディレクトリの詳細情報（stat）を辞書で返します。辞書には種別 kind（"file", "directory", "symlink" など）、サイズ size、権限 mode、所有者 uid / gid、リンク数 nlink、ナノ秒単位のタイムスタンプ（atimeNs, mtimeNs, ctimeNs, birthtimeNs）などが含まれます。PATH がシンボリックリンクの場合は、リンク先を追跡した実体の情報を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: PATHを/PATHの/PATHから
+- 戻り値: `stat`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stat`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, ENOTDIR, ELOOP, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_stat.bin」を「w+b」でファイル開く。
+Fをファイル閉じる。
+INFO = 「/tmp/test_stat.bin」をファイル詳細情報取得。
+「/tmp/test_stat.bin」をファイルリンク削除。
+INFO[「kind」]を表示。
+### lnako表示結果: file
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/シンボリックリンク情報取得]]
+- [[lnako_lowlevel/実体パス取得]]

@@ -1,0 +1,1 @@
+#include(plugin_node/ファイル処理強制停止)

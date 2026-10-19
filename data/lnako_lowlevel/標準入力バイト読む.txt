@@ -1,0 +1,26 @@
+▲説明
+
+標準入力から最大 SIZE バイトのバイナリデータ（Bytes）を直接読み込んで返します。終端（EOF）に達した場合は、長さ 0 の空の Bytes を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 標準入出力
+- 助詞: SIZEを/SIZEで
+- 戻り値: `bytes`
+- 実装状況: 実装済み
+- 機能 ID (capability): `raw_stdio`
+- 発生し得るエラー: EINVAL, EPIPE, ENOSPC, ENOTSUP, EBADF
+
+▲利用例
+
+{{{#nako3
+# 5バイト読み取る例:
+B = 5で標準入力バイト読む。
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/標準出力バイト書く]]
+- [[lnako_lowlevel/標準エラー出力バイト書く]]

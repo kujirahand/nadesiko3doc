@@ -1,0 +1,27 @@
+▲説明
+
+指定した空のディレクトリ PATH を削除します。POSIX の rmdir に相当します。中身があるディレクトリでは ENOTEMPTY エラー、通常ファイルでは ENOTDIR エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: PATHを/PATHの
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `rmdir`
+- 発生し得るエラー: ENOENT, ENOTDIR, EACCES, ENOTEMPTY, EPERM, ELOOP, EROFS, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+「/tmp/test_rmdir_dir」のフォルダ作成。
+「/tmp/test_rmdir_dir」を空フォルダ削除。
+「フォルダ削除成功」と表示。
+### lnako表示結果: フォルダ削除成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイルリンク削除]]

@@ -1,0 +1,19 @@
+▲説明
+
+UTF-8 の文字列 S を指定した文字コード CODE のバイト列（バイナリデータ）へ変換して返します。
+[[lnako]] は文字コード変換エンジンを内蔵しており、`UTF-8`、`Shift_JIS`（`sjis` / `cp932`）、`EUC-JP`（`euc-jp`）、`UTF-16` / `UTF-16LE` / `UTF-16BE`、`UTF-32` / `UTF-32LE` / `UTF-32BE`、`CESU-8`、`UTF-7`、`ASCII`、`latin1`、`hex`、`base64` などに対応しています。
+
+▲利用例
+
+{{{#nako3
+BIN = 「あいう」を「sjis」へエンコーディング変換。
+S = BINを「sjis」でエンコーディング取得。
+Sを表示。
+### lnako表示結果: あいう
+}}}
+
+▲参考
+
+- [[lnako_node/エンコーディング取得]]
+- [[lnako_node/SJIS変換]]
+- [[lnako_node/SJIS取得]]

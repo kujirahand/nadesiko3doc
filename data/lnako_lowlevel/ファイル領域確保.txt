@@ -1,0 +1,33 @@
+▲説明
+
+ファイルハンドル HANDLE に対して、オフセット OFFSET から SIZE バイト分の物理ディスク領域を事前に確保します。POSIX の fallocate / posix_fallocate に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 高度ファイルシステム
+- 助詞: HANDLEをOFFSETにSIZEで/HANDLEをOFFSETとSIZEで
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `fallocate`
+- 発生し得るエラー: EBADF, EINVAL, ENOSPC, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_falloc.bin」を「w+b」でファイル開く。
+Fを0に1024でファイル領域確保。
+Fをファイル閉じる。
+INFO = 「/tmp/test_falloc.bin」のファイル詳細情報取得。
+「/tmp/test_falloc.bin」をファイルリンク削除。
+もし、(INFO[「size」] >= 1024)ならば
+　　「領域確保成功」と表示。
+ここまで
+### lnako表示結果: 領域確保成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル切詰]]
+- [[lnako_lowlevel/ファイルデータ領域検索]]
