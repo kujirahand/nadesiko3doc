@@ -1,0 +1,30 @@
+▲説明
+
+指定した PID のプロセスに対して POSIX シグナル番号 SIGNAL（SIGTERM: 15, SIGINT: 2 など）を送信します。POSIX の kill に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: PIDにSIGNALを/PIDへSIGNALで
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `signal`
+- 発生し得るエラー: EINVAL, EPERM, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+# 自プロセスへシグナル0（生存確認）を送信する例:
+プロセスID取得。
+PID = それ。
+PIDに0をシグナル送信。
+「シグナル送信成功」と表示。
+### lnako表示結果: シグナル送信成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/プロセス起動]]
+- [[lnako_lowlevel/プロセスID取得]]

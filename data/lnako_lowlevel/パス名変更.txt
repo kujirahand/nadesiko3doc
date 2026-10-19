@@ -1,0 +1,31 @@
+▲説明
+
+ファイルまたはディレクトリのパスを SRC から DST へ変更（移動）します。POSIX の rename に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: SRCをDSTへ/DSTにSRCを
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `rename`
+- 発生し得るエラー: ENOENT, EEXIST, EACCES, EPERM, EXDEV, ENOTEMPTY, EISDIR, ENOTDIR, ELOOP, EROFS, ENOSPC, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_ren_old.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_ren_old.txt」を「/tmp/test_ren_new.txt」へパス名変更。
+INFO = 「/tmp/test_ren_new.txt」のファイル詳細情報取得。
+「/tmp/test_ren_new.txt」をファイルリンク削除。
+INFO[「kind」]を表示。
+### lnako表示結果: file
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイルリンク削除]]
+- [[lnako_lowlevel/空フォルダ削除]]

@@ -1,0 +1,32 @@
+▲説明
+
+指定したパス PATH のディレクトリを開き、逐次走査用のディレクトリハンドルを返します。POSIX の opendir に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ディレクトリ走査
+- 助詞: PATHを/PATHの
+- 戻り値: `handle`
+- 実装状況: 実装済み
+- 機能 ID (capability): `dir_iterator`
+- 発生し得るエラー: ENOENT, ENOTDIR, EACCES, EPERM, EMFILE, ENFILE, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+DH = 「/tmp」をディレクトリ開く。
+ENT = DHのディレクトリ次取得。
+DHをディレクトリ閉じる。
+もし、(ENT != 空)ならば
+　　「ディレクトリ走査成功」と表示。
+ここまで
+### lnako表示結果: ディレクトリ走査成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ディレクトリ次取得]]
+- [[lnako_lowlevel/ディレクトリ閉じる]]
+- [[lnako_lowlevel/ディレクトリ列挙時]]

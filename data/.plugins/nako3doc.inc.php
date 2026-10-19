@@ -35,8 +35,8 @@ function kona3plugins_nako3doc_execute($parg)
     if ($pa == 'list-plugins' || $pa == 'plugins') {
         return nako3doc_list_plugins();
     }
-    // gonako ページは何も出力しない
-    if ($page == 'gonako') {
+    // gonako / lnako ページは何も出力しない
+    if ($page == 'gonako' || $page == 'lnako') {
         return '';
     }
     // check page
@@ -64,6 +64,8 @@ function kona3plugins_nako3doc_execute($parg)
     $extra_plugin = "";
     if (strpos($page, 'gonako/') === 0) {
         $extra_plugin = "[[なでしこ3(Go版):gonako]]でのみ実行できる命令です。\n";
+    } elseif (strpos($page, 'lnako_lowlevel/') === 0) {
+        $extra_plugin = "[[なでしこ3(高速ネイティブ版):lnako]]でのみ実行できる命令です。\n";
     } elseif (strpos($nakotype, '拡張プラグイン') !== FALSE) {
         $pluginUrl = $plugin;
         if (strpos($nakotype, '[[wnako]]') !== FALSE) {
@@ -218,6 +220,7 @@ function nako3doc_getPluginInfo($plugin)
         "cnako" => FALSE,
         "phpnako" => FALSE,
         "gonako" => FALSE,
+        "lnako" => FALSE,
         "基本プラグイン" => FALSE,
         "拡張プラグイン" => FALSE,
         "nakotype" => "",
@@ -257,6 +260,7 @@ function nako3doc_list_func($pagetype)
     if (!$pagetype) {
         $pagetype = '';
     }
+    $env = ($pagetype === 'gonako' || $pagetype === 'lnako') ? $pagetype : null;
 
     $cache_dir = KONA3_DIR_CACHE;
     $cache_file = $cache_dir . "/nako3doc.cache.list_func_{$pagetype}.html";
@@ -274,7 +278,7 @@ function nako3doc_list_func($pagetype)
         $use_cache = FALSE;
         if (file_exists($cache_file)) {
             $cache_time = filemtime($cache_file);
-            $db_time = nako3doc_getDBTime();
+            $db_time = nako3doc_getDBTime($env);
             if ($db_time < $cache_time) {
                 $use_cache = TRUE;
             }
@@ -291,7 +295,7 @@ function nako3doc_list_func($pagetype)
     }
 
     // 該当するプラグインを取得
-    $pluginInfo = nako3doc_getPlugins($pagetype);
+    $pluginInfo = nako3doc_getPlugins($pagetype, $env);
     // 拡張プラグインかどうかを調べる
     $pluginIsBasic = [];
     foreach ($pluginInfo as $pname => $v) {
@@ -305,7 +309,8 @@ function nako3doc_list_func($pagetype)
     $ra = nako3doc_run(
         "SELECT * FROM commands " .
             "ORDER BY plugin ASC",
-        []
+        [],
+        $env
     );
     if (!$ra) {
         return "[ERROR]";
@@ -351,13 +356,14 @@ function nako3doc_list_func($pagetype)
         $type = preg_replace('#([a-z]+)#', '[[$1]]', $type);
         $type = str_replace(',', ', ', $type);
         $w = "** 🔌 [[$plugin]]\n[[$plugin]]は{$type}で使えます。\n";
-        $ps = preg_replace('#^(plugin_|nadesiko3-)#', '', $plugin);
+        $ps = preg_replace('#^(plugin_|nadesiko3-|gonako_|lnako_)#', '', $plugin);
         $alias = [
             'system' => 'システム',
             'browser' => 'ブラウザ',
             'datetime' => '日時',
             'math' => '数学関数',
-            'kansuji' => '漢数字'
+            'kansuji' => '漢数字',
+            'lowlevel' => '低レイヤーAPI',
         ];
         if (isset($alias[$ps])) {
             $ps = $alias[$ps];
@@ -404,6 +410,14 @@ function nako3doc_list_func($pagetype)
         $wiki .= $w;
         $index .= $t;
     }
+    if ($pagetype == 'lnako') {
+        list($w, $t) = $fn($cmd, 'lnako');
+        $wiki .= $w;
+        $index .= $t;
+        list($w, $t) = $fn($cmd, 'lnako_node');
+        $wiki .= $w;
+        $index .= $t;
+    }
     foreach ([TRUE, FALSE] as $isBasic) {
         foreach ($cmd as $plug => $v) {
             // 既に追加済みならスキップ
@@ -413,7 +427,8 @@ function nako3doc_list_func($pagetype)
                 $plug == 'plugin_csv' ||
                 $plug == 'plugin_browser' ||
                 $plug == 'plugin_turtle' ||
-                $plug == 'plugin_node'
+                $plug == 'plugin_node' ||
+                ($pagetype == 'lnako' && ($plug == 'lnako' || $plug == 'lnako_node'))
             ) {
                 continue;
             }
@@ -440,9 +455,9 @@ function nako3doc_list_func($pagetype)
 
 function nako3doc_list_plugins()
 {
-    // 全てのDB(通常版・Go版)からプラグインの一覧を取得
+    // 全てのDB(通常版・Go版・lnako版)からプラグインの一覧を取得
     $plugins = [];
-    foreach (['nako3', 'gonako'] as $env) {
+    foreach (['nako3', 'gonako', 'lnako'] as $env) {
         foreach (nako3doc_getPlugins('', $env) as $name => $nakotype) {
             if (!isset($plugins[$name])) {
                 $plugins[$name] = $nakotype;

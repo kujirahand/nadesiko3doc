@@ -1,0 +1,34 @@
+▲説明
+
+スパースファイルにおいて、指定したオフセット OFFSET 以降でデータが存在する次の位置（SEEK_DATA）を検索し、そのオフセットを返します。成功するとファイルハンドル HANDLE の現在位置もその位置へ移動します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 高度ファイルシステム
+- 助詞: HANDLEをOFFSETで/HANDLEをOFFSETから
+- 戻り値: `offset`
+- 実装状況: 実装済み
+- 機能 ID (capability): `seek_data`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_seek_data.bin」を「w+b」でファイル開く。
+Fを0に1024でファイル領域確保。
+Fを0からファイルデータ領域検索。
+POS = それ。
+Fをファイル閉じる。
+「/tmp/test_seek_data.bin」をファイルリンク削除。
+もし、(POS >= 0)ならば
+　　「データ領域検索成功」と表示。
+ここまで
+### lnako表示結果: データ領域検索成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル空洞領域検索]]
+- [[lnako_lowlevel/ファイル領域確保]]

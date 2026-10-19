@@ -1,0 +1,32 @@
+▲説明
+
+ハッシュハンドル HANDLE にバイナリデータ BYTES を逐次追加します。大きなファイルやストリームデータをメモリへ一括で読み込まずに、分割してハッシュを計算できます。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ハッシュストリーム
+- 助詞: HANDLEをBYTESで/HANDLEへBYTESを
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `incremental_hash`
+- 発生し得るエラー: EBADF, EINVAL
+
+▲利用例
+
+{{{#nako3
+H1 = 「sha256」でハッシュ開始。
+B = H1をハッシュ完了。
+H2 = 「sha256」でハッシュ開始。
+H2へBをハッシュ追加。
+R = H2を「hex」でハッシュ完了。
+Rを表示。
+### lnako表示結果: 5df6e0e2761359d30a8275058e299fcc0381534545f55cf43e41983f5d4c9456
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ハッシュ開始]]
+- [[lnako_lowlevel/ハッシュ完了]]
+- [[lnako_lowlevel/ハッシュ破棄]]

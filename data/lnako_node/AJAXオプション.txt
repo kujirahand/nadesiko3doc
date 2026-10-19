@@ -1,0 +1,14 @@
+▲説明
+
+HTTP 通信（AJAX / Fetch）命令で使うオプション辞書を保持するシステム変数です。`method`（HTTP メソッド）、`headers`（リクエストヘッダ辞書）、`body`（送信ボディ）などを指定できます。
+
+▲利用例
+
+{{{#nako3
+AJAXオプションを表示。
+}}}
+
+▲参考
+
+- [[lnako_node/AJAXオプション設定]]
+- [[lnako_node/AJAXテキスト取得]]

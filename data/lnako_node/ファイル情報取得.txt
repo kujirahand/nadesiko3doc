@@ -1,0 +1,19 @@
+▲説明
+
+指定したパス S のファイルまたはフォルダの統計情報（stat）を調べ、辞書として返します。
+返される辞書には `size`（バイト単位のサイズ）、`mtimeMs`（更新日時ミリ秒）、`ctimeMs`、`atimeMs`、`ino`、`nlink`、`blksize` などのキーに加え、`isFile`、`isDirectory`、`isSymbolicLink` などの判定メソッドが含まれます。
+
+▲利用例
+
+{{{#nako3
+TMP = 一時フォルダ作成。
+「hello」を(TMP & "/f.txt")に保存。
+INFO = (TMP & "/f.txt")のファイル情報取得。
+「サイズ:{INFO["size"]}」と表示。
+### lnako表示結果: サイズ:5
+}}}
+
+▲参考
+
+- [[lnako_node/ファイルサイズ取得]]
+- [[lnako_lowlevel/ファイル詳細情報取得]]

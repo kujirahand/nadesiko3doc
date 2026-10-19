@@ -30,6 +30,9 @@ function doc_api_getEnv($runtime)
     if ($runtime === 'gonako') {
         return ['gonako', ''];
     }
+    if ($runtime === 'lnako') {
+        return ['lnako', ''];
+    }
     // wnako / cnako / phpnako / enako 等は通常のDBを nakotype で絞り込む
     return ['nako3', $runtime];
 }

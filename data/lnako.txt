@@ -1,0 +1,9 @@
+■ [[lnako]] / 機能順 / lnako - PC向け(高速ネイティブ版)
+
+[[lnako]] とは「なでしこ3(高速ネイティブ版)」のことで、Node.js 不要の単一バイナリで動作し、単体のネイティブ実行ファイルのビルド（AOT コンパイル）にも対応した PC・コンソール向けランタイムです。（詳しくは[[ランタイムについて:FAQ/ランタイムについて]]や [[GitHub リポジトリ:https://github.com/soramikan/lnako]] をご覧ください。） [[→カナ順:lnako-カナ順]]
+
+- 基本命令（[[lnako]]）: 392 件（[[plugin_system]]・[[plugin_math]]・[[plugin_csv]]・[[plugin_toml]]・[[plugin_promise]]・[[plugin_httpserver]]・[[plugin_markup]]・[[plugin_caniuse]]・[[plugin_kansuji]] 互換）
+- PC・コンソール向け命令（[[lnako_node]]）: 107 件（[[plugin_node]] 互換）
+- 低レイヤー API 命令（[[lnako_lowlevel]]）: 63 件（[[lnako]] 独自拡張・全 63 件実装済み）
+
+#nako3doc(list-func,lnako)

@@ -32,6 +32,8 @@ function nako3doc_list_kana($mode, $env = null)
     }
     if ($env === 'gonako') {
         $wiki = "* [[命令一覧:gonako]] / [[カナ順:gonako-カナ順]]\n";
+    } elseif ($env === 'lnako') {
+        $wiki = "* [[命令一覧:lnako]] / [[カナ順:lnako-カナ順]]\n";
     } elseif ($env === 'wnako') {
         $wiki = "* [[命令一覧:wnako]] / [[カナ順:wnako-カナ順]]\n";
     } elseif ($env === 'cnako') {
@@ -127,10 +129,8 @@ function nako3doc_list_kana($mode, $env = null)
         }
         $plugin1 = $ra[$i]['plugin'];
         $plugin2 = $ra[$j]['plugin'];
-        $plugin1 = str_replace('plugin_', '', $plugin1);
-        $plugin2 = str_replace('plugin_', '', $plugin2);
-        $plugin1 = str_replace('nadesiko3-', '', $plugin1);
-        $plugin2 = str_replace('nadesiko3-', '', $plugin2);
+        $plugin1 = preg_replace('#^(plugin_|nadesiko3-|gonako_|lnako_)#', '', $plugin1);
+        $plugin2 = preg_replace('#^(plugin_|nadesiko3-|gonako_|lnako_)#', '', $plugin2);
         $kana1 = $ra[$i]['kana'];
         $ra[$i]['name_show'] = "$name1 ($plugin1)";
         $ra[$j]['name_show'] = "$name1 ($plugin2)";

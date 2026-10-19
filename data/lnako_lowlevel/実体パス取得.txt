@@ -1,0 +1,33 @@
+▲説明
+
+パス PATH に含まれるシンボリックリンクや相対パス（"." や ".."）をすべて解決し、正規化した絶対パスを文字列で返します。POSIX の realpath に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: PATHを/PATHの
+- 戻り値: `string`
+- 実装状況: 実装済み
+- 機能 ID (capability): `realpath`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, ENOTDIR, ELOOP, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_real_src.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_real_src.txt」を「/tmp/test_real_link.txt」へシンボリックリンク作成。
+REAL = 「/tmp/test_real_link.txt」の実体パス取得。
+「/tmp/test_real_link.txt」をファイルリンク削除。
+「/tmp/test_real_src.txt」をファイルリンク削除。
+FNAME = REALからファイル名抽出。
+FNAMEを表示。
+### lnako表示結果: test_real_src.txt
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/シンボリックリンク先取得]]
+- [[lnako_lowlevel/ファイル詳細情報取得]]

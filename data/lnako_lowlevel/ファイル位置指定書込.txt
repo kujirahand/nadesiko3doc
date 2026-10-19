@@ -1,0 +1,38 @@
+▲説明
+
+ファイルハンドル HANDLE の現在のシーク位置を変更せずに、指定したオフセット位置 OFFSET へバイナリデータ BYTES を書き込み、実際に書き込まれたバイト数を返します。POSIX の pwrite に相当します。追記モード（"a" や "a+"）で開いたハンドルに対して実行した場合は EINVAL エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEへOFFSETにBYTESを/HANDLEをOFFSETからBYTESで
+- 戻り値: `number`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOSPC, EPIPE, ENOTSUP, EROFS
+
+▲利用例
+
+{{{#nako3
+B1 = 「AAAAAAAA」を「utf-8」へエンコーディング変換。
+B2 = 「XY」を「utf-8」へエンコーディング変換。
+F = 「/tmp/test_pwrite.bin」を「w+b」でファイル開く。
+FへB1をファイルバイト書く。
+Fを0でファイル位置変更。
+N = Fへ3にB2をファイル位置指定書込。
+POS = Fのファイル位置取得。
+ALL = Fから8をファイルバイト読む。
+Fをファイル閉じる。
+「/tmp/test_pwrite.bin」をファイルリンク削除。
+S = ALLを「utf-8」でエンコーディング取得。
+「{S}:{N}:{POS}」を表示。
+### lnako表示結果: AAAXYAAA:2:0
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル位置指定読込]]
+- [[lnako_lowlevel/ファイルバイト書く]]
+- [[lnako_lowlevel/ファイル位置変更]]

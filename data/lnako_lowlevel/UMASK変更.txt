@@ -1,0 +1,28 @@
+▲説明
+
+プロセスのファイル作成マスク（umask）を指定した MODE に変更し、変更前の旧マスク値を数値で返します。POSIX の umask に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 権限・属性管理
+- 助詞: MODEで/MODEを
+- 戻り値: `number`
+- 実装状況: 実装済み
+- 機能 ID (capability): `uid_gid`
+- 発生し得るエラー: ENOTSUP
+
+▲利用例
+
+{{{#nako3
+0o022でUMASK変更。
+OLD = それ。
+OLDでUMASK変更。
+「UMASK設定成功」と表示。
+### lnako表示結果: UMASK設定成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル権限設定]]

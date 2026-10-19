@@ -1,0 +1,25 @@
+▲説明
+
+指定したパス PATH の所有者 UID とグループ GID を設定します。PATH がシンボリックリンクの場合でもリンク先を追跡せず、リンク自体の所有者を変更します。POSIX の lchown に相当します。変更しない項目には -1 を指定します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: 権限・属性管理
+- 助詞: PATHをUIDとGIDで/PATHをUIDにGIDを
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `chown`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, ENOTDIR, ELOOP, EROFS, ENOSPC, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+# 「link.txt」のシンボリックリンク自体の所有者を変更する例:
+「link.txt」を1000と1000でシンボリックリンク所有者設定。
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル所有者設定]]

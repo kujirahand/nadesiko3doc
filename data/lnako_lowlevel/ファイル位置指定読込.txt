@@ -1,0 +1,36 @@
+▲説明
+
+ファイルハンドル HANDLE の現在のシーク位置を変更せずに、指定したオフセット位置 OFFSET から最大 SIZE バイトのバイナリデータ（Bytes）を読み込んで返します。POSIX の pread に相当します。ファイルの終端（EOF）に達した場合は、長さ 0 の空の Bytes を返します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEをOFFSETからSIZEを/HANDLEからOFFSETにSIZEを
+- 戻り値: `bytes`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+B = 「ABCDEFGH」を「utf-8」へエンコーディング変換。
+F = 「/tmp/test_pread.bin」を「w+b」でファイル開く。
+FへBをファイルバイト書く。
+Fを0でファイル位置変更。
+PART = Fを2から4をファイル位置指定読込。
+POS = Fのファイル位置取得。
+Fをファイル閉じる。
+「/tmp/test_pread.bin」をファイルリンク削除。
+S = PARTを「utf-8」でエンコーディング取得。
+「{S}:{POS}」を表示。
+### lnako表示結果: CDEF:0
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル位置指定書込]]
+- [[lnako_lowlevel/ファイルバイト読む]]
+- [[lnako_lowlevel/ファイル位置変更]]

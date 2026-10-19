@@ -1,0 +1,36 @@
+▲説明
+
+ファイルハンドル HANDLE のシーク位置（オフセット）を変更し、変更後の新しい絶対位置を返します。POSIX の lseek に相当します。WHENCE には基準位置として「開始」（先頭基準、SEEK_SET 相当）、「現在」（現在位置基準、SEEK_CUR 相当）、「終端」（末尾基準、SEEK_END 相当）のいずれかを文字列で指定します。WHENCE を省略した場合は「開始」が基準になります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEをOFFSETでWHENCEを/HANDLEをOFFSETで
+- 戻り値: `offset`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+B = Hをハッシュ完了。
+F = 「/tmp/test_seek.bin」を「w+b」でファイル開く。
+FへBをファイルバイト書く。
+POS1 = Fを10でファイル位置変更。
+POS2 = Fを5で「現在」をファイル位置変更。
+Fをファイル閉じる。
+「/tmp/test_seek.bin」をファイルリンク削除。
+「{POS1},{POS2}」を表示。
+### lnako表示結果: 10,15
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル位置取得]]
+- [[lnako_lowlevel/ファイル位置指定読込]]
+- [[lnako_lowlevel/ファイル位置指定書込]]
+- [[lnako_lowlevel/ファイル開く]]

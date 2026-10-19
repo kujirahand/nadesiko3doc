@@ -1,0 +1,32 @@
+▲説明
+
+TARGET に対する新しいハードリンクを LINK のパスに作成します。POSIX の link、Windows（NTFS）の CreateHardLinkW に相当します。同一ファイルシステムの既存ファイルに対してのみ作成でき、非対応のファイルシステムでは ENOTSUP エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: TARGETをLINKへ/LINKにTARGETを
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `hardlink`
+- 発生し得るエラー: EEXIST, ENOENT, EACCES, EPERM, EXDEV, ENOTDIR, ELOOP, EROFS, ENOSPC, ENOTSUP, EINVAL
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_hard_src.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_hard_src.txt」を「/tmp/test_hard_link.txt」へハードリンク作成。
+INFO = 「/tmp/test_hard_link.txt」のファイル詳細情報取得。
+「/tmp/test_hard_link.txt」をファイルリンク削除。
+「/tmp/test_hard_src.txt」をファイルリンク削除。
+INFO[「nlink」]を表示。
+### lnako表示結果: 2
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/シンボリックリンク作成]]
+- [[lnako_lowlevel/ファイルリンク削除]]

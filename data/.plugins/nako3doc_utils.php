@@ -2,7 +2,7 @@
 
 /** なでしこ3のマニュアル生成スクリプト - 共通関数
  * - nako3doc.inc.php / nako3doc2kana.inc.php から利用される
- * - DBファイル(data/nako3commands.db, data/gonako-commands.db)の判定と読み込み
+ * - DBファイル(data/nako3commands.db, data/gonako-commands.db, data/lnako-commands.db)の判定と読み込み
  */
 
 function nako3doc_getDBFile($env = null)
@@ -13,11 +13,17 @@ function nako3doc_getDBFile($env = null)
         if ($env === 'gonako') {
             return KONA3_DIR_DATA . '/gonako-commands.db';
         }
+        if ($env === 'lnako') {
+            return KONA3_DIR_DATA . '/lnako-commands.db';
+        }
         return KONA3_DIR_DATA . '/nako3commands.db';
     }
     $page = isset($kona3conf['page']) ? $kona3conf['page'] : '';
     if (preg_match('#^gonako(?:[/_\-]|$)#', $page)) {
         return KONA3_DIR_DATA . '/gonako-commands.db';
+    }
+    if (preg_match('#^lnako(?:[/_\-]|$)#', $page)) {
+        return KONA3_DIR_DATA . '/lnako-commands.db';
     }
     $dbfile = KONA3_DIR_DATA . '/nako3commands.db';
     return $dbfile;

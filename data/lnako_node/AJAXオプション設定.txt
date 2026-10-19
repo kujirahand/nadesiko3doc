@@ -1,0 +1,16 @@
+▲説明
+
+HTTP 通信（AJAX / Fetch）命令で使うオプション辞書をシステム変数『[[lnako_node/AJAXオプション]]』に設定します。
+
+▲利用例
+
+{{{#nako3
+{"headers": {"X-Custom": "1"}}にAJAXオプション設定。
+AJAXオプション["headers"]["X-Custom"]を表示。
+### lnako表示結果: 1
+}}}
+
+▲参考
+
+- [[lnako_node/AJAXオプション]]
+- [[lnako_node/AJAXテキスト取得]]

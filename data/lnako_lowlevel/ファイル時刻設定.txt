@@ -1,0 +1,33 @@
+▲説明
+
+指定したパス PATH のファイルに対して、アクセス日時（ATIME）と更新日時（MTIME）を設定します。日時には Unix エポックからのナノ秒単位の整数値（Number または BigInt）を指定するほか、既存の値を維持する null や現在時刻を表す文字列 "now" を指定できます。POSIX の utimensat に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルメタデータ
+- 助詞: PATHをATIMEからMTIMEまで/PATHをATIMEとMTIMEで
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `utime`
+- 発生し得るエラー: ENOENT, EACCES, ENOTDIR, ELOOP, EROFS, EINVAL, EPERM, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_utime.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_utime.txt」を1000000000から2000000000までファイル時刻設定。
+INFO = 「/tmp/test_utime.txt」のファイル詳細情報取得。
+「/tmp/test_utime.txt」をファイルリンク削除。
+もし、(INFO[「mtimeNs」] == 2000000000)ならば
+　　「時刻設定成功」と表示。
+ここまで
+### lnako表示結果: 時刻設定成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル時刻設定済]]
+- [[lnako_lowlevel/ファイル詳細情報取得]]

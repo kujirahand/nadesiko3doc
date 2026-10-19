@@ -1,0 +1,30 @@
+▲説明
+
+シェルを介さずに引数配列 ARGV を直接渡して子プロセスを起動し、プロセスハンドルを返します。POSIX の posix_spawnp / execve に相当します。OPTIONS には作業ディレクトリ cwd や環境変数 env などを辞書で指定できます。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: ARGVをOPTIONSで/ARGVを
+- 戻り値: `handle`
+- 実装状況: 実装済み
+- 機能 ID (capability): `argv_spawn`
+- 発生し得るエラー: ENOENT, EACCES, EPERM, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+PROC = [「true」]をプロセス起動。
+RES = PROCのプロセス待機。
+もし、(RES[「exitCode」] == 0)ならば
+　　「プロセス実行成功」と表示。
+ここまで
+### lnako表示結果: プロセス実行成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/プロセス待機]]
+- [[lnako_lowlevel/シグナル送信]]

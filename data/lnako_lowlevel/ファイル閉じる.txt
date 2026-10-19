@@ -1,0 +1,28 @@
+▲説明
+
+ファイルハンドル HANDLE を閉じ、システムリソースを解放します。すでに閉じたハンドルや無効なハンドルを操作すると EBADF エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEを/HANDLEの
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_close.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_close.txt」をファイルリンク削除。
+「ファイルクローズ成功」と表示。
+### lnako表示結果: ファイルクローズ成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル開く]]

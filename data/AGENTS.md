@@ -11,6 +11,7 @@
 - FrontPage.md              --- トップページ
 - nako3commands.db          --- cnako/wnako/各種プラグインの命令一覧(SQLite)
 - gonako-commands.db        --- gonakoの命令一覧(SQLite)
+- lnako-commands.db         --- lnakoの命令一覧(SQLite)
 + .plugins/                 --- konawiki3のローカルプラグイン
 |   - nako3doc.inc.php      --- なでしこ3マニュアルのヘッダに表示するプラグイン
 |   - nako3doc2kona.inc.php --- 命令一覧をカナ順に表示するプラグイン
@@ -25,7 +26,7 @@
 
 - `konawiki3/` `private/` `cache/` `attach/` は編集しません。
 - `data/.meta/` は、GitHub Actions(`.github/workflows/update-meta.yml`)が自動生成します。手で編集しません。
-- `nako3commands.db` と `gonako-commands.db` は、`script/cmd2db.nako3` で生成します。直接編集しません。
+- `nako3commands.db` と `gonako-commands.db` は、`script/cmd2db.nako3` で生成します。`lnako-commands.db` は `script/generate_lnako_docs.py` で生成します。直接編集しません。
 
 ## ファイルの形式
 

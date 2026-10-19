@@ -1,0 +1,32 @@
+▲説明
+
+シンボリックリンク PATH が指している参照先のパスを文字列で返します。POSIX の readlink に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ファイルシステム
+- 助詞: PATHを/PATHの
+- 戻り値: `string`
+- 実装状況: 実装済み
+- 機能 ID (capability): `readlink`
+- 発生し得るエラー: EINVAL, ENOENT, EACCES, EPERM, ENOTDIR, ELOOP, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+F = 「/tmp/test_rlink_src.txt」を「w+b」でファイル開く。
+Fをファイル閉じる。
+「/tmp/test_rlink_src.txt」を「/tmp/test_rlink_link.txt」へシンボリックリンク作成。
+TARGET = 「/tmp/test_rlink_link.txt」のシンボリックリンク先取得。
+「/tmp/test_rlink_link.txt」をファイルリンク削除。
+「/tmp/test_rlink_src.txt」をファイルリンク削除。
+TARGETを表示。
+### lnako表示結果: /tmp/test_rlink_src.txt
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/シンボリックリンク作成]]
+- [[lnako_lowlevel/実体パス取得]]

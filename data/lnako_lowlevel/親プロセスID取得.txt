@@ -1,0 +1,29 @@
+▲説明
+
+親プロセスのプロセス ID（PPID）を数値で返します。POSIX の getppid に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: なし（引数なし）
+- 戻り値: `pid`
+- 実装状況: 実装済み
+- 機能 ID (capability): `argv_spawn`
+- 発生し得るエラー: ENOTSUP
+
+▲利用例
+
+{{{#nako3
+親プロセスID取得。
+PPID = それ。
+もし、(PPID > 0)ならば
+　　「親プロセスID取得成功」と表示。
+ここまで
+### lnako表示結果: 親プロセスID取得成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/プロセスID取得]]

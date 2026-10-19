@@ -1,0 +1,29 @@
+▲説明
+
+指定した PID のプロセスの実行優先度（niceness 値）を数値で返します。PID に 0 を指定した場合は自プロセスが対象になります。POSIX の getpriority に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: プロセス・端末制御
+- 助詞: PIDを/PIDの
+- 戻り値: `number`
+- 実装状況: 実装済み
+- 機能 ID (capability): `priority`
+- 発生し得るエラー: EINVAL, EPERM, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+0のプロセス優先度取得。
+PRIO = それ。
+もし、(PRIO >= -20 かつ PRIO <= 20)ならば
+　　「優先度取得成功」と表示。
+ここまで
+### lnako表示結果: 優先度取得成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/プロセス優先度設定]]

@@ -1,0 +1,21 @@
+▲説明
+
+ZIP ファイル ZIP を展開し、フォルダ PATH へ書き出します。
+[[lnako]] は内蔵の ZIP 展開処理を標準で使うため、外部ツールなしで動作します。展開時には、展開先ディレクトリの外への書き出し（Zip Slip）を防ぐ検査を行います。
+
+▲利用例
+
+{{{#nako3
+TMP = 一時フォルダ作成。
+「data」を(TMP & "/a.txt")に保存。
+(TMP & "/a.txt")から(TMP & "/out.zip")へ圧縮。
+(TMP & "/out.zip")から(TMP & "/dest")へ解凍。
+「復元:{(TMP & "/dest/a.txt")を開く}」と表示。
+### lnako表示結果: 復元:data
+}}}
+
+▲参考
+
+- [[lnako_node/圧縮]]
+- [[lnako_node/解凍時]]
+- [[lnako_node/圧縮解凍ツールパス変更]]

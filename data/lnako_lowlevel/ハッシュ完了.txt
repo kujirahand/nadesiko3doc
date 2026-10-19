@@ -1,0 +1,29 @@
+▲説明
+
+ハッシュハンドル HANDLE の計算を完了し、計算結果（ダイジェスト）を返します。ENCODING に "hex" や "base64" を指定すると文字列で返し、省略した場合はバイナリデータ（Bytes）で返します。完了後のハンドルは自動的に閉じられ、再利用すると EBADF エラーになります。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ハッシュストリーム
+- 助詞: HANDLEをENCODINGで/HANDLEを
+- 戻り値: `hashDigest`
+- 実装状況: 実装済み
+- 機能 ID (capability): `incremental_hash`
+- 発生し得るエラー: EBADF, EINVAL, ENOTSUP
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+R = Hを「hex」でハッシュ完了。
+Rを表示。
+### lnako表示結果: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ハッシュ開始]]
+- [[lnako_lowlevel/ハッシュ追加]]
+- [[lnako_lowlevel/ハッシュ破棄]]

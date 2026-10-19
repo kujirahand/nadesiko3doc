@@ -1,0 +1,33 @@
+▲説明
+
+ファイルハンドル HANDLE の未書き込みデータをストレージへ書き出して同期（フラッシュ）します。POSIX の fsync に相当します。
+
+▲仕様
+
+- 対応環境: [[lnako]] 専用 (Web ブラウザ版 [[wnako]] や Node.js 版 [[cnako]] では動作しません)
+- プラグイン: [[lnako_lowlevel]]
+- 分類: ストリームIO
+- 助詞: HANDLEを/HANDLEの
+- 戻り値: `void`
+- 実装状況: 実装済み
+- 機能 ID (capability): `stream_file_io`
+- 発生し得るエラー: EBADF, EINVAL
+
+▲利用例
+
+{{{#nako3
+H = 「sha256」でハッシュ開始。
+B = Hをハッシュ完了。
+F = 「/tmp/test_sync.bin」を「w+b」でファイル開く。
+FへBをファイルバイト書く。
+Fをファイル同期。
+Fをファイル閉じる。
+「/tmp/test_sync.bin」をファイルリンク削除。
+「同期成功」と表示。
+### lnako表示結果: 同期成功
+}}}
+
+▲参考
+
+- [[lnako_lowlevel/ファイル開く]]
+- [[lnako_lowlevel/ファイルバイト書く]]
