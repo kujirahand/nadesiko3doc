@@ -145,6 +145,11 @@ gonako doctest --label=表示結果 data
 gonako doctest --label=GO表示結果 data/gonako
 ```
 
+`### lnako表示結果:`のラベルのあるDocTestを実行します。
+
+```sh
+lnako doctest --label=lnako表示結果 data/lnako data/lnako_node data/lnako_lowlevel
+```
 
 次のような、結果を確認できないサンプルコードでは、`### 表示結果:` を省略できます。省略するときは、コメントに `# → 7` のように期待値を書きます。
 
