@@ -1,4 +1,4 @@
-●『[[JS関数実行:plugin_system/JS関数実行]]』の詳しい解説
+●『[[JS関数実行:plugin_js/JS関数実行]]』の詳しい解説
 
 JavaScriptの関数を実行します。引数は配列で指定します。
 
@@ -30,8 +30,8 @@ JavaScriptの関数を実行します。引数は配列で指定します。
 
 ▲参考
 
-オブジェクトのメソッドを実行する場合「[[plugin_system/JSメソッド実行]]」が用意されています。
+オブジェクトのメソッドを実行する場合「[[plugin_js/JSメソッド実行]]」が用意されています。
 
-- [[plugin_system/JSメソッド実行]]
-- [[plugin_system/JS実行]]
-- [[plugin_system/JSオブジェクト取得]]
+- [[plugin_js/JSメソッド実行]]
+- [[plugin_js/JS実行]]
+- [[plugin_js/JSオブジェクト取得]]

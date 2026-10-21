@@ -4,7 +4,7 @@
 
 ▲サンプル
 
-ASYNCを付けた関数は『[[AWAIT実行:plugin_system/AWAIT実行]]』で呼び出します。
+ASYNCを付けた関数は『[[AWAIT実行:plugin_js/AWAIT実行]]』で呼び出します。
 
 {{{#nako3(rows=11)
 ●AAA(SEC)とは
@@ -25,6 +25,6 @@ ASYNCを付けた関数は『[[AWAIT実行:plugin_system/AWAIT実行]]』で呼�
 
 ▲参考
 
-- [[plugin_system/AWAIT実行]]
+- [[plugin_js/AWAIT実行]]
 - [[plugin_system/秒待]]
 - [[文法/非同期処理の使い分け]]

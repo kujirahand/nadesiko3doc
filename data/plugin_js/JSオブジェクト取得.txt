@@ -1,4 +1,4 @@
-●『[[JSオブジェクト取得:plugin_system/JSオブジェクト取得]]』の詳しい解説
+●『[[JSオブジェクト取得:plugin_js/JSオブジェクト取得]]』の詳しい解説
 
 なでしこ3のプログラムはJavaScriptに変換してから実行されます。『JSオブジェクト取得』命令を使うと、なでしこのJavaScriptオブジェクトを取得できます。
 
@@ -32,5 +32,5 @@ Nを実行して表示。
 ▲参考
 
 - [[plugin_system/実行]]
-- [[plugin_system/JS関数実行]]
-- [[plugin_system/JSメソッド実行]]
+- [[plugin_js/JS関数実行]]
+- [[plugin_js/JSメソッド実行]]

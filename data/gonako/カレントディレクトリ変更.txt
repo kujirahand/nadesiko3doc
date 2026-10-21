@@ -8,7 +8,7 @@
 TMP=テンポラリフォルダ
 TMPにカレントディレクトリ変更。
 「テスト」を「gonako_manual_test.txt」へ保存。
-もし「gonako_manual_test.txt」が存在すればそれは「あり」を表示。
+もし「gonako_manual_test.txt」が存在すれば「あり」を表示。
 「gonako_manual_test.txt」をファイル削除。
 ### GO表示結果: あり
 }}}
