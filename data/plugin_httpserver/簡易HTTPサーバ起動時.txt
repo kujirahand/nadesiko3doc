@@ -3,6 +3,17 @@
 ポート番号PORTを指定して簡易HTTPサーバを起動し、起動完了時にCALLBACKを実行します。
 簡易HTTPサーバの他の機能（受信時や静的パス指定など）を使用するには、あらかじめこの命令でサーバーを起動しておく必要があります。
 
+▲ 待受ホストについて
+
+安全のため、既定では「127.0.0.1」（同じマシンからの接続のみ許可）で接続を待ち受けます。以前のバージョンでは、マシンの全てのネットワークインタフェースで待ち受けていました。
+他のマシンからも接続させたい場合は、起動時に環境変数（OSからプログラムに渡す設定値）の「NAKO3_HTTP_HOST」に「0.0.0.0」を指定してください。
+
+{{{
+NAKO3_HTTP_HOST=0.0.0.0 cnako3 server.nako3
+}}}
+
+「NAKO3_HTTP_HOST」が未設定の場合は、nako3server用の「NAKO3SERVER_HOST」、nako3edit用の「NAKO3EDIT_HOST」も参照されます。
+
 ▲ 引数
 
 - CALLBACK: サーバー起動完了時に実行される関数・無名関数
@@ -29,4 +40,5 @@ PORTで簡易HTTPサーバ起動時には
 
 - [[plugin_httpserver/簡易HTTPサーバ受信時]]
 - [[plugin_httpserver/簡易HTTPサーバ静的パス指定]]
+- [[plugin_httpserver/簡易HTTPサーバアップロード最大サイズ設定]]
 - [[plugin_httpserver/簡易HTTPサーバ出力]]
