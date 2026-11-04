@@ -11,6 +11,9 @@
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 
+▲ [[plugin_httpserver]]
+- [[plugin_httpserver/簡易HTTPサーバアップロード最大サイズ設定]] --- アップロードファイル1件の最大サイズSIZE(バイト)を設定する。
+
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 
@@ -43,6 +46,10 @@
 
 ▲ [[nadesiko3-smtp]]
 - [[nadesiko3-smtp/メール送信]] --- 辞書型のデータ{host:'xxx',port:xxx,secure:true,auth:{user:'xxx',pass:'xxx'},from:'xxx',to:'xxx',subject:'xxx',text:'xxx',html:'xxx'}を指定してメールを送信して情報を返す(非同期関数)
+
+▲ [[nadesiko3-office]]
+- [[nadesiko3-office/エクセル行数取得]] --- 作業中のシートの最終行番号を返す
+- [[nadesiko3-office/エクセルシート全取得]] --- 作業中のシートの全セルを二次元配列で返す
 
 ▲ [[plugin_electron_node]]
 - [[plugin_electron_node/DIP2PXP矩形変換]] --- 『DIP2PX矩形変換』命令の誤字。互換性のために存在する。
