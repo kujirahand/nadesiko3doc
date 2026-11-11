@@ -1,0 +1,6 @@
+●説明
+
+checkbox・radioの選択状態を真偽で設定する。radioを選ぶと同じform内の同名radioは外れる
+
+●参照
+
