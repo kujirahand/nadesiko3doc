@@ -2,5 +2,14 @@
 
 URLを指定したimg要素を追加してハンドルを返す
 
+●利用例
+
+{{{#nako3
+// ウインドウモードで実行します。
+画像=「https://n3s.nadesi.com/image.php?f=44.png」から画像作成
+}}}
+
 ●参照
 
+- [[gonako/画像切替]]
+- [[gonako/DOM要素作成]]
