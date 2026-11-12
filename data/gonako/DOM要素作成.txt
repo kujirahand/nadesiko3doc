@@ -11,3 +11,5 @@
 
 ●参照
 
+- [[gonako/DOM部品作成]]
+- [[gonako/DOM部品削除]]

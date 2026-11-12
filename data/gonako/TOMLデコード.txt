@@ -12,3 +12,5 @@ B["a"]を表示。
 
 ●参照
 
+- [[gonako/TOMLエンコード]]
+- [[gonako/TOML取得]]
