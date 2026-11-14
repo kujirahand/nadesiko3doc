@@ -4,7 +4,12 @@
   "description": "なでしこ3マニュアル生成スクリプト",
   "scripts": {
     "start": "cnako3 cmd2db.nako3 && cnako3 enum_blank_command.nako3",
-    "build": "cnako3 cmd2db.nako3"
+    "build": "cnako3 cmd2db.nako3",
+    "doctest:all": "node doctest-all.mjs --only=all",
+    "doctest:gonako": "node doctest-all.mjs --only=gonako",
+    "doctest:lnako": "node doctest-all.mjs --only=lnako",
+    "doctest:cnako3": "node doctest-all.mjs --only=cnako3",
+    "doctest:system": "node doctest-all.mjs --only=system"
   },
   "dependencies": {
     "nadesiko3-sqlite3": "^3.7.23"
@@ -12,5 +17,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kujirahand/nadesiko3doc.git"
+  },
+  "devDependencies": {
+    "nadesiko3": "^3.8.10"
   }
 }
