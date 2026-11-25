@@ -11,9 +11,6 @@
 - [[plugin_browser/音声合成発話オブジェクト取得]] --- 内容Sで音声合成APIのインスタンスを得る
 - [[plugin_browser/二次元グラフデータ変形]] --- 二次元配列をXXグラフ描画の形式に整形する。種類TとDATAを指定。
 
-▲ [[plugin_httpserver]]
-- [[plugin_httpserver/簡易HTTPサーバアップロード最大サイズ設定]] --- アップロードファイル1件の最大サイズSIZE(バイト)を設定する。
-
 ▲ [[plugin_weykturtle3d]]
 - [[plugin_weykturtle3d/T3Dカメ作成]] --- タートルグラフィックスを開始してカメのIDを返す
 

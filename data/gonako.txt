@@ -2,4 +2,20 @@
 
 [[gonako]]とは「なでしこ3(Go版)」のことで、PC上でなでしこ3を動かすためのランタイムです。(詳しくは[[こちら:gonako-preview]]をご覧ください。) [[→カナ順:gonako-カナ順]]
 
+▲インストール
+
+Linux・macOS ではターミナル、Windows では PowerShell で次を実行します。
+
+{{{
+# Linux・macOS
+curl -fsSL https://nadesi.com/install/gonako | bash
+}}}
+
+{{{
+# Windows (PowerShell)
+irm https://nadesi.com/install/gonako | iex
+}}}
+
+また、[[リリース:https://github.com/kujirahand/nadesiko3go/releases]]から OS と CPU に対応する CLI 版を取得できます。詳しくは [[公式 README:https://github.com/kujirahand/nadesiko3go#インストール方法]]を参照してください。
+
 #nako3doc(list-func,gonako)

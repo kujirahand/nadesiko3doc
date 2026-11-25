@@ -5,6 +5,7 @@ kona3dir.def.php
 favicon.ico
 sw.js
 nadesiko3doc.ini.php
+script/node_modules/
 
 # macøß
 .DS_Store

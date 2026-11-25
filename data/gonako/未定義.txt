@@ -1,0 +1,19 @@
+▲説明
+
+undefined と同じ未定義値を表す定数です。
+
+▲利用例
+
+現在の値を表示します。
+
+{{{#nako3
+未定義を表示。
+}}}
+
+▲参考
+
+- [[gonako/undefined]]
+- [[gonako/NULL]]
+- [[gonako/空]]
+- [[gonako/非数]]
+- [[gonako/無限大]]

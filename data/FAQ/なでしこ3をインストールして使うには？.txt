@@ -49,7 +49,13 @@ PC上でなでしこ3をGUI/CUIで使えるのがgonakoです。これは、開�
 
 ●cnakoを動かす方法 - Node.jsを使う
 
-コマンドライン版のなでしこcnako3を使うには、最初にNode.jsをインストールします。そして、コマンドラインから次のコマンドを実行してインストールします。
+コマンドライン版のなでしこcnako3を使うには、最初にNode.jsをインストールします。Linux・macOS・Windows のいずれでも、Node.js 22 以降と npm をインストールしてから、コマンドラインで次のコマンドを実行してインストールします。
+
+{{{
+npm install -g nadesiko3
+}}}
+
+インストール後は、`cnako3 ファイル名.nako3` で実行できます。詳しくは [[nadesiko3 の README:https://github.com/kujirahand/nadesiko3#nodejsでなでしこ3コマンドライン版をインストール]] を参照してください。
 
 なお、cnakoにはWindows版も用意しています。
 

@@ -1,0 +1,20 @@
+▲説明
+
+正の無限大である +Inf を表す数値定数です。
+
+▲利用例
+
+現在の値を表示します。
+
+{{{#nako3
+無限大を表示。
+### GO表示結果: Infinity
+}}}
+
+▲参考
+
+- [[gonako/未定義]]
+- [[gonako/undefined]]
+- [[gonako/NULL]]
+- [[gonako/空]]
+- [[gonako/非数]]
