@@ -6,6 +6,7 @@ favicon.ico
 sw.js
 nadesiko3doc.ini.php
 script/node_modules/
+script/.runtime/
 
 # macøß
 .DS_Store
