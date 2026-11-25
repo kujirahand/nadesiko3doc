@@ -1,0 +1,235 @@
+■FAQ/各ランタイムのインストールとアップデート（開発者向け）
+
+なでしこ3には複数のランタイム（実行環境）があり、それぞれ配布方法もバージョンの付け方も違います。このページでは開発者向けに、cnako3 / wnako / gonako / lnako のインストール方法、アップデート方法、バージョンの確認方法をまとめます。
+
+一般向けの紹介は [[FAQ/ランタイムについて]] と [[FAQ/なでしこ3をインストールして使うには？]]、DocTest の実行と報告の方法は [[FAQ/DocTest]] をご覧ください。
+
+●まず知っておくこと：「バージョン」は2つあります
+
+ランタイムには、次の2種類のバージョンがあります。混同すると、DocTest の失敗報告などが正しく伝わりません。
+
+- **ランタイム自身のバージョン** --- 配布物のバージョンです（例: gonako v3.8.12、lnako 0.2.5）
+- **言語仕様のバージョン** --- プログラムの中で定数 `ナデシコバージョン` が返す値で、そのランタイムが対応する「なでしこ3」のバージョンを表します
+
+cnako3 と wnako は公式リポジトリ（kujirahand/nadesiko3）から出ているため、2つの数値が一致します。しかし gonako と lnako は独立した実装なので、数値が一致しません。
+
+2026-11-25 時点の最新版での実測値は次のとおりです（数値は変わります。必ず手元で確認してください）。
+
+- cnako3 3.8.12 --- `ナデシコバージョン` も 3.8.12
+- gonako v3.8.12 --- `ナデシコバージョン` は 3.8.2、別に `GONAKOバージョン` 定数が 3.8.12 を返します
+- lnako 0.2.5 --- `ナデシコバージョン` は 3.7.24（これが lnako の互換基準バージョンです）
+
+つまり「`ナデシコバージョン` が 3.8.2 だから gonako は古い」という判断は誤りです。gonako の新旧は `gonako version` の出力（または `GONAKOバージョン`）で判断してください。逆に、lnako で新しい文法が動かない場合は、まず互換基準（3.7.24）より新しい文法でないかを確認してください。
+
+▲バージョンを一括で確認する
+
+{{{
+cnako3 --version   # 例: v3.8.12
+gonako version     # 例: gonako v3.8.12 (linux/amd64)。-v / --version でも可
+lnako --version    # 例: lnako 0.2.5。-V でも可
+}}}
+
+プログラム側の定数を確認するには、次のような1行プログラムを実行します。
+
+{{{
+# cnako3 の場合
+cnako3 -e "ナデシコバージョンを表示。"
+# gonako の場合（2つの定数を両方確認する）
+gonako -e "ナデシコバージョンを表示。GONAKOバージョンを表示。"
+# lnako の場合
+lnako run バージョン確認.nako3
+}}}
+
+lnako の互換基準は `lnako compat report` でも確認できます（基準のタグとコミット、命令ごとの対応状況が JSON で出力されます）。
+
+▲最新版に揃えるスクリプト（推奨）
+
+このリポジトリ（nadesiko3doc）の `script/update_runtimes.sh` を使うと、cnako3 / gonako / lnako について、各リポジトリの GitHub Releases で最新版を確認し、ローカルのバージョンと比較して、古ければ（または未インストールなら）自動で再インストールできます。DocTest を実行する前にこれで環境を揃えておくと、「古いバイナリで検証していた」という事故を防げます。
+
+{{{
+# バージョン確認だけ行う
+script/update_runtimes.sh --check
+
+# 確認して、古ければ更新する
+script/update_runtimes.sh
+
+# 対象を絞る / 最新でも入れ直す
+script/update_runtimes.sh cnako3 lnako
+script/update_runtimes.sh --force gonako
+}}}
+
+スクリプトの仕様と注意点は次のとおりです。
+
+- 対応OSは macOS / Linux です。Windows では後述の公式手順を使ってください
+- cnako3 は `npm install -g nadesiko3@<最新版>` で入れ直します（Node.js と npm が必要です）
+- gonako は GitHub Releases の ZIP（CLI版のみ）を `~/.local/bin` に入れます。gonako-gui は対象外です
+- lnako は GitHub Releases のアーカイブ（standard版）を、SHA-256 を照合してから `~/.local/opt/` に配置し、`~/.local/bin/lnako` にリンクします。LLVM 同梱の full版が要る場合は環境変数 `LNAKO_VARIANT=full` を指定してください
+- リリースタグの書式はリポジトリごとに違います（nadesiko3 / nadesiko3go は `3.8.12`、lnako は `v0.2.5`）。スクリプトはタグをそのままダウンロードURLに使い、比較のときだけ先頭の `v` を外しています。手作業でURLを組み立てるときも、この違いに注意してください
+- Homebrew で入れた gonako / lnako と混在させないでください。PATH の優先順位によっては、更新したのに古い方が使われ続けます
+
+以下、ランタイムごとの公式の方法を詳しく説明します。
+
+●cnako3（公式・Node.js版）
+
+▲インストール
+
+前提として Node.js が必要です。対応バージョンは v22 以上です（nadesiko3 の README を確認してください）。
+
+{{{
+# npm でグローバルにインストール
+npm install -g nadesiko3
+
+# 動作確認
+cnako3 --version
+cnako3 -e "「こんにちは」と表示。"
+}}}
+
+Windows 向けには、Node.js ごと同梱した Windows版（kujirahand/nadesiko3win32）もあります。
+
+▲アップデート
+
+npm のグローバルインストールには専用の更新コマンドがないため、**最新版を指定してインストールし直す**のが確実です。
+
+{{{
+# 最新版を確認する
+npm view nadesiko3 version
+
+# 最新版を入れ直す
+npm install -g nadesiko3@latest
+
+# 入れ直した後に必ず確認する
+cnako3 --version
+}}}
+
+`npm update -g nadesiko3` でも更新される場合がありますが、メジャーバージョンをまたぐ場合などに取りこぼすことがあるため、上記の入れ直しを推奨します。
+
+▲開発者向け（GitHubから取得）
+
+{{{
+git clone https://github.com/kujirahand/nadesiko3.git
+cd nadesiko3
+npm install
+npm run build
+npm test
+}}}
+
+更新するときは `git pull` の後に `npm install` と `npm run build` をやり直してください。`npm install` を忘れると、依存パッケージが足りずに `Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'fs-extra' ...` のようなエラーになります。これはなでしこのバグではなく、インストールが不完全な状態です。DocTest の失敗として報告しないでください。
+
+●wnako（ブラウザ版）
+
+wnako はインストール不要です。なでしこ3貯蔵庫や簡易エディタなど、Webサービス側のものはサービス側で随時更新されます。
+
+自作の HTML に組み込む場合は、読み込む JavaScript ファイルの出所がバージョンを決めます。トラブルの報告では「どのURLの wnako を使ったか」を書いてください。プログラム側では `ナデシコバージョン` 定数で確認できます。バージョンは cnako3 と同じく、公式リポジトリのリリースに追随します。
+
+●gonako（Go版）
+
+▲インストール（ワンライナー）
+
+{{{
+# macOS / Linux
+curl -fsSL https://nadesi.com/install/gonako | bash
+
+# Windows (PowerShell)
+irm https://nadesi.com/install/gonako | iex
+}}}
+
+インストーラーは GitHub Releases の最新版を取得して、gonako と gonako-gui の両方を入れます。バージョンを指定したい場合は、環境変数 `GONAKO_VERSION` で指定できます。最新版の取得に失敗した場合は、インストーラーに内蔵された安定版（フォールバック）で再試行する仕組みになっています。そのため、**ワンライナーで入れた直後でも、必ず `gonako version` で実際のバージョンを確認してください**。
+
+▲インストール（Homebrew / macOS）
+
+{{{
+brew tap kujirahand/nadesiko3 && brew trust kujirahand/nadesiko3
+brew install gonako && brew install --cask gonako-gui
+}}}
+
+なお、Linux で gonako-gui を使う場合は、ソースコードからビルドする必要があります（後述）。
+
+▲アップデート
+
+- ワンライナーで入れた場合: 同じワンライナーをもう一度実行すると、最新版で上書きされます
+- Homebrew の場合: `brew update && brew upgrade gonako` と `brew upgrade --cask gonako-gui` を実行します
+- 手動の場合: GitHub Releases（kujirahand/nadesiko3go）から、お使いの OS / CPU 向けの ZIP を取り直して差し替えます。ファイル名は `gonako-<バージョン>-<OS>-<CPU>.zip` と `gonako-gui-<バージョン>-...` の形式です
+
+gonako には自動アップデート機能はありません。「新しい版が出たか」は GitHub Releases を見るか、前述の `script/update_runtimes.sh --check` で確認してください。
+
+▲間違えやすい点: `gonako install` は自己アップデートではありません
+
+`gonako install プログラム.nako3` は、自分で書いた .nako3 プログラムをコマンドとして使えるように起動用スクリプトを作る機能です。gonako 自体を更新するコマンドではないので、注意してください。
+
+▲開発者向け（ソースコードからビルド）
+
+Go とタスクランナーの just が必要です。
+
+{{{
+git clone https://github.com/kujirahand/nadesiko3go.git
+cd nadesiko3go
+just build
+}}}
+
+更新は `git pull` してから `just build` をやり直します。gonako-gui のビルドには OS ごとに追加のものが必要です（Linux: GCC、pkg-config、GTK 3、WebKitGTK 4.0 または 4.1。macOS: Xcode コマンドラインツール。Windows: MSYS2 の GCC）。詳細は nadesiko3go の README と `docs/build-gonako-gui.md` をご覧ください。
+
+●lnako（LLVM版・ネイティブコンパイラ）
+
+▲インストール（Homebrew / macOS 推奨）
+
+{{{
+brew tap soramikan/tap
+brew install lnako
+lnako --version
+}}}
+
+正式検証対象は Apple Silicon（macOS arm64）です。
+
+▲インストール（GitHub Releases から手動）
+
+Linux / Windows や、手動で入れたい場合は GitHub Releases（soramikan/lnako）からアーカイブを取得します。
+
+- standard版 --- 実行（`lnako run`）や構文検査を手軽に始めるための軽量版です。AOT コンパイルに必要な LLVM/LLD は、後から `lnako toolchain install` で取得します
+- full版 --- LLVM/LLD 同梱版です。オフラインでもすぐに `lnako build` を使いたい人向けです
+
+ファイル名は `lnako-<バージョン>-<環境>.tar.gz`（Windows は `.zip`）で、環境は `macos-arm64` / `linux-x64` / `windows-x64` です。各アーカイブには `.sha256` ファイルが付いているので、展開前に照合することを推奨します。
+
+展開後は、**フォルダ構造（`bin/`、`lib/`、full版では `llvm/`）を保ったまま**配置し、`bin` フォルダを PATH に追加してください。`bin/lnako` 単体だけを取り出すと、ライブラリが解決できずに動かなくなります。
+
+▲アップデート
+
+- Homebrew の場合: `brew update && brew upgrade lnako` です。アンインストールは `brew uninstall lnako` です
+- 手動の場合: 新しいアーカイブを取り直してフォルダごと差し替え、リンクや PATH の指す先を新しいフォルダに切り替えます。古いフォルダを消す前に `lnako --version` で新しい方を指していることを確認してください
+
+▲ツールチェーンは別管理です
+
+lnako 本体を更新しても、AOT コンパイル用の LLVM/LLD ツールチェーンは自動では更新されません。standard版 / Homebrew版で初めてコンパイルするときは導入が必要で、更新も別コマンドです。
+
+{{{
+lnako toolchain install   # 導入（OS標準のキャッシュ領域に配置されます）
+lnako toolchain status    # 状態の確認
+lnako toolchain update    # 更新
+lnako toolchain remove    # 削除
+}}}
+
+既存の LLVM を使いたい場合は、`lnako build --llvm-dir <パス>` か環境変数 `LNAKO_LLVM_DIR` で指定できます（基準バージョンは LLVM 22.1.8 です）。
+
+▲開発者向け（ソースコードからビルド）
+
+lnako は Zig で書かれています。固定条件は Zig 0.17.0、LLVM/LLD 22.1.8 です。リポジトリをクローンした後、ツールチェーンとテスト資産のセットアップ用スクリプトを実行し、`zig build` でビルドします。手順の詳細は lnako リポジトリの `docs/DEVELOPMENT.md` が正本です。
+
+●困ったときのチェックリスト
+
+バージョンや更新で困ったときは、次の順に確認してください。
+
+- `which cnako3 gonako lnako`（Windows では `where`）で、実際に使われているコマンドの場所を確認しましたか。複数インストールされていると、PATH の先にある古い方が使われます
+- ワンライナー、Homebrew、手動配置など、インストール方法を混在させていませんか。更新したつもりでも、別の方法で入れた古い方が PATH で優先されていることがあります
+- gonako と gonako-gui のバージョンがずれていませんか。別々に更新するとずれます
+- cnako3 で `ERR_MODULE_NOT_FOUND` が出る場合は、clone 直後や `git pull` 直後に `npm install` を忘れていないかを確認してください
+- lnako で `bin/lnako` だけをコピーして使っていませんか。フォルダごと配置し直してください
+- lnako でコンパイルだけが失敗する場合は、本体ではなくツールチェーン（`lnako toolchain status`）を確認してください
+
+●参考リンク
+
+- [[FAQ/DocTest]] --- DocTest の実行方法と、失敗時の報告テンプレート
+- [[FAQ/ランタイムについて]]
+- [[FAQ/なでしこ3をインストールして使うには？]]
+- nadesiko3（cnako3 / wnako）: https://github.com/kujirahand/nadesiko3/releases
+- nadesiko3go（gonako）: https://github.com/kujirahand/nadesiko3go/releases
+- lnako: https://github.com/soramikan/lnako/releases / 導入ガイド https://github.com/soramikan/lnako/blob/main/docs/GETTING_STARTED.md
+- 関連Issue: https://github.com/kujirahand/nadesiko3doc/issues/126
