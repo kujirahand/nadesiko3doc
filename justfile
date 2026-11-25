@@ -33,7 +33,7 @@ install:
 
 # マニュアルのサンプルをテスト
 doctest: install
-    PATH="$PATH:$(pwd)/script/.runtime/bin:$(pwd)/script/.runtime/lnako/bin"; export PATH; cd script && npm run doctest:all
+    PATH="$(pwd)/script/.runtime/bin:$(pwd)/script/.runtime/lnako/bin:$PATH"; export PATH; cd script && npm run doctest:all
 
 # 開発環境をセットアップ
 setup: install-deps
