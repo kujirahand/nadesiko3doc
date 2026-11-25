@@ -111,11 +111,7 @@ cd test-browser
 npm run test:doctest
 }}}
 
-▲(4) lnako には doctest コマンドがありません
-
-**lnako 自体には DocTest を実行するサブコマンドはありません**（v0.2.5 で `lnako doctest` を実行すると `UnknownCommand` になることを確認済みです）。lnako で DocTest を回したいときは、上記の (1) か (2) のランナーから `--runtime=lnako --subcommand=run` で呼び出してください。以前のドキュメントにあった `lnako doctest --label=...` という書き方は誤りです。
-
-▲(5) gonako-gui のエディタ
+▲(4) gonako-gui のエディタ
 
 gonako-gui のエディタで文法チェックを行うと、開いているバッファに DocTest があれば続けて実行されます。ちょっとした確認には便利ですが、まとまった検証はコマンドラインのランナーで行ってください。
 
