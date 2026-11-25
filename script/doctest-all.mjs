@@ -43,7 +43,7 @@ const relativeDir = dir => dir.slice(dataDir.length + 1).replaceAll('\\', '/');
 const selected = {
   gonako: dir => only === 'all' || (only === 'gonako' && relativeDir(dir) === 'gonako'),
   lnako: dir => only === 'all' || (only === 'lnako' && ['lnako_lowlevel', 'lnako_node'].includes(relativeDir(dir))),
-  cnako3: dir => only === 'all' || (only === 'cnako3' && /^plugin_[^/]+$/.test(relativeDir(dir)) && relativeDir(dir) !== 'plugin_system') || (only === 'system' && ['plugin_system', '文法'].includes(relativeDir(dir)))
+  cnako3: dir => only === 'all' || (only === 'cnako3' && /^plugin_[^/]+$/.test(relativeDir(dir)) && relativeDir(dir) !== 'plugin_system') || (only === 'system' && (['plugin_system', '文法'].includes(relativeDir(dir)) || relativeDir(dir).startsWith('plugin_system/')))
 };
 const skip = new Set((process.env.DOCTEST_SKIP ?? '').split(',').map(s => s.trim()).filter(Boolean));
 if ([...skip].some(name => !['gonako', 'lnako'].includes(name))) {
@@ -53,10 +53,22 @@ if ([...skip].some(name => !['gonako', 'lnako'].includes(name))) {
 const cnako = join(scriptDir, 'node_modules/.bin', process.platform === 'win32' ? 'cnako3.cmd' : 'cnako3');
 const doctest = join(scriptDir, 'node_modules/nadesiko3/batch/doctest.nako3');
 const results = [];
-for (const [label, runtime] of Object.entries(labels)) {
-  const dirs = [...targets[runtime]].filter(selected[runtime]).sort();
+const jobs = Object.entries(labels).map(([label, runtime]) => ({
+  label, runtime, name: runtime, dirs: [...targets[runtime]].filter(selected[runtime]).sort()
+}));
+const hasSystemSamples = [...targets.cnako3].some(dir => {
+  const relative = relativeDir(dir);
+  return relative === 'plugin_system' || relative.startsWith('plugin_system/');
+});
+const systemDirs = hasSystemSamples ? [join(dataDir, 'plugin_system')] : [];
+for (const runtime of ['gonako', 'lnako']) {
+  if (['all', 'system', runtime].includes(only)) {
+    jobs.push({ label: '表示結果', runtime, name: `${runtime} (plugin_system)`, dirs: systemDirs });
+  }
+}
+for (const { label, runtime, name, dirs } of jobs) {
   if (!dirs.length) continue;
-  if (skip.has(runtime)) { results.push([runtime, 'skipped (DOCTEST_SKIP)']); continue; }
+  if (skip.has(runtime)) { results.push([name, 'skipped (DOCTEST_SKIP)']); continue; }
   const args = runtime === 'gonako'
     ? ['doctest', `--label=${label}`, ...dirs]
     : [doctest, `--label=${label}`, ...(runtime === 'lnako' ? ['--runtime=lnako', '--subcommand=run'] : ['--runtime=cnako3']), ...dirs];
@@ -65,13 +77,13 @@ for (const [label, runtime] of Object.entries(labels)) {
     const probe = spawnSync('lnako', ['--version'], { stdio: 'ignore' });
     if (probe.error?.code === 'ENOENT') {
       console.error('lnako was not found on PATH. Install it or set DOCTEST_SKIP=lnako.');
-      results.push([runtime, 'missing']); continue;
+      results.push([name, 'missing']); continue;
     }
   }
-  console.log(`\n[doctest] ${runtime}: ${dirs.length} directories (${label})`);
+  console.log(`\n[doctest] ${name}: ${dirs.length} directories (${label})`);
   const run = spawnSync(runtime === 'gonako' ? 'gonako' : cnako, args, { cwd: scriptDir, stdio: 'inherit', env: { ...process.env, PATH: `${join(scriptDir, 'node_modules/.bin')}${delimiter}${process.env.PATH ?? ''}` } });
   if (run.error) console.error(`${runtime}: ${run.error.message}${runtime === 'gonako' ? '. Install gonako or set DOCTEST_SKIP=gonako.' : ''}`);
-  results.push([runtime, run.error ? 'missing/error' : run.status === 0 ? 'passed' : `failed (exit ${run.status ?? run.signal})`]);
+  results.push([name, run.error ? 'missing/error' : run.status === 0 ? 'passed' : `failed (exit ${run.status ?? run.signal})`]);
 }
 console.log('\n[doctest] Summary:');
 for (const [name, result] of results) console.log(`  ${name}: ${result}`);

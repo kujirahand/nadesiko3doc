@@ -8,14 +8,14 @@ Node.js 22 以降、npm、curl、tar、unzip を用意し、リポジトリの�
 - [gonako のインストール](https://nadesi.com/v3/doc/index.php?gonako&show)
 - [lnako のインストール](https://nadesi.com/v3/doc/index.php?lnako&show)
 
-`{{{#nako3` ブロック内の `### 表示結果: ...` と続く `### ...` 行を期待値として照合します。`GO表示結果` は gonako、`lnako表示結果` は lnako、`表示結果` は cnako3 で実行します。
+`{{{#nako3` ブロック内の `### 表示結果: ...` と続く `### ...` 行を期待値として照合します。`GO表示結果` は gonako、`lnako表示結果` は lnako、`表示結果` は cnako3 で実行します。さらに `data/plugin_system/` 以下の `表示結果` は gonako と lnako でも実行します。
 
 | コマンド | 対象 |
 | --- | --- |
 | `npm run doctest:all` | `data/` 以下を再帰的に探索し、ラベルごとに実行 |
-| `npm run doctest:gonako` | `data/gonako` の `GO表示結果` |
-| `npm run doctest:lnako` | `data/lnako_lowlevel` と `data/lnako_node` の `lnako表示結果` |
+| `npm run doctest:gonako` | `data/gonako` の `GO表示結果` と `data/plugin_system` の `表示結果` |
+| `npm run doctest:lnako` | `data/lnako_lowlevel` と `data/lnako_node` の `lnako表示結果` と `data/plugin_system` の `表示結果` |
 | `npm run doctest:cnako3` | `plugin_system` を除く `data/plugin_*` の `表示結果` |
-| `npm run doctest:system` | `data/plugin_system` と `data/文法` の `表示結果` |
+| `npm run doctest:system` | `data/plugin_system` の `表示結果` を全ランタイムで、`data/文法` の `表示結果` を cnako3 で実行 |
 
 各ランナーの結果を表示し、いずれかが失敗するか必要な実行ファイルが見つからない場合は終了コードが非ゼロになります。意図的に省略する場合は、例えば `DOCTEST_SKIP=gonako,lnako npm run doctest:all` とします。省略はサマリーに表示され、失敗には数えません。DocTest はサンプルを実際に実行します。
