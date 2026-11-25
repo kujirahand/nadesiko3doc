@@ -169,10 +169,10 @@ gonako doctest --label=GO表示結果 data/gonako
 
 #### lnako向けのDocTest
 
-`### lnako表示結果:`のラベルのあるDocTestを実行します。
+`### lnako表示結果:`のラベルのあるDocTestを実行します。なお、lnako自体にはdoctestサブコマンドはないので、gonakoのDocTestランナーからlnakoを呼び出します（詳細は `data/FAQ/DocTest.txt`）。
 
 ```sh
-lnako doctest --label=lnako表示結果 data/lnako data/lnako_node data/lnako_lowlevel
+gonako doctest --runtime=lnako --subcommand=run --label=lnako表示結果 data/lnako data/lnako_node data/lnako_lowlevel
 ```
 
 ## チュートリアル
