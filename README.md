@@ -101,6 +101,10 @@ just update-meta
 # npmの依存関係をインストール
 just install-deps
 
+# DocTestの依存関係を準備し、サンプルをテスト
+just install
+just doctest
+
 # 開発環境をセットアップ
 just setup
 ```

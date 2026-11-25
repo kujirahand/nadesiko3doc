@@ -27,6 +27,14 @@ update-meta:
 install-deps:
     cd script && npm install
 
+# DocTest に必要な依存関係を準備
+install:
+    sh script/install-doctest.sh
+
+# マニュアルのサンプルをテスト
+doctest: install
+    PATH="$PATH:$(pwd)/script/.runtime/bin:$(pwd)/script/.runtime/lnako/bin"; export PATH; cd script && npm run doctest:all
+
 # 開発環境をセットアップ
 setup: install-deps
     @echo "セットアップが完了しました"
@@ -42,5 +50,7 @@ help:
     @echo "  just build        - 全スクリプトを実行 (cmd2db + enum-blank)"
     @echo "  just update-meta  - メタ情報を更新"
     @echo "  just install-deps - npmの依存関係をインストール"
+    @echo "  just install      - DocTestの依存関係を準備"
+    @echo "  just doctest      - マニュアルのサンプルをテスト"
     @echo "  just setup        - 開発環境をセットアップ"
     @echo "  just help         - このヘルプを表示"
