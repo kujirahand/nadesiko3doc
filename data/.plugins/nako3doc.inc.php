@@ -149,6 +149,20 @@ function nako3doc_getHistoryURL($page)
     return str_replace('{WikiName}', $pageenc, NAKO3DOC_HISTORY_URL);
 }
 
+/**
+ * ランタイム名と同名のプラグイン (gonako / lnako) の短い説明を返す。
+ * この2つのトップページは本文が命令一覧そのものなので、#page / #include で
+ * 埋め込むと一覧が丸ごと展開されてしまう (#128)。対象外なら null を返す。
+ */
+function nako3doc_runtimeDesc($plug)
+{
+    $desc = [
+        'gonako' => '[[gonako]]は「なでしこ3(Go版)」のランタイムです。',
+        'lnako' => '[[lnako]]は「なでしこ3(高速ネイティブ版)」のランタイムです。',
+    ];
+    return isset($desc[$plug]) ? $desc[$plug] : null;
+}
+
 function nako3doc_checkGenre($page)
 {
     $a = explode('/', $page, 2);
@@ -163,10 +177,23 @@ function nako3doc_checkGenre($page)
         return nako3doc_checkPlugin($page);
     }
     $wiki = "* 🔌 [[$plug]] / [[$genre:$page]]\n";
+    // gonako / lnako はランタイム名とプラグイン名が同じで、トップページの
+    // 本文が命令一覧そのもの (#nako3doc(list-func,...)) になっている。
+    // #page で埋め込むとジャンルページのヘッダに全命令が表示されてしまう
+    // ため、この2つでは埋め込まず短い説明だけを出す (#128)。
+    $runtime_desc = nako3doc_runtimeDesc($plug);
+    if ($runtime_desc !== null) {
+        $wiki .=
+            "#html(<blockquote style='background-color:#fff0f0;'>);\n" .
+            $runtime_desc . "\n" .
+            "#html(</blockquote>);\n";
+    } else {
+        $wiki .=
+            "#html(<blockquote style='background-color:#fff0f0;'>);\n" .
+            "#page($plug)\n" .
+            "#html(</blockquote>);\n";
+    }
     $wiki .=
-        "#html(<blockquote style='background-color:#fff0f0;'>);\n" .
-        "#page($plug)\n" .
-        "#html(</blockquote>);\n" .
         "** 🌴 [[$genre:$page]]\n";
     foreach ($ra as $r) {
         $plugin = $r['plugin'];
@@ -469,7 +496,13 @@ function nako3doc_list_plugins()
         $type = preg_replace('/([a-z]+)/', '[[\1]]', $r);
         $wiki .= "*** 🔌[[$plugin]]\n";
         $wiki .= "#html(<blockquote>)";
-        $wiki .= "#include($plugin)\n";
+        // gonako / lnako はトップページが命令一覧そのものなので埋め込まない (#128)
+        $runtime_desc = nako3doc_runtimeDesc($plugin);
+        if ($runtime_desc !== null) {
+            $wiki .= $runtime_desc . "\n";
+        } else {
+            $wiki .= "#include($plugin)\n";
+        }
         $wiki .= "($type)\n";
         $wiki .= "#html(</blockquote>)\n";
         $wiki .= "\n";
