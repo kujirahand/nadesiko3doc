@@ -28,15 +28,19 @@ if { ! skip gonako && ! command -v gonako >/dev/null 2>&1; } ||
     trap 'rm -rf "$tmp_dir"' EXIT HUP INT TERM
 
     if ! skip gonako && ! command -v gonako >/dev/null 2>&1; then
-        echo 'gonako 3.8.13 をインストールします'
-        curl -fL "https://github.com/kujirahand/nadesiko3go/releases/download/3.8.13/gonako-3.8.13-${gonako_platform}.zip" -o "$tmp_dir/gonako.zip"
+        echo 'gonako の最新リリースをインストールします'
+        curl -fsSL https://api.github.com/repos/kujirahand/nadesiko3go/releases/latest -o "$tmp_dir/gonako-release.json"
+        gonako_url=$(node -e 'const r = require(process.argv[1]); const name = `gonako-${r.tag_name.replace(/^v/, "")}-${process.argv[2]}.zip`; const a = r.assets.find(a => a.name === name); if (!a) { console.error(`リリースに ${name} がありません`); process.exit(1); } console.log(a.browser_download_url)' "$tmp_dir/gonako-release.json" "$gonako_platform")
+        curl -fL "$gonako_url" -o "$tmp_dir/gonako.zip"
         unzip -q "$tmp_dir/gonako.zip" -d "$tmp_dir/gonako"
         mkdir -p "$runtime_dir/bin"
         install -m 755 "$tmp_dir/gonako/gonako" "$runtime_dir/bin/gonako"
     fi
     if ! skip lnako && ! command -v lnako >/dev/null 2>&1; then
-        echo 'lnako 0.2.4 をインストールします'
-        curl -fL "https://github.com/soramikan/lnako/releases/download/v0.2.4/lnako-0.2.4-${lnako_platform}.tar.gz" -o "$tmp_dir/lnako.tar.gz"
+        echo 'lnako の最新リリースをインストールします'
+        curl -fsSL https://api.github.com/repos/soramikan/lnako/releases/latest -o "$tmp_dir/lnako-release.json"
+        lnako_url=$(node -e 'const r = require(process.argv[1]); const name = `lnako-${r.tag_name.replace(/^v/, "")}-${process.argv[2]}.tar.gz`; const a = r.assets.find(a => a.name === name); if (!a) { console.error(`リリースに ${name} がありません`); process.exit(1); } console.log(a.browser_download_url)' "$tmp_dir/lnako-release.json" "$lnako_platform")
+        curl -fL "$lnako_url" -o "$tmp_dir/lnako.tar.gz"
         mkdir -p "$tmp_dir/lnako"
         tar -xzf "$tmp_dir/lnako.tar.gz" -C "$tmp_dir/lnako"
         lnako_bin=$(find "$tmp_dir/lnako" -type f -path '*/bin/lnako' -print | head -n 1)

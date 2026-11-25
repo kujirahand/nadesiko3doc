@@ -1,6 +1,6 @@
 # DocTest
 
-Node.js 22 以降、npm、curl、tar、unzip を用意し、リポジトリのルートで `just doctest` を実行します。`just install` だけを実行して依存関係を準備することもできます。cnako3 は npm の開発依存として、PATH にない gonako と lnako は `script/.runtime/` にインストールされます。既存の PATH 上のコマンドはそのまま使います。自動インストールは macOS arm64 と Linux x86_64 に対応し、lnako 0.2.4 と gonako 3.8.13 を使用します。その他の環境では両コマンドを手動で PATH に用意してください。
+Node.js 22 以降、npm、curl、tar、unzip を用意し、リポジトリのルートで `just doctest` を実行します。`just install` だけを実行して依存関係を準備することもできます。cnako3 は npm の開発依存として、PATH にない gonako と lnako は GitHub の最新リリースから `script/.runtime/` にインストールされます。既存の PATH 上のコマンドはそのまま使い、自動更新はしません。自動インストールは macOS arm64 と Linux x86_64 に対応します。その他の環境では両コマンドを手動で PATH に用意してください。
 
 `DOCTEST_SKIP=gonako,lnako just doctest` のように指定すると、対象のインストールとテストを省略できます。個別の npm コマンドを実行する場合、ローカルにインストールされたランタイムは `script/.runtime/bin` と `script/.runtime/lnako/bin` を PATH に追加してください。
 
