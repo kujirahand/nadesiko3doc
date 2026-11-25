@@ -3,11 +3,9 @@ set -eu
 
 cd "$(dirname "$0")"
 runtime_dir="$(pwd)/.runtime"
-export PATH="$PATH:$runtime_dir/bin:$runtime_dir/lnako/bin"
+export PATH="$runtime_dir/bin:$runtime_dir/lnako/bin:$PATH"
 
-if [ ! -x node_modules/.bin/cnako3 ] || [ ! -f node_modules/nadesiko3/batch/doctest.nako3 ]; then
-    npm ci
-fi
+npm install --no-save --package-lock=false nadesiko3@latest
 
 skip() {
     case ",${DOCTEST_SKIP:-}," in
@@ -16,8 +14,7 @@ skip() {
     esac
 }
 
-if { ! skip gonako && ! command -v gonako >/dev/null 2>&1; } ||
-   { ! skip lnako && ! command -v lnako >/dev/null 2>&1; }; then
+if ! skip gonako || ! skip lnako; then
     case "$(uname -s)-$(uname -m)" in
         Darwin-arm64) gonako_platform=darwin-arm64; lnako_platform=macos-arm64 ;;
         Linux-x86_64) gonako_platform=linux-amd64; lnako_platform=linux-x64 ;;
@@ -27,7 +24,7 @@ if { ! skip gonako && ! command -v gonako >/dev/null 2>&1; } ||
     tmp_dir=$(mktemp -d "${TMPDIR:-/tmp}/nadesiko-doctest.XXXXXX")
     trap 'rm -rf "$tmp_dir"' EXIT HUP INT TERM
 
-    if ! skip gonako && ! command -v gonako >/dev/null 2>&1; then
+    if ! skip gonako; then
         echo 'gonako の最新リリースをインストールします'
         curl -fsSL https://api.github.com/repos/kujirahand/nadesiko3go/releases/latest -o "$tmp_dir/gonako-release.json"
         gonako_url=$(node -e 'const r = require(process.argv[1]); const name = `gonako-${r.tag_name.replace(/^v/, "")}-${process.argv[2]}.zip`; const a = r.assets.find(a => a.name === name); if (!a) { console.error(`リリースに ${name} がありません`); process.exit(1); } console.log(a.browser_download_url)' "$tmp_dir/gonako-release.json" "$gonako_platform")
@@ -36,7 +33,7 @@ if { ! skip gonako && ! command -v gonako >/dev/null 2>&1; } ||
         mkdir -p "$runtime_dir/bin"
         install -m 755 "$tmp_dir/gonako/gonako" "$runtime_dir/bin/gonako"
     fi
-    if ! skip lnako && ! command -v lnako >/dev/null 2>&1; then
+    if ! skip lnako; then
         echo 'lnako の最新リリースをインストールします'
         curl -fsSL https://api.github.com/repos/soramikan/lnako/releases/latest -o "$tmp_dir/lnako-release.json"
         lnako_url=$(node -e 'const r = require(process.argv[1]); const name = `lnako-${r.tag_name.replace(/^v/, "")}-${process.argv[2]}.tar.gz`; const a = r.assets.find(a => a.name === name); if (!a) { console.error(`リリースに ${name} がありません`); process.exit(1); } console.log(a.browser_download_url)' "$tmp_dir/lnako-release.json" "$lnako_platform")
