@@ -4,7 +4,7 @@ PC版なでしこ(gonako)は、Windows/macOS/Linuxに対応しています。
 
 ▲インストール方法の案内
 
- [[公式 README:https://github.com/kujirahand/nadesiko3go#インストール方法]] に書かれている通り、下記のコマンドを実行します。
+下記のコマンドを実行します。
 
 WindowsならPowerShel、macOS/Linuxならターミナルを開いて、以下のコマンドを実行します。
 
@@ -18,5 +18,6 @@ irm https://nadesi.com/install/gonako | iex
 curl -fsSL https://nadesi.com/install/gonako | bash
 }}}
 
+[[公式リポジトリ:https://github.com/kujirahand/nadesiko3go]]の情報も参考になります。
 また、[[リリース:https://github.com/kujirahand/nadesiko3go/releases]]から OS と CPU に対応する CLI 版を取得できます。
 
