@@ -1,0 +1,8 @@
+●PC版なでしこ(gonako)のインストールについて
+
+PC版なでしこ(gonako)は、Windows/macOS/Linuxに対応しています。
+
+▲インストール方法の案内
+
+ [[公式 README:https://github.com/kujirahand/nadesiko3go#インストール方法]] に書かれています。
+
